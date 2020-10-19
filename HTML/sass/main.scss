@@ -81,6 +81,7 @@ h1, h2, h3, h4, h5 {
 
 .in-dev {
 	padding-top: 10vh;
+	padding-bottom: 30px;
 	text-align: center;
 	h1 {
 		font-size: 5vh;
@@ -93,6 +94,9 @@ h1, h2, h3, h4, h5 {
 		padding: 10px 20px;
 		border: 1px solid #6e6e6e;
 		border-radius: 5px;
+		&:hover {
+			border-color: #FFD500;
+		}
 	}
 }
 
