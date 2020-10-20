@@ -1287,14 +1287,14 @@ h1, h2, h3, h4, h5 {
   margin-right: 22px;
   border: 2px solid transparent;
   margin-bottom: 105px;
-  transition: all 0.3s ease-out; }
+  transition: all 0.4s ease-out; }
   .partners-slider .partners-slider__item:hover {
     border: 2px solid #FFD500;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 1px 8px rgba(0, 0, 0, 0.1);
     height: 320px;
     margin-bottom: 30px;
     cursor: pointer;
-    transition: all 0.3s ease-out; }
+    transition: all 0.2s ease-out; }
   .partners-slider .partners-slider__item:hover .partners-slider__info p {
     display: block; }
   .partners-slider .partners-slider__item:hover .partners-slider__info a {
