@@ -1051,7 +1051,18 @@ h1, h2, h3, h4, h5 {
 .slider__info {
   max-width: 285px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
   .slider__info h3 {
     font-size: 24px;
     line-height: 32px;
