@@ -134,8 +134,10 @@ h1, h2, h3, h4, h5 {
     padding: 0 20px;
     text-decoration: none;
     transition: all 0.2s;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: all 0.3s linear; }
   .nav__li:hover {
+    transition: all 0.3s linear;
     background-color: #fff;
     cursor: pointer; }
   .nav__title {
@@ -154,17 +156,19 @@ h1, h2, h3, h4, h5 {
     position: absolute;
     top: 64px;
     left: 0;
-    background-color: #E6E6E6;
-    min-width: 220px;
+    background-color: #fff;
+    min-width: 240px;
     padding: 0;
     box-shadow: none;
     display: none;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.2s; }
+    transition: opacity 0.2s;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 1px 8px rgba(0, 0, 0, 0.1); }
   .nav .drop__li {
-    height: 50px;
-    background-color: #FFD500; }
+    height: 40px;
+    background-color: #fff;
+    transition: all 0.3s linear; }
   .nav .drop__li a {
     display: flex;
     justify-content: flex-start;
@@ -177,9 +181,11 @@ h1, h2, h3, h4, h5 {
     font-size: 16px;
     line-height: 20px; }
   .nav .drop__li:hover a {
-    color: #333; }
+    color: #333;
+    font-weight: 600; }
   .nav .drop__li:hover {
-    background-color: #fff; }
+    transition: all 0.3s linear;
+    background-color: #FFD500; }
   .nav .nav__ul .nav__li:hover .drop__ul {
     display: block;
     opacity: 1;
@@ -646,7 +652,7 @@ h1, h2, h3, h4, h5 {
         margin-right: 10px; }
   .footer__links .links .socials__img {
     justify-content: space-between;
-    margin-left: -10px; }
+    max-width: 125px; }
     .footer__links .links .socials__img img:hover {
       opacity: .6; }
 
@@ -691,10 +697,8 @@ h1, h2, h3, h4, h5 {
     animation: 1s ease-out 0s 1 rotateCircleDiagram;
     transition: all 0.3s ease-in; }
   .home-kpi:hover .stats__icon {
-    width: 50px;
-    height: 50px;
-    margin-left: 0;
-    transition: all 0.3s ease-in; }
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in; }
 
 .on-time {
   display: flex;
@@ -1022,10 +1026,10 @@ h1, h2, h3, h4, h5 {
     display: block; }
 
 .home-advantages {
-  padding-bottom: 120px; }
+  padding-bottom: 60px; }
 
 #home-advantages__slider {
-  height: 420px;
+  height: 350px;
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d; }
@@ -1037,7 +1041,7 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 386px;
+  width: 314px;
   height: 100%;
   position: absolute;
   left: 0;
@@ -1049,7 +1053,7 @@ h1, h2, h3, h4, h5 {
   transition: transform 0.3s ease; }
 
 .slider__info {
-  max-width: 285px;
+  max-width: 240px;
   margin: 0 auto;
   text-align: center;
   -webkit-touch-callout: none;
@@ -1064,9 +1068,9 @@ h1, h2, h3, h4, h5 {
   /* Internet Explorer/Edge */
   user-select: none; }
   .slider__info h3 {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 20px; }
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 17px; }
   .slider__info p {
     display: none; }
 
@@ -1075,48 +1079,46 @@ h1, h2, h3, h4, h5 {
 #slide3 .slider__icon,
 #slide4 .slider__icon,
 #slide5 .slider__icon {
-  width: 90px;
-  height: 90px;
+  width: 155px;
+  height: 138px;
   margin: 0 auto 25px auto; }
 
 #slide1 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1.png") no-repeat center; }
 
 #slide2 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2.png") no-repeat center; }
 
 #slide3 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3.png") no-repeat center; }
 
 #slide4 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4.png") no-repeat center; }
 
 #slide5 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5.png") no-repeat center; }
 
 #s1:checked ~ #slide1 .slider__icon,
 #s2:checked ~ #slide2 .slider__icon,
 #s3:checked ~ #slide3 .slider__icon,
 #s4:checked ~ #slide4 .slider__icon,
 #s5:checked ~ #slide5 .slider__icon {
-  width: 123px;
-  height: 123px;
   margin: 0 auto 15px auto; }
 
 #s1:checked ~ #slide1 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1--gold.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1--gold.png") no-repeat center 100%; }
 
 #s2:checked ~ #slide2 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2--gold.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2--gold.png") no-repeat center; }
 
 #s3:checked ~ #slide3 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3--gold.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3--gold.png") no-repeat center; }
 
 #s4:checked ~ #slide4 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4--gold.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4--gold.png") no-repeat center; }
 
 #s5:checked ~ #slide5 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5--gold.svg"); }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5--gold.png") no-repeat center; }
 
 #s1:checked ~ #slide1 .slider__info p,
 #s2:checked ~ #slide2 .slider__info p,
@@ -1353,3 +1355,50 @@ h1, h2, h3, h4, h5 {
   .hover-animation--zoom:hover {
     transform: scale(1.05);
     transition: all 0.3s ease-in; }
+
+.tooltip {
+  position: relative; }
+
+.tooltip .tooltip__info {
+  width: max-content;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 25px;
+  background-color: #575757;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  display: none; }
+  .tooltip .tooltip__info h3, .tooltip .tooltip__info p {
+    font-family: 'Segoe UI';
+    font-size: 12px; }
+  .tooltip .tooltip__info h3 {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px; }
+  .tooltip .tooltip__info p {
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.58); }
+
+.tooltip:hover .tooltip__info {
+  display: block; }
+
+.tooltip .tooltip__info i {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden; }
+
+.tooltip .tooltip__info i::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: #575757; }
