@@ -32,7 +32,7 @@ body {
 	padding: 0;
 }
 
-input:invalid { border-color: red !important; }
+input:invalid { border-color: #FF2727 !important; }
 
 textarea, input, select {
 	-webkit-appearance: none;
@@ -60,7 +60,6 @@ border:none;
 outline:none;
 box-shadow: none;
 color: #333;
-font-size: 1.4667vh;
 }
 
 p {
@@ -151,6 +150,8 @@ h1, h2, h3, h4, h5 {
 
 // конец main-btn
 
+// Главная Кнопка-ссылка
+
 .main-btn--link {
 	display: flex;
 	justify-content: center;
@@ -168,6 +169,7 @@ h1, h2, h3, h4, h5 {
 	}
 } 
 
+// конец main-btn--link
 
 .section--grey {
 	background-color: #F8F8F8;
@@ -1275,7 +1277,7 @@ h1, h2, h3, h4, h5 {
 		width: 138px;
 		height: 48px;
 		background-color: #333333;
-		border-radius: 2px;
+		border-radius: 5px;
 		font-size: 16px;
 		line-height: 20px;
 		text-align: center;
