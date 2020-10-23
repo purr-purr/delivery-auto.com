@@ -80,6 +80,61 @@ h1, h2, h3, h4, h5 {
     .in-dev a:hover {
       border-color: #FFD500; }
 
+.main-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 178px;
+  height: 50px;
+  font-size: 20px;
+  color: #333;
+  background-color: #ffd500;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  overflow: hidden; }
+
+.main-btn:hover {
+  background: #575757;
+  color: #fff; }
+
+.main-btn:after {
+  content: "";
+  background: #ffd500;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s; }
+
+.main-btn:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s; }
+
+.main-btn:focus {
+  outline: 0; }
+
+.main-btn--link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 178px;
+  height: 50px;
+  background-color: #FFD500;
+  border-radius: 5px;
+  border: 1px solid #FFD500;
+  transition: all 0.3s ease-in; }
+  .main-btn--link:hover {
+    transition: all 0.3s ease-in;
+    border-color: #FFD500;
+    background-color: transparent; }
+
 .section--grey {
   background-color: #F8F8F8; }
 
@@ -1253,20 +1308,6 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: center;
     width: 100%; }
-    .home-partners .become-partner a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 178px;
-      height: 48px;
-      background-color: #FFD500;
-      border-radius: 5px;
-      border: 1px solid #FFD500;
-      transition: all 0.3s ease-in; }
-      .home-partners .become-partner a:hover {
-        transition: all 0.3s ease-in;
-        border-color: #FFD500;
-        background-color: transparent; }
 
 .partners-slider {
   max-width: 1035px;

@@ -17,7 +17,7 @@ function sass_css(done) {
 		.pipe( gulp.dest('../HTML/css/') )
 		.pipe(sass({
 			errorLogToConsole: true,
-			outputStyle: 'compressed'
+			// outputStyle: 'compressed'
 		}))
 		.on('error', console.error.bind(console))
 		.pipe (autoprefixer ({
