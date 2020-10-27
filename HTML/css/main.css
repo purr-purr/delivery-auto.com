@@ -1138,16 +1138,16 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto 25px auto; }
 
 #slide1 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1.png") no-repeat center; }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4.png") no-repeat center; }
 
 #slide2 .slider__icon {
   background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2.png") no-repeat center; }
 
 #slide3 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3.png") no-repeat center; }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1.png") no-repeat center; }
 
 #slide4 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4.png") no-repeat center; }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3.png") no-repeat center; }
 
 #slide5 .slider__icon {
   background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5.png") no-repeat center; }
@@ -1160,16 +1160,16 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto 15px auto; }
 
 #s1:checked ~ #slide1 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1--gold.png") no-repeat center 100%; }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4--gold.png") no-repeat center 100%; }
 
 #s2:checked ~ #slide2 .slider__icon {
   background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2--gold.png") no-repeat center; }
 
 #s3:checked ~ #slide3 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3--gold.png") no-repeat center; }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1--gold.png") no-repeat center; }
 
 #s4:checked ~ #slide4 .slider__icon {
-  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4--gold.png") no-repeat center; }
+  background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3--gold.png") no-repeat center; }
 
 #s5:checked ~ #slide5 .slider__icon {
   background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5--gold.png") no-repeat center; }
