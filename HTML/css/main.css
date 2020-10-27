@@ -1135,7 +1135,8 @@ h1, h2, h3, h4, h5 {
 #slide5 .slider__icon {
   width: 155px;
   height: 138px;
-  margin: 0 auto 25px auto; }
+  margin: 0 auto 25px auto;
+  transition: background 0.7s linear; }
 
 #slide1 .slider__icon {
   background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4.png") no-repeat center; }
@@ -1157,7 +1158,8 @@ h1, h2, h3, h4, h5 {
 #s3:checked ~ #slide3 .slider__icon,
 #s4:checked ~ #slide4 .slider__icon,
 #s5:checked ~ #slide5 .slider__icon {
-  margin: 0 auto 15px auto; }
+  margin: 0 auto 15px auto;
+  transition: background 0.7s linear; }
 
 #s1:checked ~ #slide1 .slider__icon {
   background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4--gold.png") no-repeat center 100%; }

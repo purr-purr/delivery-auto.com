@@ -1462,6 +1462,7 @@ h1, h2, h3, h4, h5 {
 	width: 155px;
 	height: 138px;
 	margin: 0 auto 25px auto;
+	transition: background 0.7s linear;
 }
 
 
@@ -1488,6 +1489,7 @@ h1, h2, h3, h4, h5 {
 #s4:checked ~ #slide4 .slider__icon,
 #s5:checked ~ #slide5 .slider__icon {
 	margin: 0 auto 15px auto;
+	transition: background 0.7s linear;
 }
 
 #s1:checked ~ #slide1 .slider__icon {
