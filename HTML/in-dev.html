@@ -12,11 +12,10 @@
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <!-- Fonts -->
         <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
-        <link href="fonts/Montserrat/font.css" rel="stylesheet" type="text/css">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
-        <link href="css/main.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/system/icon/favicon.ico"/>
     </head>
@@ -29,15 +28,36 @@
 
 
         <!--========== PAGE LAYOUT ==========-->
+            <style>
+                .in-dev {
+                    padding-top: 10vh;
+                    padding-bottom: 30px;
+                    text-align: center;
+                }
 
-        <main class="services__order">
-            <div class="container">
-                <div class="in-dev">
-                    <h1>в розробці</h1>
-                    <a href="index.html">Назад</a>
-                </div>
+                .in-dev h1 {
+                    font-size: 5vh;
+                    text-transform: uppercase;
+                    margin-bottom: 4vh;
+                }
+
+                .in-dev a {
+                    font-size: 3vh;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    border: 1px solid #6e6e6e;
+                    border-radius: 5px;
+                }
+
+                .in-dev a:hover {
+                    border-color: #FFD500;
+                }
+            </style>
+
+            <div class="in-dev">
+                <h1>в розробці</h1>
+                <a href="index.html">Назад</a>
             </div>
-        </main>
 
         <!--========== \END PAGE LAYOUT ==========-->
 

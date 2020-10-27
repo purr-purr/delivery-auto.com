@@ -2,7 +2,7 @@
 <!-- ==============================
     Project:        Delivery Group
     Author:         Anton Shaposhnikov
-	Telegram:		https://t.me/hesoyam_666
+    Telegram:       https://t.me/hesoyam_666
 ================================== -->
 <html lang="uk">
     <head>
@@ -17,7 +17,8 @@
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
-        <link href="css/main.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="css/home-page.css" rel="stylesheet" type="text/css"/>
         <!-- Slick Slider -->
         <link href="css/components/slick.css" rel="stylesheet" type="text/css">
         <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css">
@@ -33,18 +34,19 @@
 
         <!--========== PAGE LAYOUT ==========-->
 
-        <!-- banner slider -->
+        <!-- Блок Слайдер Баннеров -->
         <section class="banners">
             <div class="container--slider">
                 <div class="slider">
-                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt=""></a>
-                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt=""></a>
-                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt=""></a>
-                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt=""></a>
+                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt="banner"></a>
+                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt="banner"></a>
+                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt="banner"></a>
+                    <a href="in-dev.html"><img src="img/banners/home-page__slider--1.jpg" alt="banner"></a>
                 </div>
             </div>
         </section>
 
+        <!-- Блок Трекинг -->
         <section class="section">
             <div class="container">
                 <div class="tracking">
@@ -81,6 +83,7 @@
             </div>
         </section>
 
+        <!-- Блок "Галузеві тарифи та рішення" -->
         <section class="section section--grey">
             <div class="container">
                 <div class="home-heading">
@@ -90,8 +93,10 @@
 
                 <div class="home-tariff">
                     <a href="in-dev.html" class="home-tariff__item">
-                        <img class="home-tariff__img" src="img/system/tariff_icon/car-price.png" alt="" width="206px"
-                        height= "154px">
+                        <div class="home-tariff__img-wrap">
+                            <img class="home-tariff__img" src="img/system/tariff_icon/car-price.png" alt="car-price" width="206px"
+                            height= "154px">
+                        </div>
                         <div class="home-tariff__info">
                             <h4 class="home-tariff__title">Автомобільний прайс</h4>
                             <p class="home-tariff__text">Перевозіть автотовари за єдиним <br> тарифом та сплачуйте лише <br> за одиницю вантажу</p>
@@ -99,8 +104,10 @@
                     </a>
                     <!-- next item -->
                     <a href="in-dev.html" class="home-tariff__item">
-                        <img class="home-tariff__img" src="img/system/tariff_icon/building-price.png" alt="" width="240px"
-                        height= "158px">
+                        <div class="home-tariff__img-wrap">
+                            <img class="home-tariff__img" src="img/system/tariff_icon/building-price.png" alt="building-price" width="240px"
+                            height= "158px">
+                        </div>
                         <div class="home-tariff__info">
                             <h4 class="home-tariff__title">Будівельний прайс</h4>
                             <p class="home-tariff__text">З радістю повідомляємо вам, <br>що в 2020 році Делівері...</p>
@@ -108,7 +115,9 @@
                     </a>
                     <!-- next item -->
                     <a href="in-dev.html" class="home-tariff__item">
-                        <img class="home-tariff__img" src="img/system/tariff_icon/bikecycle-price.png" alt="" width="220px" height="147">
+                        <div class="home-tariff__img-wrap">
+                            <img class="home-tariff__img" src="img/system/tariff_icon/bikecycle-price.png" alt="bikecycle-price" width="220px" height="147">
+                        </div>
                         <div class="home-tariff__info">
                             <h4 class="home-tariff__title">Велосипедний прайс</h4>
                             <p class="home-tariff__text">З радістю повідомляємо вам, <br>що в 2020 році Делівері...</p>
@@ -116,8 +125,10 @@
                     </a>
                     <!-- next item -->
                     <a href="in-dev.html" class="home-tariff__item">
-                        <img class="home-tariff__img" src="img/system/tariff_icon/upper-price.png" alt="" width="225px"
+                        <div class="home-tariff__img-wrap">
+                            <img class="home-tariff__img" src="img/system/tariff_icon/upper-price.png" alt="upper-price" width="225px"
                         height= "148px">
+                        </div>
                         <div class="home-tariff__info">
                             <h4 class="home-tariff__title">Верховий вантаж</h4>
                             <p class="home-tariff__text">З радістю повідомляємо вам, <br>що в 2020 році Делівері...</p>
@@ -127,6 +138,7 @@
             </div>
         </section>
 
+        <!-- Блок "Підпишіться на новини" -->
         <section class="section section--subs">
             <div class="container">
                 <div class="subs">
@@ -139,6 +151,7 @@
             </div>
         </section>
 
+        <!-- Новини та акції -->
         <section class="section">
             <div class="container">
                 <div class="home-heading">
@@ -233,7 +246,7 @@
                         <div class="preroll__large-block">
                             <a href="in-dev.html">
                                 <div class="preroll__item preroll__item--delivery">
-                                    <img class="preroll__img" src="img/content/home-news__item1.jpg" alt="">
+                                    <img class="preroll__img" src="img/content/home-news__item1.jpg" alt="news photo">
                                     <div class="preroll__info">
                                         <h3>«Делівері» провела турнир <br>з настільного тенісу <br>у Новограді-Волинському</h3>
                                         <p>Зручність для клієнтів полягає в тому, що послуга дозволяє перераховувати гроші <br>за товар ...</p>
@@ -253,7 +266,7 @@
                         <div class="preroll__small-block">
                             <a href="in-dev.html">
                                 <div class="preroll__item preroll__item--international">
-                                    <img class="preroll__img" src="img/content/home-news__item2.jpg" alt="">
+                                    <img class="preroll__img" src="img/content/home-news__item2.jpg" alt="news photo">
                                     <div class="preroll__info">
                                         <h3>Графік роботи компанії на День Святої Трійці</h3>
                                         <div class="preroll__footer">
@@ -270,7 +283,7 @@
                             <!-- next item -->
                             <a href="in-dev.html">
                                 <div class="preroll__item preroll__item--kvorum">
-                                    <img class="preroll__img" src="img/content/home-news__item3.jpg" alt="">
+                                    <img class="preroll__img" src="img/content/home-news__item3.jpg" alt="news photo">
                                     <div class="preroll__info">
                                         <h3>СК «КВОРУМ» посіла 8 місце серед компаній України</h3>
                                         <div class="preroll__footer">
@@ -290,6 +303,7 @@
             </div>
         </section>
 
+        <!-- Наші переваги-->
         <section class="section section--grey">
             <div class="container">
                 <div class="home-heading">
@@ -297,7 +311,6 @@
                     <a href="in-dev.html" class="home-heading__link">Детальніше <img src="img/system/icon/arrow.svg" alt="arrow"></a>
                 </div>
                 <div class="home-advantages">
-                        
                         <div id="home-advantages__slider">
                             <input type="radio" name="slider" id="s1">
                             <input type="radio" name="slider" id="s2">
@@ -354,6 +367,7 @@
             </div>
         </section>
 
+        <!-- Мобільний додаток -->
         <section class="section section--apps">
             <div class="container">
                 <div class="home-apps">
@@ -371,120 +385,16 @@
                     </div>
 
                     <div class="home-apps__phone-img">
-                        <img src="img/system/mobile_app/home-page__phone.png" alt="">
+                        <img src="img/system/mobile_app/home-page__phone.png" alt="mobile app">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container">
-                <div class="home-heading">
-                    <h3 class="home-heading__title">Індекси компанії</h3>
-                    <a href="in-dev.html" class="home-heading__link">Дивитись індекси <img src="img/system/icon/arrow.svg" alt="arrow"></a>
-                </div>
-                <div class="home-kpi">
-                    <div class="on-time">
-                        <p class="home-kpi__title">Своєчасно до складу</p>
-                        <div class="on-time__diagram">
-                            <span class="on-time__circle"></span>
-                            <div class="on-time__info">
-                                <img src="img/system/kpi/kpi__home-icon.png" alt="" class="on-time__icon">
-                                <div class="on-time__percent">
-                                    <p>80,91 <span>%</span></p>
-                                </div>
-    
-                                <div class="on-time__rank on-time__rank--green">
-                                    <img src="img/system/kpi/kpi__arrow-green.png" alt="">
-                                    <p>2,48</p>
-                                </div>
-    
-                                <!-- Зеленый и Красный текст, просто выбрать нужный из 2х -->
-    
-                                <!-- <div class="on-time__rank on-time__rank--red">
-                                    <img src="img/system/kpi/kpi__arrow-red.png" alt="">
-                                    <p>2,48</p>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
+        <!-- Індекси компанії -->
+        <section id="included__kpi-block" class="section"></section>
 
-                    <!-- next-item -->
-
-                    <div class="in-road">
-                        <p class="home-kpi__title">Час <br> у дорозі</p>
-                        <div class="in-road__diagram">
-                            <div class="in-road__info">
-                                <p class="in-road__hours">годин</p>
-                                <div class="in-road__time">
-                                    <p>25:00</p>
-                                </div>
-    
-                                <!-- <div class="on-time__rank on-time__rank--green">
-                                    <img src="img/system/kpi/kpi__arrow-green.png" alt="">
-                                    <p>01:00</p>
-                                </div> -->
-    
-                                <!-- Зеленый и Красный текст, просто выбрать нужный из 2х -->
-    
-                                <div class="in-road__rank on-time__rank on-time__rank--red">
-                                    <img src="img/system/kpi/kpi__arrow-red.png" alt="">
-                                    <p>01:00</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="stats">
-                        <div class="stats__item">
-                            <img class="stats__icon" src="img/system/kpi/kpi__client.png" alt="">
-                            <div class="stats__info">
-                                <p class="stats__info--first">Скарги по клієнтам</p>
-                                <p class="stats__info--second">0,0918<span>%</span></p>
-                                <p class="stats__info--third">1 скарга на 441 клієнтів</p>
-                            </div>
-                            
-                            <!-- <div class="stats__rank__rank stats__rank__rank--green">
-                                <img src="img/system/kpi/kpi__arrow-green.png" alt="">
-                                <p>0,0012</p>
-                            </div> -->
-
-                            <!-- Зеленый и Красный текст, просто выбрать нужный из 2х -->
-
-                            <div class="stats__rank stats__rank--red">
-                                <img src="img/system/kpi/kpi__arrow-red.png" alt="">
-                                <p>0,0012</p>
-                            </div>
-
-                        </div>
-
-                        <!-- next item -->
-
-                        <div class="stats__item">
-                            <img class="stats__icon" src="img/system/kpi/kpi__search.png" alt="">
-                            <div class="stats__info">
-                                <p class="stats__info--first">Втрати вантажу</p>
-                                <p class="stats__info--second">0,0009<span>%</span></p>
-                                <p class="stats__info--third">1 скарга на 441 клієнтів</p>
-                            </div>
-                            
-                            <div class="stats__rank stats__rank--green">
-                                <img src="img/system/kpi/kpi__arrow-green.png" alt="">
-                                <p>0,0001</p>
-                            </div>
-                            
-                            <!-- Зеленый и Красный текст, просто выбрать нужный из 2х -->
-
-                            <!-- <div class="stats__rank stats__rank--red">
-                                <img src="img/system/kpi/kpi__arrow-red.png" alt="">
-                                <p>0,0001</p>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        <!-- Партнери Delivery Group -->
         <section class="section section--grey">
             <div class="container">
                 <div class="home-heading">
@@ -553,168 +463,8 @@
             </div>
         </section>
 
-        <section class="section">
-            <div class="container">
-                <div class="faq">
-                    <aside class="feedback">
-                        <h3 class="feedback__title">
-                            Замовити дзвінок
-                        </h3>
-                        <form action="" class="feedback__form">
-                            <label for="" class="feedback__label">Ваше ім’я</label>
-                            <input type="text" class="feedback__input">
-
-                            <label for="" class="feedback__label">Номер на який ми зателефонуємо</label>
-                            <input type="text" class="feedback__input">
-
-                            <label for="" class="feedback__label">Тема питання</label>
-                            <select class="feedback__select">
-                                <img class="select-icon" src="img/system/icon/faq__arrow-down.svg" alt="">
-                                <option value="0" disabled selected style="display:none">Оберіть</option>
-                                <option value="1">Оформити заявку на адресний забір/доставку вантажів</option>
-                                <option value="2">Отримати інформацію по квитанції</option>
-                                <option value="3">Отримати інформацію по послугах компанії</option>
-                                <option value="4">Розрахунок вартості</option>
-                                <option value="5">Міжнароднi перевезення</option>
-                                <option value="6">Внести зміни в квитанцію, переадресація вантажу</option>
-                                <option value="7">Запит рахунку, калькуляції</option>
-                                <option value="8">Питання втрати, пошкодження вантажу</option>
-                                <option value="9">Замовити комерційну пропозицію</option>
-                                <option value="10">Укласти договір про співпрацю</option>
-                                <option value="11">Особистий кабінет</option>
-                                <option value="12">Зміни з логістики</option>
-                            </select>
-
-                            <label for="" class="feedback__label">Повідомлення</label>
-                            <textarea class="feedback__textarea" cols="30" rows="10"></textarea>
-
-                            <button class="feedback__btn">Надіслати</button>
-                        </form>
-                    </aside>
-
-                    <div class="faq-block">
-                        <h3 class="faq-block__title">
-                            Часті запитання
-                        </h3>
-
-                        <div class="faq-block__questions">
-                            <div class="questions">
-                                <input class="questions__input" type="radio" checked name="tab" id="tab1">
-                                <label class="questions__label" for="tab1">Відправити вантаж від адресу</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Відправити вантаж від адресу
-                                    </h2>
-                                    <p class="answer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum modi inventore adipisci, quis, ipsa ullam dolor natus deserunt itaque aut delectus eos at vitae laborum nemo obcaecati reprehenderit, ad excepturi!</p> 
-                                    <p class="answer__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ribus. Molestias autem optio delectus, laudantium corrupti dicta facere quas molestiae blanditiis nesciunt officiis non ipsam voluptas corporis accusantium esse cum eveniet nulla vitae.</p> 
-                                    <p class="answer__text">Lorem ipsum dolor sit amet cognissimos ducimus iste, dolores distinctio perferendis odio, autem non, animi totam commodi itaque dolor placeat? Enim dolores maiores repudiandae ex ullam!</p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" checked name="tab" id="tab2">
-                                <label class="questions__label" for="tab2">Відправити вантаж зі складу</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Відправити вантаж зі складу
-                                    </h2>
-                                    <p class="answer__text">1. Lorem, ipsum dolor sit amet consectetur adipisicem. At id quae aut, alias minima nisi voluptatibus dolore quam cum repellendu consequatur temporibus? Reiciendis dolorum veniam magni nisi maxime qui temporibus necessitatibus quisquam optio?</p> 
-                                    <p class="answer__text">2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, provident ad cumque doloribus aspernatur maiores architecto ducimus assumenda ratione  voluptas cum amet corporis accusantium quis veritatis in quidem! </p> 
-                                    <p class="answer__text">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, veniam.</p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab3">
-                                <label class="questions__label" for="tab3">Пошвидшити відправлення вантажу</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Пошвидшити відправлення вантажу
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam perspiciatis dignissimos provident! Eos itaque quaerat dolorem, sunt aut hic. At dolore dolorum sunt, molestiae fugit rem niet minima cupiditate eligendi voluptatum? Odio ad provident ratione, dolores quas facilis harum doloremque non sit.</p> 
-                                    <p class="answer__text">2. Lorem, ipsum dolor. </p> 
-                                    <p class="answer__text">3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus blanditiis aperiam ad? Iste explicabo architecto voluptatem et, voluptates expedita! Velit laudantium distinctio sunt odio ea maiores, corrupti et at assumenda?</p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab4">
-                                <label class="questions__label" for="tab4">Сплатити готівкою</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Сплата готівкою
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.a, cum odit obcaecati eius. Nobis voluptatem numquam possimus officia aliquam odit odio reiciendis fugiat.</p> 
-                                    <p class="answer__text">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, earum rerum. Nulla tempora laborum dolorem incidunt quia. Eum expedita suscipit aliquam minima quod porro reprehenderit qui facere. Quidem, asperiores recusandae! </p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab5">
-                                <label class="questions__label" for="tab5">Отримати вантаж на терміналі</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Отримати вантаж на терміналі
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.a, cum odit obcaecati eius. Nobis voluptatem numquam possimus officia aliquam odit odio reiciendis fugiat.</p> 
-                                    <p class="answer__text">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, earum rerum. Nulla tempora laborum dolorem incidunt quia. Eum expedita suscipit aliquam minima quod porro reprehenderit qui facere. Quidem, asperiores recusandae! </p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab6">
-                                <label class="questions__label" for="tab6">Сплатити карткою онлайн</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Сплатити карткою онлайн
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.a, cum odit obcaecati eius. Nobis voluptatem numquam possimus officia aliquam odit odio reiciendis fugiat.</p> 
-                                    <p class="answer__text">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, earum rerum. Nulla tempora laborum dolorem incidunt quia. Eum expedita suscipit aliquam minima quod porro reprehenderit qui facere. Quidem, asperiores recusandae! </p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab7">
-                                <label class="questions__label" for="tab7">Сплатити карткою онлайн</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Сплатити карткою онлайн
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.a, cum odit obcaecati eius. Nobis voluptatem numquam possimus officia aliquam odit odio reiciendis fugiat.</p> 
-                                    <p class="answer__text">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, earum rerum. Nulla tempora laborum dolorem incidunt quia. Eum expedita suscipit aliquam minima quod porro reprehenderit qui facere. Quidem, asperiores recusandae! </p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab8">
-                                <label class="questions__label" for="tab8">Сплатити за безготівковим рахунком</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Сплатити за безготівковим рахунком
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.a, cum odit obcaecati eius. Nobis voluptatem numquam possimus officia aliquam odit odio reiciendis fugiat.</p> 
-                                    <p class="answer__text">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, earum rerum. Nulla tempora laborum dolorem incidunt quia. Eum expedita suscipit aliquam minima quod porro reprehenderit qui facere. Quidem, asperiores recusandae! </p> 
-                                </div>
-                            </div>
-                            <!-- next item -->
-                            <div class="questions">
-                                <input class="questions__input" type="radio" name="tab" id="tab9">
-                                <label class="questions__label" for="tab9">Отримати бухгалтерські документи</label>
-                                <div class="questions__answer">
-                                    <h2 class="answer__title">
-                                        Отримати бухгалтерські документи
-                                    </h2>
-                                    <p class="answer__text">1. Lorem ipsum dolor, sit amet consectetur adipisicing elit.a, cum odit obcaecati eius. Nobis voluptatem numquam possimus officia aliquam odit odio reiciendis fugiat.</p> 
-                                    <p class="answer__text">2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore, earum rerum. Nulla tempora laborum dolorem incidunt quia. Eum expedita suscipit aliquam minima quod porro reprehenderit qui facere. Quidem, asperiores recusandae! </p> 
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="in-dev.html" class="faq-block__ask-btn">Задати питання <img src="img/system/icon/arrow.svg" alt="arrow"></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Зворотній зв'язок -->
+        <section id="included__feedback-block" class="feedback-block"></section>
 
         <!--========== THE END PAGE LAYOUT ==========-->
 
