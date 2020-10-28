@@ -49,7 +49,7 @@
 	right: 20px;
 	width: 35px;
 	height: 35px;
-	background: #ffd500 url("/HTML/img/system/icon/tabs-icon--close.svg") no-repeat center;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
 	border-radius: 50px;
 	transform-origin: center;
     transition: 200ms linear;
@@ -58,7 +58,7 @@
 
 .acc-media details[open] summary:after {
     transform: rotate(90deg);
-	background: #fff url("/HTML/img/system/icon/tabs-icon--open.svg") no-repeat center;
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
     transition: transform 0.5s linear;
 }
 
