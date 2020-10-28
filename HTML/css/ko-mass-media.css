@@ -1,0 +1,140 @@
+/* ======================================
+//     Стили для страницы Прес-Центр
+====================================== */
+
+
+.acc-media {
+	max-width: 730px;
+	min-width: 630px;
+}
+
+.acc-media details[open] summary ~ * {
+	animation: acc-media-open 0.3s ease-in-out;
+}
+
+@keyframes acc-media-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.acc-media summary::-webkit-details-marker {
+	display: none;
+}
+
+.acc-media summary {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 72px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+    color: #333333;
+    outline: 0;
+}
+
+.acc-media summary:after {
+	content: " ";
+	position: absolute;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("/HTML/img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: 200ms linear;
+    /* transition: background 0.3s linear; */
+}
+
+.acc-media details[open] summary:after {
+    transform: rotate(90deg);
+	background: #fff url("/HTML/img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform 0.5s linear;
+}
+
+/* Title */
+.acc-media__title {
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+.acc-media__info {
+    padding-bottom: 35px;
+}
+
+.acc-media__item {
+    display: flex;
+    padding: 12px 0;
+}
+
+.acc-media__item time {
+    font-size: 16px;
+    line-height: 20px;
+    color: #808080;
+    padding-right: 25px;
+}
+
+.acc-media__item a, .acc-media__item--second a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #3072C4;
+}
+
+.acc-media__item a:hover, .acc-media__item--second a:hover {
+    text-decoration-line: underline;
+}
+
+.acc-media__item--second a:hover ~ .acc-media__doc  {
+    color: #3072C4;
+}
+
+/* second line acc */
+
+.acc-media__item--second {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.acc-media__item--second span {
+    color: #808080;
+    margin-left: 22px;
+    text-decoration-line: none;
+}
+
+.acc-media__doc {
+    padding-left: 70px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.acc-media__text {
+    padding-bottom: 22px;
+}
+
+.acc-media__text--padding {
+    padding-top: 22px;
+}
+
+.acc-media__text--list {
+    padding: 6px 0;
+}
+
+.acc-media__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acc-media__contacts div {
+    width: 47%;
+}

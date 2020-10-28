@@ -1142,7 +1142,6 @@ p {
 //            Layout
 ====================================== */
 
-
 .main__container {
 	display: flex;
 	max-width: 1210px;
@@ -1152,11 +1151,7 @@ p {
 
 .main-content {
 	width: 100%;
-	height: 200px;
-	border: 1px solid tomato;
 }
-
-
 
 .page-header {
 	max-width: 1342px;
@@ -1185,9 +1180,9 @@ p {
 }
 
 
-
-
-/* Crumbs */
+/* ======================================
+//            Crumbs
+====================================== */
 
 .crumbs__inner {
     display: flex;
@@ -1201,18 +1196,15 @@ p {
     margin: 11px 0 25px 0;
 }
 
-.crumbs__inner a:hover {
-    color: #3072C4;
-}
-
 .crumbs__inner span {
     color: #ffd500;
     padding: 0 4px;
 }
 
 
-
-/* Aside */
+/* ======================================
+//            Aside
+====================================== */
 
 .aside-block {
     height: 100%;
@@ -1234,6 +1226,11 @@ p {
     height: 40px;
     position: relative;
     margin-bottom: 30px;
+}
+
+.aside-search__form {
+	width: 100%;
+	height: 100%;
 }
 
 .aside-search__input {
@@ -1282,6 +1279,10 @@ p {
     color: #3072C4;
 }
 
+.aside-news__item:hover time {
+    color: #3072C4;
+}
+
 .aside-news__item:last-child {
     border-bottom: none;
 }
@@ -1292,3 +1293,23 @@ p {
     color: #808080;
     padding-right: 15px;
 }
+
+
+/* Aside Banner Slider */
+.action-slider {
+	width: 362px;
+	height: 162px;
+	margin-top: 25px;
+	margin-bottom: 30px;
+}
+.action-slider div {
+	width: 100%;
+	display: none;
+}
+.action-slider img {
+	width: 100%;
+	height: auto;
+}
+
+
+
