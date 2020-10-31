@@ -2,7 +2,12 @@
 //     Стили для страницы Прес-Центр
 ====================================== */
 
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__mass-media.jpg") no-repeat;
+}
 
+/* Аккардион */
 .acc-media {
 	max-width: 730px;
 	min-width: 630px;
@@ -53,7 +58,6 @@
 	border-radius: 50px;
 	transform-origin: center;
     transition: 200ms linear;
-    /* transition: background 0.3s linear; */
 }
 
 .acc-media details[open] summary:after {
@@ -94,7 +98,7 @@
     text-decoration-line: underline;
 }
 
-.acc-media__item--second a:hover ~ .acc-media__doc  {
+.acc-media__link:hover ~ .acc-media__doc  {
     color: #3072C4;
 }
 

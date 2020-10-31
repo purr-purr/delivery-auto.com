@@ -317,8 +317,13 @@
 	padding-left: 14px;
 	font-size: 16px;
 	line-height: 20px;
-	color: #333333;
+	color: #333;
 	border-radius: 2px 0px 0px 2px;
+	background-color: #fff;
+}
+
+.subs__form .subs__input::placeholder {
+	color: #333;
 }
 
 .subs__form .subs__input:focus {

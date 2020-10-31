@@ -1,0 +1,53 @@
+/* ===============================================
+//   Стили для страницы Контрагентам
+================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__commercial-offers.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.counter-form {
+    margin-top: 20px;
+    width: 805px;
+}
+.counter-form__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.counter-form__input--large, .counter-form__item--large {
+    width: 100%;
+}
+
+.counter-form__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter-form__item--size {
+    width: 387px;
+}
+
+.counter-form__textarea {
+    min-height: 67px;
+    max-height: 300px;
+    min-width: 100%;
+}
+
+.counter-form__required-input {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.counter-form__btn {
+    margin-top: 35px;
+}
+
+
+

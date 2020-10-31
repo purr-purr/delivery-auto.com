@@ -50,10 +50,6 @@ option:focus {
 	color: #333;
 }
 
-[type="checkbox"], [type="radio"] {
-	-webkit-appearance: checkbox;
-}
-
 :active, :focus {
 	outline: none;
 }
@@ -79,6 +75,10 @@ h1 {
 	line-height: 64px;
 }
 
+h2 {
+	font-size: 32px;
+}
+
 p {
 	font-family: 'Segoe UI';
 	font-size: 16px;
@@ -86,10 +86,188 @@ p {
 	color: #333;
 }
 
+input {
+    width: 387px;
+    height: 40px;
+    padding: 0 20px;
+	border: 1px solid #DADADA;
+	background-color: transparent;
+    color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+input::placeholder {
+    color: #333333;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+select {
+    width: 387px;
+    height: 40px;
+	padding: 0 37px 0 20px;
+	color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #DADADA;
+    background: url("../img/system/icon/select__arrow-down.svg") no-repeat center;
+	background-size: 16px 8px;
+	-webkit-appearance: none;
+    background-position-x: 97%;
+    cursor: pointer;
+}
+
+textarea {
+	padding: 7px 20px;
+	background-color: transparent;
+	border: 1px solid #DADADA;
+	/* cursor: pointer; */
+	color: #333333;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+textarea::placeholder {
+	color: #333333;
+}
+
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+	display: none
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+	list-style: none;
+}
+
+/* checkbox style */
+
+[type="checkbox"], [type="radio"] {
+	-webkit-appearance: checkbox;
+}
+
+.checkbox--after input[type=checkbox] {display: none;}
+
+.checkbox--after input[type=checkbox] + label:after {
+    content: " ";
+    display: inline-block;
+    border: 1px solid #DADADA;
+    font-size: 20px;    
+    line-height: 22px;
+    margin: -5px 0 0 5px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox--after input[type=checkbox]:checked + label:after {
+    background: url("../img/system/icon/checkbox__arrow.svg") no-repeat center;
+    background-size: 15px 13px;
+}
+
+/* Before */
+
+.checkbox--before label, .checkbox--after label {
+	cursor: pointer;
+}
+
+.checkbox--before input[type=checkbox] {display: none;}
+
+.checkbox--before input[type=checkbox] + label:before {
+    content: " ";
+    display: inline-block;
+    border: 1px solid #DADADA;
+    font-size: 20px;    
+    line-height: 22px;
+    margin: -5px 5px 0 0;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox--before input[type=checkbox]:checked + label:before {
+    background: url("../img/system/icon/checkbox__arrow.svg") no-repeat center;
+    background-size: 15px 13px;
+}
+
+/* ======================================
+//            Layout
+====================================== */
+
+.main__container {
+	display: flex;
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0 5px;
+}
+
+.main-content {
+	width: 100%;
+}
+
+.page-header {
+	max-width: 1342px;
+	height: 320px;
+	margin: 0 auto;
+}
+
+.page-header__heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-width: 1210px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 5px 90px 5px;
+}
+
+.page-header__discription {
+	font-family: 'Segoe UI';
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 36px;
+	color: #333333;
+	padding-top: 15px;
+}
+
+.main-page__title {
+	max-width: 640px;
+	font-weight: bold;
+	font-size: 32px;
+	color: #333333;
+}
+
+.main-page__description {
+	max-width: 1020px;
+	padding-bottom: 35px;
+}
+
+
 /* ======================================
 //              COMMON
 ====================================== */
 
+.gray-background {
+	background-color: #F8F8F8;
+}
+
+.main__container--full-width {
+	width: 100%;
+	background-color: #F8F8F8;
+}
 
 .section--grey {
 	background-color: #F8F8F8;
@@ -117,7 +295,6 @@ p {
 ====================================== */
 
 .main-btn {
-	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -128,16 +305,18 @@ p {
 	background-color: #ffd500;
 	border: none;
 	border-radius: 5px;
-	transition-duration: 0.4s;
-	overflow: hidden;
+	padding-bottom: 3px;
+	cursor: pointer;
+	transition: background .6s ease;
 }
 
 .main-btn:hover {
+	transition: background .6s ease;
 	background: #575757;
 	color: #fff;
 }
 
-.main-btn:after {
+/* .main-btn:after {
 	content: "";
 	background: #ffd500;
 	display: block;
@@ -155,7 +334,7 @@ p {
 	margin: 0;
 	opacity: 1;
 	transition: 0s;
-}
+} */
 
 .main-btn:focus {
 	outline: 0;
@@ -921,7 +1100,6 @@ p {
 }
 
 
-
 /* ======================================
 //            feedback block
 ====================================== */
@@ -991,6 +1169,7 @@ p {
 	height: 122px;
 	resize: none;
 	padding: 10px 7px;
+	background-color: #fff;
 }
 
 .feedback__btn {
@@ -1126,60 +1305,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ======================================
-//            Layout
-====================================== */
-
-.main__container {
-	display: flex;
-	max-width: 1210px;
-	margin: 0 auto;
-	padding: 0 5px;
-}
-
-.main-content {
-	width: 100%;
-}
-
-.page-header {
-	max-width: 1342px;
-	height: 320px;
-	margin: 0 auto;
-	background: #fff url("../img/system/page-header/page-header__mass-media.jpg") no-repeat;
-}
-
-.page-header__heading {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	max-width: 1210px;
-	height: 100%;
-	margin: 0 auto;
-	padding: 0 5px 90px 5px;
-}
-
-.page-header__discription {
-	font-family: 'Segoe UI';
-	font-weight: 600;
-	font-size: 32px;
-	line-height: 36px;
-	color: #333333;
-	padding-top: 15px;
-}
-
-
 /* ======================================
 //            Crumbs
 ====================================== */
@@ -1261,7 +1386,6 @@ p {
     z-index: 1;
 }
 
-
 /* Aside News */
 .aside-news {
     width: 362px;
@@ -1294,7 +1418,6 @@ p {
     padding-right: 15px;
 }
 
-
 /* Aside Banner Slider */
 .action-slider {
 	width: 362px;
@@ -1312,4 +1435,97 @@ p {
 }
 
 
+/* ======================================
+//            Block Add File
+====================================== */
 
+.add-file {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.add-file__info {
+    max-width: 280px;
+}
+
+.add-file__title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.add-file__text {
+	font-size: 12px;
+    line-height: 23px;
+    color: #808080;
+}
+
+.add-file__text--error {
+	display: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF2727;
+}
+
+.add-file__btn {
+	width: 178px;
+	height: 50px;
+    margin-top: 40px;
+	border: 1px solid #808080;
+	border-radius: 5px;
+    transition: background .6s ease;
+}
+
+.add-file__btn input {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.add-file__btn label {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+    font-size: 16px;
+	color: #333;
+	cursor: pointer;
+}
+
+.add-file__btn label img {
+    padding-right: 5px;
+}
+
+.add-file__btn:hover {
+    transition: background .6s ease;
+    background: #F0F5F9;
+}
+
+.add-file__result {
+    width: 255px;
+}
+
+.add-file__result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.add-file__result-item:last-child {
+    margin-bottom: 0;
+}
+
+.add-file__name {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.add-file__delete {
+    width: 10px;
+    height: 10px;
+}

@@ -1,0 +1,68 @@
+/* ===============================================
+//   Стили для страницы Тендер
+================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__tender.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.tender-form {
+    margin: 50px 0;
+    width: 805px;
+}
+
+.tender-form__title {
+    margin-bottom: 35px;
+}
+
+.tender-form__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tender-form__input--large, .tender-form__item--large {
+    width: 100%;
+}
+
+.tender-form__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tender-form__item--col {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.tender-form__item--size {
+    margin-bottom: 15px;
+}
+
+.tender-form__textarea {
+    min-height: 67px;
+    max-height: 300px;
+    min-width: 100%;
+}
+
+.tender-form__required-input {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.tender-form__btn {
+    margin-top: 35px;
+}
+
+.tender-form__checkbox-title {
+    max-width: 170px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}

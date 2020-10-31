@@ -1,0 +1,50 @@
+/* ===============================================
+//   Стили для страницы Комерційні пропозиції
+================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__commercial-offers.jpg") no-repeat;
+}
+
+.com-offers__info {
+    padding-bottom: 35px;
+}
+
+.com-offers__item {
+    display: flex;
+    padding: 12px 0;
+}
+
+.com-offers__item--second a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #3072C4;
+}
+
+.com-offers__item--second a:hover {
+    text-decoration-line: underline;
+}
+
+.com-offers__item--second .com-offers__link:hover ~ .com-offers__doc  {
+    color: #3072C4;
+}
+
+.com-offers__item--second {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.com-offers__item--second span {
+    color: #808080;
+    margin-left: 22px;
+    text-decoration-line: none;
+}
+
+.com-offers__doc {
+    padding-left: 70px;
+    color: #000000;
+    text-transform: uppercase;
+}
+

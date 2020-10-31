@@ -1,0 +1,108 @@
+/* ===============================================
+//   Стили для страницы Робота і кар’єра
+================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__job.jpg") no-repeat;
+}
+
+/* =================================== */
+
+
+.job-form__title {
+    margin-bottom: 30px;
+}
+
+.job-form__description {
+    margin-bottom: 20px;
+}
+
+.job-city {
+    margin-bottom: 40px;
+}
+
+.job-city__item {
+    margin-top: 20px;
+    width: max-content;
+}
+
+.job-city__item summary {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    color: #333333;
+    cursor: pointer;
+    width: max-content;
+}
+
+.job-city__list-vacancy {
+    padding-top: 25px;
+}
+
+.job-city__vacancy {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.job-city__vacancy:hover {
+    color: #3072C4;
+}
+
+.job-city__vacancy span {
+    color: #808080;
+}
+
+/* Форма */
+.job-form {
+    margin: 20px 0 45px 0;
+    width: 805px;
+}
+.job-form__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.job-form__input--large, .job-form__item--large {
+    width: 100%;
+}
+
+.job-form__input--small, .job-form__item--small {
+    width: 258px;
+}
+
+.job-form__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.job-form__item--size {
+    width: 387px;
+}
+
+.job-form__textarea {
+    min-height: 52px;
+    max-height: 300px;
+    min-width: 100%;
+}
+
+.job-form__textarea--large {
+    min-height: 85px;
+}
+
+.job-form__required-input {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.job-form__btn {
+    margin-top: 35px;
+}
+
