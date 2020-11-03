@@ -1,0 +1,165 @@
+/* ======================================
+//     Стили для страницы Новости
+====================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__news.jpg") no-repeat;
+}
+
+/* Новости */
+.news {
+    margin-top: 35px;
+}
+
+.news-filter {
+    display: flex;
+    align-items: center;
+}
+
+.news-filter__select {
+    width: 210px;
+}
+
+.news-filter__select:hover {
+    border: 1px solid #ffd500;
+}
+
+.news-filter__select:first-child {
+    margin-right: 11px;
+}
+
+.news-filter__btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #DADADA;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 11px;
+}
+
+.news-filter__btn:hover {
+    border: 1px solid #ffd500;
+}
+
+.news-list {
+    margin-top: 40px;
+}
+
+.news-list__year {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #808080;
+    margin-bottom: 40px;
+}
+
+.news-list__mounth {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin: 30px 0;
+}
+
+.news-list__item {
+    display: flex;
+    padding: 10px 0;
+}
+
+.news-list__date {
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #808080;
+    margin-right: 15px;
+}
+
+.news-list__date img {
+    width: 13px;
+    height: 13px;
+    margin-right: 11px;
+}
+
+.news-list__item a {
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+}
+
+.news-list__item a:hover {
+    color: #3072C4;
+}
+
+
+/* ------------------------------ PAGINTION BEGIN ------------------------------ */
+
+.pagination {
+    margin-top: 50px;
+}
+
+.pagination__item {
+    display: inline-block;
+    margin: 0 2px;
+    overflow: hidden;
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.pagination__active .pagination__link {
+    background-color: #FFD500;
+    border-color: #FFD500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pagination__item--prev svg, .pagination__item--next svg {
+    width: 7px;
+    height: 11px;
+}
+
+.pagination__item--next svg {
+    margin-left: 20px;
+}
+
+.pagination__item--next .pagination__link {
+    width: auto;
+    padding: 0 15px;
+}
+
+.pagination__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    color: #3072C4;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.pagination__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+}
+
+.pagination__link:hover, .pagination__link:focus, .pagination__link:active {
+    background-color:#FFD500;
+    border-color:#FFD500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pagination__link:hover svg path, .pagination__link:focus svg path, .pagination__link:active svg path {
+    fill: #fff;
+}

@@ -1,0 +1,184 @@
+/* ======================================================
+//   Стили для страницы Центр обслуговування клієнтів
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__service-center.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.service-center__title {
+    margin-bottom: 25px;
+}
+
+.service-center__description {
+    margin-bottom: 25px;
+}
+
+.advantages-service {
+    margin-top: 60px;
+}
+
+.advantages-service__inner {
+    margin: 32px 0 50px 0;
+    display: flex;
+}
+
+.advantages-service__col {
+    margin-right: 30px;
+}
+
+.advantages-service__col:last-child {
+    margin-right: 0;
+}
+
+#advantages-service__photo {
+    max-width: 385px;
+    max-height: 273px;
+}
+
+.advantages-service__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 33px;
+}
+
+.advantages-service__item:last-child {
+    margin-bottom: 0;
+}
+
+.advantages-service__info {
+    width: 295px;
+    padding-left: 20px;
+    margin-left: 9px;
+    border-left: 2px solid #fff;
+}
+
+/* Найближчі заходи  */
+
+.meeting {
+    padding-top: 60px;
+}
+
+.meeting__item {
+    display: flex;
+    margin-top: 30px;
+}
+
+.meeting__img {
+    max-width: 283px;
+    max-height: 210px;
+}
+
+.meeting__date {
+    display: flex;
+    justify-content: space-between;
+    width: 210px;
+    margin-bottom: 15px;
+}
+
+.meeting__date img {
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+}
+
+.meeting__date p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    color: #3072C4;
+}
+
+.meeting__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.meeting__info h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+.meeting__info p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.meeting__btn {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/* організувати захід */
+.create-event  {
+    margin-top: 100px;
+}
+
+.create-event h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 43px;
+    margin-bottom: 32px;
+}
+
+.create-event p {
+    font-size: 15px;
+    margin-bottom: 32px;
+}
+
+.create-event__btn {
+    display: flex;
+}
+
+.create-event__btn a:first-child {
+    margin-right: 30px;
+}
+
+.create-event__btn a {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.create-event__btn a:last-child {
+    border: 1px solid #808080;
+    background-color: transparent;
+}
+
+.create-event__btn a:hover:last-child {
+    border: 1px solid #FFD500;
+    background-color: #F0F5F9;
+    color: #000;
+}
+
+.service-office {
+    width: 100%;
+    margin-top: 110px;
+}
+
+.service-office h2 {
+    margin-bottom: 32px;
+}
+
+.service-office p {
+    margin-bottom: 25px;
+}
+
+.service-office__map {
+    height: 340px;
+    width: 100%;
+}
+

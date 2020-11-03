@@ -1,0 +1,95 @@
+/* ======================================
+//     Стили для страницы Новости
+====================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__news.jpg") no-repeat;
+}
+
+/* Новости */
+
+.news-item__main-images {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.news-item {
+    max-width: 90%;
+    margin-top: 10px;
+}
+
+.news-item__title {
+    margin: 20px 0 25px 0;
+}
+
+.news-item p {
+    margin-bottom: 15px;
+}
+
+.news-item p:last-child {
+    margin-bottom: 0;
+}
+
+.news-item__meta {
+    display: flex;
+}
+
+.news-item time {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #808080;
+    margin-right: 30px;
+}
+
+.news-item__print {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #808080;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.news-item__print img {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+}
+
+.news-item__subscribe {
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+    color: #3072C4;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 50px;
+}
+
+.news-item__subscribe:hover {
+    color: #ffd500;
+}
+
+.news-item__subscribe img {
+    width: 15px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.news-item__photo-description {
+    color: #808080;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media print {
+    header, footer, .sub-footer,
+    .faq, .crumbs, .news-item__print,
+    .news-item__subscribe, .aside-block {
+        display: none;
+    }
+}

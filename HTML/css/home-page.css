@@ -1,35 +1,7 @@
-/* ======================================
-//             Заголовки Блоков
-====================================== */
-
-.home-heading {
-	display: flex;
-	justify-content: space-between;
-	padding: 55px 0 27px 0;
+@font-face {
+    font-family: 'Bebas Neue'; 
+    src: url("../fonts/BebasNeueBold.otf"); 
 }
-
-.home-heading__title {
-	font-weight: 600;
-	font-size: 32px;
-	line-height: 36px;
-}
-
-.home-heading__link {
-	display: flex;
-	align-items: center;
-	font-size: 20px;
-	line-height: 24px;
-}
-
-.home-heading__link:hover {
-	opacity: .6;
-}
-
-.home-heading__link img {
-	margin-left: 14px;
-	width: 18px;
-}
-
 
 /* ======================================
 //            Banners Slider
@@ -589,23 +561,23 @@
 }
 
 #slide1 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon4.png") no-repeat center;
 }
 
 #slide2 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon2.png") no-repeat center;
 }
 
 #slide3 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon1.png") no-repeat center;
 }
 
 #slide4 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon3.png") no-repeat center;
 }
 
 #slide5 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon5.png") no-repeat center;
 }
 
 #s1:checked ~ #slide1 .slider__icon,
@@ -618,23 +590,23 @@
 }
 
 #s1:checked ~ #slide1 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon4--gold.png") no-repeat center 100%;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon4--gold.png") no-repeat center 100%;
 }
 
 #s2:checked ~ #slide2 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon2--gold.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon2--gold.png") no-repeat center;
 }
 
 #s3:checked ~ #slide3 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon1--gold.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon1--gold.png") no-repeat center;
 }
 
 #s4:checked ~ #slide4 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon3--gold.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon3--gold.png") no-repeat center;
 }
 
 #s5:checked ~ #slide5 .slider__icon {
-	background: url("../img/system/icon/h-advantages__slider/h-advantages__slider--icon5--gold.png") no-repeat center;
+	background: url("../img/system/icon/advantages__icon/h-advantages__slider--icon5--gold.png") no-repeat center;
 }
 
 #s1:checked ~ #slide1 .slider__info p,
@@ -807,10 +779,7 @@
 	width: 48px;
 	height: 48px;
 	top: 34%;
-	background-color: #fff;
-	background-image: url("../img/system/icon/h-slider__arrow.svg");
-	background-repeat: no-repeat;
-	background-position: center center;
+	background: #fff url("../img/system/icon/h-slider__arrow.svg") no-repeat center center;
 }
 
 .partners-slider .slick-prev {
@@ -823,11 +792,7 @@
 }
 
 .partners-slider .slick-prev:hover, .partners-slider .slick-prev:focus, .partners-slider .slick-next:hover, .partners-slider .slick-next:focus {
-	background: #FFD500;
-	background-color: #FFD500;
-	background-image: url("../img/system/icon/h-slider__arrow--hover.svg");
-	background-repeat: no-repeat;
-	background-position: center center;
+	background: #FFD500 url("../img/system/icon/h-slider__arrow--hover.svg") no-repeat center center;
 }
 
 .partners-slider .slick-prev:before, .partners-slider .slick-next:before {
