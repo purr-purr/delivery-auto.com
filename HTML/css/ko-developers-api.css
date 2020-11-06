@@ -1,0 +1,443 @@
+/* ======================================
+//     Стили для страницы Франчайзинг
+====================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__for-developers.jpg") no-repeat;
+}
+
+.for-dev__title {
+    margin-bottom: 20px;
+}
+
+.for-dev__description {
+    margin-bottom: 20px;
+}
+
+.for-dev__description a {
+	color: #3072C4;
+}
+
+.for-dev__description a:hover {
+	text-decoration: underline;
+}
+
+.for-dev__links {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.for-dev__links li {
+	width: 283px;
+	height: 50px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	margin-right: 30px;
+}
+
+.for-dev__links li:hover {
+	background-color: #F0F5F9;
+}
+
+.for-dev__links li:first-child {
+	border: 2px solid #FFD500;
+	background-color: transparent;
+}
+
+.for-dev__links li:first-child a {
+	font-weight: bold;
+}
+
+.for-dev__links li:last-child {
+	margin-right: 0;
+}
+
+.for-dev__links a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+/* List */
+.for-dev__list-info {
+	margin-bottom: 50px;
+}
+
+.for-dev__list-info li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.for-dev__list-info li span {
+	color: #3072C4;
+	margin-right: 5px;
+}
+
+
+
+.for-dev__create-api {
+	display: flex;
+	align-items: center;
+}
+
+.for-dev__create-api img {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.for-dev__create-api p {
+	font-weight: bold;
+}
+
+.for-dev__create-api a {
+	font-weight: normal;
+	color: #3072C4;
+}
+
+.for-dev__create-api a:hover {
+	text-decoration: underline;
+}
+
+.for-dev__download-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 236px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #333333;
+	border: 1px solid #333333;
+	background-color: #fff;
+}
+
+.for-dev__download-btn:hover {
+	background-color: #F0F5F9;
+	color: #333333;
+}
+
+.for-dev__download-btn img {
+	margin-right: 5px;
+	width: 12px;
+	height: 15px;
+}
+
+
+
+/* Аккардион */
+.dev-info  {
+	margin-top: 40px;
+	max-width: 730px;
+	min-width: 630px;
+}
+
+.dev-info details[open] summary ~ * {
+	animation: dev-info -open 0.3s ease-in-out;
+}
+
+@keyframes dev-info-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.dev-info summary::-webkit-details-marker {
+	display: none;
+}
+
+.dev-info summary {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 72px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+    color: #333333;
+    outline: 0;
+}
+
+.dev-info summary:after {
+	content: " ";
+	position: absolute;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: 200ms linear;
+}
+
+.dev-info details[open] summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform 0.5s linear;
+}
+
+/* Title */
+.dev-info__title {
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.dev-info__list {
+    width: 940px;
+}
+
+.dev-info__list li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 12px;
+}
+
+.dev-info__list li span {
+    color: #3072C4;
+}
+
+.dev-info__list li a {
+    color: #3072C4;
+}
+
+.dev-info__list li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Example Code */
+
+.tabs__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 1015px;
+	border: 1px solid #DADADA;
+	padding: 28px;
+	margin-bottom: 50px;
+}
+
+.tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 30px;
+	width: 210px;
+	height: 48px;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 20px;
+	color: #000000;
+	cursor: pointer;
+}
+
+.tab:last-child {
+	margin-right: 0;
+}
+
+.tabs {
+	display: flex;
+	width: 100%;
+}
+
+.panels {
+	margin-top: 30px;
+	background:#F0F0F0;
+	min-height: 200px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.panel {
+	display:none;
+	animation: fadein .8s;
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+
+.radio {
+	display:none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel {
+	display:block
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+	background:#fffffff6;
+	color:#000;
+	border: 1px solid #FFD500;
+}
+
+
+
+
+.test-api {
+	width: 1015px;
+	border: 1px solid #DADADA;
+	padding: 28px;
+	margin-bottom: 50px;
+}
+
+
+
+
+/* Ask form */
+
+.ask-form {
+	width: 1015px;
+	border: 1px solid #DADADA;
+	padding: 28px;
+	margin-bottom: 50px;
+}
+
+.ask-form__inner {
+	margin-top: 30px;
+	width: 810px;
+}
+
+.ask-form__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ask-form__input--large, .ask-form__item--large {
+    width: 100%;
+}
+
+.ask-form__item {
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+	
+}
+
+.ask-form__input {
+	width: 388px;
+}
+
+.ask-form__item--col {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.ask-form__item--size {
+    margin-bottom: 15px;
+}
+
+.ask-form__textarea {
+    min-height: 81px;
+    max-height: 300px;
+    width: 100%;
+}
+
+
+.ask-form__btn {
+    margin-top: 35px;
+}
+
+.ask-form__checkbox-title {
+    max-width: 170px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+
+.ask-form__send-btn {
+	margin-top: 30px;
+	font-size: 16px;
+line-height: 20px;
+}
+
+/* for Code */
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: auto;
+}
+
+code, kbd, pre, samp {
+	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
+pre code {
+	padding: 0;
+	font-size: inherit;
+	color: inherit;
+	white-space: pre-wrap;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 0.5em;
+	background: #f0f0f0;
+	-webkit-text-size-adjust: none;
+}
+
+.hljs, .hljs-subst, .hljs-tag .hljs-title, .nginx .hljs-title {
+	color: black;
+}
+
+.hljs-keyword, .hljs-id, .hljs-title, .hljs-built_in, .css .hljs-tag, .hljs-doctag, .smalltalk .hljs-class, .hljs-winutils, .bash .hljs-variable, .pf .hljs-variable, .apache .hljs-tag, .hljs-type, .hljs-typename, .tex .hljs-command, .asciidoc .hljs-strong, .markdown .hljs-strong, .hljs-request, .hljs-status, .tp .hljs-data, .tp .hljs-io {
+	font-weight: bold;
+}
+
+.hljs-string, .hljs-title, .hljs-constant, .hljs-parent, .hljs-tag .hljs-value, .hljs-rule .hljs-value, .hljs-preprocessor, .hljs-pragma, .hljs-name, .haml .hljs-symbol, .ruby .hljs-symbol, .ruby .hljs-symbol .hljs-string, .hljs-template_tag, .django .hljs-variable, .smalltalk .hljs-class, .hljs-addition, .hljs-flow, .hljs-stream, .bash .hljs-variable, .pf .hljs-variable, .apache .hljs-tag, .apache .hljs-cbracket, .tex .hljs-command, .tex .hljs-special, .erlang_repl .hljs-function_or_atom, .asciidoc .hljs-header, .markdown .hljs-header, .coffeescript .hljs-attribute, .tp .hljs-variable {
+	color: #800;
+}
+
+.hljs-number, .hljs-date, .hljs-regexp, .hljs-literal, .hljs-hexcolor, .smalltalk .hljs-symbol, .smalltalk .hljs-char, .go .hljs-constant, .hljs-change, .lasso .hljs-variable, .makefile .hljs-variable, .asciidoc .hljs-bullet, .markdown .hljs-bullet, .asciidoc .hljs-link_url, .markdown .hljs-link_url {
+	color: #080;
+}
+
+.smartquote, .hljs-comment, .hljs-annotation, .diff .hljs-header, .hljs-chunk, .asciidoc .hljs-blockquote, .markdown .hljs-blockquote {
+	color: #888;
+}

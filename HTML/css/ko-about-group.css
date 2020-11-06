@@ -42,15 +42,15 @@
     align-items: center;
     width: 283px;
     height: 90px;
-    background: rgba(48, 114, 196, 0.06);
-    backdrop-filter: blur(10px);
+    background: rgba(231, 238, 246, 0.87);
     border-radius: 5px;
+    transition: all .5s ease-in;
 }
 
 .map-line__item:hover {
     cursor: default;
-    background: linear-gradient(105.51deg, rgba(48, 114, 196, 0.5) 39.14%, rgba(129, 126, 129, 0.5) 98.33%);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(105.51deg, rgba(48, 114, 196, 0.6) 39.14%, rgba(129, 126, 129, 0.6) 98.33%);
+    transition: all .5s ease-in;
 }
 
 .map-line__item:hover p {
