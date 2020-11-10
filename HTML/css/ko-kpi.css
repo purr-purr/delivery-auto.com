@@ -372,7 +372,7 @@ div.block_title > label {
     display:none;
 }
 
-.help_panel p{
+.help_panel p {
     color: #fff;
 }
 
@@ -414,12 +414,10 @@ div.block_title > label {
 
 
 
-
-
 .help-hide {
     display: none;
 }
 
 .help-show {
     display: block;
-}
+} 
