@@ -83,13 +83,7 @@
 	margin-right: 5px;
 }
 
-
-
-
-
-
-/* Слайдер Наград */
-
+/* Пример виджетов */
 .widget-example {
 	margin: 50px 0 35px 0;
 	max-width: 1120px;
@@ -116,6 +110,7 @@
 	display: flex;
 	font-weight: 600;
 	margin-top: 30px;
+	cursor: pointer;
 }
 
 .widget-example__btn img {
@@ -132,11 +127,7 @@
 	width: 700px;
 }
 
-
-
-
-
-
+/* show/hide */
 .widget-example__hidden {
 	display: none;
 }
@@ -146,4 +137,47 @@
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-between;
+}
+
+/* Встановлення віджетів */
+.widget-install h2 {
+	margin-top: 80px;
+}
+
+.widget-install__inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 910px;
+	width: 100%;
+}
+
+.widget-install__item {
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.widget-install__item img {
+	width: 179px;
+	height: auto;
+	margin-right: 27px;
+}
+
+.widget-install__btn {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 0px;
+}
+
+.widget-install__show-more {
+	margin-top: 25px;
+}
+
+.widget-install__show-more a {
+	color: #3072C4;
+}
+
+.widget-install__show-more a:hover {
+	text-decoration: underline;
 }
