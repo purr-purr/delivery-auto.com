@@ -154,6 +154,13 @@ details > summary {
 	list-style: none;
 }
 
+[type="radio"] {
+	width: 14px;
+	cursor: pointer;
+}
+
+
+
 /* checkbox style */
 
 [type="checkbox"], [type="radio"] {

@@ -1,119 +1,232 @@
-/* ======================================
-//     Стили для страницы Франчайзинг
-====================================== */
+/* ===================================================
+//     Стили для страницы Модуль доставки для 1С
+===================================================== */
 
 /* Хедер страницы */
 .page-header {
 	background: #fff url("../img/system/page-header/page-header__for-developers.jpg") no-repeat;
 }
 
-.franchising__title {
+.for-dev__title {
+	font-size: 30px;
+	line-height: 40px;
     margin-bottom: 20px;
 }
 
-.franchising__text a {
-    color: #3072C4;
+.for-dev__description {
+    margin-bottom: 20px;
 }
 
-.franchising__text a:hover {
-    text-decoration-line: underline;
+.for-dev__description a {
+	color: #3072C4;
 }
 
-
-/* Аккардион */
-.franchising-info  {
-	max-width: 730px;
-	min-width: 630px;
+.for-dev__description a:hover {
+	text-decoration: underline;
 }
 
-.franchising-info details[open] summary ~ * {
-	animation: franchising-info -open 0.3s ease-in-out;
-}
-
-@keyframes franchising-info-open {
-	0% {
-		opacity: 0;
-    }
-	100% {
-		opacity: 1;
-	}
-}
-
-.franchising-info summary::-webkit-details-marker {
-	display: none;
-}
-
-.franchising-info summary {
+.for-dev__links {
 	display: flex;
+	margin-bottom: 40px;
+}
+
+.for-dev__links li {
+	width: 283px;
+	height: 50px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	margin-right: 30px;
+}
+
+.for-dev__links li:hover {
+	background-color: #F0F5F9;
+}
+
+.for-dev__links li:last-child {
+	margin-right: 0;
+}
+
+.for-dev__links a {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 72px;
-	position: relative;
+	height: 100%;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+#for-dev__links--active {
+	border: 2px solid #FFD500;
+	background-color: transparent;
+}
+
+#for-dev__links--active a {
+	font-weight: bold;
+}
+
+.module-1c__info {
+	max-width: 1035px;
+	margin-bottom: 50px;
+}
+
+.module-1c__info p {
 	margin-bottom: 20px;
-	cursor: pointer;
-	list-style: none;
-	background-color: #F0F5F9;
-	border-radius: 5px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.module-1c__info li span {
+	color: #3072C4;
+	margin-right: 5px;
+}
+
+.download-1c__btn {
+	margin-top: 30px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+
+/* Можливості модуля */
+.advantages-1c {
+	margin: 50px 0 20px 0;
+	width: 1105px;
+}
+
+.advantages-1c__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.advantages-1c__item {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.advantages-1c__item img {
+	width: 50px;
+	height: 50px;
+	margin-right: 40px;
+}
+
+.advantages-1c__info {
+	width: 388px;
+}
+
+.advantages-1c__info h3 {
 	font-weight: 600;
 	font-size: 24px;
-	line-height: 20px;
-    color: #333333;
-    outline: 0;
+	line-height: 32px;
+	margin-bottom: 20px;
 }
 
-.franchising-info summary:after {
-	content: " ";
-	position: absolute;
-	right: 20px;
-	width: 35px;
-	height: 35px;
-	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
-	border-radius: 50px;
-	transform-origin: center;
-    transition: 200ms linear;
+/* Відео інструкція по 1С */
+
+.video-1c {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 60px 0 50px 0;
 }
 
-.franchising-info details[open] summary:after {
-    transform: rotate(90deg);
-	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
-    transition: transform 0.5s linear;
+.video-1c__title {
+	margin-bottom: 30px;
+}
+.video-1c__item {
+	margin-right: 30px;
 }
 
-/* Title */
-.franchising-info__title {
-    padding-left: 30px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 20px;
+.video-1c__item:last-child {
+	margin-right: 0;
 }
 
-.franchising-info__list {
-    width: 940px;
+/* Принципи роботи */
+
+.work-1c {
+	width: 100%;
+	margin: 50px 0;
 }
 
-.franchising-info__list li {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #333333;
-    margin-bottom: 12px;
+.work-1c__inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
 }
 
-.franchising-info__list li span {
-    color: #3072C4;
+.work-1c__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 25px;
+	width: 283px;
+	height: 350px;
+	background: #FFFFFF;
+	border: 1px solid transparent;
+	transition: all .5s ease-in;
 }
 
-.franchising-info__list li a {
-    color: #3072C4;
+.work-1c__item:hover {
+	border: 1px solid #FFD500;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 1px 8px rgba(0, 0, 0, 0.1);
+	transition: all .5s ease-in;
 }
 
-.franchising-info__list li a:hover {
-    text-decoration: underline;
+.work-1c__item img {
+	width: 144px;
+	height: 138px;
+}
+
+.work-1c__info {
+	text-align: center;
+	padding: 6px 16px 0 16px;
+}
+
+.work-1c__info h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	margin-bottom: 7px;
+}
+
+.work-1c__info a {
+	color: #3072C4;
+}
+
+.work-1c__info a:hover {
+	text-decoration: underline;
 }
 
 
+.security-1c {
+	margin-top: 35px;
+}
 
+.security-1c p {
+	max-width: 1042px;
+	margin-bottom: 20px;
+}
 
+.security-1c__title {
+	margin: 100px 0 30px 0;
+}
 
+.security-1c__info {
+	display: flex;
+}
 
+.security-1c__info img {
+	width: 596px;
+	height: 298px;
+}
 
+.security-1c__info p {
+	padding-right: 30px;
+}

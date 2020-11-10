@@ -48,7 +48,7 @@
             <section class="main__container">
                 <article class="main-content">
                     <ul class="for-dev__links">
-                        <li class="for-dev__links--active"><a href="ko-developers-api.html">АРІ компанії</a></li>
+                        <li id="for-dev__links--active"><a href="ko-developers-api.html">АРІ компанії</a></li>
                         <li><a href="ko-developers-1c.html">Модуль доставки для 1С</a></li>
                         <li><a href="ko-developers-widget.html">Віджети</a></li>
                     </ul>
@@ -76,7 +76,6 @@
                     </div>
 
                     <div class="dev-info">
-                        <h2 class="for-dev__title">Переваги для франчайзі</h2>
                         <details>
                             <summary><h3 class="dev-info__title">Інформація для програмістів</h3></summary>
 
@@ -376,8 +375,125 @@
                         <details>
                             <summary><h3 class="dev-info__title">Перевірка</h3></summary>
                             <form class="test-form">
-                                2
+                                <div class="test-form__inner">
+                                    
+                                    <div class="test-form__line--radio">
+                                        <p class="test-form__raio-title">Метод запиту</p>
 
+                                        <div class="test-form__item test-form__item--radio">
+                                            <input name="request_type" type="radio" id="get_t" value="get_t" onclick="show_fields(1)" checked="">
+                                            <label for="get_t">Get</label>
+                                        </div>
+
+                                        <div class="test-form__item test-form__item--radio">
+                                            <input name="request_type" type="radio" id="post_t" value="post_t" onclick="show_fields(2)">
+                                            <label for="post_t">Post</label>
+                                        </div>
+                                    </div>
+                                    <!-- next line -->
+                                    <div class="test-form__line--radio">
+                                        <p class="test-form__raio-title">API-ключ</p>
+
+                                        <div class="test-form__item test-form__item--radio">
+                                            <input name="key_type" type="radio" id="no_key_t" onclick="show_api(0)" value="no_key_t" checked="">
+                                            <label for="no_key_t">ні</label>
+                                        </div>
+
+                                        <div class="test-form__item test-form__item--radio">
+                                            <input name="key_type" type="radio" id="yes_key_t" onclick="show_api(1)" value="yes_key_t">
+                                            <label for="yes_key_t">так</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- next line -->
+                                    <div class="test-form__line--radio" id="input_question">
+                                        <p class="test-form__raio-title">Вхідні параметри</p>
+                                        
+                                        <div class="test-form__item test-form__item--radio">
+                                            <input name="input_type" type="radio" id="no_input_t" onclick="show_input(0)" value="no_input_t" checked="">
+                                            <label for="no_input_t">ні</label>
+                                        </div>
+
+                                        <div class="test-form__item test-form__item--radio">
+                                            <input name="input_type" type="radio" id="yes_input_t" onclick="show_input(1)" value="yes_input_t">
+                                            <label for="yes_input_t">так</label>
+                                        </div>
+                                    </div>
+
+                                    <script type="text/javascript">
+                                        function show_fields(id) {
+                                            $('input:radio[name="input_type"]').filter('[value="no_input_t"]').prop('checked', true);
+
+                                            if (id == 1) {
+                                                $('#input_question').css('display', 'none');
+
+                                            } else if (id == 2) {
+                                                $('#input_question').css('display', 'flex');
+                                            }
+                                        }
+
+                                        function show_api(id) {
+                                            if (id == 1) {
+                                                $('#keys_block').css('display', 'flex');
+                                            } else {
+                                                $('#keys_block').css('display', 'none');
+                                            }
+                                        }
+
+                                        function show_input(id) {
+                                            if (id == 1) {
+                                                $('#input_question--json').css('display', 'flex');
+                                            } else {
+                                                $('#input_question--json').css('display', 'none');
+                                            }
+                                        }
+                                    </script>
+
+                                    <!-- next line -->
+                                    <div class="test-form__line" id="keys_block">
+                                        <div class="test-form__item">
+                                            <input class="test-form__input" name="Name" type="text" placeholder="Публічний ключ">
+                                        </div>
+                                        <div class="test-form__item">
+                                            <input class="test-form__input" name="Name" type="text" placeholder="Секретний ключ">
+                                        </div>
+                                    </div>
+
+                                    <!-- next line -->
+                                    <div class="test-form__line">
+                                        <div class="test-form__item">
+                                            <p>Адреса методу</p>
+                                        </div>
+                                        <div class="test-form__item">
+                                            <p class="test-form__method-link">https://www.delivery-auto.com/api/v4/Public/</p>
+                                            <input class="test-form__input test-form__input--method" name="Name" type="text" value="GetRegionList?culture=ru-RU">
+                                        </div>
+                                    </div>
+
+                                    <!-- next line -->
+                                    <div class="test-form__line" id="input_question--json">
+                                        <div class="test-form__item test-form__item--large">
+                                            <textarea class="test-form__textarea" placeholder="Вихідні параметри в форматі JSON"></textarea>
+                                        </div>
+                                    </div>
+                                    <button class="main-btn test-form__check-btn" onclick="send_router();">Перевірити</button>
+
+                                    <!-- next line -->
+                                    <div class="test-form__line">
+                                        <div class="test-form__item test-form__item--large">
+                                            <textarea class="test-form__textarea" placeholder="Вихідні параметри"></textarea>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="test-form__alert">Щось в перевірці пішло не так? Надіслати розробнику вхідні дані?</p>
+                                    <!-- next line -->
+                                    <div class="test-form__line">
+                                        <div class="test-form__item" id="test-form__item--top-space">
+                                            <input class="test-form__input" placeholder="Електронна пошта *" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"  name="Email" type="email" value="">
+                                            <button class="main-btn test-form__send-btn" onclick="send_wrong();">Надіслати</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </details>
 
@@ -393,13 +509,13 @@
                                         </div>
             
                                         <div class="ask-form__item">
-                                            <input class="ask-form__input" type="tel"  data-val-regex-pattern="^([0-9]{10})$" id="Phone" name="Phone" minlength="10" maxlength="10" placeholder="Номер телефону *">
+                                            <input class="ask-form__input" type="tel" data-val-regex-pattern="^([0-9]{10})$" id="Phone" name="Phone" minlength="10" maxlength="10" placeholder="Номер телефону *">
                                         </div>
                                     </div>
                                     <!-- next line -->
                                     <div class="ask-form__line">
                                         <div class="ask-form__item">
-                                            <input class="ask-form__input" placeholder="E-mail *" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" id="Email" name="Email" type="email" value="">
+                                            <input class="ask-form__input" placeholder="Електронна пошта *" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" id="Email" name="Email" type="email" value="">
                                         </div>
 
                                         <div class="franchising-form__item franchising-form__item--small">

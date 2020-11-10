@@ -1,119 +1,141 @@
-/* ======================================
-//     Стили для страницы Франчайзинг
-====================================== */
+/* ===================================================
+//    			 Стили для страницы Віджети
+===================================================== */
 
 /* Хедер страницы */
 .page-header {
 	background: #fff url("../img/system/page-header/page-header__for-developers.jpg") no-repeat;
 }
 
-.franchising__title {
+.for-dev__title {
     margin-bottom: 20px;
 }
 
-.franchising__text a {
-    color: #3072C4;
+.for-dev__description {
+    margin-bottom: 20px;
 }
 
-.franchising__text a:hover {
-    text-decoration-line: underline;
+.for-dev__description a {
+	color: #3072C4;
+}
+
+.for-dev__description a:hover {
+	text-decoration: underline;
+}
+
+.for-dev__links {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.for-dev__links li {
+	width: 283px;
+	height: 50px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	margin-right: 30px;
+}
+
+.for-dev__links li:hover {
+	background-color: #F0F5F9;
+}
+
+.for-dev__links li:last-child {
+	margin-right: 0;
+}
+
+.for-dev__links a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+}
+
+#for-dev__links--active {
+	border: 2px solid #FFD500;
+	background-color: transparent;
+}
+
+#for-dev__links--active a {
+	font-weight: bold;
+}
+
+/* widget info */
+.widget-info p {
+	max-width: 999px;
+	margin-bottom: 15px;
+}
+
+.widget-info li {
+	display: flex;
+}
+
+.widget-info li span {
+	color: #3072C4;
+	margin-right: 5px;
 }
 
 
-/* Аккардион */
-.franchising-info  {
-	max-width: 730px;
-	min-width: 630px;
+
+
+
+
+/* Слайдер Наград */
+
+.widget-example {
+	margin: 50px 0 35px 0;
+	/* width: 100%; */
 }
 
-.franchising-info details[open] summary ~ * {
-	animation: franchising-info -open 0.3s ease-in-out;
+.widget-example__grid {
+	margin: 35px 0;
+	width: 100%;
 }
 
-@keyframes franchising-info-open {
-	0% {
-		opacity: 0;
-    }
-	100% {
-		opacity: 1;
-	}
+.widget-example__small {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
-.franchising-info summary::-webkit-details-marker {
+.widget-example__line {
+	margin: 30px 0;
+	width: 100%;
+}
+
+#widget-example__show-more {
+	display: flex;
+	font-weight: 600;
+}
+
+#widget-example__show-more img {
+	margin-left: 8px;
+	width: 18px;
+}
+
+
+.widget-example__hidden {
+	display: block;
+}
+
+/* .widget-example__hidden img:last-child {
+	width: 453px;
+} */
+
+
+
+
+
+
+.widget-example__hidden {
 	display: none;
 }
 
-.franchising-info summary {
+.widget-example--show {
 	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 72px;
-	position: relative;
-	margin-bottom: 20px;
-	cursor: pointer;
-	list-style: none;
-	background-color: #F0F5F9;
-	border-radius: 5px;
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 20px;
-    color: #333333;
-    outline: 0;
+	flex-wrap: wrap;
 }
-
-.franchising-info summary:after {
-	content: " ";
-	position: absolute;
-	right: 20px;
-	width: 35px;
-	height: 35px;
-	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
-	border-radius: 50px;
-	transform-origin: center;
-    transition: 200ms linear;
-}
-
-.franchising-info details[open] summary:after {
-    transform: rotate(90deg);
-	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
-    transition: transform 0.5s linear;
-}
-
-/* Title */
-.franchising-info__title {
-    padding-left: 30px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 20px;
-}
-
-.franchising-info__list {
-    width: 940px;
-}
-
-.franchising-info__list li {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #333333;
-    margin-bottom: 12px;
-}
-
-.franchising-info__list li span {
-    color: #3072C4;
-}
-
-.franchising-info__list li a {
-    color: #3072C4;
-}
-
-.franchising-info__list li a:hover {
-    text-decoration: underline;
-}
-
-
-
-
-
-
-

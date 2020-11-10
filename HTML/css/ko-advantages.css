@@ -1,5 +1,5 @@
 /* ======================================================
-//   Стили для страницы Про групу компаній «DELIVERY»
+//   Стили для страницы Наші переваги
 ========================================================= */
 
 /* Хедер страницы */
@@ -11,7 +11,6 @@
 
 
 
-
 .home-kpi {
     padding: 40px 0 0 0;
 }
@@ -19,9 +18,11 @@
 .advantages {
     margin-bottom: 40px;
 }
+
 .advantages__item {
     display: flex;
-    margin-top: 30px;
+    align-items: center;
+    margin-top: 40px;
     margin-left: 20px;
 }
 
@@ -36,11 +37,32 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .advantages__info p {
     line-height: 21px;
+}
+
+.advantages__info p span {
+    margin-right: 5px;
+    color: #3072C4;
+}
+
+.advantages__info li {
+    margin: 8px 0;
+}
+
+.advantages__more-info {
+    margin-top: 20px;
+}
+
+.advantages__more-info a {
+    color: #3072C4;
+}
+
+.advantages__more-info a:hover {
+    text-decoration: underline;
 }
 
 

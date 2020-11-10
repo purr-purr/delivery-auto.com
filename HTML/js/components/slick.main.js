@@ -22,6 +22,13 @@ $(document).ready(function(){
         rows: 2,
         slidesToScroll: 1
     });
+
+    $('.widget-slider').slick({
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        slidesToShow: 2,
+        slidesToScroll: 1
+    });
 });
 
 
