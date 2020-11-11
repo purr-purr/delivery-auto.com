@@ -7,6 +7,10 @@
 	background: #fff url("../img/system/page-header/page-header__partners.jpg") no-repeat;
 }
 
+.partners {
+    display: flex;
+    width: 100%;
+}
 
 .partners__title {
     font-weight: 600;
@@ -15,102 +19,41 @@
     width: max-content;
 }
 
-
-.partners__area {
-    width: 100%;
-    height: 680px;
-    position: relative;
+.partners__main {
+    margin-left: 30px;
 }
 
-.area {
-	display: flex;
+/* Навигация по галузям */
+.nav-area__item {
     padding: 4px 0;
-    width: max-content;
 }
 
-.area__input {
-	display: none;
-}
-
-.area__label {
+.nav-area__item a {
 	display: block;
 	padding: 5px 20px;
 	cursor: pointer;
-	height: auto;
-	min-height: 35px;
+    height: 35px;
     width: 300px;
-    background: url("../img/system/icon/partners__arrow--grey.svg") no-repeat;
-    background-position: 96%;
+    background: url("../img/system/icon/partners__arrow--grey.svg") no-repeat 96%;
     border-bottom: 1px solid #DADADA;
     font-weight: normal;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 21px;
     color: #333333;
 }
 
-.area__input:checked + .area__label {
-    position: relative;
+.nav-area__item a:hover {
     color: #3072C4;
-    background: url("../img/system/icon/partners__arrow.svg") no-repeat;
-    background-position: 96%;
-}
-
-.area__answer {
-	display: none;
-	position: absolute;
-	top: 0;
-	left: 340px;
-	padding: 5px 10px;
-	height: 100%;
-	overflow-y: scroll;
-    -ms-overflow-style: none;
-    background-color: #fff;
+    background: url("../img/system/icon/partners__arrow.svg") no-repeat 96%;
 }
 
 
-
-
-
-.area__answer::-webkit-scrollbar {
-	width: 0;
+.nav-area__item a.nav-area__active {
+    color: #3072C4;
+    background: url("../img/system/icon/partners__arrow.svg") no-repeat 96%;
 }
 
-.area__answer .answer__text {
-	margin-bottom: 20px;
-}
-
-.area__answer .answer__text:last-child {
-	margin-bottom: 0;
-}
-
-.area__answer .answer__title {
-	font-weight: normal;
-	margin-bottom: 33px;
-}
-
-.area__input:nth-of-type(1) ~ .area__answer:nth-of-type(1) {
-	display: none;
-}
-
-.area__input:nth-of-type(1):checked ~ .area__answer:nth-of-type(1) {
-	display: block;
-}
-
-
-
-
-.partners__advantages {
-    display: block;
-	position: absolute;
-	top: 0;
-	left: 340px;
-    height: 100%;
-    overflow: hidden;
-    padding: 0;
-
-    width: 100%;
-    max-width: 910px;
-}
+/* Главный блок Преймущества партнеров */
 
 .partners__advantages h3 {
     font-weight: bold;
@@ -134,23 +77,21 @@
 
 .partners__offers h4 {
     min-width: 258px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
 }
 
 .partners__offers p {
     margin-bottom: 0;
+    max-width: 545px;
+    font-size: 15px;
+    line-height: 21px;
 }
 
-
-
-
-
-
-
-
-
-
+/* Как стать партнером */
 .become-partner {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .become-partner h2 {
@@ -180,26 +121,33 @@
     background-color: #fff;
     border: 1px solid #666666;
 }
+/* Конец Преймуществ партнеров */
 
 
 
 
 
 
+.partners__about-area {
+    margin-left: 30px;
+}
 
+.about-area__title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 22px;
+}
 
-
-
-
+/* Лидеры Галузи */
 .leaders {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 25px;
 }
 
 .leaders__item {
-    max-width: 283px;
-    width: 100%;
-    height: 180px;
+    width: 272px;
+    height: 170px;
     margin: 15px 0;
 	background-color: #fff;
     border: 1px solid transparent;
@@ -225,6 +173,10 @@
     align-items: center;
     height: 100%;
     transition: all .5s linear;
+}
+
+.leaders__logo img {
+    width: 100%;
 }
 
 .leaders__info {
@@ -283,13 +235,13 @@
 
 
 
-/* .leaders-small {
+.leaders--small {
     display: flex;
     flex-wrap: wrap;
 }
 
 .leaders__item--small {
-    max-width: 179px;
+    width: 179px;
     height: 114px;
 }
 
@@ -298,39 +250,25 @@
     margin-left: 18px;
 }
 
-.leaders__info h5 {
+.leaders__info--small h5 {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 5px;
 }
 
-.leaders__info p {
-    margin-bottom: 25px;
+.leaders__info--small p {
+    margin-bottom: 6px;
 }
 
-.leaders__info a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 89px;
-    height: 32px;
+.leaders__info--small a {
     font-size: 14px;
-    line-height: 20px;
-    border: 1px solid #d9d9d9;
 }
 
-.leaders-small__item:hover .leaders-small__info  {
-    height: 100%;
-    opacity: 1;
-    transition: all .5s linear;
+.leaders__info--small a:hover {
+    border: 1px solid #ffd500;
 }
 
-.leaders-small__item:hover .leaders-small__logo  {
-    height: 0;
-    opacity: 0;
-    transition: all .5s linear;
-}
 
-.leaders-small .leaders-small__info a:hover {
-	border: 1px solid #FFD500;
-	transition: all 0.5s ease-in;
-} */
+
+
+

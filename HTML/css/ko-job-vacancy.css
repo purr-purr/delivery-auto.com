@@ -19,23 +19,32 @@
 }
 
 .vacancy-info {
-    margin: 25px 0 50px 0;
+    margin-bottom: 50px;
 }
 
 .vacancy-info__title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 20px;
-    color: #3072C4;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
+    font-weight: bold;
+    font-size: 32px;
+    color: #333333;
 }
 
 .vacancy-info__date {
-    display: block;
-    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.vacancy-info__date img {
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+}
+
+.vacancy-info__date time {
+    font-weight: bold;
     font-size: 12px;
     line-height: 20px;
-    color: #808080;
+    color: #3072C4;
 }
 
 .vacancy-info__sub-title {

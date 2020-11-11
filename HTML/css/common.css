@@ -221,7 +221,7 @@ details > summary {
 
 .main__container {
 	display: flex;
-	max-width: 1210px;
+	max-width: 1232px;
 	margin: 0 auto;
 	padding: 0 5px;
 }
@@ -240,7 +240,7 @@ details > summary {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	max-width: 1210px;
+	max-width: 1232px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0 5px 90px 5px;
@@ -1431,8 +1431,8 @@ details > summary {
 
 /* Aside Banner Slider */
 .action-slider {
-	width: 362px;
-	height: 162px;
+	width: 300px;
+	height: 16px;
 	margin-top: 25px;
 	margin-bottom: 30px;
 }

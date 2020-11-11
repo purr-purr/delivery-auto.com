@@ -10,62 +10,56 @@
 /* =================================== */
 
 
-.main__container--about-group {
-    background: linear-gradient(108.82deg, #F8F8F8 22.34%, #F0F5F9 83.99%);
-    height: 490px;
-    margin: 50px 0;
-}
-
-.about-group__map {
-    background: url("../img/system/about-group/map.png") no-repeat center;
-    height: 100%;
-    flex-direction: column;
-}
-
-.map-line {
+.benefits {
     width: 100%;
     display: flex;
-}
-
-.map-line:first-child {
-    margin-top: 103px;
-    justify-content: space-between;
-}
-
-.map-line:last-child {
-    margin-top: 91px;
     justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-.map-line__item {
-    display: flex;
-    align-items: center;
-    width: 283px;
-    height: 90px;
-    background: rgba(231, 238, 246, 0.87);
-    border-radius: 5px;
-    transition: all .5s ease-in;
+
+.benefits__item {
+    width: 190px;
+    text-align: center;
+    position: relative;
 }
 
-.map-line__item:hover {
-    cursor: default;
-    background: linear-gradient(105.51deg, rgba(48, 114, 196, 0.6) 39.14%, rgba(129, 126, 129, 0.6) 98.33%);
-    transition: all .5s ease-in;
+.benefits__item::after {
+    content: " ";
+    position: absolute;
+    top: 24%;
+    right: -48px;
+    width: 50px;
+    height: 47px;
 }
 
-.map-line__item:hover p {
-    color: #fff;
+.benefits__item:nth-child(1)::after {
+    background: url("../img/system/about-group/delGroup_logo--arrow.png") no-repeat center center;
 }
 
-.map-line__item img {
+.benefits__item:nth-child(2)::after {
+    background: url("../img/system/about-group/deltruck--arrow.png") no-repeat center center;
+}
+
+.benefits__item:nth-child(3)::after {
+    background: url("../img/system/about-group/inter--arrow.png") no-repeat center center;
+}
+
+.benefits__item:nth-child(4)::after {
+    background: url("../img/system/about-group/kvorum--arrow.png") no-repeat center center;
+}
+
+.benefits__item img {
     margin: 0 21px;
 }
 
-.map-line__item p {
-    font-weight: 600;
+.benefits__item p {
+    font-weight: bold;
     font-size: 16px;
-    line-height: 21px;
-    color: #333333
+    line-height: 24px;
+    color: #333333;
+    margin-top: 22px;
 }
 
 .about-group__description {
@@ -180,26 +174,27 @@
     width: 17px;
 }
 
-.know-more--show {
-    display: block;
-}
 
 .about-group {
     margin-bottom: 45px;
 }
 
 .about-group__boss-card {
+    width: 100%;
     margin-top: 45px;
 }
 
 .boss-card {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .boss-card__item {
-    margin: 20px 30px 50px 0;
+    margin: 30px 0 50px 0;
     width: 283px;
     transition: all 0.3s ease-in;
+    text-align: center;
 }
 
 .boss-card__item:last-child {
@@ -207,15 +202,8 @@
 }
 
 .boss-card__item img {
-    width: 100%;
-    border: 1px solid transparent;
-    filter: grayscale(100%);
-}
-
-.boss-card__item:hover img {
-    border: 1px solid #ffd500;
-    filter: grayscale(0%);
-    transition: all 0.3s ease-in;
+    width: 130px;
+    height: 164px;
 }
 
 .boss-card__item img:hover ~ h3 {
@@ -227,12 +215,11 @@
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    padding-left: 32px;
-    padding-bottom: 15px;
+    padding-bottom: 11px;
+    margin-top: 20px;
     transition: all 0.3s ease-in;
 }
 
 .boss-card__item p {
     font-size: 15px;
-    padding-left: 32px;
 }
