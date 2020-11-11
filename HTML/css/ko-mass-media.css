@@ -87,7 +87,8 @@
     font-size: 16px;
     line-height: 20px;
     color: #808080;
-    padding-right: 25px;
+    margin-right: 25px;
+    min-width: 76px;
 }
 
 .acc-media__item a, .acc-media__item--second a {

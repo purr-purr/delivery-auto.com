@@ -43,10 +43,8 @@
 }
 
 .nav-area__item a:hover {
-    color: #3072C4;
-    background: url("../img/system/icon/partners__arrow.svg") no-repeat 96%;
+    color: #3072C4;;
 }
-
 
 .nav-area__item a.nav-area__active {
     color: #3072C4;
@@ -108,24 +106,12 @@
     display: flex;
 }
 
-.become-partner__btn {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.become-partner__btn:first-child {
-    margin-right: 30px;
-}
-
 .become-partner__btn--white {
+    margin-left: 30px;
     background-color: #fff;
     border: 1px solid #666666;
 }
 /* Конец Преймуществ партнеров */
-
-
-
-
 
 
 .partners__about-area {
@@ -152,7 +138,7 @@
 	background-color: #fff;
     border: 1px solid transparent;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.08);
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     overflow: hidden;
     margin-right: 30px;
 }
@@ -164,7 +150,7 @@
 .leaders__item:hover {
 	border: 1px solid #FFD500;
 	cursor: pointer;
-	transition: all 0.5s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .leaders__logo {
@@ -172,7 +158,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    transition: all .5s linear;
+    transition: all .3s linear;
 }
 
 .leaders__logo img {
@@ -188,7 +174,7 @@
     padding: 0 7px;
     height: 0;
     opacity: 0;
-    transition: all .5s linear;
+    transition: all .3s linear;
 }
 
 .leaders__info h5 {
@@ -229,11 +215,8 @@
 
 .leaders .leaders__info a:hover {
 	border: 1px solid #FFD500;
-	transition: all 0.5s ease-in;
+	transition: all 0.4s ease-in;
 }
-
-
-
 
 .leaders--small {
     display: flex;
@@ -244,7 +227,6 @@
     width: 179px;
     height: 114px;
 }
-
 
 .leaders__info--small {
     margin-left: 18px;
@@ -267,8 +249,3 @@
 .leaders__info--small a:hover {
     border: 1px solid #ffd500;
 }
-
-
-
-
-

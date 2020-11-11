@@ -154,13 +154,13 @@
     height: 32px;
 }
 
-.pagination__link:hover, .pagination__link:focus, .pagination__link:active {
+/* .pagination__link:focus, .pagination__link:active {
     background-color:#FFD500;
     border-color:#FFD500;
     color: #fff;
     text-decoration: none;
 }
 
-.pagination__link:hover svg path, .pagination__link:focus svg path, .pagination__link:active svg path {
+.pagination__link:focus svg path, .pagination__link:active svg path {
     fill: #fff;
-}
+} */

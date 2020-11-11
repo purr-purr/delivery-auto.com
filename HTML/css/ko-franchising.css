@@ -274,12 +274,9 @@
 .captcha-form__reload {
     width: 24px;
     height: 21px;
-    transition: transform .4s ease-in;
 }
 
 .captcha-form__reload:hover {
-    transform: rotate(-90deg);
-    transition: transform .4s ease-in;
     cursor: pointer;
 }
 

@@ -35,10 +35,6 @@ body {
 	padding: 0;
 }
 
-input:invalid {
-	border-color: #FF2727;
-}
-
 textarea, input, select {
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -102,6 +98,10 @@ input {
     line-height: 20px;
 }
 
+input:invalid {
+	border-color: #FF2727;
+}
+
 input::placeholder {
     color: #333333;
 }
@@ -135,7 +135,6 @@ textarea {
 	padding: 7px 20px;
 	background-color: transparent;
 	border: 1px solid #DADADA;
-	/* cursor: pointer; */
 	color: #333333;
     font-size: 16px;
     line-height: 20px;
@@ -143,6 +142,12 @@ textarea {
 
 textarea::placeholder {
 	color: #333333;
+}
+
+input:focus, input:active,
+select:focus, select:active,
+textarea:focus, textarea:active {
+	border: 1px solid #ffd500;
 }
 
 /* Убираем стандартный маркер Chrome */
@@ -312,12 +317,11 @@ details > summary {
 	justify-content: center;
 	width: 178px;
 	height: 50px;
-	font-size: 20px;
+	font-size: 16px;
 	color: #333;
 	background-color: #ffd500;
 	border: none;
 	border-radius: 5px;
-	padding-bottom: 3px;
 	cursor: pointer;
 	transition: background .6s ease;
 }
@@ -328,26 +332,6 @@ details > summary {
 	color: #fff;
 }
 
-/* .main-btn:after {
-	content: "";
-	background: #ffd500;
-	display: block;
-	position: absolute;
-	padding-top: 300%;
-	padding-left: 350%;
-	margin-left: -20px !important;
-	margin-top: -120%;
-	opacity: 0;
-	transition: all 0.8s;
-}
-
-.main-btn:active:after {
-	padding: 0;
-	margin: 0;
-	opacity: 1;
-	transition: 0s;
-} */
-
 .main-btn:focus {
 	outline: 0;
 }
@@ -355,7 +339,7 @@ details > summary {
 /* ======================================
 //             main-btn--link
 ====================================== */
-
+/* 
 .main-btn--link {
 	display: flex;
 	justify-content: center;
@@ -372,7 +356,7 @@ details > summary {
 	transition: all 0.3s ease-in;
 	border-color: #FFD500;
 	background-color: transparent;
-}
+} */
 
 
 /* ======================================
@@ -708,12 +692,12 @@ details > summary {
 }
 
 .footer-subs__input:focus {
-	border-color: #FFD500;
+	border: 2px solid #ffd500;
 }
 
 .footer-subs__input:focus ~ .footer-subs__btn {
 	background-color: #FFD500;
-	border-color: #FFD500;
+	border: 2px solid #ffd500;
 }
 
 .footer__links .links {
@@ -1184,6 +1168,12 @@ details > summary {
 	background-color: #fff;
 }
 
+.feedback__input:focus, .feedback__input:active,
+.feedback__select:focus, .feedback__select:active,
+.feedback__textarea:focus, .feedback__textarea:active {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
 .feedback__btn {
 	width: 138px;
 	height: 48px;
@@ -1432,7 +1422,7 @@ details > summary {
 /* Aside Banner Slider */
 .action-slider {
 	width: 300px;
-	height: 16px;
+	height: 160px;
 	margin-top: 25px;
 	margin-bottom: 30px;
 }
