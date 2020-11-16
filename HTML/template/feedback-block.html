@@ -6,33 +6,46 @@
 					Замовити дзвінок
 				</h3>
 				<form action="" class="feedback__form">
-					<label class="feedback__label">Ваше ім’я</label>
-					<input type="text" class="feedback__input" data-val="true" data-val-required="Потрібно поле Iм'я." name="Name">
+					<div class="feedback__group">
+						<div class="feedback__item">
+							<label class="feedback__label">Ваше ім’я</label>
+							<input type="text" class="feedback__input" data-val="true" data-val-required="Потрібно поле Iм'я." name="Name">
+						</div>
+						<div class="feedback__item">
+							<label class="feedback__label">Номер на який ми зателефонуємо</label>
+							<input class="feedback__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel">
+						</div>
+					</div>
 
-					<label class="feedback__label">Номер на який ми зателефонуємо</label>
-					<input class="feedback__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel">
+					
+					<div class="feedback__item">
+						<label class="feedback__label">Тема питання</label>
+						<select class="feedback__select">
+							<img class="select-icon" src="img/system/icon/faq__arrow-down.svg" alt="">
+							<option value="0" disabled selected style="display:none">Оберіть</option>
+							<option value="1">Оформити заявку на адресний забір/доставку вантажів</option>
+							<option value="2">Отримати інформацію по квитанції</option>
+							<option value="3">Отримати інформацію по послугах компанії</option>
+							<option value="4">Розрахунок вартості</option>
+							<option value="5">Міжнароднi перевезення</option>
+							<option value="6">Внести зміни в квитанцію, переадресація вантажу</option>
+							<option value="7">Запит рахунку, калькуляції</option>
+							<option value="8">Питання втрати, пошкодження вантажу</option>
+							<option value="9">Замовити комерційну пропозицію</option>
+							<option value="10">Укласти договір про співпрацю</option>
+							<option value="11">Особистий кабінет</option>
+							<option value="12">Зміни з логістики</option>
+							<option value="13">Інша тема</option>
+						</select>
+					</div>
+				
 
-					<label class="feedback__label">Тема питання</label>
-					<select class="feedback__select">
-						<img class="select-icon" src="img/system/icon/faq__arrow-down.svg" alt="">
-						<option value="0" disabled selected style="display:none">Оберіть</option>
-						<option value="1">Оформити заявку на адресний забір/доставку вантажів</option>
-						<option value="2">Отримати інформацію по квитанції</option>
-						<option value="3">Отримати інформацію по послугах компанії</option>
-						<option value="4">Розрахунок вартості</option>
-						<option value="5">Міжнароднi перевезення</option>
-						<option value="6">Внести зміни в квитанцію, переадресація вантажу</option>
-						<option value="7">Запит рахунку, калькуляції</option>
-						<option value="8">Питання втрати, пошкодження вантажу</option>
-						<option value="9">Замовити комерційну пропозицію</option>
-						<option value="10">Укласти договір про співпрацю</option>
-						<option value="11">Особистий кабінет</option>
-						<option value="12">Зміни з логістики</option>
-						<option value="13">Інша тема</option>
-					</select>
-
-					<label class="feedback__label">Повідомлення</label>
-					<textarea class="feedback__textarea" cols="30" rows="10"></textarea>
+				
+					<div class="feedback__item">
+						<label class="feedback__label">Повідомлення</label>
+						<textarea class="feedback__textarea" cols="30" rows="10"></textarea>
+					</div>
+					
 
 					<button class="feedback__btn" onclick='throw_message_order_approve(" "); return false;'>Надіслати</button>
 				</form>
