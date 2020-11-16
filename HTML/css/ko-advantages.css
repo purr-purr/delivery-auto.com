@@ -83,18 +83,19 @@
 
 .awards-slider .slick-prev, .awards-slider .slick-next {
 	width: 48px;
-	height: 48px;
-	top: 50%;
+    height: 48px;
+    top: 50%;
 	background: #fff url("../img/system/icon/h-slider__arrow.svg") no-repeat center center;
 }
 
 .awards-slider .slick-prev {
+    top: 46%;
 	left: -88px;
 	transform: rotate(180deg);
 }
 
 .awards-slider .slick-next {
-	right: -68px;
+	right: -88px;
 }
 
 .awards-slider .slick-prev:hover, .awards-slider .slick-prev:focus, .awards-slider .slick-next:hover, .awards-slider .slick-next:focus {

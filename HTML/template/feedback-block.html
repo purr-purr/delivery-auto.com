@@ -6,13 +6,13 @@
 					Замовити дзвінок
 				</h3>
 				<form action="" class="feedback__form">
-					<label for="" class="feedback__label">Ваше ім’я</label>
-					<input type="text" class="feedback__input">
+					<label class="feedback__label">Ваше ім’я</label>
+					<input type="text" class="feedback__input" data-val="true" data-val-required="Потрібно поле Iм'я." name="Name">
 
-					<label for="" class="feedback__label">Номер на який ми зателефонуємо</label>
-					<input type="text" class="feedback__input">
+					<label class="feedback__label">Номер на який ми зателефонуємо</label>
+					<input class="feedback__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel">
 
-					<label for="" class="feedback__label">Тема питання</label>
+					<label class="feedback__label">Тема питання</label>
 					<select class="feedback__select">
 						<img class="select-icon" src="img/system/icon/faq__arrow-down.svg" alt="">
 						<option value="0" disabled selected style="display:none">Оберіть</option>
@@ -28,12 +28,13 @@
 						<option value="10">Укласти договір про співпрацю</option>
 						<option value="11">Особистий кабінет</option>
 						<option value="12">Зміни з логістики</option>
+						<option value="13">Інша тема</option>
 					</select>
 
-					<label for="" class="feedback__label">Повідомлення</label>
+					<label class="feedback__label">Повідомлення</label>
 					<textarea class="feedback__textarea" cols="30" rows="10"></textarea>
 
-					<button class="feedback__btn">Надіслати</button>
+					<button class="feedback__btn" onclick='throw_message_order_approve(" "); return false;'>Надіслати</button>
 				</form>
 			</aside>
 
@@ -158,5 +159,31 @@
 				<a href="in-dev.html" class="faq-block__ask-btn">Задати питання <img src="img/system/icon/arrow.svg" alt="arrow"></a>
 			</div>
 		</div>
+
+
+		<!-- POP UP Order Approve-->
+		<div id="order_approve" class='notice__box'>
+			<div class='box_text'>
+				<div>
+					<h5>Ваша заявка успішно <br> відправлена!</h5>
+					<p>Наш менеджер зв’яжеться <br>з вами найближчим часом.</p>
+				</div>
+				<img src="img/system/icon/notify__approve.svg" alt="Done">
+			</div>
+		</div>
+		<!-- \POP UP -->
+		
+		<!-- POP UP Order Error-->
+		<div id="order_error" class='notice__box notice__box--error'>
+			<div class='box_text'>
+				<div>
+					<h5>Ваша заявка не <br> відправлена</h5>
+					<p>Повторіть вашу спробу <br>ще раз.</p>
+				</div>
+				<img src="img/system/icon/notify__error.svg" alt="Error">
+			</div>
+		</div>
+		<!-- \POP UP -->
+		<script src="js/components/popup.js" type="text/javascript"></script>
 	</div>
 <!-- </section> -->

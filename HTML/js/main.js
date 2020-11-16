@@ -10,5 +10,6 @@ $(function(){
     $("#included__aside-search").load("template/aside-search.html");
     $("#included__aside-news").load("template/aside-news.html");
     $("#included__aside-action").load("template/aside-action.html");
+    // Notification
+    $("#included__notification").load("template/notification.html");
 });
-

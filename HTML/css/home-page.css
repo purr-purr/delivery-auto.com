@@ -797,7 +797,7 @@
 	height: 320px;
 	margin-bottom: 30px;
 	cursor: pointer;
-	transition: all 0.2s ease-out;
+	transition: all 0.3s ease-out;
 }
 
 .partners-slider .partners-slider__item:hover .partners-slider__info p {
