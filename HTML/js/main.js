@@ -12,4 +12,6 @@ $(function(){
     $("#included__aside-action").load("template/aside-action.html");
     // Notification
     $("#included__notification").load("template/notification.html");
+    // Mobile App
+    $("#included__mob-app").load("template/mob-app.html");
 });

@@ -1,0 +1,53 @@
+/* ======================================================
+//   Стили для страницы Мобільний додаток Delivery-Auto
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__mob-app.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.mob-app__title {
+    margin-bottom: 25px;
+}
+
+.mob-app__title__desc {
+    margin-bottom: 20px;
+}
+
+.mob-app__intro {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.mob-app__intro img{
+    width: 179px;
+    height: 179px;
+    margin-right: 30px;
+}
+
+.about-app {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about-app__col h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.about-app__col li {
+    display: flex;
+    max-width: 384px;
+    margin-bottom: 18px;
+}
+
+.about-app__col li span {
+    color: #3072C4;
+    margin-right: 5px;
+}
