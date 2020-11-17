@@ -50,9 +50,7 @@
     height: max-content;
 }
 
-
 /* Таблица складов */
-
 .storage-table {
     border-collapse: collapse;
     margin-top: 30px;
@@ -94,7 +92,6 @@
     border-right: 1px solid #999999;
     border-left: 1px solid #999999;
 }
-
 
 /* Безпечна угода  */
 .how-work {
@@ -152,20 +149,18 @@
 
 /* Ответы на вопросы */
 
-
-
 /* Аккардион */
-.acc-media {
+.acc-questions {
 	max-width: 730px;
     min-width: 630px;
     margin-top: 25px;
 }
 
-.acc-media details[open] summary ~ * {
-	animation: acc-media-open 0.3s ease-in-out;
+.acc-questions details[open] summary ~ * {
+	animation: acc-questions-open 0.3s ease-in-out;
 }
 
-@keyframes acc-media-open {
+@keyframes acc-questions-open {
 	0% {
 		opacity: 0;
     }
@@ -174,11 +169,11 @@
 	}
 }
 
-.acc-media summary::-webkit-details-marker {
+.acc-questions summary::-webkit-details-marker {
 	display: none;
 }
 
-.acc-media summary {
+.acc-questions summary {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -196,7 +191,7 @@
     outline: 0;
 }
 
-.acc-media summary:after {
+.acc-questions summary:after {
 	content: " ";
 	position: absolute;
 	right: 20px;
@@ -208,25 +203,25 @@
     transition: 200ms linear;
 }
 
-.acc-media details[open] summary:after {
+.acc-questions details[open] summary:after {
     transform: rotate(90deg);
 	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
     transition: transform 0.5s linear;
 }
 
 /* Title */
-.acc-media__title {
+.acc-questions__title {
     padding-left: 30px;
     font-weight: 600;
     font-size: 24px;
     line-height: 20px;
 }
 
-.acc-media__info {
+.acc-questions__info {
     padding-bottom: 10px;
     width: 1080px;
 }
 
-.acc-media__info p {
+.acc-questions__info p {
     padding-bottom: 18px;
 }
