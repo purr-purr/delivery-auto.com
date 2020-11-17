@@ -1,0 +1,232 @@
+/* ======================================================
+//   Стили для страницы     Фінансові послуги
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__finance-services.jpg") no-repeat;
+}
+/* =================================== */
+
+.finance__banner {
+    width: 100%;
+    height: 250px;
+}
+
+.intro-block {
+    margin: 30px 0 40px 0;
+    max-width: 1040px;
+}
+
+.intro-block p {
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.desc-service {
+    margin-top: 20px;
+}
+
+.desc-service p {
+    margin-bottom: 20px;
+}
+
+.desc-service a {
+    color: #3072C4;
+}
+
+.desc-service a:hover {
+    text-decoration: underline;
+}
+
+.desc-service li {
+    display: flex;
+}
+
+.desc-service li span {
+    margin-right: 7px;
+    color: #3072C4;
+    font-size: 19px;
+    height: max-content;
+}
+
+
+/* Таблица складов */
+
+.storage-table {
+    border-collapse: collapse;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.storage-table tbody {
+    display: block;
+    height: 360px;
+    width: max-content;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.storage-table tbody::-webkit-scrollbar { width: 3px; height: 3px;}
+.storage-table tbody::-webkit-scrollbar-button { height: 0; }
+.storage-table tbody::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
+.storage-table tbody::-webkit-scrollbar-track-piece { background-color: #DADADA;}
+
+.storage-table tr {
+    display: block;
+    width: 940px;
+}
+.storage-table tr:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+.storage-table td {
+    display: inline-flex;
+    align-items: center;
+    width: 33%;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.storage-table td:nth-child(2) {
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+
+/* Безпечна угода  */
+.how-work {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.how-work__item {
+    width: 190px;
+    text-align: center;
+    position: relative;
+}
+
+.how-work__item::after {
+    content: " ";
+    position: absolute;
+    top: 24%;
+    right: -48px;
+    width: 50px;
+    height: 47px;
+}
+
+.how-work__item:nth-child(1)::after {
+    background: url("../img/system/delivery-group__logos/delGroup_logo--arrow.png") no-repeat center center;
+}
+
+.how-work__item:nth-child(2)::after {
+    background: url("../img/system/delivery-group__logos/deltruck--arrow.png") no-repeat center center;
+}
+
+.how-work__item:nth-child(3)::after {
+    background: url("../img/system/delivery-group__logos/inter--arrow.png") no-repeat center center;
+}
+
+.how-work__item:nth-child(4)::after {
+    background: url("../img/system/delivery-group__logos/kvorum--arrow.png") no-repeat center center;
+}
+
+.how-work__item img {
+    margin: 0 21px;
+}
+
+.how-work__item p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.finance-btn {
+    margin: 30px 0 45px 0;
+}
+
+
+/* Ответы на вопросы */
+
+
+
+/* Аккардион */
+.acc-media {
+	max-width: 730px;
+    min-width: 630px;
+    margin-top: 25px;
+}
+
+.acc-media details[open] summary ~ * {
+	animation: acc-media-open 0.3s ease-in-out;
+}
+
+@keyframes acc-media-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.acc-media summary::-webkit-details-marker {
+	display: none;
+}
+
+.acc-media summary {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 72px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+    color: #333333;
+    outline: 0;
+}
+
+.acc-media summary:after {
+	content: " ";
+	position: absolute;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: 200ms linear;
+}
+
+.acc-media details[open] summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform 0.5s linear;
+}
+
+/* Title */
+.acc-media__title {
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.acc-media__info {
+    padding-bottom: 10px;
+    width: 1080px;
+}
+
+.acc-media__info p {
+    padding-bottom: 18px;
+}

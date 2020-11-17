@@ -35,19 +35,19 @@
 }
 
 .benefits__item:nth-child(1)::after {
-    background: url("../img/system/about-group/delGroup_logo--arrow.png") no-repeat center center;
+    background: url("../img/system/delivery-group__logos/delGroup_logo--arrow.png") no-repeat center center;
 }
 
 .benefits__item:nth-child(2)::after {
-    background: url("../img/system/about-group/deltruck--arrow.png") no-repeat center center;
+    background: url("../img/system/delivery-group__logos/deltruck--arrow.png") no-repeat center center;
 }
 
 .benefits__item:nth-child(3)::after {
-    background: url("../img/system/about-group/inter--arrow.png") no-repeat center center;
+    background: url("../img/system/delivery-group__logos/inter--arrow.png") no-repeat center center;
 }
 
 .benefits__item:nth-child(4)::after {
-    background: url("../img/system/about-group/kvorum--arrow.png") no-repeat center center;
+    background: url("../img/system/delivery-group__logos/kvorum--arrow.png") no-repeat center center;
 }
 
 .benefits__item img {

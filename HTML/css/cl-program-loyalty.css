@@ -1,0 +1,296 @@
+/* ======================================================
+//   Стили для страницы Програма лояльності
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__loyalty.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.benefits-program {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.benefits-program__item {
+    width: 190px;
+    text-align: center;
+    position: relative;
+}
+
+.benefits-program__item::after {
+    content: " ";
+    position: absolute;
+    top: 24%;
+    right: -48px;
+    width: 50px;
+    height: 47px;
+}
+
+.benefits-program__item:nth-child(1)::after {
+    background: url("../img/system/delivery-group__logos/delGroup_logo--arrow.png") no-repeat center center;
+}
+
+.benefits-program__item:nth-child(2)::after {
+    background: url("../img/system/delivery-group__logos/deltruck--arrow.png") no-repeat center center;
+}
+
+.benefits-program__item:nth-child(3)::after {
+    background: url("../img/system/delivery-group__logos/inter--arrow.png") no-repeat center center;
+}
+
+.benefits-program__item:nth-child(4)::after {
+    background: url("../img/system/delivery-group__logos/kvorum--arrow.png") no-repeat center center;
+}
+
+.benefits-program__item img {
+    margin: 0 21px;
+}
+
+.benefits-program__item p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+/* Описание программы  */
+.about-program p {
+    max-width: 1043px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.about-program .main-btn {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.bonus__title {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.bonus__title span {
+    font-weight: 900;
+    font-size: 60px;
+    color: #3072C4;
+    opacity: 0.1;
+    letter-spacing: -4px;
+    margin-right: -7px;
+}
+
+.bonus__group-logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.bonus__group-logos img {
+    max-width: 283px;
+    width: 100%;
+    height: 92px;
+}
+
+/* Таблица */
+.bonus-table {
+    margin-top: 30px;
+}
+
+.bonus-table__inner {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.bonus-table__inner:last-child {
+    margin-bottom: 0;
+}
+
+.bonus-table__company {
+    margin-right: 36px;
+}
+
+.bonus-table__company img {
+    max-width: 178px;
+    width: 100%;
+    height: 58px;
+}
+
+.bonus-table__category {
+    display: flex;
+    align-items: center;
+    margin-right: 36px;
+    max-width: 178px;
+    width: 100%;
+}
+
+.bonus-table__category img {
+    width: 35px;
+    height: 35px;
+    margin-right: 30px;
+}
+
+.bonus-table__point {
+    max-width: 870px;
+    width: 100%;
+}
+
+.bonus-table__point li {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.bonus-table__point li p:first-child {
+    min-width: max-content;
+}
+
+.bonus-table__point li span {
+    width: 100%;
+}
+
+.bonus-table__point--dots li span {
+    border-bottom: 1px dotted black;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.bonus-table__point li p:last-child {
+    min-width: 250px;
+}
+
+.more-point__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.more-point__btn img {
+    margin-left: 8px;
+    margin-top: 3px;
+    width: 18px;
+    transition: all .3s ease-in;
+}
+
+.bonus-table--hide-block {
+    display: none;
+}
+
+.bonus-table--show-block {
+    display: block;
+    
+}
+
+.more-point__btn--hover  {
+    color: #3072C4;
+}
+
+.more-point__btn--hover img {
+    transform: rotate(90deg);
+    transition: all .3s ease-in;
+}
+
+/* Обмен балов */
+.exchange {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 45px;
+}
+
+.exchange__info  {
+    margin-top: 10px;
+    margin-left: 30px;
+    max-width: 730px;
+}
+
+.exchange__info p {
+    margin-bottom: 20px;
+}
+
+.exchange__info p:first-child {
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffd500;
+}
+
+/* Додаткові переваги */
+.add-benefits {
+    margin-top: 45px;
+}
+
+.add-benefits__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 50px 0;
+}
+
+.add-benefis__item {
+    margin-right: 35px;
+}
+
+.add-benefis__item:last-child {
+    margin-right: 0;
+}
+
+.add-benefis__item p {
+    line-height: 24px;
+    max-width: 388px;
+}
+
+.add-benefis__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-benefis__heading p {
+    font-weight: bold;
+    max-width: 205px;
+}
+
+.add-benefis__heading img {
+    width: 50px;
+    height: 50px;
+    margin-right: 40px;
+}
+
+.program-support {
+    margin: 30px 0 20px 0;
+}
+
+.program-support__btn-group {
+    display: flex;
+    margin-top: 30px;
+}
+
+.program-support__btn-group .main-btn:last-child {
+    margin-left: 30px;
+}
+
+.program-support__btn {
+    width: 236px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    border: 1px solid #333333;
+    background-color: #fff;
+}
+
+.program-support__btn:hover {
+    background-color: #F0F5F9;
+    color: #333333;
+}
+.program-support__btn img{
+    margin-right: 10px;
+}

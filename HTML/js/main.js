@@ -15,3 +15,19 @@ $(function(){
     // Mobile App
     $("#included__mob-app").load("template/mob-app.html");
 });
+// ---------------------------------------------------------------------------
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------
+// Только для cl-program-layalty.html
+// Добавление и удаление расширеного списка баллов
+$('.more-point__btn').on('click', function(event){
+    $(this).toggleClass('more-point__btn--hover');
+    $('.bonus-table--hide-block ').toggleClass('bonus-table--show-block');
+});
+// ---------------------------------------------------------------------------
