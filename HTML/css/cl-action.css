@@ -1,0 +1,51 @@
+/* ======================================================
+//   Стили для страницы         Акції
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__action.jpg") no-repeat;
+}
+/* =================================== */
+
+.action__item {
+    margin-bottom: 100px;
+}
+
+.action__item:last-child {
+    margin-bottom: 0;
+}
+
+.action__img {
+    width: 100%;
+    height: auto;
+}
+
+.action__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+}
+
+.action__timing {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.action__timing img {
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.action__timing p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFD500;
+}
+
+.action__btn {
+    margin-top: 30px;
+    width: 190px;
+}
