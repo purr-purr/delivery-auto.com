@@ -19,11 +19,11 @@
 .com-offers__item--second a {
     font-size: 16px;
     line-height: 20px;
-    color: #3072C4;
 }
 
 .com-offers__item--second a:hover {
     text-decoration-line: underline;
+    color: #3072C4;
 }
 
 .com-offers__item--second .com-offers__link:hover ~ .com-offers__doc  {
