@@ -1,0 +1,18 @@
+/* ======================================================
+//   Стили для страницы        Тарміни доставки
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__delivery-time.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.hot-flights__title {
+    margin-bottom: 20px;
+}
+
+.hot-flights__desc {
+    margin-bottom: 20px;
+}
