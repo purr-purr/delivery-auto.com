@@ -9,6 +9,246 @@
 
 /* =================================== */
 
-.hot-flights__title {
+.services__main-title{
     margin-bottom: 20px;
+    margin-top: 50px;
+}
+.services__main-title:first-child {
+    margin-top: 0;
+}
+
+/* Аккардион */
+.services {
+	max-width: 730px;
+    min-width: 630px;
+}
+
+.services details[open] summary ~ * {
+	animation: services-open 0.3s ease-in-out;
+}
+
+@keyframes services-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.services summary::-webkit-details-marker {
+	display: none;
+}
+
+.services summary, .services__link {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 72px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+    color: #333333;
+    outline: 0;
+}
+
+.services summary:after, .services__link:after {
+	content: " ";
+	position: absolute;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: 200ms linear;
+}
+
+.services details[open] summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform 0.5s linear;
+}
+
+.services details[open] .services__title-img  {
+    width: 0;
+    transition: all 2s linear;
+}
+
+/* Title */
+.services__title-img {
+    padding-left: 20px;
+}
+
+.services__title {
+    padding-left: 25px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.services__info {
+    display: flex;
+    padding-bottom: 20px;
+    width: 1010px;
+}
+
+.services__info--col {
+    flex-direction: column;
+}
+
+.services__img {
+    width: 62px;
+    height: 62px;
+    margin-right: 35px;
+}
+
+.services__list li {
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.services__list li span {
+    margin-right: 7px;
+    color: #3072C4;
+}
+
+.services__info p {
+    margin-bottom: 20px;
+}
+
+.services__info strong {
+    font-weight: bold;
+}
+
+.services__info a {
+    color: #3072C4;
+}
+
+.services__info a:hover {
+    text-decoration: underline;
+}
+
+.info__inner {
+    display: flex;
+}
+
+
+/* Таблица */
+.client-group {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.client-group thead {
+    background-color: #FFD500;
+}
+
+.client-group thead tr {
+    height: 62px;
+}
+
+.client-group thead tr:first-child {
+    height: 86px;
+    border-bottom: 1px solid #999999;
+}
+
+.client-group thead th {
+    width: 140px;
+    border-right: 1px solid #999999;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.client-group thead th:first-child {
+    width: 345px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.client-group tbody tr:nth-child(even) {
+    background-color: #F8F8F8;
+}
+
+.client-group td {
+    padding: 15px 10px 15px 30px;
+    border-right: 1px solid #999999;
+    color: #333;
+    line-height: 21px;
+}
+
+.client-group thead th:last-child,
+.client-group td:last-child {
+    border-right: none;
+}
+
+.client-group__yes, .client-group__no {
+    position: relative;
+}
+
+.client-group__yes:after, .client-group__no:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 2%;
+    width: 100%;
+    height: 100%;
+    background: url("../img/system/icon/green-approve.svg") no-repeat center;
+    background-size: 35px 35px;
+}
+
+.client-group__no:after {
+    background: url("../img/system/icon/red-error.svg") no-repeat center;
+}
+
+/* Форма */
+.services-form {
+    margin: 20px 0 45px 0;
+    width: 805px;
+}
+
+.services-form__title {
+    margin-bottom: 30px;
+}
+
+.services-form__description {
+    margin-bottom: 20px;
+}
+
+.services-form__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.services-form__input--small, .services-form__item--small {
+    width: 258px;
+}
+
+.services-form__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-form__required-input {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.services-form__required-input span {
+    color: #333;
+}
+
+.services-form__btn {
+    margin-top: 35px;
 }
