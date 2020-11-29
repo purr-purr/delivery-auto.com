@@ -1,0 +1,51 @@
+.pager{ margin: 20px 0; }
+.pager div.short{ display: none; }
+.pager ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    margin-right: 4px;
+    margin-left: 4px;
+    display: inline-block;
+    width: auto !important;
+}
+.pager ul li{
+    display: inline-block;
+    margin-left: 2px;
+}
+.pager ul li a{
+    float: left;
+    padding: 4px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    background-color: #f6f6f6;
+    border-left-width: 0;
+    color: #969696;
+}
+.pager ul li a:hover { 
+    background-color: #fdcc09;
+    color: #000; 
+}
+.green { color: #969696; }
+.green.normal{
+    background-color: #f6f6f6;
+}
+.green.active{
+    background-color: #fdcc09;
+    color: #000;
+}
+
+.pager .btn{
+    padding: 4px 11px 4px 10px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    background-color: #f6f6f6;
+    color: #969696;
+    font-size: 11px;
+}
+.pager.green .btn:hover{
+    background-color: #fdcc09;
+    color: #000;
+}

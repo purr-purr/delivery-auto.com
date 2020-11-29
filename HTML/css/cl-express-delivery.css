@@ -1,0 +1,567 @@
+/* ======================================================
+//   Стили для страницы        Експрес-доставка
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__express-delivery.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.express__title {
+    margin-bottom: 20px;
+}
+
+.express__desc {
+    margin-bottom: 20px;
+}
+
+.express__scheme {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.express__scheme ul {
+    margin-right: 85px;
+}
+
+.express__scheme li {
+    margin-bottom: 20px;
+}
+
+.express__scheme li:last-child {
+    margin-bottom: 0;
+}
+
+.express__scheme li span {
+    color: #FF2727;
+}
+
+/* Время работы */
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    background: url("../img/system/express-delivery/time-main.png") no-repeat top, url("../img/system/express-delivery/blue-bg.png") no-repeat top;
+    transition: background .4s ease-in;
+}
+
+.schedule__item {
+    width: 50%;
+    height: 159px;
+    padding-left: 105px;
+}
+
+.schedule__item:nth-child(even) {
+    padding-left: 322px;
+}
+
+.schedule__item p:first-child {
+    font-weight: bold;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.schedule__item:nth-child(3) p, .schedule__item:nth-child(4) p {
+    margin-top: 20px;
+}
+
+.schedule__item:hover p:first-child {
+    color: #FF2727;
+}
+
+.schedule__time09 {
+    background: url("../img/system/express-delivery/time-main-09.png") no-repeat top, url("../img/system/express-delivery/blue-bg.png") no-repeat top;
+    transition: background .4s ease-in;
+}
+
+.schedule__time12 {
+    background: url("../img/system/express-delivery/time-main-12.png") no-repeat top, url("../img/system/express-delivery/blue-bg.png") no-repeat top;
+    transition: background .4s ease-in;
+}
+
+.schedule__time15 {
+    background: url("../img/system/express-delivery/time-main-15.png") no-repeat top, url("../img/system/express-delivery/blue-bg.png") no-repeat top;
+    transition: background .4s ease-in;
+}
+
+.schedule__time18 {
+    background: url("../img/system/express-delivery/time-main-18.png") no-repeat top, url("../img/system/express-delivery/blue-bg.png") no-repeat top;
+    transition: background .4s ease-in;
+}
+
+/* "Кому буде вигідно" блок */
+.express__profit {
+    margin: 50px 0 40px 0;
+}
+
+.profit__inner {
+    display: flex;
+}
+
+.profit__ul {
+    width: 50%;
+    padding-left: 105px;
+    position: relative;
+}
+
+.profit__ul::before {
+    content: "B2C";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-weight: bold;
+    font-size: 200px;
+    color: #3072C4;
+    opacity: 0.1;
+}
+.profit__ul:last-child::before {
+    content: "B2B";
+}
+
+.profit__ul li {
+    margin-bottom: 22px;
+    color: #333333;
+}
+
+.profit__desc {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+
+/* Шаги */
+.steps {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.steps__inner {
+    margin-bottom: 50px;
+}
+
+.steps__inner .main-btn {
+    margin: 0 auto;
+}
+
+.steps__list {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps__item {
+    width: 283px;
+    height: 290px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 1px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-top: 25px;
+}
+
+.steps__img {
+    margin-bottom: 10px;
+}
+
+.steps__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #333333;
+    margin-bottom: 18px;
+}
+
+.steps__desc {
+    max-width: 226px;
+    margin: 0 auto;
+}
+
+.condition__info li {
+    margin-bottom: 18px;
+}
+
+/* Таблица Условия работы */
+
+.condition {
+    margin: 50px 0;
+}
+
+.table-cond {
+    border-collapse: collapse;
+    width: 1013px;
+    text-align: center;
+    margin: 30px 0 35px 0;
+}
+
+.table-cond thead tr {
+    background-color: #FFD500;
+    height: 60px;
+}
+
+.table-cond thead tr th {
+    border-right: 1px solid #999999;
+}
+
+.table-cond thead tr th:last-child {
+    border-right: none;
+}
+
+.table-cond tbody {
+    border-bottom: 1px solid #999999;
+}
+
+.table-cond tbody tr {
+    height: 40px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.table-cond tbody tr:nth-child(even) {
+    background-color: #F8F8F8;
+}
+
+.table-cond tbody td {
+    border-right: 1px solid #999999;
+}
+
+.table-cond tbody td:last-child {
+    border-right: none;
+}
+
+
+
+
+
+/* Форма */
+
+.del-order__form {
+    margin: 50px 0 60px 0;
+    width: 805px;
+}
+
+.del-order__title {
+    margin-bottom: 30px;
+}
+
+.del-order__description {
+    margin-bottom: 20px;
+}
+
+.del-order__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.del-order__input--small, .del-order__item--small {
+    width: 258px;
+}
+
+.del-order__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.del-order__required-input {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.del-order__required-input span {
+    color: #333;
+}
+
+.del-order__btn {
+    margin-top: 35px;
+}
+
+input[type="radio"] {
+    height: auto;
+    margin-top: 2px;
+}
+
+
+.del-order__type-order {
+    display: flex;
+}
+
+.del-order__type-order div {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.del-order__type-order input {
+    margin-left: 15px;
+}
+
+#dateSend {
+    width: 154px;
+    margin-left: 17px;
+}
+
+#timeSend {
+    width: 105px;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+#timeSendTo {
+    width: 105px;
+    margin-left: 17px;
+}
+
+
+.del-order__parcel-btn {
+    margin-top: 30px;
+    color: #333333;
+    border: 1px solid #333333;
+    background-color: transparent;
+}
+
+.del-order__parcel-btn:hover {
+    background-color: #F0F5F9;
+    color: #333333;
+}
+
+.del-order__parcel-btn img{
+    margin-right: 10px;
+}
+
+.del-order__footer {
+    display: flex;
+}
+
+.total_cost {
+    margin-left: 135px;
+    margin-top: 30px;
+}
+
+.total_cost__text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+.total_cost__value {
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffd500;
+    line-height: 32px;
+}
+
+.total_cost__result {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+
+.add-parcel {
+    display: none;
+    position: relative;
+    width: 1013px;
+    border: 1px solid #FFD500;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.add-parcel__form {
+    width: 805px;
+}
+
+.add-parcel__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.add-parcel__delete {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.add-parcel--show-block {
+    display: block;
+}
+
+.add-parcel--hide-block {
+    display: none;
+}
+
+
+.del-order__line--short {
+    justify-content: flex-start;
+}
+.del-order__line--short .del-order__item:last-child {
+    margin-left: 100px;
+}
+
+#dateReceive, #timeReceive {
+    width: 105px;
+    margin-left: 30px;
+}
+
+
+.person-3dr__hidden {
+    display: none;
+}
+
+
+
+hr {
+    color: #DADADA;
+    background-color:#DADADA;
+    border: 0 none;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+
+.type-payment__item {
+    display: flex;
+    align-items: center;
+}
+
+.type-payment__item input {
+    margin-left: 15px;
+}
+
+.type-payment .type-payment__item:last-child {
+    margin-left: 124px;
+}
+
+.del-order__item--short {
+    width: 248px;
+}
+
+.del-order__item--large {
+    width: 100%;
+}
+
+.del-order__textarea {
+    min-height: 52px;
+    max-height: 200px;
+    min-width: 100%;
+}
+
+
+.add-parcel__cost {
+    display: flex;
+    align-items: center;
+}
+
+.add-parcel__cost input {
+    border: none;
+    width: 130px;
+    font-weight: bold;
+    color: #ffd500;
+}
+.add-parcel__cost label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+
+.add-parcel__btn-group {
+    display: flex;
+    margin-top: 20px;
+}
+
+.add-parcel__btn-group .main-btn:first-child {
+    margin-right: 30px;
+}
+
+.add-parcel__add-services {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-parcel__add-services label {
+    font-weight: bold;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.add-services__btn {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+}
+
+.add-services__btn img {
+    margin-right: 0;
+}
+
+.add-parcel__cleer {
+    background-color: transparent;
+}
+
+.insurance-payer-3dr__hidden {
+    display: none;
+}
+
+.insurance-block__hidden {
+    display: none;
+}
+
+.delivery_item {
+    position: relative;
+}
+
+.delivery_item > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.delivery_item > label {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+.delivery_item .ng-binding {
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+.delivery_item .three_in_line > div {
+    display: flex;
+    margin-right: 30px;
+}
+
+.add-parcel__results {
+    margin-top: 30px;
+}
+
+.results-parcel__name {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.add-parcel__results-btn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 65px;
+}
+
+.add-parcel__results-btn .delivery_edit {
+    margin-right: 20px;
+    color: #999999;
+}

@@ -31,3 +31,30 @@ $('.more-point__btn').on('click', function(event){
     $('.bonus-table--hide-block ').toggleClass('bonus-table--show-block');
 });
 // ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// Только для cl-express-delivery.html
+// Добавление и удаление Дополнительной посылки
+$('.del-order__parcel-btn').on('click', function(event){
+    $('.add-parcel').toggleClass('add-parcel--show-block');
+});
+
+$('.add-parcel__delete').on('click', function(event){
+    $('.add-parcel').removeClass('add-parcel--show-block');
+});
+
+
+
+
+$('#person-3dr').on('change', function() {
+    $('.person-3dr__input').toggleClass('person-3dr__hidden', this.value != 'string:100000002');
+});
+
+$('#declared-cost').on('change', function() {
+    $('.insurance-block').toggleClass('insurance-block__hidden', this.value);
+});
+
+$('#declared-cost__3dr').on('change', function() {
+    $('.insurance-payer-3dr__input').toggleClass('insurance-payer-3dr__hidden', this.value != 'string:100000002');
+});
+// ---------------------------------------------------------------------------

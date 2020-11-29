@@ -59,6 +59,10 @@ ul {
     list-style-type: none;
 }
 
+strong {
+	font-weight: bold;
+}
+
 a, a:focus, a:hover, a:active a:visited {
 	outline: 0;
 	color: inherit;
@@ -96,6 +100,14 @@ input {
     color: #333333;
     font-size: 16px;
     line-height: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color ease-in-out 0s;
+	transition-delay: 5000s;
 }
 
 input:invalid {
@@ -334,6 +346,22 @@ details > summary {
 
 .main-btn:focus {
 	outline: 0;
+}
+
+/* Белая Кнопка */
+.main-btn--white {
+    color: #333333;
+    border: 1px solid #333333;
+    background-color: #fff;
+}
+
+.main-btn--white:hover {
+    background-color: #F0F5F9;
+    color: #333333;
+}
+
+.main-btn--white img {
+    margin-right: 10px;
 }
 
 /* ======================================

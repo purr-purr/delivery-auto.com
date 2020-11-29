@@ -1,0 +1,328 @@
+/* ======================================================
+//   Стили для страницы     Забирання і доставка вантажу
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__courier-form.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.courier-page__title {
+    margin-bottom: 20px;
+}
+
+.courier-page___desc {
+    margin-bottom: 20px;
+}
+
+.courier-page__inner {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.courier-page__banner  {
+    width: 701px;
+}
+
+.courier-page__banner .slick-slide img {
+    width: 100%;
+}
+
+.courier-page__banner .slick-prev, .courier-page__banner .slick-next {
+    width: 0;
+    height: 0;
+}
+
+.courier-page__banner .slick-prev:before, .courier-page__banner .slick-next:before {
+    display: none;
+}
+
+.courier-page__banner .slick-dots {
+    text-align: left;
+    bottom: -35px;
+}
+
+.courier-page__banner .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 30px;
+    height: 2px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #C4C4C4;
+}
+
+.courier-page__banner .slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #C4C4C4;
+    text-align: center;
+    opacity: 1;
+    color: transparent;
+}
+
+.courier-page__banner .slick-dots li.slick-active button:before {
+    top: -1px;
+    opacity: 1;
+    background-color: #ffd500;
+    color: transparent;
+    height: 4px;
+    border-radius: 14px;
+    width: 30px;
+}
+
+/* Відео інструкція по 1С */
+.video-guide {
+	display: flex;
+	justify-content: space-between;
+	margin: 60px 0 50px 0;
+}
+
+.video-guide__title {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+.video-guide__item {
+	margin-right: 30px;
+}
+
+.video-guide__item:last-child {
+	margin-right: 0;
+}
+
+
+/* Таблица городов с новыми тарифами */
+.city-price__header {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ffd500;
+    padding: 35px 30px;
+}
+
+.city-price__select {
+    width: 283px;
+    background-color: #fff;
+}
+
+.city-price__desc {
+    max-width: 328px;
+    font-weight: bold;
+}
+
+
+/* Pagination */
+/* Перебив стилей из smartpagination.css */
+.pager {
+    margin: 30px 0;
+}
+
+.pager_style {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    padding: 5px;
+    height: 30px;
+}
+
+.green.normal {
+    background-color: transparent;
+}
+
+.green.active, .pager ul li a:hover, .pager ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd500;
+    color: #333;
+    border-radius: 50px;
+    padding: 0;
+    width: 33px;
+    height: 32px;
+}
+
+.pager ul li a {
+    background-color: transparent;
+    color: #3072C4;
+}
+
+.pager .btn {
+    padding: 0 10px;
+    border-radius: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: #3072C4;
+    font-size: 16px;
+
+    height: 32px;
+}
+
+#btn-prev {
+    width: 33px;
+    height: 32px;
+}
+
+#btn-next img {
+    margin-left: 15px;
+}
+
+
+/* Таблица */
+.main_table_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F8F8;
+    height: 70px;
+    font-weight: 600;
+}
+
+.main_row_style {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    min-height: 40px;
+}
+
+.main_row_style:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+.just_flex {
+    display: flex;
+}
+
+.little_bird {
+    background-image: url("../img/system/icon/green-approve-bird.svg");
+    width: 60px;
+    height: 100%;
+    min-height: 40px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.day_width_sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 40px;
+    width: 60px;
+    border-right: 1px solid #999999;
+}
+
+.day_width_sm:last-child {
+    border-right: none;
+}
+
+.first_clmn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 100%;
+    min-height: 40px;
+    padding: 3px 15px;
+    border-right: 1px solid #999999;
+    text-align: center;
+}
+
+.first_clmn:last-child {
+    border-right: none;
+}
+
+.day-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.day-title {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.last_clmn {
+    width: 377px;
+}
+
+.price-link {
+    color: #3072C4;
+}
+
+.price-link:hover {
+    text-decoration: underline;
+    color: #3072C4;
+}
+
+
+.address-services {
+    margin-top: 100px;
+}
+
+.address-services h2 {
+    margin-bottom: 20px;
+}
+
+.address-services p {
+    margin-bottom: 10px;
+}
+
+
+.ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+#cityAddIdinp {
+    width: 410px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #DADADA;
+}
+
+.address-services__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100px;
+    background-color: #FFD500;
+    margin-top: 25px;
+}
+
+.custom-combobox {
+    display: flex;
+    align-items: center;
+}
+
+.address-services__text {
+    font-size: 24px;
+    margin-right: 40px;
+}

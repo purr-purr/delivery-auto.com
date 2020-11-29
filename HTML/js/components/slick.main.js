@@ -22,11 +22,24 @@ $(document).ready(function(){
         rows: 2,
         slidesToScroll: 1
     });
-
-    $('.widget-slider').slick({
-        // autoplay: true,
-        // autoplaySpeed: 3000,
-        slidesToShow: 2,
+    // $('.widget-slider').slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1
+    // });
+    $('.intro__banner').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+    $('.courier-page__banner').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        dots: true,
+        slidesToShow: 1,
         slidesToScroll: 1
     });
 });
