@@ -225,3 +225,12 @@
 .acc-questions__info p {
     padding-bottom: 18px;
 }
+
+.acc-questions__info p a {
+    color: #3072C4;
+}
+
+.acc-questions__info p a:hover {
+    color: #3072C4;
+    text-decoration: underline;
+}

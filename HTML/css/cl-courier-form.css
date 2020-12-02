@@ -9,6 +9,10 @@
 
 /* =================================== */
 
+.courier-page {
+    margin-bottom: 90px;
+}
+
 .courier-page__title {
     margin-bottom: 20px;
 }
@@ -167,7 +171,6 @@
     background-color: transparent;
     color: #3072C4;
     font-size: 16px;
-
     height: 32px;
 }
 
@@ -179,7 +182,6 @@
 #btn-next img {
     margin-left: 15px;
 }
-
 
 /* Таблица */
 .main_table_head {
@@ -238,7 +240,7 @@
     width: 210px;
     height: 100%;
     min-height: 40px;
-    padding: 3px 15px;
+    padding: 0 15px;
     border-right: 1px solid #999999;
     text-align: center;
 }
@@ -273,7 +275,6 @@
     color: #3072C4;
 }
 
-
 .address-services {
     margin-top: 100px;
 }
@@ -286,7 +287,6 @@
     margin-bottom: 10px;
 }
 
-
 .ui-helper-hidden-accessible {
     border: 0;
     clip: rect(0 0 0 0);
@@ -297,7 +297,6 @@
     position: absolute;
     width: 1px;
 }
-
 
 #cityAddIdinp {
     width: 410px;
@@ -325,4 +324,659 @@
 .address-services__text {
     font-size: 24px;
     margin-right: 40px;
+}
+
+/* Результат Таблицы: АДРЕСНЕ ОБСЛУГОВУВАННЯ */
+.table_tarif {
+    width: 100%;
+    border-bottom: 1px solid #a9a9a9;
+    margin-bottom: 4px;
+    border-collapse: collapse;
+}
+
+.table_tarif th,
+.table_tarif td {
+    padding:6px;
+    width: 33%;
+    text-align: center;
+    height: 40px;
+}
+
+.table_tarif th {
+    background-color:#F8F8F8;
+    font-weight: 600;
+}
+
+.table_tarif tbody tr:nth-child(even) {
+    background-color:#F8F8F8;
+}
+
+.table_tarif tbody tr td:nth-child(2) {
+    background-color: #fff;
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+.table_tarif tr td:first-child, .table_tarif tr th:first-child {
+    border-right: 1px solid #999999;
+}
+
+.table_tarif tr td:last-child, .table_tarif tr th:last-child {
+    border-left: 1px solid #999999;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+
+/* Tabs */
+
+.tabs__wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -42px;
+}
+
+.tabs {
+    margin-top: -17px;
+}
+
+.tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 520px;
+    height: 60px;
+    margin-top: -20px;
+    
+    text-align: center;
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+
+    border: 2px solid #FFD500;
+    border-bottom-color: transparent;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #fff;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    color: #999999;
+}
+
+.tab:first-child {
+    margin-right: 50px;
+}
+
+.panels {
+    min-height:200px;
+    width: 100%;
+    overflow:hidden;
+    padding: 50px 0;  
+}
+
+.panel {
+    display:none;
+    animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.radio {
+    display:none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel{
+    display:block
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab{
+    color: #333333;
+    background-color: #F8F8F8;
+    border: transparent;
+}
+
+
+
+/* Форма */
+
+.courier-order__form {
+    width: 805px;
+}
+
+.courier-order__title {
+    margin-bottom: 30px;
+}
+
+.courier-order__description {
+    margin-bottom: 20px;
+}
+
+.courier-order__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.courier-order__input--small, .courier-order__item--small {
+    width: 258px;
+}
+
+.courier-order__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courier-order__required-input {
+    font-size: 12px;
+    line-height: 20px;
+    color: #808080;
+}
+
+.courier-order__required-input span {
+    color: #333;
+    font-size: 16px;
+}
+
+.courier-order__btn {
+    margin-top: 35px;
+}
+
+input[type="radio"] {
+    height: auto;
+    margin-top: 2px;
+}
+
+.courier-order__type-order {
+    display: flex;
+}
+
+.courier-order__type-order div {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.courier-order__type-order input {
+    margin-left: 15px;
+}
+
+#DateOrder {
+    width: 105px;
+    margin-left: 17px;
+    padding: 0 13px;
+}
+
+#TimeFromOrder {
+    width: 105px;
+    margin-left: 17px;
+    margin-right: 17px;
+    background-position: 90%;
+}
+
+#TimeToOrder {
+    width: 105px;
+    margin-left: 17px;
+    background-position: 90%;
+}
+
+#type-cargo {
+    width: 209px;
+    margin-left: 15px;
+}
+
+.courier-order__item--short {
+    width: 248px;
+}
+
+.checkbox--before {
+    display: block;
+}
+
+.checkbox--before input[type=checkbox] + label:before {
+    margin: -5px 15px 0 0;
+}
+
+.checkbox--before p {
+    font-size: 12px;
+    line-height: 13px;
+    color: #808080;
+    margin-top: 8px;
+    padding-left: 35px;
+}
+
+.checkbox--before label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.courier-order__item--large {
+    width: 100%;
+}
+
+.courier-order__textarea {
+    min-height: 81px;
+    max-height: 200px;
+    min-width: 100%;
+}
+
+.add-pack__text-area {
+    display: none;
+}
+
+.show-block {
+    display: flex;
+}
+
+.courier-order__tarif-links {
+    margin-top: 30px;
+}
+
+.courier-order__tarif-links a {
+    color: #3072C4;
+}
+
+.courier-order__tarif-links a:hover {
+    color: #3072C4;
+    text-decoration: underline;
+}
+
+.add-warehouse {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-warehouse label {
+    font-weight: bold;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.add-warehouse__btn {
+    width: 74px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.add-warehouse__btn img {
+    margin-right: 0;
+}
+
+.courier-order__footer {
+    display: flex;
+    margin-top: 30px;
+}
+
+.total_cost {
+    margin-left: 135px;
+    margin-top: 30px;
+}
+
+.total_cost__text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+.total_cost__value {
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffd500;
+    line-height: 32px;
+}
+
+.total_cost__result {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+.count-btn {
+    margin-bottom: 30px;
+    background-color: transparent;
+}
+
+.courier-order__my-order {
+    display: flex;
+}
+
+.courier-order__my-order p {
+    color: #999999;
+    margin-left: 30px;
+    max-width: 178px;
+}
+
+.my-order__btn {
+    background-color: transparent;
+}
+
+.everyday_block {
+    margin: 25px 0;
+    display: none;
+}
+
+.show-it {
+    display: flex;
+}
+
+.day_width {
+    display: flex;
+}
+
+.hidden-block {
+    display: none;
+}
+
+.only-for-pallets {
+    display: none;
+    position: relative;
+}
+
+.add_pallet {
+    position: absolute;
+    top: 13px;
+    right: -24px;
+    width: 14px;
+    height: 14px;
+    background: url("../img/system/icon/green-plus.svg") no-repeat center;
+    background-size: 14px 14px;
+    cursor: pointer;
+}
+
+.payer-3dr__form {
+    display: none;
+}
+
+.show-block2 {
+    display: flex;
+}
+
+.hide-block2 {
+    display: none;
+}
+
+.courier-order__parcel-btn {
+    margin-top: 30px;
+    color: #333333;
+    border: 1px solid #333333;
+    background-color: transparent;
+}
+
+.courier-order__parcel-btn:hover {
+    background-color: #F0F5F9;
+    color: #333333;
+}
+
+.courier-order__parcel-btn img{
+    margin-right: 10px;
+}
+
+.add-parcel {
+    display: none;
+    position: relative;
+    width: 1013px;
+    border: 1px solid #FFD500;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.add-parcel__form {
+    width: 805px;
+}
+
+.add-parcel__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.add-parcel__delete {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.courier-order__line--short {
+    justify-content: flex-start;
+}
+
+.courier-order__line--short .courier-order__item:last-child {
+    margin-left: 100px;
+}
+
+#dateReceive, #timeReceive {
+    width: 105px;
+    margin-left: 30px;
+}
+
+.person-3dr__hidden {
+    display: none;
+}
+
+hr {
+    color: #DADADA;
+    background-color:#DADADA;
+    border: 0 none;
+    height: 1px;
+    margin-bottom: 15px;
+}
+
+.type-payment__item {
+    display: flex;
+    align-items: center;
+}
+
+.type-payment__item label {
+    width: 104px;
+}
+
+.type-payment__item input {
+    margin: 0 15px;
+}
+
+.type-payment .type-payment__item:last-child,
+.type-payment .type-payment__item:nth-child(2) {
+    margin-left: 90px;
+}
+
+.insurance-payer-3dr__hidden {
+    display: none;
+}
+
+.insurance-block__hidden {
+    display: none;
+}
+
+.delivery_item {
+    position: relative;
+}
+
+.delivery_item > div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.delivery_item > label {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+}
+
+.delivery_item .ng-binding {
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+.delivery_item .three_in_line > div {
+    display: flex;
+    margin-right: 30px;
+}
+
+.add-parcel__results {
+    margin-top: 30px;
+}
+
+.results-parcel__name {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.add-parcel__results-btn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 65px;
+}
+
+.add-parcel__results-btn .delivery_edit {
+    margin-right: 20px;
+    color: #999999;
+} 
+
+.add-parcel--show-block {
+    display: block;
+}
+
+.add-parcel--hide-block {
+    display: none;
+}
+
+.add-parcel__btn-group {
+    display: flex;
+    margin-top: 30px;
+}
+
+.add-parcel__cleer {
+    margin-left: 30px;
+}
+
+.type-payment__title {
+    width: 105px;
+}
+
+/* Результат Добавление Склада */
+.result-add-warehouse__conteiner {
+    margin: 25px 0 25px 0;
+}
+
+.result-add-warehouse {
+    display: flex;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.table_pallet_row {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.table_pallet_row div {
+    margin-bottom: 10px;
+}
+
+.table_pallet_head div {
+    margin-bottom: 10px;
+    width: 115px;
+}
+
+.delete_row {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background: url("../img/system/icon/red-close.svg") no-repeat center;
+    background-size: 14px 14px;
+    cursor: pointer;
+}
+
+/* только для 2го таба */
+.find-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 40px;
+    background-color: #ffd500;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+
+.find-btn:hover {
+    background: #F0F5F9;
+    border: 1px solid #808080;
+    transition: all .5s linear;
+}
+
+/* кнопка добавить квитанцию */
+.add-receipt__btn {
+    background-color: transparent;
+}
+
+.add-receipt__btn span {
+    color: #ffd500;
+    font-size: 19px;
+    padding: 0 5px 1px 0;
+}
+
+#DateOrderDeliv {
+    width: 105px;
+    margin-left: 17px;
+    padding: 0 13px;
+}
+
+.type-payment--small {
+    display: flex;
+    justify-content: space-between;
+    width: 387px;
+}
+
+.type-payment--small input {
+    margin-right: 10px;
+}
+
+.type-payment--small label {
+    cursor: pointer;
+}
+
+.courier-order__discont {
+    width: 387px;
+    justify-content: flex-start;
+}
+
+.courier-order__discont label {
+    cursor: pointer;
+}
+
+.courier-order__discont div:first-child {
+    margin-right: 50px;
 }

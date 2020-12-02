@@ -9,6 +9,10 @@
 
 /* =================================== */
 
+.delivery-time {
+    margin-bottom: 50px;
+}
+
 .delivery-time__title {
     margin-bottom: 20px;
 }
