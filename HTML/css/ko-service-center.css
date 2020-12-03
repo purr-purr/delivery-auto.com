@@ -14,11 +14,11 @@
 }
 
 .service-center__description {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .advantages-service {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .advantages-service__inner {
@@ -58,7 +58,7 @@
 
 /* Найближчі заходи  */
 .meeting {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .meeting__item {

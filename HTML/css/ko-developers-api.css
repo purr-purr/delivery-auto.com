@@ -445,6 +445,10 @@
 	justify-content: flex-start;
 }
 
+.test-form__item--radio label {
+	cursor: pointer;
+}
+
 .test-form__item--radio input {
 	margin-right: 30px;
 	height: 20px;
@@ -480,6 +484,17 @@
 
 #input_question--json {
 	display: none;
+}
+
+.order__required-input {
+	font-size: 12px;
+	line-height: 20px;
+	color: #808080;
+}
+
+.order__required-input span {
+	color: #333;
+	font-size: 16px;
 }
 
 /* for Code */

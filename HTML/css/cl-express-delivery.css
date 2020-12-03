@@ -235,9 +235,6 @@
 }
 
 
-
-
-
 /* Форма */
 
 .del-order__form {
@@ -267,6 +264,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.del-order__item label {
+    cursor: pointer;
 }
 
 .del-order__required-input {
@@ -419,8 +420,6 @@ input[type="radio"] {
     display: none;
 }
 
-
-
 hr {
     color: #DADADA;
     background-color:#DADADA;
@@ -428,7 +427,6 @@ hr {
     height: 1px;
     margin-bottom: 15px;
 }
-
 
 .type-payment__item {
     display: flex;
@@ -457,15 +455,16 @@ hr {
     min-width: 100%;
 }
 
-
 .add-parcel__cost {
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
 .add-parcel__cost input {
     border: none;
     width: 130px;
+    height: auto;
     font-weight: bold;
     color: #ffd500;
 }

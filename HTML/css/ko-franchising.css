@@ -122,6 +122,7 @@
     border-collapse: collapse;
     width: 100%;
     max-width: 995px;
+    border-bottom: 1px solid #DADADA;
 }
 
 .franchising-city__tbody tr {
@@ -252,10 +253,6 @@
     opacity: 1;
     transition: all 0.3s ease-in;
 }
-
-
-
-
 
 /* Капча */
 .captcha-form {

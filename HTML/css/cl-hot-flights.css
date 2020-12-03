@@ -125,10 +125,10 @@
     font-size: 15px;
 }
 
-/* .hot-flights__table tr td:first-child:hover {
+.hot-flights__table tr td:first-child:hover {
     color: #3072C4;
-    font-weight: bold;
-} */
+    cursor: pointer;
+}
 
 /* Заявка */
 .hot-order {

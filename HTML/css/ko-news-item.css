@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.news-item__print:hover {
+    color: #ffd500;
+}
+
 .news-item__print img {
     margin-right: 5px;
     width: 14px;
@@ -64,7 +68,6 @@
 .news-item__subscribe {
     display: flex;
     align-items: center;
-    text-decoration-line: underline;
     color: #3072C4;
     font-size: 16px;
     line-height: 20px;
@@ -72,7 +75,8 @@
 }
 
 .news-item__subscribe:hover {
-    color: #ffd500;
+    color: #3072C4;
+    text-decoration-line: underline;
 }
 
 .news-item__subscribe img {

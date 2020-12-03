@@ -41,7 +41,7 @@
 	max-width: 730px;
     min-width: 630px;
     margin-top: 25px;
-    margin-bottom: 95px;
+    margin-bottom: 80px;
 }
 
 .acc-rules details[open] summary ~ * {

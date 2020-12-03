@@ -109,13 +109,13 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #333333;
+    color: #333;
 }
 
 .pagination__active .pagination__link {
     background-color: #FFD500;
     border-color: #FFD500;
-    color: #fff;
+    color: #333;
     text-decoration: none;
 }
 
