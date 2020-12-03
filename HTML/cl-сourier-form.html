@@ -285,8 +285,8 @@
                                     </div>
 
                                     <div class="courier-order__line courier-order__tarif-links">
-                                        <p>Ознайомитися з <a href="#">тарифами на адресне обслуговування</a></p>
-                                        <p>Ознайомитися з <a href="#">тарифами на додаткові послуги</a></p>
+                                        <p>Ознайомитися з <a href="in-dev.html" target="_blank">тарифами на адресне обслуговування</a></p>
+                                        <p>Ознайомитися з <a href="in-dev.html" target="_blank">тарифами на додаткові послуги</a></p>
                                     </div>
 
 <!-- Добавить Склад -->
@@ -516,7 +516,7 @@
                                             <div class="main-btn main-btn--white count-btn" id="calculator_pick" onclick="calculate_pick_tarif()">Розрахувати</div>
                                             <div id="calculator_tarif" class="main-btn main-btn--white count-btn calculate_button" style="display: none;" ng-click="calculate_pallet_tarif()">Розрахувати</div>
 
-                                            <div class="main-btn" id="pick_up_send" onclick="SubmitForm('#PickHyperForm');">Замовити</div>
+                                            <div class="main-btn" id="pick_up_send" onclick='throw_message_order_approve(" "); return false; SubmitForm("#PickHyperForm");'>Замовити</div>
                                         </div>
                                         <div class="total_cost">
                                             <p class="total_cost__text">Орієнтована вартість доставки</p>
@@ -720,8 +720,7 @@
                                     <div class="courier-order__footer">
                                         <div>
                                             <div id="calculator_pick" class="main-btn main-btn--white count-btn" onclick="calculate_delivery_tarif()">Розрахувати</div>
-                                            
-                                            <button type="button" id="pick_up_send" onclick="SubmitForm('#DelivHyperForm');" class="main-btn">Замовити</button>
+                                            <button type="button" id="pick_up_send" onclick='throw_message_order_approve(" "); return false; SubmitForm("#DelivHyperForm");' class="main-btn">Замовити</button>
                                         </div>
                                         <div class="total_cost">
                                             <p class="total_cost__text">Орієнтована вартість доставки</p>
@@ -5536,7 +5535,7 @@
                         <div class="short"></div>
                     </div>
 
-                    <p>Ознайомитися з <a href="#" class="price-link">тарифами на забір та доставку вантажу в населені пункти</a></p>
+                    <p>Ознайомитися з <a href="in-dev.html" class="price-link" target="_blank">тарифами на забір та доставку вантажу в населені пункти</a></p>
 
                     <div class="address-services">
                         <h2>Адресне обслуговування</h2>
