@@ -1552,6 +1552,77 @@ details > summary {
 	height: auto;
 }
 
+/* Aside Button group */
+
+.aside-btn__inner {
+	display: flex;
+	justify-content: space-between;
+	width: 360px;
+	margin-bottom: 30px;
+}
+
+.aside-btn__item {
+	display: flex;
+	align-items: center;
+	width: 170px;
+	height: 60px;
+	border: 1px solid #808080;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all .4s linear;
+}
+
+.aside-btn__item:hover {
+	border: 1px solid #ffd500;
+	transition: all .4s linear;
+}
+
+/* 1-я кнопка "Розрахувативартість" */
+.aside-btn__item:nth-child(1) {
+	background: #fff url("../img/system/icon/aside-calculator.svg") no-repeat 20px;
+}
+
+.aside-btn__item:nth-child(1):hover {
+	background: #F0F5F9 url("../img/system/icon/aside-calculator-yellow.svg") no-repeat 20px;
+}
+
+/* 2-я кнопка "Перейти в мій кабінет" */
+.aside-btn__item:nth-child(2) {
+	background: #fff url("../img/system/icon/aside-account.svg") no-repeat 20px;
+}
+
+.aside-btn__item:nth-child(2):hover {
+	background: #F0F5F9 url("../img/system/icon/aside-account-yellow.svg") no-repeat 20px;
+}
+
+.aside-btn__item p {
+	padding-left: 60px;
+}
+
+/* Компанії групи «DELIVERY» */
+
+.aside-links__inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 360px;
+	margin: 20px 0 10px 0;
+}
+
+.aside-links__inner img {
+	width: 170px;
+	height: 58px;
+	transition: transform .3s ease-in;
+}
+
+.aside-links__inner img:hover {
+	transform: scale(1.05);
+	transition: transform .3s ease-in;
+}
+
+.aside-links__inner li {
+	margin: 0 0 20px 0;
+}
 
 /* ======================================
 //            Block Add File
