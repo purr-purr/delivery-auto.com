@@ -1,0 +1,39 @@
+/* ======================================================
+//   Стили для страницы    Тарифи Фінансові послуги
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__tariff-main.jpg") no-repeat;
+}
+/* =================================== */
+
+.tariffs-finance {
+	margin-bottom: 40px;
+}
+
+.tariffs-finance__heading {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.tariffs-finance__heading img {
+	width: 65px;
+	height: 42px;
+	margin: 0 20px;
+}
+
+.tariffs-finance__title {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+.tariffs-finance p {
+	margin-bottom: 20px;
+}
+
+.main-btn--white img {
+	width: 9px;
+	margin-right: 5px;
+}

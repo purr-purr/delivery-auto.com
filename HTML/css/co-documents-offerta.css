@@ -1,0 +1,59 @@
+/* ====================================================
+//     Стили для страницы   Публічний договір оферти
+======================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__franchising.jpg") no-repeat;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.offerta-doc {
+    max-width: 730px;
+	min-width: 630px;
+    padding-bottom: 35px;
+}
+
+.offerta-doc__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.offerta-doc__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    max-width: 650px;
+}
+
+.offerta-doc__item a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.offerta-doc__item a:hover {
+    text-decoration-line: underline;
+    color: #3072C4;
+}
+
+.offerta-doc__item span {
+    color: #808080;
+    margin-left: 5px;
+    text-decoration-line: none;
+}
+
+.offerta-doc__link {
+    max-width: 540px;
+}
+
+.offerta-doc__link:hover ~ .offerta-doc__doc  {
+    color: #3072C4;
+}
+
+.offerta-doc__doc {
+    padding-left: 70px;
+    color: #000000;
+    text-transform: uppercase;
+}

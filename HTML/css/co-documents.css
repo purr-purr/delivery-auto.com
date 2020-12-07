@@ -1,0 +1,88 @@
+/* ======================================
+//     Стили для страницы Документи
+====================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__documents.jpg") no-repeat;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.documents {
+    max-width: 750px;
+	min-width: 630px;
+    padding-bottom: 35px;
+}
+
+.documents__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.documents__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    max-width: 750px;
+}
+
+.documents__item a {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.documents__item a:hover {
+    text-decoration-line: underline;
+    color: #3072C4;
+}
+
+.documents__item span {
+    color: #808080;
+    margin-left: 5px;
+    text-decoration-line: none;
+}
+
+.documents__link {
+    max-width: 540px;
+}
+
+.documents__link:hover ~ .documents__doc  {
+    color: #3072C4;
+}
+
+.documents__doc {
+    padding-left: 70px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+
+.documents__group-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.documents__group-links li:last-child {
+    margin-bottom: 0;
+}
+
+.documents__group-links img {
+    width: 179px;
+    height: 58px;
+    margin-right: 30px;
+}
+
+.documents__group-links a {
+    color: #3072C4;
+    padding-left: 3px;
+}
+
+.documents__group-links a:hover {
+    text-decoration-line: underline;
+    color: #3072C4;
+}
