@@ -1,0 +1,177 @@
+/* ===============================================================
+//   Стили для страницы   Галузевий тариф «Автопрайс»
+================================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__tariff-auto.jpg") no-repeat;
+}
+/* =================================== */
+.construct__main-title {
+	margin-bottom: 20px;
+}
+
+.main-btn--white {
+	margin-top: 30px;
+}
+
+.main-btn--white img {
+	width: 9px;
+	margin-right: 5px;
+}
+
+.tariff__advantages {
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.tariff__advantages img {
+	width: 144px;
+	height: 138px;
+	margin-bottom: 20px;
+}
+
+.tariff__advantages p {
+	font-weight: bold;
+	text-align: center;
+}
+
+.construct__item {
+	margin-bottom: 40px;
+}
+
+.construct__heading {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.construct__heading img {
+	width: 62px;
+	height: 42px;
+	margin-right: 20px;
+}
+
+.construct__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.construct__title span {
+	font-weight: normal;
+}
+
+.sub-thead {
+	background-color: #FFEF9E;
+}
+
+.construct__item p  {
+	margin-bottom: 17px;
+}
+
+.construct__item p a {
+	color: #3072C4;
+}
+
+.construct__item p a:hover {
+	color: #3072C4;
+	text-decoration: underline;
+}
+
+.construct__list li {
+	padding-left: 9px;
+}
+
+/* Table */
+.tariff__table {
+	border-collapse: collapse;
+	width: 805px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.tariff__table thead {
+	background-color: #FFD500;
+}
+
+.tariff__table tbody {
+	border-bottom: 1px solid #999999;
+}
+
+.tariff__table thead th {
+	height: 40px;
+}
+
+.tariff__table tbody tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+
+.tariff__table tbody td {
+	min-height: 40px;
+	padding: 12px 5px;
+}
+
+.tariff__table tbody td:first-child {
+	width: 39%;
+}
+
+.tariff__table tbody td:nth-child(2) {
+	width: 61%;
+}
+
+.tariff__table th, .tariff__table td  {
+	border-right: 1px solid #999999;
+}
+
+.tariff__table th:last-child, .tariff__table td:last-child  {
+	border-right: none;
+}
+
+.tariff__table tbody tr {
+	transition: all .4s linear;
+}
+
+.tariff__table tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}
+
+.new {
+	position: absolute;
+	padding-left: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FF2727;
+}
+
+.action {
+	position: absolute;
+	margin-left: 9px;
+	margin-bottom: 0;
+	margin-top: -5px;
+	padding: 3px 13px 5px 13px;
+	font-weight: bold;
+	color: #fff;
+	background-color: #FF2727;
+	border-radius: 5px;
+}
+
+.old-price {
+	text-decoration: line-through;
+	position: relative;
+}
+
+.new-price {
+	text-decoration: none;
+	position: absolute;
+	left: 290px;
+	top: 11px;
+	font-weight: bold;
+	color: #FF2727;
+}
+
+.note {
+	color: #3072C4;
+}

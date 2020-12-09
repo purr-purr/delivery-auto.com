@@ -1,0 +1,73 @@
+/* ======================================================
+//   Стили для страницы       Тариф “Верховий вантаж”
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__tariff-sizable.jpg") no-repeat;
+}
+/* =================================== */
+
+.main-btn--white img {
+	width: 9px;
+	margin-right: 5px;
+}
+
+.sizable__title {
+	margin-bottom: 20px;
+}
+
+.sizable p {
+	margin-bottom: 17px;
+}
+
+.sizable p a {
+	color: #3072C4;
+}
+
+.sizable p a:hover {
+	color: #3072C4;
+	text-decoration: underline;
+}
+
+/* Table */
+.tariff__table {
+	border-collapse: collapse;
+	width: 805px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.tariff__table thead {
+	background-color: #FFD500;
+}
+
+.tariff__table tbody {
+	border-bottom: 1px solid #999999;
+}
+
+.tariff__table thead th {
+	height: 40px;
+}
+
+.tariff__table tbody td {
+	min-height: 40px;
+	padding: 12px 5px;
+}
+
+.tariff__table th, .tariff__table td  {
+	border-right: 1px solid #999999;
+}
+
+.tariff__table th:last-child, .tariff__table td:last-child  {
+	border-right: none;
+}
+
+.tariff__table tbody tr {
+	transition: all .4s linear;
+}
+
+.tariff__table tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}

@@ -1,0 +1,93 @@
+/* ======================================================
+//   Стили для страницы       Тариф “Велопрайс” 
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__tariff-bicycle.jpg") no-repeat;
+}
+/* =================================== */
+
+.main-btn--white {
+	margin-top: 30px;
+}
+
+.main-btn--white img {
+	width: 9px;
+	margin-right: 5px;
+}
+
+.bicycle__title {
+	margin-bottom: 20px;
+}
+
+.bicycle li span  {
+	color: #FF0000;
+}
+
+.bicycle p, .bicycle li  {
+	margin-bottom: 17px;
+}
+
+.bicycle p a {
+	color: #3072C4;
+}
+
+.bicycle p a:hover {
+	color: #3072C4;
+	text-decoration: underline;
+}
+
+/* Table */
+.tariff__table {
+	border-collapse: collapse;
+	width: 805px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tariff__table thead {
+	background-color: #FFD500;
+}
+
+.tariff__table tbody {
+	border-bottom: 1px solid #999999;
+}
+
+.tariff__table thead th {
+	height: 40px;
+}
+
+.tariff__table thead th:first-child, .tariff__table tbody td:first-child {
+	width: 296px;
+}
+
+.tariff__table thead th:nth-child(2), .tariff__table tbody td:nth-child(2) {
+	width: 87px;
+}
+
+.tariff__table tbody tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+
+.tariff__table tbody td {
+	min-height: 40px;
+	padding: 12px 5px;
+}
+
+.tariff__table th, .tariff__table td  {
+	border-right: 1px solid #999999;
+}
+
+.tariff__table th:last-child, .tariff__table td:last-child  {
+	border-right: none;
+}
+
+.tariff__table tbody tr {
+	transition: all .4s linear;
+}
+
+.tariff__table tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}

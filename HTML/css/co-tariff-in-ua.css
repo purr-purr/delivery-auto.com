@@ -1,0 +1,189 @@
+/* ===============================================================
+//   Стили для страницы    Тариф Доставка по Україні
+================================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__tariff-main.jpg") no-repeat;
+}
+/* =================================== */
+
+.main-btn--white {
+	margin-top: 30px;
+}
+
+.main-btn--white img {
+	width: 9px;
+	margin-right: 5px;
+}
+
+.address__item {
+	margin-bottom: 40px;
+}
+
+.address__heading {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.address__heading img {
+	width: 62px;
+	height: 42px;
+	margin-right: 20px;
+}
+
+.address__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+.address__title span {
+	font-weight: normal;
+}
+
+.sub-thead {
+	background-color: #FFEF9E;
+}
+
+.address__item p  {
+	margin-bottom: 17px;
+}
+
+.address__item p a {
+	color: #3072C4;
+}
+
+.address__item p a:hover {
+	color: #3072C4;
+	text-decoration: underline;
+}
+
+.address__list li {
+	padding-left: 9px;
+}
+
+/* Table */
+.tariff__table {
+	border-collapse: collapse;
+	width: 805px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.tariff__table thead {
+	background-color: #FFD500;
+}
+
+.tariff__table tbody {
+	border-bottom: 1px solid #999999;
+}
+
+.tariff__table thead th {
+	height: 40px;
+}
+
+.tariff__table tbody tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+
+.tariff__table tbody td {
+	min-height: 40px;
+	padding: 12px 5px;
+}
+
+.tariff__table th, .tariff__table td  {
+	border-right: 1px solid #999999;
+}
+
+.tariff__table th:last-child, .tariff__table td:last-child  {
+	border-right: none;
+}
+
+.tariff__table tbody tr {
+	transition: all .4s linear;
+}
+
+.tariff__table tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}
+
+/* Таблица 1 */
+#table--size1 thead th:first-child, #table--size1 tbody td:first-child {
+	width: 205px;
+}
+
+/* Таблица 2 */
+#table--size2 thead th, #table--size2 tbody td {
+	width: 33%;
+}
+
+/* Таблица 3 */
+#table--size3 thead th:first-child, #table--siz3 tbody td:first-child {
+	width: 140px;
+}
+
+#table--size3 thead th:nth-child(2), #table--size3 tbody td:nth-child(2) {
+	width: 147px;
+}
+
+#table--size3 thead th:nth-child(3), #table--size3 tbody td:nth-child(3) {
+	width: 243px;
+}
+
+#table--size3 thead th:nth-child(4), #table--size3 tbody td:nth-child(4),
+#table--size3 thead th:nth-child(5), #table--size3 tbody td:nth-child(5) {
+	width: 135px;
+}
+
+#table--size3 thead th {
+	height: 60px;
+}
+
+/* Таблица 4 */
+#table--size4 thead tr:first-child th:first-child , #table--siz4 tbody tr:first-child td:first-child  {
+	width: 136px;
+}
+
+#table--size4 tbody tr:nth-child(2) td  {
+	width: 165px;
+}
+
+#table--size4 thead tr:nth-child(2) th  {
+	height: 72px;
+	font-weight: 600;
+}
+
+#table--size4 tbody tr:nth-child(2) td:first-child  {
+	width: 136px;
+}
+
+/* Таблица 5 */
+#table--size5 thead th:first-child, #table--size5 tbody td:first-child {
+	width: 395px;
+}
+
+#table--size5 thead th {
+	height: 60px;
+}
+
+/* Таблица 6 */
+#table--size6 thead tr:first-child th, #table--size6 tbody tr:first-child th {
+	width: 338px;
+}
+
+#table--size6 thead th {
+	height: 30px;
+}
+
+#table--size6 thead tr:nth-child(2) th {
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+}
+
+#table--size6 thead tr:nth-child(3) th {
+	border-left: 1px solid #999;
+	font-weight: 600;
+}
