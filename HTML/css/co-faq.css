@@ -1,0 +1,179 @@
+/* =================================================
+//     Стили для страницы Часті питання (FAQ)
+=================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__faq.jpg") no-repeat;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.faq__info p {
+	margin-bottom: 20px;
+	max-width: 1040px;
+}
+
+.faq__title {
+	margin-bottom: 30px;
+}
+
+.faq__question {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	background-color: #FFD500;
+	margin: 30px 0;
+	padding: 0 104px;
+}
+
+.faq__question p {
+	font-weight: bold;
+	max-width: 283px;
+}
+
+.faq__search {
+	width: 410px;
+	background-color: #FFFFFF;
+}
+
+.faq__search:focus,
+.faq__search:active {
+	border: 1px solid #DADADA;
+}
+
+/* Аккардион */
+.faq__answer {
+	max-width: 730px;
+	min-width: 630px;
+}
+
+.faq__answer details[open] summary ~ * {
+	animation: faq__answer-open 0.3s ease-in-out;
+}
+
+@keyframes faq__answer-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.faq__answer summary::-webkit-details-marker {
+	display: none;
+}
+
+.faq__answer summary {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+    color: #333333;
+    outline: 0;
+}
+
+.faq__answer summary:after {
+	content: " ";
+	position: absolute;
+	right: -40px;
+	width: 35px;
+	height: 35px;
+	background: url("../img/system/icon/arrow.svg") no-repeat center;
+	transform-origin: center;
+    transition: 200ms linear;
+}
+
+.faq__answer details[open] .faq__answer__title{
+	color: #3072C4;
+}
+
+.faq__answer details[open] summary:after {
+    transform: rotate(90deg);
+	background: url("../img/system/icon/arrow--blue.svg") no-repeat center;
+	transition: transform 0.5s linear;
+}
+
+/* Title */
+.faq__answer__title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.faq__answer__info {
+	padding-bottom: 10px;
+	width: 999px;
+}
+
+.faq__answer__info ul li {
+	padding-left: 10px;
+}
+
+.faq__answer__info p, .discount-prog p {
+    margin-bottom: 20px;
+}
+
+.faq__answer__info p a, 
+.faq__answer__links p a {
+    color: #3072C4;
+}
+
+.faq__answer__info p a:hover,
+.faq__answer__links p a:hover {
+    color: #3072C4;
+    text-decoration: underline;
+}
+
+.faq__answer--hide {
+	display: none;
+}
+
+/* Форма */
+.faq-form__title {
+	margin-bottom: 20px;
+}
+
+.faq-form__description {
+	margin-bottom: 15px;
+}
+
+.faq-form {
+    margin: 100px 0;
+    width: 805px;
+}
+.faq-form__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.faq-form__item--large {
+    width: 100%;
+}
+
+.faq-form__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-form__textarea {
+    min-height: 52px;
+    max-height: 300px;
+    min-width: 100%;
+}
+
+.faq-form__textarea--large {
+    min-height: 85px;
+}
+
+.faq-form__btn {
+    margin-top: 35px;
+}
+

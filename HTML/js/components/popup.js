@@ -5,7 +5,6 @@ $('#popup-event--1').popup({
     escape: false
 });
 
-
 $('#popup-event--2').popup({
     pagecontainer: 'body',
     closebutton: true,
@@ -19,7 +18,22 @@ $('#popup-news').popup({
     escape: false
 });
 
+// pop up тарифная сітка по Україні, на страницах с тарифами
+$('#popup-tariff-map').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
+// pop up Карта Cистема знижок
+$('#popup-discount').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
+
+
+// ----------------------------------------------------------------
 // notification (approve or error)
 
 // Заявка
@@ -27,18 +41,20 @@ $('#popup-news').popup({
 function throw_message_order_approve(str) {
     $("#order_approve").fadeIn(500).delay(6000).fadeOut(500);
 }
-
+// html
 // onclick='throw_message_order_approve(" "); return false;'
+
 
 // error
 function throw_message_order_error(str) {
     $("#order_error").fadeIn(500).delay(6000).fadeOut(500);
 }
 
+// html
 // onclick='throw_message_order_error(" "); return false;'
 
 
-
+// ----------------------------------------------------------------
 
 // Для подписки на новости
 // approve

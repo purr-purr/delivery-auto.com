@@ -104,3 +104,23 @@ $('.day-vote').on('click', function(event){
     $('.everyday_block').toggleClass('show-it');
 });
 // ---------------------------------------------------------------------------
+
+
+
+// ---------------------------------------------------------------------------
+// Только для co-faq.html
+
+// Появление инпута ответов на вопросы при выборе Темы
+$('.faq__search').on('change', function() {
+    $('.topic-001').toggleClass('faq__answer--hide', this.value != 's1');
+    $('.topic-002').toggleClass('faq__answer--hide', this.value != 's2');
+    $('.topic-003').toggleClass('faq__answer--hide', this.value != 's3');
+    $('.topic-004').toggleClass('faq__answer--hide', this.value != 's4');
+    $('.topic-005').toggleClass('faq__answer--hide', this.value != 's5');
+    $('.topic-006').toggleClass('faq__answer--hide', this.value != 's6');
+    $('.topic-007').toggleClass('faq__answer--hide', this.value != 's7');
+    $('.topic-008').toggleClass('faq__answer--hide', this.value != 's8');
+});
+
+// ---------------------------------------------------------------------------
+

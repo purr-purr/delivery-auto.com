@@ -1779,7 +1779,9 @@ details > summary {
 /* pop up common style */
 .popup-event--1_close,
 .popup-event--2_close,
-.popup-news_close {
+.popup-news_close,
+.popup-tariff-map_close,
+.popup-discount_close {
     position: absolute;
     top: 50px;
     right: 60px;
@@ -1792,13 +1794,17 @@ details > summary {
 
 .popup-event--1_close span,
 .popup-event--2_close span,
-.popup-news_close span {
+.popup-news_close span,
+.popup-tariff-map_close span,
+.popup-discount_close span {
     display: none;
 }
 
 #popup-event--1_background,
 #popup-event--2_background,
-#popup-news_background {
+#popup-news_background,
+#popup-tariff-map_background,
+#popup-discount_background {
     opacity: .9 !important;
 }
 
@@ -1918,6 +1924,17 @@ details > summary {
 	background: #ffd500;
 }
 
+#popup-tariff-map form,
+#popup-discount form {
+	padding: 25px 25px;
+}
+
+
+
+
+
+
+
 /* Уведомление Approve or Error */
 .notice__box {
 	display: none;
@@ -1960,3 +1977,5 @@ details > summary {
 	width: 60px;
 	height: 60px; 
 }
+
+

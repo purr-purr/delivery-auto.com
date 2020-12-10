@@ -1,0 +1,146 @@
+/* =================================================
+//     Стили для страницы Система знижок
+=================================================== */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__discount.jpg") no-repeat;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.discount__map {
+    width: 100%;
+    margin: 20px 0 60px 0;
+}
+
+.discount__map img {
+    width: 100%;
+}
+
+/* Аккардион */
+.acc-discount {
+	max-width: 730px;
+	min-width: 630px;
+}
+
+.acc-discount details[open] summary ~ * {
+	animation: acc-discount-open 0.3s ease-in-out;
+}
+
+@keyframes acc-discount-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.acc-discount summary::-webkit-details-marker {
+	display: none;
+}
+
+.acc-discount summary {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 72px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+    color: #333333;
+    outline: 0;
+}
+
+.acc-discount summary:after {
+	content: " ";
+	position: absolute;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: 200ms linear;
+}
+
+.acc-discount details[open] summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform 0.5s linear;
+}
+
+/* Title */
+.acc-discount__title {
+    padding-left: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+}
+
+.acc-discount__info {
+    padding-bottom: 35px;
+    width: 999px;
+}
+
+.acc-discount__info p, .discount-prog p {
+    margin-bottom: 20px;
+}
+
+.acc-discount__info p a, 
+.acc-discount__links p a {
+    color: #3072C4;
+}
+
+.acc-discount__info p a:hover,
+.acc-discount__links p a:hover {
+    color: #3072C4;
+    text-decoration: underline;
+}
+
+.acc-discount__links {
+    display: flex;
+    justify-content: space-between;
+    width: 510px;
+    margin-top: 40px;
+}
+
+.discount-prog {
+    margin-top: 100px;
+}
+
+.discount-prog__title {
+    margin-bottom: 25px;
+}
+
+.discount-prog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.discount-prog__info {
+    display: flex;
+    align-items: baseline;
+}
+
+.discount-prog__info p:first-child {
+    width: 127px;
+    margin-right: 15px;
+}
+
+.discount-prog__info span {
+    color: #FF2727;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 15px;
+}

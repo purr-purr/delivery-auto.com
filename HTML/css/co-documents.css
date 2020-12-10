@@ -46,7 +46,7 @@
 }
 
 .documents__link {
-    max-width: 540px;
+    max-width: 620px;
 }
 
 .documents__link:hover ~ .documents__doc  {
