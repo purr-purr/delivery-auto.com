@@ -15,12 +15,12 @@ $(function(){
     $("#included__aside-links").load("template/aside-links.html");
     // Notification
     $("#included__notification").load("template/notification.html");
+    // Pop-up
+    $("#included__pop-up").load("template/pop-up.html");
     // Mobile App
     $("#included__mob-app").load("template/mob-app.html");
 });
 // ---------------------------------------------------------------------------
-
-
 
 
 

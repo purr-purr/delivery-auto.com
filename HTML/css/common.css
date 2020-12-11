@@ -2175,8 +2175,35 @@ details > summary {
 }
 
 
+#popup-call-center form {
+	padding: 70px 50px;
+	width: 596px;
+}
 
+#popup-call-center .popup-main__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
 
+#popup-call-center .p-call-center__info div {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#popup-call-center .p-call-center__info div:last-child {
+	margin-bottom: 0;
+}
+
+#popup-call-center .p-call-center__info div p:first-child {
+	width: 158px;
+	margin-right: 50px;
+}
+
+#popup-call-center .popup-main {
+	background: #fff url('../img/system/any/pop-up__call-center.png') no-repeat bottom right;
+}
 
 
 
