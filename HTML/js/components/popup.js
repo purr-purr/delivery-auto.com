@@ -33,6 +33,13 @@ $('#popup-discount').popup({
 });
 
 
+// pop up Графік роботи call-центру
+$('#popup-call-center').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
+
 // ----------------------------------------------------------------
 // notification (approve or error)
 

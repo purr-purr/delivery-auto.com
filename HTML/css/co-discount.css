@@ -12,10 +12,32 @@
 .discount__map {
     width: 100%;
     margin: 20px 0 60px 0;
+    position: relative;
 }
 
 .discount__map img {
     width: 100%;
+    cursor: pointer;
+}
+
+.discount__print, .discount__open {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.discount__print:hover path, .discount__open:hover path {
+    fill: #ffd500
+}
+
+.discount__open {
+    right: 60px;
+    cursor: pointer;
+}
+
+.discount-prog__rules li span {
+    color: #3072C4;
+    margin-right: 5px;
 }
 
 /* Аккардион */
