@@ -666,6 +666,10 @@ details > summary {
 	width: max-content;
 }
 
+.call-center__schedule {
+	cursor: pointer;
+}
+
 .support__link {
 	margin-bottom: 13px;
 }

@@ -125,3 +125,26 @@ $('.faq__search').on('change', function() {
 
 // ---------------------------------------------------------------------------
 
+
+
+
+// ---------------------------------------------------------------------------
+// Только для cl-express-delivery.html
+
+$('#time09').hover(
+    function(){ $('.schedule').addClass('schedule__time09') },
+    function(){ $('.schedule').removeClass('schedule__time09') }
+);
+$('#time12').hover(
+    function(){ $('.schedule').addClass('schedule__time12') },
+    function(){ $('.schedule').removeClass('schedule__time12') }
+);
+$('#time15').hover(
+    function(){ $('.schedule').addClass('schedule__time15') },
+    function(){ $('.schedule').removeClass('schedule__time15') }
+);
+$('#time18').hover(
+    function(){ $('.schedule').addClass('schedule__time18') },
+    function(){ $('.schedule').removeClass('schedule__time18') }
+);
+// ---------------------------------------------------------------------------
