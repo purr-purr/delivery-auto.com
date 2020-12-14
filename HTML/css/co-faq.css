@@ -30,12 +30,12 @@
 
 .faq__question p {
 	font-weight: bold;
-	max-width: 283px;
 }
 
 .faq__search {
-	width: 410px;
+	width: 522px;
 	background-color: #FFFFFF;
+	margin-left: 120px;
 }
 
 .faq__search:focus,
