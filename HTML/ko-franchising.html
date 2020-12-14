@@ -268,7 +268,7 @@
                             </div>
                         </div>
                         <!-- next line -->
-                        <div class="franchising-form__line">
+                        <div class="franchising-form__line" style="margin-bottom: 0;">
                             <div class="franchising-form__item franchising-form__item--col">
                                 <p class="franchising-form__checkbox-title">Наявність</p>
                             </div>
@@ -277,17 +277,20 @@
                                 <div class="checkbox--before franchising-form__item--size">
                                     <input id="Office" name="Office" type="checkbox" value="true"/>
                                     <label for="Office">Офіс</label>
+                                    <input name="Office" type="hidden" value="false">
                                     <input class="small-input-in-checkbox" id="Office-number" name="Office-number" type="number" placeholder="Кількість"/>
                                 </div>
 
                                 <div class="checkbox--before franchising-form__item--size">
-                                    <input id="Printer" name="Printer" type="checkbox" value="true"/>
-                                    <label for="Printer">Принтер</label>
+                                    <input data-val="true" data-val-required="The Принтер field is required." id="HasPrinter" name="HasPrinter" type="checkbox" value="true">
+                                    <label for="HasPrinter">Принтер</label>
+                                    <input name="HasPrinter" type="hidden" value="false">
                                 </div>
 
                                 <div class="checkbox--before franchising-form__item--size">
-                                    <input id="Fax" name="Fax" type="checkbox" value="true"/>
-                                    <label for="Fax">Факс</label>
+                                    <input data-val="true" data-val-required="The Факс field is required." id="HasFax" name="HasFax" type="checkbox" value="true">
+                                    <label for="HasFax">Факс</label>
+                                    <input name="HasFax" type="hidden" value="false">
                                 </div>
                             </div>
 
@@ -299,13 +302,15 @@
                                 </div>
 
                                 <div class="checkbox--before franchising-form__item--size">
-                                    <input id="Computer" name="Computer" type="checkbox" value="true"/>
-                                    <label for="Computer">Комп'ютер</label>
+                                    <input class="check-box" data-val="true" data-val-required="The Комп'ютер field is required." id="HasPC" name="HasPC" type="checkbox" value="true">
+                                    <label for="HasPC">Комп'ютер</label>
+                                    <input name="HasPC" type="hidden" value="false">
                                 </div>
 
                                 <div class="checkbox--before franchising-form__item--size">
-                                    <input id="Weigher" name="Weigher" type="checkbox" value="true"/>
-                                    <label for="Weigher">Ваги</label>
+                                    <input data-val="true" data-val-required="The Ваги field is required." id="HasScales" name="HasScales" type="checkbox" value="true">
+                                    <label for="HasScales">Ваги</label>
+                                    <input name="HasScales" type="hidden" value="false">
                                 </div>
                             </div>
 
@@ -317,13 +322,34 @@
                                 </div>
 
                                 <div class="checkbox--before franchising-form__item--size">
-                                    <input id="Internet" name="Internet" type="checkbox" value="true"/>
-                                    <label for="Internet">Інтернет</label>
+                                    <input data-val="true" data-val-required="The Інтернет field is required." id="HasInternet" name="HasInternet" type="checkbox" value="true">
+                                    <label for="HasInternet">Інтернет</label>
+                                    <input name="HasInternet" type="hidden" value="false">
                                 </div>
 
                                 <div class="checkbox--before franchising-form__item--size">
-                                    <input id="Shtabeler" name="Shtabeler" type="checkbox" value="true"/>
-                                    <label for="Shtabeler">Штабелер</label>
+                                    <input data-val="true" data-val-required="The Штебелер field is required." id="HasSHTB" name="HasSHTB" type="checkbox" value="true">
+                                    <label for="HasSHTB">Штабелер</label>
+                                    <input name="HasSHTB" type="hidden" value="false">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- next line -->
+                        <div class="franchising-form__line" style="justify-content: flex-start;">
+                            <div class="franchising-form__item franchising-form__item--col" style="padding-left:143px;">
+                                <div class="checkbox--before franchising-form__item--size">
+                                    <input data-val="true" data-val-required="The Рокла field is required." id="HasRocla" name="HasRocla" type="checkbox" value="true">
+                                    <label for="HasRocla">Рокла</label>
+                                    <input name="HasRocla" type="hidden" value="false">
+                                </div>
+                            </div>
+
+                            <div class="franchising-form__item franchising-form__item--col" style="padding-left: 178px;">
+                                <div class="checkbox--before franchising-form__item--size">
+                                    <input id="Vehicle" name="Vehicle" type="checkbox" value="true"/>
+                                    <label for="Vehicle">Вантажний автомобіль <p style="padding-left: 25px;"> (марка, тоннажність)</p></label>
+                                    <input name="Vehicle" type="hidden" value="false">
+                                    <input class="small-input-in-checkbox" id="Vehicle-number" name="Vehicle" type="text" value="">
                                 </div>
                             </div>
                         </div>

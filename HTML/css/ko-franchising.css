@@ -226,7 +226,8 @@
 
 #Kved-number,
 #Storage-number,
-#Office-number {
+#Office-number,
+#Vehicle-number {
     visibility: hidden;
     opacity: 0;
     margin-left: 25px;
@@ -246,9 +247,14 @@
     width: 97px;
 }
 
+#Vehicle-number {
+    width: 302px;
+}
+
 #Kved:checked ~ #Kved-number,
 #Storage:checked ~ #Storage-number,
-#Office:checked ~ #Office-number {
+#Office:checked ~ #Office-number,
+#Vehicle:checked ~ #Vehicle-number {
     visibility: visible;
     opacity: 1;
     transition: all 0.3s ease-in;
