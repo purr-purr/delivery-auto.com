@@ -40,7 +40,7 @@ $('#popup-call-center').popup({
     escape: false
 });
 
-// pop up Графік роботи call-центру
+// pop up Додати квитанцію в форме Забор/Доставка
 $('#popup-courier-info').popup({
     pagecontainer: 'body',
     closebutton: true,

@@ -45,6 +45,32 @@
     color: #FFD500;
 }
 
+.action__desc p {
+    margin-bottom: 15px;
+}
+
+.action__desc a {
+    color: #3072C4;
+}
+
+.action__desc a:hover {
+    color: #3072C4;
+    text-decoration: underline;
+}
+
+.action__desc ul {
+    list-style-type: disc;
+}
+
+.action__desc ul li {
+    margin-left: 18px;
+}
+
+.action__desc ul li::marker {
+    color: #3072C4;
+    font-size: 15px;
+}
+
 .action__btn {
     margin-top: 30px;
     width: 190px;
