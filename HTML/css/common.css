@@ -128,6 +128,13 @@ input[type=number] {
 	-moz-appearance: textfield;
 }
 
+input:disabled,
+select:disabled,
+option:disabled,
+textarea:disabled {
+	background-color: #E9E9E9;
+}
+
 select {
     width: 387px;
     height: 40px;
@@ -351,7 +358,7 @@ details > summary {
 /* Белая Кнопка */
 .main-btn--white {
     color: #333333;
-    border: 1px solid #333333;
+    border: 1px solid #808080;
     background-color: #fff;
 }
 
@@ -363,29 +370,6 @@ details > summary {
 .main-btn--white img {
     margin-right: 10px;
 }
-
-/* ======================================
-//             main-btn--link
-====================================== */
-/* 
-.main-btn--link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 178px;
-	height: 50px;
-	background-color: #FFD500;
-	border-radius: 5px;
-	border: 1px solid #FFD500;
-	transition: all 0.3s ease-in;
-}
-
-.main-btn--link:hover {
-	transition: all 0.3s ease-in;
-	border-color: #FFD500;
-	background-color: transparent;
-} */
-
 
 /* ======================================
 //             Navigation
@@ -2028,7 +2012,8 @@ details > summary {
 .popup-news_close,
 .popup-tariff-map_close,
 .popup-discount_close,
-.popup-call-center_close {
+.popup-call-center_close,
+.popup-courier-info_close {
     position: absolute;
     top: 50px;
     right: 60px;
@@ -2044,7 +2029,8 @@ details > summary {
 .popup-news_close span,
 .popup-tariff-map_close span,
 .popup-discount_close span,
-.popup-call-center_close span {
+.popup-call-center_close span,
+.popup-courier-info_close span {
     display: none;
 }
 
@@ -2053,7 +2039,8 @@ details > summary {
 #popup-news_background,
 #popup-tariff-map_background,
 #popup-discount_background,
-#popup-call-center_background {
+#popup-call-center_background,
+#popup-courier-info_background {
     opacity: .9 !important;
 }
 
@@ -2171,6 +2158,20 @@ details > summary {
 	font-size: 16px;
 	color: #333;
 	background: #ffd500;
+}
+
+#popup-courier-info form {
+	padding: 50px 50px;
+}
+
+#popup-courier-info .popup-main__title {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+#popup-courier-info p {
+	margin-bottom: 20px;
+	width: 496px;
 }
 
 #popup-tariff-map form,

@@ -561,6 +561,7 @@
                                         <div class="courier-order__my-order">
                                             <button ng-click="addReceipt()" class="main-btn main-btn--white add-receipt__btn"><span>+</span> Додати квитанцію</button>
                                             <p style="max-width: 100%;">Додайте квитанцію, щоб створити збірну доставку <br> на одну адресу
+                                                <img class="courier-order__info-btn popup-courier-info_open" src="img/system/icon/question-circle__icon.svg" alt="icon">
                                             </p>
                                         </div>
                                     </div>
@@ -5594,6 +5595,18 @@
             </section>
             
             <section id="included__feedback-block" class="feedback-block"></section>
+
+            <!-- Pop Up Додати квитанцію -->
+            <section id="popup-courier-info">
+                <form class="popup-main">
+                    <h3 class="popup-main__title">Збірна доставку на одну адресу</h3>
+                    <div>
+                        <p>Послуга, що дозволяє здійснити адресну доставку кількох квитанцій на одну адресу для одного одержувача. У квитанціях   не повинна бути замовлена послуга адресної доставки при відправленні.</p>
+                        <p>Розрахунок вартості здійснюється відповідно до загальної ваги і обсягу всіх квитанцій за стандартними тарифами Компанії.</p>
+                        <p>Додатково утримується вартість послуги 5 грн за кожну квитанцію.</p>
+                    </div>
+                </form>
+            </section>
         </main>
 
         <!--========== FOOTER LAYOUT ==========-->

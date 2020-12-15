@@ -44,11 +44,16 @@
     bottom: -35px;
 }
 
+.intro__banner .slick-dots li {
+    width: 50px;
+    margin: 0;
+}
+
 .intro__banner .slick-dots li button {
     font-size: 0;
     line-height: 0;
     display: block;
-    width: 30px;
+    width: 50px;
     height: 2px;
     padding: 0;
     cursor: pointer;
@@ -62,7 +67,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px;
+    width: 50px;
     height: 2px;
     background-color: #C4C4C4;
     text-align: center;
@@ -77,7 +82,7 @@
     color: transparent;
     height: 4px;
     border-radius: 14px;
-    width: 30px;
+    width: 50px;
 }
 
 

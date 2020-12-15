@@ -40,6 +40,14 @@ $('#popup-call-center').popup({
     escape: false
 });
 
+// pop up Графік роботи call-центру
+$('#popup-courier-info').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
+
+
 // ----------------------------------------------------------------
 // notification (approve or error)
 

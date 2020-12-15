@@ -988,3 +988,9 @@ hr {
 .courier-order__discont div:first-child {
     margin-right: 50px;
 }
+
+.courier-order__info-btn {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
