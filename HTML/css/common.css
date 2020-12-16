@@ -1986,7 +1986,95 @@ details > summary {
 	pop up/modal общие стили
 ====================================== */
 
-/* pop up */
+#popup-event--1_background,
+#popup-event--2_background,
+#popup-news_background,
+#popup-tariff-map_background,
+#popup-discount_background,
+#popup-call-center_background,
+#popup-courier-info_background,
+#popup-subscribe-approve_background,
+#popup-order-approve_background,
+#popup-order-error_background,
+#popup-order-counterparties_background,
+#popup-order-job_background,
+#popup-order-api_background,
+#popup-order-loyalty_background,
+#popup-express-send_background,
+#popup-express-time_background,
+#popup-express-add_background,
+#popup-courier-add-error_background,
+#popup-courier-approve_background {
+    opacity: .9 !important;
+}
+
+.popup-event--1_close span,
+.popup-event--2_close span,
+.popup-news_close span,
+.popup-tariff-map_close span,
+.popup-discount_close span,
+.popup-call-center_close span,
+.popup-courier-info_close span,
+.popup-subscribe-approve_close span,
+.popup-order-approve_close span,
+.popup-order-error_close span,
+.popup-order-counterparties_close span,
+.popup-order-job_close span,
+.popup-order-api_close span,
+.popup-order-loyalty_close span,
+.popup-express-send_close span,
+.popup-express-time_close span,
+.popup-express-add_close span,
+.popup-courier-add-error_close span,
+.popup-courier-approve_close span {
+    display: none;
+}
+
+.popup-event--1_close,
+.popup-event--2_close,
+.popup-news_close,
+.popup-tariff-map_close,
+.popup-discount_close,
+.popup-call-center_close,
+.popup-courier-info_close,
+.popup-subscribe-approve_close,
+.popup-order-approve_close,
+.popup-order-error_close,
+.popup-order-counterparties_close,
+.popup-order-job_close,
+.popup-order-api_close,
+.popup-order-loyalty_close,
+.popup-express-send_close,
+.popup-express-time_close,
+.popup-express-add_close,
+.popup-courier-add-error_close,
+.popup-courier-approve_close {
+    position: absolute;
+    top: 50px;
+	right: 60px;
+    border: none;
+    width: 11px;
+    height: 11px;
+    background: url("../img/system/icon/red-close.svg") no-repeat center;
+    cursor: pointer;
+}
+
+/* Только для Поп-апов Уведомлений или других маленьких поп-апов */
+.popup-subscribe-approve_close,
+.popup-order-approve_close,
+.popup-order-error_close,
+.popup-order-counterparties_close,
+.popup-order-job_close,
+.popup-order-api_close,
+.popup-express-time_close,
+.popup-express-add_close,
+.popup-courier-add-error_close,
+.popup-courier-approve_close {
+	top: 10%;
+	right: 6%;
+}
+
+/* pop up общие стили */
 .popup-main {
     width: 100%;
     height: 100%;
@@ -2006,45 +2094,94 @@ details > summary {
 	margin-bottom: 13px;
 }
 
-/* pop up common style */
-.popup-event--1_close,
-.popup-event--2_close,
-.popup-news_close,
-.popup-tariff-map_close,
-.popup-discount_close,
-.popup-call-center_close,
-.popup-courier-info_close {
-    position: absolute;
-    top: 50px;
-    right: 60px;
-    border: none;
-    width: 11px;
-    height: 11px;
-    background: url("../img/system/icon/red-close.svg") no-repeat center;
-    cursor: pointer;
+.popup-icon {
+	width: 100px;
+	height: 100px;
+	margin-left: 45px;
 }
 
-.popup-event--1_close span,
-.popup-event--2_close span,
-.popup-news_close span,
-.popup-tariff-map_close span,
-.popup-discount_close span,
-.popup-call-center_close span,
-.popup-courier-info_close span {
-    display: none;
+
+/* Pop-up Уведомления, общие стили*/
+.popup-notify {
+	display: flex;
+	align-items: center;
+	padding: 79px 50px;
 }
 
-#popup-event--1_background,
-#popup-event--2_background,
-#popup-news_background,
-#popup-tariff-map_background,
-#popup-discount_background,
-#popup-call-center_background,
-#popup-courier-info_background {
-    opacity: .9 !important;
+.popup-notify p {
+	max-width: 348px;
+	width: 100%;
+	margin-top: 17px;
 }
 
-/* pop up Индивидуальный контент  */
+.popup-notify__title{
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+
+
+/* Стили для конкретных pop-up  */
+
+
+/* Pop-up  График работы Колл-центра */
+#popup-call-center form {
+	padding: 70px 50px;
+	width: 596px;
+}
+
+#popup-call-center .popup-main__title {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+#popup-call-center .p-call-center__info div {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+#popup-call-center .p-call-center__info div:last-child {
+	margin-bottom: 0;
+}
+
+#popup-call-center .p-call-center__info div p:first-child {
+	width: 158px;
+	margin-right: 50px;
+}
+
+#popup-call-center .popup-main {
+	background: #fff url('../img/system/any/pop-up__call-center.png') no-repeat bottom right;
+}
+
+.courier-approve__btn {
+	display: flex;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+.courier-approve__btn a:first-child{
+	margin-right: 50px;
+}
+
+.courier-approve__btn-print {
+	display: flex;
+	align-items: center;
+	color: #808080;
+}
+
+.courier-approve__btn-print:hover {
+	opacity: .7;
+}
+
+.courier-approve__btn-print img {
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+}
+
 /* Регистрация на мероприятие  */
 .p-event__date {
     display: flex;
@@ -2160,6 +2297,7 @@ details > summary {
 	background: #ffd500;
 }
 
+/* разное от поп-апов */
 #popup-courier-info form {
 	padding: 50px 50px;
 }
@@ -2178,39 +2316,6 @@ details > summary {
 #popup-discount form {
 	padding: 25px 25px;
 }
-
-
-#popup-call-center form {
-	padding: 70px 50px;
-	width: 596px;
-}
-
-#popup-call-center .popup-main__title {
-	font-weight: 600;
-	font-size: 24px;
-	line-height: 20px;
-	margin-bottom: 30px;
-}
-
-#popup-call-center .p-call-center__info div {
-	display: flex;
-	margin-bottom: 20px;
-}
-
-#popup-call-center .p-call-center__info div:last-child {
-	margin-bottom: 0;
-}
-
-#popup-call-center .p-call-center__info div p:first-child {
-	width: 158px;
-	margin-right: 50px;
-}
-
-#popup-call-center .popup-main {
-	background: #fff url('../img/system/any/pop-up__call-center.png') no-repeat bottom right;
-}
-
-
 
 /* Уведомление Approve or Error */
 .notice__box {
@@ -2242,7 +2347,6 @@ details > summary {
 	font-family: 'Segoe UI';
 	font-weight: 600;
 	font-size: 24px;
-	
 }
 
 .notice__box .box_text p {

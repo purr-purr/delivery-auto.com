@@ -39,15 +39,12 @@
 						</select>
 					</div>
 				
-
-				
 					<div class="feedback__item">
 						<label class="feedback__label">Повідомлення</label>
 						<textarea class="feedback__textarea" cols="30" rows="10"></textarea>
 					</div>
 					
-
-					<button class="feedback__btn" onclick='throw_message_order_approve(" "); return false;'>Надіслати</button>
+					<button class="feedback__btn popup-order-approve_open">Надіслати</button>
 				</form>
 			</aside>
 
@@ -172,31 +169,5 @@
 				<a href="co-faq.html" class="faq-block__ask-btn">Задати питання <img src="img/system/icon/arrow.svg" alt="arrow"></a>
 			</div>
 		</div>
-
-
-		<!-- POP UP Order Approve-->
-		<div id="order_approve" class='notice__box'>
-			<div class='box_text'>
-				<div>
-					<h5>Ваша заявка успішно <br> відправлена!</h5>
-					<p>Наш менеджер зв’яжеться <br>з вами найближчим часом.</p>
-				</div>
-				<img src="img/system/icon/notify__approve.svg" alt="Done">
-			</div>
-		</div>
-		<!-- \POP UP -->
-		
-		<!-- POP UP Order Error-->
-		<div id="order_error" class='notice__box notice__box--error'>
-			<div class='box_text'>
-				<div>
-					<h5>Ваша заявка не <br> відправлена</h5>
-					<p>Повторіть вашу спробу <br>ще раз.</p>
-				</div>
-				<img src="img/system/icon/notify__error.svg" alt="Error">
-			</div>
-		</div>
-		<!-- \POP UP -->
-		<script src="js/components/popup.js" type="text/javascript"></script>
 	</div>
 <!-- </section> -->

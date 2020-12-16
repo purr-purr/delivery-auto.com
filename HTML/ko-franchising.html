@@ -347,9 +347,9 @@
                             <div class="franchising-form__item franchising-form__item--col" style="padding-left: 178px;">
                                 <div class="checkbox--before franchising-form__item--size">
                                     <input id="Vehicle" name="Vehicle" type="checkbox" value="true"/>
-                                    <label for="Vehicle">Вантажний автомобіль <p style="padding-left: 25px;"> (марка, тоннажність)</p></label>
+                                    <label for="Vehicle">Вантажний автомобіль</label>
                                     <input name="Vehicle" type="hidden" value="false">
-                                    <input class="small-input-in-checkbox" id="Vehicle-number" name="Vehicle" type="text" value="">
+                                    <input class="small-input-in-checkbox" id="Vehicle-number" name="Vehicle" type="text" value="" placeholder="Марка, тоннажність">
                                 </div>
                             </div>
                         </div>
@@ -411,7 +411,7 @@
                             <input class="captcha-form__input" type="text" name="captcha-result" placeholder="Введіть результат виконання операцій з картинки">
                         </div>
 
-                        <button class="main-btn franchising-form__btn" onclick='throw_message_order_approve(" "); return false;'>Надіслати</button>
+                        <button class="main-btn franchising-form__btn popup-order-approve_open">Надіслати</button>
                     </form>
                 </article>
             </section>

@@ -126,10 +126,21 @@
                             </div>
                         </div>
 
-                        <a href="javascript:void()" class="main-btn loyalty-form__btn" onclick='throw_message_order_approve(" "); return false;'>Надіслати</a>
+                        <a href="javascript:void()" class="main-btn loyalty-form__btn popup-order-loyalty_open">Надіслати</a>
                     </form>
                 </article>
             </section>
+
+            <!-- Pop Up Реєстрація в програмі лояльності -->
+            <div id="popup-order-loyalty">
+                <form class="popup-main popup-notify">
+                    <div>
+                        <h3 class="popup-notify__title">Реєстрація в програмі <br> лояльності</h3>
+                        <p>Дякуємо! Ви успішно зареєстровані в “Клуб <br> Delivery Group”</p>
+                    </div>
+                    <img class="popup-icon" src="img/system/icon/notify__approve.svg" alt="done icon">
+                </form>
+            </div>
 
             <section id="included__feedback-block" class="feedback-block"></section>
         </main>
@@ -139,8 +150,6 @@
         <footer id="included__sub-footer" class="sub-footer"></footer>
         <!--========== THE END FOOTER LAYOUT ==========-->
 
-        <!-- Notify html included -->
-        <section id="included__notification"></section>
         <!-- Pop-up html included -->
         <section id="included__pop-up"></section>
         <!-- ADD JQUERY HERE -->

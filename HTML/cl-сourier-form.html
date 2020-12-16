@@ -516,10 +516,10 @@
                                             <div class="main-btn main-btn--white count-btn" id="calculator_pick" onclick="calculate_pick_tarif()">Розрахувати</div>
                                             <div id="calculator_tarif" class="main-btn main-btn--white count-btn calculate_button" style="display: none;" ng-click="calculate_pallet_tarif()">Розрахувати</div>
 
-                                            <div class="main-btn" id="pick_up_send" onclick='throw_message_order_approve(" "); return false; SubmitForm("#PickHyperForm");'>Замовити</div>
+                                            <div class="main-btn popup-courier-approve_open" id="pick_up_send" onclick='SubmitForm("#PickHyperForm");'>Замовити</div>
                                         </div>
                                         <div class="total_cost">
-                                            <p class="total_cost__text">Орієнтована вартість доставки</p>
+                                            <p class="total_cost__text popup-courier-add-error_open">Орієнтована вартість доставки</p>
                                             <div class="total_cost__result">
                                                 <div class="total_cost__value tarif_pick_cost_pick">0</div>
                                                 <p class="total_cost__value">грн</p>
@@ -721,7 +721,7 @@
                                     <div class="courier-order__footer">
                                         <div>
                                             <div id="calculator_pick" class="main-btn main-btn--white count-btn" onclick="calculate_delivery_tarif()">Розрахувати</div>
-                                            <button type="button" id="pick_up_send" onclick='throw_message_order_approve(" "); return false; SubmitForm("#DelivHyperForm");' class="main-btn">Замовити</button>
+                                            <button type="button" id="pick_up_send" onclick='SubmitForm("#DelivHyperForm");' class="main-btn popup-courier-approve_open">Замовити</button>
                                         </div>
                                         <div class="total_cost">
                                             <p class="total_cost__text">Орієнтована вартість доставки</p>
@@ -5596,6 +5596,21 @@
             
             <section id="included__feedback-block" class="feedback-block"></section>
 
+            <!-- Pop Up Забор/Доставка, Заявка отправлена (кнопка печать, просмотр). -->
+            <div id="popup-courier-approve">
+                <form class="popup-main popup-notify">
+                    <div>
+                        <h3 class="popup-notify__title">Заявка відправлена</h3>
+                        <p>Ваша заявка 00384488 була відправлена на обробку, підтвердження про прийняття заявки прийде до Вас на пошту протягом 30 хвилин.</p>
+                        <div class="courier-approve__btn">
+                            <a href="#" class="main-btn">Переглянути</a>
+                            <a href="#" class="courier-approve__btn-print"><img class="" src="img/system/icon/print--grey.svg" alt="icon">Друкувати</a>
+                        </div>
+                    </div>
+                    <img class="popup-icon" src="img/system/icon/notify__approve.svg" alt="done icon">
+                </form>
+            </div>
+
             <!-- Pop Up Додати квитанцію -->
             <section id="popup-courier-info">
                 <form class="popup-main">
@@ -5607,6 +5622,17 @@
                     </div>
                 </form>
             </section>
+
+            <!-- Pop Up Забор/Доставка, Введіть інформацію про палети і натисніть зелений плюс. -->
+            <div id="popup-courier-add-error">
+                <form class="popup-main popup-notify">
+                    <div>
+                        <h3 class="popup-notify__title">Помилка відправки</h3>
+                        <p>Введіть інформацію про палети і натисніть зелений плюс.</p>
+                    </div>
+                    <img class="popup-icon" src="img/system/icon/notify__error2.svg" alt="error icon">
+                </form>
+            </div>
         </main>
 
         <!--========== FOOTER LAYOUT ==========-->

@@ -577,7 +577,7 @@
                         <div class="del-order__footer">
                             <div>
                                 <div ng-click="add_new_delivery()" class="main-btn del-order__parcel-btn"><img src="img/system/icon/btn-add-file.svg" alt=""> Додати посилку</div>
-                                <button class="main-btn del-order__btn" onclick='throw_message_order_approve(" "); return false;'>Надіслати</button>
+                                <button class="main-btn del-order__btn popup-express-send_open">Надіслати</button>
                             </div>
                             <div class="total_cost">
                                 <p class="total_cost__text">Орієнтована вартість доставки</p>
@@ -590,6 +590,39 @@
                     </form>
                 </article>
             </section>
+
+            <!-- Pop Up Експрес-доставка, заявка отправлена (с номером заявки) -->
+            <div id="popup-express-send">
+                <form class="popup-main popup-notify">
+                    <div>
+                        <h3 class="popup-notify__title">Заявка відправлена</h3>
+                        <p>Номер Вашої заявки: 0003014. <br> Найближчим часом с Вами зв’яжеться менеджер для стоншування і підтвердження інформації. </p>
+                    </div>
+                    <img class="popup-icon" src="img/system/icon/notify__approve.svg" alt="done icon">
+                </form>
+            </div>
+
+            <!-- Pop Up Експрес-доставка, Ошибка Спробуйте змінити ЧАС або ДАТУ виклику кур’єра. -->
+            <div id="popup-express-time">
+                <form class="popup-main popup-notify">
+                    <div>
+                        <h3 class="popup-notify__title">Помилка відправки</h3>
+                        <p>Даний вид послуги недоступний! Спробуйте змінити ЧАС або ДАТУ виклику кур’єра.</p>
+                    </div>
+                    <img class="popup-icon" src="img/system/icon/notify__error2.svg" alt="error icon">
+                </form>
+            </div>
+
+            <!-- Pop Up Експрес-доставка, Ошибка Додайте хоча б одну доставку. -->
+            <div id="popup-express-add">
+                <form class="popup-main popup-notify">
+                    <div>
+                        <h3 class="popup-notify__title">Помилка відправки</h3>
+                        <p>Додайте хоча б одну доставку!</p>
+                    </div>
+                    <img class="popup-icon" src="img/system/icon/notify__error2.svg" alt="error icon">
+                </form>
+            </div>
 
             <section id="included__feedback-block" class="feedback-block"></section>
         </main>

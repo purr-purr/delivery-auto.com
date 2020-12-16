@@ -468,6 +468,11 @@ hr {
     font-weight: bold;
     color: #ffd500;
 }
+
+.add-parcel__cost input:disabled {
+    background-color: transparent;
+}
+
 .add-parcel__cost label {
     font-weight: bold;
     font-size: 16px;

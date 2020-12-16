@@ -17,11 +17,9 @@
 	margin-right: 5px;
 }
 
-
 .address__item {
 	margin-bottom: 40px;
 }
-
 
 .address__heading {
 	display: flex;
@@ -41,7 +39,6 @@
 	line-height: 24px;
 }
 
-
 .address__item p  {
 	margin-bottom: 17px;
 }
@@ -58,7 +55,6 @@
 .address__video {
 	margin: 20px 0 25px 0;
 }
-
 
 /* Table */
 .tariff__table {
@@ -205,4 +201,61 @@
 .tariff__city td:nth-child(2) {
     border-right: 1px solid #999999;
     border-left: 1px solid #999999;
+}
+
+.tariff__city tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}
+
+
+.address__item details[open] summary ~ * {
+	animation: address__item-open 0.3s ease-in-out;
+}
+
+@keyframes address__item-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.address__item summary::-webkit-details-marker {
+	display: none;
+}
+
+.address__item summary {
+	display: flex;
+	align-items: center;
+	width: max-content;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+    color: #333333;
+	outline: 0;
+	font-weight: bold;
+}
+
+.address__item summary:after {
+	content: " ";
+	position: absolute;
+	right: -40px;
+	width: 35px;
+	height: 35px;
+	background: url("../img/system/icon/arrow.svg") no-repeat center;
+	transform-origin: center;
+	transition: 200ms linear;
+}
+
+.address__item details[open] summary {
+	color: #3072C4;
+}
+
+.address__item details[open] summary:after {
+    transform: rotate(90deg);
+	background: url("../img/system/icon/arrow--blue.svg") no-repeat center;
+	transition: transform 0.4s linear;
 }

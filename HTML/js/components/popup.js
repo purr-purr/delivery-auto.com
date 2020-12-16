@@ -1,3 +1,22 @@
+// ---------------------------------------------------
+// Самые часто используемые, на всех страницах
+
+// pop up Заявка отправлена, менеджер с вами свяжится
+$('#popup-order-approve').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
+
+// pop up Ошибка Заявка не отправлена
+$('#popup-order-error').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
+
+// ---------------------------------------------------
+
 // pop up мероприятия на странице "Центр обслуговування клієнтів"
 $('#popup-event--1').popup({
     pagecontainer: 'body',
@@ -32,7 +51,6 @@ $('#popup-discount').popup({
     escape: false
 });
 
-
 // pop up Графік роботи call-центру
 $('#popup-call-center').popup({
     pagecontainer: 'body',
@@ -47,43 +65,72 @@ $('#popup-courier-info').popup({
     escape: false
 });
 
+// pop up Вы подписались на новости
+$('#popup-subscribe-approve').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// ----------------------------------------------------------------
-// notification (approve or error)
+// pop up Страница Контрагентам, заявка отправлена
+$('#popup-order-counterparties').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// Заявка
-// approve
-function throw_message_order_approve(str) {
-    $("#order_approve").fadeIn(500).delay(6000).fadeOut(500);
-}
-// html
-// onclick='throw_message_order_approve(" "); return false;'
+// pop up Робота і кар’єра, заявка отправлена
+$('#popup-order-job').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
+// pop up АРІ компанії, заявка отправлена
+$('#popup-order-api').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// error
-function throw_message_order_error(str) {
-    $("#order_error").fadeIn(500).delay(6000).fadeOut(500);
-}
+// pop up Реєстрація в програмі лояльності
+$('#popup-order-loyalty').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// html
-// onclick='throw_message_order_error(" "); return false;'
+//  Pop Up Експрес-доставка, заявка отправлена (с номером заявки)
+$('#popup-express-send').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
+//  Pop Up Експрес-доставка, Ошибка Спробуйте змінити ЧАС або ДАТУ виклику кур’єра.
+$('#popup-express-time').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// ----------------------------------------------------------------
+//  Pop Up Експрес-доставка, Ошибка Додайте хоча б одну доставку.
+$('#popup-express-add').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// Для подписки на новости
-// approve
-function throw_message_subscribe_approve(str) {
-    $("#subscribe_approve").fadeIn(500).delay(6000).fadeOut(500);
-}
+//  Pop Up Забор/Доставка, Введіть інформацію про палети і натисніть зелений плюс. 
+$('#popup-courier-add-error').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
 
-// html
-// onclick='throw_message_subscribe_approve(" "); return false;'
-
-// error
-function throw_message_subscribe_error(str) {
-    $("#subscribe_error").fadeIn(500).delay(6000).fadeOut(500);
-}
-
-// html
-// onclick='throw_message_subscribe_error(" "); return false;'
+//  Pop Up Забор/Доставка, Заявка отправлена (кнопка печать, просмотр).
+$('#popup-courier-approve').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
