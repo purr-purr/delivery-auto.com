@@ -133,6 +133,10 @@
     width: 100%;
 }
 
+.bonus-table__category p {
+    font-weight: 600;
+}
+
 .bonus-table__category img {
     width: 35px;
     height: 35px;

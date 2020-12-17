@@ -84,29 +84,6 @@
                 </aside>
             </section>
             <section id="included__feedback-block" class="feedback-block"></section>
-
-
-            <!-- Pop Up Подписки на новости  -->
-            <section id="popup-news">
-                <form class="popup-main p-news">
-                    <h3 class="popup-main__title">Підписка на новини </h3>
-                    <p class="popup-main__desc">Підпишіться на розсилку групи компаній "DELIVERY", щоб першим дізнаватися про актуальні новини та акції </p>
-
-                    <div class="p-news__line">
-                        <div class="p-news__item">
-                            <input data-val="true" data-val-required="Потрібно поле Ваше ім’я" name="FirstName" type="text" placeholder="Ваше ім’я">
-                        </div>
-                        <div class="p-news__item">
-                            <input data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." name="Email" type="email" placeholder="Електронна пошта">
-                        </div>
-                    </div>
-
-                    <div class="p-news__line p-news__line--logo">
-                        <button class="popup-news_close main-btn p-news__btn" onclick='throw_message_subscribe_approve(" "); return false;' title="Close" aria-label="Close">Підписатися</button>
-                        <img src="img/system/delivery-group__logos/delGroup_logo.png" alt="delGroup_logo">
-                    </div>
-                </form>
-            </section>
         </main>
 
 
@@ -115,11 +92,6 @@
         <footer id="included__sub-footer" class="sub-footer"></footer>
         <!--========== THE END FOOTER LAYOUT ==========-->
 
-        <!-- Notify -->
-        <section id="included__notification"></section>
-
-        <!-- Notify html included -->
-        <section id="included__notification"></section>
         <!-- Pop-up html included -->
         <section id="included__pop-up"></section>
         <!-- ADD JQUERY HERE -->
@@ -132,7 +104,9 @@
         <script src="js/components/slick.main.js" type="text/javascript"></script>
         <!-- Calendar -->
         <script src="js/components/datepicker.min.js" type="text/javascript"></script>
+        <!-- Details tag Pofyliff for Edge -->
+        <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
         <!-- Main.js -->
-        <script src="js/main.js" type="text/javascript"></script>    
+        <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

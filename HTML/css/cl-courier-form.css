@@ -995,3 +995,36 @@ hr {
     height: 16px;
     cursor: pointer;
 }
+
+
+
+.print_form_block_title_style {
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.print_form_block_row {
+    display: flex;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.print_form_block_button {
+    cursor: pointer;
+    color: #808080;
+    display: flex;
+    align-items: center;
+}
+
+.print_form_block_button img {
+    margin-top: 4px;
+    margin-right: 9px;
+}
+
+.print_form_block_button:hover {
+    color: #ffd500;
+}

@@ -94,11 +94,6 @@
     border-left: 1px solid #999999;
 }
 
-.storage-table tbody tr:hover {
-	background-color: #FFEF9E;
-	transition: all .4s linear;
-}
-
 /* Безпечна угода  */
 .how-work {
     width: 100%;

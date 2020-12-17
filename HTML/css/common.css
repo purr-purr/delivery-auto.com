@@ -1311,6 +1311,10 @@ details > summary {
 	border: 2px solid transparent;
 }
 
+.questions__label:hover {
+	color: #3072C4;
+}
+
 .questions__label:before {
 	content: " ";
 	position: absolute;
@@ -2173,13 +2177,14 @@ details > summary {
 }
 
 .courier-approve__btn-print:hover {
-	opacity: .7;
+	color: #ffd500;
 }
 
 .courier-approve__btn-print img {
 	width: 14px;
 	height: 14px;
 	margin-right: 5px;
+	margin-top: 4px;
 }
 
 /* Регистрация на мероприятие  */

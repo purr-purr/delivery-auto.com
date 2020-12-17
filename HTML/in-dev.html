@@ -7,7 +7,7 @@
 <html lang="uk">
     <head>
         <meta charset="utf-8"/>
-        <title>Сторінка не знайдена</title>
+        <title>Сторінки не існує</title>
         <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8,IE=edge"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <!-- Fonts -->
@@ -32,42 +32,94 @@
             <section class="main__container">
                 <article class="main-content">
                     <style>
-                        .page-404 {
-                            display: flex;
-                            align-items: center;
-                            margin-top: 35px;
+                        #content {
+                            width: 1000px;
+                            margin: 50px auto;
+                            position: relative;
                         }
-                        .page-404 img {
-                            width: 546px;
-                            height: 472px;
+                        #content>img {
+                            width: 975px;
+                            height: 470px;
+                            padding-left: 15px;
+                            margin-top: 10px;
                         }
-                        .page-404__info {
-                            max-width: 490px;
+                        #content>div {
+                            position: absolute;
+                            z-index: 100;
+                            top: 35px;
+                            left: 60px;
                         }
-                        .page-404__info h1 {
-                            font-weight: 600;
-                            font-size: 24px;
-                            line-height: 36px;
-                            margin-bottom: 15px;
+                        #content>div>p {
+                            width: 255px;
+                            margin-bottom: 17px;
+                            padding: 13px 0 13px 0;
+                            font-size: 2.1em;
+                            font-weight: bold;
+                            border-top: 3px solid #ed1c24;
+                            border-bottom: 3px solid #ed1c24;
+                            font-family: Arial;
+                            line-height: 35px;
                         }
-                        .page-404__info p {
-                            margin-bottom: 30px;
+                        #content>div>div {
+                            margin-bottom: 55px;
+                            color: #2b2b28;
+                            line-height: 20px;
+                            font-size: 1.14em;
+                        }
+                        #content>div>div>a {
+                            color: #2b2b28;
+                            font-size: 1.14em;
+                            font-weight: 500;
+                            text-decoration: underline;
+                        }
+                        .layer-0 {
+                            width: 430px;
+                            padding: 21px 0 21px 30px;
+                            background-color: #fdcc09;
+                            position: relative;
+                            left: -60px;
+                        }
+                        .layer-1 {
+                            width: 15px;
+                            height: 48px;
+                            position: absolute;
+                            z-index: -10;
+                            top: 39px;
+                            left: 1px;
+                            background-color: #d4a900;
+                            transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(40deg);
+                            -webkit-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(40deg);
+                            -moz-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(40deg);
+                            -ms-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(40deg);
+                            -o-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(40deg);
+                        }
+                        #search_center {
+                            height: 38px;
                         }
                     </style>
 
-                    <div class="page-404">
-                        <div class="page-404__info">
-                            <h1>Упс ... Сторінка, яку Ви шукаєте, не може бути знайдена.</h1>
-                            <p>Будь ласка, скористайтеся навігацією або перейдіть на головну, щоб знайти потрібну Вам інформацію.</p>
-                            <a href="index.html" class="main-btn">Перейти на головну</a>
-                        </div>
+                    <div id="content">
+                        <img src="img/system/any/content404.png">
+                        <div>
+                            <p>
+                                СТОРІНКИ
+                                <br>
+                                НЕ ІСНУЄ
+                            </p>
+                            <div>
+                                <a href="/uk-ua">Поверніться на головну</a><br>
+                                або скористайтеся пошуком
+                            </div>
+                            <article class="layer-0">
+                                <div class="layer-1"></div>
+                                <div id="search_center">
 
-                        <img src="img/system/any/page-404.png" alt="404 error">
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </article>
             </section>
-
-            <section id="included__news-block" class="news-block"></section>
         </main>
 
         <!--========== FOOTER LAYOUT ==========-->
@@ -75,8 +127,6 @@
         <footer id="included__sub-footer" class="sub-footer"></footer>
         <!--========== THE END FOOTER LAYOUT ==========-->
 
-        <!-- Notify html included -->
-        <section id="included__notification"></section>
         <!-- Pop-up html included -->
         <section id="included__pop-up"></section>
         <!-- ADD JQUERY HERE -->
@@ -89,7 +139,9 @@
         <script src="js/components/slick.main.js" type="text/javascript"></script>
         <!-- Calendar -->
         <script src="js/components/datepicker.min.js" type="text/javascript"></script>
+        <!-- Details tag Pofyliff for Edge -->
+        <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
         <!-- Main.js -->
-        <script src="js/main.js" type="text/javascript"></script>    
+        <script src="js/main.js" type="text/javascript"></script>
     </body>
 </html>

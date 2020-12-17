@@ -130,7 +130,8 @@
 }
 
 .franchising-city__tbody tr:hover {
-    background-color: #F0F5F9;
+	background-color: #FFEF9E;
+	transition: all .4s linear;
 }
 
 .franchising-city__tbody td {
