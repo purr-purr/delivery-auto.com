@@ -819,6 +819,10 @@ details > summary {
 	font-size: 14px;
 	line-height: 16px;
 	color: #333333;
+	margin-bottom: 2px;
+}
+.sub-footer__info p a:hover {
+	color: #3072C4;
 }
 
 .sub-footer__payment {
