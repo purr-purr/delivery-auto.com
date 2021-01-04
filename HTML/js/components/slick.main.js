@@ -3,8 +3,8 @@ $(document).ready(function(){
     $('.slider').slick({
         vertical: true,
         // verticalSwiping: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1

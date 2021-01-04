@@ -13,8 +13,6 @@ $(function(){
     $("#included__aside-action").load("template/aside-action.html");
     $("#included__aside-btn").load("template/aside-btn.html");
     $("#included__aside-links").load("template/aside-links.html");
-    // Notification
-    $("#included__notification").load("template/notification.html");
     // Pop-up
     $("#included__pop-up").load("template/pop-up.html");
     // Mobile App
@@ -152,7 +150,8 @@ $('#time18').hover(
 
 
 // ---------------------------------------------------------------------------
-// Автоматическое открытие <Details> при переходе по якорю
+// Автоматическое открытие <Details> при переходе по якорю,
+// сейчас используется на нескольких страница, и в будущем думаю понадобится
 
 function MakeArrayOfAllPrefixes(str){
     //console.log("MakeArrayOfAllPrefixes("+str+")");

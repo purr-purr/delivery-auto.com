@@ -1540,9 +1540,22 @@ details > summary {
 	margin-left: 30px;
 }
 
-.home-news .preroll__img {
+.home-news .preroll__img-wrapper {
 	max-width: 128px;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.home-news .preroll__img-wrapper--large {
+	max-width: 383px;
+}
+
+.home-news .preroll__img {
+	height: 100%;
+	right: 0;
+	position: absolute;
 }
 
 .home-news .preroll__large-block {
@@ -1550,9 +1563,9 @@ details > summary {
 	height: 258px;
 }
 
-.home-news .preroll__large-block .preroll__img {
+/* .home-news .preroll__large-block .preroll__img {
 	max-width: 383px;
-}
+} */
 
 .home-news .preroll__large-block .preroll__info {
 	padding-top: 25px;
@@ -1681,6 +1694,7 @@ details > summary {
 	font-size: 14px;
 	color: #666666;
 }
+
 
 
 /* ======================================
@@ -2325,47 +2339,3 @@ details > summary {
 #popup-discount form {
 	padding: 25px 25px;
 }
-
-/* Уведомление Approve or Error */
-.notice__box {
-	display: none;
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	z-index: 9999;
-	width: 387px;
-	height: 204px;
-	background-color: #FFFFFF;
-	box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-.notice__box--error {
-	box-shadow: 0px 1px 8px rgba(255, 39, 39, 0.1);
-}
-
-.notice__box .box_text {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
-	width: 100%;
-	padding: 30px;
-}
-
-.notice__box .box_text h5 {
-	font-family: 'Segoe UI';
-	font-weight: 600;
-	font-size: 24px;
-}
-
-.notice__box .box_text p {
-	font-size: 16px;
-	margin-top: 23px;
-}
-
-.notice__box .box_text img {
-	width: 60px;
-	height: 60px; 
-}
-
-
