@@ -763,11 +763,6 @@ details > summary {
 	cursor: pointer;
 }
 
-.sub-nav__icon:hover {
-	border: 1px solid #ffd500;
-	transition: border .3s linear;
-}
-
 .sub-nav__icon img {
 	width: 16px;
 	height: 16px;
