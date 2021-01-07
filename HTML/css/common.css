@@ -754,6 +754,8 @@ details > summary {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
+	line-height: 30px;
 	width: 30px;
 	height: 30px;
 	border: 1px solid #FFFFFF;
