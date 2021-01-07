@@ -239,6 +239,16 @@
 			$(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
 			$(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
 		});
-	}); // jQuery load
+	});
+	
+	$("#menu-wrapper").on('click', function(e){
+		$(".sub-nav__user-panel").removeAttr("open");
+	})
+
+	$(".sub-nav__user-panel").on('click', function(e){
+		$("#hamburger-menu").removeClass("open");
+		$(".menu-list").removeClass("active");
+		$(".menu-list").css('left', '-100%');
+	})
 
 </script>
