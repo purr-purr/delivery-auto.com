@@ -93,7 +93,6 @@
 			</a>
 		</div>
 
-
 		<!-- Only mobile Nav (after 800px) -->
 
 		<div class="nav-mobile__wrapper">
@@ -106,7 +105,6 @@
 					<li id="nav1" class="toggle accordion-toggle"> 
 						<a class="menu-link" href="#">Компанія</a>
 					</li>
-					<!-- accordion-toggle -->
 					<ul class="menu-submenu accordion-content">
 						<li><a href="ko-about-group.html">Про групу компаній</a></li>
 						<li><a href="ko-advantages.html">Наші переваги</a></li>
@@ -122,11 +120,10 @@
 						<li><a href="ko-developers-api.html">Розробникам</a></li>
 						<li><a href="ko-service-center.html">Центр обслуговування клієнтів</a></li>
 					</ul>
-					<!-- menu-submenu accordon-content-->
+
 					<li id="nav2" class="toggle accordion-toggle"> 
 						<a class="menu-link" href="#">Клієнтам</a>
 					</li>
-					<!-- accordion-toggle -->
 					<ul class="menu-submenu accordion-content">
 						<li><a href="in-dev-mob.html">Розрахувати вартість</a></li>
 						<li><a href="cl-services.html">Послуги</a></li>
@@ -140,39 +137,33 @@
 						<li><a href="cl-program-loyalty.html">Програма лояльності</a></li>
 						<li><a href="cl-mob-app.html">Мобільний додаток</a></li>
 					</ul>
-					<!-- menu-submenu accordon-content-->
+
 					<li id="nav3" class="toggle accordion-toggle"> 
 						<a class="menu-link" href="#">Вартість</a>
 					</li>
-					<!-- accordion-toggle -->
 					<ul class="menu-submenu accordion-content">
 						<li><a href="co-tariff.html">Тарифи</a></li>
 						<li><a href="co-discount.html">Система знижок</a></li>
 						<li><a href="in-dev-mob.html">Додаткові послуги</a></li>
 					</ul>
-					<!-- menu-submenu accordon-content-->
 	
 					<li id="nav4" class="toggle accordion-toggle"> 
 						<a class="menu-link" href="#">Документи</a>
 					</li>
-					<!-- accordion-toggle -->
 					<ul class="menu-submenu accordion-content">
 						<li><a href="co-documents.html">Шаблони і бланки</a></li>
 						<li><a href="co-documents-offerta.html">Договір публічної оферти</a></li>
 					</ul>
-					<!-- menu-submenu accordon-content-->
 	
 					<li class="toggle accordion-toggle" id="no-arrow"> 
 						<a href="in-dev.html">Відділення</a>
 					</li>
 	
-					<!-- menu-submenu accordon-content-->
 					<li class="toggle accordion-toggle" id="no-arrow"> 
 						<a href="co-faq.html">Зв’язок та підтримка</a>
 					</li>
 				</ul>
 			</div>
-			
 			
 			<div class="sub-nav">
 				<a class="nav-mobile__logo" href="index.html">
@@ -218,6 +209,7 @@
 
 
 <script>
+	// Открытие мобильного Гамбургер меню
 	$(function() {
 		function slideMenu() {
 			var activeState = $("#nav-mobile .menu-list").hasClass("active");
@@ -241,14 +233,15 @@
 		});
 	});
 	
+	// При открытии Моб.Меню -- закрывать меню ЛК
 	$("#menu-wrapper").on('click', function(e){
 		$(".sub-nav__user-panel").removeAttr("open");
 	})
 
+	// При открытии меню ЛК -- закрывать Моб.меню
 	$(".sub-nav__user-panel").on('click', function(e){
 		$("#hamburger-menu").removeClass("open");
 		$(".menu-list").removeClass("active");
 		$(".menu-list").css('left', '-100%');
 	})
-
 </script>

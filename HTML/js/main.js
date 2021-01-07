@@ -201,7 +201,6 @@ function MakeArrayOfAllPrefixes(str){
 
 
 
-
 // Анимация для select, перенос label вверх
 $(document).ready(function(){
     $("#Services").change(function(){
@@ -213,8 +212,4 @@ $(document).ready(function(){
             if(valOpt)$(this).next("#Tax--label").addClass("show-label");
     })
 });
-
-
-
-
 
