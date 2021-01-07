@@ -50,13 +50,15 @@
                         пропозицій контрагентів</h2>
                     <form class="counter-form">
                         <div class="counter-form__line">
-                            <div class="counter-form__item">
-                                <input class="counter-form__input" data-val="true" data-val-required="Потрібно поле Назва компанії." id="Company" name="Company" type="text" value="" placeholder="Назва компанії *">
+                            <div class="counter-form__item label-rotate">
+                                <input class="counter-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Назва компанії." id="Company" name="Company" type="text" value="" placeholder="Назва компанії *">
+
+                                <label for="Company" class="label-rotate__label">Назва компанії *</label>
                             </div>
 
-                            <div class="counter-form__item">
+                            <div class="counter-form__item label-rotate">
                                 <select class="counter-form__select valid" data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги." id="Services" name="Services">
-                                    <option value="0" selected style="display: none;">Пропоновані товари та послуги</option>
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="BANKING">Банківські послуги</option>
                                     <option value="HOUSEHOLD_APPLIANCES">Побутова техніка</option>
                                     <option value="OTHER_SERVICES">Інші послуги / товари</option>
@@ -72,40 +74,54 @@
                                     <option value="PACKING_MATERIALS">Пакувальні матеріали</option>
                                     <option value="HOUSEHOLD_GOODS">Господарські товари</option>
                                 </select>
+
+                                <label for="Services" id="Services--label" class="label-rotate__select">Пропоновані товари та послуги</label>
                             </div>
                         </div>
                             <!-- next line -->
                         <div class="counter-form__line">
-                            <div class="counter-form__item counter-form__item--large">
-                                <input class="counter-form__input counter-form__input--large" data-val="true" data-val-required="Потрібно поле Контактна особа." id="Name" name="Name" type="text" value="" placeholder="Контактна особа *">
+                            <div class="counter-form__item counter-form__item--large label-rotate">
+                                <input class="counter-form__input counter-form__input--large label-rotate__input" data-val="true" data-val-required="Потрібно поле Контактна особа." id="Name" name="Name" type="text" value="" placeholder="Контактна особа *">
+
+                                <label for="Name" class="label-rotate__label">Контактна особа *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="counter-form__line">
-                            <div class="counter-form__item">
-                                <input class="counter-form__input" data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." id="Email" name="Email" type="email" value="" placeholder="Електронна пошта *">
+                            <div class="counter-form__item label-rotate">
+                                <input class="counter-form__input label-rotate__input" data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." id="Email" name="Email" type="email" value="" placeholder="Електронна пошта *">
+
+                                <label for="Email" class="label-rotate__label">Електронна пошта *</label>
                             </div>
-                            <div class="counter-form__item">
-                                <input class="counter-form__input" data-val="true" data-val-required="Потрібно поле Телефон." data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" id="Phone" name="Phone" type="tel" value="" placeholder="Телефон *">
-                            </div>
-                        </div>
-                        <!-- next line -->
-                        <div class="counter-form__line">
-                            <div class="counter-form__item">
-                                <input class="counter-form__input" placeholder="Місцезнаходження постачальника" id="Location" name="Location" type="text" value="">
-                            </div>
-                            <div class="counter-form__item">
-                                <input class="counter-form__input" data-val="true" data-val-required="Потрібно поле Географія надання послуг / товарів." id="Area" name="Area" type="text" value="" placeholder="Географія надання послуг / товарів  *">
+                            <div class="counter-form__item label-rotate">
+                                <input class="counter-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Телефон." data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" id="Phone" name="Phone" type="tel" value="" placeholder="Телефон *">
+
+                                <label for="Phone" class="label-rotate__label">Телефон *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="counter-form__line">
-                            <div class="counter-form__item">
+                            <div class="counter-form__item label-rotate">
+                                <input class="counter-form__input label-rotate__input" placeholder="Місцезнаходження постачальника" id="Location" name="Location" type="text" value="">
+
+                                <label for="Location" class="label-rotate__label">Місцезнаходження постачальника</label>
+                            </div>
+                            <div class="counter-form__item label-rotate">
+                                <input class="counter-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Географія надання послуг / товарів." id="Area" name="Area" type="text" value="" placeholder="Географія надання послуг / товарів  *">
+
+                                <label for="Area" class="label-rotate__label">Географія надання послуг / товарів  *</label>
+                            </div>
+                        </div>
+                        <!-- next line -->
+                        <div class="counter-form__line">
+                            <div class="counter-form__item label-rotate">
                                 <select class="counter-form__select valid" id="Tax" name="Tax">
-                                    <option value="0" selected>Форма оподаткування</option>
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="Загальна система">Загальна система</option>
                                     <option value="Єдиний податок">Єдиний податок</option>
                                 </select>
+
+                                <label for="Tax" id="Tax--label" class="label-rotate__select">Форма оподаткування</label>
                             </div>
                             <div class="counter-form__item">
                                 <div class="checkbox--after counter-form__item--size">
@@ -116,8 +132,10 @@
                         </div>
                         <!-- next line -->
                         <div class="counter-form__line">
-                            <div class="counter-form__item counter-form__item--large">
-                                <textarea class="counter-form__textarea" placeholder="Детальний опис пропозиції" id="Description" name="Description" spellcheck="false"></textarea>
+                            <div class="counter-form__item counter-form__item--large label-rotate">
+                                <textarea class="counter-form__textarea label-rotate__input" placeholder="Детальний опис пропозиції" id="Description" name="Description" spellcheck="false"></textarea>
+
+                                <label for="Description" class="label-rotate__label">Детальний опис пропозиції</label>
                             </div>
                         </div>
 

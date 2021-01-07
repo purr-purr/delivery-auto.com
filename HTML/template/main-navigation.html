@@ -1,6 +1,6 @@
 <div class="main-navigation">
-	<div class="container container--nav">
-		<nav class="nav" role="navigation">
+	<div class="container--nav">
+		<nav id="only-desctop" class="nav" role="navigation">
 			<ul class="nav__ul">
 				<li class="nav__li">
 					<p class="nav__title">Компанія</p>
@@ -65,7 +65,7 @@
 			</ul>
 		</nav>
 
-		<div class="nav-numbers">
+		<div id="only-desctop" class="nav-numbers">
 			<a href="tel:0 800 509-509" class="nav-numbers__item tooltip">
 				<img src="../HTML/img/system/icon/phone.svg" alt="phone">
 				<p id="nav-numbers__tel">0 800 509-509</p>
@@ -92,5 +92,153 @@
 				</div>
 			</a>
 		</div>
+
+
+		<!-- Only mobile Nav (after 800px) -->
+
+		<div class="nav-mobile__wrapper">
+			<div id="nav-mobile">
+				<div id="menu-wrapper">
+					<div id="hamburger-menu"><span></span><span></span><span></span></div>
+					<!-- hamburger-menu -->
+				</div>
+				<ul class="menu-list accordion">
+					<li id="nav1" class="toggle accordion-toggle"> 
+						<a class="menu-link" href="#">Компанія</a>
+					</li>
+					<!-- accordion-toggle -->
+					<ul class="menu-submenu accordion-content">
+						<li><a href="ko-about-group.html">Про групу компаній</a></li>
+						<li><a href="ko-advantages.html">Наші переваги</a></li>
+						<li><a href="ko-kpi.html">Індекси</a></li>
+						<li><a href="ko-partners.html">Партнери</a></li>
+						<li><a href="ko-news.html">Новини</a></li>
+						<li><a href="ko-mass-media.html">Прес-центр</a></li>
+						<li><a href="ko-franchising.html">Франчайзинг</a></li>
+						<li><a href="ko-сommercial-offers.html">Комерційні пропозиції</a></li>
+						<li><a href="ko-сounterparties.html">Контрагентам</a></li>
+						<li><a href="ko-tender.html">Тендер</a></li>
+						<li><a href="ko-job.html">Робота і кар’єра</a></li>
+						<li><a href="ko-developers-api.html">Розробникам</a></li>
+						<li><a href="ko-service-center.html">Центр обслуговування клієнтів</a></li>
+					</ul>
+					<!-- menu-submenu accordon-content-->
+					<li id="nav2" class="toggle accordion-toggle"> 
+						<a class="menu-link" href="#">Клієнтам</a>
+					</li>
+					<!-- accordion-toggle -->
+					<ul class="menu-submenu accordion-content">
+						<li><a href="in-dev-mob.html">Розрахувати вартість</a></li>
+						<li><a href="cl-services.html">Послуги</a></li>
+						<li><a href="cl-сourier-form.html">Забір/доставка</a></li>
+						<li><a href="cl-express-delivery.html">Експрес-доставка</a></li>
+						<li><a href="cl-hot-flights.html">Горячі рейси</a></li>
+						<li><a href="cl-action.html">Акції</a></li>
+						<li><a href="cl-delivery-time.html">Терміни доставки</a></li>
+						<li><a href="cl-packing-rules.html">Правила упаковки</a></li>
+						<li><a href="cl-finance-services.html">Фінансові послуги</a></li>
+						<li><a href="cl-program-loyalty.html">Програма лояльності</a></li>
+						<li><a href="cl-mob-app.html">Мобільний додаток</a></li>
+					</ul>
+					<!-- menu-submenu accordon-content-->
+					<li id="nav3" class="toggle accordion-toggle"> 
+						<a class="menu-link" href="#">Вартість</a>
+					</li>
+					<!-- accordion-toggle -->
+					<ul class="menu-submenu accordion-content">
+						<li><a href="co-tariff.html">Тарифи</a></li>
+						<li><a href="co-discount.html">Система знижок</a></li>
+						<li><a href="in-dev-mob.html">Додаткові послуги</a></li>
+					</ul>
+					<!-- menu-submenu accordon-content-->
+	
+					<li id="nav4" class="toggle accordion-toggle"> 
+						<a class="menu-link" href="#">Документи</a>
+					</li>
+					<!-- accordion-toggle -->
+					<ul class="menu-submenu accordion-content">
+						<li><a href="co-documents.html">Шаблони і бланки</a></li>
+						<li><a href="co-documents-offerta.html">Договір публічної оферти</a></li>
+					</ul>
+					<!-- menu-submenu accordon-content-->
+	
+					<li class="toggle accordion-toggle" id="no-arrow"> 
+						<a href="in-dev.html">Відділення</a>
+					</li>
+	
+					<!-- menu-submenu accordon-content-->
+					<li class="toggle accordion-toggle" id="no-arrow"> 
+						<a href="co-faq.html">Зв’язок та підтримка</a>
+					</li>
+				</ul>
+			</div>
+			
+			
+			<div class="sub-nav">
+				<a class="nav-mobile__logo" href="index.html">
+					<img src="img/system/delivery-group__logos/delGroup_logo.svg" alt="delivery group icon">
+				</a>
+
+				<div class="sub-nav__item">
+					<details class="sub-nav__user-panel">
+						<summary class="sub-nav__icon">
+							<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.6667 4.66733C12.6667 7.244 10.5773 9.334 8 9.334C5.42267 9.334 3.33333 7.244 3.33333 4.66733C3.33333 2.08933 5.42267 0 8 0C10.5773 0 12.6667 2.08933 12.6667 4.66733ZM11.6013 9.454C10.5973 10.212 9.352 10.6673 8 10.6673C6.64667 10.6673 5.40067 10.2107 4.39533 9.45267C1.68067 10.648 0 14.37 0 16H16C16 14.3847 14.2667 10.6627 11.6013 9.454Z" fill="white"/>
+							</svg>
+						</summary>
+						
+						<ul class="user-panel__drop">
+							<li class="user-panel__drop-item"><a href="#">Повідомлення</a></li>
+							<li class="user-panel__drop-item"><a href="#">Особистий кабiнет</a></li>
+							<li class="user-panel__drop-item"><a href="#">Профіль користувача</a></li>
+							<li class="user-panel__drop-item"><a href="#">Налаштування</a></li>
+							<li class="user-panel__drop-item"><a href="#">Бали лояльності</a></li>
+
+							<hr class="user-panel__line">
+
+							<li class="user-panel__drop-item"><a href="#">Мої документи</a></li>
+							<li class="user-panel__drop-item"><a href="#">Служба безпеки</a></li>
+							<li class="user-panel__drop-item"><a href="#">Моя аналітика</a></li>
+							<li class="user-panel__drop-item"><a href="#">Мої замовлення авто</a></li>
+
+							<hr class="user-panel__line">
+
+							<li class="user-panel__drop-item"><a href="#">Вийти</a></li>
+						</ul>
+					</details>
+
+					<a href="#" class="sub-nav__icon">
+						<img src="img/system/icon/ua-icon.svg" alt="user icon">
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
+
+
+<script>
+	$(function() {
+		function slideMenu() {
+			var activeState = $("#nav-mobile .menu-list").hasClass("active");
+			$("#nav-mobile .menu-list").animate({left: activeState ? "0%" : "-100%"}, 400);
+		}
+		$("#menu-wrapper").click(function(event) {
+			event.stopPropagation();
+			$("#hamburger-menu").toggleClass("open");
+			$("#nav-mobile .menu-list").toggleClass("active");
+			slideMenu();
+
+			$("body").toggleClass("overflow-hidden");
+		});
+
+		$(".menu-list").find(".accordion-toggle").click(function() {
+			$(this).next().toggleClass("open").slideToggle("fast");
+			$(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
+
+			$(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
+			$(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
+		});
+	}); // jQuery load
+
+</script>

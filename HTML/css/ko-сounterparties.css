@@ -10,13 +10,13 @@
 /* =================================== */
 
 .counter-form {
-    margin-top: 20px;
+    margin-top: 25px;
     width: 805px;
 }
 .counter-form__line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .counter-form__input--large, .counter-form__item--large {
@@ -48,6 +48,3 @@
 .counter-form__btn {
     margin-top: 35px;
 }
-
-
-

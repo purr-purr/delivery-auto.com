@@ -149,6 +149,9 @@ $('#time18').hover(
 
 
 
+
+
+
 // ---------------------------------------------------------------------------
 // Автоматическое открытие <Details> при переходе по якорю,
 // сейчас используется на нескольких страница, и в будущем думаю понадобится
@@ -195,3 +198,19 @@ function MakeArrayOfAllPrefixes(str){
     }
 });
 // ---------------------------------------------------------------------------
+
+
+
+
+// Анимация для select, перенос label вверх
+$(document).ready(function(){
+    $("#Services").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Services--label").addClass("show-label");
+    })
+    $("#Tax").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Tax--label").addClass("show-label");
+    })
+});
+
