@@ -1364,7 +1364,7 @@ details > summary {
 ====================================== */
 
 .section--mob-app {
-	margin-top: 110px;
+	margin-top: 100px;
 	background-color: #ffd500;
 }
 
@@ -1404,7 +1404,7 @@ details > summary {
 	margin-right: 20px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 880px) {
+@media screen and (min-width: 320px) and (max-width: 1024px) {
 	.section--mob-app {
 		margin-top: 20px;
 	}
@@ -1440,12 +1440,69 @@ details > summary {
 		bottom: -3px;
 		right: -86px;
 		z-index: 2;
-		width: 279px;
+		width: 99%;
 	}
 	.home-apps__phone-img img {
 		width: 100%;
 	}
 }
+
+@media screen and (min-width: 335px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		width: 92%;
+	}
+}
+
+@media screen and (min-width: 350px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		width: 87%;
+	}
+}
+
+@media screen and (min-width: 370px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		width: 84%;
+	}
+}
+
+@media screen and (min-width: 380px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		width: 81%;
+	}
+}
+
+@media screen and (min-width: 390px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		width: 79%;
+	}
+}
+
+@media screen and (min-width: 590px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		width: 405px;
+	}
+}
+
+@media screen and (min-width: 770px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		right: 2%;
+	}
+	.home-apps__downloads {
+		flex-direction: row;
+		align-items: center;
+	}
+	.home-apps__downloads a:first-child {
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 940px) and (max-width: 1024px)  {
+	.home-apps__phone-img {
+		right: 8%;
+	}
+}
+
 
 
 /* ======================================
@@ -1458,10 +1515,19 @@ details > summary {
 	justify-content: space-between;
 }
 
+.home-kpi__inner {
+	display: flex;
+	justify-content: space-between;
+	flex-shrink: 1;
+	width: 66%;
+	flex-shrink: 0;
+}
+
 .home-kpi__title {
 	display: flex;
 	align-items: center;
 	max-width: 130px;
+	min-width: 111px;
 	margin-bottom: 22px;
 	padding-right: 15px;
 	font-weight: 600;
@@ -1720,6 +1786,141 @@ details > summary {
 
 .stats__item .stats__rank--green p {
 	color: #36c154;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.home-kpi {
+		padding: 0;
+	}
+	.home-kpi__inner {
+		width: 61%;
+	}
+	.home-kpi__title {
+		width: 110px;
+		margin-bottom: 22px;
+		padding-right: 15px;
+		font-size: 16px;
+	}
+	.on-time {
+		display: flex;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.on-time__diagram {
+		width: 136px;
+		height: 136px;
+	}
+	.on-time__diagram .on-time__info {
+		top: 13px;
+		left: 13px;
+		width: 111px;
+		height: 111px;
+	}
+	.on-time__diagram .on-time__percent p {
+		font-size: 37px;
+		padding-top: 6px;
+	}
+	.on-time__diagram .on-time__icon {
+		margin: 2px auto 0 auto;
+		width: 25px;
+		height: 23px;
+	}
+	.on-time__rank {
+		background-size: 91px;
+		padding-top: 3px;
+	}
+	.on-time__rank p {
+		font-size: 15px;
+	}
+	.on-time__rank img {
+		width: 11px;
+		height: 7px;
+	}
+	.in-road {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.in-road__diagram {
+		width: 136px;
+		height: 136px;
+	}
+	.in-road__diagram .in-road__info {
+		top: 13px;
+		left: 13px;
+		width: 111px;
+		height: 111px;
+		padding-top: 5px;
+	}
+	.in-road__diagram .in-road__time p {
+		font-size: 37px;
+	}
+	.in-road__diagram .in-road__time {
+		padding-bottom: 0px;
+	}
+	.in-road__diagram .in-road__rank {
+		background-size: 87px;
+		height: 52px;
+	}
+	.in-road__diagram .in-road__hours {
+		margin-bottom: -1px;
+	}
+	.stats {
+		padding: 0;
+	}
+	.stats__item .stats__icon {
+		width: 42px;
+		height: 42px;
+		margin-right: 15px;
+		margin-left: 3px;
+	}
+	.stats__item .stats__info--first {
+		font-size: 13px;
+	}
+	.stats__item .stats__info--second {
+		font-size: 37px;
+	}
+	.stats__item .stats__rank img {
+		width: 11px;
+		height: 7px;
+	}
+	.stats__item .stats__rank p {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 930px) {
+	.stats {
+		align-self: flex-start;
+	}
+	.home-kpi {
+		padding: 0;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 930px) {
+	.home-kpi__inner {
+		width: 85%;
+	}
+	.on-time__diagram {
+		margin-left: 30px;
+	}
+	.in-road__diagram {
+		margin-left: 30px;
+	}
+	.on-time {
+		margin-right: 30px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 630px) {
+	.home-kpi__inner {
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }
 
 
