@@ -307,7 +307,7 @@ details > summary {
 	background-color: #F8F8F8;
 }
 
-.container {
+.c-container {
 	max-width: 1222px;
 	height: 100%;
 	margin: 0 auto;
@@ -324,7 +324,7 @@ details > summary {
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-	.container {
+	.c-container {
 		padding: 0 20px;
 	}
 }
@@ -787,6 +787,7 @@ details > summary {
 	top: 50px;
 	width: 100%;
 	left: 0;
+	z-index: 1;
 	background-color: #333;
 	box-shadow: 0px 5px 8px rgba(51, 51, 51, 0.13);
 	border-top: 1px solid #ffd500;
@@ -1362,7 +1363,7 @@ details > summary {
 //            Mobile App block
 ====================================== */
 
-.section--yellow {
+.section--mob-app {
 	margin-top: 110px;
 	background-color: #ffd500;
 }
@@ -1385,6 +1386,7 @@ details > summary {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 36px;
+	max-width: 490px;
 }
 
 .home-apps__text {
@@ -1400,6 +1402,49 @@ details > summary {
 
 .home-apps__downloads a:first-child {
 	margin-right: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 880px) {
+	.section--mob-app {
+		margin-top: 20px;
+	}
+	.home-apps {
+		height: auto;
+		position: relative;
+	}
+	.home-apps__info {
+		margin-top: 40px;
+		max-width: 280px;
+	}
+	.home-apps__title {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.home-apps__text {
+		margin-top: 15px;
+	}
+	.home-apps__downloads {
+		position: relative;
+		z-index: 3;
+		flex-direction: column;
+		align-items: baseline;
+		margin: 50px 0 60px 0;
+	}
+	.home-apps__downloads a:first-child {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.home-apps__phone-img {
+		margin: 0;
+		position: absolute;
+		bottom: -3px;
+		right: -86px;
+		z-index: 2;
+		width: 279px;
+	}
+	.home-apps__phone-img img {
+		width: 100%;
+	}
 }
 
 
@@ -1982,7 +2027,7 @@ details > summary {
 	.feedback__item {
 		min-width: 280px;
 	}
-	.feedback-block .container {
+	.feedback-block .c-container {
 		padding: 0;
 	}
 	.faq {
@@ -2029,7 +2074,9 @@ details > summary {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding-bottom: 100px;
+	max-width: 1222px;
+	margin: 0 auto;
+	padding: 0 10px 100px 10px;
 }
 
 .home-news .list {
@@ -2052,29 +2099,8 @@ details > summary {
 	background-color: #f8f8f8;
 }
 
-/* .home-news .list--shadow {
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	-webkit-box-shadow: 0px -9px 12px -2px rgba(255, 255, 255, 1) inset;
-	-moz-box-shadow: 0px -9px 12px -2px rgba(255, 255, 255, 1) inset;
-	box-shadow: 0px -9px 12px -2px rgba(255, 255, 255, 1) inset;
-	z-index: 1;
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 10%,rgba(255,255,255,1) 100%);
-} */
-
-
 .home-news .list--wrap::-webkit-scrollbar {
 	width: 0;
-}
-
-@media screen and (max-width: 1141px) {
-	.list {
-		display: none;
-	}
 }
 
 .home-news .list__item {
@@ -2157,10 +2183,6 @@ details > summary {
 	width: 100%;
 	height: 258px;
 }
-
-/* .home-news .preroll__large-block .preroll__img {
-	max-width: 383px;
-} */
 
 .home-news .preroll__large-block .preroll__info {
 	padding-top: 25px;
@@ -2290,6 +2312,52 @@ details > summary {
 	color: #666666;
 }
 
+@media screen and (max-width: 1141px) {
+	.list {
+		display: none;
+	}
+	.home-news .preroll {
+		width: 100%;
+		margin-left: 0;
+	}
+	.preroll__item-inner {
+		width: 49%;
+	}
+	.home-news .preroll__small-block .preroll__item {
+		width: 100%;
+	}
+	.home-news .preroll__large-block .preroll__info {
+		padding-top: 25px;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 830px) {
+	.home-news {
+		padding: 0;
+	}
+	.home-news .list {
+		display: block;
+		width: 100%;
+		height: 276px;
+	}
+	.home-news .preroll {
+		display: none;
+	}
+	.home-news {
+		padding-bottom: 20px;
+	}
+	.home-news .list__title {
+		font-size: 15px;
+		line-height: 20px;
+	}
+	.home-news .preroll__date time {
+		font-size: 13px;
+	}
+	.home-news .list__item {
+		padding: 15px 20px;
+	}
+}
 
 
 /* ======================================
@@ -2597,6 +2665,25 @@ details > summary {
 	margin-left: 14px;
 	width: 18px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.home-heading {
+		padding: 30px 0 15px 0;
+	}
+	.home-heading__title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.home-heading__link {
+		font-size: 12px;
+		line-height: 24px;
+	}
+	.home-heading__link img {
+		margin-left: 7px;
+		width: 12px;
+	}
+}
+
 
 
 /* ======================================
