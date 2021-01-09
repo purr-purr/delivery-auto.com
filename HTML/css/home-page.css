@@ -552,6 +552,7 @@
 	right: 0;
 	top: 0;
 	cursor: pointer;
+	-webkit-tap-highlight-color:  transparent;
 	background-color: #fff;
 	-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 1px 8px rgba(0, 0, 0, 0.1);
 	        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.08), 0px 1px 8px rgba(0, 0, 0, 0.1);
