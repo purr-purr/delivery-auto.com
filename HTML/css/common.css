@@ -1406,7 +1406,7 @@ details > summary {
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
 	.section--mob-app {
-		margin-top: 20px;
+		margin-top: 0;
 	}
 	.home-apps {
 		height: auto;
@@ -1891,9 +1891,6 @@ details > summary {
 }
 
 @media screen and (min-width: 320px) and (max-width: 930px) {
-	.stats {
-		align-self: flex-start;
-	}
 	.home-kpi {
 		padding: 0;
 		flex-direction: column;
@@ -1904,6 +1901,7 @@ details > summary {
 @media screen and (min-width: 320px) and (max-width: 930px) {
 	.home-kpi__inner {
 		width: 85%;
+		margin: 0 auto;
 	}
 	.on-time__diagram {
 		margin-left: 30px;
@@ -1919,7 +1917,16 @@ details > summary {
 @media screen and (min-width: 320px) and (max-width: 630px) {
 	.home-kpi__inner {
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
+	}
+	.home-kpi__inner {
+		width: 100%;
+	}
+	.on-time {
+		margin-right: 0;
+	}
+	.stats {
+		align-self: center;
 	}
 }
 
@@ -2859,12 +2866,18 @@ details > summary {
 }
 
 .home-heading__link:hover {
-	opacity: .6;
+	color: #3072C4;
 }
 
 .home-heading__link img {
 	margin-left: 14px;
 	width: 18px;
+	transition: all 0.3s ease-in;
+}
+
+.home-heading__link:hover img {
+	transform: scale(1.2);
+	transition: all 0.3s ease-in;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
