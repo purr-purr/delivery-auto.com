@@ -10,7 +10,6 @@
 /* Аккардион */
 .acc-media {
 	max-width: 730px;
-	min-width: 630px;
 }
 
 .acc-media details[open] summary ~ * {
@@ -144,4 +143,84 @@
 
 .acc-media__contacts div {
     width: 47%;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .acc-media summary {
+        height: 50px;
+        margin-bottom: 20px;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .acc-media__title {
+        width: 70%;
+        padding-left: 10px;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .acc-media summary:after {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 8px;
+    }
+    .acc-media details[open] summary:after {
+        background-size: 8px;
+    }
+    .acc-media__item {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #ffd500;
+    }
+    .acc-media__item:last-child {
+        border-bottom: none;
+    }
+    .acc-media__item a {
+        display: block;
+        font-size: 15px;
+    }
+    .acc-media__item time {
+        font-size: 13px;
+    }
+    .acc-media summary {
+        height: 50px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 20px;
+    }
+    .acc-media details[open] summary {
+        margin-bottom: 10px;
+    }
+    .acc-media__info {
+        padding-bottom: 15px;
+    }
+    .acc-media__doc {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .acc-media__item--second span {
+        margin-left: 15px;
+    }
+    .acc-media__item a, .acc-media__item--second a {
+        font-size: 15px;
+    }
+    .acc-media__item--second {
+        padding: 10px 0;
+    }
+    .acc-media__text {
+        padding-bottom: 15px;
+    }
+    .acc-media__contacts {
+        display: block;
+    }
+    .acc-media__contacts div {
+        width: 100%;
+    }
 }

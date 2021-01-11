@@ -290,6 +290,27 @@ details > summary {
 	padding-bottom: 35px;
 }
 
+.mobile-page__title {
+	display: none;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 25px 0 10px 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.mobile-page__title {
+		display: block;
+	}
+	.page-header {
+		display: none;
+	}
+	.main__container {
+		padding: 0 20px;
+	}
+}
+
+
 /* ======================================
 //              COMMON
 ====================================== */
@@ -594,14 +615,14 @@ details > summary {
     cursor: pointer;
 }
 
-#menu-wrapper #hamburger-menu {
+#hamburger-menu {
     position: relative;
     width: 25px;
     height: 20px;
     margin: 15px;
 }
 
-#menu-wrapper #hamburger-menu span {
+#hamburger-menu span {
     opacity: 1;
     left: 0;
     display: block;
@@ -615,23 +636,23 @@ details > summary {
     transition: .4s ease-in-out;
 }
 
-#menu-wrapper #hamburger-menu span:nth-child(1) {
+#hamburger-menu span:nth-child(1) {
     top: 0;
 }
-#menu-wrapper #hamburger-menu span:nth-child(2) {
+#hamburger-menu span:nth-child(2) {
     top: 9px;
 }
-#menu-wrapper #hamburger-menu span:nth-child(3) {
+#hamburger-menu span:nth-child(3) {
     top: 18px;
 }
-#menu-wrapper #hamburger-menu.open span:nth-child(1) {
+#hamburger-menu.open span:nth-child(1) {
     transform: translateY(9px) rotate(135deg);
 }
-#menu-wrapper #hamburger-menu.open span:nth-child(2) {
+#hamburger-menu.open span:nth-child(2) {
     opacity: 0;
     transform: translateX(-60px);
 }
-#menu-wrapper #hamburger-menu.open span:nth-child(3) {
+#hamburger-menu.open span:nth-child(3) {
     transform: translateY(-9px) rotate(-135deg);
 }
 
@@ -813,6 +834,55 @@ details > summary {
 	height: 1px; /* высота 1px IE, Firefox, Opera, Safari */
 }
 
+
+
+
+
+
+.nav-mob-numbers {
+	display: block;
+	padding: 10px 20px 20px 20px;
+
+}
+
+.nav-mob-numbers__item {
+	display: block;
+	padding-top: 20px;
+}
+
+.nav-mob-numbers__item:first-child {
+	border-top: 1px solid #ffd500;
+}
+
+.nav-mob-numbers__item:hover .nav-mob-numbers__tel {
+	color: #ffd500;
+}
+.nav-mob-numbers__item:hover .nav-mob-numbers__title {
+	font-weight: 600;
+}
+
+.nav-mob-numbers__title {
+	display: flex;
+	align-items: center;
+}
+
+.nav-mob-numbers__icon {
+	width: 16px;
+	margin-right: 10px;
+}
+
+.nav-mob-numbers__icon img {
+	height: 12px;
+}
+
+.nav-mob-numbers__tel {
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 21px;
+	color: #999999;
+	margin-left: 26px;
+	margin: 5px 26px 0 26px;
+}
 
 @media screen and (min-width: 550px) and (max-width: 1024px) {
 	#nav-mobile .menu-list {
@@ -2271,6 +2341,14 @@ details > summary {
 	color: #3072C4;
 }
 
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.crumbs{
+		display: none;
+	}
+}
+
+
 /* ======================================
 //            News Block
 ====================================== */
@@ -2574,7 +2652,6 @@ details > summary {
 
 .aside-block {
 	height: 100%;
-	/* padding-left: 50px; */
     margin-left: 50px;
 }
 
@@ -2745,6 +2822,12 @@ details > summary {
 
 .aside-links__inner li {
 	margin: 0 0 20px 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.aside-block {
+		display: none;
+	}
 }
 
 /* ======================================
