@@ -3,6 +3,9 @@
     Author:         Anton Shaposhnikov
     Telegram:		https://t.me/hesoyam_666
 --------------------------------------------------------------*/
+
+
+
 @font-face {
     font-family: 'Bebas Neue'; 
     src: url("../fonts/BebasNeueBold.otf"); 
@@ -21,6 +24,21 @@ body {
 	font-style: normal;
 	color: #303030;
 	background-color: #fff;
+}
+
+/* Заглушка для IE */
+#for-ie {
+	display: none;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	body * {
+		display: none;
+	}
+	body #for-ie{
+		display: block;
+		color: red;
+	}
 }
 
 *, *:before, *:after {
@@ -2997,6 +3015,7 @@ details > summary {
 	.home-heading__link {
 		font-size: 12px;
 		line-height: 24px;
+		min-width: 85px;
 	}
 	.home-heading__link img {
 		margin-left: 7px;
@@ -3341,3 +3360,6 @@ details > summary {
 #popup-discount form {
 	padding: 25px 25px;
 }
+
+
+

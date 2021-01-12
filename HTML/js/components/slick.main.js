@@ -10,16 +10,6 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    // $('.slider').slick({
-    //     vertical: true,
-    //     verticalSwiping: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     dots: true,
-    //     adaptiveHeight: false,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
     $('.partners-slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
@@ -53,6 +43,37 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1
     });
-});
 
+
+    $('.home-tariff').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        slidesToScroll: 1,
+        mobileFirst: true, 
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 950,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: "unslick"
+            }
+        ]
+    });
+});
 
