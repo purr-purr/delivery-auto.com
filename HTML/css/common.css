@@ -238,6 +238,28 @@ details > summary {
     background-size: 15px 13px;
 }
 
+
+/* SkrollUp button  */
+.scrollup {
+	display: none;
+	position: fixed;
+	right: 35px;
+	bottom: 35px;
+	width: 50px;
+	height: 50px;
+	text-indent: -9999px;
+	border-radius: 50px;
+	box-shadow: 0px 5px 15px rgba(255, 213, 0, 0.46);
+	background: #ffd500 url('../img/system/icon/scrollup-icon.svg') no-repeat center center;
+	background-size: 24px 20px;
+	transition: background .2s ease-in-out;
+}
+
+.scrollup:hover {
+	background-position: center 40%;
+	transition: background .2s ease-in-out;
+}
+
 /* ======================================
 //            Layout
 ====================================== */

@@ -213,3 +213,25 @@ $(document).ready(function(){
     })
 });
 
+
+
+
+
+// Плавная прокрутка к якорю
+var $page = $('html, body');
+$('a[href*="#"]').click(function() {
+    $page.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
+});
+
+
+// Скрытие кнопки Scrollup
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 600) {
+        $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+});
