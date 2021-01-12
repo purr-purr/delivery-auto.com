@@ -243,6 +243,7 @@ details > summary {
 .scrollup {
 	display: none;
 	position: fixed;
+	z-index: 99999;
 	right: 35px;
 	bottom: 35px;
 	width: 50px;

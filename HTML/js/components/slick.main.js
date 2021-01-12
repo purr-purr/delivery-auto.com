@@ -1,15 +1,25 @@
 // banners on index.html
 $(document).ready(function(){
-    $('.slider').slick({
+    $('.main-slider').slick({
         vertical: true,
         // verticalSwiping: true,
         // autoplay: true,
         // autoplaySpeed: 3000,
         dots: true,
-        adaptiveHeight: false,
+        // adaptiveHeight: false,
         slidesToShow: 1,
         slidesToScroll: 1
     });
+    // $('.slider').slick({
+    //     vertical: true,
+    //     verticalSwiping: true,
+    //     autoplay: true,
+    //     autoplaySpeed: 3000,
+    //     dots: true,
+    //     adaptiveHeight: false,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // });
     $('.partners-slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
