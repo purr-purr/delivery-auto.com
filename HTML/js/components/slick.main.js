@@ -14,7 +14,27 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 3000,
         slidesToShow: 4,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 815,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.awards-slider').slick({
         autoplay: true,

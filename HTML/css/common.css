@@ -467,7 +467,7 @@ details > summary {
 	font-size: 12px;
 	line-height: 17px;
 	color: #999;
-	transition: all .3s ease-in;
+	transition: all .2s ease-in;
 }
 
 .label-rotate__input:focus ~ .label-rotate__label,
@@ -478,7 +478,7 @@ details > summary {
 	font-size: 12px;
 	line-height: 17px;
 	color: #999999;
-	transition: all .3s ease-in;
+	transition: all .2s ease-in;
 }
 
 .label-rotate__select {
@@ -486,7 +486,7 @@ details > summary {
 	top: 10px;
 	left: 20px;
 	z-index: -1;
-	transition: all .5s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .show-label {
@@ -496,7 +496,7 @@ details > summary {
 	font-size: 12px;
 	line-height: 17px;
 	color: #999999;
-	transition: all .5s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 
@@ -1903,7 +1903,7 @@ details > summary {
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
 	.home-kpi {
-		padding: 0;
+		padding: 0 0 30px;
 	}
 	.home-kpi__inner {
 		width: 61%;
@@ -2003,7 +2003,7 @@ details > summary {
 
 @media screen and (min-width: 320px) and (max-width: 930px) {
 	.home-kpi {
-		padding: 0;
+		padding: 0 0 30px;
 		flex-direction: column;
 		align-items: flex-start;
 	}
