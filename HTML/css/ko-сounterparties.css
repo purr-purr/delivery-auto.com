@@ -11,7 +11,8 @@
 
 .counter-form {
     margin-top: 25px;
-    width: 805px;
+    max-width: 805px;
+    width: 100%;
 }
 .counter-form__line {
     display: flex;
@@ -47,4 +48,24 @@
 
 .counter-form__btn {
     margin-top: 35px;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 830px) {
+    .counter-form {
+        max-width: 387px;
+    }
+
+    .counter-form__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .counter-form__btn {
+        margin-top: 20px;
+    }
+    .counter-form__item {
+        margin-bottom: 25px;
+        width: 100%;
+    }
 }

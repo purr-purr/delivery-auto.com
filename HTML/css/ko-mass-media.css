@@ -67,6 +67,9 @@
 
 /* Title */
 .acc-media__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
     padding-left: 30px;
     font-weight: 600;
     font-size: 24px;

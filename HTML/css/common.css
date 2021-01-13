@@ -26,21 +26,6 @@ body {
 	background-color: #fff;
 }
 
-/* Заглушка для IE */
-#for-ie {
-	display: none;
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-	body * {
-		display: none;
-	}
-	body #for-ie{
-		display: block;
-		color: red;
-	}
-}
-
 *, *:before, *:after {
 	box-sizing: border-box;
 	margin: 0;
@@ -104,7 +89,7 @@ p {
 }
 
 input {
-    width: 387px;
+	width: 387px; 
     height: 40px;
     padding: 0 20px;
 	border: 1px solid #DADADA;
@@ -200,10 +185,34 @@ details > summary {
 		font-size: 15px;
 		line-height: 20px;
 	}
+	input {
+		padding: 0 10px;
+		font-size: 15px;
+	}
+	select {
+		padding: 0 37px 0 10px;
+		font-size: 15px;
+	}
+	
+	textarea {
+		padding: 7px 10px;
+		font-size: 15px;
+	}
 }
 
-/* checkbox style */
 
+
+
+
+
+
+
+
+
+
+
+
+/* checkbox style */
 [type="checkbox"], [type="radio"] {
 	-webkit-appearance: checkbox;
 }
@@ -268,7 +277,7 @@ details > summary {
 	height: 50px;
 	text-indent: -9999px;
 	border-radius: 50px;
-	box-shadow: 0px 5px 15px rgba(255, 213, 0, 0.46);
+	box-shadow: 0px 4px 10px rgba(132, 132, 132, 0.34);
 	background: #ffd500 url('../img/system/icon/scrollup-icon.svg') no-repeat center center;
 	background-size: 24px 20px;
 	transition: background .2s ease-in-out;
@@ -285,9 +294,9 @@ details > summary {
 
 .main__container {
 	display: flex;
-	max-width: 1232px;
+	max-width: 1222px;
 	margin: 0 auto;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 .main-content {
@@ -339,8 +348,12 @@ details > summary {
 	margin: 25px 0 10px 0;
 }
 
+.mobile-page__description {
+	display: none;
+}
+
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-	.mobile-page__title {
+	.mobile-page__title, .mobile-page__description {
 		display: block;
 	}
 	.page-header {
@@ -348,6 +361,9 @@ details > summary {
 	}
 	.main__container {
 		padding: 0 20px;
+	}
+	.main-page__title {
+		display: none;
 	}
 }
 
@@ -376,15 +392,6 @@ details > summary {
 	padding: 0 10px;
 }
 
-.hover-animation--zoom {
-	transition: all 0.3s ease-in;
-}
-
-.hover-animation--zoom:hover {
-	transform: scale(1.05);
-	transition: all 0.3s ease-in;
-}
-
 @media screen and (min-width: 320px) and (max-width: 1024px) {
 	.c-container {
 		padding: 0 20px;
@@ -400,7 +407,7 @@ details > summary {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 178px;
+	min-width: 178px;
 	height: 50px;
 	font-size: 16px;
 	color: #333;
@@ -435,6 +442,14 @@ details > summary {
 
 .main-btn--white img {
     margin-right: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.main-btn {
+		min-width: 135px;
+		height: 40px;
+		font-size: 15px;
+	}
 }
 
 
@@ -499,6 +514,40 @@ details > summary {
 	transition: all .2s ease-in-out;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.label-rotate__input:placeholder-shown ~ .label-rotate__label {
+		font-size: 15px;
+	}
+	.label-rotate__label {
+		font-size: 12px;
+	}
+	.label-rotate__input:focus ~ .label-rotate__label,
+	.label-rotate__input:active ~ .label-rotate__label {
+		font-size: 12px;
+	}
+	.show-label {
+		font-size: 12px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+	.label-rotate__input:placeholder-shown ~ .label-rotate__label {
+		left: 10px;
+	}
+	.label-rotate__label {
+		left: 0;
+	}
+	.label-rotate__input:focus ~ .label-rotate__label,
+	.label-rotate__input:active ~ .label-rotate__label {
+		left: 0;
+	}
+	.label-rotate__select {
+		left: 10px;
+	}
+	.show-label {
+		left: 0;
+	}
+}
 
 /* ======================================
 //             Navigation
@@ -875,11 +924,6 @@ details > summary {
 	height: 1px; /* высота 1px IE, Firefox, Opera, Safari */
 }
 
-
-
-
-
-
 .nav-mob-numbers {
 	display: block;
 	padding: 10px 20px 20px 20px;
@@ -1132,7 +1176,7 @@ details > summary {
 }
 
 .footer-subs {
-	max-width: 415px;
+	max-width: 485px;
 }
 
 .footer-subs__title {
@@ -1192,6 +1236,7 @@ details > summary {
 }
 
 .footer__links .links .links__title {
+	min-width: 168px;
 	font-size: 20px;
 	line-height: 24px;
 	color: #FFFFFF;
@@ -1207,12 +1252,25 @@ details > summary {
 	margin-right: 80px;
 }
 
-.footer__links .apps__img img {
+.footer__links .apps__img-link {
+	display: block;
 	width: 106px;
 	height: 32px;
 }
 
-.footer__links .apps__img img:first-child {
+.footer__links .apps__img-link img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	transition: transform .2s ease-in-out;
+}
+
+.footer__links .apps__img-link:hover img {
+	transform: scale(1.1);
+	transition: transform .2s ease-in-out;
+}
+
+.footer__links .apps__img-link:first-child {
 	margin-right: 10px;
 }
 
@@ -1221,8 +1279,22 @@ details > summary {
 	max-width: 125px;
 }
 
-.footer__links .socials__img img:hover {
-	opacity: .6;
+.socials__img-item {
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+
+.socials__img-item img {
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: transform .2s ease-in-out;
+}
+
+.socials__img-item:hover img {
+	transform: scale(1.1);
+	transition: transform .2s ease-in-out;
 }
 
 .footer__group-mob {
@@ -1402,7 +1474,7 @@ details > summary {
 	color: #ffd500;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 320px) and (max-width: 1124px) {
 	.footer-subs, .sub-footer__payment, .footer__support, .footer__menu, .faq-block {
 		display: none;
 	}
@@ -1513,6 +1585,24 @@ details > summary {
 
 .home-apps__downloads a:first-child {
 	margin-right: 20px;
+}
+
+.home-apps__link {
+	display: block;
+	width: 120px;
+	height: 35px;
+}
+
+.home-apps__link img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	transition: transform .2s ease-in-out;
+}
+
+.home-apps__link:hover img {
+	transform: scale(1.1);
+	transition: transform .2s ease-in-out;
 }
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -2314,6 +2404,10 @@ details > summary {
 	}
 	.feedback__input, .feedback__select, .feedback__item--textarea, .feedback__textarea {
 		width: 100%;
+		font-size: 15px;
+	}
+	.feedback__label {
+		font-size: 15px;
 	}
 	.feedback__group {
 		display: flex;
@@ -2321,6 +2415,10 @@ details > summary {
 	}
 	.feedback__group .feedback__item:first-child {
 		margin-right: 0;
+	}
+	.feedback__btn {
+		height: 40px;
+		font-size: 15px;
 	}
 }
 
@@ -2887,8 +2985,8 @@ details > summary {
 }
 
 .add-file__title {
-    font-size: 16px;
-    line-height: 20px;
+    /* font-size: 16px;
+    line-height: 20px; */
     color: #333333;
     margin-bottom: 20px;
 }
@@ -2907,7 +3005,7 @@ details > summary {
 }
 
 .add-file__btn {
-	width: 178px;
+	min-width: 178px;
 	height: 50px;
     margin-top: 40px;
 	border: 1px solid #808080;
@@ -2964,6 +3062,46 @@ details > summary {
 .add-file__delete {
     width: 10px;
     height: 10px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+	.add-file__text, .add-file__name  {
+		font-size: 13px;
+	}
+	.add-file__btn {
+		min-width: 135px;
+		height: 40px;
+		margin-top: 20px;
+	}
+	.add-file__btn label {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 830px) {
+	.add-file {
+		max-width: 85%;
+		flex-wrap: wrap;
+	}
+	.add-file__btn {
+		order: 1;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 730px){
+	.add-file {
+		max-width: 97%;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+	.add-file {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.add-file__result {
+		margin-top: 25px;
+	}
 }
 
 /* ======================================
@@ -3361,5 +3499,80 @@ details > summary {
 	padding: 25px 25px;
 }
 
+/* ---------------------------------- */
+/* 			Заглушка для IE			 */
+/* -------------------------------- */
+.for-ie {
+	display: none;
+	position: absolute;
+	z-index: 99999;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	margin-top: 10vh;
+}
 
+.for-ie__title {
+	font-size: 32px;
+	text-align: center;
+	color: #FF2727;
+	margin-bottom: 60px;
+}
 
+.for-ie__desc {
+	max-width: 690px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.for-ie__browsers {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.for-ie__item {
+	display: block;
+	margin-right: 80px;
+}
+
+.for-ie__item:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+
+.for-ie__item:last-child {
+	margin-right: 0;
+}
+
+.for-ie__icon {
+	width: 104px;
+	height: 104px;
+	margin-bottom: 20px;
+}
+
+.for-ie__browser-name {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* IE9, IE10, IE11 */
+@media screen and (min-width:0\0) {
+	header, footer, main, section, div {
+		display: none;
+	}
+	body {
+		position: relative;
+		z-index: 1;
+		height: 100vh;
+		overflow: hidden;
+	}
+	div {
+		display: block;
+	}
+	.for-ie {
+		display: block;
+		
+	}
+}
