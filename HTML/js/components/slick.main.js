@@ -2,11 +2,10 @@
 $(document).ready(function(){
     $('.main-slider').slick({
         vertical: true,
-        // verticalSwiping: true,
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        verticalSwiping: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
         dots: true,
-        // adaptiveHeight: false,
         slidesToShow: 1,
         slidesToScroll: 1
     });
