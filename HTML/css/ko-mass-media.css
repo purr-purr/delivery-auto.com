@@ -59,15 +59,29 @@
 	height: 35px;
 	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
 	border-radius: 50px;
-	transform-origin: center;
+	-webkit-transform-origin: center;
+	    -ms-transform-origin: center;
+	        transform-origin: center;
+    -webkit-transition: -webkit-transform .2s linear;
+    transition: -webkit-transform .2s linear;
+    -o-transition: transform .2s linear;
     transition: transform .2s linear;
-    transform: rotate(0deg);
+    transition: transform .2s linear, -webkit-transform .2s linear;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
 }
 
 .acc-media details[open] summary:after {
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
 	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    -webkit-transition: -webkit-transform .5s linear;
+    transition: -webkit-transform .5s linear;
+    -o-transition: transform .5s linear;
     transition: transform .5s linear;
+    transition: transform .5s linear, -webkit-transform .5s linear;
 }
 
 /* Title */
