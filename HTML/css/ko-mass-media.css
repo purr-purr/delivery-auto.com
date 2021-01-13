@@ -60,13 +60,13 @@
 	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
 	border-radius: 50px;
 	transform-origin: center;
-    transition: 200ms linear;
+    transition: transform .2s linear;
 }
 
 .acc-media details[open] summary:after {
     transform: rotate(90deg);
 	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
-    transition: transform 0.5s linear;
+    transition: transform .5s linear;
 }
 
 /* Title */
@@ -187,8 +187,6 @@
         height: 50px;
         margin-bottom: 10px;
         padding-left: 10px;
-        font-weight: normal;
-        font-size: 15px;
     }
     .acc-media details[open] summary {
         margin-bottom: 10px;
