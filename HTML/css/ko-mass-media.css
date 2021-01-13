@@ -61,6 +61,7 @@
 	border-radius: 50px;
 	transform-origin: center;
     transition: transform .2s linear;
+    transform: rotate(0deg);
 }
 
 .acc-media details[open] summary:after {
