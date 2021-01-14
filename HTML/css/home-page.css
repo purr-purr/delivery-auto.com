@@ -124,8 +124,6 @@
 
 .tracking__bottom .tracking__popup-info a:hover {
 	color: #3072C4;
-	/* opacity: 0.6;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; */
 }
 
 .tracking__item {
@@ -232,7 +230,7 @@
 @media screen and (min-width: 320px) and (max-width: 800px) {
 	.section--tracking {
 		background-color: #F8F8F8;
-		margin: 0;
+		margin: 0 0 20px;
 	}
 	.tracking {
 		width: 100%;
@@ -1307,7 +1305,7 @@
 	transition: all 0.3s ease-in;
 }
 
-.partners-slider__info a:hover {
+.partners-slider__desctop-link:hover {
 	border: 1px solid #FFD500;
 	-webkit-transition: all 0.3s ease-in;
 	-o-transition: all 0.3s ease-in;
