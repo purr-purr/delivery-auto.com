@@ -4,14 +4,14 @@ $(document).ready(function(){
         vertical: true,
         verticalSwiping: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1
     });
     $('.partners-slider').slick({
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
@@ -35,38 +35,9 @@ $(document).ready(function(){
             }
         ]
     });
-    $('.awards-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        slidesToShow: 4,
-        rows: 2,
-        slidesToScroll: 1
-    });
-    // $('.widget-slider').slick({
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     slidesToShow: 2,
-    //     slidesToScroll: 1
-    // });
-    $('.intro__banner').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
-    $('.courier-page__banner').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
-
-
     $('.home-tariff').slick({
-        // autoplay: true,
-        // autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 5000,
         slidesToScroll: 1,
         mobileFirst: true, 
         responsive: [
@@ -93,6 +64,20 @@ $(document).ready(function(){
                 settings: "unslick"
             }
         ]
+    });
+    $('.awards-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        slidesToShow: 4,
+        rows: 2,
+        slidesToScroll: 1
+    });
+    $('.intro__banner').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 });
 

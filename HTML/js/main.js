@@ -22,11 +22,6 @@ $(function(){
 
 
 
-
-
-
-
-
 // ---------------------------------------------------------------------------
 // Только для cl-program-layalty.html
 
@@ -36,8 +31,6 @@ $('.more-point__btn').on('click', function(event){
     $('.bonus-table--hide-block ').toggleClass('bonus-table--show-block');
 });
 // ---------------------------------------------------------------------------
-
-
 
 
 
@@ -68,9 +61,6 @@ $('#declared-cost__3dr').on('change', function() {
     $('.insurance-payer-3dr__input').toggleClass('insurance-payer-3dr__hidden', this.value != 'string:100000002');
 });
 // ---------------------------------------------------------------------------
-
-
-
 
 
 
@@ -128,7 +118,6 @@ $('.faq__search').on('change', function() {
 
 
 
-
 // ---------------------------------------------------------------------------
 // Только для cl-express-delivery.html
 
@@ -152,9 +141,6 @@ $('#time18').hover(
 
 
 
-
-
-
 // ---------------------------------------------------------------------------
 // Автоматическое открытие <Details> при переходе по якорю,
 // сейчас используется на нескольких страница, и в будущем думаю понадобится
@@ -163,42 +149,41 @@ function MakeArrayOfAllPrefixes(str){
     //console.log("MakeArrayOfAllPrefixes("+str+")");
     var prefixes = [];
     for (var i=1; i<=str.length; i++){
-  prefixes.push(str.substr(0,i));
+        prefixes.push(str.substr(0,i));
+            }
+            console.log("MakeArrayOfAllPrefixes("+str+") -> returns [" + prefixes + "]");
+            return prefixes;
+        }
+    
+    function SetOpenAttrForIdsAndPrefixes(ids, openAttrBool){
+        $('details').attr('open',false); // close all others first
+        console.log("SetOpenAttrForIds([" +ids+"], "+openAttrBool+")");
+        for (idindex in ids) {
+            var id = ids[idindex];
+                if (id != ""){
+                    var prefixes = MakeArrayOfAllPrefixes(id);
+                    for (prefixidx in prefixes) {
+                    var prefix = prefixes[prefixidx];
+                    if(openAttrBool==true) { operationstr="Opening"; } else { operationstr="Closing"};
+                    console.log(operationstr+" <details id='#"+prefix+"'> with $('#"+prefix+").attr('open',"+openAttrBool+");");
+                    $('#'+prefix).attr('open',openAttrBool);
+                    }
+                }
+        }
     }
-    console.log("MakeArrayOfAllPrefixes("+str+") -> returns [" + prefixes + "]");
-    return prefixes;
-  }
-  
-  function SetOpenAttrForIdsAndPrefixes(ids, openAttrBool){
-    $('details').attr('open',false); // close all others first
-    console.log("SetOpenAttrForIds([" +ids+"], "+openAttrBool+")");
-    for (idindex in ids) {
-  var id = ids[idindex];
-  if (id != ""){
-    var prefixes = MakeArrayOfAllPrefixes(id);
-    for (prefixidx in prefixes) {
-      var prefix = prefixes[prefixidx];
-      if(openAttrBool==true) { operationstr="Opening"; } else { operationstr="Closing"};
-      console.log(operationstr+" <details id='#"+prefix+"'> with $('#"+prefix+").attr('open',"+openAttrBool+");");
-      $('#'+prefix).attr('open',openAttrBool);
+    
+    function SetOpenAttrForIdsAndPrefixesFromLocationHash(){
+        var hashes = $(location).attr('hash').split('#'); 
+        SetOpenAttrForIdsAndPrefixes(hashes, true); 
     }
-  }
-    }
-  }
-  
-  function SetOpenAttrForIdsAndPrefixesFromLocationHash(){
-    var hashes = $(location).attr('hash').split('#'); 
-    SetOpenAttrForIdsAndPrefixes(hashes, true); 
-  }
-  
-  $(document).ready(function(){
-    SetOpenAttrForIdsAndPrefixesFromLocationHash();
-  
-    if ("onhashchange" in window) {// does the browser support the hashchange event?
-    window.onhashchange = function () {
-       SetOpenAttrForIdsAndPrefixesFromLocationHash();
-    }
-    }
+    
+    $(document).ready(function(){
+        SetOpenAttrForIdsAndPrefixesFromLocationHash();
+        if ("onhashchange" in window) {
+            window.onhashchange = function () {
+            SetOpenAttrForIdsAndPrefixesFromLocationHash();
+            }
+        }
 });
 // ---------------------------------------------------------------------------
 
@@ -215,8 +200,6 @@ $(document).ready(function(){
             if(valOpt)$(this).next("#Tax--label").addClass("show-label");
     })
 });
-
-
 
 
 

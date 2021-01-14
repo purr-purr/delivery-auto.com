@@ -3,82 +3,6 @@
     src: url("../fonts/BebasNeueBold.otf"); 
 }
 
-/* ======================================
-//            Banners Slider
-====================================== */
-
-.main-slider {
-	max-width: 1340px;
-	width: 100%;
-	margin: 0 auto;
-}
-
-.main-slider__link {
-	display: block;
-	overflow: hidden;
-	width: 100%;
-	border: none !important;
-}
-
-.main-slider__img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.main-slider .slick-dots {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	bottom: 0;
-	height: 100%;
-}
-
-.main-slider .slick-dots li {
-	right: 30px;
-	width: 15px;
-	height: 15px;
-	margin: 7px 0 7px auto;
-	border: 1px solid #fff;
-	border-radius: 50px;
-}
-
-.main-slider .slick-dots .slick-active {
-	background: #FDCE00;
-}
-
-.main-slider .slick-dots li button {
-	display: none;
-}
-
-#main-slider--mobile {
-	display: none;
-}
-
-#main-slider--tablet {
-	display: none;
-}
-
-@media screen and (max-width: 900px) {
-	#main-slider--tablet {
-		display: block;
-	}
-	#main-slider--desctop {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	#main-slider--tablet {
-		display: none;
-	}
-	#main-slider--mobile {
-		display: block;
-	}
-}
-
-
-
 
 /* ======================================
 //            Trackind Block
@@ -391,9 +315,6 @@
 	right: -50px;
 }
 
-
-
-
 .home-tariff .slick-prev:hover, .home-tariff .slick-prev:focus, .home-tariff .slick-next:hover, .home-tariff .slick-next:focus {
 	background: #FFD500 url("../img/system/icon/h-slider__arrow--hover.svg") no-repeat center center;
 }
@@ -671,7 +592,6 @@
 		perspective: 1000px;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-
 }
 
 #home-advantages__slider [type="radio"] {
@@ -714,6 +634,12 @@
 	max-width: 240px;
 	margin: 0 auto;
 	text-align: center;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none; 
 }
 
 .slider__info h3 {

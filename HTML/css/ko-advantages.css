@@ -10,7 +10,6 @@
 /* =================================== */
 
 
-
 .home-kpi {
     padding: 40px 0 0 0;
 }
@@ -65,9 +64,7 @@
     text-decoration: underline;
 }
 
-
 /* Слайдер Наград */
-
 .awards {
     margin: 50px auto 35px auto;
 }
@@ -160,8 +157,15 @@
     transition: all .5s linear;
 }
 
-
 .awards-slider .awards-slider__info a:hover {
 	border: 1px solid #FFD500;
 	transition: all 0.5s ease-in;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 1024px)  {
+	.home-kpi {
+		padding: 0 0 30px;
+	}
 }
