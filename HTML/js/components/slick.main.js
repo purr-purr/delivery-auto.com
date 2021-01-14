@@ -10,25 +10,25 @@ $(document).ready(function(){
         slidesToScroll: 1
     });
     $('.partners-slider').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         slidesToShow: 4,
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1080,
+                breakpoint: 1240,
                 settings: {
                     slidesToShow: 3
                 }
             },
             {
-                breakpoint: 815,
+                breakpoint: 1024,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 560,
+                breakpoint: 700,
                 settings: {
                     slidesToShow: 1
                 }
@@ -65,8 +65,8 @@ $(document).ready(function(){
 
 
     $('.home-tariff').slick({
-        autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: true,
+        // autoplaySpeed: 3000,
         slidesToScroll: 1,
         mobileFirst: true, 
         responsive: [
@@ -77,13 +77,13 @@ $(document).ready(function(){
                 }
             },
             {
-                breakpoint: 650,
+                breakpoint: 770,
                 settings: {
                     slidesToShow: 2
                 }
             },
             {
-                breakpoint: 950,
+                breakpoint: 1070,
                 settings: {
                     slidesToShow: 3
                 }

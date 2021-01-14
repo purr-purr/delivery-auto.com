@@ -1092,12 +1092,15 @@ details > summary {
 
 .footer .footer__inner {
 	display: flex;
+	justify-content: space-between;
 	padding: 75px 0 30px 0;
 }
 
 .footer__support a {
 	display: block;
-	color: #999;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
 }
 
 .footer__support a:hover {
@@ -1105,7 +1108,8 @@ details > summary {
 }
 
 .support__call-center {
-	margin-bottom: 45px;
+	width: max-content;
+	margin-bottom: 20px;
 }
 
 .support__call-center p {
@@ -1123,7 +1127,11 @@ details > summary {
 .support__call-center .call-center__schedule {
 	border-bottom: 1px dashed #949494;
 	padding-bottom: 5px;
-	width: max-content;
+	display: inline-block;
+}
+
+.support__call-center .call-center__schedule:hover {
+	color: #ffd500;
 }
 
 .call-center__schedule {
@@ -1141,10 +1149,13 @@ details > summary {
 .footer__menu {
 	display: flex;
 	justify-content: space-between;
+	max-width: 330px;
+	width: 100%;
 }
 
 .footer__menu .menu__item {
-	margin-right: 75px;
+	margin-right: 20px;
+	white-space: nowrap;
 }
 
 .footer__menu .menu__item:last-child {
@@ -1175,11 +1186,8 @@ details > summary {
 	margin-bottom: 20px;
 }
 
-.footer-subs {
-	max-width: 485px;
-}
-
 .footer-subs__title {
+	max-width: 415px;
 	font-size: 16px;
 	line-height: 20px;
 	color: #FFFFFF;
@@ -1203,7 +1211,7 @@ details > summary {
 }
 
 .footer-subs__input {
-	width: 373px;
+	width: 345px;
 	height: 48px;
 	border: 2px solid #fff;
 	padding-left: 14px;
@@ -1227,7 +1235,8 @@ details > summary {
 }
 
 .footer__links {
-	margin-left: 70px;
+	max-width: 485px;
+	margin-left: 60px;
 }
 
 .footer__links .links {
@@ -1249,7 +1258,7 @@ details > summary {
 }
 
 .footer__links .apps__img {
-	margin-right: 80px;
+	margin-right: 40px;
 }
 
 .footer__links .apps__img-link {
@@ -1299,12 +1308,10 @@ details > summary {
 
 .footer__group-mob {
 	display: flex;
-	justify-content: space-around;
-	flex-grow: 1;
 }
 
 .footer__support {
-	margin-right: 90px;
+	margin-right: 10px;
 }
 
 @media screen and (max-width: 1130px) {
@@ -1415,7 +1422,7 @@ details > summary {
 
 .mob-footer-nav {
 	display: none;
-	width: 205px;
+	width: 225px;
 	margin: 0 30px 50px 0;
 }
 
@@ -1463,7 +1470,8 @@ details > summary {
 }
 
 .mob-footer-nav__drop-li {
-	margin: 10px 0 10px 25px;
+	white-space: nowrap;
+	margin: 10px 0 10px 15px;
 }
 
 .mob-footer-nav__drop-li a {
@@ -1474,7 +1482,7 @@ details > summary {
 	color: #ffd500;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1124px) {
+@media screen and (min-width: 320px) and (max-width: 1141px) {
 	.footer-subs, .sub-footer__payment, .footer__support, .footer__menu, .faq-block {
 		display: none;
 	}
@@ -1517,6 +1525,7 @@ details > summary {
 		margin-right: 20px;
 	}
 	.footer .footer__inner {
+		justify-content: space-around;
 		padding: 25px 0 10px 0;
 	}
 }
@@ -2356,17 +2365,19 @@ details > summary {
 
 
 @media screen and (min-width: 320px) and (max-width: 1141px) {
+	.feedback-block .c-container {
+		padding: 0;
+	}
 	.faq-block__questions {
 		width: 900px;
 	}
 	.faq {
 		flex-wrap: wrap;
-		padding: 40px 0;
+		padding: 0;
 	}
 	.feedback {
 		width: 100%;
 		height: auto;
-		margin-bottom: 50px;
 	}
 	.feedback__input, .feedback__select  {
 		width: 387px;
@@ -2443,12 +2454,6 @@ details > summary {
 	}
 	.feedback__item {
 		min-width: 280px;
-	}
-	.feedback-block .c-container {
-		padding: 0;
-	}
-	.faq {
-		padding: 40px 0 0 0;
 	}
 }
 
@@ -2877,8 +2882,9 @@ details > summary {
 
 /* Aside Banner Slider */
 .action-slider {
-	width: 300px;
-	height: 160px;
+	width: 100%;
+	height: auto;
+	/* height: 250px; */
 	margin-top: 25px;
 	margin-bottom: 30px;
 }
@@ -2916,7 +2922,7 @@ details > summary {
 	transition: all .4s linear;
 }
 
-/* 1-я кнопка "Розрахувативартість" */
+/* 1-я кнопка "Розрахувати вартість" */
 .aside-btn__item:nth-child(1) {
 	background: #fff url("../img/system/icon/aside-calculator.svg") no-repeat 20px;
 }
