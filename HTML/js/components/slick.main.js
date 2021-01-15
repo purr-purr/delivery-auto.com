@@ -7,7 +7,16 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
         dots: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    vertical: false,
+                    verticalSwiping: false
+                }
+            }
+        ]
     });
     $('.partners-slider').slick({
         autoplay: true,

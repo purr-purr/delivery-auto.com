@@ -180,7 +180,7 @@ details > summary {
 	cursor: pointer;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	p {
 		font-size: 15px;
 		line-height: 20px;
@@ -199,17 +199,6 @@ details > summary {
 		font-size: 15px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* checkbox style */
@@ -352,7 +341,7 @@ details > summary {
 	display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.mobile-page__title, .mobile-page__description {
 		display: block;
 	}
@@ -392,7 +381,7 @@ details > summary {
 	padding: 0 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.c-container {
 		padding: 0 20px;
 	}
@@ -446,7 +435,7 @@ details > summary {
     margin-right: 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.main-btn {
 		min-width: 135px;
 		height: 40px;
@@ -516,7 +505,7 @@ details > summary {
 	transition: all .2s ease-in-out;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.label-rotate__input:placeholder-shown ~ .label-rotate__label {
 		font-size: 15px;
 	}
@@ -532,7 +521,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 414px) {
+@media screen and (max-width: 414px) {
 	.label-rotate__input:placeholder-shown ~ .label-rotate__label {
 		left: 10px;
 	}
@@ -679,6 +668,7 @@ details > summary {
 	display: flex;
 	align-items: center;
 	margin-right: 30px;
+	white-space: nowrap;
 }
 
 .nav-numbers__item:last-child {
@@ -977,7 +967,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	#only-desctop {
 		display: none;
 	}
@@ -1080,8 +1070,6 @@ details > summary {
 		left: 38%;
 	}
 }
-
-
 
 /* ======================================
 //            FOOTER
@@ -1484,7 +1472,7 @@ details > summary {
 	color: #ffd500;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1141px) {
+@media screen and (max-width: 1141px) {
 	.footer-subs, .sub-footer__payment, .footer__support, .footer__menu, .faq-block {
 		display: none;
 	}
@@ -1541,13 +1529,13 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 880px) {
+@media screen and (max-width: 880px) {
 	.footer__group-mob {
 		flex-direction: column;
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.footer .footer__inner {
 		flex-direction: column;
 	}
@@ -1724,7 +1712,7 @@ details > summary {
 	transition: transform .2s ease-in-out;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.section--mob-app {
 		margin-top: 0;
 	}
@@ -2108,7 +2096,7 @@ details > summary {
 	color: #36c154;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.home-kpi {
 		padding: 0 0 30px;
 	}
@@ -2208,14 +2196,14 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 930px) {
+@media screen and (max-width: 930px) {
 	.home-kpi {
 		flex-direction: column;
 		align-items: flex-start;
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 930px) {
+@media screen and (max-width: 930px) {
 	.home-kpi__inner {
 		width: 85%;
 		margin: 0 auto;
@@ -2231,7 +2219,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 630px) {
+@media screen and (max-width: 630px) {
 	.home-kpi__inner {
 		flex-direction: column;
 		align-items: center;
@@ -2300,11 +2288,7 @@ details > summary {
 
 .feedback__select {
 	cursor: pointer;
-	background: url("../img/system/icon/faq__arrow-down.svg") no-repeat center;
 	background-color: #F2F2F2;
-	background-size: 10px 7px;
-	-webkit-appearance: none;
-	background-position-x: 97%;
 	padding-right: 25px;
 }
 
@@ -2471,7 +2455,7 @@ details > summary {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 1141px) {
+@media screen and (max-width: 1141px) {
 	.feedback-block .c-container {
 		padding: 0;
 	}
@@ -2480,7 +2464,7 @@ details > summary {
 	}
 	.faq {
 		flex-wrap: wrap;
-		padding: 0;
+		padding: 40px 0 0;
 	}
 	.feedback {
 		width: 100%;
@@ -2505,7 +2489,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.faq-block {
 		display: none;
 	}
@@ -2540,13 +2524,13 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 970px) {
+@media screen and (max-width: 970px) {
 	.feedback__textarea {
 		width: 100%;
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 	.feedback__group {
 		display: block;
 	}
@@ -2555,7 +2539,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.feedback__group {
 		display: block;
 	}
@@ -2589,7 +2573,7 @@ details > summary {
 	color: #3072C4;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.crumbs{
 		display: none;
 	}
@@ -2864,7 +2848,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 830px) {
+@media screen and (max-width: 830px) {
 	.home-news {
 		padding: 0;
 	}
@@ -3071,7 +3055,7 @@ details > summary {
 	margin: 0 0 20px 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.aside-block {
 		display: none;
 	}
@@ -3170,7 +3154,7 @@ details > summary {
     height: 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.add-file__text, .add-file__name  {
 		font-size: 13px;
 	}
@@ -3184,7 +3168,7 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 830px) {
+@media screen and (max-width: 830px) {
 	.add-file {
 		max-width: 85%;
 		flex-wrap: wrap;
@@ -3194,13 +3178,13 @@ details > summary {
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 730px){
+@media screen and (max-width: 730px){
 	.add-file {
 		max-width: 97%;
 	}
 }
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.add-file {
 		flex-direction: column;
 		align-items: flex-start;
@@ -3248,7 +3232,7 @@ details > summary {
 	transition: all 0.3s ease-in;
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 	.home-heading {
 		padding: 30px 0 15px 0;
 	}
