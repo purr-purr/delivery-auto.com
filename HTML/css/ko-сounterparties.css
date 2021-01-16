@@ -14,6 +14,7 @@
     max-width: 805px;
     width: 100%;
 }
+
 .counter-form__line {
     display: flex;
     justify-content: space-between;
@@ -50,12 +51,10 @@
     margin-top: 35px;
 }
 
-
-@media screen and (min-width: 320px) and (max-width: 830px) {
-    .counter-form {
+@media (max-width: 830px) {
+    .counter-form__input--large, .counter-form__item--large {
         max-width: 387px;
     }
-
     .counter-form__line {
         flex-direction: column;
         align-items: flex-start;

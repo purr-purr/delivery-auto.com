@@ -48,7 +48,10 @@
             <section class="main__container">
                 <article class="main-content">
                     <div class="franchising-info">
-                        <h2 class="franchising__title">Переваги для франчайзі</h2>
+                        <h2 class="franchising__title" id="only-desctop">Переваги для франчайзі</h2>
+                        <!-- .mobile-page__title, .mobile-page__description Только для адаптива -->
+                        <h1 class="mobile-page__title">Франчайзинг</h1>
+                        <!-- --- -->
                         <details>
                             <summary><h3 class="franchising-info__title">Прибутковість бізнесу </h3></summary>
                             <ul class="franchising-info__list">
@@ -115,102 +118,104 @@
                     <div class="franchising-city">
                         <h2 class="franchising__title">Пріоритетні міста до партнерства</h2>
 
-                        <table class="franchising-city__table">
-                            <tbody class="franchising-city__tbody">
-                                <tr>
-                                    <td>Вінницька область</td>
-                                    <td>Гнівань, Іллінці</td>
-                                </tr>
-                                <tr>
-                                    <td>Волинська область</td>
-                                    <td>Маневичи, Рожище</td>
-                                </tr>
-                                <tr>
-                                    <td>Дніпропетровська область</td>
-                                    <td>Апостолове, Дніпро, Зеленодольськ, Магдалиновка, Першотравенск, Синельникове, Томаківка, Царичанка</td>
-                                </tr>
-                                <tr>
-                                    <td>Донецька область</td>
-                                    <td>Родинське, Святогірськ, Часів Яр</td>
-                                </tr>
-                                <tr>
-                                    <td>Житомирська область</td>
-                                    <td>Олевськ</td>
-                                </tr>
-                                <tr>
-                                    <td>Закарпатська область</td>
-                                    <td>Воловець, Міжгір'я, Перечин, Рахів</td>
-                                </tr>
-                                <tr>
-                                    <td>Запорізька область</td>
-                                    <td>Акимівка, Більмак, Веселе, Гуляйполе, Кам'янка-Дніпровська, Кирилівка, Михайлівка</td>
-                                </tr>
-                                <tr>
-                                    <td>Івано-Франківська область</td>
-                                    <td>Болехів, Надвірна, Снятин, Тисмениця, Тлумач, Яремче</td>
-                                </tr>
-                                <tr>
-                                    <td>Київська область</td>
-                                    <td>Київ, Богуслав, Борова, Гоголів, Ставище, Яготин</td>
-                                </tr>
-                                <tr>
-                                    <td>Кіровоградська область</td>
-                                    <td>Гайворон, Голованівськ</td>
-                                </tr>
-                                <tr>
-                                    <td>Луганська область</td>
-                                    <td>Троїцьк</td>
-                                </tr>
-                                <tr>
-                                    <td>Львівська область</td>
-                                    <td>Винники, Кам'янка-бузька, Львів, Радехів, Сколе, Ходорів</td>
-                                </tr>
-                                <tr>
-                                    <td>Миколаївська область</td>
-                                    <td>Коблево, Новий Буг, Снігурівка</td>
-                                </tr>
-                                <tr>
-                                    <td>Одеська область</td>
-                                    <td>Вилкове, Кілія, Кодима, Тарутине</td>
-                                </tr>
-                                <tr>
-                                    <td>Полтавська область</td>
-                                    <td>Глобине, Карлівка,Котельва, Нові Санжари, Решетилівка, Чутове</td>
-                                </tr>
-                                <tr>
-                                    <td>Рівненська область</td>
-                                    <td>Гоща, Дубровиця, Клевань, Млинів</td>
-                                </tr>
-                                <tr>
-                                    <td>Сумська область</td>
-                                    <td>Краснопілля</td>
-                                </tr>
-                                <tr>
-                                    <td>Харківська область</td>
-                                    <td>Барвінкове, Краснокутськ, Куп'янськ вузловий</td>
-                                </tr>
-                                <tr>
-                                    <td>Херсонська область</td>
-                                    <td>Білозерка, Залізний порт</td>
-                                </tr>
-                                <tr>
-                                    <td>Хмельницька область</td>
-                                    <td>Летичів</td>
-                                </tr>
-                                <tr>
-                                    <td>Черкаська область</td>
-                                    <td>Ватутіне, Городище, Кобиляки, Монастирище</td>
-                                </tr>
-                                <tr>
-                                    <td>Чернівецька область</td>
-                                    <td>Вашківці, Новодністровськ</td>
-                                </tr>
-                                <tr>
-                                    <td>Чернігівська область</td>
-                                    <td>Городня, Ічня, Мена</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="franchising-city__table-wrap">
+                            <table class="franchising-city__table">
+                                <tbody class="franchising-city__tbody">
+                                    <tr>
+                                        <td>Вінницька область</td>
+                                        <td>Гнівань, Іллінці</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Волинська область</td>
+                                        <td>Маневичи, Рожище</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Дніпропетровська область</td>
+                                        <td>Апостолове, Дніпро, Зеленодольськ, Магдалиновка, Першотравенск, Синельникове, Томаківка, Царичанка</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Донецька область</td>
+                                        <td>Родинське, Святогірськ, Часів Яр</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Житомирська область</td>
+                                        <td>Олевськ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Закарпатська область</td>
+                                        <td>Воловець, Міжгір'я, Перечин, Рахів</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Запорізька область</td>
+                                        <td>Акимівка, Більмак, Веселе, Гуляйполе, Кам'янка-Дніпровська, Кирилівка, Михайлівка</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Івано-Франківська область</td>
+                                        <td>Болехів, Надвірна, Снятин, Тисмениця, Тлумач, Яремче</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Київська область</td>
+                                        <td>Київ, Богуслав, Борова, Гоголів, Ставище, Яготин</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Кіровоградська область</td>
+                                        <td>Гайворон, Голованівськ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Луганська область</td>
+                                        <td>Троїцьк</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Львівська область</td>
+                                        <td>Винники, Кам'янка-бузька, Львів, Радехів, Сколе, Ходорів</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Миколаївська область</td>
+                                        <td>Коблево, Новий Буг, Снігурівка</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Одеська область</td>
+                                        <td>Вилкове, Кілія, Кодима, Тарутине</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Полтавська область</td>
+                                        <td>Глобине, Карлівка,Котельва, Нові Санжари, Решетилівка, Чутове</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Рівненська область</td>
+                                        <td>Гоща, Дубровиця, Клевань, Млинів</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Сумська область</td>
+                                        <td>Краснопілля</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Харківська область</td>
+                                        <td>Барвінкове, Краснокутськ, Куп'янськ вузловий</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Херсонська область</td>
+                                        <td>Білозерка, Залізний порт</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Хмельницька область</td>
+                                        <td>Летичів</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Черкаська область</td>
+                                        <td>Ватутіне, Городище, Кобиляки, Монастирище</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Чернівецька область</td>
+                                        <td>Вашківці, Новодністровськ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Чернігівська область</td>
+                                        <td>Городня, Ічня, Мена</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </article>
             </section>
@@ -222,49 +227,56 @@
                         <p class="franchising-form__description">Якщо Ви зацікавлені у співпраці, заповніть заявку, і ми зв'яжемося з Вами!</p>
 
                         <div class="franchising-form__line">
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <input class="franchising-form__input" data-val="true" data-val-required="Потрібно поле Ваше ім’я *" name="FirstName" type="text" placeholder="Ваше ім’я *">
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <input class="franchising-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Ваше ім’я *" id="FirstName" name="FirstName" type="text" placeholder="Ваше ім’я *">
+                                <label for="FirstName" class="label-rotate__label">Ваше ім’я *</label>
                             </div>
 
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <input class="franchising-form__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel" placeholder="Телефон *">
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <input class="franchising-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel" placeholder="Телефон *">
+                                <label for="Phone" class="label-rotate__label">Телефон *</label>
                             </div>
 
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <input class="franchising-form__input" data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." id="Email" name="Email" type="email" placeholder="Електронна пошта *">
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <input class="franchising-form__input label-rotate__input" data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." id="Email" name="Email" type="email" placeholder="Електронна пошта *">
+                                <label for="Email" class="label-rotate__label">Електронна пошта *</label>
                             </div>
                         </div>
                         
                         <!-- next line -->
                         <div class="franchising-form__line">
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <select data-val="true" data-val-required="Потрібно поле Стать."  name="Gender">
-                                    <option value="0" selected style="display: none;">Область</option>
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <select data-val="true" data-val-required="Потрібно поле Область." id="Area" name="Area">
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="1">Пример</option>
                                     <option value="2">Пример</option>
                                 </select>
+                                <label for="Area" id="Area--label" class="label-rotate__select">Область</label>
                             </div>
 
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <select data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги.">
-                                    <option value="0" selected style="display: none;">Місто *</option>
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <select data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги." name="City" id="City">
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="1">Пример</option>
                                     <option value="2">Пример</option>
                                 </select>
+                                <label for="City" id="City--label" class="label-rotate__select">Місто *</label>
                             </div>
 
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <select data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги.">
-                                    <option value="0" selected style="display: none;">Район </option>
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <select data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги." name="City-area" id="City-area">
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="1">Пример</option>
                                     <option value="2">Пример</option>
                                 </select>
+                                <label for="City-area" id="City-area--label" class="label-rotate__select">Район</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="franchising-form__line">
-                            <div class="franchising-form__item franchising-form__item--small">
-                                <input class="franchising-form__input franchising-form__input--small" name="HowMuchPeople" type="number" placeholder="Чисельність населення (тис.чол.)">
+                            <div class="franchising-form__item franchising-form__item--small label-rotate">
+                                <input class="franchising-form__input franchising-form__input--small label-rotate__input" name="HowMuchPeople" id="HowMuchPeople" type="number" placeholder="Чисельність населення (тис.чол.)">
+                                <label for="HowMuchPeople" class="label-rotate__label">Чисельність населення (тис.чол.)</label>
                             </div>
                         </div>
                         <!-- next line -->
@@ -335,8 +347,8 @@
                             </div>
                         </div>
                         <!-- next line -->
-                        <div class="franchising-form__line" style="justify-content: flex-start;">
-                            <div class="franchising-form__item franchising-form__item--col" style="padding-left:143px;">
+                        <div class="franchising-form__line franchising-form__line--rocla-vehicle">
+                            <div class="franchising-form__item franchising-form__item--col franchising-form__item--rocla">
                                 <div class="checkbox--before franchising-form__item--size">
                                     <input data-val="true" data-val-required="The Рокла field is required." id="HasRocla" name="HasRocla" type="checkbox" value="true">
                                     <label for="HasRocla">Рокла</label>
@@ -344,8 +356,8 @@
                                 </div>
                             </div>
 
-                            <div class="franchising-form__item franchising-form__item--col" style="padding-left: 178px;">
-                                <div class="checkbox--before franchising-form__item--size" style="align-items: flex-start;">
+                            <div class="franchising-form__item franchising-form__item--col franchising-form__item--vehicle">
+                                <div class="checkbox--before franchising-form__item--size">
                                     <input id="Vehicle" name="Vehicle" type="checkbox" value="true"/>
                                     <label for="Vehicle">Вантажний автомобіль</label>
                                     <input name="Vehicle" type="hidden" value="false">
@@ -355,15 +367,15 @@
                         </div>
                         <!-- next line -->
                         <div class="franchising-form__line">
-                            <div class="franchising-form__item franchising-form__item--large">
-                                <textarea class="franchising-form__textarea" placeholder="Додаткова інформація" name="Education"></textarea>
+                            <div class="franchising-form__item franchising-form__item--large label-rotate">
+                                <textarea class="franchising-form__textarea label-rotate__input" placeholder="Додаткова інформація" name="Education" id="Education"></textarea>
+                                <label for="Education" class="label-rotate__label">Додаткова інформація</label>
                             </div>
                         </div>
 
                         <p class="franchising-form__required-input">* - обов’язкові поля для вводу</p>
 
                         <!-- next line -->
-                        <div class="franchising-form__line">
                             <div class="add-file">
                                 <div class="add-file__info">
                                     <p class="add-file__title">Прикріпити фотографії під'їздів до складу, приміщень і т.д.</p>
@@ -400,16 +412,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
                         <!-- Captcha Не подключена, только визуальное присутствие -->
-                        <div class="captcha-form">
+                        <!-- <div class="captcha-form">
                             <div class="captcha-form__item">
                                 <img src="img/system/any/captcha.jpg" alt="">
                             </div>
                             <img class="captcha-form__reload" src="img/system/any/capthca-reload.svg" alt="">
                             <input class="captcha-form__input" type="text" name="captcha-result" placeholder="Введіть результат виконання операцій з картинки">
-                        </div>
+                        </div> -->
 
                         <button class="main-btn franchising-form__btn popup-order-approve_open">Надіслати</button>
                     </form>

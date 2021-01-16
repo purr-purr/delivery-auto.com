@@ -48,12 +48,16 @@
 
             <section class="main__container">
                 <article class="main-content">
-                    <p class="main-page__description" style="padding-bottom: 12px;">Логістична компанія «Делівері» приймає запрошення до участі в тендерах на надання транспортно-експедиційних послуг
-                    </p>
-                    <p class="main-page__description">Для участі ТОВ «Делівері» в тендері, вашій компанії необхідно заповнити заявку нижче, або зв’язатися з відповідальним співробітником     за телефоном: <strong>(067) 627-69-20.</strong>
-                        Після заповнення заявки з Вами зв’яжеться спеціаліст відділу тендерів.
-                    Очікуємо на Вашу заявку. Будемо раді взаємовигідному співробітництву!
-                    </p>
+                    <div class="tender-info">
+                        <!-- .mobile-page__title Только для адаптива -->
+                        <h1 class="mobile-page__title">Тендер</h1>
+    
+                        <p class="main-page__description">Логістична компанія «Делівері» приймає запрошення до участі в тендерах на надання транспортно-експедиційних послуг
+                        </p>
+                        <p class="main-page__description">Для участі ТОВ «Делівері» в тендері, вашій компанії необхідно заповнити заявку нижче, або зв’язатися з відповідальним співробітником     за телефоном: <strong>(067) 627-69-20.</strong>
+                            Після заповнення заявки з Вами зв’яжеться спеціаліст відділу тендерів.</p>
+                        <p class="main-page__description">Очікуємо на Вашу заявку. Будемо раді взаємовигідному співробітництву!</p>
+                    </div>
                 </article>
             </section>
 
@@ -64,13 +68,14 @@
                         <h2 class="tender-form__title">Заповніть заявку / пропозицію на тендер
                         </h2>
                         <div class="tender-form__line">
-                            <div class="tender-form__item">
-                                <input class="tender-form__input" data-val="true" data-val-required="Поле обов'язково для заповнення" id="OrganizerName" name="OrganizerName" type="text" value="" placeholder="Організатор тендеру *">
+                            <div class="tender-form__item label-rotate">
+                                <input class="label-rotate__input" data-val="true" data-val-required="Поле обов'язково для заповнення" id="OrganizerName" name="OrganizerName" type="text" value="" placeholder="Організатор тендеру *">
+                                <label for="OrganizerName" class="label-rotate__label">Організатор тендеру *</label>
                             </div>
 
-                            <div class="tender-form__item">
-                                <select class="tender-form__select valid" data-val="true" data-val-required="Поле обов'язково для заповнення" id="IndustryCode" name="IndustryCode" onchange="change_border('IndustryCode')">
-                                    <option value="0" selected style="display: none;">Галузь *</option>
+                            <div class="tender-form__item label-rotate">
+                                <select class="tender-form__select" data-val="true" data-val-required="Поле обов'язково для заповнення" id="IndustryCode" name="IndustryCode" onchange="change_border('IndustryCode')">
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="97">Косметика</option>
                                     <option value="72">Бытовая химия</option>
                                     <option value="98">Коррепспонденция</option>
@@ -116,32 +121,38 @@
                                     <option value="70">Предоставление услуг по домашнему хозяйству</option>
                                     <option value="71">Деятельность экстерриториальных организаций</option>
                                 </select>
+                                <label for="IndustryCode" id="IndustryCode--label" class="label-rotate__select">Галузь *</label>
                             </div>
                         </div>
                             <!-- next line -->
                         <div class="tender-form__line">
-                            <div class="tender-form__item">
-                                <input class="tender-form__input datepicker-here" data-position="right top" placeholder="Початок прийому заявок  *">
+                            <div class="tender-form__item label-rotate">
+                                <input class="label-rotate__input datepicker-here" data-position="bottom left" id="StartDate" name="StartDate" placeholder="Початок прийому заявок  *" autocomplete="off">
+                                <label for="StartDate" class="label-rotate__label">Початок прийому заявок  *</label>
                             </div>
 
-                            <div class="tender-form__item">
-                                <input class="tender-form__input datepicker-here" data-position="right top" id="EndDate" name="EndDate" onchange="change_border('EndDate')" type="text" value="" placeholder="Закінчення прийому заявок *">
+                            <div class="tender-form__item label-rotate">
+                                <input class="label-rotate__input datepicker-here" data-position="bottom left" id="EndDate" name="EndDate" type="text" value="" placeholder="Закінчення прийому заявок *" autocomplete="off">
+                                <label for="EndDate" class="label-rotate__label">Закінчення прийому заявок *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="tender-form__line">
-                            <div class="tender-form__item">
-                                <input class="tender-form__input" data-val="true" data-val-required="Поле обов'язково для заповнення" id="PersonName" name="PersonName" type="text" value="" placeholder="ПІБ контактної особи *">
+                            <div class="tender-form__item label-rotate">
+                                <input class="label-rotate__input" data-val="true" data-val-required="Поле обов'язково для заповнення" id="PersonName" name="PersonName" type="text" value="" placeholder="ПІБ контактної особи *">
+                                <label for="PersonName" class="label-rotate__label">ПІБ контактної особи *</label>
                             </div>
 
-                            <div class="tender-form__item">
-                                <input class="tender-form__input" type="tel" data-val="true" data-val-regex="Телефон має мiстити 10 цифр" data-val-regex-pattern="^([0-9]{10})$" data-val-required="Поле обов'язково для заповнення" id="Phone" name="Phone" value="" minlength="10" maxlength="10" placeholder="Номер телефону *">
+                            <div class="tender-form__item label-rotate">
+                                <input class="label-rotate__input" type="tel" data-val="true" data-val-regex="Телефон має мiстити 10 цифр" data-val-regex-pattern="^([0-9]{10})$" data-val-required="Поле обов'язково для заповнення" id="Phone" name="Phone" value="" minlength="10" maxlength="10" placeholder="Номер телефону *">
+                                <label for="Phone" class="label-rotate__label">Номер телефону *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="tender-form__line">
-                            <div class="tender-form__item">
-                                <input class="tender-form__input" placeholder="E-mail *" data-val="true" data-val-regex="Некоректне значення поля" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" data-val-required="Поле обов'язково для заповнення" id="Email" name="Email" type="email" value="">
+                            <div class="tender-form__item label-rotate">
+                                <input class="label-rotate__input" placeholder="E-mail *" data-val="true" data-val-regex="Некоректне значення поля" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" data-val-required="Поле обов'язково для заповнення" id="Email" name="Email" type="email" value="">
+                                <label for="Email" class="label-rotate__label">E-mail *</label>
                             </div>
                         </div>
                         <!-- next line -->

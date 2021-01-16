@@ -22,7 +22,6 @@
 /* Аккардион */
 .franchising-info  {
 	max-width: 730px;
-	min-width: 630px;
 }
 
 .franchising-info details[open] summary ~ * {
@@ -261,6 +260,22 @@
     transition: all 0.3s ease-in;
 }
 
+.franchising-form__line--rocla-vehicle {
+    justify-content: flex-start;
+}
+
+.franchising-form__item--rocla {
+    padding-left:143px;
+}
+
+.franchising-form__item--vehicle {
+    padding-left: 178px;
+}
+
+.franchising-form__item--vehicle .franchising-form__item--size {
+    align-items: flex-start;
+}
+
 /* Капча */
 .captcha-form {
     display: flex;
@@ -289,4 +304,156 @@
 }
 .captcha-form__input::placeholder {
     color: #999999;
+}
+
+
+@media (max-width: 1024px) {
+    .franchising-info__title {
+        width: 80%;
+        padding-left: 0;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .franchising__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    .franchising-info summary:after {
+        right: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 8px;
+    }
+    .franchising-info details[open] summary:after {
+        background-size: 8px;
+    }
+    
+    .franchising-info summary {
+        height: 50px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+    .franchising-info details[open] summary {
+        margin-bottom: 10px;
+    }
+    .franchising-info__list {
+        width: 100%;
+    }
+    .franchising-info__list li {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .franchising-city {
+        margin: 45px 0 20px 0;
+    }
+    .franchising-city__table-wrap {
+        height: 365px;
+        overflow-y: scroll;
+        margin-top: 10px;
+    }
+    .franchising-city__table-wrap::-webkit-scrollbar { width: 3px; height: 3px;}
+    .franchising-city__table-wrap::-webkit-scrollbar-button { height: 0;}
+    .franchising-city__table-wrap::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
+    .franchising-city__table-wrap::-webkit-scrollbar-track-piece { background-color: #DADADA;}
+
+    .franchising-city__table {
+        margin-top: 0;
+    }
+    .franchising-city__tbody td {
+        padding-left: 7px;
+        font-size: 15px;
+    }
+    .franchising-city__tbody td:first-child {
+        max-width: 283px;
+    }
+    .franchising-form__title {
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .franchising-form {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .franchising-form__input--large, .franchising-form__item--large {
+        max-width: 387px;
+    }
+    .franchising-form__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .franchising-form__item {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .franchising-form__input--small, .franchising-form__item--small {
+        max-width: 387px;
+        width: 100%;
+    }
+    .franchising-form__item--vehicle .franchising-form__item--size {
+        flex-direction: column;
+        height: auto;
+        align-items: baseline;
+    }
+    .franchising-form__item--size {
+        height: 40px;
+        margin-bottom: 0;
+    }
+    .franchising-form__item--size:first-child {
+        margin-bottom: 0;
+    }
+    .franchising-form__item--col {
+        margin-bottom: 0;
+    }
+    .franchising-form__line--rocla-vehicle {
+        margin-bottom: 25px;
+    }
+    .franchising-form__item--rocla {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    .franchising-form__item--vehicle {
+        padding-left: 0;
+    }
+    #Vehicle-number {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+        display: none;
+    }
+    #Vehicle:checked ~ #Vehicle-number {
+        display: block;
+    }
+}
+
+@media (max-width: 430px) {
+    .franchising-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+    .franchising-city__tbody td {
+        font-size: 14px;
+    }
+    .franchising-city__table-wrap {
+        height: 265px;
+    }
+}
+
+@media (max-width: 930px) and (max-height: 450px) {
+    .franchising-city__table-wrap {
+        height: 265px;
+    }
+}
+@media (max-width: 930px) and (max-height: 350px) {
+    .franchising-city__table-wrap {
+        height: 180px;
+    }
 }

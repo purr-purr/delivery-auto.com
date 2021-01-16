@@ -55,14 +55,17 @@
                     <!-- --- -->
                     <form class="counter-form">
                         <div class="counter-form__line">
+
+
+
                             <div class="counter-form__item label-rotate">
-                                <input class="counter-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Назва компанії." id="Company" name="Company" type="text" value="" placeholder="Назва компанії *">
+                                <input class="counter-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Назва компанії." id="Company" name="Company" type="text" placeholder="Назва компанії *">
 
                                 <label for="Company" class="label-rotate__label">Назва компанії *</label>
                             </div>
 
                             <div class="counter-form__item label-rotate">
-                                <select class="counter-form__select valid" data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги." id="Services" name="Services">
+                                <select class="counter-form__select" data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги." id="Services" name="Services">
                                     <option value="0" selected style="display: none;"></option>
                                     <option value="BANKING">Банківські послуги</option>
                                     <option value="HOUSEHOLD_APPLIANCES">Побутова техніка</option>
@@ -120,7 +123,7 @@
                         <!-- next line -->
                         <div class="counter-form__line">
                             <div class="counter-form__item label-rotate">
-                                <select class="counter-form__select valid" id="Tax" name="Tax">
+                                <select class="counter-form__select" id="Tax" name="Tax">
                                     <option value="0" selected style="display: none;"></option>
                                     <option value="Загальна система">Загальна система</option>
                                     <option value="Єдиний податок">Єдиний податок</option>
@@ -147,48 +150,45 @@
                         <p class="counter-form__required-input">* - обов’язкові поля для вводу</p>
 
                         <!-- next line -->
-                        <div class="counter-form__line">
-                            <div class="add-file">
-                                <div class="add-file__info">
-                                    <p class="add-file__title">Прикріпити комерційну пропозицію</p>
-                                    <p class="add-file__text add-file__text--error">Невірний формат файлу!</p>
-                                    <p class="add-file__text">Будь ласка, завантажте до 3 документів в одному з форматів: .pdf, .odf, .rtf, .doc, .docx. Загальний розмір файлів обмежений 12 Мб</p>
+                        <div class="add-file">
+                            <div class="add-file__info">
+                                <p class="add-file__title">Прикріпити комерційну пропозицію</p>
+                                <p class="add-file__text add-file__text--error">Невірний формат файлу!</p>
+                                <p class="add-file__text">Будь ласка, завантажте до 3 документів в одному з форматів: .pdf, .odf, .rtf, .doc, .docx. Загальний розмір файлів обмежений 12 Мб</p>
+                            </div>
+
+                            <div class="add-file__btn">
+                                <label for="fileupload"><img src="img/system/icon/btn-add-file.svg" alt="">Додати файл</label>
+                                <input id="fileupload" type="file" name="files[]" accept=".pdf, .odf, .rtf, .doc, .docx" multiple="">
+                            </div>
+                            
+                            
+                            <div class="add-file__result">
+                                <p class="add-file__title">Файли:</p>
+
+                                <!-- one item -->
+                                <div class="add-file__result-item">
+                                    <p class="add-file__name">Файл 124.docx <span>(0.8 мб)</span></p>
+
+                                    <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
                                 </div>
 
-                                <div class="add-file__btn">
-                                    <label for="fileupload"><img src="img/system/icon/btn-add-file.svg" alt="">Додати файл</label>
-                                    <input id="fileupload" type="file" name="files[]" accept=".pdf, .odf, .rtf, .doc, .docx" multiple="">
+                                <!-- one item -->
+                                <div class="add-file__result-item">
+                                    <p class="add-file__name">Файл 124.docx <span>(0.8 мб)</span></p>
+
+                                    <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
                                 </div>
-                                
-                                
-                                <div class="add-file__result">
-                                    <p class="add-file__title">Файли:</p>
 
-                                    <!-- one item -->
-                                    <div class="add-file__result-item">
-                                        <p class="add-file__name">Файл 124.docx <span>(0.8 мб)</span></p>
+                                <!-- one item -->
+                                <div class="add-file__result-item">
+                                    <p class="add-file__name">Файл 124.docx <span>(0.8 мб)</span></p>
 
-                                        <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
-                                    </div>
-
-                                    <!-- one item -->
-                                    <div class="add-file__result-item">
-                                        <p class="add-file__name">Файл 124.docx <span>(0.8 мб)</span></p>
-
-                                        <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
-                                    </div>
-
-                                    <!-- one item -->
-                                    <div class="add-file__result-item">
-                                        <p class="add-file__name">Файл 124.docx <span>(0.8 мб)</span></p>
-
-                                        <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
-                                    </div>
-
+                                    <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
                                 </div>
+
                             </div>
                         </div>
-
 
                         <button class="main-btn counter-form__btn popup-order-counterparties_open">Надіслати</button>
                     </form>

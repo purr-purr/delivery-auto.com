@@ -9,6 +9,14 @@
 
 /* =================================== */
 
+.tender-info {
+    margin-bottom: 35px;
+}
+
+.tender-info .main-page__description {
+    padding-bottom: 12px;
+}
+
 .tender-form {
     width: 805px;
     margin: 50px 0;
@@ -21,7 +29,7 @@
 .tender-form__line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .tender-form__input--large, .tender-form__item--large {
@@ -65,4 +73,51 @@
     font-size: 16px;
     line-height: 20px;
     color: #333333;
+}
+
+
+@media (max-width: 1024px) {
+    .tender-info {
+        margin-bottom: 10px;
+    }
+    .tender-form__title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .tender-form {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .tender-form {
+        width: 100%;
+    }
+    .tender-form__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .tender-form__item {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .tender-form__select {
+        width: 100%;
+        max-width: 387px;
+    }
+    .tender-form__btn {
+        margin-top: 20px;
+    }
+    .tender-form__checkbox-title {
+        max-width: 96%;
+        font-size: 15px;
+    }
+    .tender-form__item--col {
+        margin-bottom: 0;
+    }
+    .tender-form__item--col:first-child {
+        margin-bottom: 15px;
+    }
 }

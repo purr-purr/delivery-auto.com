@@ -48,3 +48,15 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 1024px) {
+    .com-offers__item--second a {
+        font-size: 15px;
+    }
+    .com-offers__item--second span {
+        font-size: 13px;
+        margin-left: 5px;
+    }
+    .com-offers__doc {
+        padding-left: 10px;
+    }
+}

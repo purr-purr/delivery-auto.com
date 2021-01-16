@@ -191,6 +191,7 @@ function MakeArrayOfAllPrefixes(str){
 
 // Анимация для select, перенос label вверх
 $(document).ready(function(){
+    // Страница Контрагентам
     $("#Services").change(function(){
         var valOpt=$(this).find('option:selected').val();
             if(valOpt)$(this).next("#Services--label").addClass("show-label");
@@ -199,6 +200,27 @@ $(document).ready(function(){
         var valOpt=$(this).find('option:selected').val();
             if(valOpt)$(this).next("#Tax--label").addClass("show-label");
     })
+    // Страница Франчайзинг
+    $("#Area").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Area--label").addClass("show-label");
+    })
+    $("#City").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#City--label").addClass("show-label");
+    })
+    $("#City-area").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#City-area--label").addClass("show-label");
+    })
+    // Страница Тендер
+    $("#IndustryCode").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#IndustryCode--label").addClass("show-label");
+    })
+    // Страница Франчайзинг
+    
+    // Страница Франчайзинг
 });
 
 
