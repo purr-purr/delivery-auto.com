@@ -333,7 +333,6 @@
     .franchising-info details[open] summary:after {
         background-size: 8px;
     }
-    
     .franchising-info summary {
         height: 50px;
         margin-bottom: 10px;
@@ -356,12 +355,13 @@
         height: 365px;
         overflow-y: scroll;
         margin-top: 10px;
+        scrollbar-width: 3px; 
+        scrollbar-color: #DADADA;
     }
     .franchising-city__table-wrap::-webkit-scrollbar { width: 3px; height: 3px;}
     .franchising-city__table-wrap::-webkit-scrollbar-button { height: 0;}
     .franchising-city__table-wrap::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
     .franchising-city__table-wrap::-webkit-scrollbar-track-piece { background-color: #DADADA;}
-
     .franchising-city__table {
         margin-top: 0;
     }
