@@ -118,6 +118,10 @@
     margin: 100px 0 50px 0;
 }
 
+.franchising-city__table-wrap {
+    -webkit-overflow-scrolling: auto;
+}
+
 .franchising-city__table {
     margin-top: 20px;
     text-decoration: none;
