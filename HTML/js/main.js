@@ -218,8 +218,15 @@ $(document).ready(function(){
         var valOpt=$(this).find('option:selected').val();
             if(valOpt)$(this).next("#IndustryCode--label").addClass("show-label");
     })
-    // Страница Франчайзинг
-    
+    // Страница Робота і кар’єра
+    $("#Gender").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Gender--label").addClass("show-label");
+    })
+    $("#Marital-status").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Marital-status--label").addClass("show-label");
+    })
     // Страница Франчайзинг
 });
 

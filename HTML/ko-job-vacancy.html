@@ -44,9 +44,15 @@
                 </div>
             </section>
 
+            <div class="comeback">
+                <a href="ko-job.html">
+                    <img src="img/system/icon/arrow.svg" alt="icon">
+                    <p>Всі вакансії</p>
+                </a>
+            </div>
+
             <section class="main__container">
                 <article class="main-content">
-                    <!-- <h2 class="main-page__title">Опис вакансії</h2> -->
                     <div class="vacancy-info">
                         <h3 class="vacancy-info__title">Приймальник в м. Бориспіль</h3>
                         <div class="vacancy-info__date"><img src="img/system/icon/calendar-icon.svg" alt=""><time>26.07.2020</time></div>
@@ -76,77 +82,92 @@
                 </article>
             </section>
 
-
             <section class="main__container--full-width">
                 <article class="main__container">
-                    <form class="job-form">
+                    <form class="job-form" autocomplete="none">
                         <h2 class="job-form__title">Анкета кандидата </h2>
                         <p class="job-form__description">Заповніть анкету кандидата і з Вами зв’яжуться, коли з’явиться актуальна вакансія </p>
+
+                        <input style="display:none">
+                        <input type="password" style="display:none">
+
                         <div class="job-form__line">
-                            <div class="job-form__item">
-                                <input class="job-form__input" data-val="true" data-val-required="Потрібно поле Посада." id="Position" name="Position" type="text" value="" placeholder="Посада *">
+                            <div class="job-form__item label-rotate">
+                                <input class="job-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Посада." id="Position" name="Position" type="text" value="" placeholder="Посада *">
+                                <label for="Position" class="label-rotate__label">Посада *</label>
                             </div>
 
-                            <div class="job-form__item">
-                                <input class="job-form__input" data-val="true" data-val-required="Потрібно поле Місто." id="City" name="City" type="text" value="" placeholder="Місто *">
-                            </div>
-                        </div>
-                            <!-- next line -->
-                        <div class="job-form__line">
-                            <div class="job-form__item job-form__item--small">
-                                <input class="job-form__input job-form__input--small" data-val="true" data-val-required="Потрібно поле Прізвище." name="LastName" type="text" value="" placeholder="Прізвище  *">
-                            </div>
-
-                            <div class="job-form__item job-form__item--small">
-                                <input class="job-form__input job-form__input--small" data-val="true" data-val-required="Потрібно поле Iм'я." name="FirstName" type="text" value="" placeholder="Ім’я  *">
-                            </div>
-
-                            <div class="job-form__item job-form__item--small">
-                                <input class="job-form__input job-form__input--small" data-val="true" data-val-required="Потрібно поле По-батькові." name="MiddleName" type="text" value="" placeholder="По батькові  *">
+                            <div class="job-form__item label-rotate">
+                                <input class="job-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Місто." id="City" name="City" type="text" value="" placeholder="Місто *" autocomplete="none">
+                                <label for="City" class="label-rotate__label">Місто *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="job-form__line">
-                            <div class="job-form__item">
-                                <select class="counter-form__select valid" data-val="true" data-val-required="Потрібно поле Стать."  name="Gender">
-                                    <option value="0" selected style="display: none;">Стать *</option>
+                            <div class="job-form__item job-form__item--small label-rotate">
+                                <input class="job-form__input job-form__input--small label-rotate__input" data-val="true" data-val-required="Потрібно поле Прізвище." id="LastName" name="LastName" type="text" value="" placeholder="Прізвище  *">
+                                <label for="LastName" class="label-rotate__label">Прізвище  *</label>
+                            </div>
+
+                            <div class="job-form__item job-form__item--small label-rotate">
+                                <input class="job-form__input job-form__input--small label-rotate__input" data-val="true" data-val-required="Потрібно поле Iм'я." id="FirstName" name="FirstName" type="text" value="" placeholder="Ім’я  *" autocomplete="none">
+                                <label for="FirstName" class="label-rotate__label">Ім’я  *</label>
+                            </div>
+
+                            <div class="job-form__item job-form__item--small label-rotate">
+                                <input class="job-form__input job-form__input--small label-rotate__input" data-val="true" data-val-required="Потрібно поле По-батькові." name="MiddleName" id="MiddleName" type="text" value="" placeholder="По батькові  *">
+                                <label for="MiddleName" class="label-rotate__label">По батькові  *</label>
+                            </div>
+                        </div>
+                        <!-- next line -->
+                        <div class="job-form__line">
+                            <div class="job-form__item label-rotate">
+                                <select class="counter-form__select" data-val="true" data-val-required="Потрібно поле Стать." id="Gender" name="Gender">
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="Чоловік">Чоловік</option>
                                     <option value="Жінка">Жінка</option>
                                 </select>
+                                <label for="Gender" id="Gender--label" class="label-rotate__select">Стать *</label>
                             </div>
-                            <div class="job-form__item">
-                                <select class="counter-form__select valid" data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги.">
-                                    <option value="0" selected style="display: none;">Сімейний стан *</option>
+                            <div class="job-form__item label-rotate">
+                                <select class="counter-form__select" data-val="true" data-val-required="Потрібно поле Пропоновані товари та послуги." id="Marital-status">
+                                    <option value="0" selected style="display: none;"></option>
                                     <option value="У шлюбі">У шлюбі</option>
                                     <option value="Неодружений/Незаміжня">Неодружений/Незаміжня</option>
                                 </select>
+                                <label for="Marital-status" id="Marital-status--label" class="label-rotate__select">Сімейний стан *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="job-form__line">
-                            <div class="job-form__item">
-                                <input class="job-form__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" value="" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel" placeholder="Телефон *">
+                            <div class="job-form__item label-rotate">
+                                <input class="job-form__input label-rotate__input" data-val="true" data-val-required="Потрібно поле Телефон." id="Phone" name="Phone" value="" data-val-regex-pattern="^([0-9]{10})$" minlength="10" maxlength="10" type="tel" placeholder="Телефон *">
+                                <label for="Phone" class="label-rotate__label">Телефон *</label>
                             </div>
-                            <div class="job-form__item">
-                                <input class="job-form__input" data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." id="Email" name="Email" type="email" value="" placeholder="Електронна пошта *">
-                            </div>
-                        </div>
-                        <!-- next line -->
-                        <div class="job-form__line">
-                            <div class="job-form__item job-form__item--large">
-                                <textarea class="job-form__textarea" placeholder="Освіта" name="Education" value=""></textarea>
+                            <div class="job-form__item label-rotate">
+                                <input class="job-form__input label-rotate__input" data-val="true" data-val-email="Не вiрный E-mail" data-val-required="Потрібно поле Електронна пошта." id="Email" name="Email" type="email" value="" placeholder="Електронна пошта *">
+                                <label for="Email" class="label-rotate__label">Електронна пошта *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="job-form__line">
-                            <div class="job-form__item job-form__item--large">
-                                <textarea class="job-form__textarea" placeholder="Професійний досвід" name="ProfessionalBackground"></textarea>
+                            <div class="job-form__item job-form__item--large label-rotate">
+                                <textarea class="job-form__textarea label-rotate__input" placeholder="Освіта" id="Education" name="Education" value=""></textarea>
+                                <label for="Education" class="label-rotate__label">Освіта</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="job-form__line">
-                            <div class="job-form__item job-form__item--large">
-                                <textarea class="job-form__textarea job-form__textarea--large" placeholder="Примітки" name="Notes"></textarea>
+                            <div class="job-form__item job-form__item--large label-rotate">
+                                <textarea class="job-form__textarea label-rotate__input" placeholder="Професійний досвід" id="ProfessionalBackground" name="ProfessionalBackground"></textarea>
+                                <label for="ProfessionalBackground" class="label-rotate__label">Професійний досвід</label>
+                            </div>
+                        </div>
+                        <!-- next line -->
+                        <div class="job-form__line">
+                            <div class="job-form__item job-form__item--large label-rotate">
+                                <textarea class="job-form__textarea job-form__textarea--large label-rotate__input" placeholder="Примітки" name="Notes" id="Notes"></textarea>
+                                <label for="Notes" class="label-rotate__label">Примітки</label>
                             </div>
                         </div>
 
@@ -166,29 +187,22 @@
                                     <label for="fileupload"><img src="img/system/icon/btn-add-file.svg" alt="">Додати файл</label>
                                     <input id="fileupload" type="file" name="files[]" accept=".pdf, .odf, .rtf, .doc, .docx" multiple="">
                                 </div>
-                                
-                                
+
                                 <div class="add-file__result">
                                     <p class="add-file__title">Файли:</p>
-
                                     <!-- one item -->
                                     <div class="add-file__result-item">
                                         <p class="add-file__name">Резюме кандидата.docx <span>(0.8 мб)</span></p>
-
                                         <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
                                     </div>
-
                                     <!-- one item -->
                                     <div class="add-file__result-item">
                                         <p class="add-file__name">Резюме кандидата.docx <span>(0.8 мб)</span></p>
-
                                         <a href="#" class="add-file__delete"><img src="img/system/icon/add-file__delete.svg" alt="delete file"></a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-
 
                         <button class="main-btn job-form__btn popup-order-job_open">Надіслати</button>
                     </form>

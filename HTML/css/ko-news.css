@@ -38,6 +38,10 @@
     margin-left: 11px;
     border: none;
 }
+.news-filter__btn img {
+    width: 24px;
+    height: 24px;
+}
 
 .news-filter__btn:hover {
     border: 1px solid #ffd500;
@@ -51,16 +55,14 @@
 .news-list__year {
     font-weight: 600;
     font-size: 24px;
-    line-height: 32px;
     color: #808080;
 }
 
 .news-list__mounth {
     font-weight: 600;
     font-size: 24px;
-    line-height: 32px;
     color: #333333;
-    margin: 17px 0;
+    margin: 20px 0;
 }
 
 .news-list__item {
@@ -164,3 +166,52 @@
 .pagination__link:focus svg path, .pagination__link:active svg path {
     fill: #fff;
 } */
+
+
+
+@media (max-width: 1024px) {
+    .news {
+        margin-top: 10px;
+    }
+    .news-list {
+        margin-top: 20px;
+    }
+    .news-filter__select {
+        max-width: 140px;
+        min-width: 100px;
+        width: 100%;
+        padding: 0 19px 0 6px;
+        background-size: 13px 7px;
+    }
+    .news-filter__select:first-child {
+        margin-right: 8px;
+    }
+    .news-filter__btn {
+        max-width: 62px;
+        width: 100%;
+    }
+    .news-list__year {
+        font-size: 18px;
+    }
+    .news-list__mounth {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .news-list__item {
+        flex-direction: column;
+        align-items: baseline;
+        padding: 10px 0;
+        border-bottom: 1px solid #ffd500;
+    }
+    .news-list__item a {
+        font-size: 15px;
+        line-height: 21px;
+    }
+    .news-list__date {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+    .pagination {
+        margin-top: 20px;
+    }
+}

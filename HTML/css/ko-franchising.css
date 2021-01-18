@@ -170,7 +170,7 @@
 .franchising-form__line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .franchising-form__input--large, .franchising-form__item--large {
@@ -309,10 +309,10 @@
 .captcha-form__input {
     width: 420px;
 }
+
 .captcha-form__input::placeholder {
     color: #999999;
 }
-
 
 @media (max-width: 1024px) {
     .franchising-info__title {
