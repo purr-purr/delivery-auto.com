@@ -227,7 +227,16 @@ $(document).ready(function(){
         var valOpt=$(this).find('option:selected').val();
             if(valOpt)$(this).next("#Marital-status--label").addClass("show-label");
     })
-    // Страница Франчайзинг
+    // Страница FAQ
+    $("#Question1").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Question1--label").addClass("show-label");
+    })
+    // Страница Послуги
+    $("#Service").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#Service--label").addClass("show-label");
+    })
 });
 
 

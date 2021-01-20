@@ -20,7 +20,6 @@
 /* Аккардион */
 .services {
 	max-width: 730px;
-    min-width: 630px;
 }
 
 .services details[open] summary ~ * {
@@ -76,17 +75,28 @@
     transition: transform 0.5s linear;
 }
 
-.services details[open] .services__title-img  {
-    width: 0;
-    transition: all 2s linear;
+.services details[open] .services__title-img-wrap {
+    max-width: 0;
 }
 
 /* Title */
+.services__title-img-wrap {
+    margin-left: 20px;
+    max-width: 62px;
+    width: 100%;
+    height: 62px;
+}
+
 .services__title-img {
-    padding-left: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .services__title {
+    display: flex;
+    align-items: center;
+    height: 100%;
     padding-left: 25px;
     font-weight: 600;
     font-size: 24px;
@@ -104,9 +114,10 @@
 }
 
 .services__img {
+    margin-right: 35px;
+    margin-bottom: 10px;
     width: 62px;
     height: 62px;
-    margin-right: 35px;
 }
 
 .services__list li {
@@ -220,13 +231,13 @@
 }
 
 .services-form__description {
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .services-form__line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .services-form__input--small, .services-form__item--small {
@@ -251,4 +262,105 @@
 
 .services-form__btn {
     margin-top: 35px;
+}
+
+@media (max-width: 1024px) {
+    .services {
+        max-width: 100%;
+    }
+    .services__info {
+        width: 100%;
+    }
+    .client-group {
+        margin-bottom: 40px;
+        display: block;
+        overflow-x: scroll;
+    }
+    .client-group::-webkit-scrollbar { width: 3px; height: 3px;}
+    .client-group::-webkit-scrollbar-button { height: 0;}
+    .client-group::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
+    .client-group::-webkit-scrollbar-track-piece { background-color: #DADADA;}
+    
+    .client-group thead th:first-child {
+        padding-left: 10px;
+        min-width: 220px;
+    }
+    .client-group td {
+        padding: 10px;
+    }
+    .client-group__yes:after, .client-group__no:after {
+        background-size: 30px 30px;
+    }
+    .services__main-title {
+        margin: 20px 0 10px 0;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+    }
+    .mobile-page__title {
+        font-weight: bold;
+    }
+    .services summary, .services__link {
+        min-height: 50px;
+        height: auto;
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .services__title {
+        padding: 0 56px 0 25px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .services__title-img-wrap {
+        margin-left: 5px;
+        max-width: 40px;
+        height: 40px;
+    }
+    .services__img {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .services summary:after, .services__link:after {
+        width: 30px;
+        height: 30px;
+        background-size: 10px;
+    }
+    .services details[open] summary:after {
+        background-size: 10px;
+    }
+    .services details[open] .services__title {
+        padding-left: 10px;
+    }
+    .services-form__title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .services-form {
+        width: 100%;
+    }
+    .services-form__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .services-form__item {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .services-form__input--small, .services-form__item--small {
+        max-width: 387px;
+        width: 100%;
+    }
+    .services-form__btn {
+        margin-top: 20px;
+    }
 }
