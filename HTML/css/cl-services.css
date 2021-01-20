@@ -153,7 +153,6 @@
     display: flex;
 }
 
-
 /* Таблица */
 .client-group {
     border-collapse: collapse;
@@ -302,8 +301,7 @@
         font-weight: bold;
     }
     .services summary, .services__link {
-        min-height: 50px;
-        height: auto;
+        height: 50px;
         margin-bottom: 10px;
         font-weight: normal;
         font-size: 15px;
@@ -330,6 +328,7 @@
         width: 30px;
         height: 30px;
         background-size: 10px;
+        top: calc(50% - 30px / 2);
     }
     .services details[open] summary:after {
         background-size: 10px;
@@ -363,5 +362,11 @@
     }
     .services-form__btn {
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 340px) {
+    .services__title {
+        padding: 0 56px 0 10px;
     }
 }
