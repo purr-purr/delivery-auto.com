@@ -59,7 +59,8 @@
 
 .services summary:after, .services__link:after {
 	content: " ";
-	position: absolute;
+    position: absolute;
+    top: calc(50% - 35px / 2);
 	right: 20px;
 	width: 35px;
 	height: 35px;
@@ -280,7 +281,7 @@
     .client-group::-webkit-scrollbar-button { height: 0;}
     .client-group::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
     .client-group::-webkit-scrollbar-track-piece { background-color: #DADADA;}
-    
+
     .client-group thead th:first-child {
         padding-left: 10px;
         min-width: 220px;
