@@ -284,9 +284,9 @@
         overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
     }
-    .client-group::-webkit-scrollbar { width: 3px; height: 3px; background-color: #ffd500;}
+    .client-group::-webkit-scrollbar { width: 3px; height: 3px;}
     .client-group::-webkit-scrollbar-button { height: 0;}
-    .client-group::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; color: #ffd500; border-radius: 50px;}
+    .client-group::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
     .client-group::-webkit-scrollbar-track-piece { background-color: #DADADA;}
 
     .client-group thead th:first-child {

@@ -34,7 +34,7 @@
     content: " ";
     position: absolute;
     top: 24%;
-    right: -65px;
+    right: -31%;
     width: 50px;
     height: 47px;
 }
@@ -51,11 +51,24 @@
     background: url("../img/system/delivery-group__logos/inter--arrow.png") no-repeat center center;
 }
 
-.tutorial__item img {
-    margin: 0 21px;
+
+.tutorial__icon {
+    margin: 0 auto;
+    max-width: 150px;
+    width: 100%;
 }
 
-.tutorial__item p {
+.tutorial__icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.tutorial__step {
+    display: none;
+}
+
+.tutorial__info {
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -204,4 +217,128 @@
     background: url("../img/system/icon/yellow-arrow.svg") no-repeat center;
     background-size: 16px 19px;
     transform: rotate(-90deg);
+}
+
+.readyTime__baggage {
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+.readyTime__baggage p {
+    color: #999;
+}
+
+@media (max-width: 1140px) {
+    .tutorial__item::after {
+        right: -25%;
+    }
+    
+}
+
+@media (max-width: 1024px) {
+    .hot-order {
+        margin: 20px 0;
+    }
+    .hot-flights__title {
+        display: none;
+    }
+    .hot-flights__desc {
+        margin-bottom: 15px;
+    }
+    .tutorial__info {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 10px;
+        font-weight: normal;
+    }
+    .tutorial__step {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .tutorial__item::after {
+        display: none;
+    }
+    .hot-flights__table tr:first-child th {
+        font-size: 18px;
+    }
+    .hot-flights__table th {
+        font-size: 13px;
+    }
+    .hot-flights__table tr td:first-child {
+        min-width: 40%;
+        min-height: 40px;
+        height: auto;
+        padding: 7px;
+    }
+    .hot-flights__table tr td {
+        width: 10%;
+    }
+    .hot-order__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .hot-order__sub-title {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .hot-order__item--col label {
+        margin-bottom: 25px;
+        font-size: 15px;
+    }
+    .hot-order__btn {
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .hot-order__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .hot-order__item {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    #route-arrow::after {
+        display: none;
+    }
+    #from_ro--label, #to_ro--label {
+        margin-bottom: 10px;
+    }
+    .readyTime__baggage {
+        margin-left: 0px;
+        margin-top: -15px;
+    }
+    .readyTime__baggage p {
+        color: #333;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .hot-order {
+        max-width: 100%;
+    }
+    select {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 470px) {
+    .hot-flights__table tr td:first-child {
+        padding: 10px 3px;
+    }
+    .tutorial__icon {
+        margin: 0 auto;
+        max-width: 120px;
+        width: 100%;
+    }
 }

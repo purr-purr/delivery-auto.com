@@ -88,5 +88,29 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1
     });
+    $('.hot-flights__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
+        slidesToScroll: 1,
+        mobileFirst: true, 
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: "unslick"
+            }
+        ]
+    });
 });
 

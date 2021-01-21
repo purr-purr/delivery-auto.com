@@ -13,6 +13,9 @@
         <!-- Fonts -->
         <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Slick Slider -->
+        <link href="css/components/slick.css" rel="stylesheet" type="text/css">
+        <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
@@ -47,30 +50,44 @@
             <section class="main__container">
                 <article class="main-content">
                     <h2 class="hot-flights__title">Детальніше про спецпропозицію</h2>
+                    <!-- .mobile-page__title Только для адаптива -->
+                    <h1 class="mobile-page__title">Гарячі рейси</h1>
 
                     <p class="hot-flights__desc">Спецпропозиція від «Делівері» на перевезення вантажів!
                         Тільки сьогодні тарифи ЗНИЖЕНО на окремі рейси!</p>
                     <p class="hot-flights__desc" style="color: #FF2727;">Пропозиція обмежена кількома годинами. Діє при наявності вільного місця в авто.</p>
-
-                    <ul class="tutorial">
+                    
+                    <ul class="tutorial hot-flights__slider">
                         <li class="tutorial__item">
-                            <img src="img/system/icon/hot-flights/hot-flights-1.png" alt="">
-                            <p>Заповніть <br> заявку</p>
+                            <div class="tutorial__icon">
+                                <img src="img/system/icon/hot-flights/hot-flights-1.png" alt="">
+                            </div>
+                            <p class="tutorial__step">Крок 1</p>
+                            <p class="tutorial__info">Заповніть <br> заявку</p>
                         </li>
 
                         <li class="tutorial__item">
-                            <img src="img/system/icon/hot-flights/hot-flights-2.png" alt="">
-                            <p>Отримайте <br> купон на знижку</p>
+                            <div class="tutorial__icon">
+                                <img src="img/system/icon/hot-flights/hot-flights-2.png" alt="">
+                            </div>
+                            <p class="tutorial__step">Крок 2</p>
+                            <p class="tutorial__info">Отримайте <br> купон на знижку</p>
                         </li>
 
                         <li class="tutorial__item">
-                            <img src="img/system/icon/hot-flights/hot-flights-3.png" alt="">
-                            <p>Привезіть <br> вантаж </p>
+                            <div class="tutorial__icon">
+                                <img src="img/system/icon/hot-flights/hot-flights-3.png" alt="">
+                            </div>
+                            <p class="tutorial__step">Крок 3</p>
+                            <p class="tutorial__info">Привезіть <br> вантаж </p>
                         </li>
 
                         <li class="tutorial__item">
-                            <img src="img/system/icon/hot-flights/hot-flights-4.png" alt="">
-                            <p>Економте <br> до 50% вартості</p>
+                            <div class="tutorial__icon">
+                                <img src="img/system/icon/hot-flights/hot-flights-4.png" alt="">
+                            </div>
+                            <p class="tutorial__step">Крок 4</p>
+                            <p class="tutorial__info">Економте <br> до 50% вартості</p>
                         </li>
                     </ul>
 
@@ -123,19 +140,22 @@
                         <h3 class="hot-order__sub-title">Контактні дані</h3>
 
                         <div class="hot-order__line">
-                            <div class="hot-order__item">
-                                <input data-val="true" data-val-required="Введiть ПIБ" id="contactName" name="contactName" type="text" value="" placeholder="Ваше ім’я  *">
+                            <div class="hot-order__item label-rotate">
+                                <input class="label-rotate__input" data-val="true" data-val-required="Введiть ПIБ" id="contactName" name="contactName" type="text" value="" placeholder="Ваше ім’я  *">
+                                <label for="contactName" class="label-rotate__label">Ваше ім’я  *</label>
                             </div>
 
-                            <div class="hot-order__item">
-                                <input type="tel" data-val="true" data-val-regex="Телефон має мiстити 10 цифр" data-val-regex-pattern="^([0-9]{10})$" data-val-required="Введiть телефон" id="contactPhone" name="contactPhone" value="" minlength="10" maxlength="10" placeholder="Номер телефону *">
+                            <div class="hot-order__item label-rotate">
+                                <input class="label-rotate__input" type="tel" data-val="true" data-val-regex="Телефон має мiстити 10 цифр" data-val-regex-pattern="^([0-9]{10})$" data-val-required="Введiть телефон" id="contactPhone" name="contactPhone" value="" minlength="10" maxlength="10" placeholder="Номер телефону *">
+                                <label for="contactPhone" class="label-rotate__label">Номер телефону *</label>
                             </div>
                         </div>
                         <!-- next line -->
                         
                         <div class="hot-order__line">
-                            <div class="hot-order__item">
-                                <input placeholder="E-mail *" data-val="true" data-val-regex="Введіть коректну адресу Email" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" data-val-required="Введіть E-mail" id="contactEmail" name="contactEmail" type="email" value="">
+                            <div class="hot-order__item label-rotate">
+                                <input class="label-rotate__input" placeholder="E-mail *" data-val="true" data-val-regex="Введіть коректну адресу Email" data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" data-val-required="Введіть E-mail" id="contactEmail" name="contactEmail" type="email" value="">
+                                <label for="contactEmail" class="label-rotate__label">E-mail *</label>
                             </div>
                         </div>
                         <!-- next line -->
@@ -143,8 +163,8 @@
                         <h3 class="hot-order__sub-title">Маршрут</h3>
 
                         <div class="hot-order__line">
-                            <div class="hot-order__item hot-order__item--col" id="route-arrow">
-                                <label for="from_ro">Звідки</label>
+                            <div class="hot-order__item hot-order__item--col label-rotate" id="route-arrow">
+                                <label for="from_ro" id="from_ro--label">Звідки</label>
                                 <select id="from_ro">
                                     <option value="Умань">Умань</option>
                                     <option value="Гайсин">Гайсин</option>
@@ -152,7 +172,7 @@
                             </div>
 
                             <div class="hot-order__item hot-order__item--col">
-                                <label for="to_ro">Куди</label>
+                                <label for="to_ro" id="to_ro--label">Куди</label>
                                 <select id="to_ro">
                                     <option value="Гайсин">Гайсин</option>
                                     <option value="Ладижин">Ладижин</option>
@@ -166,22 +186,24 @@
                         <h3 class="hot-order__sub-title">Вантаж</h3>
 
                         <div class="hot-order__line">
-                            <div class="hot-order__item">
-                                <input data-val="true" data-val-range="Значення повинно бути вiд 2 м3" data-val-range-max="20000" data-val-range-min="0" data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[\d]+[,|.][\d]+$|^[\d]+$" id="assembly" name="assembly" type="text" value="" placeholder="Збірний, м&sup3;">
+                            <div class="hot-order__item label-rotate">
+                                <input class="label-rotate__input" data-val="true" data-val-range="Значення повинно бути вiд 2 м3" data-val-range-max="20000" data-val-range-min="0" data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[\d]+[,|.][\d]+$|^[\d]+$" id="assembly" name="assembly" type="text" value="" placeholder="Збірний, м&sup3;">
+                                <label for="assembly" class="label-rotate__label">Збірний, м&sup3;</label>
                             </div>
 
-                            <div class="hot-order__item">
-                                <input data-val="true" data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[1-9]\d*$" id="pallet" name="pallet" type="number" value="" placeholder="Палети, шт">
+                            <div class="hot-order__item label-rotate">
+                                <input class="label-rotate__input" data-val="true" data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[1-9]\d*$" id="pallet" name="pallet" type="number" value="" placeholder="Палети, шт">
+                                <label for="pallet" class="label-rotate__label">Палети, шт</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="hot-order__line">
-                            <div class="hot-order__item">
-                                <input data-val="true" data-val-regex="Формат поля 23:59" data-val-regex-pattern="^(([0,1][0-9])|(2[0-3])):[0-5][0-9]$" data-val-required="Введiть час" id="readyTime" name="readyTime" type="text" value="" placeholder="Час готовності здати вантаж на складi">
+                            <div class="hot-order__item label-rotate">
+                                <input class="label-rotate__input" data-val="true" data-val-regex="Формат поля 23:59" data-val-regex-pattern="^(([0,1][0-9])|(2[0-3])):[0-5][0-9]$" data-val-required="Введiть час" id="readyTime" name="readyTime" type="text" value="" placeholder="Час готовності здати вантаж на складi">
+                                <label for="readyTime" class="label-rotate__label">Час готовності здати вантаж на складi</label>
                             </div>
-                            <div class="hot-order__item" style="margin-right: auto;
-                            margin-left: 30px;">
-                                <p style="color: #999;">( наприклад: 12:30 )</p>
+                            <div class="hot-order__item readyTime__baggage">
+                                <p>( наприклад: 12:30 )</p>
                             </div>
                         </div>
                         <p class="required-alert"><span>*</span> - обов’язкові поля для вводу</p>
