@@ -90,7 +90,7 @@ $(document).ready(function(){
     });
     $('.hot-flights__slider').slick({
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         slidesToScroll: 1,
         mobileFirst: true, 
         responsive: [
