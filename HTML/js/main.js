@@ -240,7 +240,6 @@ $(document).ready(function(){
 });
 
 
-
 // Плавная прокрутка к якорю
 var $page = $('html, body');
 $('a[href*="#"]').click(function() {

@@ -49,32 +49,38 @@
                     <form class="loyalty-form" action="/uk-ua/LoyaltyProgram/RegistrationInProgram" data-ajax="true" data-ajax-begin="ajaxLoaderStart();" data-ajax-complete="ajaxLoaderEnd();" data-ajax-failure="FailRegistation" data-ajax-method="POST" data-ajax-success="SuccessRegistrition" id="form0" method="post" novalidate="novalidate">
                         <h2 class="loyalty-form__title">Форма реєстрації в програмі лояльності</h2>
                         <div class="loyalty-form__line">
-                            <div class="loyalty-form__item">
-                                <input id="companyName" name="companyName" placeholder="Назва організації" type="text" value="">
+                            <div class="loyalty-form__item label-rotate">
+                                <input class="loyalty-form__input label-rotate__input" id="companyName" name="companyName" placeholder="Назва організації" type="text" value="">
+                                <label for="companyName" class="label-rotate__label">Назва організації</label>
                             </div>
 
-                            <div class="loyalty-form__item">
-                                <input id="fullNameShowcase" name="fullName" placeholder="П.І.Б." type="text" value="">
+                            <div class="loyalty-form__item label-rotate">
+                                <input class="loyalty-form__input label-rotate__input" id="fullNameShowcase" name="fullName" placeholder="П.І.Б." type="text" value="" autocomplete="is-off">
+                                <label for="fullNameShowcase" class="label-rotate__label">П.І.Б.</label>
                             </div>
                         </div>
                             <!-- next line -->
                         <div class="loyalty-form__line">
-                            <div class="loyalty-form__item">
-                                <input data-val="true" data-val-required="The cityName field is required." id="cityName" name="cityName" placeholder="Місто" type="text" value="">
+                            <div class="loyalty-form__item label-rotate">
+                                <input class="loyalty-form__input label-rotate__input" data-val="true" data-val-required="The cityName field is required." id="cityName" name="cityName" placeholder="Місто" type="text" value="" autocomplete="is-off">
+                                <label for="cityName" class="label-rotate__label">Місто</label>
                             </div>
 
-                            <div class="loyalty-form__item">
-                                <input data-val="true" data-val-required="The contactPhone field is required." data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" id="contactPhoneShowcase" name="contactPhone" placeholder="Телефон" type="tel" value="">
+                            <div class="loyalty-form__item label-rotate">
+                                <input class="loyalty-form__input label-rotate__input" data-val="true" data-val-required="The contactPhone field is required." data-val-regex-pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" id="contactPhoneShowcase" name="contactPhone" placeholder="Телефон" type="tel" value="">
+                                <label for="contactPhoneShowcase" class="label-rotate__label">Телефон</label>
                             </div>
                         </div>
                         <!-- next line -->
                         <div class="loyalty-form__line">
-                            <div class="loyalty-form__item">
-                                <input data-val="true" data-val-required="The email field is required." id="emailShowcase" name="email" placeholder="Елекронна пошта  " type="email" value="">
+                            <div class="loyalty-form__item label-rotate">
+                                <input class="loyalty-form__input label-rotate__input" data-val="true" data-val-required="The email field is required." id="emailShowcase" name="email" placeholder="Елекронна пошта" type="email" value="">
+                                <label for="emailShowcase" class="label-rotate__label">Елекронна пошта</label>
                             </div>
 
-                            <div class="loyalty-form__item">
-                                <input data-val="true" data-val-required="Вкажіть сферу діяльності" id="sphereOfActivity" name="sphereOfActivity" placeholder="Галузь в якій працюєте" type="text" value="">
+                            <div class="loyalty-form__item label-rotate">
+                                <input class="loyalty-form__input label-rotate__input" data-val="true" data-val-required="Вкажіть сферу діяльності" id="sphereOfActivity" name="sphereOfActivity" placeholder="Галузь в якій працюєте" type="text" value="">
+                                <label for="sphereOfActivity" class="label-rotate__label">Галузь в якій працюєте</label>
                             </div>
                         </div>
                         <!-- next line -->
@@ -94,7 +100,7 @@
                                     <label for="typeOfProduction--more-30">Вантажі більше 30 кг</label>
                                 </div>
 
-                                <div style="margin-left: 50px;">
+                                <div class="loyalty-form__last-radio">
                                     <input id="typeOfProduction--pallets" name="typeOfProduction" type="radio" value="3">
                                     <label for="typeOfProduction--pallets">Палети</label>
                                 </div>

@@ -103,6 +103,10 @@
     line-height: 20px;
 }
 
+.acc-media__item--second a {
+    margin-right: 20px;
+}
+
 .acc-media__item a:hover, .acc-media__item--second a:hover {
     text-decoration-line: underline;
     color: #3072C4;
@@ -121,7 +125,6 @@
 
 .acc-media__item--second span {
     color: #808080;
-    margin-left: 22px;
     text-decoration-line: none;
 }
 
@@ -202,11 +205,11 @@
         font-weight: 600;
         letter-spacing: 1px;
     }
-    .acc-media__item--second span {
-        margin-left: 15px;
-    }
     .acc-media__item a, .acc-media__item--second a {
         font-size: 15px;
+    }
+    .acc-media__item--second a {
+        margin-right: 10px;
     }
     .acc-media__item--second {
         padding: 10px 0;

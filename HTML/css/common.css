@@ -94,7 +94,7 @@ input {
     padding: 0 20px;
 	border: 1px solid #DADADA;
 	background-color: transparent;
-    color: #333333;
+    color: #333;
     font-size: 16px;
     line-height: 20px;
 }
@@ -112,7 +112,7 @@ input:invalid {
 }
 
 input::placeholder {
-    color: #333333;
+    color: #333;
 }
 
 input::-webkit-outer-spin-button,
@@ -136,7 +136,7 @@ select {
     width: 387px;
     height: 40px;
 	padding: 0 37px 0 20px;
-	color: #333333;
+	color: #333;
     font-size: 16px;
     line-height: 20px;
     border: 1px solid #DADADA;
@@ -151,13 +151,13 @@ textarea {
 	padding: 7px 20px;
 	background-color: transparent;
 	border: 1px solid #DADADA;
-	color: #333333;
+	color: #333;
     font-size: 16px;
     line-height: 20px;
 }
 
 textarea::placeholder {
-	color: #333333;
+	color: #333;
 }
 
 input:focus, input:active,
@@ -313,7 +313,7 @@ details > summary {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 36px;
-	color: #333333;
+	color: #333;
 	padding-top: 15px;
 }
 
@@ -321,7 +321,7 @@ details > summary {
 	max-width: 640px;
 	font-weight: bold;
 	font-size: 32px;
-	color: #333333;
+	color: #333;
 }
 
 .main-page__description {
@@ -421,14 +421,14 @@ details > summary {
 
 /* Белая Кнопка */
 .main-btn--white {
-    color: #333333;
+    color: #333;
     border: 1px solid #808080;
     background-color: #fff;
 }
 
 .main-btn--white:hover {
     background-color: #F0F5F9;
-    color: #333333;
+    color: #333;
 }
 
 .main-btn--white img {
@@ -485,7 +485,7 @@ details > summary {
 	left: 0;
 	font-size: 12px;
 	line-height: 17px;
-	color: #999999;
+	color: #999;
 	transition: all .2s ease-in;
 }
 
@@ -503,41 +503,29 @@ details > summary {
 	z-index: 5;
 	font-size: 12px;
 	line-height: 17px;
-	color: #999999;
+	color: #999;
 	transition: all .2s ease-in-out;
 }
 
 @media (max-width: 1024px) {
 	.label-rotate__input:placeholder-shown ~ .label-rotate__label {
 		font-size: 15px;
-	}
-	.label-rotate__label {
-		font-size: 12px;
-	}
-	.label-rotate__input:focus ~ .label-rotate__label,
-	.label-rotate__input:active ~ .label-rotate__label {
-		font-size: 12px;
-	}
-	.show-label {
-		font-size: 12px;
-	}
-}
-
-@media (max-width: 414px) {
-	.label-rotate__input:placeholder-shown ~ .label-rotate__label {
 		left: 10px;
 	}
 	.label-rotate__label {
+		font-size: 12px;
 		left: 0;
 	}
 	.label-rotate__input:focus ~ .label-rotate__label,
 	.label-rotate__input:active ~ .label-rotate__label {
+		font-size: 12px;
 		left: 0;
 	}
 	.label-rotate__select {
 		left: 10px;
 	}
 	.show-label {
+		font-size: 12px;
 		left: 0;
 	}
 }
@@ -863,7 +851,7 @@ details > summary {
 	line-height: 30px;
 	width: 30px;
 	height: 30px;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #FFF;
 	border-radius: 50px;
 	cursor: pointer;
 }
@@ -958,7 +946,7 @@ details > summary {
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 21px;
-	color: #999999;
+	color: #999;
 	margin-left: 26px;
 	margin: 5px 26px 0 26px;
 }
@@ -1092,7 +1080,7 @@ details > summary {
 	display: block;
 	font-size: 20px;
 	line-height: 24px;
-	color: #FFFFFF;
+	color: #FFF;
 }
 
 .footer__support a:hover {
@@ -1112,7 +1100,7 @@ details > summary {
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 36px;
-	color: #FFFFFF;
+	color: #FFF;
 	margin-bottom: 25px;
 }
 
@@ -1174,7 +1162,7 @@ details > summary {
 	font-weight: normal;
 	font-size: 20px;
 	line-height: 24px;
-	color: #FFFFFF;
+	color: #FFF;
 	margin-bottom: 20px;
 }
 
@@ -1182,7 +1170,7 @@ details > summary {
 	max-width: 415px;
 	font-size: 16px;
 	line-height: 20px;
-	color: #FFFFFF;
+	color: #FFF;
 	margin-bottom: 20px;
 }
 
@@ -1240,7 +1228,7 @@ details > summary {
 	min-width: 168px;
 	font-size: 20px;
 	line-height: 24px;
-	color: #FFFFFF;
+	color: #FFF;
 	margin-bottom: 13px;
 }
 
@@ -1338,7 +1326,7 @@ details > summary {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	line-height: 16px;
-	color: #333333;
+	color: #333;
 	margin-bottom: 2px;
 }
 
@@ -1386,7 +1374,7 @@ details > summary {
 }
 
 .mob-support__title {
-	color: #FFFFFF;
+	color: #FFF;
 	width: 120px;
 	margin-bottom: 8px;
 }
@@ -2275,7 +2263,7 @@ details > summary {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 20px;
-	color: #333333;
+	color: #333;
 }
 
 .feedback__input, .feedback__select {
@@ -2284,7 +2272,7 @@ details > summary {
 	margin-top: 5px;
 	margin-bottom: 10px;
 	padding-left: 7px;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -2317,12 +2305,12 @@ details > summary {
 .feedback__btn {
 	width: 138px;
 	height: 48px;
-	background-color: #333333;
+	background-color: #333;
 	border-radius: 5px;
 	font-size: 16px;
 	line-height: 20px;
 	text-align: center;
-	color: #FFFFFF;
+	color: #FFF;
 	margin-top: 22px;
 	border: none;
 	cursor: pointer;
@@ -2405,11 +2393,11 @@ details > summary {
 }
 
 .questions__input:checked + .questions__label {
-	background-color: #FFFFFF;
+	background-color: #FFF;
 	border: 2px solid #FFD54B;
 	border-right: none;
 	border-radius: 3px;
-	color: #333333;
+	color: #333;
 	position: relative;
 }
 
@@ -2563,7 +2551,7 @@ details > summary {
     padding: 0 8px;
     font-size: 14px;
     line-height: 20px;
-    color: #333333;
+    color: #333;
     margin: 11px 0 25px 0;
 }
 
@@ -2674,7 +2662,7 @@ details > summary {
 
 .home-news .list__date time {
 	font-size: 12px;
-	color: #666666;
+	color: #666;
 }
 
 .home-news .preroll {
@@ -2841,7 +2829,7 @@ details > summary {
 
 .home-news .preroll__date time {
 	font-size: 14px;
-	color: #666666;
+	color: #666;
 }
 
 @media (max-width: 1141px) {
@@ -2906,7 +2894,7 @@ details > summary {
     border-bottom: 2px solid #FFD500;
     font-size: 24px;
     line-height: 28px;
-    color: #333333;
+    color: #333;
     padding-bottom: 15px;
     font-weight: normal;
 }
@@ -3094,7 +3082,7 @@ details > summary {
 }
 
 .add-file__title {
-    color: #333333;
+    color: #333;
     margin-bottom: 20px;
 }
 
@@ -3522,7 +3510,7 @@ details > summary {
 
 .p-event__notice span {
     font-size: 15px;
-    color: #333333;
+    color: #333;
 }
 
 /* Кнопка со стилями для закрытия поп-апа при клике(перебивает стили)

@@ -13,6 +13,9 @@
         <!-- Fonts -->
         <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Slick Slider -->
+        <link href="css/components/slick.css" rel="stylesheet" type="text/css">
+        <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
@@ -46,30 +49,45 @@
 
             <section class="main__container">
                 <article class="main-content">
-                    <h2>«Клуб Delivery Group»</h2>
-                    <ul class="benefits-program">
+                    <h2 class="program-loyalty__title">«Клуб Delivery Group»</h2>
+                    <ul class="benefits-program benefits-program__slider">
                         <li class="benefits-program__item">
-                            <img src="img/system/program-loyalty/program-loyalty__icon1.png" alt="">
+                            <div class="benefits-program__img">
+                                <img src="img/system/program-loyalty/program-loyalty__icon1.png" alt="icon">
+                            </div>
+                            <div class="benefits-program__step">Крок 1</div>
                             <p>Здійснюйте <br> перевезення</p>
                         </li>
 
                         <li class="benefits-program__item">
-                            <img src="img/system/program-loyalty/program-loyalty__icon2.png" alt="">
+                            <div class="benefits-program__img">
+                                <img src="img/system/program-loyalty/program-loyalty__icon2.png" alt="icon">
+                            </div>
+                            <div class="benefits-program__step">Крок 2</div>
                             <p>Накопичуйте <br> бали</p>
                         </li>
 
                         <li class="benefits-program__item">
-                            <img src="img/system/program-loyalty/program-loyalty__icon3.png" alt="">
+                            <div class="benefits-program__img">
+                                <img src="img/system/program-loyalty/program-loyalty__icon3.png" alt="icon">
+                            </div>
+                            <div class="benefits-program__step">Крок 3</div>
                             <p>Обмінюйте <br> бали</p>
                         </li>
 
                         <li class="benefits-program__item">
-                            <img src="img/system/program-loyalty/program-loyalty__icon4.png" alt="">
+                            <div class="benefits-program__img">
+                                <img src="img/system/program-loyalty/program-loyalty__icon4.png" alt="icon">
+                            </div>
+                            <div class="benefits-program__step">Крок 4</div>
                             <p>Підвищуйте <br> тарифний план</p>
                         </li>
 
                         <li class="benefits-program__item">
-                            <img src="img/system/program-loyalty/program-loyalty__icon5.png" alt="">
+                            <div class="benefits-program__img">
+                                <img src="img/system/program-loyalty/program-loyalty__icon5.png" alt="icon">
+                            </div>
+                            <div class="benefits-program__step">Крок 5</div>
                             <p>Користуйтесь <br> привілеями</p>
                         </li>
                     </ul>
@@ -77,21 +95,33 @@
                     <div class="about-program">
                         <p>Програма лояльності для постійних клієнтів групи компаній «Delivery Group» дозволяє накопичувати бали платнику під час використання послуг чотирьох компаній групи: «Делівері», «DelTruck», «Delivery-International», СК «Кворум».</p>
                         <p>Накопичені бали Ви можете обміняти на сплату перевезень «Склад-Склад» через «Делівері», а також подарунки. Обмін балів виконується за формулою <strong>10 балів = 1 грн.</strong></p>
-                        <p>Доступні до списання бали можуть бути використані при безготівковому та готівковому розрахунках. При безготівковому платежі списання балів проводиться тільки в разі, якщо відправник вантажу є одночасно і платником по квитанції. При цьому, не можуть бути оплачені балами квитанції послуги забору вантажу.</p>
-                        <p>Важливо! Здійснюючи більше перевезень - Ви підвищуєте свій Тарифний план. А це означає, зможете користуватися ширшими привілеями при обміні балів: з підвищенням Тарифного плану Каталог Лояльності поповнюється новими подарунками.</p>
-                        <p>Унікальна можливість отримувати комплексне обслуговування в логістиці та засіб заощаджувати, а також отримувати ексклюзивні пропозиції. Саме учасникам «Клуб Delivery Group» група компаній дарує максимальні привілеї.</p>
-
+                        <details class="about-program__more">
+                            <summary>
+                                <div class="more__title">
+                                    <div>Детальніше</div>
+                                    <img src="img/system/icon/arrow--blue.svg" alt="icon">
+                                </div>
+                            </summary>
+                            <p>Доступні до списання бали можуть бути використані при безготівковому та готівковому розрахунках. При безготівковому платежі списання балів проводиться тільки в разі, якщо відправник вантажу є одночасно і платником по квитанції. При цьому, не можуть бути оплачені балами квитанції послуги забору вантажу.</p>
+                            <p>Важливо! Здійснюючи більше перевезень - Ви підвищуєте свій Тарифний план. А це означає, зможете користуватися ширшими привілеями при обміні балів: з підвищенням Тарифного плану Каталог Лояльності поповнюється новими подарунками.</p>
+                            <p>Унікальна можливість отримувати комплексне обслуговування в логістиці та засіб заощаджувати, а також отримувати ексклюзивні пропозиції. Саме учасникам «Клуб Delivery Group» група компаній дарує максимальні привілеї.</p>
+                        </details>
+                        <div class="about-program__open-info">
+                            <p>Доступні до списання бали можуть бути використані при безготівковому та готівковому розрахунках. При безготівковому платежі списання балів проводиться тільки в разі, якщо відправник вантажу є одночасно і платником по квитанції. При цьому, не можуть бути оплачені балами квитанції послуги забору вантажу.</p>
+                            <p>Важливо! Здійснюючи більше перевезень - Ви підвищуєте свій Тарифний план. А це означає, зможете користуватися ширшими привілеями при обміні балів: з підвищенням Тарифного плану Каталог Лояльності поповнюється новими подарунками.</p>
+                            <p>Унікальна можливість отримувати комплексне обслуговування в логістиці та засіб заощаджувати, а також отримувати ексклюзивні пропозиції. Саме учасникам «Клуб Delivery Group» група компаній дарує максимальні привілеї.</p>
+                        </div>
                         <a class="main-btn" href="cl-program-loyalty-registration.html">Зареєструватися</a>
                     </div>
 
                     <div class="bonus">
-                        <h2>Бонусна програма</h2>
+                        <h2 class="bonus__main-title">Бонусна програма</h2>
                         <p class="bonus__title"><span>01</span>Користуйтеся послугами чотирьох компаній групи</p>
                         <ul class="bonus__group-logos">
-                            <li><img src="img/system/delivery-group__logos/delauto-logo--small.jpg" alt="delauto-logo"></li>
-                            <li><img src="img/system/delivery-group__logos/deltruck-logo--small.jpg" alt="deltruck-logo"></li>
-                            <li><img src="img/system/delivery-group__logos/delinter-logo--small.jpg" alt="delinter-logo"></li>
-                            <li><img src="img/system/delivery-group__logos/kvorum-logo--small.jpg" alt="kvorum-logo"></li>
+                            <li class="bonus__item"><img src="img/system/delivery-group__logos/delauto-logo--small.jpg" alt="delauto-logo"></li>
+                            <li class="bonus__item"><img src="img/system/delivery-group__logos/deltruck-logo--small.jpg" alt="deltruck-logo"></li>
+                            <li class="bonus__item"><img src="img/system/delivery-group__logos/delinter-logo--small.jpg" alt="delinter-logo"></li>
+                            <li class="bonus__item"><img src="img/system/delivery-group__logos/kvorum-logo--small.jpg" alt="kvorum-logo"></li>
                         </ul>
                         <p class="bonus__title"><span>02</span>Накопичуйте бали</p>
 
@@ -107,7 +137,7 @@
                                     <li><p>Збереження ТП протягом 3-х місяців</p> <span></span> <p><strong>+ 200 балів</strong> (ТП "Развиток") <br> <strong>+ 200 балів</strong> (ТП "Максимум")</p></li>
                                     <li><p>Підвищення тарифного плану</p> <span></span> <p><strong>+ 500 балів</strong></p></li>
                                     <li><p>1 кг розрахункової ваги за квитанцією</p> <span></span> <p><strong>+ 0,3 бала</strong> (ТП "Бізнес") <br> <strong>+ 0,4 бала</strong> (ТП "Развиток") <br> <strong>+ 0,5 бала</strong> (ТП "Максимум")</p></li>
-                                    <li><p class="more-point__btn">Нарахування балів за додаткові послуги <img src="img/system/icon/arrow-right.svg" alt="arrow"></p></li>
+                                    <li><p class="more-point__btn">Нарахування балів за додаткові послуги</p></li>
                                 </ul>
                             </div>
 
@@ -130,7 +160,6 @@
                                         <li><p>Металевий контейнер 1 м&sup3;</p> <span></span> <p> <strong>+ 30 балів</strong></p></li>
                                         <li><p>Меблевий контейнер 2 м&sup3;</p> <span></span> <p> <strong>+ 30 балів</strong></p></li>
                                         <li><p>Сендвіч-панель</p> <span></span> <p> <strong>+ 30 балів</strong></p></li>
-
                                     </ul>
                                 </div>
 
@@ -205,7 +234,9 @@
                         <p class="bonus__title"><span>03</span>Обмінюйте накопичені бали</p>
 
                         <div class="exchange">
-                            <img src="img/system/program-loyalty/program-loyalty__card.png" alt="card loyalty">
+                            <div class="exchange__img">
+                                <img src="img/system/program-loyalty/program-loyalty__card.png" alt="card loyalty">
+                            </div>
                             <div class="exchange__info">
                                 <p>10 балів = 1 грн.</p>
                                 <p>Ви можете обміняти бали на оплату перевезень «Склад-Склад», брендовані подарунки, сертифікати, рекламні прояви та можливість участі в профільних форумах та конференціях з логістики.</p>
@@ -219,7 +250,7 @@
             <section class="main__container--full-width">
                 <article class="main__container">
                     <div class="add-benefits">
-                        <h2>Додаткові переваги</h2>
+                        <h2 class="add-benefits__title">Додаткові переваги</h2>
                         <ul class="add-benefits__inner">
                             <li class="add-benefis__item">
                                 <div class="add-benefis__heading">
