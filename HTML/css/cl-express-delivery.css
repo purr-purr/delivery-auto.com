@@ -133,7 +133,6 @@
     margin-bottom: 22px;
 }
 
-
 /* Шаги */
 .steps {
     margin-top: 50px;
@@ -243,9 +242,7 @@
     border-right: none;
 }
 
-
 /* Форма */
-
 .del-order__form {
     margin: 50px 0 60px 0;
     width: 805px;
@@ -299,7 +296,6 @@ input[type="radio"] {
     margin-top: 2px;
 }
 
-
 .del-order__type-order {
     display: flex;
 }
@@ -329,7 +325,6 @@ input[type="radio"] {
     width: 105px;
     margin-left: 17px;
 }
-
 
 .del-order__parcel-btn {
     color: #333333;
@@ -373,7 +368,6 @@ input[type="radio"] {
     margin-top: 15px;
 }
 
-
 .add-parcel {
     display: none;
     position: relative;
@@ -410,10 +404,10 @@ input[type="radio"] {
     display: none;
 }
 
-
 .del-order__line--short {
     justify-content: flex-start;
 }
+
 .del-order__line--short .del-order__item:last-child {
     margin-left: 100px;
 }
@@ -832,8 +826,6 @@ hr {
     }
 }
 
-
-
 @media (max-width: 660px) {
     .express__scheme {
         flex-direction: column;
@@ -898,7 +890,6 @@ hr {
         margin-bottom: 0;
     }
 }
-
 
 @media (max-width: 460px) {
     .type-payment  {
@@ -983,8 +974,6 @@ hr {
         margin-bottom: 10px;
     }
 }
-
-
 
 @media (max-width: 330px) {
     .time-mob__item label {
