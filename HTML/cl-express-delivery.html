@@ -13,6 +13,9 @@
         <!-- Fonts -->
         <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Slick Slider -->
+        <link href="css/components/slick.css" rel="stylesheet" type="text/css">
+        <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
@@ -55,7 +58,7 @@
                         <ul>
                             <p class="express__desc"><strong>Схеми доставки:</strong></p>
                             <li>• <strong>«Бізнес»</strong> доставка по Києву <span>у продовж дня</span></li>
-                            <li>• <strong>«Експрес»</strong> доставка по Києву за <span>24 години</span></li>
+                            <li>• <strong>«Експрес»</strong> доставка по Києву <span>за 24 години</span></li>
                         </ul>
 
                         <a href="#call-courier" class="main-btn">Викликати кур’єра</a>
@@ -113,33 +116,41 @@
                 </article>
             </section>
 
-            <section class="main-content section--grey">
+            <section class="main-content section--grey section--mob-white">
                 <article class="main__container">
                     <div class="steps">
                         <h2 class="express__title">Почати роботу просто</h2>
 
                         <div class="steps__inner">
-                            <ul class="steps__list">
+                            <ul class="steps__list express-step__slider">
                                 <li class="steps__item">
-                                    <img src="img/system/express-delivery/steps__icon-1.png" alt="step-icon" class="steps__img">
+                                    <div class="steps__img-wrap">
+                                        <img src="img/system/express-delivery/steps__icon-1.png" alt="step-icon" class="steps__img">
+                                    </div>
                                     <p class="steps__title">Крок 1</p>
                                     <p class="steps__desc">Відправте заявку на сайті або через вайбер</p>
                                 </li>
 
                                 <li class="steps__item">
-                                    <img src="img/system/express-delivery/steps__icon-2.png" alt="step-icon" class="steps__img">
+                                    <div class="steps__img-wrap">
+                                        <img src="img/system/express-delivery/steps__icon-2.png" alt="step-icon" class="steps__img">
+                                    </div>
                                     <p class="steps__title">Крок 2</p>
                                     <p class="steps__desc">Очікуйте прибуття <br> кур'єра</p>
                                 </li>
 
                                 <li class="steps__item">
-                                    <img src="img/system/express-delivery/steps__icon-3.png" alt="step-icon" class="steps__img">
+                                    <div class="steps__img-wrap">
+                                        <img src="img/system/express-delivery/steps__icon-3.png" alt="step-icon" class="steps__img">
+                                    </div>
                                     <p class="steps__title">Крок 3</p>
                                     <p class="steps__desc">Гарантуємо своєчасне <br> вручення</p>
                                 </li>
 
                                 <li class="steps__item">
-                                    <img src="img/system/express-delivery/steps__icon-4.png" alt="step-icon" class="steps__img">
+                                    <div class="steps__img-wrap">
+                                        <img src="img/system/express-delivery/steps__icon-4.png" alt="step-icon" class="steps__img">
+                                    </div>
                                     <p class="steps__title">Крок 4</p>
                                     <p class="steps__desc">Контролюйте весь процес <br> онлайн</p>
                                 </li>
@@ -211,7 +222,7 @@
                         </div>
 
                         <ul class="condition__info">
-                            <li><p><strong>Телефон для замовлення послуги:</strong> 0 800-509-609</p></li>
+                            <li><p><strong>Телефон для замовлення послуги:</strong> <span style="white-space: nowrap;">0 800-509-609</span></p></li>
                             <li><p><strong>Viber:</strong> 067-621-43-43</p></li>
                             <li><p><strong>Ел.пошта:</strong> DExpress@delivery-auto.com.ua</p></li>
                         </ul>
@@ -226,22 +237,26 @@
                         <h2 class="express__title">Заявка для кур'єрської доставки</h2>
 
                         <div class="del-order__line">
-                            <div class="del-order__item">
-                                <select ng-options="t.Value as t.Text for t in data.citySendList" ng-model="data.application.CitySendId" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" class="ng-pristine ng-valid valid ng-touched" title="">
-                                    <option value="string:16617df3-a42a-e311-8b0d-00155d037960" label="Киев" selected="selected">Киев</option>
+                            <div class="del-order__item label-rotate">
+                                <select id="SendCity" ng-options="t.Value as t.Text for t in data.citySendList" ng-model="data.application.CitySendId" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" class="ng-pristine ng-valid ng-touched" title="">
+                                    <option value="-1" style="display: none;" selected></option>
+                                    <option value="string:16617df3-a42a-e311-8b0d-00155d037960" label="Киев"">Киев</option>
                                 </select>
+                                <label for="SendCity" id="SendCity--label" class="label-rotate__select">Оберіть місто відправлення</label>
                             </div>
 
-                            <div class="del-order__item">
-                                <select ng-options="t.Value as t.Text for t in data.deliverySchemeList" ng-model="data.application.DeliverySchemeId" class="ng-pristine ng-valid valid ng-touched" title="">
-                                    <option value="string:100000003" label="Двери-двери" selected="selected">Двери-двери</option>
+                            <div class="del-order__item label-rotate">
+                                <select id="TypeDeliv" ng-options="t.Value as t.Text for t in data.deliverySchemeList" ng-model="data.application.DeliverySchemeId" class="ng-pristine ng-valid valid ng-touched" title="">
+                                    <option value="-1" style="display: none;" selected></option>
+                                    <option value="string:100000003" label="Двери-двери">Двери-двери</option>
                                 </select>
+                                <label for="TypeDeliv" id="TypeDeliv--label" class="label-rotate__select">Оберіть схему доставки</label>
                             </div>
                         </div>
 
                         <!-- next line -->
                         <div class="del-order__line">
-                            <div class="del-order__item">
+                            <div class="del-order__item del-order__item--mob del-order__item--mob-col">
                                 <label>Тип заявки:</label>
                                 <div class="del-order__type-order">
                                     <div ng-class="data.application.DeliveryType == 100000038 ? 'active' : ''">
@@ -259,35 +274,45 @@
 
                         <!-- next line -->
                         <div class="del-order__line">
-                            <div class="del-order__item">
+                            <div class="del-order__item del-order__item--mob">
                                 <label for="dateSend">Дата відправки</label>
-                                <input data-position="right top" ng-model="data.application.dateSendStr" id="dateSend" class="datepicker-here tooltipped ng-pristine hasDatepicker ng-valid ng-valid-required valid ng-touched" name="appl_dateSendStr" ng-mouseover="ng_validate($event, appl_frm.appl_dateSendStr)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" data-original-title="" title="">
+                                <input data-position="bottom left" ng-model="data.application.dateSendStr" id="dateSend" class="datepicker-here ng-pristine ng-valid ng-valid-required ng-touched" name="appl_dateSendStr" ng-mouseover="ng_validate($event, appl_frm.appl_dateSendStr)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" data-original-title="" title="">
                             </div>
 
-                            <div class="del-order__item">
-                                <label for="timeSend">Час забору, з</label>
-                                <input ng-model="data.application.TimePickUp" id="timeSend" class="tooltipped ui-timepicker-input ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required valid" name="appl_TimePickUp" ng-mouseover="ng_validate($event, appl_frm.appl_TimePickUp)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" ng-change="TimePickUp_change()" data-original-title="" title="" autocomplete="off">
+                            <div class="del-order__item del-order__item--mob del-order__time-mob">
+                                <label for="dateSend">Час забору<span class="mob-kill-koma">,</span></label>
+                                <div class="time-mob">
+                                    <div class="time-mob__item">
+                                        <label for="timeSend">з</label>
+                                        <input ng-model="data.application.TimePickUp" id="timeSend" class="ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required" name="appl_TimePickUp" ng-mouseover="ng_validate($event, appl_frm.appl_TimePickUp)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" ng-change="TimePickUp_change()" data-original-title="" title="" autocomplete="off">
+                                    </div>
 
-                                <label for="timeSendTo">до</label>
-                                <input ng-model="data.application.TimePickUpTo" id="timeSendTo" class="tooltipped ui-timepicker-input ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required valid" name="appl_TimePickUpTo" ng-mouseover="ng_validate($event, appl_frm.appl_TimePickUpTo)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" data-original-title="" title="" autocomplete="off">
-                            </div>
-                        </div>
-
-                        <!-- next line -->
-                        <div class="del-order__line">
-                            <div class="del-order__item">
-                                <input placeholder="Відправник *" ng-model="data.application.SenderName" class="tooltipped ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required valid" name="appl_SenderName" ng-mouseover="ng_validate($event, appl_frm.appl_SenderName)" data-original-title="" title="">
-                            </div>
-
-                            <div class="del-order__item">
-                               <input placeholder="Адреса забору  *" ng-model="data.application.SenderAdress" class="tooltipped ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required valid" name="appl_SenderAdress" ng-mouseover="ng_validate($event, appl_frm.appl_SenderAdress)" data-original-title="" title="">
+                                    <div class="time-mob__item">
+                                        <label for="timeSendTo">до</label>
+                                        <input ng-model="data.application.TimePickUpTo" id="timeSendTo" class="ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required" name="appl_TimePickUpTo" ng-mouseover="ng_validate($event, appl_frm.appl_TimePickUpTo)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" data-original-title="" title="" autocomplete="off">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- next line -->
                         <div class="del-order__line">
-                            <div class="del-order__item">
-                                <input placeholder="Номер телефону   *"  type="tel" ng-model="data.application.SenderContactPhone" class="tooltipped ng-valid-maxlength ng-touched ng-dirty ng-valid-parse ng-valid-required ng-valid ng-valid-minlength valid" name="appl_SenderContactPhone" ng-minlength="10" ng-maxlength="100"  ng-mouseover="ng_validate($event, appl_frm.appl_SenderContactPhone)" data-original-title="" title="">
+                            <div class="del-order__item label-rotate">
+                                <input placeholder="Відправник *" ng-model="data.application.SenderName" class="ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required label-rotate__input" name="appl_SenderName" ng-mouseover="ng_validate($event, appl_frm.appl_SenderName)" data-original-title="" title="">
+                                <label for="Company" class="label-rotate__label">Відправник *</label>
+                            </div>
+
+                            <div class="del-order__item label-rotate">
+                               <input placeholder="Адреса забору *" ng-model="data.application.SenderAdress" class="ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required label-rotate__input" name="appl_SenderAdress" ng-mouseover="ng_validate($event, appl_frm.appl_SenderAdress)" data-original-title="" title="">
+                               <label for="Company" class="label-rotate__label">Адреса забору *</label>
+                            </div>
+                        </div>
+
+                        <!-- next line -->
+                        <div class="del-order__line">
+                            <div class="del-order__item label-rotate">
+                                <input placeholder="Номер телефону *" type="tel" ng-model="data.application.SenderContactPhone" class="ng-valid-maxlength ng-touched ng-dirty ng-valid-parse ng-valid-required ng-valid ng-valid-minlength label-rotate__input" name="appl_SenderContactPhone" ng-minlength="10" ng-maxlength="100"  ng-mouseover="ng_validate($event, appl_frm.appl_SenderContactPhone)" data-original-title="" title="">
+                                <label for="Company" class="label-rotate__label">Номер телефону *</label>
                             </div>
                         </div>
 
@@ -398,21 +423,23 @@
                                 <h3 class="add-parcel__title">Додати посилку</h3>
     
                                 <div class="del-order__line">
-                                    <div class="del-order__item">
-                                        <select ng-options="t.Value as t.Text for t in data.cityReceiveList" ng-model="data.temp.CityReceiveId" class="ng-pristine ng-valid valid ng-touched" title="">
+                                    <div class="del-order__item label-rotate">
+                                        <select id="SendCity-add" ng-options="t.Value as t.Text for t in data.cityReceiveList" ng-model="data.temp.CityReceiveId" class="ng-pristine ng-valid ng-touched" title="">
+                                            <option value="-1" style="display: none;" selected>Місто отримання</option>
                                             <option value="string:16617df3-a42a-e311-8b0d-00155d037960" label="Київ" selected="selected">Київ</option>
                                         </select>
                                     </div>
     
                                     <div class="del-order__item">
                                         <select ng-options="t.Id as t.Name for t in data.temp.currentTarifList" ng-model="data.temp.TarifId" ng-change="tarif_change()" class="ng-pristine ng-valid valid ng-touched" title="">
+                                            <option value="-1" style="display: none;" selected>Оберіть тариф</option>
                                             <option value="string:ac284746-e619-e711-8127-000d3a204dc8" label="Бізнес 15" selected="selected">Бізнес 15</option>
                                             <option value="string:53c43504-ea19-e711-8127-000d3a204dc8" label="Бізнес 18">Бізнес 18</option>
                                         </select>
                                     </div>
                                 </div>
 
-                                <div class="del-order__line del-order__line--short" disabled="disabled">
+                                <div class="del-order__line del-order__line--short add-parcel__receive-date" disabled="disabled">
                                     <div class="del-order__item">
                                         <label for="dateReceive">Планова дата отримання</label>
                                         <input ng-model="data.temp.dateReceiveStr" id="dateReceive" disabled="disabled" class="ng-pristine ng-untouched ng-valid">
@@ -425,37 +452,43 @@
                                 </div>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item">
-                                        <input ng-model="data.temp.ReceiverAddress" class="tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" name="dialog_ReceiverAddress" ng-mouseover="ng_validate($event, dialog_frm.dialog_ReceiverAddress)" data-original-title="Поле обов’язкове для заповнення" title="" placeholder="Адреса доставки *">
+                                    <div class="del-order__item label-rotate">
+                                        <input id="ReceiverAddress" ng-model="data.temp.ReceiverAddress" class="label-rotate__input ng-pristine ng-invalid ng-invalid-required ng-touched" name="dialog_ReceiverAddress" ng-mouseover="ng_validate($event, dialog_frm.dialog_ReceiverAddress)" data-original-title="Поле обов’язкове для заповнення" title="" placeholder="Адреса доставки *">
+                                        <label for="ReceiverAddress" class="label-rotate__label">Адреса доставки *</label>
                                     </div>
     
-                                    <div class="del-order__item">
-                                        <input ng-model="data.temp.ReceiverName" class="tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" name="dialog_ReceiverName"  ng-mouseover="ng_validate($event, dialog_frm.dialog_ReceiverName)" data-original-title="" title="" placeholder="Одержувач  *">
+                                    <div class="del-order__item label-rotate">
+                                        <input id="ReceiverName" ng-model="data.temp.ReceiverName" class="label-rotate__input ng-pristine ng-invalid ng-invalid-required ng-touched" name="dialog_ReceiverName"  ng-mouseover="ng_validate($event, dialog_frm.dialog_ReceiverName)" data-original-title="" title="" placeholder="Одержувач  *">
+                                        <label for="ReceiverName" class="label-rotate__label">Одержувач  *</label>
                                     </div>
                                 </div>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item">
-                                        <input ng-model="data.temp.ReceiverContactPhone" ng-minlength="10" ng-maxlength="100" class="tooltipped ng-pristine ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength ng-touched" name="dialog_ReceiverContactPhone" ng-mouseover="ng_validate($event, dialog_frm.dialog_ReceiverContactPhone)" data-original-title="" title="" placeholder="Контактний телефон *">
+                                    <div class="del-order__item label-rotate">
+                                        <input id="ContactPhone" ng-model="data.temp.ReceiverContactPhone" ng-minlength="10" ng-maxlength="100" class="label-rotate__input ng-pristine ng-invalid ng-invalid-required ng-valid-minlength ng-valid-maxlength ng-touched" name="dialog_ReceiverContactPhone" ng-mouseover="ng_validate($event, dialog_frm.dialog_ReceiverContactPhone)" data-original-title="" title="" placeholder="Контактний телефон *">
+                                        <label for="ContactPhone" class="label-rotate__label">Контактний телефон *</label>
                                     </div>
                                 </div>
 
                                 <hr>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item">
-                                        <select ng-options="t.Value as t.Text for t in data.payerTypeList" ng-model="data.temp.PayerType" class="ng-valid valid ng-touched ng-dirty ng-valid-parse" title="" id="person-3dr">
-                                            <option value="string:100000000" label="Відправник" selected="selected">Відправник</option>
+                                    <div class="del-order__item label-rotate">
+                                        <select ng-options="t.Value as t.Text for t in data.payerTypeList" ng-model="data.temp.PayerType" class="label-rotate__input ng-valid ng-touched ng-dirty ng-valid-parse" title="" id="person-3dr">
+                                            <option value="-1" style="display: none;" selected></option>
+                                            <option value="string:100000000" label="Відправник">Відправник</option>
                                             <option value="string:100000001" label="Одержувач">Одержувач</option>
                                             <option value="string:100000002" label="3-тя особа">3-тя особа</option>
                                         </select>
+
+                                        <label for="person-3dr" id="person-3dr--label" class="label-rotate__select">Оберіть платника  *</label>
                                     </div>
                                     
-                                    <div class="del-order__item person-3dr__input person-3dr__hidden" ng-show="data.temp.PayerType == 100000002">
-                                        <input ng-model="data.temp.PayerThirdFace" class="tooltipped ng-pristine ng-touched ng-invalid ng-invalid-required" name="dialog_PayerThirdFace" ng-required="data.temp.PayerType == 100000002" ng-mouseover="ng_validate($event, dialog_frm.dialog_PayerThirdFace)" data-original-title="Поле обов’язкове для заповнення" title="" placeholder="3-тя особа *">
+                                    <div class="del-order__item person-3dr__input person-3dr__hidden label-rotate" ng-show="data.temp.PayerType == 100000002">
+                                        <input id="person-3dr" ng-model="data.temp.PayerThirdFace" class="label-rotate__input ng-pristine ng-touched ng-invalid ng-invalid-required" name="dialog_PayerThirdFace" ng-required="data.temp.PayerType == 100000002" ng-mouseover="ng_validate($event, dialog_frm.dialog_PayerThirdFace)" data-original-title="Поле обов’язкове для заповнення" title="" placeholder="3-тя особа *">
+                                        <label for="person-3dr" class="label-rotate__label">3-тя особа *</label>
                                     </div>
                                 </div>
-
                                 
                                 
                                 <div class="del-order__line del-order__line--short">
@@ -479,23 +512,26 @@
                                 <hr>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item">
-                                        <input id="declared-cost" ng-model="data.temp.DeclaredCost" ng-blur="declaredCost_change()" class="tooltipped ng-pristine ng-valid-min ng-valid ng-valid-required valid ng-touched" name="dialog_DeclaredCost" type="number" min="0" ng-mouseover="ng_validate($event, dialog_frm.dialog_DeclaredCost)" data-original-title="" title="" placeholder="Заявлена вартість, грн">
+                                    <div class="del-order__item label-rotate">
+                                        <input id="declared-cost" ng-model="data.temp.DeclaredCost" ng-blur="declaredCost_change()" class="label-rotate__input ng-pristine ng-valid-min ng-valid ng-valid-required valid ng-touched" name="dialog_DeclaredCost" type="number" min="0" ng-mouseover="ng_validate($event, dialog_frm.dialog_DeclaredCost)" data-original-title="" title="" placeholder="Заявлена вартість, грн">
+                                        <label for="declared-cost" class="label-rotate__label">Заявлена вартість, грн</label>
                                     </div>
                                 </div>
 
                                 <div class="del-order__line insurance-block insurance-block__hidden">
-                                    <div ng-show="data.temp.DeclaredCost > 0" class="del-order__item">
+                                    <div ng-show="data.temp.DeclaredCost > 0" class="del-order__item label-rotate">
                                         <select id="declared-cost__3dr" ng-options="t.Value as t.Text for t in data.payerTypeList" ng-model="data.temp.InsurancePayerType" class="ng-valid ng-dirty ng-valid-parse valid ng-touched" title="">
-                                            <option value="-1" selected style="display: none;">Платник страхування:</option>
+                                            <option value="-1" style="display: none;" selected> </option>
                                             <option value="string:100000000" label="Відправник">Відправник</option>
                                             <option value="string:100000001" label="Одержувач">Одержувач</option>
                                             <option value="string:100000002" label="3-тя особа">3-тя особа</option>
                                         </select>
+                                        <label for="declared-cost__3dr" id="declared-cost__3dr--label" class="label-rotate__select">Платник страхування:</label>
                                     </div>
 
-                                    <div class="del-order__item">
-                                        <input ng-model="data.temp.InsurancePayerThirdFace" class="insurance-payer-3dr__input insurance-payer-3dr__hidden tooltipped ng-pristine ng-touched ng-invalid ng-invalid-required" name="dialog_InsurancePayerThirdFace" ng-required="data.temp.InsurancePayerType == 100000002 &amp;&amp; data.temp.DeclaredCost > 0" ng-mouseover="ng_validate($event, dialog_frm.dialog_InsurancePayerThirdFace)" data-original-title="Поле обов’язкове для заповнення" title="" placeholder="3-тя особа">
+                                    <div class="del-order__item label-rotate insurance-payer-3dr__input insurance-payer-3dr__hidden">
+                                        <input ng-model="data.temp.InsurancePayerThirdFace" class="label-rotate__input ng-pristine ng-touched ng-invalid ng-invalid-required" id="dialog_InsurancePayerThirdFace" name="dialog_InsurancePayerThirdFace" ng-required="data.temp.InsurancePayerType == 100000002 &amp;&amp; data.temp.DeclaredCost > 0" ng-mouseover="ng_validate($event, dialog_frm.dialog_InsurancePayerThirdFace)" data-original-title="Поле обов’язкове для заповнення" title="" placeholder="3-тя особа">
+                                        <label for="dialog_InsurancePayerThirdFace" class="label-rotate__label insurance-payer-3dr__input insurance-payer-3dr__hidden">3-тя особа</label>
                                     </div>
                                 </div>
 
@@ -520,41 +556,49 @@
                                 <hr>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item del-order__item--short">
-                                        <input ng-model="data.temp.Weight" class="tooltipped ng-pristine ng-valid-min ng-valid-max ng-valid ng-valid-required valid ng-touched" name="dialog_Weight" type="number" min="0.01" ng-blur="Weight_change()" ng-mouseover="ng_validate($event, dialog_frm.dialog_Weight, 'Максимальна вага всього замовлення 5 кг')" data-original-title="" title="" ng-max="5" placeholder="Вага, кг  *">
+                                    <div class="del-order__item del-order__item--short label-rotate">
+                                        <input ng-model="data.temp.Weight" class="label-rotate__input ng-pristine ng-valid-min ng-valid-max ng-valid ng-valid-required ng-touched" name="dialog_Weight" id="dialog_Weight" type="number" min="0.01" ng-blur="Weight_change()" ng-mouseover="ng_validate($event, dialog_frm.dialog_Weight, 'Максимальна вага всього замовлення 5 кг')" data-original-title="" title="" ng-max="5" placeholder="Вага, кг  *">
+                                        <label for="dialog_Weight" class="label-rotate__label">Вага, кг  *</label>
                                     </div>
 
-                                    <div class="del-order__item del-order__item--short">
-                                        <input ng-model="data.temp.CountPlace" class="tooltipped ng-pristine ng-valid-min ng-valid-max ng-valid ng-valid-required valid ng-touched" name="dialog_CountPlace" type="number" min="1" max="5" ng-blur="auxServices_change()" ng-mouseover="ng_validate($event, dialog_frm.dialog_CountPlace)" data-original-title="" title="" placeholder="Кількість місць">
+                                    <div class="del-order__item del-order__item--short label-rotate">
+                                        <input ng-model="data.temp.CountPlace" class="label-rotate__input ng-pristine ng-valid-min ng-valid-max ng-valid ng-valid-required ng-touched" name="dialog_CountPlace" id="dialog_CountPlace" type="number" min="1" max="5" ng-blur="auxServices_change()" ng-mouseover="ng_validate($event, dialog_frm.dialog_CountPlace)" data-original-title="" title="" placeholder="Кількість місць">
+                                        <label for="dialog_CountPlace" class="label-rotate__label">Кількість місць</label>
                                     </div>
 
-                                    <div class="del-order__item del-order__item--short">
-                                        <input type="number" ng-model="data.temp.Volume" id="dlg_Volume" class="tooltipped ng-pristine ng-valid-max ng-valid-required ng-invalid ng-invalid-min input-validation-error ng-touched" min="0.0001" name="dialog_Volume" ng-mouseover="ng_validate($event, dialog_frm.dialog_Volume, null, 'Максимальний об'єм всього замовлення 0.021 м3')" data-original-title="" ng-max="0.021" placeholder="Об’єм, м&sup3; *">
+                                    <div class="del-order__item del-order__item--short label-rotate">
+                                        <input type="number" ng-model="data.temp.Volume" id="dlg_Volume" class="label-rotate__input ng-pristine ng-valid-max ng-valid-required ng-invalid ng-invalid-min input-validation-error ng-touched" min="0.0001" name="dialog_Volume" ng-mouseover="ng_validate($event, dialog_frm.dialog_Volume, null, 'Максимальний об'єм всього замовлення 0.021 м3')" data-original-title="" ng-max="0.021" placeholder="Об’єм, м&sup3; *">
+                                        <label for="dlg_Volume" class="label-rotate__label">Об’єм, м&sup3; *</label>
                                     </div>
                                 </div>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item del-order__item--short">
-                                        <input type="number" class="size_small_input tooltipped ng-valid ng-valid-min ng-valid-max ng-dirty ng-valid-number valid ng-touched" ng-model="data.temp.Length" min="0" max="150" name="dialog_Length" ng-blur="lengthHeightWidth_change($event)" data-original-title="" title="" placeholder="Довжина">
+                                    <div class="del-order__item del-order__item--short label-rotate">
+                                        <input type="number" class="label-rotate__input ng-valid ng-valid-min ng-valid-max ng-dirty ng-valid-number ng-touched" ng-model="data.temp.Length" min="0" max="150" id="dialog_Length" name="dialog_Length" ng-blur="lengthHeightWidth_change($event)" data-original-title="" title="" placeholder="Довжина">
+                                        <label for="dialog_Length" class="label-rotate__label">Довжина</label>
                                     </div>
 
-                                    <div class="del-order__item del-order__item--short">
-                                        <input type="number" class="size_small_input tooltipped ng-pristine ng-valid ng-valid-min ng-valid-max ng-touched" ng-model="data.temp.Height" min="0" max="150" name="dialog_Heigh" ng-blur="lengthHeightWidth_change($event)" data-original-title="" title="" placeholder="Висота">
+                                    <div class="del-order__item del-order__item--short label-rotate">
+                                        <input type="number" class="label-rotate__input ng-pristine ng-valid ng-valid-min ng-valid-max ng-touched" ng-model="data.temp.Height" min="0" max="150" id="dialog_Heigh" name="dialog_Heigh" ng-blur="lengthHeightWidth_change($event)" data-original-title="" title="" placeholder="Висота">
+                                        <label for="dialog_Heigh" class="label-rotate__label">Висота</label>
                                     </div>
 
-                                    <div class="del-order__item del-order__item--short">
-                                        <input type="number" class="size_small_input tooltipped ng-pristine ng-valid ng-valid-min ng-valid-max ng-touched" ng-model="data.temp.Width" min="0" max="150" name="dialog_Width" ng-blur="lengthHeightWidth_change($event)" data-original-title="" title="" placeholder="Ширина">
+                                    <div class="del-order__item del-order__item--short label-rotate">
+                                        <input type="number" class="label-rotate__input ng-pristine ng-valid ng-valid-min ng-valid-max ng-touched" ng-model="data.temp.Width" min="0" max="150" id="dialog_Width" name="dialog_Width" ng-blur="lengthHeightWidth_change($event)" data-original-title="" title="" placeholder="Ширина">
+                                        <label for="dialog_Width" class="label-rotate__label">Ширина</label>
                                     </div>
                                 </div>
-
+<!-- Додати додаткові послуги -->
+<!-- скрытый блок -->
                                 <div class="add-parcel__add-services" style="display: none;">
                                     <button class="main-btn main-btn--white add-services__btn" ng-click="add_aux_service(data.temp.DelCRM_CallCourierAuxServices)"><img src="img/system/icon/yellow-plus.svg" alt="add"></button>
                                     <label>Додати додаткові послуги</label>
                                 </div>
 
                                 <div class="del-order__line">
-                                    <div class="del-order__item del-order__item--large">
-                                        <textarea ng-model="data.temp.Note" class="del-order__textarea ng-pristine ng-valid ng-touched" placeholder="Примітка"></textarea>
+                                    <div class="del-order__item del-order__item--large label-rotate">
+                                        <textarea ng-model="data.temp.Note" class="del-order__textarea label-rotate__input ng-pristine ng-valid ng-touched" placeholder="Примітка"></textarea>
+                                        <label for="Company" class="label-rotate__label">Примітка</label>
                                     </div>
                                 </div>
 
@@ -575,7 +619,7 @@
 
 
                         <div class="del-order__footer">
-                            <div>
+                            <div class="del-order__btn-group">
                                 <div ng-click="add_new_delivery()" class="main-btn del-order__parcel-btn"><img src="img/system/icon/btn-add-file.svg" alt=""> Додати посилку</div>
                                 <button class="main-btn del-order__btn popup-express-send_open">Надіслати</button>
                             </div>

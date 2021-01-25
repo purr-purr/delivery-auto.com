@@ -147,6 +147,7 @@ select {
     cursor: pointer;
 }
 
+
 textarea {
 	padding: 7px 20px;
 	background-color: transparent;
@@ -506,6 +507,7 @@ details > summary {
 	color: #999;
 	transition: all .2s ease-in-out;
 }
+
 
 @media (max-width: 1024px) {
 	.label-rotate__input:placeholder-shown ~ .label-rotate__label {

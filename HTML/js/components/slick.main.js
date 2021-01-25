@@ -136,5 +136,35 @@ $(document).ready(function(){
             }
         ]
     });
+    $('.express-step__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1,
+        mobileFirst: true, 
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: "unslick"
+            }
+        ]
+    });
 });
 

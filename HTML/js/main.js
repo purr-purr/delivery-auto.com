@@ -237,7 +237,27 @@ $(document).ready(function(){
         var valOpt=$(this).find('option:selected').val();
             if(valOpt)$(this).next("#Service--label").addClass("show-label");
     })
+    // Страница Експресс доставка
+    $("#SendCity").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#SendCity--label").addClass("show-label");
+    })
+    $("#TypeDeliv").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#TypeDeliv--label").addClass("show-label");
+    })
+    $("#declared-cost__3dr").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#declared-cost__3dr--label").addClass("show-label");
+    })
+    $("#person-3dr").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#person-3dr--label").addClass("show-label");
+    })
 });
+
+
+
 
 
 // Плавная прокрутка к якорю

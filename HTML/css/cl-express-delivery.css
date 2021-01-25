@@ -10,7 +10,7 @@
 /* =================================== */
 
 .express__title {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .express__desc {
@@ -163,8 +163,17 @@
     padding-top: 25px;
 }
 
-.steps__img {
+.steps__img-wrap {
+    margin: 0 auto;
+    max-width: 144px;
     margin-bottom: 10px;
+    height: 138px;
+}
+
+.steps__img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .steps__title {
@@ -253,7 +262,7 @@
 .del-order__line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .del-order__input--small, .del-order__item--small {
@@ -274,6 +283,7 @@
     font-size: 12px;
     line-height: 20px;
     color: #808080;
+    margin-bottom: 30px;
 }
 
 .del-order__required-input span {
@@ -322,7 +332,6 @@ input[type="radio"] {
 
 
 .del-order__parcel-btn {
-    margin-top: 30px;
     color: #333333;
     border: 1px solid #333333;
     background-color: transparent;
@@ -343,7 +352,6 @@ input[type="radio"] {
 
 .total_cost {
     margin-left: 135px;
-    margin-top: 30px;
 }
 
 .total_cost__text {
@@ -372,7 +380,7 @@ input[type="radio"] {
     width: 1013px;
     border: 1px solid #FFD500;
     padding: 30px;
-    margin-top: 30px;
+    margin: 30px 0 30px;
 }
 
 .add-parcel__form {
@@ -413,8 +421,8 @@ input[type="radio"] {
 #dateReceive, #timeReceive {
     width: 105px;
     margin-left: 30px;
+    order: 1;
 }
-
 
 .person-3dr__hidden {
     display: none;
@@ -425,7 +433,7 @@ hr {
     background-color:#DADADA;
     border: 0 none;
     height: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .type-payment__item {
@@ -467,6 +475,7 @@ hr {
     height: auto;
     font-weight: bold;
     color: #ffd500;
+    padding: 0;
 }
 
 .add-parcel__cost input:disabled {
@@ -477,6 +486,7 @@ hr {
     font-weight: bold;
     font-size: 16px;
     color: #333333;
+    margin-right: 10px;
 }
 
 .add-parcel__btn-group {
@@ -491,7 +501,7 @@ hr {
 .add-parcel__add-services {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .add-parcel__add-services label {
@@ -501,7 +511,7 @@ hr {
 }
 
 .add-services__btn {
-    width: 48px;
+    min-width: 48px;
     height: 48px;
     background-color: transparent;
 }
@@ -568,4 +578,416 @@ hr {
 .add-parcel__results-btn .delivery_edit {
     margin-right: 20px;
     color: #999999;
+}
+
+.time-mob {
+    display: flex;
+}
+
+.mob-kill-koma {
+    margin-right: 3px;
+}
+
+.add-parcel__receive-date {
+    flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+    .steps__item {
+        background: transparent;
+        box-shadow: none;
+        width: 210px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .add-parcel {
+        width: 870px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .schedule__item p:first-child {
+        font-size: 30px;
+    }
+    .express__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 20px 0 10px;
+    }
+    .express__desc {
+        margin-bottom: 15px;
+    }
+    .schedule {
+        width: 100%;
+        justify-content: end;
+        background: url(../img/system/express-delivery/time-main.png) no-repeat top right;
+    }
+    .schedule__item {
+        width: 35%;
+        padding-left: 0;
+    }
+    .schedule__item:nth-child(even) {
+        padding-left: 0;
+    } 
+    .express__profit {
+        margin: 40px 0 20px;
+    }
+    .profit__desc {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+    .steps {
+        margin-top: 0;
+    }
+    .steps__inner {
+        margin-bottom: 20px;
+    }
+    .steps__list {
+        margin-bottom: 10px;
+    }
+    .steps__title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .condition {
+        margin: 0 0 20px;
+    }
+    .section--mob-white {
+        background-color: transparent;
+    }
+    .total_cost__text {
+        font-size: 18px;
+    }
+    .total_cost__value {
+        font-size: 30px;
+    }
+    .del-order__form {
+        margin: 0 0 20px 0;
+    }
+    .del-order__form .express__title {
+        margin-bottom: 25px;
+    }
+    .table-cond {
+        margin: 0;
+    }
+    .condition__table {
+        padding-bottom: 10px;
+        margin: 10px 0 20px 0;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .condition__table::-webkit-scrollbar { width: 3px; height: 3px;}
+    .condition__table::-webkit-scrollbar-button { height: 0; width: 100%;}
+    .condition__table::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+    .condition__table::-webkit-scrollbar-track-piece { background-color: #DADADA;
+    }
+    .del-order__btn-group {
+        min-width: 155px;
+    }
+    .del-order__btn-group .del-order__btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .del-order__btn-group .main-btn {
+        min-width: auto;
+        width: 100%;
+    }
+    .del-order__item--mob {
+        justify-content: end;
+    }
+    #timeSendTo, #timeSend, #dateSend {
+        width: 100px;
+        margin-left: 27px;
+    }
+    #biz, #express {
+        order: -1;
+        margin-right: 15px;
+        margin-left: 0;
+    }
+    #dateSend {
+        margin-left: 12px;
+    }
+    .del-order__type-order div {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .del-order__type-order div:last-child {
+        margin-bottom: 0;
+    } 
+    .del-order__type-order {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+    .del-order__item--mob-col {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 0;
+    }
+    .add-parcel__title {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .results-parcel__name {
+        font-size: 15px;
+    }
+    .add-parcel__results-btn .delivery_edit {
+        font-size: 13px;
+    }
+    .delivery_item {
+        font-size: 15px;
+    }
+    .add-parcel__add-services label {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .add-parcel {
+        width: 835px;
+        padding: 15px;
+    }
+    .add-parcel {
+        margin: 30px 0 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .schedule {
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+        background-position: center right;
+    }
+    .schedule__item:nth-child(3) p, .schedule__item:nth-child(4) p {
+        white-space: nowrap;
+    }
+    .schedule__item p:first-child {
+        margin-top: 20px;
+    }
+    .profit__inner {
+        flex-direction: column;
+    }
+    .profit__ul {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .del-order__form {
+        width: 100%;
+    }
+    .del-order__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .del-order__item {
+        margin-bottom: 25px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .del-order__input--small, .services-form__item--small {
+        max-width: 387px;
+        width: 100%;
+    }
+    .add-parcel {
+        width: 100%;
+    }
+    .add-parcel__form {
+        width: 100%;
+    }
+    .del-order__line--short .del-order__item:last-child {
+        margin-left: 0;
+    }
+    .del-order__line--short .del-order__item label {
+        width: 100px;
+        order: 1;
+        margin-left: 15px;
+    }
+    .type-payment__item input {
+        margin-left: 0;
+    }
+    .del-order__item--large {
+        max-width: 387px;
+    }
+    .add-parcel__delete {
+        top: 15px;
+        right: 15px;
+    }
+    hr {
+        max-width: 387px;
+    }
+    .schedule__item {
+        height: 133px;
+    }
+    #timeSendTo, #timeSend, #dateSend {
+        margin-left: 25px;
+    }
+    .add-parcel__receive-date label {
+        margin-left: 0 !important;
+    }
+}
+
+
+
+@media (max-width: 660px) {
+    .express__scheme {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 40px;
+    }
+    .express__scheme ul {
+        margin: 0 0 20px;
+    }
+    .total_cost {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 610px) {
+    .schedule {
+        background-size: 225px;
+    }
+    .steps__item {
+        height: 280px;
+    }
+    .steps__inner .main-btn {
+        margin: 0 auto 0 0;
+    }
+}
+
+@media (max-width: 490px) {
+    .schedule {
+        background: none;
+    }
+    .schedule__item {
+        width: 100%;
+    }
+    .profit__ul {
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .table-cond thead tr th:last-child {
+        width: 140px;
+    }
+    .table-cond thead tr th:nth-child(4) {
+        width: 140px;
+    }
+    .table-cond thead tr th:nth-child(3) {
+        width: 240px;
+    }
+    .table-cond thead tr th:nth-child(2) {
+        width: 180px;
+    }
+    .table-cond thead tr th:first-child {
+        width: 140px;
+    }
+    .three_in_line {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .three_in_line>div {
+        margin-bottom: 10px;
+    }
+    .three_in_line>div:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width: 460px) {
+    .type-payment  {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .type-payment .type-payment__item:last-child {
+        margin-left: 0;
+    }
+    .type-payment .type-payment__item:first-child {
+        margin-right: 10px;
+    }
+    .express__profit {
+        margin: 40px 0 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .del-order__time-mob {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #timeSendTo, #timeSend {
+        margin: 0;
+    }
+    .del-order__footer {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .total_cost {
+        margin: 0;
+        order: -1;
+    }
+    .del-order__required-input {
+        margin-bottom: 20px;
+    }
+    .add-parcel__btn-group {
+        flex-direction: column;
+    }
+    .add-parcel__btn-group .main-btn:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .mob-kill-koma {
+        display: none;
+    }
+    .time-mob__item {
+        margin-top: 25px;
+    }
+    .time-mob__item label {
+        margin-right: 17px;
+    }
+    .time-mob__item:first-child {
+        margin-right: 17px;
+    }
+    .add-parcel__results-btn {
+        right: 0;
+    }
+    .del-order__parcel-btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 370px) {
+    .type-payment .type-payment__item:first-child {
+        margin-bottom: 25px;
+    }
+    .type-payment {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .profit__ul::before {
+        font-size: 167px;
+    }
+    .add-parcel__cost {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .add-parcel__cost label {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width: 330px) {
+    .time-mob__item label {
+        margin-right: 5px;
+    }
 }
