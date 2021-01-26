@@ -300,7 +300,7 @@
 
 @media (max-width: 900px) {
     .finance-step__slider {
-        /* flex-direction: column; */
+        flex-direction: column;
         min-width: 0;
         min-height: 0;
     }
