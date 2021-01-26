@@ -30,8 +30,7 @@
 }
 
 .desc-service {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px 0 40px;
 }
 
 .desc-service p {
@@ -58,10 +57,12 @@
 }
 
 /* Таблица складов */
+.storage-table__wrap {
+    margin: 30px 0 100px;
+}
+
 .storage-table {
     border-collapse: collapse;
-    margin-top: 30px;
-    margin-bottom: 100px;
     border-top: 1px solid #999999;
     border-bottom: 1px solid #999999;
 }
@@ -74,8 +75,8 @@
     overflow-y: scroll;
 }
 
-.storage-table tbody::-webkit-scrollbar { width: 3px; height: 3px;}
-.storage-table tbody::-webkit-scrollbar-button { height: 0; }
+.storage-table tbody::-webkit-scrollbar {width: 3px; height: 3px;}
+.storage-table tbody::-webkit-scrollbar-button {height: 0;}
 .storage-table tbody::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
 .storage-table tbody::-webkit-scrollbar-track-piece { background-color: #DADADA;}
 
@@ -231,6 +232,13 @@
 }
 
 /* Title */
+.acc-questions__title-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 .acc-questions__title {
     padding-left: 30px;
     font-weight: 600;
@@ -245,6 +253,9 @@
 
 .acc-questions__info p {
     padding-bottom: 18px;
+}
+.acc-questions__info p:last-child {
+    padding-bottom: 0;
 }
 
 .acc-questions__info p a {
@@ -278,8 +289,8 @@
     }
     .finance__main-title {
         font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 18px;
+        line-height: 20px;
     }
     .how-work__step {
         display: block;
@@ -294,6 +305,48 @@
     .how-work {
         margin: 10px 0 20px;
     }
+    .acc-questions summary {
+        height: 50px;
+        margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .acc-questions__title {
+        padding-left: 10px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        max-width: 75%;
+    }
+    .acc-questions summary:after {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 10px;
+    }
+    .acc-questions details[open] summary:after {
+        background-size: 10px;
+    }
+    .acc-questions__info {
+        width: 800px;
+    }
+    .finance-btn {
+        margin: 20px 0 40px 0;
+    }
+    .desc-service {
+        margin: 10px 0 20px;
+    }
+    .storage-table__wrap {
+        margin: 10px 0 40px;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .storage-table__wrap::-webkit-scrollbar { width: 3px; height: 3px;}
+    .storage-table__wrap::-webkit-scrollbar-button { height: 0; width: 100%;}
+    .storage-table__wrap::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+    .storage-table__wrap::-webkit-scrollbar-track-piece { background-color: #DADADA;
+    }
 }
 
 
@@ -306,6 +359,9 @@
     }
     .how-work__img {
         margin: 0 auto;
+    }
+    .acc-questions__info {
+        width: 100%;
     }
 }
 

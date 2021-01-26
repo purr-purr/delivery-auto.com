@@ -197,6 +197,3 @@ $(document).ready(function(){
         ]
     });
 });
-
-
-$('.finance-step__slider').slick('unslick').slick('reinit').slick();
