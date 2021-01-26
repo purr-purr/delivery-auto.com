@@ -143,7 +143,6 @@ $('#time18').hover(
 // сейчас используется на нескольких страница, и в будущем думаю понадобится
 
 function MakeArrayOfAllPrefixes(str){
-    //console.log("MakeArrayOfAllPrefixes("+str+")");
     var prefixes = [];
     for (var i=1; i<=str.length; i++){
         prefixes.push(str.substr(0,i));
@@ -274,4 +273,15 @@ $(window).scroll(function(){
             } else {
                 $('.scrollup').fadeOut();
             }
+});
+
+
+
+// Страница Финансовые услуги. На адаптиве скрывает инфу в табы
+jQuery(document).ready(function ($) {
+    var windowSize = $(window).width();
+        if (windowSize > 1024) {
+            $(".finance__block").attr("open", "open");
+            $(".finance-step__slider").slick("refresh"); 
+        }
 });

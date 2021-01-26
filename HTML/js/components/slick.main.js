@@ -166,5 +166,37 @@ $(document).ready(function(){
             }
         ]
     });
+    $('.finance-step__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1,
+        mobileFirst: true, 
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 560,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: "unslick"
+            }
+        ]
+    });
 });
 
+
+$('.finance-step__slider').slick('unslick').slick('reinit').slick();

@@ -8,9 +8,15 @@
 }
 /* =================================== */
 
-.finance__banner {
+.finance__heading {
     width: 100%;
-    height: 250px;
+    max-height: 250px;
+}
+
+.finance__banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .intro-block {
@@ -113,7 +119,7 @@
     content: " ";
     position: absolute;
     top: 24%;
-    right: -48px;
+    right: -24%;
     width: 50px;
     height: 47px;
 }
@@ -134,11 +140,26 @@
     background: url("../img/system/delivery-group__logos/kvorum--arrow.png") no-repeat center center;
 }
 
-.how-work__item img {
-    margin: 0 21px;
+.how-work__img {
+    max-width: 150px;
+    width: 100%;
+    margin: 0 20px;
 }
 
-.how-work__item p {
+.how-work__img img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.how-work__step {
+    display: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.how-work__info {
     font-weight: bold;
     margin-top: 20px;
 }
@@ -153,7 +174,6 @@
 /* Аккардион */
 .acc-questions {
 	max-width: 730px;
-    min-width: 630px;
     margin-top: 25px;
 }
 
@@ -235,3 +255,58 @@
     color: #3072C4;
     text-decoration: underline;
 }
+
+@media (max-width: 1100px) {
+    .acc-questions__info {
+        width: 900px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .finance__block {
+        margin-bottom: 10px;
+        
+    }
+    .finance__block summary {
+        cursor: pointer;
+    }
+    .mobile-page__description {
+        margin-bottom: 10px;
+    }
+    .intro-block p {
+        line-height: 20px;
+    }
+    .finance__main-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .how-work__step {
+        display: block;
+    }
+    .how-work__info {
+        font-weight: normal;
+        margin-top: 10px;
+    }
+    .how-work__item::after {
+        display: none;
+    }
+    .how-work {
+        margin: 10px 0 20px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .finance-step__slider {
+        /* flex-direction: column; */
+        min-width: 0;
+        min-height: 0;
+    }
+    .how-work__img {
+        margin: 0 auto;
+    }
+}
+
+
