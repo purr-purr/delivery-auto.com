@@ -172,7 +172,6 @@
     margin: 30px 0 45px 0;
 }
 
-
 /* Ответы на вопросы */
 
 /* Аккардион */
@@ -258,6 +257,7 @@
 .acc-questions__info p {
     padding-bottom: 18px;
 }
+
 .acc-questions__info p:last-child {
     padding-bottom: 0;
 }
@@ -379,5 +379,3 @@
         width: 250px;
     }
 }
-
-

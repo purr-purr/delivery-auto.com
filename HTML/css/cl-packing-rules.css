@@ -14,7 +14,7 @@
     margin-bottom: 100px;
 }
 
-.rules-intro h2 {
+.rules-intro__title {
     margin-bottom: 20px;
 }
 
@@ -26,20 +26,14 @@
     margin-top: 30px;
 }
 
-.rules-intro img {
+.rules-intro__img img {
     width: 492px;
     height: 357px;
-    margin-top: 10px;
-    margin-left: 30px;
 }
-
-
-/* Ответы на вопросы */
 
 /* Аккардион */
 .acc-rules {
 	max-width: 730px;
-    min-width: 630px;
     margin-top: 25px;
     margin-bottom: 80px;
 }
@@ -62,8 +56,6 @@
 }
 
 .acc-rules summary {
-	display: flex;
-	align-items: center;
 	width: 100%;
 	height: 72px;
 	position: relative;
@@ -79,7 +71,14 @@
     outline: 0;
 }
 
-.acc-rules summary:after {
+.acc-rules__title-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.acc-rules__title-wrap:after {
 	content: " ";
 	position: absolute;
 	right: 20px;
@@ -91,7 +90,7 @@
     transition: 200ms linear;
 }
 
-.acc-rules details[open] summary:after {
+.acc-rules details[open] .acc-rules__title-wrap:after {
     transform: rotate(90deg);
 	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
     transition: transform 0.5s linear;
@@ -118,7 +117,7 @@
 .acc-rules__cargo-col {
     display: flex;
     align-items: flex-start;
-    width: 505px;
+    width: 50%;
 }
 
 .acc-rules__cargo-col img {
@@ -149,21 +148,25 @@
 .advance-v__inner {
     display: flex;
     align-items: flex-end;
-    height: 135px;
+    flex-wrap: wrap;
+    height: auto;
     width: 100%;
     background-color: #ffd500;
+    padding: 30px 15px 30px;
+}
+
+.cargo_filter__group {
+    display: flex;
 }
 
 .cargo_filter {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    padding-bottom: 30px;
+    margin: 0 15px;
 }
 
 .cargo_filter:last-child {
-    justify-content: flex-start;
-    padding-bottom: 25px;
+    width: 253px;
 }
 
 .cargo_filter select {
@@ -179,9 +182,14 @@
     margin-bottom: 15px;
 }
 
+.cargo_filter--btn {
+    align-self: flex-end;
+    padding-top: 20px;
+}
+
 .search-btn {
-    margin-left: 60px;
-    background: #575757;
+    margin-left: auto;
+    background-color: #333;
     color: #fff;
 }
 
@@ -191,8 +199,15 @@
     color: #333;
 }
 
+.advance-v__wrap {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
 
-
+.advance-v__wrap::-webkit-scrollbar {width: 3px; height: 3px;}
+.advance-v__wrap::-webkit-scrollbar-button {height: 0;}
+.advance-v__wrap::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
+.advance-v__wrap::-webkit-scrollbar-track-piece { background-color: transparent;}
 
 .advance-v__table {
     border-collapse: collapse;
@@ -204,14 +219,13 @@
     align-content: center;
 }
 
-
 .advance-v__table td {
     display: flex;
     align-items: center;
     min-width: 283px;
     border-left: 1px solid #999999;
     min-height: 40px;
-    padding: 8px 0 8px 30px;
+    padding: 8px 8px 8px 30px;
 }
 
 .advance-v__table td:first-child {
@@ -233,10 +247,6 @@
     position: relative;
 }
 
-/* .advance-v__table tr td:nth-child(2) {
-    font-weight: bold;
-} */
-
 .advance-v__table tr td:first-child div {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -250,7 +260,6 @@
     border-bottom: 1px solid #999999;
 }
 
-
 .advance-v__table .table_icon div {
     color: #333;
     font-weight: 600;
@@ -260,20 +269,10 @@
     left: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
+/* Пагинация */
 .pagin {
     margin-top: 30px;
 }
-
 
 .paging_item {
     color: #3072C4 !important;
@@ -297,7 +296,6 @@
     background-color: #ffd500;
 }
 
-
 .arrow_right {
     padding: 6px 18px;
 }
@@ -308,4 +306,124 @@
 
 .arrow_left {
     display: none;
+}
+
+@media (max-width: 1180px) {
+    .search-btn {
+        margin-left: 0;
+    }
+    .advance-v__inner {
+        flex-direction: column;
+        align-content: baseline;
+    }
+    .cargo_filter__group {
+        flex-wrap: wrap;
+    }
+    .cargo_filter__group:first-child .cargo_filter {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .rules-intro__img {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .rules__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .rules-intro__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        margin: 20px 0 10px;
+    }
+    .rules-intro {
+        margin-bottom: 30px;
+    }
+    .acc-rules {
+        margin: 10px 0 40px;
+    }
+    .acc-rules summary {
+        height: 50px;
+    }
+    .acc-rules__title-img {
+        padding-left: 5px;
+        max-width: 50px;
+    }
+    .acc-rules__title {
+        max-width: 70%;
+        padding-left: 5px;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .acc-rules__title-wrap:after {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 11px;
+    }
+    .acc-rules details[open] .acc-rules__title-wrap:after {
+        background-size: 11px;
+    }
+    .acc-rules__info {
+        width: 825px;
+    }
+    .acc-rules__cargo-col img {
+        width: 30px;
+        height: 30px;
+    }
+    .advance-v__table .table_icon div {
+        font-size: 18px;
+    }
+    .advance-v__table td {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .advance-v__table td {
+        min-width: 235px;
+    }
+    .advance-v__table td:first-child {
+        min-width: 205px;
+    }
+}
+
+@media (max-width: 870px) {
+    .acc-rules__info {
+        width: 100%;
+        flex-direction: column;
+    }
+    .acc-rules__cargo-col {
+        width: 100%;
+    }
+    .acc-rules__cargo-col:first-child {
+        margin-bottom: 30px;
+    }
+    .acc-rules__list li {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .cargo_filter select {
+        width: 100%;
+    }
+    .cargo_filter {
+        width: 100%;
+        margin: 0;
+    }
+    .cargo_filter:last-child {
+        width: 100%;
+    }
+    .cargo_filter__group {
+        width: 100%;
+    }
 }
