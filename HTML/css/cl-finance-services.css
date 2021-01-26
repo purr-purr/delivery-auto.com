@@ -59,6 +59,8 @@
 /* Таблица складов */
 .storage-table__wrap {
     margin: 30px 0 100px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .storage-table {
@@ -70,7 +72,6 @@
 .storage-table tbody {
     display: block;
     height: 360px;
-    width: max-content;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -78,22 +79,24 @@
 .storage-table tbody::-webkit-scrollbar {width: 3px; height: 3px;}
 .storage-table tbody::-webkit-scrollbar-button {height: 0;}
 .storage-table tbody::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
-.storage-table tbody::-webkit-scrollbar-track-piece { background-color: #DADADA;}
+.storage-table tbody::-webkit-scrollbar-track-piece { background-color: transparent;}
 
 .storage-table tr {
-    display: block;
-    width: 940px;
+    display: flex;
+    flex-wrap: nowrap;
 }
+
 .storage-table tr:nth-child(odd) {
     background-color: #F8F8F8;
 }
 
 .storage-table td {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    width: 33%;
-    height: 40px;
-    padding-left: 30px;
+    width: 312px;
+    min-height: 40px;
+    height: auto;
+    padding: 8px 8px 8px 30px;
 }
 
 .storage-table td:nth-child(2) {
@@ -277,7 +280,6 @@
 @media (max-width: 1024px) {
     .finance__block {
         margin-bottom: 10px;
-        
     }
     .finance__block summary {
         cursor: pointer;
@@ -305,6 +307,9 @@
     }
     .how-work {
         margin: 10px 0 20px;
+    }
+    .acc-questions {
+        margin-top: 10px;
     }
     .acc-questions summary {
         height: 50px;
@@ -340,17 +345,17 @@
     }
     .storage-table__wrap {
         margin: 10px 0 40px;
-        overflow-x: scroll;
-        -webkit-overflow-scrolling: touch;
     }
     .storage-table__wrap::-webkit-scrollbar { width: 3px; height: 3px;}
     .storage-table__wrap::-webkit-scrollbar-button { height: 0; width: 100%;}
     .storage-table__wrap::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
-    .storage-table__wrap::-webkit-scrollbar-track-piece { background-color: #DADADA;
+    .storage-table__wrap::-webkit-scrollbar-track-piece { background-color: transparent;
+    }
+    .storage-table td {
+        padding-left: 10px;
+        width: 280px;
     }
 }
-
-
 
 @media (max-width: 900px) {
     .finance-step__slider {
@@ -363,6 +368,15 @@
     }
     .acc-questions__info {
         width: 100%;
+    }
+    .storage-table {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .storage-table td {
+        width: 250px;
     }
 }
 
