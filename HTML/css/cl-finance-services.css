@@ -213,7 +213,7 @@
     outline: 0;
 }
 
-.acc-questions summary:after {
+.acc-questions__title-wrap:after {
 	content: " ";
 	position: absolute;
 	right: 20px;
@@ -225,7 +225,7 @@
     transition: 200ms linear;
 }
 
-.acc-questions details[open] summary:after {
+.acc-questions details[open] .acc-questions__title-wrap:after {
     transform: rotate(90deg);
 	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
     transition: transform 0.5s linear;
@@ -319,13 +319,13 @@
         line-height: 20px;
         max-width: 75%;
     }
-    .acc-questions summary:after {
+    .acc-questions__title-wrap:after {
         right: 10px;
         width: 30px;
         height: 30px;
         background-size: 10px;
     }
-    .acc-questions details[open] summary:after {
+    .acc-questions details[open] .acc-questions__title-wrap:after {
         background-size: 10px;
     }
     .acc-questions__info {
