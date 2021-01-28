@@ -77,9 +77,42 @@ $(document).ready(function(){
     $('.awards-slider').slick({
         autoplay: true,
         autoplaySpeed: 5000,
+        slidesToScroll: 1,
         slidesToShow: 4,
+        mobileFirst: true,
+        slidesPerRow: 1,
         rows: 2,
-        slidesToScroll: 1
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 1,
+                    rows: 1,
+                    slidesPerRow: 1
+                }
+            },
+            {
+                breakpoint: 670,
+                settings: {
+                    slidesToShow: 2,
+                    slidesPerRow: 1
+                }
+            },
+            {
+                breakpoint: 1065,
+                settings: {
+                    slidesToShow: 3,
+                    slidesPerRow: 1
+                }
+            },
+            {
+                breakpoint: 1250,
+                settings: {
+                    slidesToShow: 4,
+                    slidesPerRow: 1
+                }
+            }
+        ]
     });
     $('.intro__banner').slick({
         autoplay: true,

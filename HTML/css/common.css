@@ -1546,6 +1546,7 @@ details > summary {
 	overflow: hidden;
 	width: 100%;
 	border: none !important;
+	margin-top: -1px;
 }
 
 .main-slider__img {
@@ -1559,6 +1560,8 @@ details > summary {
 	flex-direction: column;
 	justify-content: center;
 	bottom: 0;
+	right: 20px;
+	width: 0;
 	height: 100%;
 }
 
@@ -1595,12 +1598,14 @@ details > summary {
 	.main-slider .slick-dots {
 		flex-direction: row;
 		justify-content: center;
-		margin-left: 35px;
+		margin-left: 0;
+		right: 0;
 		bottom: -30px;
 		max-height: 30px;
+		width: 100%;
 	}
 	.main-slider .slick-dots li {
-		right: 30px;
+		right: 0;
 		width: 35px;
 		height: 2px;
 		margin: 15px 0;
