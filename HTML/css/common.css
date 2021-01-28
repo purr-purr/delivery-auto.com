@@ -201,7 +201,6 @@ details > summary {
 	}
 }
 
-
 /* checkbox style */
 [type="checkbox"], [type="radio"] {
 	-webkit-appearance: checkbox;
@@ -254,7 +253,6 @@ details > summary {
     background: url("../img/system/icon/checkbox__arrow.svg") no-repeat center;
     background-size: 15px 13px;
 }
-
 
 /* SkrollUp button  */
 .scrollup {
