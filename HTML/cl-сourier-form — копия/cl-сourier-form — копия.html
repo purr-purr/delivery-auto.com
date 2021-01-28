@@ -54,8 +54,6 @@
             <section class="main__container">
                 <article class="main-content">
                     <div class="courier-page">
-                        <!-- .mobile-page__title Только для адаптива -->
-                        <h1 class="mobile-page__title">Замовити забирання і доставку</h1>
                         <!-- Блок Слайдер Баннеров -->
                         <!-- desctop -->
                         <div class="main-slider" id="main-slider--desctop">
@@ -120,30 +118,7 @@
                 </article>
             </section>
 
-            <section class="main-content section--grey" id="only-mobile">
-                <article class="main__container">
-                    <div class="mob-app-block">
-                        <div class="mob-app-block__info">
-                            <div class="mob-app-block__icon">
-                                <img src="img/system/mobile_app/mob-app__icon--transperent.png" alt="mob-app-icon">
-                            </div>
-                            <p class="mob-app-block__text">Завантажте додаток, для зручного замовлення з вашого мобільного пристрою.</p>
-                        </div>
-
-                        <div class="mob-app-block__link-group">
-                            <a class="mob-app-block__link" href="in-dev.html">
-                                <img src="img/system/mobile_app/icon__google-play.png" alt="google-play">
-                            </a>
-
-                            <a class="mob-app-block__link" href="in-dev.html">
-                                <img src="img/system/mobile_app/icon__app-store.png" alt="app-store">
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </section>
-
-            <section class="main-content section--grey section--courier-order">
+            <section class="main-content section--grey">
                 <article class="main__container">
                     <!-- delivery order -->
                     <div class="tabs__wrapper">
@@ -157,17 +132,12 @@
                             <div class="panel" id="one-panel">
                                 <form class="courier-order__form">
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <select class="CityId city_style" id="CityIdOrder" name="Item1.CityId" onblur="change_border_city('CityIdOrderName')" style="width: 0px; position: absolute; left: -5000px;">
-                                                <option>сюда нужно добавить список городов</option>
-                                            </select>
-                                            <input class="ui-autocomplete-input label-rotate__input" id="CityIdOrder_input" autocomplete="off" data-original-title="" title="Виберіть місто зі списку" placeholder="Місто забирання *">
-                                            <label for="CityIdOrder_input" class="label-rotate__label">Місто забирання *</label>
+                                        <div class="courier-order__item">
+                                            <input class="ui-autocomplete-input valid" autocomplete="off" data-original-title="" title="к Виберіть місто зі списку" placeholder="Місто забирання *">
                                         </div>
             
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-required="Поле обов'язково для заповнення" id="AddressOrder" name="Item1.AddressOrder" type="text" value="" placeholder="Адреса забору *">
-                                            <label for="AddressOrder" class="label-rotate__label">Адреса забору *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-required="Поле обов'язково для заповнення" id="AddressOrder" name="Item1.AddressOrder" type="text" value="" placeholder="Адреса забору *">
                                         </div>
                                     </div>
             
@@ -175,90 +145,77 @@
                                     <div class="courier-order__line">
                                         <div class="courier-order__item">
                                             <label for="DateOrder">Бажана дата забору *</label>
-                                            <input data-position="bottom left" id="DateOrder" name="Item1.DateOrder" onchange="change_border('DateOrder')" type="text" value="" class="datepicker-here">
+                                            <input data-position="right top" id="DateOrder" name="Item1.DateOrder" onchange="change_border('DateOrder')" type="text" value="" class="datepicker-here">
                                         </div>
             
-                                        <div class="courier-order__item time-pick">
-                                            <label for="TimeFromOrder">Орієнтований час<span class="mob-kill-koma">,</span></label>
-                                            <div class="time-pick__inner">
-                                                <div>
-                                                    <label for="TimeFromOrder">з</label>
-                                                    <select class="time_select" data-val="true" data-val-number="The field TimeFromOrder must be a number." data-val-required="Поле обов'язково для заповнення" id="TimeFromOrder" name="Item1.TimeFromOrder" title="">
-                                                        <option value="100000001" selected>10:00</option>
-                                                        <option value="100000014">10:30</option>
-                                                        <option value="100000002">11:00</option>
-                                                        <option value="100000015">11:30</option>
-                                                        <option value="100000003">12:00</option>
-                                                        <option value="100000016">12:30</option>
-                                                        <option value="100000004">13:00</option>
-                                                        <option value="100000017">13:30</option>
-                                                        <option value="100000005">14:00</option>
-                                                        <option value="100000018">14:30</option>
-                                                        <option value="100000006">15:00</option>
-                                                        <option value="100000019">15:30</option>
-                                                        <option value="100000007">16:00</option>
-                                                        <option value="100000020">16:30</option>
-                                                        <option value="100000008">17:00</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <label for="TimeToOrder">до</label>
-                                                    <select class="time_select" data-val="true" data-val-number="The field TimeToOrder must be a number." data-val-required="Поле обов'язково для заповнення" id="TimeToOrder" name="Item1.TimeToOrder" title="">
-                                                        <option value="100000001">10:00</option>
-                                                        <option value="100000014">10:30</option>
-                                                        <option value="100000002">11:00</option>
-                                                        <option value="100000015">11:30</option>
-                                                        <option value="100000003">12:00</option>
-                                                        <option value="100000016">12:30</option>
-                                                        <option value="100000004">13:00</option>
-                                                        <option value="100000017">13:30</option>
-                                                        <option value="100000005">14:00</option>
-                                                        <option value="100000018">14:30</option>
-                                                        <option value="100000006">15:00</option>
-                                                        <option value="100000019">15:30</option>
-                                                        <option value="100000007">16:00</option>
-                                                        <option value="100000020">16:30</option>
-                                                        <option value="100000008" selected>17:00</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                        <div class="courier-order__item">
+                                            <label for="TimeFromOrder">Орієнтований час, з</label>
+                                            <select class="time_select valid" data-val="true" data-val-number="The field TimeFromOrder must be a number." data-val-required="Поле обов'язково для заповнення" id="TimeFromOrder" name="Item1.TimeFromOrder" title=""><option value="100000001">10:00</option>
+                                                <option value="100000014">10:30</option>
+                                                <option value="100000002">11:00</option>
+                                                <option value="100000015">11:30</option>
+                                                <option value="100000003">12:00</option>
+                                                <option value="100000016">12:30</option>
+                                                <option value="100000004">13:00</option>
+                                                <option value="100000017">13:30</option>
+                                                <option value="100000005">14:00</option>
+                                                <option value="100000018">14:30</option>
+                                                <option value="100000006">15:00</option>
+                                                <option value="100000019">15:30</option>
+                                                <option value="100000007">16:00</option>
+                                                <option value="100000020">16:30</option>
+                                                <option value="100000008">17:00</option>
+                                            </select>
+                                            <label for="TimeToOrder">до</label>
+                                            <select class="time_select valid" data-val="true" data-val-number="The field TimeToOrder must be a number." data-val-required="Поле обов'язково для заповнення" id="TimeToOrder" name="Item1.TimeToOrder" title=""><option value="100000001">10:00</option>
+                                                <option value="100000014">10:30</option>
+                                                <option value="100000002">11:00</option>
+                                                <option value="100000015">11:30</option>
+                                                <option value="100000003">12:00</option>
+                                                <option value="100000016">12:30</option>
+                                                <option value="100000004">13:00</option>
+                                                <option value="100000017">13:30</option>
+                                                <option value="100000005">14:00</option>
+                                                <option value="100000018">14:30</option>
+                                                <option value="100000006">15:00</option>
+                                                <option value="100000019">15:30</option>
+                                                <option value="100000007">16:00</option>
+                                                <option value="100000020">16:30</option>
+                                                <option value="100000008">17:00</option>
+                                            </select>
                                         </div>
                                     </div>
 
                                     <!-- next line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-required="Поле обов'язково для заповнення" id="OrganizationNameOrder" name="Item1.OrganizationNameOrder" type="text" value="" placeholder="Організація/ ПІБ *">
-                                            <label for="OrganizationNameOrder" class="label-rotate__label">Організація/ ПІБ *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-required="Поле обов'язково для заповнення" id="OrganizationNameOrder" name="Item1.OrganizationNameOrder" type="text" value="" placeholder="Організація/ ПІБ *">
                                         </div>
         
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-regex="Поле повинно мicтити 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обов'язково для заповнення" id="ContactPersonOrder" name="Item1.ContactPersonOrder" type="tel" value="" placeholder="Номер телефону замовника *">
-                                            <label for="ContactPersonOrder" class="label-rotate__label">Номер телефону замовника *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-regex="Поле повинно мicтити 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обов'язково для заповнення" id="ContactPersonOrder" name="Item1.ContactPersonOrder" type="tel" value="" placeholder="Номер телефону замовника *">
                                         </div>
                                     </div>
 
                                     <!-- next line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-email="Некоректне значення поля" data-val-required="Поле обов'язково для заповнення" id="EmailOrder" name="Item1.EmailOrder" type="text" value="" placeholder="Електронна пошта  *">
-                                            <label for="EmailOrder" class="label-rotate__label">Електронна пошта  *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-email="Некоректне значення поля" data-val-required="Поле обов'язково для заповнення" id="EmailOrder" name="Item1.EmailOrder" type="text" value="" placeholder="Електронна пошта  *">
                                         </div>
             
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-regex="Поле повинно мicтити 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обов'язково для заповнення" id="ContactPhoneOrder" name="Item1.ContactPhoneOrder" type="text" value="" placeholder="Контактний телефон *">
-                                            <label for="ContactPhoneOrder" class="label-rotate__label">Контактний телефон *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-regex="Поле повинно мicтити 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обов'язково для заповнення" id="ContactPhoneOrder" name="Item1.ContactPhoneOrder" type="text" value="" placeholder="Контактний телефон *">
                                         </div>
                                     </div>
                                     
                                     <!-- next line -->
-                                    <div class="courier-order__line courier-order__line--my-order-2">
+                                    <div class="courier-order__line" style="align-items: center; justify-content: flex-start; margin: 30px 0">
                                         <div class="courier-order__my-order">
                                             <a href="/uk-UA/UserReceipts/PickUpJournal" target="_blank" class="main-btn main-btn--white my-order__btn">Мої заявки</a>
                                             <p>оформлені заявки на забирання вантажу</p>
                                         </div>
 
-                                        <div class="checkbox--before">
+                                        <div class="checkbox--before" style="margin-left: 32px;">
                                             <input class="day-vote" data-val="true" data-val-required="The IsAutoOrder field is required." id="AddAutoEveryday" name="Item1.IsAutoOrder" onclick="show_everyday()" type="checkbox" value="true">
                                             <label for="AddAutoEveryday">Забирання вантажу на кожен день</label>
                                             <input name="Item1.IsAutoOrder" type="hidden" value="false" id="AddAutoEveryday">
@@ -319,17 +276,14 @@
                                                 <option value="false_">Американка-1 (100 x 120)</option>
                                                 <option value="else_">Американка-2 (120 x 120)</option>
                                             </select>
-                                            <label for="itemPallet" id="itemPallet--label" class="label-rotate__select">Вид палети  *</label>
                                         </div>
     
-                                        <div class="courier-order__item courier-order__item--short label-rotate">
-                                            <input type="number" class="label-rotate__input" id="itemNum" placeholder="Кількість місць  *">
-                                            <label for="itemNum" class="label-rotate__label">Кількість місць  *</label>
+                                        <div class="courier-order__item courier-order__item--short">
+                                            <input type="number" class="add_pallet_input pallet_num_width" id="itemNum" placeholder="Кількість місць  *">
                                         </div>
     
-                                        <div class="courier-order__item courier-order__item--short label-rotate">
-                                            <input type="number" class="label-rotate__input" id="itemWeight" placeholder="Вага 1-ї палети *">
-                                            <label for="itemWeight" class="label-rotate__label">Вага 1-ї палети *</label>
+                                        <div class="courier-order__item courier-order__item--short">
+                                            <input type="number" class="add_pallet_input pallet_weight_width" id="itemWeight" placeholder="Вага 1-ї палети *">
                                         </div>
 
                                         <div class="add_pallet" data-ng-click="addRow()"></div>
@@ -338,19 +292,16 @@
                                     <!-- next line -->
                                     <!-- При выборе "Тип Вантажу: Вантаж" -->
                                     <div class="courier-order__line only-for-cargo">
-                                        <div class="courier-order__item courier-order__item--short label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-number="The field WeightCargoOrder must be a number." data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[0-9]{1,6}([.,][0-9]{1,3})?$" data-val-required="Поле обов'язково для заповнення" id="WeightCargoOrder" name="Item1.WeightCargoOrder" step="0.01" type="text" value="" placeholder="Вага, кг *">
-                                            <label for="WeightCargoOrder" class="label-rotate__label">Вага, кг *</label>
+                                        <div class="courier-order__item courier-order__item--short">
+                                            <input class="cargo_input" data-val="true" data-val-number="The field WeightCargoOrder must be a number." data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[0-9]{1,6}([.,][0-9]{1,3})?$" data-val-required="Поле обов'язково для заповнення" id="WeightCargoOrder" name="Item1.WeightCargoOrder" step="0.01" type="text" value="" placeholder="Вага, кг *">
                                         </div>
     
-                                        <div class="courier-order__item courier-order__item--short label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-number="The field VolumeCargoOrder must be a number." data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[0-9]{1,3}([.,][0-9]{1,3})?$" data-val-required="Поле обов'язково для заповнення" id="VolumeCargoOrder" name="Item1.VolumeCargoOrder" step="0.01" type="text" value="" placeholder="Об’єм, м&sup3; *">
-                                            <label for="VolumeCargoOrder" class="label-rotate__label">Об’єм, м&sup3; *</label>
+                                        <div class="courier-order__item courier-order__item--short">
+                                            <input class="cargo_input" data-val="true" data-val-number="The field VolumeCargoOrder must be a number." data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^[0-9]{1,3}([.,][0-9]{1,3})?$" data-val-required="Поле обов'язково для заповнення" id="VolumeCargoOrder" name="Item1.VolumeCargoOrder" step="0.01" type="text" value="" placeholder="Об’єм, м&sup3; *">
                                         </div>
     
-                                        <div class="courier-order__item courier-order__item--short label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-number="The field PlacesCargoOrder must be a number." data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^(\d){1,3}$" data-val-required="Поле обов'язково для заповнення" id="PlacesCargoOrder" name="Item1.PlacesCargoOrder" type="text" value="" placeholder="Кількість місць *">
-                                            <label for="PlacesCargoOrder" class="label-rotate__label">Кількість місць *</label>
+                                        <div class="courier-order__item courier-order__item--short">
+                                            <input class="cargo_input" data-val="true" data-val-number="The field PlacesCargoOrder must be a number." data-val-regex="Поле мiстить тiлько цифри" data-val-regex-pattern="^(\d){1,3}$" data-val-required="Поле обов'язково для заповнення" id="PlacesCargoOrder" name="Item1.PlacesCargoOrder" type="text" value="" placeholder="Кількість місць *">
                                         </div>
                                     </div>
 
@@ -379,9 +330,8 @@
                                     </div>
 
                                     <div class="courier-order__line add-pack__text-area">
-                                        <div class="courier-order__item courier-order__item--large label-rotate">
-                                            <textarea class="courier-order__textarea label-rotate__input" id="AddPackComment" name="Item1.AdditionalComment" placeholder="Коментарі по доупакуванню вантажу"></textarea>
-                                            <label for="AddPackComment" class="label-rotate__label">Коментарі по доупакуванню вантажу</label>
+                                        <div class="courier-order__item courier-order__item--large">
+                                            <textarea class="courier-order__textarea" id="AddPackComment" name="Item1.AdditionalComment" placeholder="Коментарі по доупакуванню вантажу"></textarea>
                                         </div>
                                     </div>
 
@@ -400,17 +350,15 @@
                                             <h3 class="add-parcel__title">Данні складу</h3>
                 
                                             <div class="courier-order__line">
-                                                <div class="courier-order__item label-rotate">
-                                                    <select id="singleSelectId" class="ng-pristine ng-valid ng-touched" ng-model="singleSelect" title="">
-                                                        <option value="0" selected="selected" style="display: none;"> </option>
+                                                <div class="courier-order__item">
+                                                    <select id="singleSelectId" class="border_style ng-pristine ng-valid valid ng-touched" ng-model="singleSelect" title="">
+                                                        <option value="0" selected="selected" style="display: none;">Склад отримання  *</option>
                                                         <option value="1c828aa6-70c8-e211-9902-00155d037919">тут будет больше городов</option>
                                                     </select>
-                                                    <label for="singleSelectId" id="singleSelectId--label" class="label-rotate__select">Склад отримання  *</label>
                                                 </div>
                 
-                                                <div class="courier-order__item label-rotate">
-                                                    <input type="text" id="username-warehouse" ng-model="username" placeholder="Клієнт одержувач  *" class="label-rotate__input ng-pristine ng-valid ng-touched">
-                                                    <label for="username-warehouse" class="label-rotate__label">Клієнт одержувач  *</label>
+                                                <div class="courier-order__item">
+                                                    <input style="margin-left: 10px; height: 37px;" type="text" ng-model="username" placeholder="Клієнт одержувач  *" class="ng-pristine ng-valid ng-touched">
                                                 </div>
                                             </div>
 
@@ -439,9 +387,8 @@
                                             </div>
 
                                             <div class="courier-order__line payer-3dr__form">
-                                                <div class="courier-order__item label-rotate">
-                                                    <input type="text" id="payer_txt" ng-model="payer" placeholder="3-тя особа" class="label-rotate__input ng-pristine ng-valid ng-touched">
-                                                    <label for="payer_txt" class="label-rotate__label">3-тя особа</label>
+                                                <div class="courier-order__item">
+                                                    <input type="text" id="payer_txt" ng-model="payer" placeholder="3-тя особа" class="ng-pristine ng-valid ng-touched">
                                                 </div>
                                             </div>
 
@@ -501,19 +448,16 @@
 
                                             <!-- next-line -->
                                             <div class="courier-order__line">
-                                                <div class="courier-order__item courier-order__item--short label-rotate">
-                                                    <input type="number" class="label-rotate__input ng-pristine ng-valid ng-touched" id="weights-warehouse" ng-model="weights" placeholder="Вага, кг  *">
-                                                    <label for="weights-warehouse" class="label-rotate__label">Вага, кг  *</label>
+                                                <div class="courier-order__item courier-order__item--short">
+                                                    <input type="number" class="ng-pristine ng-valid ng-touched" ng-model="weights" placeholder="Вага, кг  *">
                                                 </div>
             
-                                                <div class="courier-order__item courier-order__item--short label-rotate">
-                                                    <input type="number" class="label-rotate__input ng-pristine ng-valid ng-touched" id="volumes-warehouse" ng-model="volumes" placeholder="Об’єм, м&sup3; *">
-                                                    <label for="volumes-warehouse" class="label-rotate__label">Об’єм, м&sup3; *</label>
+                                                <div class="courier-order__item courier-order__item--short">
+                                                    <input type="number" class="ng-pristine ng-valid ng-touched" ng-model="volumes" placeholder="Об’єм, м&sup3; *">
                                                 </div>
             
-                                                <div class="courier-order__item courier-order__item--short label-rotate">
-                                                    <input type="number" class="label-rotate__input ng-pristine ng-valid ng-touched" id="places-warehouse" ng-model="places" placeholder="Кількість місць *">
-                                                    <label for="places-warehouse" class="label-rotate__label">Кількість місць *</label>
+                                                <div class="courier-order__item courier-order__item--short">
+                                                    <input type="number" class="ng-pristine ng-valid ng-touched" ng-model="places" placeholder="Кількість місць *">
                                                 </div>
                                             </div>
 
@@ -525,7 +469,7 @@
                                                         <label for="delivery">Доставка</label>
                                                     </div>
                     
-                                                    <div class="checkbox--before hydro-item">
+                                                    <div class="checkbox--before" style="margin-left: 177px;">
                                                         <input id="hydro" type="checkbox" ng-model="hydro" class="ng-pristine ng-untouched ng-valid">
                                                         <label for="hydro">Гідроборт</label>
                                                     </div>
@@ -534,14 +478,12 @@
 
                                             <!-- next-line -->
                                             <div class="courier-order__line">
-                                                <div class="courier-order__item label-rotate">
-                                                    <input type="text" id="address-deliv-warehouse" ng-model="address" class="label-rotate__input ng-pristine ng-valid ng-touched" placeholder="Адреса доставки">
-                                                    <label for="address-deliv-warehouse" class="label-rotate__label">Адреса доставки</label>
+                                                <div class="courier-order__item">
+                                                    <input type="text" ng-model="address" class="address_cost_line_width ng-pristine ng-valid ng-touched" placeholder="Адреса доставки">
                                                 </div>
 
-                                                <div class="courier-order__item label-rotate">
-                                                    <input type="number" id="cost-warehouse" ng-model="cost" class="label-rotate__input ng-pristine ng-valid ng-touched" placeholder="Оціночна вартість, грн  *">
-                                                    <label for="cost-warehouse" class="label-rotate__label">Оціночна вартість, грн  *</label>
+                                                <div class="courier-order__item">
+                                                    <input type="number" ng-model="cost" class="address_cost_line_width ng-pristine ng-valid ng-touched" style="margin-left: 10px;" placeholder="Оціночна вартість, грн  *">
                                                 </div>
                                             </div>
 
@@ -555,17 +497,15 @@
 
                                             <!-- next-line -->
                                             <div class="courier-order__line">
-                                                <div class="courier-order__item courier-order__item--large label-rotate">
-                                                    <textarea class="courier-order__textarea label-rotate__input ng-pristine ng-valid ng-touched" id="additionalPackComment" type="text" ng-model="additionalPackComment" placeholder="Коментарі по додатковій упаковці" style="min-height: 56px;"></textarea>
-                                                    <label for="additionalPackComment" class="label-rotate__label textarea-large">Коментарі по додатковій упаковці</label>
+                                                <div class="courier-order__item courier-order__item--large">
+                                                    <textarea class="courier-order__textarea ng-pristine ng-valid ng-touched" type="text" ng-model="additionalPackComment" placeholder="Коментарі по додатковій упаковці" style="min-height: 56px;"></textarea>
                                                 </div>
                                             </div>
 
                                             <!-- next-line -->
                                             <div class="courier-order__line">
-                                                <div class="courier-order__item courier-order__item--large label-rotate">
-                                                    <textarea class="courier-order__textarea label-rotate__input ng-pristine ng-valid ng-touched" id="ContactTel-receipts" type="text" ng-model="comment" placeholder="Контактний телефон та коментар по квитанції  *" style="min-height: 56px;"></textarea>
-                                                    <label for="ContactTel-receipts" class="label-rotate__label textarea-large">Контактний телефон та коментар *</label>
+                                                <div class="courier-order__item courier-order__item--large">
+                                                    <textarea class="courier-order__textarea ng-pristine ng-valid ng-touched" type="text" ng-model="comment" placeholder="Контактний телефон та коментар по квитанції  *" style="min-height: 56px;"></textarea>
                                                 </div>
                                             </div>
                                             
@@ -602,8 +542,7 @@
                                                     <label for="deliv"> </label>
                                                 </div>
                                                 <div class="width_note_table ng-binding">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius maxime distinctio veniam velit iusto doloremque delectus tenetur, quia cupiditate recusandae amet repellendus, nisi ex illum ea ipsa. Mollitia, necessitatibus suscipit?</div>
-                                                    <div class="edit_row"><p>редагувати</p></div>
-                                                    <div class="delete_row" data-ng-click="removeRow(itemIndex)"></div>
+                                                <div class="delete_row" data-ng-click="removeRow(itemIndex)"></div>
                                             </div>
                                         </div>
                                         <hr>
@@ -616,9 +555,8 @@
                                     </div>
 
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item courier-order__item--large label-rotate">
-                                            <textarea class="courier-order__textarea label-rotate__input" id="CommentOrder" name="Item1.CommentOrder" placeholder="Коментарі по відправці"></textarea>
-                                            <label for="CommentOrder" class="label-rotate__label">Коментарі по відправці</label>
+                                        <div class="courier-order__item courier-order__item--large">
+                                            <textarea class="courier-order__textarea" id="CommentOrder" name="Item1.CommentOrder" placeholder="Коментарі по відправці"></textarea>
                                         </div>
                                     </div>
 
@@ -641,46 +579,39 @@
                                     </div>
                                 </form>
                             </div>
-                            <!--   --> 
                             <!-- 2й ТАБ --> 
-                            <!--   --> 
                             <div class="panel" id="two-panel">
                                 <form class="courier-order__form">
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <!-- id="dddd" из старой версии этой страницы, Label привязан к нему сейчас, если менять id то и for у label -->
-                                            <input style="width: 283px;" type="number" id="dddd" class="label-rotate__input ng-pristine ng-valid ng-valid-minlength ng-valid-maxlength ng-touched" title="Поле должно содержать 10 цифр" ng-model="item.receiptNumber" data-val="true" data-val-required="Поле обязательно для заполнения" maxlength="10" minlength="10" placeholder="№ квитанції  *">
-                                            <label for="dddd" class="label-rotate__label">№ квитанції  *</label>
+                                        <div class="courier-order__item">
+                                            <input style="width: 283px;" type="number" id="dddd" class="ng-pristine ng-valid ng-valid-minlength ng-valid-maxlength ng-touched" title="Поле должно содержать 10 цифр" ng-model="item.receiptNumber" data-val="true" data-val-required="Поле обязательно для заполнения" maxlength="10" minlength="10" placeholder="№ квитанції  *">
                                             <button class="find-btn" ng-click="get_receipt(itemIndex);"><img src="img/system/icon/search-btn--black.svg" alt="search"></button>
                                         </div>
 
-                                        <div class="courier-order__item label-rotate">
+                                        <div class="courier-order__item">
                                             <select class="ng-pristine ng-valid valid ng-touched" id="WarehouseSelectValue" ng-model="item.receiptWarehouse" title="">
-                                                <option value="-1" selected style="display: none;"></option>
+                                                <option value="-1" selected style="display: none;">Склад прибуття  *</option>
                                                 <option>тут будет весь список городов</option>
                                             </select>
-                                            <label for="WarehouseSelectValue" id="WarehouseSelectValue--label" class="label-rotate__select">Склад прибуття  *</label>
                                         </div>
                                     </div>
 
                                     <!-- next line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <input id="receiptState" type="text" class="label-rotate__input ng-pristine ng-valid ng-touched" ng-model="item.receiptState" placeholder="Статус вантажу">
-                                            <label for="receiptState" class="label-rotate__label">Статус вантажу</label>
+                                        <div class="courier-order__item">
+                                            <input type="text" class="ng-pristine ng-valid ng-touched" ng-model="item.receiptState" placeholder="Статус вантажу">
                                         </div>
 
-                                        <div class="courier-order__item label-rotate">
-                                            <input id="receiptDate" type="text" class="label-rotate__input ng-pristine ng-valid ng-touched" ng-model="item.receiptDate" placeholder="Дата отримання">
-                                            <label for="receiptDate" class="label-rotate__label">Дата отримання</label>
+                                        <div class="courier-order__item">
+                                            <input type="text" class="ng-pristine ng-valid ng-touched" ng-model="item.receiptDate" placeholder="Дата отримання">
                                         </div>
                                     </div>
 
                                     <!-- next line -->
-                                    <div class="courier-order__line courier-order__line--my-order">
+                                    <div class="courier-order__line" style="align-items: center; margin: 30px 0px;">
                                         <div class="courier-order__my-order">
                                             <button ng-click="addReceipt()" class="main-btn main-btn--white add-receipt__btn"><span>+</span> Додати квитанцію</button>
-                                            <p style="max-width: 305px;">Додайте квитанцію, щоб створити збірну доставку на одну адресу
+                                            <p style="max-width: 100%;">Додайте квитанцію, щоб створити збірну доставку <br> на одну адресу
                                                 <img class="courier-order__info-btn popup-courier-info_open" src="img/system/icon/question-circle__icon.svg" alt="icon">
                                             </p>
                                         </div>
@@ -688,7 +619,7 @@
 
                                     <!-- next line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
+                                        <div class="courier-order__item">
                                             <select class="CityId city_style" id="CityIdDelivery" name="Item2.CityId" onchange="change_border_city('CityIdDeliveryName')" style="width: 0px; position: absolute; left: -5000px;">
                                                 <option value="-1" selected style="display: none;">Населений пункт  *</option>
                                                 <option value="10177915-d52a-e311-8b0d-00155d037960">тут будет больше городов</option>
@@ -696,15 +627,13 @@
 
                                             <span class="custom-combobox">
                                                 <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                                                <input id="CityIdDelivery--input" class="label-rotate__input ui-autocomplete-input" autocomplete="off" data-original-title="" title="" placeholder="Населений пункт  *">
-                                                <label for="CityIdDelivery--input" class="label-rotate__label">Населений пункт  *</label>
+                                                <input class="ui-autocomplete-input" autocomplete="off" data-original-title="" title="" placeholder="Населений пункт  *">
                                             </span>
                                         </span>
                                         </div>
 
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-required="Поле обязательно для заполнения" id="AddressOrder" name="Item2.AddressOrder" type="text" value="" placeholder="Адреса доставки *">
-                                            <label for="AddressOrder" class="label-rotate__label">Адреса доставки *</label>
+                                        <div class="courier-order__item">
+                                            <input class="ao" data-val="true" data-val-required="Поле обязательно для заполнения" id="AddressOrder" name="Item2.AddressOrder" type="text" value="" placeholder="Адреса доставки *">
                                         </div>
                                     </div>
 
@@ -712,78 +641,66 @@
                                     <div class="courier-order__line">
                                         <div class="courier-order__item">
                                             <label for="DateOrderDeliv">Бажана дата доставки *</label>
-                                            <input data-position="bottom left" class="date_input datepicker-here" id="DateOrderDeliv" name="Item2.DateOrder" onchange="change_border('DateOrderDeliv')" type="text" value="">
-                                        </div>
-
-                                        <div class="courier-order__item time-pick">
-                                            <label for="TimeFromOrder">Орієнтований час<span class="mob-kill-koma">,</span></label>
-                                            <div class="time-pick__inner">
-                                                <div>
-                                                    <label for="TimeFromOrder">з</label>
-                                                    <select data-val="true" data-val-number="The field TimeFromOrder must be a number." data-val-required="Поле обязательно для заполнения" id="TimeFromOrder" name="Item2.TimeFromOrder" title="">
-                                                        <option value="100000001" selected>10:00</option>
-                                                        <option value="100000014">10:30</option>
-                                                        <option value="100000002">11:00</option>
-                                                        <option value="100000015">11:30</option>
-                                                        <option value="100000003">12:00</option>
-                                                        <option value="100000016">12:30</option>
-                                                        <option value="100000004">13:00</option>
-                                                        <option value="100000017">13:30</option>
-                                                        <option value="100000005">14:00</option>
-                                                        <option value="100000018">14:30</option>
-                                                        <option value="100000006">15:00</option>
-                                                        <option value="100000019">15:30</option>
-                                                        <option value="100000007">16:00</option>
-                                                        <option value="100000020">16:30</option>
-                                                        <option value="100000008">17:00</option>
-                                                    </select>
-                                                </div>
-
-                                                <div>
-                                                    <label for="TimeToOrder">до</label>
-                                                    <select data-val="true" data-val-number="The field TimeToOrder must be a number." data-val-required="Поле обязательно для заполнения" id="TimeToOrder" name="Item2.TimeToOrder" title="">
-                                                        <option value="100000001">10:00</option>
-                                                        <option value="100000014">10:30</option>
-                                                        <option value="100000002">11:00</option>
-                                                        <option value="100000015">11:30</option>
-                                                        <option value="100000003">12:00</option>
-                                                        <option value="100000016">12:30</option>
-                                                        <option value="100000004">13:00</option>
-                                                        <option value="100000017">13:30</option>
-                                                        <option value="100000005">14:00</option>
-                                                        <option value="100000018">14:30</option>
-                                                        <option value="100000006">15:00</option>
-                                                        <option value="100000019">15:30</option>
-                                                        <option value="100000007">16:00</option>
-                                                        <option value="100000020">16:30</option>
-                                                        <option value="100000008" selected>17:00</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- next line -->
-                                    <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-required="Поле обязательно для заполнения" id="OrganizationNameDelivery" name="Item2.OrganizationNameOrder" type="text" value="" placeholder="Організація/ ПІБ  *">
-                                            <label for="OrganizationNameDelivery" class="label-rotate__label">Організація/ ПІБ  *</label>
+                                            <input data-position="right top" class="date_input datepicker-here" id="DateOrderDeliv" name="Item2.DateOrder" onchange="change_border('DateOrderDeliv')" type="text" value="">
                                         </div>
 
                                         <div class="courier-order__item">
-                                            <div class="type-payment--small type-payment--mobile">
-                                                <div class="courier-order__item">
-                                                    <p class="type-payment__title">Вид оплати:  *</p>
+                                            <label for="TimeFromOrder">Орієнтований час, з</label>
+                                            <select class="valid" data-val="true" data-val-number="The field TimeFromOrder must be a number." data-val-required="Поле обязательно для заполнения" id="TimeFromOrder" name="Item2.TimeFromOrder" title="">
+                                                <option value="100000001" selected>10:00</option>
+                                                <option value="100000014">10:30</option>
+                                                <option value="100000002">11:00</option>
+                                                <option value="100000015">11:30</option>
+                                                <option value="100000003">12:00</option>
+                                                <option value="100000016">12:30</option>
+                                                <option value="100000004">13:00</option>
+                                                <option value="100000017">13:30</option>
+                                                <option value="100000005">14:00</option>
+                                                <option value="100000018">14:30</option>
+                                                <option value="100000006">15:00</option>
+                                                <option value="100000019">15:30</option>
+                                                <option value="100000007">16:00</option>
+                                                <option value="100000020">16:30</option>
+                                                <option value="100000008">17:00</option>
+                                                </select>
+                                            <label for="TimeToOrder">до</label>
+                                            <select class="time_select valid" data-val="true" data-val-number="The field TimeToOrder must be a number." data-val-required="Поле обязательно для заполнения" id="TimeToOrder" name="Item2.TimeToOrder" title="">
+                                                <option value="100000001">10:00</option>
+                                                <option value="100000014">10:30</option>
+                                                <option value="100000002">11:00</option>
+                                                <option value="100000015">11:30</option>
+                                                <option value="100000003">12:00</option>
+                                                <option value="100000016">12:30</option>
+                                                <option value="100000004">13:00</option>
+                                                <option value="100000017">13:30</option>
+                                                <option value="100000005">14:00</option>
+                                                <option value="100000018">14:30</option>
+                                                <option value="100000006">15:00</option>
+                                                <option value="100000019">15:30</option>
+                                                <option value="100000007">16:00</option>
+                                                <option value="100000020">16:30</option>
+                                                <option value="100000008" selected>17:00</option>
+                                                </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- next line -->
+                                    <div class="courier-order__line">
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-required="Поле обязательно для заполнения" id="OrganizationNameDelivery" name="Item2.OrganizationNameOrder" type="text" value="" placeholder="Організація/ ПІБ  *">
+                                        </div>
+
+                                        <div class="courier-order__item">
+                                            <div class="type-payment--small">
+                                                <p class="type-payment__title">Вид оплати:  *</p>
+                                                <div>
+                                                    <input id="PayTypeOrder--cash" name="PayTypeOrder" required="required" type="radio" value="1">
+                                                    <label for="PayTypeOrder--cash">Готівковий</label>
                                                 </div>
-                                                <div class="courier-order__item type-payment">
-                                                    <div class="type-payment__item">
-                                                        <input id="PayTypeOrder--cash" name="PayTypeOrder" required="required" type="radio" value="1">
-                                                        <label for="PayTypeOrder--cash">Готівковий</label>
-                                                    </div>
-                                                    
-                                                    <div class="type-payment__item type-payment__clearfix">
-                                                        <input id="PayTypeOrder--cashless" name="PayTypeOrder" required="required" type="radio" value="0">
-                                                        <label for="PayTypeOrder--cashless">Безготівковий</label>
-                                                    </div>
+                                                
+                                                <div>
+                                                    <input id="PayTypeOrder--cashless" name="PayTypeOrder" required="required" type="radio" value="0">
+                                                    <label for="PayTypeOrder--cashless">Безготівковий</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -791,28 +708,25 @@
 
                                     <!-- next line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <input data-val="true" data-val-email="Некорректное значение поля" data-val-required="Поле обязательно для заполнения" id="EmailOrder" name="Item2.EmailOrder" type="email" value="" class="label-rotate__input input-validation-error" placeholder="Електронна пошта  *">
-                                            <label for="EmailOrder" class="label-rotate__label">Електронна пошта  *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-email="Некорректное значение поля" data-val-required="Поле обязательно для заполнения" id="EmailOrder" name="Item2.EmailOrder" type="email" value="" class="input-validation-error" placeholder="Електронна пошта  *">
                                         </div>
 
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-regex="Поле должно содержать 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обязательно для заполнения" id="ContactPersonDelivery" name="Item2.ContactPersonOrder" type="text" value="" placeholder="Номер телефону замовника *">
-                                            <label for="ContactPersonDelivery" class="label-rotate__label">Номер телефону замовника *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-regex="Поле должно содержать 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обязательно для заполнения" id="ContactPersonDelivery" name="Item2.ContactPersonOrder" type="text" value="" placeholder="Номер телефону замовника *">
                                         </div>
                                     </div>
 
                                     <!-- next line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item label-rotate">
-                                            <input class="label-rotate__input" data-val="true" data-val-regex="Поле должно содержать 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обязательно для заполнения" id="ContactPhoneDelivery" name="Item2.ContactPhoneOrder" type="tel" value="" placeholder="Контактний телефон  *">
-                                            <label for="ContactPhoneDelivery" class="label-rotate__label">Контактний телефон  *</label>
+                                        <div class="courier-order__item">
+                                            <input data-val="true" data-val-regex="Поле должно содержать 10 цифр" data-val-regex-pattern="^(\d{10})$" data-val-required="Поле обязательно для заполнения" id="ContactPhoneDelivery" name="Item2.ContactPhoneOrder" type="tel" value="" placeholder="Контактний телефон  *">
                                         </div>
                                     </div>
 
                                     <!-- next-line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item">
+                                        <div class="courier-order__item" style="width: 387px;">
                                             <p>Знижка 50% на забирання вантажу при доставці</p>
                                         </div>
 
@@ -831,14 +745,14 @@
                                     
                                     <!-- next-line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item add-services">
-                                            <div class="checkbox--before add-services__first">
+                                        <div class="courier-order__item">
+                                            <div class="checkbox--before" style="width: 387px; margin-right: 30px;">
                                                 <input data-val="true" data-val-required="Требуется поле HydroOrderCheck." id="hydro_b" name="Item2.HydroOrderCheck" type="checkbox" value="true">
                                                 <label for="hydro_b">Потрібен гідроборд</label>
                                                 <input id="hydro_b" name="Item2.HydroOrderCheck" type="hidden" value="false">
                                             </div>
 
-                                            <div class="checkbox--before add-services__second">
+                                            <div class="checkbox--before" style="width: 387px;">
                                                 <input data-val="true" data-val-required="Требуется поле NeedAdditionalAutoCheck." id="need_addit_auto_deliv" name="Item2.NeedAdditionalAutoCheck" type="checkbox" value="true">
                                                 <label for="need_addit_auto_deliv">Потрібна подача окремого авто</label>
                                                 <input name="Item2.NeedAdditionalAutoCheck" type="hidden" value="false" id="need_addit_auto_deliv">
@@ -848,9 +762,8 @@
 
                                     <!-- next-line -->
                                     <div class="courier-order__line">
-                                        <div class="courier-order__item courier-order__item--large label-rotate">
-                                            <textarea class="courier-order__textarea label-rotate__input" id="CommentOrder" name="Item2.CommentOrder" placeholder="Коментарі по відправці"></textarea>
-                                            <label for="CommentOrder" class="label-rotate__label">Коментарі по відправці</label>
+                                        <div class="courier-order__item courier-order__item--large">
+                                            <textarea class="courier-order__textarea" id="CommentOrder" name="Item2.CommentOrder" placeholder="Коментарі по відправці"></textarea>
                                         </div>
                                     </div>
 
@@ -869,20 +782,11 @@
                                             </div>
                                         </div>
                                     </div>
+
                                 </form>
                             </div>
-
-<!-- Друк створених заявок -->
                             <div id="print_form_block_title" class="print_form_block_title_style" style="display: none;">Друк створених заявок</div>
                             <div id="print_form_block" style="display: none;">
-                                <div class="print_form_block_row">
-                                    <div style="margin-right: 10px; line-height: 21px;">00393553</div>
-                                    <div class="print_form_block_button" onclick="javascript:show_app_form('00393553', 0);"><img src="img/system/icon/print--grey.svg"> Друкувати</div>
-                                </div>
-                                <div class="print_form_block_row">
-                                    <div style="margin-right: 10px; line-height: 21px;">00393553</div>
-                                    <div class="print_form_block_button" onclick="javascript:show_app_form('00393553', 0);"><img src="img/system/icon/print--grey.svg"> Друкувати</div>
-                                </div>
                                 <div class="print_form_block_row">
                                     <div style="margin-right: 10px; line-height: 21px;">00393553</div>
                                     <div class="print_form_block_button" onclick="javascript:show_app_form('00393553', 0);"><img src="img/system/icon/print--grey.svg"> Друкувати</div>
@@ -899,21 +803,22 @@
                         <li class="video-guide__item">
                             <h2 class="for-dev__title video-guide__title">Як замовити забирання <br>
                                 вантажу ?</h2>
-                            <iframe src="https://www.youtube.com/embed/WFkx2Rrfv1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <iframe width="387" height="207" src="https://www.youtube.com/embed/WFkx2Rrfv1g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </li>
         
                         <li class="video-guide__item">
                             <h2 class="for-dev__title video-guide__title">Як замовити доставку <br>
                                 вантажу ?</h2>
-                            <iframe src="https://www.youtube.com/embed/wnm9s2pZR1I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <iframe width="387" height="207" src="https://www.youtube.com/embed/wnm9s2pZR1I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </li>
 
                         <li class="video-guide__item">
                             <h2 class="for-dev__title video-guide__title">Як оформити автоматичне <br>
                                 забирання вантажу?</h2>
-                            <iframe src="https://www.youtube.com/embed/XGTbiS-Xz4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            <iframe width="387" height="207" src="https://www.youtube.com/embed/XGTbiS-Xz4Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                         </li>
                     </ul>
+
                     <div class="city-price">
                         <h2 class="courier-page__title">Перелік населених пунктів з новими тарифами</h2>
 
@@ -1229,7 +1134,7 @@
                             </select>
                         </div>
 
-                        <div class="city-table-wrap">
+                        <div>
                             <div style="border-bottom: 1px solid #999999;">
                                 <div class="just_flex main_table_head">
                                     <div class="first_clmn head_padding_one_row">Населений пункт</div>
@@ -5676,13 +5581,15 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div id="mypager" class="pager_style pager_width pager green">
                         <div class="btn disabled" id="btn-prev"><img src="img/system/icon/pagination__prev.svg" alt="prev"></div>
                         <ul style="width: 180px;">
                             <li><a id="1" class="green normal active" href="javascript:void(0)">1</a></li>
                             <li><a id="2" class="green normal" href="javascript:void(0)">2</a></li>
                             <li><a id="3" class="green normal" href="javascript:void(0)">3</a></li>
+                            <li><a id="4" class="green normal" href="javascript:void(0)">4</a></li>
+                            <li><a id="5" class="green normal" href="javascript:void(0)">5</a></li>
                         </ul>
                         <div class="btn" id="btn-next">Далі <img src="img/system/icon/pagination__next.svg" alt="next"></div>
                         <div class="short"></div>
@@ -5691,7 +5598,7 @@
                     <p>Ознайомитися з <a href="co-tariff-address.html#tariff-in-city" class="price-link" target="_blank">тарифами на забір та доставку вантажу в населені пункти</a></p>
 
                     <div class="address-services">
-                        <h2 class="address-services__title">Адресне обслуговування</h2>
+                        <h2>Адресне обслуговування</h2>
                         <p>Забирання/ доставка вантажу за межі міста</p>
                         <p>За даними тарифами можливі зміни, в залежності від специфіки вантажу</p>
                         <p>У разі відсутності населеного пункту зателефонувати на <strong>0800-509-609</strong> (з 10:00 до 18:00)</p>
@@ -5745,15 +5652,6 @@
                         </div>
                 </article>
             </section>
-
-            <!-- Для примера, можно удалить -->
-            <div style="margin: 30px;">
-                <p>Для примера, можно удалить</p>
-                <div class="popup-courier-add-error_open">popup-courier-add-error_open</div>
-                <div class="popup-courier-approve_open">popup-courier-approve_open</div>
-                <div class="popup-courier-info_open">popup-courier-info_open</div>
-                <div class="popup-courier-add-error_open">popup-courier-add-error_open</div>
-            </divs>
             
             <section id="included__feedback-block" class="feedback-block"></section>
 
@@ -5775,7 +5673,7 @@
             <!-- Pop Up Додати квитанцію -->
             <section id="popup-courier-info">
                 <form class="popup-main">
-                    <h3 class="popup-main__title">Збірна доставка на одну адресу</h3>
+                    <h3 class="popup-main__title">Збірна доставку на одну адресу</h3>
                     <div>
                         <p>Послуга, що дозволяє здійснити адресну доставку кількох квитанцій на одну адресу для одного одержувача. У квитанціях   не повинна бути замовлена послуга адресної доставки при відправленні.</p>
                         <p>Розрахунок вартості здійснюється відповідно до загальної ваги і обсягу всіх квитанцій за стандартними тарифами Компанії.</p>
@@ -5817,8 +5715,8 @@
         <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
         <!-- Main.js -->
         <script src="js/main.js" type="text/javascript"></script>
-        
-        <!-- Smartpaginator -->
+
+        <!-- SmartPagination -->
         <script src="js/components/smartpaginator.js" type="text/javascript"></script>
         <script type="text/javascript">
 

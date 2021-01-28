@@ -183,6 +183,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #F8F8F8;
+    width: fit-content;
     height: 70px;
     font-weight: 600;
 }
@@ -191,6 +192,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: fit-content;
     height: 100%;
     min-height: 40px;
 }
@@ -1076,6 +1078,10 @@ hr {
     width: 387px;
 }
 
+.city-table-wrap {
+    overflow-x: scroll;
+}
+
 @media (max-width: 1024px) {
     .add-parcel__title {
         font-weight: bold;
@@ -1169,6 +1175,16 @@ hr {
     }
     .table_tarif th, .table_tarif td {
         font-size: 15px;
+    }
+    #citySelect {
+        margin-bottom: 15px;
+    }
+    .city-price__header {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    .city-price__desc {
+        margin-bottom: 15px;
     }
 }
 
@@ -1379,7 +1395,9 @@ hr {
         left: 0;
         margin: 0;
     }
-
+    .city-price__select {
+        width: 100%;
+    }
 }
 
 @media (max-width: 350px) {
