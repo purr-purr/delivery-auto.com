@@ -260,13 +260,13 @@
                                 <label>Тип заявки:</label>
                                 <div class="del-order__type-order">
                                     <div ng-class="data.application.DeliveryType == 100000038 ? 'active' : ''">
-                                        <label for="biz">Бизнес (на сегодня)</label>
                                         <input id="biz" type="radio" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" class="delivery_type ng-valid ng-dirty ng-touched" value="100000038" ng-model="data.application.DeliveryType" name="type-order">
+                                        <label for="biz">Бизнес (на сегодня)</label>
                                     </div>
                                     
                                     <div ng-class="data.application.DeliveryType == 100000037 ? 'active' : ''">
-                                        <label for="express">Экспресс (на завтра)</label>
                                         <input id="express" type="radio" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" class="delivery_type ng-valid ng-dirty ng-touched ng-valid-parse" value="100000037" ng-model="data.application.DeliveryType" name="type-order">
+                                        <label for="express">Экспресс (на завтра)</label>
                                     </div>
                                 </div>
                             </div>
