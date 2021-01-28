@@ -1596,9 +1596,10 @@ details > summary {
 @media (max-width: 1024px) {
 	.main-slider .slick-dots {
 		flex-direction: row;
-		bottom: -100%;
 		justify-content: center;
 		margin-left: 35px;
+		bottom: -30px;
+		max-height: 30px;
 	}
 	.main-slider .slick-dots li {
 		right: 30px;
@@ -3399,6 +3400,8 @@ details > summary {
 }
 
 
+
+
 /* Стили для конкретных pop-up  */
 
 /* Pop-up  График работы Колл-центра */
@@ -3576,7 +3579,7 @@ details > summary {
 
 /* разное от поп-апов */
 #popup-courier-info form {
-	padding: 50px 50px;
+	padding: 50px;
 }
 
 #popup-courier-info .popup-main__title {
@@ -3586,12 +3589,78 @@ details > summary {
 
 #popup-courier-info p {
 	margin-bottom: 20px;
-	width: 496px;
+	max-width: 496px;
 }
 
 #popup-tariff-map form,
 #popup-discount form {
 	padding: 25px 25px;
+}
+
+
+@media (max-width: 1024px) {
+	.popup-event--1_close,
+	.popup-event--2_close,
+	.popup-news_close,
+	.popup-tariff-map_close,
+	.popup-discount_close,
+	.popup-call-center_close,
+	.popup-courier-info_close,
+	.popup-subscribe-approve_close,
+	.popup-order-approve_close,
+	.popup-order-error_close,
+	.popup-order-counterparties_close,
+	.popup-order-job_close,
+	.popup-order-api_close,
+	.popup-order-loyalty_close,
+	.popup-express-send_close,
+	.popup-express-time_close,
+	.popup-express-add_close,
+	.popup-courier-add-error_close,
+	.popup-courier-approve_close {
+		top: 30px;
+		right: 30px;
+	}
+	.popup-notify {
+		flex-wrap: wrap;
+		padding: 70px 15px;
+	}
+	.popup-notify__title{
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.popup-notify p {
+		margin-top: 10px;
+	}
+	.popup-icon {
+		width: 50px;
+		height: 50px;
+		margin-left: 40px;
+	}
+	.popup_content {
+		margin: 10px;
+		overflow: hidden;
+	}
+	#popup-courier-info form {
+		padding: 30px;
+	}
+	#popup-courier-info .popup-main__title {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 550px) {
+	.courier-approve__btn {
+		flex-direction: column;
+		margin-right: 0;
+	}
+	.courier-approve__btn-print {
+		margin-top: 20px;
+	}
+	.popup-notify .popup-icon {
+		display: none;
+	}
 }
 
 

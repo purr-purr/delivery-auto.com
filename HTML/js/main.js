@@ -250,6 +250,19 @@ $(document).ready(function(){
         var valOpt=$(this).find('option:selected').val();
             if(valOpt)$(this).next("#person-3dr--label").addClass("show-label");
     })
+    // Страница Забор/Доставка
+    $("#itemPallet").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#itemPallet--label").addClass("show-label");
+    })
+    $("#singleSelectId").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#singleSelectId--label").addClass("show-label");
+    })
+    $("#WarehouseSelectValue").change(function(){
+        var valOpt=$(this).find('option:selected').val();
+            if(valOpt)$(this).next("#WarehouseSelectValue--label").addClass("show-label");
+    })
 });
 
 

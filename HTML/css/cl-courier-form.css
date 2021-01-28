@@ -9,23 +9,73 @@
 
 /* =================================== */
 
-.courier-page {
-    margin-bottom: 90px;
+.section--courier-order {
+    margin-top: 90px;
 }
 
 .courier-page__title {
     margin-bottom: 20px;
 }
 
-.courier-page___desc {
+.courier-page__desc {
     margin-bottom: 20px;
 }
 
+/* Моб. Приложение */
+.mob-app-block {
+    margin: 20px 0;
+}
+
+.mob-app-block__info {
+    display: flex;
+}
+
+.mob-app-block__icon {
+    max-width: 163px;
+    min-width: 90px;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.mob-app-block__icon img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.mob-app-block__text {
+    font-weight: bold;
+    max-width: 250px;
+}
+
+.mob-app-block__link-group {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mob-app-block__link {
+    display: block;
+    max-width: 133px;
+    width: 100%;
+}
+
+.mob-app-block__link:first-child {
+    margin-right: 10px;
+}
+
+.mob-app-block__link img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* Відео інструкція по 1С */
 .video-guide {
-	display: flex;
-	justify-content: space-between;
-    margin: 50px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    margin: 25px 0 100px;
 }
 
 .video-guide__title {
@@ -34,8 +84,15 @@
     font-size: 24px;
     color: #333333;
 }
+
 .video-guide__item {
-	margin-right: 30px;
+    margin-right: 30px;
+    margin: 25px 30px 0 0;
+}
+
+.video-guide__item iframe {
+    width: 380px;
+    height: 203px;
 }
 
 .video-guide__item:last-child {
@@ -216,7 +273,7 @@
     margin-top: 100px;
 }
 
-.address-services h2 {
+.address-services__title{
     margin-bottom: 20px;
 }
 
@@ -256,11 +313,15 @@
 .custom-combobox {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .address-services__text {
+    font-weight: 600;
     font-size: 24px;
-    margin-right: 40px;
+    line-height: 20px;
+    margin-right: 30px;
 }
 
 /* Результат Таблицы: АДРЕСНЕ ОБСЛУГОВУВАННЯ */
@@ -315,10 +376,14 @@
     flex-direction: column;
     align-items: center;
     margin-top: -42px;
+    width: 100%;
 }
 
 .tabs {
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: -17px;
+    width: 100%;
 }
 
 .tab {
@@ -326,14 +391,15 @@
     align-items: center;
     justify-content: center;
 
-    width: 520px;
+    max-width: 520px;
+    width: 100%;
     height: 60px;
     margin-top: -20px;
     
     text-align: center;
     cursor: pointer;
-    padding:10px 20px;
-    margin:0px 2px;
+    padding: 10px 20px;
+    margin: 0px 2px;
 
     border: 2px solid #FFD500;
     border-bottom-color: transparent;
@@ -406,7 +472,7 @@
 .courier-order__line {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .courier-order__input--small, .courier-order__item--small {
@@ -524,10 +590,6 @@ input[type="radio"] {
     display: flex;
 }
 
-.courier-order__tarif-links {
-    margin-top: 30px;
-}
-
 .courier-order__tarif-links a {
     color: #3072C4;
 }
@@ -540,7 +602,7 @@ input[type="radio"] {
 .add-warehouse {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .add-warehouse label {
@@ -593,8 +655,24 @@ input[type="radio"] {
     background-color: transparent;
 }
 
+.courier-order__line--my-order {
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.courier-order__line--my-order-2 {
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0;
+}
+
+.courier-order__line--my-order-2 .checkbox--before {
+    margin-left: 32px;
+}
+
 .courier-order__my-order {
     display: flex;
+    align-items: center;
 }
 
 .courier-order__my-order p {
@@ -688,7 +766,7 @@ input[type="radio"] {
     font-size: 24px;
     line-height: 32px;
     color: #333333;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .add-parcel__delete {
@@ -855,6 +933,17 @@ hr {
     cursor: pointer;
 }
 
+.edit_row {
+    position: absolute;
+    top: -3px;
+    right: 25px;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #999;
+}
+
 /* только для 2го таба */
 .find-btn {
     display: flex;
@@ -893,6 +982,10 @@ hr {
     padding: 0 13px;
 }
 
+.hydro-item {
+    margin-left: 177px;
+}
+
 .type-payment--small {
     display: flex;
     justify-content: space-between;
@@ -927,7 +1020,13 @@ hr {
     cursor: pointer;
 }
 
+.time-pick__inner {
+    display: flex;
+}
 
+.mob-kill-koma {
+    margin-right: 3px;
+}
 
 .print_form_block_title_style {
     display: none;
@@ -958,4 +1057,332 @@ hr {
 
 .print_form_block_button:hover {
     color: #ffd500;
+}
+
+#only-mobile {
+    display: none;
+}
+
+.type-payment__clearfix {
+    margin-left: 0 !important;
+}
+
+.add-services__first {
+    width: 387px;
+    margin-right: 30px;
+}
+
+.add-services__second {
+    width: 387px;
+}
+
+@media (max-width: 1024px) {
+    .add-parcel__title {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .add-parcel__delete {
+        top: 20px;
+        right: 20px;
+    }
+    #only-mobile {
+        display: block;
+    }
+    .courier-page__title {
+        display: none;
+    }
+    .tab {
+        height: 60px;
+        padding: 10px 12px;
+        margin: 0px 2px;
+        font-size: 13px;
+    }
+    .video-guide__title {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .add-parcel {
+        width: 870px;
+        padding: 20px 15px;
+        margin: 20px 0;
+    }
+    .panels {
+        padding: 40px 0;
+    }
+    .courier-order__my-order p {
+        font-size: 13px;
+        line-height: 13px;
+        margin-left: 10px;
+    }
+    .checkbox--before label {
+        font-size: 15px;
+    }
+    .add-warehouse label {
+        font-size: 15px;
+    }
+    .add-parcel__btn-group {
+        margin-top: 25px;
+    }
+    .total_cost__text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .total_cost__value {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .edit_row {
+        top: -3px;
+        right: 25px;
+        font-size: 15px;
+    }
+    .print_form_block_row {
+        font-size: 15px;
+    }
+    .print_form_block_title_style {
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .video-guide {
+        margin: 20px 0 30px;
+    }
+    .address-services__title{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .address-services__text {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        margin-left: 10px;
+    } 
+    #cityAddIdinp {
+        width: 387px;
+    }
+    .table_tarif th, .table_tarif td {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 930px) {
+    .courier-order__form, .add-parcel__form {
+        width: 100%;
+    }
+	.courier-order__line {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .courier-order__item {
+        justify-content: end;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .courier-order__select {
+        width: 100%;
+        max-width: 387px;
+    }
+	.courier-order__item--large {
+		max-width: 387px;
+		width: 100%;
+    }
+    .add-parcel {
+        width: 100%;
+    }
+    .courier-order__line--my-order-2 {
+        align-items: baseline;
+        margin: 0 0 25px;
+    }
+    .courier-order__line--my-order {
+        align-items: baseline;
+        margin: 0 0 25px;
+    }
+    .courier-order__line--my-order-2 .checkbox--before {
+        margin-left: 0;
+        margin: 25px 0 0;
+    }
+    .everyday_block {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .everyday_block>div {
+        margin: 0 0 25px;
+        width: 145px;
+    }
+    .courier-order__tarif-links {
+        margin-bottom: 25px;
+    }
+    .courier-order__tarif-links p:first-child {
+        margin-bottom: 15px;
+    }
+    .time-pick {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .time-pick__inner {
+        margin-top: 25px;
+    }
+    .mob-kill-koma {
+        display: none;
+    }
+    #TimeFromOrder, #TimeToOrder  {
+        width: 100px;
+        margin-left: 19px;
+        background-position: 90%;
+    }
+    #TimeToOrder {
+        margin-right: 0;
+    }
+    .time-pick__inner>div {
+        display: flex;
+        align-items: center;
+    }
+    .type-payment {
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 0 !important;
+    }
+    .type-payment__item {
+        margin-left: 0 !important;
+        margin-bottom: 15px;
+    }
+    .type-payment__item:last-child {
+        margin-bottom: 0;
+    }
+    .hydro-item {
+        margin-left: 30px;
+    }
+    .courier-order__line--my-order p {
+        line-height: 20px;
+    }
+    .type-payment--mobile {
+        flex-direction: column;
+    }
+    .type-payment--mobile .type-payment {
+        margin-bottom: 0;
+    }
+    .type-payment__item input {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 830px) {
+    .video-guide__item:last-child {
+        margin-right: 30px;
+    }
+    .total_cost {
+        margin-left: 50px;
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .custom-combobox {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #cityAddIdinp {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .address-services__text {
+        margin-right: auto;
+    } 
+}
+
+@media (max-width: 480px) {
+    .video-guide {
+        justify-content: flex-start;
+    }
+    .video-guide__item {
+        margin: 20px 0 0;
+    }
+    .video-guide__item:last-child {
+        margin-right: 0;
+    }
+    .video-guide__item iframe {
+        width: 280px;
+        height: 160px;
+    }
+    .tab:first-child {
+        margin-right: 10px;
+    }
+    .total_cost {
+        margin-left: 25px;
+    }
+    .edit_row p {
+        display: none;
+    }
+    .edit_row {
+        right: 0;
+        top: 25px;
+        width: 21px;
+        height: 21px;
+        background: url('../img/system/icon/edit-icon.svg') no-repeat center center;
+        background-size: 20px;
+    }
+    .add-services {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .add-services__first {
+        width: auto;
+        margin: 0 0 20px;
+    }
+    .add-services__second {
+        width: auto;
+    }
+    #cityAddIdinp {
+        width: 93%;
+        max-width: 387px;
+    }
+    .table_tarif th, .table_tarif td {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 440px) {
+    .mob-app-block {
+        position: relative;
+        width: 100%;
+    }
+    .mob-app-block__link-group {
+        position: absolute;
+        bottom: 25px;
+        left: 170px;
+    }
+}
+
+@media (max-width: 370px) {
+    .courier-order__footer {
+        position: relative;
+    }
+    .total_cost__result {
+        margin-top: 10px;
+    }
+    #pick_up_send {
+        margin-top: 115px;
+    }
+    .total_cost {
+        position: absolute;
+        bottom: 55px;
+        left: 0;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .textarea-large {
+        width: 79%;
+    }
 }
