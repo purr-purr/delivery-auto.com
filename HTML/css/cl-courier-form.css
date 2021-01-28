@@ -1082,6 +1082,12 @@ hr {
     overflow-x: scroll;
 }
 
+.city-table-wrap::-webkit-scrollbar { width: 3px; height: 3px;}
+.city-table-wrap::-webkit-scrollbar-button { height: 0; width: 100%;}
+.city-table-wrap::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+.city-table-wrap::-webkit-scrollbar-track-piece { background-color: #DADADA;
+}
+
 @media (max-width: 1024px) {
     .add-parcel__title {
         font-weight: bold;
