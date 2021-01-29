@@ -266,9 +266,6 @@ $(document).ready(function(){
 });
 
 
-
-
-
 // Плавная прокрутка к якорю
 var $page = $('html, body');
 $('a[href*="#"]').click(function() {
@@ -289,7 +286,6 @@ $(window).scroll(function(){
 });
 
 
-
 // Страница Финансовые услуги. На адаптиве скрывает инфу в табы
 jQuery(document).ready(function ($) {
     var windowSize = $(window).width();
@@ -298,3 +294,25 @@ jQuery(document).ready(function ($) {
             $(".finance-step__slider").slick("refresh"); 
         }
 });
+
+// Страница Про групу Delivery. Для адаптива, появление контента при клике
+$('.group-item__show-btn--delauto').on('click', function(event){
+    $('.group-item__hide-block--delauto').toggleClass('group-item__show-block');
+    $('.group-item__show-btn--delauto').toggleClass('group-item__hide-block');
+});
+
+$('.group-item__show-btn--deltruck').on('click', function(event){
+    $('.group-item__hide-block--deltruck').toggleClass('group-item__show-block');
+    $('.group-item__show-btn--deltruck').toggleClass('group-item__hide-block');
+});
+
+$('.group-item__show-btn--inter').on('click', function(event){
+    $('.group-item__hide-block--inter').toggleClass('group-item__show-block');
+    $('.group-item__show-btn--inter').toggleClass('group-item__hide-block');
+});
+
+$('.group-item__show-btn--kvorum').on('click', function(event){
+    $('.group-item__hide-block--kvorum').toggleClass('group-item__show-block');
+    $('.group-item__show-btn--kvorum').toggleClass('group-item__hide-block');
+});
+
