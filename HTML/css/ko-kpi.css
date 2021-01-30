@@ -98,6 +98,7 @@
     background-position:0% 0%;
     background-repeat:no-repeat;
     position:relative;
+    margin-bottom: 12px;
 }
 
 .block1{
@@ -426,3 +427,37 @@ div.block_title > label {
     opacity: 1;
     transition: all .5s ease-in;
 } 
+
+
+@media (max-width: 1024px) {
+    .kpi__inner {
+        flex-direction: column;
+    }
+    .small_padding {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 525px) {
+    .kpi__inner {
+        transform: scale(.8);
+        margin-top: -225px;
+        margin-bottom: -225px;
+    }
+}
+
+@media (max-width: 415px) {
+    .kpi__inner {
+        transform: scale(.7);
+        margin-top: -340px;
+        margin-bottom: -340px;
+    }
+}
+
+@media (max-width: 370px) {
+    .kpi__inner {
+        transform: scale(.6);
+        margin-top: -455px;
+        margin-bottom: -455px;
+    }
+}
