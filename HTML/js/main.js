@@ -321,3 +321,9 @@ $('.mob-app__click-desc').on('click', function(event){
     $('.mob-app__show-desc').toggleClass('mob-app__active');
     $('.mob-app__click-desc').toggleClass('mob-app__hide');
 });
+
+// Страница Партнери. Для адаптива, появление контента при клике
+$('.partners__click-desc').on('click', function(event){
+    $('.partners__show-desc').toggleClass('partners__active');
+    $('.partners__click-desc').toggleClass('partners__hide');
+});

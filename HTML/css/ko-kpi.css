@@ -7,8 +7,6 @@
 	background: #fff url("../img/system/page-header/page-header__kpi.jpg") no-repeat;
 }
 
-
-
 @font-face {
     font-family: BebasNeueBold; 
     src: url("../fonts/BebasNeueBold.otf"); 
@@ -91,8 +89,6 @@
     100% {
     }
 }
-
-
 
 .block {
     background-position:0% 0%;
@@ -411,11 +407,7 @@ div.block_title > label {
     padding-top: 11px;
 }
 
-
-
-
-
-
+/* ---  */
 .help-hide {
     visibility: hidden;
     opacity: 0;
@@ -427,7 +419,6 @@ div.block_title > label {
     opacity: 1;
     transition: all .5s ease-in;
 } 
-
 
 @media (max-width: 1024px) {
     .kpi__inner {

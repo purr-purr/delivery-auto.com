@@ -47,9 +47,13 @@
             <section class="main__container">
                 <article class="main-content">
                     <div class="partners">
+                        <!-- .mobile-page__title Только для адаптива -->
+                        <h1 class="mobile-page__title">Партнери Delivery Group</h1>
                         <nav class="partners__nav">
                             <h2 class="partners__title">Галузі обслуговування</h2>
-                            <ul>
+                            <input id="show-area" type="checkbox">
+                            <label for="show-area" class="partners__mob-title">Оберіть галузь обслуговування</label>
+                            <ul class="nav-area__list">
                                 <li class="nav-area__item">
                                     <a href="ko-partners-area1.html">Автотехніка та автозапчастини</a>
                                 </li>
@@ -76,8 +80,13 @@
                             <div class="partners__advantages">
                                 <h3>Переваги партнерів Delivery Group </h3>
                                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
-                                <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами </p>
-                                <p>Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+
+                                <div class="partners__click-desc">Детальніше <img src="img/system/icon/arrow--blue.svg" alt="icon"></div>
+                                <div class="partners__show-desc">
+                                    <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами </p>
+                                    <p>Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+                                </div>
+
                                 <ul class="partners__offers">
                                     <li>
                                         <h4>Вигідна пропозиція</h4>
@@ -94,48 +103,6 @@
                                 </ul>
                             </div>
 
-                            <!-- <div class="area__item">
-                                <h3>Лідери галузі обслуговування</h3>
-                                <p>Кто является лидерами в сфере, какие у них преимущества(возможно)                                                          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-                                <ul class="leaders">
-                                    <li class="leaders__item">
-                                        <div class="leaders__logo">
-                                            <img src="../HTML/img/system/partners/epk1.jpg" alt="">
-                                        </div>
-                                        <div class="leaders__info">
-                                            <h5>Епіцентр К</h5>
-                                            <p>epicentrk.ua</p>
-                                            <a href="https://epicentrk.ua/" target="_blank">Перейти</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="leaders__item">
-                                        <div class="leaders__logo">
-                                            <img src="../HTML/img/system/partners/oriflame2.jpg" alt="">
-                                        </div>
-                                        <div class="leaders__info">
-                                            <h5>Оріфлейм</h5>
-                                            <p>ua.oriflame.com</p>
-                                            <a href="https://ua.oriflame.com/" target="_blank">Перейти</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="leaders__item">
-                                        <div class="leaders__logo">
-                                            <img src="../HTML/img/system/partners/badm3.jpg" alt="">
-                                        </div>
-                                        <div class="leaders__info">
-                                            <h5>БАДМ</h5>
-                                            <p>badm.ua</p>
-                                            <a href="https://www.badm.ua/" target="_blank">Перейти</a>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <h3>Партнери галузі обслуговування</h3>
-
-                            </div> -->
-
                             <!-- Как стать партнером -->
                             <div class="become-partner">
                                 <h2>Як стати партнером</h2>
@@ -146,10 +113,8 @@
                                     <a href="in-dev.html" class="main-btn become-partner__btn--white">Переглянути умови</a>
                                 </div>
                             </div>
-                    
                         </div>
                     </div>
-                
                 </article>
             </section>
             <section id="included__feedback-block" class="feedback-block"></section>
