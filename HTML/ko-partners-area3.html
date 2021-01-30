@@ -48,9 +48,13 @@
             <section class="main__container">
                 <article class="main-content">
                     <div class="partners">
+                        <!-- .mobile-page__title Только для адаптива -->
+                        <h1 class="mobile-page__title">Партнери Delivery Group</h1>
                         <nav class="partners__nav">
                             <h2 class="partners__title">Галузі обслуговування</h2>
-                            <ul>
+                            <input id="show-area" type="checkbox">
+                            <label for="show-area" class="partners__mob-title">Оберіть галузь обслуговування</label>
+                            <ul class="nav-area__list">
                                 <li class="nav-area__item">
                                     <a href="ko-partners-area1.html">Автотехніка та автозапчастини</a>
                                 </li>
@@ -74,39 +78,40 @@
                         </nav>
 
                         <div class="partners__about-area">
-                            <h3 class="about-area__title">Лідери галузі обслуговування</h3>
+                            <h3 class="about-area__title hide-on-mob">Лідери галузі обслуговування</h3>
+                            <p class="about-area__sub-title">Лідери галузі обслуговування "Канцелярські товари"</p>
                             <p>Кто является лидерами в сфере, какие у них преимущества(возможно)                                                          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
                             <ul class="leaders">
                                 <li class="leaders__item">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/epk1.jpg" alt="">
+                                        <img src="img/system/partners/epk1.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info">
                                         <h5>Епіцентр К</h5>
                                         <p>epicentrk.ua</p>
-                                        <a href="https://epicentrk.ua/" target="_blank">Перейти</a>
+                                        <a href="https://epicentrk.ua/" target="_blank" class="leaders__link">Перейти</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/oriflame2.jpg" alt="">
+                                        <img src="img/system/partners/oriflame2.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info">
                                         <h5>Оріфлейм</h5>
                                         <p>ua.oriflame.com</p>
-                                        <a href="https://ua.oriflame.com/" target="_blank">Перейти</a>
+                                        <a href="https://ua.oriflame.com/" target="_blank" class="leaders__link">Перейти</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/badm3.jpg" alt="">
+                                        <img src="img/system/partners/badm3.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info">
                                         <h5>БАДМ</h5>
                                         <p>badm.ua</p>
-                                        <a href="https://www.badm.ua/" target="_blank">Перейти</a>
+                                        <a href="https://www.badm.ua/" target="_blank" class="leaders__link">Перейти</a>
                                     </div>
                                 </li>
                             </ul>
@@ -117,89 +122,97 @@
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/rozenta--small2.jpg" alt="">
+                                        <img src="img/system/partners/rozenta--small2.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Розетка</h5>
                                         <p>rozetka.com.ua</p>
-                                        <a href="https://rozetka.com.ua/" target="_blank">Перейти</a>
+                                        <a href="https://rozetka.com.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://rozetka.com.ua/" target="_blank" class="leaders__link--mob">rozetka.com.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/avon--small1.jpg" alt="">
+                                        <img src="img/system/partners/avon--small1.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Ейвон</h5>
                                         <p>my.avon.ua</p>
-                                        <a href="https://my.avon.ua/" target="_blank">Перейти</a>
+                                        <a href="https://my.avon.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://my.avon.ua/" target="_blank" class="leaders__link--mob">my.avon.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/prom--small4.jpg" alt="">
+                                        <img src="img/system/partners/prom--small4.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Пром</h5>
                                         <p>prom.ua</p>
-                                        <a href="https://prom.ua/" target="_blank">Перейти</a>
+                                        <a href="https://prom.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://prom.ua/" target="_blank" class="leaders__link--mob">prom.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/leroy--small3.jpg" alt="">
+                                        <img src="img/system/partners/leroy--small3.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Леруа Мерлен</h5>
                                         <p>www.leroymerlin.ua</p>
-                                        <a href="https://www.leroymerlin.ua/ru/" target="_blank">Перейти</a>
+                                        <a href="https://www.leroymerlin.ua/ru/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://www.leroymerlin.ua/ru/" target="_blank" class="leaders__link--mob">www.leroymerlin.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/prom--small4.jpg" alt="">
+                                        <img src="img/system/partners/prom--small4.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Пром</h5>
                                         <p>prom.ua</p>
-                                        <a href="https://prom.ua/" target="_blank">Перейти</a>
+                                        <a href="https://prom.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://prom.ua/" target="_blank" class="leaders__link--mob">prom.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/rozenta--small2.jpg" alt="">
+                                        <img src="img/system/partners/rozenta--small2.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Розетка</h5>
                                         <p>rozetka.com.ua</p>
-                                        <a href="https://rozetka.com.ua/" target="_blank">Перейти</a>
+                                        <a href="https://rozetka.com.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://rozetka.com.ua/" target="_blank" class="leaders__link--mob">rozetka.com.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/avon--small1.jpg" alt="">
+                                        <img src="img/system/partners/avon--small1.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Ейвон</h5>
                                         <p>my.avon.ua</p>
-                                        <a href="https://my.avon.ua/" target="_blank">Перейти</a>
+                                        <a href="https://my.avon.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://my.avon.ua/" target="_blank" class="leaders__link--mob">my.avon.ua</a>
                                     </div>
                                 </li>
 
                                 <li class="leaders__item leaders__item--small">
                                     <div class="leaders__logo">
-                                        <img src="img/system/partners/rozenta--small2.jpg" alt="">
+                                        <img src="img/system/partners/rozenta--small2.jpg" alt="partner logo">
                                     </div>
                                     <div class="leaders__info leaders__info--small">
                                         <h5>Розетка</h5>
                                         <p>rozetka.com.ua</p>
-                                        <a href="https://rozetka.com.ua/" target="_blank">Перейти</a>
+                                        <a href="https://rozetka.com.ua/" target="_blank" class="leaders__link">Перейти</a>
+                                        <a href="https://rozetka.com.ua/" target="_blank" class="leaders__link--mob">rozetka.com.ua</a>
                                     </div>
                                 </li>
                             </ul>
