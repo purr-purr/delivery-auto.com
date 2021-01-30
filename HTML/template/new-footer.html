@@ -1,0 +1,139 @@
+<div class="c-container">
+    <div class="footer__inner">
+        <div class="footer__support">
+            <div class="support__call-center">
+                <p>Безкоштовний дзвінок по Україні</p>
+                <a class="call-center__number" href="tel:0 800 509 509">0 800 509 509</a>
+                <p class="call-center__schedule popup-call-center_open">Графік роботи Гарячої лінії</p>
+            </div>
+
+            <a class="support__link" href="co-faq.html">Часті запитання</a>
+            <a class="support__link" href="https://delivery-auto.com/uk-UA/UserReceipts">Особистий кабінет</a>
+        </div>
+
+        <!-- only mobile block -->
+
+        <ul class="mob-footer-nav">
+            <li class="mob-footer-nav__list">
+                <details class="mob-footer-nav__item">
+                    <summary class="mob-footer-nav__title">Клієнтам</summary>
+                    <ul class="mob-footer-nav__drop">
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("IndexNew", "CalculateCost")">Розрахунок вартості</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("IndexNew", "Representatives")">Відділення</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3458 })">Фінансові послуги</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3461 })">Тарифи</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("CallCourierNew", "ApplicationForms")">Експрес-доставка</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("CourierFormNew", "SharedForms")">Забір / доставка вантажу</a></li>
+                    </ul>
+                </details>
+            </li>
+
+            <li class="mob-footer-nav__list">
+                <details class="mob-footer-nav__item">
+                    <summary class="mob-footer-nav__title">Компанія</summary>
+                    <ul class="mob-footer-nav__drop">
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3444 })">Про компанію</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("IndexNew", "Kpi")">Індекси «Делівері»</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3445 })">Прес-центр</a></li>
+                        <li class="mob-footer-nav__drop-li"><a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3451 })">Франчайзинг</a></li>
+                    </ul>
+                </details>
+            </li>
+
+            <li class="mob-footer-nav__list">
+                <a href="@Url.Action("IndexNew", "Faq")">Часті запитання</a>
+            </li>
+
+            <li class="mob-footer-nav__list">
+                <a href="https://delivery-auto.com/uk-UA/UserReceipts">Особистий кабінет</a>
+            </li>
+        </ul>
+
+        <div class="footer__group-mob">
+            <ul class="mob-support">
+                <li>
+                    <a href="tel:0800509609" class="mob-support__link">
+                        <img src="~/Images/third_decade/system/icon/phone-white.svg" alt="phone icon">
+
+                        <div>
+                            <p class="mob-support__title">Замовити забір/доставку</p>
+                            <p class="mob-support__number">0 800 509 609</p>
+                            <p class="mob-support__note">Безкоштовний дзвінок по Україні</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:0800509509" class="mob-support__link">
+                        <img src="~/Images/third_decade/system/icon/phone-white.svg" alt="phone icon">
+                        <div>
+                            <p class="mob-support__title">Гаряча лінія</p>
+                            <p class="mob-support__number">0 800 509 509</p>
+                            <p class="mob-support__note">Безкоштовний дзвінок по Україні</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- the end only mobile block -->
+
+            <div class="footer__menu">
+                <div class="menu__item">
+                    <h4 class="menu__title">Клієнтам</h4>
+                    <a href="@Url.Action("IndexNew", "CalculateCost")">Розрахунок вартості</a>
+                    <a href="@Url.Action("IndexNew", "Representatives")">Представництва</a>
+                    <a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3458 })">Післяплата</a>
+                    <a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3461 })">Тарифи</a>
+                    <a href="@Url.Action("CallCourierNew", "ApplicationForms")">Експрес-доставка</a>
+                    <a href="@Url.Action("CourierFormNew", "SharedForms")">Забирання вантажу</a>
+                </div>
+
+                <div class="menu__item">
+                    <h4 class="menu__title">Компанія</h4>
+                    <a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3444 })">Про компанію</a>
+                    <a href="@Url.Action("IndexNew", "Kpi")">Індекси «Делівері»</a>
+                    <a href="@Url.Action("DbIndexNew", "GenericPages", new { id = 3445 })">Для ЗМІ</a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer-subs">
+                    <p class="footer-subs__title">Підпишіться на новини, щоб завжди бути в курсі акцій, знижок та подій!</p>
+
+                    <form id="eml_frm" action="javascript:void(0);" onsubmit="submit_letter()" method="post" class="footer-subs__form">
+                        <input class="footer-subs__input" type="email" id="_email" name="_email" placeholder="Введіть вашу електронну адресу">
+                        <button class="footer-subs__btn" id="emailSend"><img src="~/Images/third_decade/system/icon/arrow.svg" alt="enter"></button>
+                    </form>
+                </div>
+
+                <div class="links">
+                    <div class="links__apps">
+                        <p class="links__title">Мобільний додаток</p>
+                        <div class="apps__img">
+                            <a class="apps__img-link" href="https://play.google.com/store/apps/details?id=com.delivery.deliverymobile&hl=ru"><img src="~/Images/third_decade/system/mobile_app/icon__google-play.png" alt="google-play"></a>
+                            <a class="apps__img-link" href="https://itunes.apple.com/us/app/delivery-auto/id908557251?l=ru&ls=1&mt=8"><img src="~/Images/third_decade/system/mobile_app/icon__app-store.png" alt="app-store"></a>
+                        </div>
+                    </div>
+
+                    <div class="links__socials">
+                        <p class="links__title">Ми в соцмережах</p>
+                        <div class="socials__img">
+							<a class="socials__img-item" href="https://www.instagram.com/deliverygroup_ua/" target="_blank">
+								<img src="~/Images/third_decade/system/icon/socials__instagram.svg" alt="instagram">
+							</a>
+							<a class="socials__img-item" href="https://www.linkedin.com/company/delivery-ltd/?trk=biz-companies-cym" target="_blank">
+								<img src="~/Images/third_decade/system/icon/socials__linkedin.svg" alt="linkedin">
+							</a>
+							<a class="socials__img-item" href="https://www.facebook.com/Deliveryauto" target="_blank">
+								<img src="~/Images/third_decade/system/icon/socials__facebook.svg" alt="facebook">
+							</a>
+							<a class="socials__img-item" href="https://www.youtube.com/channel/UC2ZxuQoIjvHGl2yR4FeS8qQ/featured" target="_blank">
+								<img src="~/Images/third_decade/system/icon/socials__youtube.svg" alt="youtube">
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

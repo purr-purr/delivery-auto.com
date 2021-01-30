@@ -13,7 +13,7 @@
     margin-bottom: 25px;
 }
 
-.mob-app__title__desc {
+.mob-app__desc {
     margin-bottom: 20px;
 }
 
@@ -22,10 +22,16 @@
     margin-bottom: 30px;
 }
 
-.mob-app__intro img{
-    width: 179px;
-    height: 179px;
+.mob-app__icon {
+    max-width: 179px;
+    width: 100%;
     margin-right: 30px;
+}
+
+.mob-app__icon-item {
+    display: block;
+    height: auto;
+    width: 100%;
 }
 
 .about-app {
@@ -50,4 +56,112 @@
 .about-app__col li span {
     color: #3072C4;
     margin-right: 5px;
+}
+
+.mob-app__phone-image {
+    width: 438px;
+}
+
+.mob-app__phone-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.about-app__col-group {
+    display: flex;
+}
+
+.mob-app__click-desc {
+    display: none;
+    align-items: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #3072C4;
+}
+
+.mob-app__click-desc img {
+    width: 15px;
+    margin: 2px 0 0 8px;
+}
+
+@media (max-width: 1024px) {
+    .mob-app__title {
+        display: none;
+    }
+    .mob-app__show-desc {
+        display: none;
+    }
+    .mob-app__click-desc  {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .mob-app__active {
+        display: block;
+    }
+    .mob-app__hide {
+        display: none;
+    }
+    .mob-app__desc {
+        margin-bottom: 10px;
+    }
+    .mob-app__intro {
+        margin-bottom: 10px;
+    }
+    .about-app__col h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .about-app {
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-app__col li {
+        max-width: 100%;
+        margin-bottom: 13px;
+    }
+    .mob-app__phone-image {
+        width: 438px;
+        order: 1;
+        margin-top: -100px;
+    }
+    .about-app__col-group {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mob-app__show-btn img {
+        width: 14px;
+    }
+    .mob-app__icon {
+        display: none;
+    }
+    .mob-app__phone-image {
+        margin-right: -122px;
+    }
+}
+
+@media (max-width: 450px) {
+    .about-app__col-group {
+        width: 100%;
+    }
+    .mob-app__phone-image {
+        width: 537px;
+        margin-right: -122px;
+        margin-top: -12px;
+    }
+    .mob-app__block-title {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 340px) {
+    .mob-app__phone-image {
+        margin-right: -149px;
+        margin-left: -24px;
+    }
 }

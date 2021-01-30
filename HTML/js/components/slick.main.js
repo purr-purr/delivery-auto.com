@@ -1,4 +1,3 @@
-// banners on index.html
 $(document).ready(function(){
     $('.main-slider').slick({
         vertical: true,

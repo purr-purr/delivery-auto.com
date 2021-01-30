@@ -316,3 +316,8 @@ $('.group-item__show-btn--kvorum').on('click', function(event){
     $('.group-item__show-btn--kvorum').toggleClass('group-item__hide-block');
 });
 
+// Страница Мобільній додаток. Для адаптива, появление контента при клике
+$('.mob-app__click-desc').on('click', function(event){
+    $('.mob-app__show-desc').toggleClass('mob-app__active');
+    $('.mob-app__click-desc').toggleClass('mob-app__hide');
+});
