@@ -37,3 +37,19 @@
 	width: 9px;
 	margin-right: 5px;
 }
+
+@media (max-width: 1024px) {
+	.tariffs-finance__title {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.tariffs-finance__heading img {
+		margin: 0 10px 0 0;
+	}
+	.tariffs-finance p {
+		margin-bottom: 10px;
+	}
+	.tariffs-finance {
+		margin-bottom: 20px;
+	}
+}
