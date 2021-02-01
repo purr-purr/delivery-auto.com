@@ -106,11 +106,6 @@
 	color: #3072C4;
 }
 
-.tariff-call-number img {
-	width: 12px;
-	margin-right: 5px;
-}
-
 @media (max-width: 1024px) {
 	.bicycle__title {
 		display: none;
