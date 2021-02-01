@@ -327,3 +327,15 @@ $('.partners__click-desc').on('click', function(event){
     $('.partners__show-desc').toggleClass('partners__active');
     $('.partners__click-desc').toggleClass('partners__hide');
 });
+
+// Страница Центр обслуговування клієнтів. Для адаптива, появление контента при клике
+$('.service-center__click-desc').on('click', function(event){
+    $('.service-center__show-desc').toggleClass('block__active');
+    $('.service-center__click-desc').toggleClass('block__hide');
+});
+
+$('.advantages-service__click-desc').on('click', function(event){
+    $('.advantages-service__show-desc').toggleClass('block__active');
+    $('.advantages-service__show-desc--flex').toggleClass('block__active--flex');
+    $('.advantages-service__click-desc').toggleClass('block__hide');
+});

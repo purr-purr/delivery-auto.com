@@ -3539,11 +3539,58 @@ details > summary {
     margin-top: 30px;
 	padding-bottom: 0;
 	position: initial;
-	width: 178px;
+	min-width: 178px;
 	height: 50px;
 	font-size: 16px;
 	color: #333;
 	background: #ffd500;
+}
+
+@media (max-width: 1024px) {
+	.p-event {
+		padding: 40px 15px;
+	}
+	.p-event .popup-main__title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
+	.p-event .p-event__name {
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	.p-event__line {
+		flex-direction: column;
+	}
+	.p-event__info {
+		flex-direction: column;
+		margin-top: 0;
+	}
+	.p-event__item {
+		margin-right: 0;
+	}
+	.p-event__btn {
+		margin-top: 20px;
+		font-size: 15px;
+		min-width: 135px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.p-event__item {
+		width: 100%;
+	}
+	.p-event__item input {
+		width: 300px;
+	}
+}
+
+@media (max-width: 400px) {
+	.p-event__item input {
+		width: 260px;
+	}
 }
 
 /* Подписка на новости */

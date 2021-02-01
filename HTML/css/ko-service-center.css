@@ -9,11 +9,16 @@
 
 /* =================================== */
 
+
+.service-center__description {
+    margin-bottom: 50px;
+}
+
 .service-center__title {
     margin-bottom: 25px;
 }
 
-.service-center__description {
+.service-center__description p {
     margin-bottom: 15px;
 }
 
@@ -22,21 +27,28 @@
 }
 
 .advantages-service__inner {
-    margin: 32px 0 50px 0;
+    margin-bottom: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .advantages-service__col {
-    margin-right: 30px;
+    margin: 30px 30px 0 0;
 }
 
 .advantages-service__col:last-child {
     margin-right: 0;
 }
 
-#advantages-service__photo {
+.advantages-service__photo {
     max-width: 385px;
     max-height: 273px;
+}
+
+.advantages-service__photo img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .advantages-service__item {
@@ -56,6 +68,11 @@
     border-left: 2px solid #fff;
 }
 
+.advantages-service__icon {
+    width: 50px;
+    height: 50px;
+}
+
 /* Найближчі заходи  */
 .meeting {
     padding-top: 50px;
@@ -68,7 +85,13 @@
 
 .meeting__img {
     max-width: 283px;
-    max-height: 210px;
+    width: 100%;
+}
+
+.meeting__img img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .meeting__date {
@@ -177,6 +200,142 @@
 }
 
 .service-office__map {
-    height: 340px;
+    max-width: 1222px;
     width: 100%;
+    height: 340px;
+    margin-top: 20px;
 }
+
+.service-office__map iframe {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service-center__click-desc,
+.advantages-service__click-desc {
+    display: none;
+    align-items: center;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #3072C4;
+}
+
+.service-center__click-desc img,
+.advantages-service__click-desc img {
+    width: 15px;
+    margin: 2px 0 0 8px;
+}
+
+@media (max-width: 1024px) {
+    .service-center__show-desc,
+    .advantages-service__show-desc,
+    .advantages-service__show-desc--flex {
+        display: none;
+    }
+    .service-center__click-desc,
+    .advantages-service__click-desc   {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .block__active {
+        display: block;
+    }
+    .block__active--flex {
+        display: flex;
+    }
+    .block__hide {
+        display: none;
+    }
+    .service-center__description {
+        margin-bottom: 20px;
+    }
+    .service-center__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin: 20px 0 10px 0;
+    }
+    .advantages-service {
+        margin-top: 0;
+        width: 100%;
+    }
+    .advantages-service .service-center__title {
+        margin-bottom: 0;
+    }
+    .advantages-service__col {
+        margin: 20px 20px 0 0;
+    }
+    .advantages-service__col:first-child .advantages-service__item {
+        margin-bottom: 0;
+    }
+    .advantages-service__inner {
+        margin-bottom: 20px;
+    }
+    .advantages-service__photo {
+        display: none;
+    }
+    .advantages-service__item {
+        margin-bottom: 20px;
+    }
+    .advantages-service__info {
+        width: 100%;
+        padding-left: 0;
+        margin-left: 10px;
+        border-left: none;
+    }
+    .meeting {
+        padding-top: 0;
+    }
+    .meeting__item {
+        margin: 5px 0 40px 0;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .meeting__info {
+        margin: 20px 0 0;
+    }
+    .meeting__info h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .p-event__date {
+        margin-bottom: 10px;
+    }
+    .create-event {
+        margin-top: 40px;
+    }
+    .create-event h2 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .create-event p {
+        margin-bottom: 10px;
+    }
+    .create-event__btn {
+        margin-top: 20px;
+    }
+    .create-event__btn .meeting__btn {
+        margin-top: 0;
+    }
+    .create-event__btn .meeting__btn {
+        text-align: center;
+    }
+    .create-event__btn a:first-child {
+        margin-right: 10px;
+    }
+    .service-office {
+        margin-top: 40px;
+    }
+    .service-office h2 {
+        margin-bottom: 10px;
+    }
+    .service-office p {
+        margin-bottom: 10px;
+    }
+}
+
