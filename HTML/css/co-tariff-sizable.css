@@ -89,6 +89,12 @@
 	}
 	.scroll-wrap {
 		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
 		margin-bottom: 20px;
 	}
+	.scroll-wrap::-webkit-scrollbar { width: 3px; height: 3px;}
+    .scroll-wrap::-webkit-scrollbar-button { height: 0; width: 100%;}
+    .scroll-wrap::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+    .scroll-wrap::-webkit-scrollbar-track-piece { background-color: #DADADA;
+    }
 }
