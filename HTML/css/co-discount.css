@@ -16,8 +16,10 @@
 }
 
 .discount__map img {
-    width: 100%;
     cursor: pointer;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .discount__print, .discount__open {
@@ -137,11 +139,29 @@
 .acc-discount__links {
     display: flex;
     justify-content: space-between;
-    width: 510px;
+    flex-wrap: wrap;
+    max-width: 510px;
+    width: 100%;
 }
 
 .discount-prog {
     margin-top: 100px;
+}
+
+.discount-prog__inner {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.discount-prog__card-img {
+    max-width: 300px;
+    width: 100%;
+}
+
+.discount-prog__card-img img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .discount-prog__title {
@@ -171,4 +191,81 @@
     font-size: 24px;
     line-height: 20px;
     margin-left: 15px;
+}
+
+@media (max-width: 1024px) {
+    .discount__title {
+        margin: 20px 0 10px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .discount__map {
+        margin: 10px 0 20px 0;
+    }
+    .acc-discount {
+        max-width: 600px;
+    }
+    .acc-discount summary {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .acc-discount__title {
+        padding-left: 10px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        width: 75%;
+    }
+    .acc-discount__summary:after {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 10px;
+    }
+    .acc-discount details[open] .acc-discount__summary:after {
+        background-size: 10px;
+    }
+    .acc-discount__links p:first-child {
+        margin-bottom: 25px;
+    }
+    .discount-prog {
+        margin-top: 15px;
+    }
+    .discount-prog__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .acc-discount__info p, .discount-prog p {
+        margin-bottom: 10px;
+    }
+    .acc-discount__info {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    .discount-prog__list {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .discount__print, .discount__open {
+        bottom: 10px;
+        right: 10px;
+    }
+    .discount__open {
+        right: 50px;
+    }
+}
+
+@media (max-width: 414px) {
+    .discount__print, .discount__open {
+        bottom: 5px;
+        right: 5px;
+    }
+    .discount__open {
+        right: 40px;
+    }
 }

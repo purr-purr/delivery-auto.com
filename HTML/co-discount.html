@@ -13,6 +13,9 @@
         <!-- Fonts -->
         <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Slick Slider -->
+        <link href="css/components/slick.css" rel="stylesheet" type="text/css">
+        <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
@@ -27,7 +30,6 @@
         <!--========== HEADER ==========-->
         <header id="included__main-navigation" class="main-navigation"></header>
         <!--========== \END HEADER ==========-->
-
 
         <main class="main">
             <header class="page-header">
@@ -46,7 +48,7 @@
 
             <section class="main__container">
                 <article class="main-content">
-                        <h2>Стандартна система знижок</h2>
+                        <h2 class="discount__title">Стандартна система знижок</h2>
                         <div class="discount__map">
                             <img class="popup-discount_open" src="img/system/discount-system/discount-system__map.jpg" alt="discount map">
                             <a class="discount__open popup-discount_open">
@@ -156,63 +158,79 @@
 
                             <ul class="discount-prog__list">
                                 <li>
-                                    <img src="img/system/discount-system/card-3.png" alt="card -3%">
-                                    <div class="discount-prog__info">
-                                        <p>Дисконтна карта</p>
-                                        <p><strong>Стартова</strong></p>
+                                    <div class="discount-prog__inner">
+                                        <div class="discount-prog__card-img">
+                                            <img src="img/system/discount-system/card-3.png" alt="card -3%">
+                                        </div>
+                                        <div class="discount-prog__info">
+                                            <p>Дисконтна карта</p>
+                                            <p><strong>Стартова</strong></p>
+                                        </div>
+    
+                                        <div class="discount-prog__info">
+                                            <p>Сума перевезень на місяць</p>
+                                            <p><strong>На розсуд складу</strong></p>
+                                        </div>
+    
+                                        <p class="discount-prog__info">Знижка <span>3%</span></p>
                                     </div>
-
-                                    <div class="discount-prog__info">
-                                        <p>Сума перевезень на місяць</p>
-                                        <p><strong>На розсуд складу</strong></p>
-                                    </div>
-
-                                    <p class="discount-prog__info">Знижка <span>3%</span></p>
                                 </li>
 
                                 <li>
-                                    <img src="img/system/discount-system/card-5.png" alt="card -5%">
-                                    <div class="discount-prog__info">
-                                        <p>Дисконтна карта</p>
-                                        <p><strong>Бронзова</strong></p>
-                                    </div>
+                                    <div class="discount-prog__inner">
+                                        <div class="discount-prog__card-img">
+                                            <img src="img/system/discount-system/card-5.png" alt="card -5%">
+                                        </div>
+                                        <div class="discount-prog__info">
+                                            <p>Дисконтна карта</p>
+                                            <p><strong>Бронзова</strong></p>
+                                        </div>
 
-                                    <div class="discount-prog__info">
-                                        <p>Сума перевезень на місяць</p>
-                                        <p><strong>> 3000 грн./міс.</strong></p>
-                                    </div>
+                                        <div class="discount-prog__info">
+                                            <p>Сума перевезень на місяць</p>
+                                            <p><strong>> 3000 грн./міс.</strong></p>
+                                        </div>
 
-                                    <p class="discount-prog__info">Знижка <span>5%</span></p>
+                                        <p class="discount-prog__info">Знижка <span>5%</span></p>
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <img src="img/system/discount-system/card-7.png" alt="card -7%">
-                                    <div class="discount-prog__info">
-                                        <p>Дисконтна карта</p>
-                                        <p><strong>Срібна</strong></p>
-                                    </div>
+                                    <div class="discount-prog__inner">
+                                        <div class="discount-prog__card-img">
+                                            <img src="img/system/discount-system/card-7.png" alt="card -7%">
+                                        </div>
+                                        <div class="discount-prog__info">
+                                            <p>Дисконтна карта</p>
+                                            <p><strong>Срібна</strong></p>
+                                        </div>
 
-                                    <div class="discount-prog__info">
-                                        <p>Сума перевезень на місяць</p>
-                                        <p><strong>> 7000 грн./міс.</strong></p>
-                                    </div>
+                                        <div class="discount-prog__info">
+                                            <p>Сума перевезень на місяць</p>
+                                            <p><strong>> 7000 грн./міс.</strong></p>
+                                        </div>
 
-                                    <p class="discount-prog__info">Знижка <span>7%</span></p>
+                                        <p class="discount-prog__info">Знижка <span>7%</span></p>
+                                    </div>
                                 </li>
 
                                 <li>
-                                    <img src="img/system/discount-system/card-10.png" alt="card -10%">
-                                    <div class="discount-prog__info">
-                                        <p>Дисконтна карта</p>
-                                        <p><strong>Золота</strong></p>
-                                    </div>
+                                    <div class="discount-prog__inner">
+                                        <div class="discount-prog__card-img">
+                                            <img src="img/system/discount-system/card-10.png" alt="card -10%">
+                                        </div>
+                                        <div class="discount-prog__info">
+                                            <p>Дисконтна карта</p>
+                                            <p><strong>Золота</strong></p>
+                                        </div>
 
-                                    <div class="discount-prog__info">
-                                        <p>Сума перевезень на місяць</p>
-                                        <p><strong>> 10000 грн./міс.</strong></p>
-                                    </div>
+                                        <div class="discount-prog__info">
+                                            <p>Сума перевезень на місяць</p>
+                                            <p><strong>> 10000 грн./міс.</strong></p>
+                                        </div>
 
-                                    <p class="discount-prog__info">Знижка <span>10%</span></p>
+                                        <p class="discount-prog__info">Знижка <span>10%</span></p>
+                                    </div>
                                 </li>
                             </ul>
 
@@ -243,7 +261,9 @@
             <section id="popup-discount">
                 <form class="popup-main">
                     <h3 class="popup-main__title">Стандартна система знижок</h3>
-                    <img src="img/system/discount-system/discount-system__map--cut.jpg" alt="discount map">
+                    <div class="popup-map">
+                        <img src="img/system/discount-system/discount-system__map--cut.jpg" alt="discount map">
+                    </div>
                 </form>
             </section>
         </main>

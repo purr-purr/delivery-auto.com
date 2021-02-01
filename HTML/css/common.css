@@ -3708,6 +3708,20 @@ details > summary {
 		font-size: 18px;
 		line-height: 24px;
 	}
+	#popup-discount .popup-main__title {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 15px;
+	}
+	.popup-map {
+		width: 800px;
+	}
+	.popup-map img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media (max-width: 550px) {
