@@ -29,11 +29,11 @@
 	margin-bottom: 17px;
 }
 
-.bicycle p a {
+.tarif-zone {
 	color: #3072C4;
 }
 
-.bicycle p a:hover {
+.tarif-zone:hover {
 	color: #3072C4;
 	text-decoration: underline;
 }
@@ -58,11 +58,11 @@
 	height: 40px;
 }
 
-.tariff__table thead th:first-child, .tariff__table tbody td:first-child {
+.tariff__table thead tr:first-child th:first-child, .tariff__table tbody tr:first-child td:first-child {
 	width: 296px;
 }
 
-.tariff__table thead th:nth-child(2), .tariff__table tbody td:nth-child(2) {
+.tariff__table thead tr:first-child th:nth-child(2), .tariff__table tbody tr:first-child td:nth-child(2) {
 	width: 87px;
 }
 
@@ -91,3 +91,51 @@
 	background-color: #FFEF9E;
 	transition: all .4s linear;
 }
+
+.border-bottom {
+	border-bottom: 1px solid #999;
+}
+
+.tariff-call-number {
+	color: #333;
+	display: flex;
+	align-items: center;
+}
+
+.tariff-call-number:hover {
+	color: #3072C4;
+}
+
+.tariff-call-number img {
+	width: 12px;
+	margin-right: 5px;
+}
+
+@media (max-width: 1024px) {
+	.bicycle__title {
+		display: none;
+	}
+	.bicycle p, .bicycle li {
+		margin-bottom: 10px;
+	}
+	.tariff__table {
+		max-width: 805px;
+		min-width: 465px;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.scroll-wrap {
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		margin-bottom: 20px;
+	}
+	.scroll-wrap::-webkit-scrollbar { width: 3px; height: 3px;}
+    .scroll-wrap::-webkit-scrollbar-button { height: 0; width: 100%;}
+    .scroll-wrap::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+    .scroll-wrap::-webkit-scrollbar-track-piece { background-color: transparent;
+	}
+	.main-btn--white {
+		margin-top: 20px;
+	}
+}
+
