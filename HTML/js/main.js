@@ -376,3 +376,34 @@ $('.category-7__click').on('click', function(event){
     $('.category-7__block').toggleClass('category__active');
     $('.category-7__click').toggleClass('category__title-active');
 });
+
+// Страница Тарифи на доставку по Україні. Для адаптива, появление контента при клике
+$('.tariff-click-1').on('click', function(event){
+    $('.tariff-content-1').toggleClass('tariff-content__active');
+    $('.tariff-click-1').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-2').on('click', function(event){
+    $('.tariff-content-2').toggleClass('tariff-content__active');
+    $('.tariff-click-2').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-3').on('click', function(event){
+    $('.tariff-content-3').toggleClass('tariff-content__active');
+    $('.tariff-click-3').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-4').on('click', function(event){
+    $('.tariff-content-4').toggleClass('tariff-content__active');
+    $('.tariff-click-4').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-5').on('click', function(event){
+    $('.tariff-content-5').toggleClass('tariff-content__active');
+    $('.tariff-click-5').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-6').on('click', function(event){
+    $('.tariff-content-6').toggleClass('tariff-content__active');
+    $('.tariff-click-6').toggleClass('tariff-title__active');
+});
