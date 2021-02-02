@@ -377,7 +377,7 @@ $('.category-7__click').on('click', function(event){
     $('.category-7__click').toggleClass('category__title-active');
 });
 
-// Страница Тарифи на доставку по Україні. Для адаптива, появление контента при клике
+// Страницы Тарифов. Для адаптива, появление контента при клике
 $('.tariff-click-1').on('click', function(event){
     $('.tariff-content-1').toggleClass('tariff-content__active');
     $('.tariff-click-1').toggleClass('tariff-title__active');
