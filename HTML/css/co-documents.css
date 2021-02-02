@@ -76,10 +76,18 @@
     margin-bottom: 0;
 }
 
-.documents__group-links img {
-    width: 179px;
-    height: 58px;
+.group-links__logos {
+    max-width: 179px;
+    width: 100%;
+    max-height: 58px;
+    height: auto;
     margin-right: 30px;
+}
+
+.group-links__logos img {
+    display: block;
+    width: 100%;
+    height:auto;
 }
 
 .documents__group-links p {
@@ -167,5 +175,11 @@
     .documents__group-links li p {
         display: flex;
         flex-direction: column;
+    }
+    .group-links__logos {
+        max-width: 279px;
+        max-height: 91px;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
