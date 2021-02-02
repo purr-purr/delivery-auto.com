@@ -339,3 +339,40 @@ $('.advantages-service__click-desc').on('click', function(event){
     $('.advantages-service__show-desc--flex').toggleClass('block__active--flex');
     $('.advantages-service__click-desc').toggleClass('block__hide');
 });
+
+
+// Страница Документація. Для адаптива, появление контента при клике
+$('.category-1__click').on('click', function(event){
+    $('.category-1__block').toggleClass('category__active');
+    $('.category-1__click').toggleClass('category__title-active');
+});
+
+$('.category-2__click').on('click', function(event){
+    $('.category-2__block').toggleClass('category__active');
+    $('.category-2__click').toggleClass('category__title-active');
+});
+
+$('.category-3__click').on('click', function(event){
+    $('.category-3__block').toggleClass('category__active');
+    $('.category-3__click').toggleClass('category__title-active');
+});
+
+$('.category-4__click').on('click', function(event){
+    $('.category-4__block').toggleClass('category__active');
+    $('.category-4__click').toggleClass('category__title-active');
+});
+
+$('.category-5__click').on('click', function(event){
+    $('.category-5__block').toggleClass('category__active');
+    $('.category-5__click').toggleClass('category__title-active');
+});
+
+$('.category-6__click').on('click', function(event){
+    $('.category-6__block').toggleClass('category__active');
+    $('.category-6__click').toggleClass('category__title-active');
+});
+
+$('.category-7__click').on('click', function(event){
+    $('.category-7__block').toggleClass('category__active');
+    $('.category-7__click').toggleClass('category__title-active');
+});
