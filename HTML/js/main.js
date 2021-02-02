@@ -407,3 +407,18 @@ $('.tariff-click-6').on('click', function(event){
     $('.tariff-content-6').toggleClass('tariff-content__active');
     $('.tariff-click-6').toggleClass('tariff-title__active');
 });
+
+$('.tariff-click-7').on('click', function(event){
+    $('.tariff-content-7').toggleClass('tariff-content__active');
+    $('.tariff-click-7').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-8').on('click', function(event){
+    $('.tariff-content-8').toggleClass('tariff-content__active');
+    $('.tariff-click-8').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-9').on('click', function(event){
+    $('.tariff-content-9').toggleClass('tariff-content__active');
+    $('.tariff-click-9').toggleClass('tariff-title__active');
+});

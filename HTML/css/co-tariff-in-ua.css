@@ -192,6 +192,10 @@
 	border-bottom: 1px solid #999;
 }
 
+.white-space-nowrap {
+	white-space: nowrap;
+}
+
 @media (max-width: 1024px) {
 	.tariff-content__hide {
 		display: none;
@@ -215,8 +219,8 @@
 	.address__item {
 		margin-bottom: 0;
 	}
-	.address__item:last-child .address__heading {
-		border-bottom: 2px solid #F0F5F9;
+	.address {
+		border-bottom: 2px solid #f0f5f9;
 	}
 	.address__heading:after {
 		content: "+";

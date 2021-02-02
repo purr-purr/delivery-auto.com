@@ -54,664 +54,706 @@
 
             <section class="main__container">
                 <article class="main-content">
-                    <div class="address__item" id="tariff-in-city">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon1.svg" alt="icon">
-                            <h2 class="address__title">Тариф в межах міста, де діють представництва «Делівері»</h2>
+                    <!-- .mobile-page__title Только для адаптива -->
+                    <h1 class="mobile-page__title">Тарифи на адресну доставку та забирання</h1>
+                    <div class="address">
+                        <div class="address__item tariff-click-1" id="tariff-in-city">
+                            <div class="address__heading">
+                                <img src="img/system/icon/tariff__icon/address__icon1.svg" alt="icon">
+                                <h2 class="address__title">Тариф в межах міста, де діють представництва «Делівері»</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-1">
+                                <p>Тип доставки «Адреса-Відділення», «Відділення – Адреса»</p>
+                                <p>50 грн доплати за кожні 30 хв над-нормованого завантаження або вивантаження</p>
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size1">
+                                        <thead>
+                                            <tr>
+                                                <th>Вага, кг</th>
+                                                <th>Час на завантаження <br>
+                                                    та розвантаження, хв</th>
+                                                <th>Об’єм (включно), м&sup3;</th>
+                                                <th>Вартість, грн</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Економ доставка/забір,до 100 кг</td>
+                                                <td>20</td>
+                                                <td>до 0,5</td>
+                                                <td>45</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Документи</td>
+                                                <td>10</td>
+                                                <td>до 0,02</td>
+                                                <td>30</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 25</td>
+                                                <td>15</td>
+                                                <td>до 0,1</td>
+                                                <td>50</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 100</td>
+                                                <td>20</td>
+                                                <td>до 0,4</td>
+                                                <td>65</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 300</td>
+                                                <td>20</td>
+                                                <td>до 1,23</td>
+                                                <td>130</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 500</td>
+                                                <td>20</td>
+                                                <td>до 2</td>
+                                                <td>170</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 1000</td>
+                                                <td>30</td>
+                                                <td>до 4</td>
+                                                <td>275</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 1500</td>
+                                                <td>30</td>
+                                                <td>до 6</td>
+                                                <td>400</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 2000</td>
+                                                <td>30</td>
+                                                <td>до 8</td>
+                                                <td>575</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 3000</td>
+                                                <td>40</td>
+                                                <td>до 10</td>
+                                                <td>780</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
-                        <p>Тип доставки «Адреса-Відділення», «Відділення – Адреса»</p>
-                        <p>50 грн доплати за кожні 30 хв над-нормованого завантаження або вивантаження</p>
-                        <table class="tariff__table" id="table--size1">
-                            <thead>
-                                <tr>
-                                    <th>Вага, кг</th>
-                                    <th>Час на завантаження <br>
-                                        та розвантаження, хв</th>
-                                    <th>Об’єм (включно), м&sup3;</th>
-                                    <th>Вартість, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Економ доставка/забір,до 100 кг</td>
-                                    <td>20</td>
-                                    <td>до 0,5</td>
-                                    <td>45</td>
-                                </tr>
 
-                                <tr>
-                                    <td>Документи</td>
-                                    <td>10</td>
-                                    <td>до 0,02</td>
-                                    <td>30</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>до 25</td>
-                                    <td>15</td>
-                                    <td>до 0,1</td>
-                                    <td>50</td>
-                                </tr>
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-2">
+                                <img src="img/system/icon/tariff__icon/address__icon2.svg" alt="icon">
+                                <h2 class="address__title">Тариф “Вечірня доставка”</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-2">
+                                <p>Час доставки вантажу з <strong>18:00 до 20:00</strong></p>
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size2">
+                                        <thead>
+                                            <tr>
+                                                <th>Вага (включно), кг</th>
+                                                <th>Доплата за вечірню доставку, грн</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Документи</td>
+                                                <td>100</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 100</td>
-                                    <td>20</td>
-                                    <td>до 0,4</td>
-                                    <td>65</td>
-                                </tr>
+                                            <tr>
+                                                <td>до 25</td>
+                                                <td>150</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 300</td>
-                                    <td>20</td>
-                                    <td>до 1,23</td>
-                                    <td>130</td>
-                                </tr>
+                                            <tr>
+                                                <td>до 100</td>
+                                                <td>150</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 500</td>
-                                    <td>20</td>
-                                    <td>до 2</td>
-                                    <td>170</td>
-                                </tr>
+                                            <tr>
+                                                <td>до 300</td>
+                                                <td>175</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 1000</td>
-                                    <td>30</td>
-                                    <td>до 4</td>
-                                    <td>275</td>
-                                </tr>
+                                            <tr>
+                                                <td>до 500</td>
+                                                <td>200</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 1500</td>
-                                    <td>30</td>
-                                    <td>до 6</td>
-                                    <td>400</td>
-                                </tr>
+                                            <tr>
+                                                <td>до 1000</td>
+                                                <td>200</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 2000</td>
-                                    <td>30</td>
-                                    <td>до 8</td>
-                                    <td>575</td>
-                                </tr>
+                                            <tr>
+                                                <td>до 1500</td>
+                                                <td>200</td>
+                                            </tr>
 
-                                <tr>
-                                    <td>до 3000</td>
-                                    <td>40</td>
-                                    <td>до 10</td>
-                                    <td>780</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                            <tr>
+                                                <td>до 2000</td>
+                                                <td>200</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 3000</td>
+                                                <td>300</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 5000</td>
+                                                <td>300</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 10 000</td>
+                                                <td>400</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 20 000</td>
+                                                <td>400</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <details>
+                                    <summary><strong>Перелік населених пунктів, в яких діє послуга </strong></summary>
+                                    <div class="scroll-wrap">
+                                        <table class="tariff__city">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Арциз</td>
+                                                    <td>Коростишів</td>
+                                                    <td>Романківці</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Бобринець</td>
+                                                    <td>Корсунь-Шевченківський</td>
+                                                    <td>Рубіжне</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Великий Дальник</td>
+                                                    <td>Кременчук</td>
+                                                    <td>Сарни</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Вишневе</td>
+                                                    <td>Кривий Ріг</td>
+                                                    <td>Світловодськ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Вільнянськ</td>
+                                                    <td>Кропивницький (Кіровоград)</td>
+                                                    <td>Слов'янськ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Волочиськ</td>
+                                                    <td>Лисичанськ</td>
+                                                    <td>Сміла</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Гайсин</td>
+                                                    <td>Луцьк</td>
+                                                    <td>Старокостянтинів</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Городок</td>
+                                                    <td>Львів</td>
+                                                    <td>Суми</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Дніпро</td>
+                                                    <td>Миколаїв</td>
+                                                    <td>Тальне</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Дніпрорудне</td>
+                                                    <td>Минай</td>
+                                                    <td>Тернопіль</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Дружківка</td>
+                                                    <td>Мукачеве</td>
+                                                    <td>Трускавець</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Запоріжжя</td>
+                                                    <td>Новоград-Волинський</td>
+                                                    <td>Ужгород</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Золотоноша</td>
+                                                    <td>Одеса</td>
+                                                    <td>Умань</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Івано-Франківськ</td>
+                                                    <td>Первомайськ</td>
+                                                    <td>Харків</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ізмаїл</td>
+                                                    <td>Подільск</td>
+                                                    <td>Херсон</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Калуш</td>
+                                                    <td>Полтава</td>
+                                                    <td>Хмельницький</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Камінь-Каширський</td>
+                                                    <td>Попільня</td>
+                                                    <td>Черкаси</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кам'янець-Подільський</td>
+                                                    <td>Приморськ</td>
+                                                    <td>Чернігів</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Київ</td>
+                                                    <td>Пустомити</td>
+                                                    <td>Чигирин</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кілія</td>
+                                                    <td>Рівне</td>
+                                                    <td>Чорнобай</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ковель</td>
+                                                    <td>Рокитне</td>
+                                                    <td>Чорноморськ</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-3">
+                                <img src="img/system/icon/tariff__icon/address__icon3.svg" alt="icon">
+                                <h2 class="address__title">Забирання / доставка вантажу окремою машиною </h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-3">
+                                <p>- Автомобіль із гідробортом	+ 50 грн.</p>
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size3">
+                                        <thead>
+                                            <tr>
+                                                <th>Вага, кг</th> 
+                                                <th>Час на завантаження <br>
+                                                    та розвантаження, хв</th>
+                                                <th>Об’єм (включно), м&sup3;</th>
+                                                <th>Вартість, грн</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>до 2000</td>
+                                                <td>45 *</td>
+                                                <td>до 10</td>
+                                                <td>800</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 5000</td>
+                                                <td>60 *</td>
+                                                <td>до 25</td>
+                                                <td>1360</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 10 000</td>
+                                                <td>90 **</td>
+                                                <td>до 40</td>
+                                                <td>2300</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 20 000</td>
+                                                <td>120 **</td>
+                                                <td>до 80</td>
+                                                <td>3600</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p>- * За кожну 1 годину понад-нормованого завантаження	доплата 50 грн.</p>
+                                <p>- ** За кожну 1 годину понад-нормованого завантаження	доплата 100 грн.</p>
+                            </div>
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-4">
+                                <img src="img/system/icon/tariff__icon/address__icon4.svg" alt="icon">
+                                <h2 class="address__title">Адресне забирання i доставка палет </h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-4">
+                                <p><strong>Параметри вантажу до відправлення:</strong> висота палети не більше 200 см</p>
+                                <div class="scroll-wrap table-4--wrap">
+                                    <table class="tariff__table" id="table--size3">
+                                        <thead>
+                                            <tr>
+                                                <th>Послуга</th> 
+                                                <th>Тариф від 80 кг <br>
+                                                    до 500 кг, грн</th>
+                                                <th>Тариф від 500 кг <br>
+                                                    до 1000 кг, грн</th>
+                                                <th>Тариф від 1000 кг <br>
+                                                    до 1250 кг, грн</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Забір/доставка Европалета</td>
+                                                <td>130</td>
+                                                <td>180</td>
+                                                <td>270</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Забір/доставка Американка 1/2	</td>
+                                                <td>150</td>
+                                                <td>210</td>
+                                                <td>320</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-5">
+                                <img src="img/system/icon/tariff__icon/address__icon5.svg" alt="icon">
+                                <h2 class="address__title">Забір / доставка на об'єкти з режимністю</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-5">
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size2">
+                                        <thead>
+                                            <tr>
+                                                <th>Вага, кг</th>
+                                                <th>Вартість, грн</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>"Економ" до 100 кг (0,5 м&sup3;)</td>
+                                                <td>+45</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>Документи</td>
+                                                <td>+25</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 2000</td>
+                                                <td>+50</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 5000</td>
+                                                <td>+100</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>до 20 000</td>
+                                                <td>+150</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-6">
+                                <img src="img/system/icon/tariff__icon/address__icon6.svg" alt="icon">
+                                <h2 class="address__title">Тариф «Збірна доставка»</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-6">
+                                <p>1. Об’єднання декількох партій вантажу в одну адресну доставку, за умови, що вантаж знаходиться на одному складі «Делівері».</p>
+                                <p>2. Відсутні обмеження за типом вантажу. Можна об’єднати в одну доставку документи, посилки та вантажі, палети, шини, диски інше.</p>
+                                <p><strong>Тариф на «Збірну доставку» = Тариф на доставку вантажу по місту чи за межі міста (відповідно до ваги/ об’єму за всіма квитанціями) + 5 грн. за оформлення кожної квитанції в замовленні</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-7">
+                                <img src="img/system/icon/tariff__icon/address__icon7.svg" alt="icon">
+                                <h2 class="address__title">Негабарит</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-7">
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size4">
+                                        <thead>
+                                            <tr>
+                                                <th>Одна зі сторін перевищує розміри​, см</th>
+                                                <th>Вага одиниці вантажу (ОВ)</th>
+                                                <th>Вартість, грн.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Довжина: <strong>400</strong> / Ширина: <strong>180</strong> / Висота: <strong>200</strong></td>
+                                                <td>> 1000 кг</td>
+                                                <td>+100</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-8">
+                                <img src="img/system/icon/tariff__icon/address__icon8.svg" alt="icon">
+                                <h2 class="address__title">Тариф на адресне забирання / доставку за межі міста</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-8">
+                                <p>«Адреса-Відділення», «Відділення – Адреса»</p>
+                                <p>Зазначена відстань від найближчого складу «Делівері» до населеного пункту клієнта.</p>
+                                <p>Тарифи зазначені в обидві сторони.</p>
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size5">
+                                    <thead>
+                                        <tr>
+                                            <th>Max. відстань (включно)</th>
+                                            <th>0-300 кг</th>
+                                            <th>300-2000 кг</th>
+                                            <th>2000-5000 кг</th>
+                                            <th>5000-10 000 кг</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>до 20 км</td>
+                                            <td>355</td>
+                                            <td>575</td>
+                                            <td>1360</td>
+                                            <td>2300</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 30 км</td>
+                                            <td>530</td>
+                                            <td>790</td>
+                                            <td>1360</td>
+                                            <td>2300</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 40 км</td>
+                                            <td>710</td>
+                                            <td>1050</td>
+                                            <td>1440</td>
+                                            <td>2300</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 50 км</td>
+                                            <td>885</td>
+                                            <td>1315</td>
+                                            <td>1800</td>
+                                            <td>2335</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 60 км</td>
+                                            <td>1060</td>
+                                            <td>1580</td>
+                                            <td>2160</td>
+                                            <td>2800</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 70 км</td>
+                                            <td>1240</td>
+                                            <td>1840</td>
+                                            <td>2520</td>
+                                            <td>3270</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 80 км</td>
+                                            <td>1415</td>
+                                            <td>2100</td>
+                                            <td>2880</td>
+                                            <td>3735</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>   
+                                </div> 
+                            </div>                
+                        </div>
+
+                        <!-- next block -->
+
+                        <div class="address__item">
+                            <div class="address__heading tariff-click-9">
+                                <img src="img/system/icon/tariff__icon/address__icon9.svg" alt="icon">
+                                <h2 class="address__title">Тариф «Економ забирання / доставка вантажу»</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-9">
+                                <p>Забирання/доставка протягом 48 годин</p>
+                                <p><strong>Параметри вантажу до відправлення:</strong> висота – до 1,7 м, довжина – до 2 м</p>
+                                <p>Послуга не поширюється на негабаратний вантаж, повернення документів, повернення палет, підйом вантажу, повернення контейнерів.</p>
+                                <p><strong>Замовлення послуги на складі. </strong></p>
+                                <div class="scroll-wrap">
+                                    <table class="tariff__table" id="table--size4">
+                                        <thead>
+                                            <tr>
+                                                <th>Вага</th>
+                                                <th>Об’єм</th>
+                                                <th>Вартість</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>до 100 кг</td>
+                                                <td>до 0,5 м&sup3;</td>
+                                                <td>45 грн</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <details>
+                                    <summary><strong>Перелік населених пунктів, в яких діє послуга </strong></summary>
+                                    <div class="scroll-wrap">
+                                        <table class="tariff__city">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Бердичів</td>
+                                                    <td>Краматорськ</td>
+                                                    <td>Охтирка</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Вишневе</td>
+                                                    <td>Кременчук</td>
+                                                    <td>Пирятин</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Вінниця</td>
+                                                    <td>Кролевець</td>
+                                                    <td>Полтава</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Гадяч</td>
+                                                    <td>Куп’янськ</td>
+                                                    <td>Прилуки</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Глухів</td>
+                                                    <td>Лозова</td>
+                                                    <td>Рівне</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Дніпро</td>
+                                                    <td>Лохвиця</td>
+                                                    <td>Сєвєродонецьк</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Добропілля</td>
+                                                    <td>Лубни</td>
+                                                    <td>Суми</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Житомир</td>
+                                                    <td>Луцьк</td>
+                                                    <td>Фастів</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Запоріжжя</td>
+                                                    <td>Львів</td>
+                                                    <td>Харків</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кам’янець-Подільський</td>
+                                                    <td>Маріуполь</td>
+                                                    <td>Херсон</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Київ</td>
+                                                    <td>Миколаїв</td>
+                                                    <td>Хмельницький</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кіровоград</td>
+                                                    <td>Миргород</td>
+                                                    <td>Хорол</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ковель</td>
+                                                    <td>Могилів-Подільський</td>
+                                                    <td>Черкаси</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Комсомольськ</td>
+                                                    <td>Ніжин</td>
+                                                    <td>Чернівці</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Конотоп</td>
+                                                    <td>Новоград-Волинський</td>
+                                                    <td>Чернігів</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Коростишів</td>
+                                                    <td>Одеса</td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon2.svg" alt="icon">
-                            <h2 class="address__title">Тариф “Вечірня доставка”</h2>
-                        </div>
-                        <p>Час доставки вантажу з <strong>18:00 до 20:00</strong></p>
-                        <table class="tariff__table" id="table--size2">
-                            <thead>
-                                <tr>
-                                    <th>Вага (включно), кг</th>
-                                    <th>Доплата за вечірню доставку, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Документи</td>
-                                    <td>100</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 25</td>
-                                    <td>150</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 100</td>
-                                    <td>150</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 300</td>
-                                    <td>175</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 500</td>
-                                    <td>200</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 1000</td>
-                                    <td>200</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 1500</td>
-                                    <td>200</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 2000</td>
-                                    <td>200</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 3000</td>
-                                    <td>300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 5000</td>
-                                    <td>300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 10 000</td>
-                                    <td>400</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 20 000</td>
-                                    <td>400</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <details>
-                            <summary><strong>Перелік населених пунктів, в яких діє послуга </strong></summary>
-                            <table class="tariff__city">
-                                <tbody>
-                                    <tr>
-                                        <td>Арциз</td>
-                                        <td>Коростишів</td>
-                                        <td>Романківці</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Бобринець</td>
-                                        <td>Корсунь-Шевченківський</td>
-                                        <td>Рубіжне</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Великий Дальник</td>
-                                        <td>Кременчук</td>
-                                        <td>Сарни</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Вишневе</td>
-                                        <td>Кривий Ріг</td>
-                                        <td>Світловодськ</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Вільнянськ</td>
-                                        <td>Кропивницький (Кіровоград)</td>
-                                        <td>Слов'янськ</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Волочиськ</td>
-                                        <td>Лисичанськ</td>
-                                        <td>Сміла</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Гайсин</td>
-                                        <td>Луцьк</td>
-                                        <td>Старокостянтинів</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Городок</td>
-                                        <td>Львів</td>
-                                        <td>Суми</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Дніпро</td>
-                                        <td>Миколаїв</td>
-                                        <td>Тальне</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Дніпрорудне</td>
-                                        <td>Минай</td>
-                                        <td>Тернопіль</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Дружківка</td>
-                                        <td>Мукачеве</td>
-                                        <td>Трускавець</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Запоріжжя</td>
-                                        <td>Новоград-Волинський</td>
-                                        <td>Ужгород</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Золотоноша</td>
-                                        <td>Одеса</td>
-                                        <td>Умань</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Івано-Франківськ</td>
-                                        <td>Первомайськ</td>
-                                        <td>Харків</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ізмаїл</td>
-                                        <td>Подільск</td>
-                                        <td>Херсон</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Калуш</td>
-                                        <td>Полтава</td>
-                                        <td>Хмельницький</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Камінь-Каширський</td>
-                                        <td>Попільня</td>
-                                        <td>Черкаси</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Кам'янець-Подільський</td>
-                                        <td>Приморськ</td>
-                                        <td>Чернігів</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Київ</td>
-                                        <td>Пустомити</td>
-                                        <td>Чигирин</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Кілія</td>
-                                        <td>Рівне</td>
-                                        <td>Чорнобай</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ковель</td>
-                                        <td>Рокитне</td>
-                                        <td>Чорноморськ</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </details>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon3.svg" alt="icon">
-                            <h2 class="address__title">Забирання / доставка вантажу окремою машиною </h2>
-                        </div>
-                        <p>- Автомобіль із гідробортом	+ 50 грн.</p>
-                        <table class="tariff__table" id="table--size3">
-                            <thead>
-                                <tr>
-                                    <th>Вага, кг</th> 
-                                    <th>Час на завантаження <br>
-                                        та розвантаження, хв</th>
-                                    <th>Об’єм (включно), м&sup3;</th>
-                                    <th>Вартість, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 2000</td>
-                                    <td>45 *</td>
-                                    <td>до 10</td>
-                                    <td>800</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 5000</td>
-                                    <td>60 *</td>
-                                    <td>до 25</td>
-                                    <td>1360</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 10 000</td>
-                                    <td>90 **</td>
-                                    <td>до 40</td>
-                                    <td>2300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 20 000</td>
-                                    <td>120 **</td>
-                                    <td>до 80</td>
-                                    <td>3600</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p>- * За кожну 1 годину понад-нормованого завантаження	доплата 50 грн.</p>
-                        <p>- ** За кожну 1 годину понад-нормованого завантаження	доплата 100 грн.</p>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon4.svg" alt="icon">
-                            <h2 class="address__title">Адресне забирання i доставка палет </h2>
-                        </div>
-                        <p><strong>Параметри вантажу до відправлення:</strong> висота палети не більше 200 см</p>
-                        <table class="tariff__table" id="table--size3">
-                            <thead>
-                                <tr>
-                                    <th>Послуга</th> 
-                                    <th>Тариф від 80 кг <br>
-                                        до 500 кг, грн</th>
-                                    <th>Тариф від 500 кг <br>
-                                        до 1000 кг, грн</th>
-                                    <th>Тариф від 1000 кг <br>
-                                        до 1250 кг, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Забір/доставка Европалета</td>
-                                    <td>130</td>
-                                    <td>180</td>
-                                    <td>270</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Забір/доставка Американка 1/2	</td>
-                                    <td>150</td>
-                                    <td>210</td>
-                                    <td>320</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon5.svg" alt="icon">
-                            <h2 class="address__title">Забір / доставка на об'єкти з режимністю</h2>
-                        </div>
-                        <table class="tariff__table" id="table--size2">
-                            <thead>
-                                <tr>
-                                    <th>Вага, кг</th>
-                                    <th>Вартість, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>"Економ" до 100 кг (0,5 м&sup3;)</td>
-                                    <td>+45</td>
-                                </tr>
-
-                                <tr>
-                                    <td>Документи</td>
-                                    <td>+25</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 2000</td>
-                                    <td>+50</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 5000</td>
-                                    <td>+100</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 20 000</td>
-                                    <td>+150</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon6.svg" alt="icon">
-                            <h2 class="address__title">Тариф «Збірна доставка»</h2>
-                        </div>
-                        <p>1. Об’єднання декількох партій вантажу в одну адресну доставку, за умови, що вантаж знаходиться на одному складі «Делівері».</p>
-                        <p>2. Відсутні обмеження за типом вантажу. Можна об’єднати в одну доставку документи, посилки та вантажі, палети, шини, диски інше.</p>
-                        <p><strong>Тариф на «Збірну доставку» = Тариф на доставку вантажу по місту чи за межі міста (відповідно до ваги/ об’єму за всіма квитанціями) + 5 грн. за оформлення кожної квитанції в замовленні</strong></p>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon7.svg" alt="icon">
-                            <h2 class="address__title">Негабарит</h2>
-                        </div>
-                        <table class="tariff__table" id="table--size4">
-                            <thead>
-                                <tr>
-                                    <th>Одна зі сторін перевищує розміри​, см</th>
-                                    <th>Вага одиниці вантажу (ОВ)</th>
-                                    <th>Вартість, грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Довжина: <strong>400</strong> / Ширина: <strong>180</strong> / Висота: <strong>200</strong></td>
-                                    <td>> 1000 кг</td>
-                                    <td>+100</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon8.svg" alt="icon">
-                            <h2 class="address__title">Тариф на адресне забирання / доставку за межі міста</h2>
-                        </div>
-                        <p>«Адреса-Відділення», «Відділення – Адреса»</p>
-                        <p>Зазначена відстань від найближчого складу «Делівері» до населеного пункту клієнта.</p>
-                        <p>Тарифи зазначені в обидві сторони.</p>
-                        <table class="tariff__table" id="table--size5">
-                            <thead>
-                                <tr>
-                                    <th>Max. відстань (включно)</th>
-                                    <th>0-300 кг</th>
-                                    <th>300-2000 кг</th>
-                                    <th>2000-5000 кг</th>
-                                    <th>5000-10 000 кг</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 20 км</td>
-                                    <td>355</td>
-                                    <td>575</td>
-                                    <td>1360</td>
-                                    <td>2300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 30 км</td>
-                                    <td>530</td>
-                                    <td>790</td>
-                                    <td>1360</td>
-                                    <td>2300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 40 км</td>
-                                    <td>710</td>
-                                    <td>1050</td>
-                                    <td>1440</td>
-                                    <td>2300</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 50 км</td>
-                                    <td>885</td>
-                                    <td>1315</td>
-                                    <td>1800</td>
-                                    <td>2335</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 60 км</td>
-                                    <td>1060</td>
-                                    <td>1580</td>
-                                    <td>2160</td>
-                                    <td>2800</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 70 км</td>
-                                    <td>1240</td>
-                                    <td>1840</td>
-                                    <td>2520</td>
-                                    <td>3270</td>
-                                </tr>
-
-                                <tr>
-                                    <td>до 80 км</td>
-                                    <td>1415</td>
-                                    <td>2100</td>
-                                    <td>2880</td>
-                                    <td>3735</td>
-                                </tr>
-                            </tbody>
-                        </table>                    
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="address__item">
-                        <div class="address__heading">
-                            <img src="img/system/icon/tariff__icon/address__icon9.svg" alt="icon">
-                            <h2 class="address__title">Тариф «Економ забирання / доставка вантажу»</h2>
-                        </div>
-                        <p>Забирання/доставка протягом 48 годин</p>
-                        <p><strong>Параметри вантажу до відправлення:</strong> висота – до 1,7 м, довжина – до 2 м</p>
-                        <p>Послуга не поширюється на негабаратний вантаж, повернення документів, повернення палет, підйом вантажу, повернення контейнерів.</p>
-                        <p><strong>Замовлення послуги на складі. </strong></p>
-                        <table class="tariff__table" id="table--size4">
-                            <thead>
-                                <tr>
-                                    <th>Вага</th>
-                                    <th>Об’єм</th>
-                                    <th>Вартість</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 100 кг</td>
-                                    <td>до 0,5 м&sup3;</td>
-                                    <td>45 грн</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        
-                        <details>
-                            <summary><strong>Перелік населених пунктів, в яких діє послуга </strong></summary>
-                            <table class="tariff__city">
-                                <tbody>
-                                    <tr>
-                                        <td>Бердичів</td>
-                                        <td>Краматорськ</td>
-                                        <td>Охтирка</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Вишневе</td>
-                                        <td>Кременчук</td>
-                                        <td>Пирятин</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Вінниця</td>
-                                        <td>Кролевець</td>
-                                        <td>Полтава</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Гадяч</td>
-                                        <td>Куп’янськ</td>
-                                        <td>Прилуки</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Глухів</td>
-                                        <td>Лозова</td>
-                                        <td>Рівне</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Дніпро</td>
-                                        <td>Лохвиця</td>
-                                        <td>Сєвєродонецьк</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Добропілля</td>
-                                        <td>Лубни</td>
-                                        <td>Суми</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Житомир</td>
-                                        <td>Луцьк</td>
-                                        <td>Фастів</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Запоріжжя</td>
-                                        <td>Львів</td>
-                                        <td>Харків</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Кам’янець-Подільський</td>
-                                        <td>Маріуполь</td>
-                                        <td>Херсон</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Київ</td>
-                                        <td>Миколаїв</td>
-                                        <td>Хмельницький</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Кіровоград</td>
-                                        <td>Миргород</td>
-                                        <td>Хорол</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ковель</td>
-                                        <td>Могилів-Подільський</td>
-                                        <td>Черкаси</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Комсомольськ</td>
-                                        <td>Ніжин</td>
-                                        <td>Чернівці</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Конотоп</td>
-                                        <td>Новоград-Волинський</td>
-                                        <td>Чернігів</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Коростишів</td>
-                                        <td>Одеса</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </details>
-                    </div>
-
-                    <div class="address__item">
+                    <div class="address__video-block">
                         <h3 class="address__title">Як швидко та зручно замовити авто</h3>
                         <div class="address__video">
-                            <iframe width="700" height="394" src="https://www.youtube.com/embed/Z68jKg6zKyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/Z68jKg6zKyI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
-                        <p>Номер інформаційної підтримки: <strong>0 800 509-509</strong></p>
-                        <p>«Центр прийому замовлень» <strong>0 800 509 609</strong></p>
+                        <p>Номер інформаційної підтримки: <strong><a href="tel:0800509509" class="white-space-nowrap">0 800 509 509</a></strong></p>
+                        <p>«Центр прийому замовлень» <strong><a href="tel:0800509609" class="white-space-nowrap">0 800 509 609</a></strong></p>
                         <a class="main-btn main-btn--white" href="https://www.delivery-auto.com/userfs/files/delivery_pickup_cargo.pdf" target="_blank"> <img src="img/system/icon/small-yellow-arrow.svg" alt=""> Завантажити тарифи</a>
                     </div>
                 </article>
