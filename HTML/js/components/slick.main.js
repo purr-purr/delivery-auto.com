@@ -300,4 +300,28 @@ $(document).ready(function(){
             }
         ]
     });
+    $('.tariff__advantages').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        slidesToScroll: 1,
+        mobileFirst: true, 
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 460,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: "unslick"
+            }
+        ]
+    });
 });

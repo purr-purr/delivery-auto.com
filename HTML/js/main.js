@@ -422,3 +422,23 @@ $('.tariff-click-9').on('click', function(event){
     $('.tariff-content-9').toggleClass('tariff-content__active');
     $('.tariff-click-9').toggleClass('tariff-title__active');
 });
+
+$('.tariff-click-10').on('click', function(event){
+    $('.tariff-content-10').toggleClass('tariff-content__active');
+    $('.tariff-click-10').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-11').on('click', function(event){
+    $('.tariff-content-11').toggleClass('tariff-content__active');
+    $('.tariff-click-11').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-12').on('click', function(event){
+    $('.tariff-content-12').toggleClass('tariff-content__active');
+    $('.tariff-click-12').toggleClass('tariff-title__active');
+});
+
+$('.tariff-click-13').on('click', function(event){
+    $('.tariff-content-13').toggleClass('tariff-content__active');
+    $('.tariff-click-13').toggleClass('tariff-title__active');
+});
