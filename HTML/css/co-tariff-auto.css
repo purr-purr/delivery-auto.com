@@ -26,10 +26,16 @@
 	margin: 30px 0;
 }
 
-.tariff__advantages img {
+.advantages__img {
 	width: 144px;
 	height: 138px;
-	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
+}
+
+.advantages__img img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .tariff__advantages p {
@@ -146,6 +152,10 @@
 	color: #FF2727;
 }
 
+.action-wrap {
+	position: relative;
+}
+
 .action {
 	position: absolute;
 	margin-left: 9px;
@@ -172,6 +182,119 @@
 	color: #FF2727;
 }
 
+/* .new-wrap {
+	position: relative;
+}
+
+.new {
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	margin-bottom: 0;
+	
+	padding-left: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FF2727;
+} */
+
 .note {
 	color: #3072C4;
+}
+
+@media (max-width: 1024px) {
+	.tariff-content__hide {
+		display: none;
+	}
+	.tariff-content__active {
+		display: block;
+	}
+	.construct {
+		border-bottom: 2px solid #f0f5f9;
+	}
+	.construct__title {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.construct__heading img {
+		margin-right: 10px;
+	}
+	.construct__heading {
+		border-top: 2px solid #F0F5F9;
+		padding: 10px 35px 10px 0;
+		margin-bottom: 0;
+		position: relative;
+		cursor: pointer;
+	}
+	.construct__item {
+		margin-bottom: 0;
+	}
+	.construct__main-title {
+		display: none;
+	}
+	.construct__intro p {
+		margin-bottom: 10px;
+	}
+	.construct__heading:after {
+		content: "+";
+		position: absolute;
+		top: calc(50% - 10px);
+		right: 5px;
+		color: #ffd500;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 1;
+		transform: rotate(0deg);
+		transition: all .1s linear;
+	}
+	.tariff-title__active:after {
+		transform: rotate(45deg);
+		right: 3px;
+		transition: all .1s linear;
+	}
+	.tariff__table {
+		max-width: 805px;
+		width: 100%;
+	}
+	.main-btn--white {
+		margin-top: 20px;
+	}
+	.tariff__advantages {
+		justify-content: space-evenly;
+		margin: 20px 0;
+	}
+	.advantages__img {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto 10px auto;
+	}
+	.new {
+		top: 0;
+		left: 5px;
+		padding-left: 0;
+		font-size: 10px;
+	}
+	.tariff__table thead th {
+		padding: 3px;
+	}
+	.construct__item p {
+		margin-bottom: 10px;
+	}
+	.action-wrap {
+		padding-top: 15px !important;
+	}
+	.action {
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 1px 8px 2px 8px;
+		border-radius: 10px;
+		font-size: 12px;
+		line-height: 1;
+	}
+	.new-price {
+		top: calc( 50% - 11px);
+		left: calc( 50% - -33px);
+		margin-bottom: 0 !important;
+	}
 }

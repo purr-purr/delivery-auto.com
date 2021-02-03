@@ -15,6 +15,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/normalize.css" rel="stylesheet">
+        <!-- Slick Slider -->
+        <link href="css/components/slick.css" rel="stylesheet" type="text/css">
+        <link href="css/components/slick-theme.css" rel="stylesheet" type="text/css">
         <!-- THEME STYLES -->
         <link href="css/common.css" rel="stylesheet" type="text/css"/>
         <link href="css/co-tariff-auto.css" rel="stylesheet" type="text/css"/>
@@ -54,448 +57,475 @@
 
             <section class="main__container">
                 <article class="main-content">
-                    <div class="construct__item">
+
+                    <div class="construct__intro">
+                        <!-- .mobile-page__title Только для адаптива -->
+                        <h1 class="mobile-page__title">Галузевий тариф “Автопрайс”</h1>
                         <h2 class="construct__main-title">Тариф «Автопрайс»</h2>
                         <p>Перевезення автотоварів та автозапчастин.</p>
                     </div>
 
                     <ul class="tariff__advantages">
                         <li>
-                            <img src="img/system/icon/tariff__icon/advantages__icon1.png" alt="icon">
+                            <div class="advantages__img">
+                                <img src="img/system/icon/tariff__icon/advantages__icon1.png" alt="icon">
+                            </div>
                             <p>Єдина ціна <br> по Україні</p>
                         </li>
 
                         <li>
-                            <img src="img/system/icon/tariff__icon/advantages__icon2.png" alt="icon">
+                            <div class="advantages__img">
+                                <img src="img/system/icon/tariff__icon/advantages__icon2.png" alt="icon">
+                            </div>
                             <p>Оплата за <br> одиницю вантажу</p>
                         </li>
 
                         <li>
-                            <img src="img/system/icon/tariff__icon/advantages__icon3.png" alt="icon">
+                            <div class="advantages__img">
+                                <img src="img/system/icon/tariff__icon/advantages__icon3.png" alt="icon">
+                            </div>
                             <p>Відсутність плати <br> за оформлення</p>
                         </li>
 
                         <li>
-                            <img src="img/system/icon/tariff__icon/advantages__icon4.png" alt="icon">
+                            <div class="advantages__img">
+                                <img src="img/system/icon/tariff__icon/advantages__icon4.png" alt="icon">
+                            </div>
                             <p>Широкий вибір <br> доупакування</p>
                         </li>
                     </ul>
 
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Авто-BOX <span>max cторона коробки - до 1 м</span></h2>
+                    <div class="construct">
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-1">
+                                <img src="img/system/icon/tariff__icon/auto__icon-6.svg" alt="icon">
+                                <h2 class="construct__title">Авто-BOX <span>max cторона коробки - до 1 м</span></h2>
+                            </div>
+
+                            <div class="tariff-content__hide tariff-content-1">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Вага</th>
+                                            <th>Ціна на території України, грн</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>до 10 кг</td>
+                                            <td>40,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 15 кг</td>
+                                            <td>50,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 30 кг</td>
+                                            <td>80,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>Обов’язкове доупакування  <span class="note">*</span></strong></p>
+                                <p><strong>1-5 штук:</strong> Коробка / Упаковка «Максимальна» / Упаковка «Середня»</p>
+                                <p><strong>від 6 штук:</strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер / Меблевий контейнер.</p>
+                                <p><span class="note">*</span> При відсутності упаковки виробника, а також, якщо упаковка не відповідає правилам пакування «Делівері».</p>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>Вага</th>
-                                    <th>Ціна на території України, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 10 кг</td>
-                                    <td>40,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>до 15 кг</td>
-                                    <td>50,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>до 30 кг</td>
-                                    <td>80,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><strong>Обов’язкове доупакування  <span class="note">*</span></strong></p>
-                        <p><strong>1-5 штук:</strong> Коробка / Упаковка «Максимальна» / Упаковка «Середня»</p>
-                        <p><strong>від 6 штук:</strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер / Меблевий контейнер.</p>
-                        <p><span class="note">*</span> При відсутності упаковки виробника, а також, якщо упаковка не відповідає правилам пакування «Делівері».</p>
-                    </div>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-2">
+                                <img src="img/system/icon/tariff__icon/auto__icon-5.svg" alt="icon">
+                                <h2 class="construct__title">Акумулятори <span>до 60 кг</span></h2>
+                            </div>
 
-                    <!-- next block -->
+                            <div class="tariff-content__hide tariff-content-2">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Вага</th>
+                                            <th>Ціна на території України, грн</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>до 10 кг</td>
+                                            <td>40,00</td>
+                                        </tr>
 
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Акумулятори <span>до 60 кг</span></h2>
+                                        <tr>
+                                            <td>до 15 кг</td>
+                                            <td>50,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 20 кг</td>
+                                            <td>60,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 30 кг</td>
+                                            <td>80,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 50 кг</td>
+                                            <td>100,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 60 кг</td>
+                                            <td>120,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>Обов’язкове доупакування  <span class="note">*</span></strong></p>
+                                <p><strong>1-5 ОВ:</strong> Поліетиленовий мішок / Коробка / Упаковка «Середня»/ Упаковка «Максимальна»</p>
+                                <p><strong>від 6 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Меблевий контейнер.</p>
+                                <p><span class="note">*</span> При відсутності упаковки виробника, а також, якщо упаковка не відповідає правилам пакування «Делівері».</p>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>Вага</th>
-                                    <th>Ціна на території України, грн</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 10 кг</td>
-                                    <td>40,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>до 15 кг</td>
-                                    <td>50,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>до 20 кг</td>
-                                    <td>60,00</td>
-                                </tr>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-3">
+                                <img src="img/system/icon/tariff__icon/auto__icon-4.svg" alt="icon">
+                                <h2 class="construct__title">Каністри і бочки</h2>
+                            </div>
+                            <div class="tariff-content__hide tariff-content-3">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Вага</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>до 10 л</td>
+                                            <td>40,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 30 кг</td>
-                                    <td>80,00</td>
-                                </tr>
+                                        <tr>
+                                            <td>до 20 л</td>
+                                            <td>60,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 50 кг</td>
-                                    <td>100,00</td>
-                                </tr>
+                                        <tr>
+                                            <td>до 30 л</td>
+                                            <td>80,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 60 кг</td>
-                                    <td>120,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><strong>Обов’язкове доупакування  <span class="note">*</span></strong></p>
-                        <p><strong>1-5 ОВ:</strong> Поліетиленовий мішок / Коробка / Упаковка «Середня»/ Упаковка «Максимальна»</p>
-                        <p><strong>від 6 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Меблевий контейнер.</p>
-                        <p><span class="note">*</span> При відсутності упаковки виробника, а також, якщо упаковка не відповідає правилам пакування «Делівері».</p>
-                    </div>
+                                        <tr>
+                                            <td>до 50 л</td>
+                                            <td>100,00</td>
+                                        </tr>
 
-                    <!-- next block -->
+                                        <tr>
+                                            <td>до 60 л</td>
+                                            <td>120,00</td>
+                                        </tr>
 
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Каністри і бочки</h2>
+                                        <tr>
+                                            <td>до 100 л</td>
+                                            <td>200,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>до 216 л</td>
+                                            <td>450,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>Обов’язкове доупакування  <span class="note">*</span></strong></p>
+                                <p><strong>1-4 ОВ:</strong> Коробка / Упаковка «Середня»/ Упаковка «Максимальна» / Поліетиленовий мішок</p>
+                                <p><strong>від 5 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер / Меблевий контейнер.</p>
+                                <p><span class="note">*</span> При відсутності упаковки виробника, а також, якщо упаковка не відповідає правилам пакування «Делівері».</p>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>Вага</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 10 л</td>
-                                    <td>40,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>до 20 л</td>
-                                    <td>60,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>до 30 л</td>
-                                    <td>80,00</td>
-                                </tr>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-4">
+                                <img src="img/system/icon/tariff__icon/auto__icon-3.svg" alt="icon">
+                                <h2 class="construct__title">ГБО <span>(газобалонне обладнання)</span></h2>
+                            </div>
+                            
+                            <div class="tariff-content__hide tariff-content-4">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Вага</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>до 30 л</td>
+                                            <td>50,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 50 л</td>
-                                    <td>100,00</td>
-                                </tr>
+                                        <tr>
+                                            <td>до 60 л</td>
+                                            <td>70,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 60 л</td>
-                                    <td>120,00</td>
-                                </tr>
+                                        <tr>
+                                            <td>до 100 л</td>
+                                            <td>90,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 100 л</td>
-                                    <td>200,00</td>
-                                </tr>
+                                        <tr>
+                                            <td>до 150 л</td>
+                                            <td>110,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 216 л</td>
-                                    <td>450,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><strong>Обов’язкове доупакування  <span class="note">*</span></strong></p>
-                        <p><strong>1-4 ОВ:</strong> Коробка / Упаковка «Середня»/ Упаковка «Максимальна» / Поліетиленовий мішок</p>
-                        <p><strong>від 5 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер / Меблевий контейнер.</p>
-                        <p><span class="note">*</span> При відсутності упаковки виробника, а також, якщо упаковка не відповідає правилам пакування «Делівері».</p>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">ГБО <span>(газобалонне обладнання)</span></h2>
+                                        <tr>
+                                            <td>до 210 л</td>
+                                            <td>130,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>Рекомендоване доупакування:</strong></p>
+                                <p><strong>1-2 ОВ:</strong> Упаковка «Середня»/ Упаковка «Максимальна»</p>
+                                <p><strong>від 3 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер.</p>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>Вага</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 30 л</td>
-                                    <td>50,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>до 60 л</td>
-                                    <td>70,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>до 100 л</td>
-                                    <td>90,00</td>
-                                </tr>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-5">
+                                <img src="img/system/icon/tariff__icon/auto__icon-2.svg" alt="icon">
+                                <h2 class="construct__title">Глушники</h2>
+                            </div>
 
-                                <tr>
-                                    <td>до 150 л</td>
-                                    <td>110,00</td>
-                                </tr>
+                            <div class="tariff-content__hide tariff-content-5">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>Довжина</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>до 1 м</td>
+                                            <td>20,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>до 210 л</td>
-                                    <td>130,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><strong>Рекомендоване доупакування:</strong></p>
-                        <p><strong>1-2 ОВ:</strong> Упаковка «Середня»/ Упаковка «Максимальна»</p>
-                        <p><strong>від 3 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер.</p>
-                    </div>
+                                        <tr>
+                                            <td>до 1,5 м</td>
+                                            <td>25,00</td>
+                                        </tr>
 
-                    <!-- next block -->
-
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Глушники</h2>
+                                        <tr>
+                                            <td>до 2 м</td>
+                                            <td>35,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p><strong>Рекомендоване доупакування:</strong></p>
+                                <p><strong>1-2 ОВ:</strong> Упаковка «Середня»/ Упаковка «Максимальна»</p>
+                                <p><strong>від 3 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер / Меблевий контейнер.</p>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>Довжина</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>до 1 м</td>
-                                    <td>20,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>до 1,5 м</td>
-                                    <td>25,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>до 2 м</td>
-                                    <td>35,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p><strong>Рекомендоване доупакування:</strong></p>
-                        <p><strong>1-2 ОВ:</strong> Упаковка «Середня»/ Упаковка «Максимальна»</p>
-                        <p><strong>від 3 ОВ: </strong>Палетування із застосуванням стяжної стрічки / Палетний борт / Металевий контейнер / Меблевий контейнер.</p>
-                    </div>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-6">
+                                <img src="img/system/icon/tariff__icon/auto__icon-1.svg" alt="icon">
+                                <h2 class="construct__title">Шини і диски легкові</h2>
+                            </div>
+                            
+                            <div class="tariff-content__hide tariff-content-6">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>R</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="action-wrap"><p class="action">Акція</p>R-13 - 14</td>
+                                            <td class="old-price">35,00 <p class="new-price">30,00</p></td>
+                                        </tr>
 
-                    <!-- next block -->
+                                        <tr>
+                                            <td>R-15 - 16</td>
+                                            <td>42,00</td>
+                                        </tr>
 
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Шини і диски легкові</h2>
+                                        <tr>
+                                            <td>R-17</td>
+                                            <td>50,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>R-17,5 - 19</td>
+                                            <td>62,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>R-19,5 - 22</td>
+                                            <td>80,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>R</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><p class="action">Акція</p>R-13 - 14</td>
-                                    <td class="old-price">35,00 <p class="new-price">30,00</p></td>
-                                </tr>
 
-                                <tr>
-                                    <td>R-15 - 16</td>
-                                    <td>42,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>R-17</td>
-                                    <td>50,00</td>
-                                </tr>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-7">
+                                <img src="img/system/icon/tariff__icon/auto__icon-1.svg" alt="icon">
+                                <h2 class="construct__title">Шини і диски вантажні</h2>
+                            </div>
+                            
+                            <div class="tariff-content__hide tariff-content-7">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>R</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>R-15</td>
+                                            <td>46,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>R-17,5 - 19</td>
-                                    <td>62,00</td>
-                                </tr>
+                                        <tr>
+                                            <td>R-16</td>
+                                            <td>50,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td>R-19,5 - 22</td>
-                                    <td>80,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                        <tr>
+                                            <td class="action-wrap"><p class="action">Акція</p>R-17,5</td>
+                                            <td class="old-price">80,00 <p class="new-price">70,00</p></td>
+                                        </tr>
 
-                    <!-- next block -->
+                                        <tr>
+                                            <td class="action-wrap"><p class="action">Акція</p>R-19,5</td>
+                                            <td class="old-price">115,00 <p class="new-price">100,00</p></td>
+                                        </tr>
 
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Шини і диски вантажні</h2>
+                                        <tr>
+                                            <td class="action-wrap"><p class="action">Акція</p>R-20 (до 80 кг)</td>
+                                            <td class="old-price">180,00 <p class="new-price">160,00</p></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="action-wrap"><p class="action">Акція</p> R-20 (до 80 кг)-22,5</td>
+                                            <td class="old-price">275,00 <p class="new-price">200,00</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>R</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>R-15</td>
-                                    <td>46,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>R-16</td>
-                                    <td>50,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td><p class="action">Акція</p>R-17,5</td>
-                                    <td class="old-price">80,00 <p class="new-price">70,00</p></td>
-                                </tr>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-8">
+                                <img src="img/system/icon/tariff__icon/auto__icon-1.svg" alt="icon">
+                                <h2 class="construct__title">Шини для автомобілів великої вантажопідйомності</h2>
+                            </div>
+                            
+                            <div class="tariff-content__hide tariff-content-8">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>R</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>R-25</td>
+                                            <td>750,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td><p class="action">Акція</p>R-19,5</td>
-                                    <td class="old-price">115,00 <p class="new-price">100,00</p></td>
-                                </tr>
+                                        <tr>
+                                            <td>R-33</td>
+                                            <td>1500,00</td>
+                                        </tr>
 
-                                <tr>
-                                    <td><p class="action">Акція</p>R-20 (до 80 кг)</td>
-                                    <td class="old-price">180,00 <p class="new-price">160,00</p></td>
-                                </tr>
-
-                                <tr>
-                                    <td><p class="action">Акція</p> R-20 (до 80 кг)-22,5</td>
-                                    <td class="old-price">275,00 <p class="new-price">200,00</p></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <!-- next block -->
-
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Шини для автомобілів великої вантажопідйомності</h2>
+                                        <tr>
+                                            <td>R-35</td>
+                                            <td>1800,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>R</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>R-25</td>
-                                    <td>750,00</td>
-                                </tr>
 
-                                <tr>
-                                    <td>R-33</td>
-                                    <td>1500,00</td>
-                                </tr>
+                        <!-- next block -->
 
-                                <tr>
-                                    <td>R-35</td>
-                                    <td>1800,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                        <div class="construct__item">
+                            <div class="construct__heading tariff-click-9">
+                                <img src="img/system/icon/tariff__icon/auto__icon-1.svg" alt="icon">
+                                <h2 class="construct__title">Шини для тракторів і сільськогосподарських машин</h2>
+                            </div>
+                            
+                            <div class="tariff-content__hide tariff-content-9">
+                                <table class="tariff__table">
+                                    <thead>
+                                        <tr>
+                                            <th>V</th>
+                                            <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>V до 0,5 м&sup3;</td>
+                                            <td>300,00</td>
+                                        </tr>
 
-                    <!-- next block -->
+                                        <tr>
+                                            <td>V до 1,0 м&sup3;</td>
+                                            <td>580,00</td>
+                                        </tr>
 
-                    <div class="construct__item">
-                        <div class="construct__heading">
-                            <img src="img/system/icon/tariff__icon/construct__icon1.svg" alt="icon">
-                            <h2 class="construct__title">Шини для тракторів і сільськогосподарських машин</h2>
+                                        <tr>
+                                            <td>V до 1,5 м&sup3;</td>
+                                            <td>850,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>V до 2,0 м&sup3;</td>
+                                            <td>1250,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>V до 2,5 м&sup3;</td>
+                                            <td>1500,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>V до 3,1 м&sup3;</td>
+                                            <td>1800,00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Діє до 10% від знижки Клієнта</p>
+                                <p>Зібрані колеса (шина + диск) - на загальних підставах.</p>
+                                <p>Тариф застосовується до шин, на яких нанесено відповідне заводське маркування посадкового діаметра шини (діаметр диска).</p>
+                                <p><strong>Тариф діє з 17.02.2020</strong></p>
+                                <p>Номер інформаційної підтримки «Автопрайс» <strong> 0 800 509 509.</strong></p>
+                            </div>
                         </div>
-                        
-                        <table class="tariff__table">
-                            <thead>
-                                <tr>
-                                    <th>V</th>
-                                    <th>Ціна за 1 Одиницю Вантажу (ОВ), грн.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>V до 0,5 м&sup3;</td>
-                                    <td>300,00</td>
-                                </tr>
-
-                                <tr>
-                                    <td>V до 1,0 м&sup3;</td>
-                                    <td>580,00</td>
-                                </tr>
-
-                                <tr>
-                                    <td>V до 1,5 м&sup3;</td>
-                                    <td>850,00</td>
-                                </tr>
-
-                                <tr>
-                                    <td>V до 2,0 м&sup3;</td>
-                                    <td>1250,00</td>
-                                </tr>
-
-                                <tr>
-                                    <td>V до 2,5 м&sup3;</td>
-                                    <td>1500,00</td>
-                                </tr>
-
-                                <tr>
-                                    <td>V до 3,1 м&sup3;</td>
-                                    <td>1800,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <p>Діє до 10% від знижки Клієнта</p>
-                        <p>Зібрані колеса (шина + диск) - на загальних підставах.</p>
-                        <p>Тариф застосовується до шин, на яких нанесено відповідне заводське маркування посадкового діаметра шини (діаметр диска).</p>
-                        <p><strong>Тариф діє з 17.02.2020</strong></p>
-                        <p>Номер інформаційної підтримки «Автопрайс» <strong> 0 800 509 509.</strong></p>
                     </div>
-
                     <a class="main-btn main-btn--white" href="https://delivery-auto.com/userfs/files/autoprice_17_02_2020.pdf" target="_blank"> <img src="img/system/icon/small-yellow-arrow.svg" alt=""> Завантажити тарифи</a>
-                
                 </article>
 
                 <aside class="aside-block">
