@@ -3722,6 +3722,22 @@ details > summary {
 		width: 100%;
 		height: auto;
 	}
+	#popup-tariff-map form {
+	padding: 20px 20px;
+	}
+	#popup-tariff-map .popup-main__title {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+	.popup-tariff-map__img {
+		width: 800px;
+	}
+	.popup-tariff-map__img img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 }
 
 @media (max-width: 550px) {
