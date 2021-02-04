@@ -207,11 +207,11 @@ $(document).ready(function(){
             {
                 breakpoint: 0,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 1
                 }
             },
             {
-                breakpoint: 460,
+                breakpoint: 380,
                 settings: {
                     slidesToShow: 2
                 }

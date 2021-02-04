@@ -286,15 +286,6 @@ $(window).scroll(function(){
 });
 
 
-// Страница Финансовые услуги. На адаптиве скрывает инфу в табы
-jQuery(document).ready(function ($) {
-    var windowSize = $(window).width();
-        if (windowSize > 1024) {
-            $(".finance__block").attr("open", "open");
-            $(".finance-step__slider").slick("refresh"); 
-        }
-});
-
 // Страница Про групу Delivery. Для адаптива, появление контента при клике
 $('.group-item__show-btn--delauto').on('click', function(event){
     $('.group-item__hide-block--delauto').toggleClass('group-item__show-block');
@@ -441,4 +432,19 @@ $('.tariff-click-12').on('click', function(event){
 $('.tariff-click-13').on('click', function(event){
     $('.tariff-content-13').toggleClass('tariff-content__active');
     $('.tariff-click-13').toggleClass('tariff-title__active');
+});
+
+
+
+// Страница Финансовые послуги. Для адаптива, появление контента при клике
+$('.finance__click-1').on('click', function(event){
+    $('.finance__block-hide--1').toggleClass('block__active');
+});
+
+$('.finance__click-2').on('click', function(event){
+    $('.finance__block-hide--2').toggleClass('block__active');
+});
+
+$('.finance__click-3').on('click', function(event){
+    $('.finance__block-hide--3').toggleClass('block__active');
 });
