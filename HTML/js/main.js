@@ -368,6 +368,36 @@ $('.category-7__click').on('click', function(event){
     $('.category-7__click').toggleClass('category__title-active');
 });
 
+
+// new doc
+
+$('.doc-tab--click-1').on('click', function(event){
+    $('.doc-list--block-1').toggleClass('doc-list__active');
+    $('.doc-tab--click-1').toggleClass('doc-tab__title-active');
+});
+
+$('.doc-tab--click-2').on('click', function(event){
+    $('.doc-list--block-2').toggleClass('doc-list__active');
+    $('.doc-tab--click-2').toggleClass('doc-tab__title-active');
+});
+
+$('.doc-tab--click-3').on('click', function(event){
+    $('.doc-list--block-3').toggleClass('doc-list__active');
+    $('.doc-tab--click-3').toggleClass('doc-tab__title-active');
+});
+
+$('.doc-tab--click-4').on('click', function(event){
+    $('.doc-list--block-4').toggleClass('doc-list__active');
+    $('.doc-tab--click-4').toggleClass('doc-tab__title-active');
+});
+
+
+
+
+
+
+
+
 // Страницы Тарифов. Для адаптива, появление контента при клике
 $('.tariff-click-1').on('click', function(event){
     $('.tariff-content-1').toggleClass('tariff-content__active');

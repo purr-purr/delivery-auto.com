@@ -2859,6 +2859,7 @@ details > summary {
 .questions__answer .answer__title {
 	font-weight: normal;
 	margin-bottom: 33px;
+	line-height: 1;
 }
 
 .questions__input:nth-of-type(1):checked ~ .questions__answer:nth-of-type(1) {
