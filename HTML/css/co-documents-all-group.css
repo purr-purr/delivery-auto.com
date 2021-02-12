@@ -128,6 +128,10 @@
     .documents__item {
         padding: 8px 0;
     }
+    .documents__title {
+        margin: 10px 0;
+        font-size: 15px;
+    }
     .documents__main-title {
         font-weight: 600;
         font-size: 18px;
@@ -175,3 +179,12 @@
     }
 }
 
+@media (max-width: 350px) {
+    .doc-tab {
+        height: 60px;
+    }
+    .doc-tab:after {
+        right: 10px;
+        top: 15px;
+    }
+}

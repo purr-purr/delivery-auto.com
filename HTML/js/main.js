@@ -386,10 +386,6 @@ $('.doc-tab--click-3').on('click', function(event){
     $('.doc-tab--click-3').toggleClass('doc-tab__title-active');
 });
 
-$('.doc-tab--click-4').on('click', function(event){
-    $('.doc-list--block-4').toggleClass('doc-list__active');
-    $('.doc-tab--click-4').toggleClass('doc-tab__title-active');
-});
 
 
 
