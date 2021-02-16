@@ -474,3 +474,16 @@ $('.finance__click-2').on('click', function(event){
 $('.finance__click-3').on('click', function(event){
     $('.finance__block-hide--3').toggleClass('block__active');
 });
+
+
+
+
+
+
+
+// Страница Отделения 
+$('.fast-search__more-filters-btn').on('click', function(event){
+    $('.fast-search__more-filters').addClass('block__active');
+    $('.fast-search__more-filters-btn').addClass('block__hide');
+    $('.fast-search__cleen').addClass('cleen-btn__active');
+});
