@@ -278,6 +278,25 @@
 	white-space: nowrap;
 }
 
+
+
+.tariff__table--pack-bicycle tbody tr:nth-child(even) {
+	background-color: transparent;
+}
+
+.tariff__table--pack-bicycle tbody .tariff--bg td {
+	background-color: #F8F8F8;
+}
+
+.tariff__table--pack-bicycle tbody tr:hover {
+	background-color: transparent;
+}
+
+.tariff__table--pack-bicycle tbody td:hover {
+	background-color: #FFEF9E !important;
+}
+
+
 @media (max-width: 1024px) {
 	.tariff-content__hide {
 		display: none;
