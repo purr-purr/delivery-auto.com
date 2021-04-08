@@ -46,6 +46,18 @@
 
             <section class="main__container">
                 <article class="main-content">
+
+
+
+
+
+
+
+
+                    
+
+<!-- Начало тут.
+Трекинг незалогиненого пользователя -->
                     <div class="tracking__container">
                         <div class="tracking__header">
                             <p class="tracking__block-title">
@@ -64,7 +76,12 @@
                                         <p class="ticket-header__number">№ 
                                             <span id="Ticket-Number-Item" onclick="СopyTicketNumber('#Ticket-Number-Item')">0810594206</span>
                                         </p>
-                                        <img class="ticket-header__copy" onclick="СopyTicketNumber('#Ticket-Number-Item')" src="img/new-img-file/copy-icon.svg" alt="Скопировать">
+                                        <div class="tiket-header__btn-group">
+                                            <div class="ticket-header__btn-icon">
+                                                <img onclick="СopyTicketNumber('#Ticket-Number-Item')" src="img/new-img-file/copy-icon.svg" alt="Скопировать">
+                                                <p class="ticket-header__tooltip">Скопіювати номер квитанції</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -77,7 +94,8 @@
                                             <div class="main-status__inner">
                                                 <div class="main-status__info">
                                                     <p class="main-status__title">Доставляється кур’єром</p>
-    
+                                                    <p class="main-status__title" style="display: none;">Видано</p>
+
                                                     <div class="main-status__last-time">
                                                         <time>23.03.2021</time> <span> | </span> <time>17:55</time>
                                                     </div>
@@ -107,7 +125,6 @@
                                             </li>
                                         </ul>
                                     </div>
-
                                     
                                     <details class="ticket-route">
                                         <summary>
@@ -124,7 +141,6 @@
                                                         <p class="route-header__office-address">вул. Нечуя-Левицького, 34</p>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </summary>
 
@@ -199,6 +215,18 @@
                             </div>
                         </div>
                     </div>
+<!-- Конец тут -->
+
+
+
+
+
+
+
+
+
+
+
                 </article>
             </section>
 

@@ -1,5 +1,5 @@
 /* ======================================================
-//   Стили для страницы Трекинг Квитанций
+//   Трекинг Квитанций Незалогиненого пользователя
 ========================================================= */
 
 /* Хедер страницы */
@@ -206,7 +206,6 @@
     margin-bottom: 17px;
 }
 
-
 @media (max-width: 1024px) {
     .short-ticket,
     .login-block {
@@ -267,7 +266,6 @@
 }
 
 /* Короткая Квитанция для незалогиненого */
-
 .ticket-header {
     display: flex;
     align-items: center;
@@ -301,17 +299,60 @@
     line-height: 32px;
     color: #333;
 }
+.tiket-header__btn-group {
+    display: flex;
+}
 
-.ticket-header__copy {
+.ticket-header__btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     cursor: pointer;
     width: 32px;
     height: 32px;
-    transition: transform .3 linear;
+    border-radius: 50%;
+    transition: all .3 linear;
 }
 
-.ticket-header__copy:hover {
-    transform: scale(1.05);
-    transition: transform .3 linear;
+.ticket-header__btn-icon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.ticket-header__btn-icon:hover {
+    transition: all .3 linear;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header__btn-icon--add-deliv {
+    margin-left: 10px;
+}
+
+.ticket-header__btn-icon--add-deliv img {
+    width: 24px;
+    height: 24px;
+}
+
+.ticket-header__tooltip {
+    display: none;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    padding: 9px 17px 11px 17px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-header__btn-icon:hover .ticket-header__tooltip {
+    display: block;
 }
 
 .short-ticket__container {
@@ -374,7 +415,7 @@
 
 .ticket-status__main-status {
     display: flex;
-    height: 65px;
+    height: 57px;
     margin-bottom: 20px;
 }
 
@@ -569,7 +610,6 @@
         padding-bottom: 0;
     }
 }
-
 
 @media (max-width: 400px) {
     .route-header__item--send-from::after, .route-header__item--road-to::after {

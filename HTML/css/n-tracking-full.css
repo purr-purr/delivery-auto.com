@@ -1,0 +1,875 @@
+/* ======================================================
+//   Трекинг Квитанций Залогиненого пользователя
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__mob-app.jpg") no-repeat;
+}
+
+/* =================================== */
+
+.tracking__container {
+    margin: 0 auto;
+    max-width: 1015px;
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.14), 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tracking__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 33px;
+    width: 100%;
+    height: 56px;
+    background: rgb(255,210,38);
+    background: linear-gradient(90deg, rgba(255,210,38,1) 0%, rgba(252,229,142,1) 53%, rgba(250,238,192,1) 100%);
+}
+
+.tracking__block-logo img {
+    display: block;
+    width: 90px;
+    height: auto;
+}
+
+.tracking__block-title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+}
+
+.tracking__inner {
+    max-width: 1015px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F8F8F8;
+    padding: 35px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+    .main__container {
+        padding: 0;
+    }
+    .tracking__container {
+        box-shadow: none;
+    }
+    .tracking__inner {
+        padding: 0;
+        flex-direction: column;
+        align-items: baseline;
+        background-color: #fff;
+    }
+}
+
+.short-ticket {
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.short-ticket {
+    width: 100%;
+    height: fit-content;
+}
+
+@media (max-width: 1024px) {
+    .short-ticket {
+        background-color: #FFF;
+        box-shadow: none;
+        width: 100%;
+    }
+}
+
+/* Короткая Квитанция для незалогиненого */
+.ticket-header {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    padding: 5px 25px;
+    background: rgba(255, 220, 85, 0.2);
+}
+
+.ticket-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.ticket-header__mobile-title {
+    display: none;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333;
+}
+
+.ticket-header__number {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+}
+
+.tiket-header__btn-group {
+    display: flex;
+}
+
+.ticket-header__btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: all .3 linear;
+}
+
+.ticket-header__btn-icon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.ticket-header__btn-icon:hover {
+    transition: all .3 linear;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header__btn-icon--add-deliv {
+    margin-left: 10px;
+}
+
+.ticket-header__btn-icon--add-deliv img {
+    width: 24px;
+    height: 24px;
+}
+
+.ticket-header__tooltip {
+    display: none;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    padding: 9px 17px 11px 17px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.ticket-header__btn-icon:hover .ticket-header__tooltip {
+    display: block;
+}
+
+.ticket__side-container {
+    display: flex;
+}
+
+.ticket__left-side,
+.ticket__full-info {
+    width: 50%;
+    padding: 25px 27px 33px 27px;
+}
+
+@media screen and (max-width: 1024px) {
+    .ticket-header__mobile-title {
+        display: block;
+    }
+    .tracking__header {
+        display: none;
+    }
+    .ticket-header {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        height: 80px;
+        padding: 8px 15px 17px 15px;
+    }
+    .ticket__left-side,
+    .ticket__full-info {
+        width: 100%;
+        padding: 16px 0 0;
+    }
+    .ticket__side-container {
+        flex-direction: column;
+    }
+}
+
+.ticket-status {
+    margin-bottom: 32px;
+}
+
+/* Текущий статус по датам */
+.date-status__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.date-status__item:last-child {
+    margin-bottom: 0;
+}
+
+.date-status__time {
+    width: 93px;
+    margin-right: 7px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #333;
+}
+
+.date-status__description {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666;
+}
+
+.ticket-status__main-status {
+    display: flex;
+    min-height: 57px;
+    margin-bottom: 20px;
+    padding-right: 18px;
+}
+
+.main-status__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.main-status__icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin-right: 25px;
+}
+
+.main-status__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-status__title {
+    min-width: 110px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 19px;
+    color: #87AF3F;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+.main-status__last-time {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.main-status__block-drop {
+    display: flex;
+    align-items: center;
+}
+
+.block-drop__title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999;
+    margin-right: 5px;
+}
+
+.block-drop__icon {
+    display: block;
+    width: 18px;
+    height: 18px;
+}
+
+.ticket-route {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+}
+
+.ticket-route__inner {
+    display: flex;
+}
+
+.ticket-route__progress-bar {
+    height: auto;
+    width: 2px;
+    background-color: #999;
+}
+
+.ticket-route__route-header {
+    cursor: pointer;
+    width: 100%;
+}
+
+.route-header__item {
+    position: relative;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.route-header__item--send-from {
+    margin-bottom: 22px;
+}
+
+.route-header__item--send-from::before,
+.route-header__item--road-to::before {
+    content: ' ';
+    position: absolute;
+    top: -1px;
+    left: -5px;
+    width: 8px;
+    height: 8px;
+    background-color: #999;
+    border-radius: 50px;
+}
+
+.route-header__item--road-to::before {
+    top: auto;
+    bottom: 0;
+}
+
+.route-header__item--send-from::after,
+.route-header__item--road-to::after {
+    content: ' ';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/new-img-file/route-header__point.svg') no-repeat center center;
+    background-size: 32px;
+}
+
+.route-header__item--road-to::after {
+    top: 5px;
+    background: url('../img/new-img-file/route-header__car-point.svg') no-repeat center center;
+}
+
+.route-header__office-name {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+}
+
+.route-header__office-address {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+}
+
+.road-to {
+    margin-top: 15px;
+}
+
+.road-to__map {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.office-info__title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.office-info__desc {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.office-info__desc a {
+    color: inherit;
+}
+
+.office-info__desc a:hover {
+    color: #3072C4;
+    text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+    .main-status__last-time {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .ticket-status {
+        margin-bottom: 23px;
+    }
+    .ticket-route {
+        padding-bottom: 15px;
+    }
+    .ticket-route[open] {
+        padding-bottom: 0;
+    }
+    .ticket-route__inner {
+        padding: 0 16px;
+    }
+    .road-to__map {
+        height: 200px;
+    }
+    .road-to__office-info {
+        padding: 0 16px;
+    }
+    .route-header__office-name {
+        font-size: 16px;
+    }
+}
+
+.delivery-step {
+    margin-top: 15px;
+}
+
+.delivery-step__map {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 18px;
+}
+
+.delivery-step__route-step {
+    height: 291px;
+    overflow-x: scroll;
+}
+
+.delivery-step__route-step::-webkit-scrollbar { 
+    width: 8px;
+    height: 100%;
+}
+
+.delivery-step__route-step::-webkit-scrollbar-button { 
+    width: 100%;
+    height: 0px;
+}
+
+.delivery-step__route-step::-webkit-scrollbar-thumb {
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    border: 2px solid #E6E6E6;
+}
+
+.delivery-step__route-step::-webkit-scrollbar-track-piece { 
+    background-color: #E6E6E6;
+}
+
+.route-step__ul {
+    padding-right: 22px;
+}
+
+.route-step__item {
+    position: relative;
+    padding: 8px 0 8px 36px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.route-step__item::before {
+    content: " ";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background: url('../img/new-img-file/ticket__route-step--grey.svg') no-repeat center center;
+    background-size: 24px;
+}
+
+.route-step__item--active::before {
+    background: url('../img/new-img-file/ticket__route-step--green.svg') no-repeat center center;
+}
+
+.route-step__title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.route-step__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.route-step__city,
+.route-step__date {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999;
+}
+
+.route-step__city {
+    color: #666;
+}
+
+
+/* Общие стили для Табов */
+.ticket-tab-btn {
+    position: relative;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.ticket-tab[open] .ticket-tab-btn  ~ * {
+	animation: acc-media-open .6s ease-in-out;
+}
+
+@keyframes acc-media-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.ticket-tab-btn::after {
+    content: " ";
+    position: absolute;
+    top: 7px;
+    right: 1px;
+    width: 15px;
+    height: 15px;
+    background: url('../img/new-img-file/ticket__tab-arrow.svg') no-repeat center center;
+    background-size: 12px;
+    transform: rotate(180deg);
+    transition: transform .2s linear;
+}
+
+.ticket-tab[open] .ticket-tab-btn::after {
+    transform: rotate(0deg);
+    transition: transform .4s linear;
+}
+
+.ticket-tab-btn__inner {
+    display: flex;
+    align-items: center;
+}
+
+.ticket-tab--full-info {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.ticket-tab-btn--full-info {
+    padding-bottom: 15px;
+}
+
+.ticket-tab-btn__icon {
+    margin-right: 12px;
+}
+
+.ticket-tab-btn__icon img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.ticket-tab-btn__title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666;
+}
+
+.ticket-tab-btn__title--about-parcel {
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.personal-info__item {
+    margin-bottom: 12px;
+}
+
+.personal-info__item--address-icon {
+    position: relative;
+}
+
+.personal-info__item--address-icon::after {
+    content: " ";
+    position: absolute;
+    top: 10px;
+    right: -6px;
+    width: 32px;
+    height: 32px;
+    background: url('../img/new-img-file/route-header__point.svg') no-repeat center center;
+    background-size: 32px;
+}
+
+.personal-info__title {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.personal-info__desc {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.personal-info__desc:hover {
+    color: #3072C4;
+    text-decoration: none;
+}
+
+.about-parcel {
+    margin-bottom: 20px;
+}
+
+.about-parcel__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.bird {
+    position: relative;
+}
+
+.bird::after {
+    content: " ";
+    position: absolute;
+    top: -1px;
+    right: -3px;
+    width: 24px;
+    height: 24px;
+    background: url("../img/new-img-file/ticket__payment-bird--grey.svg") no-repeat center center;
+    background-size: 20px;
+}
+
+.bird--green::after {
+    background: url("../img/new-img-file/ticket__payment-bird--green.svg") no-repeat center center;
+}
+
+.about-parcel__name {
+    display: flex;
+}
+
+.about-parcel__name img{
+    margin-right: 10px;
+}
+
+.about-parcel__name p {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #666;
+}
+
+.about-parcel__name--large p {
+    font-size: 16px;
+    line-height: 21px;
+    color: #333;
+}
+
+.about-parcel__doted {
+    border-bottom: 1px dotted #666;
+    flex-grow: 1;
+    height: 16px;
+    margin: 0 5px;
+}
+
+.about-parcel__score {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.about-parcel__score--large {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.about-parcel__name--total-status p {
+    color: #87AF3F;
+}
+
+.about-parcel__item--related {
+    align-items: center;
+}
+
+.about-parcel__item--related::after {
+    top: 6px;
+}
+
+.about-parcel__item--related .about-parcel__name {
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ticket-footer {
+    display: flex;
+    width: 100%;
+    min-height: 126px;
+    background-color: #F8F8F8;
+}
+
+.ticket-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: auto;
+    padding: 24px 34px 54px 27px;
+}
+
+.ticket-footer__info {
+    margin-right: 15px;
+}
+
+.ticket-footer__btn {
+    min-width: 160px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.ticket-footer__btn:disabled,
+.ticket-footer__btn[disabled]{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: #F2F2F2;;
+    color: #A0A0A0;
+}
+
+.ticket-footer__total-paid {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.ticket-footer__type-payment {
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999;
+}
+
+
+@media (max-width: 1024px) {
+    .delivery-step {
+        margin-top: 15px;
+        padding-bottom: 15px;
+        background-color: #F8F8F8;
+    }
+    .ticket-status__header {
+        padding: 0 16px;
+    }
+    .ticket-status__header::after {
+        right: 17px;
+    }
+    .delivery-step__route-step {
+        height: 250px;
+        padding: 0 16px;
+        margin-right: 10px;
+    }
+    .ticket-tab--full-info {
+        padding: 0 16px;
+        margin-bottom: 16px;
+    }
+    .about-parcel__doted {
+        display: none;
+    }
+    .ticket-tab-btn__title--about-parcel {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .personal-info__title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) {
+    .ticket-footer__inner {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        padding: 16px 16px 34px 16px;
+    }
+    .ticket-footer__info {
+        margin-bottom: 15px;
+    }
+    .ticket-footer__btn {
+        min-width: 288px;
+    }
+    .about-parcel__item {
+        padding-right: 0px;
+    }
+    .bird {
+        padding-right: 30px;
+    }
+}
