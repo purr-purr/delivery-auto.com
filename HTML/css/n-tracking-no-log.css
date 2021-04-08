@@ -374,7 +374,7 @@
         padding: 8px 15px 17px 15px;
     }
     .short-ticket__container {
-        padding: 16px 16px 20px 16px;
+        padding: 16px 0 20px 0;
     }
 }
 
@@ -415,7 +415,7 @@
 
 .ticket-status__main-status {
     display: flex;
-    height: 57px;
+    min-height: 57px;
     margin-bottom: 20px;
 }
 
@@ -485,6 +485,10 @@
     padding-bottom: 15px;
 }
 
+.ticket-route[open] {
+    padding-bottom: 0;
+}
+
 .ticket-route__inner {
     display: flex;
 }
@@ -501,9 +505,10 @@
 }
 
 .route-header__item {
-    width: 90%;
+    width: 100%;
     position: relative;
     padding-left: 20px;
+    padding-right: 40px;
 }
 
 .route-header__item--send-from {
@@ -532,7 +537,7 @@
     content: ' ';
     position: absolute;
     top: -5px;
-    right: -45px;
+    right: 0px;
     width: 32px;
     height: 32px;
     background: url('../img/new-img-file/route-header__point.svg') no-repeat center center;
@@ -604,15 +609,19 @@
     }
     .ticket-status {
         margin-bottom: 23px;
+        padding: 0 16px 16px;
     }
     .ticket-route {
         border-bottom: none;
         padding-bottom: 0;
     }
-}
-
-@media (max-width: 400px) {
-    .route-header__item--send-from::after, .route-header__item--road-to::after {
-        right: -40px;
+    .route-header__office-name {
+        font-size: 16px;
+    }
+    .ticket-route__inner {
+        padding: 0 16px;
+    }
+    .road-to__office-info {
+        padding: 0 16px;
     }
 }
