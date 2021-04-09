@@ -532,8 +532,8 @@
     bottom: 0;
 }
 
-.route-header__item--send-from::after,
-.route-header__item--road-to::after {
+.route-header__item--point-icon::after,
+.route-header__item--car-icon::after {
     content: ' ';
     position: absolute;
     top: -5px;
@@ -544,7 +544,7 @@
     background-size: 32px;
 }
 
-.route-header__item--road-to::after {
+.route-header__item--car-icon::after {
     top: 5px;
     background: url('../img/new-img-file/route-header__car-point.svg') no-repeat center center;
 }
