@@ -388,12 +388,6 @@ $('.doc-tab--click-3').on('click', function(event){
 
 
 
-
-
-
-
-
-
 // Страницы Тарифов. Для адаптива, появление контента при клике
 $('.tariff-click-1').on('click', function(event){
     $('.tariff-content-1').toggleClass('tariff-content__active');
@@ -460,8 +454,6 @@ $('.tariff-click-13').on('click', function(event){
     $('.tariff-click-13').toggleClass('tariff-title__active');
 });
 
-
-
 // Страница Финансовые послуги. Для адаптива, появление контента при клике
 $('.finance__click-1').on('click', function(event){
     $('.finance__block-hide--1').toggleClass('block__active');
@@ -476,14 +468,29 @@ $('.finance__click-3').on('click', function(event){
 });
 
 
-
-
-
-
-
 // Страница Отделения 
 $('.fast-search__more-filters-btn').on('click', function(event){
     $('.fast-search__more-filters').addClass('block__active');
     $('.fast-search__more-filters-btn').addClass('block__hide');
     $('.fast-search__cleen').addClass('cleen-btn__active');
+});
+
+
+
+
+
+
+// Фильтер для "Тарифи на додаткові послуги"
+$('.sort-item--type-service').on('click', function(event){
+    $(this).addClass('sort-item--active');
+    $('.services-group--type-service').addClass('services-group--active');
+    $('.sort-item--type-cargo').removeClass('sort-item--active');
+    $('.services-group--type-cargo').removeClass('services-group--active');
+});
+
+$('.sort-item--type-cargo').on('click', function(event){
+    $(this).addClass('sort-item--active');
+    $('.services-group--type-cargo').addClass('services-group--active');
+    $('.sort-item--type-service').removeClass('sort-item--active');
+    $('.services-group--type-service').removeClass('services-group--active');
 });

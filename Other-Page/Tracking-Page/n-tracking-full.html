@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!-- ==============================
+    Project:        Delivery Group
+    Author:         Anton Shaposhnikov
+    Telegram:       https://t.me/purrpurr
+================================== -->
+<html lang="uk">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Квитанція про прийом вантажу</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8,IE=edge"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <!-- Fonts -->
+        <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- THEME STYLES -->
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="css/n-tracking-full.css" rel="stylesheet" type="text/css"/>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/system/icon/favicon.ico"/>
+    </head>
+
+    <body>
+
+        <!--========== HEADER ==========-->
+        <header id="included__main-navigation" class="main-navigation"></header>
+        <!--========== \END HEADER ==========-->
+
+
+        <main class="main">
+            <header class="page-header">
+                <div class="page-header__heading">
+                    <h1>Квитанція про прийом вантажу</h1>
+                </div>
+            </header>
+
+            <section class="crumbs">
+                <div class="main__container">
+                    <p class="crumbs__inner">
+                        <a href="index.html">Головна</a> <span>/</span> Квитанція про прийом вантажу
+                    </p>
+                </div>
+            </section>
+
+            <section class="main__container">
+                <article class="main-content">
+
+
+
+
+
+
+
+
+
+<!-- Начало тут.
+Трекинг Залогиненого пользователя -->
+                    <div class="tracking__container">
+                        <div class="tracking__header">
+                            <p class="tracking__block-title">
+                                <span>Квитанція про прийом вантажу</span> <span>0810594206</span>
+                            </p>
+                            <div class="tracking__block-logo">
+                                <img src="img/system/delivery-group__logos/delGroup_logo.png" alt="Delivery Group Logo">
+                            </div>
+                        </div>
+
+                        <div class="tracking__inner">
+                            <div class="short-ticket">
+                                <header class="ticket-header">
+                                    <h3 class="ticket-header__mobile-title">Квитанція про прийом вантажу</h3>
+                                    <div class="ticket-header__inner">
+                                        <p class="ticket-header__number">№ 
+                                            <span id="Ticket-Number-Item" onclick="СopyTicketNumber('#Ticket-Number-Item')">0810594206</span>
+                                        </p>
+                                        
+                                        <div class="tiket-header__btn-group">
+                                            <div class="ticket-header__btn-icon">
+                                                <img onclick="СopyTicketNumber('#Ticket-Number-Item')" src="img/new-img-file/copy-icon.svg" alt="Скопировать">
+                                                <p class="ticket-header__tooltip">Скопіювати номер квитанції</p>
+                                            </div>
+
+                                            <div class="ticket-header__btn-icon ticket-header__btn-icon--add-deliv">
+                                                <img src="img/new-img-file/tracking__add-deliv-icon.svg" alt="Додати доставку">
+                                                <p class="ticket-header__tooltip">Додати доставку</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div class="ticket__side-container">
+                                    <div class="ticket__left-side">
+                                        <details class="ticket-status ticket-tab">
+                                            <summary class="ticket-status__header ticket-tab-btn">
+                                                <div class="ticket-status__main-status">
+                        
+                        <div class="main-status__icon">
+                            <img id="status4in4" class="main-status__icon-item" src="img/new-img-file/ticket__status-FULL-4in4.svg" alt="icon status">
+                            <img id="status3in4" class="main-status__icon-item" src="img/new-img-file/ticket__status-IN-ROAD-3in4.svg" alt="icon status">
+                            <img id="status2in4" class="main-status__icon-item" src="img/new-img-file/ticket__status-2in4.svg" alt="icon status">
+                            <img id="status1in4" class="main-status__icon-item" src="img/new-img-file/ticket__status-1in4.svg" alt="icon status">
+                            <img id="status0in4" class="main-status__icon-item" src="img/new-img-file/ticket__status-0in4.svg" alt="icon status">
+                        </div>
+
+                        <style>
+                            .main-status__icon-item {
+                                display: none;
+                            }
+                            
+                            #status4in4 {
+                                display: block;
+                            }
+                        </style>
+
+
+
+                                                    <div class="main-status__inner">
+                                                        <div class="main-status__info">
+                                                            <p class="main-status__title" style="display: none;">Доставляється кур’єром</p>
+                                                            <p class="main-status__title">Видано</p>
+        
+                                                            <div class="main-status__last-time">
+                                                                <time>23.03.2021</time> <span> | </span> <time>17:55</time>
+                                                            </div>
+                                                        </div>
+        
+                                                        <div class="main-status__block-drop">
+                                                            <p class="block-drop__title">Заборона видачі</p>
+                                                            <img class="block-drop__icon" src="img/new-img-file/ticket__block-drop.svg" alt="icon">
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <ul class="ticket-status__date-status">
+                                                    <li class="date-status__item">
+                                                        <time class="date-status__time">22.03.2021</time>
+                                                        <p class="date-status__description">Дата відправлення</p>
+                                                    </li>
+            
+                                                    <li class="date-status__item">
+                                                        <time class="date-status__time">22.03.2021</time>
+                                                        <p class="date-status__description">Орієнтовна дата прибуття</p>
+                                                    </li>
+        
+                                                    <!-- <li class="date-status__item">
+                                                        <time class="date-status__time">10:00–17:00</time>
+                                                        <p class="date-status__description">Орієнтовний час доставки</p>
+                                                    </li> -->
+                                                </ul>
+                                            </summary>
+
+                                            <div class="delivery-step">
+                                                <div class="delivery-step__map">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43573.69834531894!2d32.02687456870845!3d46.95469213210697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cb89fb7213d5%3A0x970e39fab9e05680!2z0J3QuNC60L7Qu9Cw0LXQsiwg0J3QuNC60L7Qu9Cw0LXQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA1NDAwMA!5e0!3m2!1sru!2sua!4v1617877341672!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                </div>
+
+                                                <div class="delivery-step__route-step">
+                                                    <ul class="route-step__ul">
+                                                        <li class="route-step__item route-step__item--active">
+                                                            <h5 class="route-step__title">Вивантажено з автомобіля</h5>
+                                                            <div class="route-step__info">
+                                                                <p class="route-step__city">Полтава-1</p>
+                                                                <time class="route-step__date">25.03.2021 08:45</time>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="route-step__item route-step__item--active">
+                                                            <h5 class="route-step__title">Вивантажено з автомобіля</h5>
+                                                            <div class="route-step__info">
+                                                                <p class="route-step__city">Полтава-Транзит</p>
+                                                                <time class="route-step__date">25.03.2021 01:45</time>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="route-step__item">
+                                                            <h5 class="route-step__title">Завантажено в автомобіль</h5>
+                                                            <div class="route-step__info">
+                                                                <p class="route-step__city">Київ-Транзит</p>
+                                                                <time class="route-step__date">24.03.2021 01:45</time>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="route-step__item">
+                                                            <h5 class="route-step__title">Розвантажено з автомобіля</h5>
+                                                            <div class="route-step__info">
+                                                                <p class="route-step__city">Київ-Транзит</p>
+                                                                <time class="route-step__date">24.03.2021 00:25</time>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="route-step__item">
+                                                            <h5 class="route-step__title">Вивантажено з автомобіля</h5>
+                                                            <div class="route-step__info">
+                                                                <p class="route-step__city">Полтава-1</p>
+                                                                <time class="route-step__date">25.03.2021 08:45</time>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="route-step__item">
+                                                            <h5 class="route-step__title">Вивантажено з автомобіля</h5>
+                                                            <div class="route-step__info">
+                                                                <p class="route-step__city">Київ-Транзит</p>
+                                                                <time class="route-step__date">24.03.2021 01:45</time>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        
+                                        <details class="ticket-route">
+                                            <summary>
+                                                <div class="ticket-route__inner">
+                                                    <span class="ticket-route__progress-bar"></span>
+                                                    <div class="ticket-route__route-header">
+                                                        <!-- Желтая иконка Поинта привязана к классу "route-header__item--point-icon" -->
+                                                        <!-- Она отображается когда посылка уже доставлена -->
+                                                        <div class="route-header__item route-header__item--send-from route-header__item--point-icon">
+                                                            <p class="route-header__office-name">м. Володимир-Волинський (відділення)</p>
+                                                            <p class="route-header__office-address">вул. Стрітенська, 21</p>
+                                                        </div>
+                                                        
+                                                        <!-- Иконка машины привязана к классу "route-header__item--car-icon" -->
+                                                        <!-- Она отображается когда посылка ещё в пути -->
+                                                        <div class="route-header__item route-header__item--road-to route-header__item--point-icon">
+                                                            <p class="route-header__office-name">с. Новоставці </p>
+                                                            <p class="route-header__office-address">вул. Нечуя-Левицького, 34</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </summary>
+    
+                                            <div class="road-to">
+                                                <div class="road-to__map">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.363976225182!2d32.048863915883615!3d49.40202217022818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14bdc4f3dd65f%3A0x1fae826854a555f2!2z0YPQuy4g0J3QtdGH0YPRjy3Qm9C10LLQuNGG0LrQvtCz0L4sIDM0LCDQp9C10YDQutCw0YHRgdGLLCDQp9C10YDQutCw0YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMTgwMDA!5e0!3m2!1sru!2sua!4v1617815886374!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                                </div>
+                                                <ul class="road-to__office-info">
+                                                    <li class="office-info__item">
+                                                        <p class="office-info__title">Адреса:</p>
+                                                        <p class="office-info__desc">
+                                                            <a target="_blank" href="https://goo.gl/maps/EcNsRt2pYX74Wi269">вул. Половка, 68</a>
+                                                        </p>
+                                                    </li>
+    
+                                                    <li class="office-info__item">
+                                                        <p class="office-info__title">Телефон:</p>
+                                                        <p class="office-info__desc"><a href="tel:0676207476">+38 067 620-74-76;</a> <a href="tel:0676275837">+38 067 627-58-37</a></p>
+                                                    </li>
+    
+                                                    <li class="office-info__item">
+                                                        <p class="office-info__title">Графік роботи:</p>
+                                                        <p class="office-info__desc">Пн-Пт 8:30–18:30, Сб 9:00–17:00</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </details>
+                                    </div>
+    
+    
+                                    <div class="ticket__full-info">
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <div class="ticket-tab-btn__icon">
+                                                        <img src="img/new-img-file/ticket__sender-icon.svg" alt="icon">
+                                                    </div>
+
+                                                    <h5 class="ticket-tab-btn__title">Дані відправника</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="personal-info">
+                                                <li class="personal-info__item">
+                                                    <h5 class="personal-info__title">АГРОТЕК-ІНВЕСТ, ТОВ</h5>
+                                                    <a class="personal-info__desc" href="tel:0675602871">+38 067 560-28-71</a>
+                                                </li>
+
+                                                <li class="personal-info__item personal-info__item--address-icon">
+                                                    <h5 class="personal-info__title">м. Київ-11 (відділення)</h5>
+                                                    <a class="personal-info__desc" href="https://goo.gl/maps/JJ1j3MRotoK3LjRa6" target="_blank">вул. Автозаводська, 86</a>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                        <!-- next -->
+
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <div class="ticket-tab-btn__icon">
+                                                        <img src="img/new-img-file/ticket__recipient-icon.svg" alt="icon">
+                                                    </div>
+
+                                                    <h5 class="ticket-tab-btn__title">Дані отримувача</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="personal-info">
+                                                <li class="personal-info__item">
+                                                    <h5 class="personal-info__title">Логачев Сергій Анатолійович</h5>
+                                                    <a class="personal-info__desc" href="tel:0997918326">+38 099 791-83-26</a>
+                                                </li>
+
+                                                <li class="personal-info__item personal-info__item--address-icon">
+                                                    <h5 class="personal-info__title">м. Полтава-1 (відділення)</h5>
+                                                    <a class="personal-info__desc" href="https://goo.gl/maps/JJ1j3MRotoK3LjRa6" target="_blank">вул. Половка, 68</a>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                        <!-- next -->
+
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <div class="ticket-tab-btn__icon">
+                                                        <img src="img/new-img-file/ticket__payer-icon.svg" alt="icon">
+                                                    </div>
+
+                                                    <h5 class="ticket-tab-btn__title">Дані платника</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="personal-info">
+                                                <li class="personal-info__item">
+                                                    <h5 class="personal-info__title">АГРОТЕК-ІНВЕСТ, ТОВ</h5>
+                                                    <a class="personal-info__desc" href="tel:0675602871">+38 067 560-28-71</a>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                        <!-- next -->
+
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <h5 class="ticket-tab-btn__title ticket-tab-btn__title--about-parcel">Сума всіх послуг: <span>3 800,08</span> грн</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="about-parcel">
+                                                <li class="about-parcel__item bird bird--green">
+                                                    <div class="about-parcel__name">
+                                                        <img src="img/new-img-file/ticket__payment_card_paid.svg" alt="icon">
+                                                        <p>Перевезення з дод. послугами</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <span class="about-parcel__score">73,00</span>
+                                                </li>
+
+                                                <li class="about-parcel__item bird bird--green">
+                                                    <div class="about-parcel__name">
+                                                        <img src="img/new-img-file/ticket__payment_cash.svg" alt="icon">
+                                                        <p>Комісія післяплати готівкою</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <span class="about-parcel__score">79,80</span>
+                                                </li>
+
+                                                <li class="about-parcel__item bird bird--green">
+                                                    <div class="about-parcel__name">
+                                                        <img src="img/new-img-file/ticket__payment_card_paid.svg" alt="icon">
+                                                        <p>Сума післяплати готівкою</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <span class="about-parcel__score">3 990,00</span>
+                                                </li>
+
+                                                <li class="about-parcel__item bird">
+                                                    <div class="about-parcel__name">
+                                                        <img src="img/new-img-file/ticket__payment_cash.svg" alt="icon">
+                                                        <p>Послуги страхування</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <span class="about-parcel__score">16,00</span>
+                                                </li>
+
+                                                <li class="about-parcel__item bird">
+                                                    <div class="about-parcel__name">
+                                                        <p>Заявлена вартість вантажу</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <span class="about-parcel__score">3 990,00</span>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                        <!-- next -->
+
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <h5 class="ticket-tab-btn__title ticket-tab-btn__title--about-parcel">Деталі по вантажу</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="about-parcel">
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Кількість місць</p>
+                                                    </div>
+                                                    <span class="about-parcel__score">3</span>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Вага</p>
+                                                    </div>
+                                                    <div class="about-parcel__score"><span>730,01</span> кг</div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Об’єм</p>
+                                                    </div>
+                                                    <div class="about-parcel__score"> <span>3,01</span> м&sup3;</div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Категорія вантажу</p>
+                                                    </div>
+                                                    <span class="about-parcel__score">Палета</span>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Номер внутрішньої накладної</p>
+                                                    </div>
+                                                    <span class="about-parcel__score">3135435643</span>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                        <!-- next -->
+
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <h5 class="ticket-tab-btn__title ticket-tab-btn__title--about-parcel">Додаткові послуги</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="about-parcel">
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name about-parcel__name--large">
+                                                        <p>Всього</p>
+                                                    </div>
+                                                    <div class="about-parcel__score about-parcel__score--large"><span>10,00</span> грн</div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Послуга післяплати готівкою</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <div class="about-parcel__score"><span>10,00</span> грн</div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Оформлення багажу</p>
+                                                    </div>
+                                                    <span class="about-parcel__doted"></span>
+                                                    <div class="about-parcel__score"><span>0,00</span> грн</div>
+                                                </li>
+                                            </ul>
+                                        </details>
+
+                                        <!-- next -->
+
+                                        <details class="ticket-tab ticket-tab--full-info">
+                                            <summary class="ticket-tab-btn ticket-tab-btn--full-info">
+                                                <div class="ticket-tab-btn__inner">
+                                                    <h5 class="ticket-tab-btn__title ticket-tab-btn__title--about-parcel">Пов’язані квитанції</h5>
+                                                </div>
+                                            </summary>
+
+                                            <ul class="about-parcel">
+                                                <li class="about-parcel__item about-parcel__item--related bird bird--green">
+                                                    <div class="about-parcel__name about-parcel__name--large">
+                                                        <img src="img/new-img-file/ticket__related-tickets-icon.svg" alt="icon">
+                                                        <p>№ <span>0810593682</span></p>
+                                                    </div>
+                                                    <div class="about-parcel__score about-parcel__score--large"><span>10,00</span> грн</div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <img src="img/new-img-file/ticket__payment_cash.svg" alt="icon">
+                                                        <p>Зберігання</p>
+                                                    </div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name">
+                                                        <p>Платник</p>
+                                                    </div>
+                                                    <div class="about-parcel__score">АГРОТЕК-ІНВЕСТ, ТОВ</div>
+                                                </li>
+
+                                                <li class="about-parcel__item">
+                                                    <div class="about-parcel__name about-parcel__name--total-status">
+                                                        <p>Видано</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </div>
+                                </div>
+
+                                <footer class="ticket-footer">
+                                    <div class="ticket-footer__inner">
+                                        <div class="ticket-footer__info">
+                                            <h3 class="ticket-footer__total-paid" style="display: none;">До сплати: <span>3 800,08</span> грн</h3>
+                                            <h3 class="ticket-footer__total-paid">Сплачено</h3>
+
+                                            <p class="ticket-footer__type-payment" style="display: none;">Готівковий розрахунок</p>
+                                            <p class="ticket-footer__type-payment">Безготівковий розрахунок</p>
+                                        </div>
+
+                                        <!-- Что бы сделать кнопку неактивной - просто добавлять атрибут "disabled" -->
+                                        <button class="main-btn ticket-footer__btn" disabled>Сплатити</button>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+<!-- Конец тут -->
+
+
+
+
+
+
+
+
+
+
+
+                </article>
+            </section>
+
+            <section id="included__feedback-block" class="feedback-block"></section>
+        </main>
+
+
+        <!--========== FOOTER LAYOUT ==========-->
+        <footer id="included__footer" class="footer"></footer>
+        <footer id="included__sub-footer" class="sub-footer"></footer>
+        <!--========== THE END FOOTER LAYOUT ==========-->
+
+        <!-- Pop-up html included -->
+        <section id="included__pop-up"></section>
+        <!-- ADD JQUERY HERE -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- Pop up JS -->
+        <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+        <script src="js/components/popup.js" type="text/javascript"></script>
+        <!-- Slick Slider -->
+        <script src="js/components/slick.min.js" type="text/javascript"></script>
+        <script src="js/components/slick.main.js" type="text/javascript"></script>
+        <!-- Calendar -->
+        <script src="js/components/datepicker.min.js" type="text/javascript"></script>
+        <!-- Details tag Pofyliff for Edge -->
+        <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
+        <!-- Main.js -->
+        <script src="js/main.js" type="text/javascript"></script>
+
+
+        <!-- Копировать номер квитанции в Буффер Обмена -->
+        <script>
+            function СopyTicketNumber(el) {
+            var $tmp = $("<textarea>");
+            $("body").append($tmp);
+            $tmp.val($(el).text()).select();
+            document.execCommand("copy");
+            $tmp.remove();
+        }  
+        </script>
+    </body>
+</html>

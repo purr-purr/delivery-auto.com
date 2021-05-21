@@ -1,0 +1,778 @@
+/* ======================================================
+//   Стили для страницы Дополнительные Услуги
+========================================================= */
+
+/* Хедер страницы */
+.page-header {
+	background: #fff url("../img/system/page-header/page-header__calc.jpg") no-repeat;
+}
+
+/* =================================== */
+
+
+.calculate-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #F8F8F8;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    margin-bottom: 32px;
+}
+
+.calulate-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.333333%;
+    height: 100%;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333333;
+	text-align: center;
+    position: relative;
+}
+
+.calulate-nav__item:first-child::after {
+    content: " ";
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 1px;
+    height: 40px;
+    background-color: #DADADA;
+}
+
+.calulate-nav__item--active {
+    height: 64px;
+    background-color: #ffd500;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: -3px;
+}
+
+/* Сортировка услуг */
+
+.a-add-services__sort {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.a-add-services__sort-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 283px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+	text-align: center;
+}
+
+.a-add-services__sort-item:first-child {
+    margin-right: 30px;
+}
+
+.sort-item--active {
+    font-weight: bold;
+    border: 2px solid #FFD500;
+}
+
+.full-word {
+	margin-left: 3px;
+	display: block;
+}
+.short-word {
+	margin-left: 3px;
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.full-word {
+		display: none;
+	}
+	.short-word {
+		display: block;
+	}
+	.calculate {
+		margin-top: 20px;
+	}
+	.calculate-nav {
+		margin-bottom: 20px;
+	}
+	.calulate-nav__item {
+		font-size: 13px;
+		flex-direction: column;
+	}
+	.a-add-services__sort-item {
+		height: 40px;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.a-add-services__sort-item:first-child {
+		margin-right: 10px;
+	}
+	.sort-item--active {
+		font-weight: normal;
+		border: 2px solid #FFD500;
+		background-color: #ffd500;
+	}
+}
+
+/* Аккардион */
+.services-group {
+	display: none;
+	max-width: 730px;
+}
+
+.services-group--active {
+	display: block;
+}
+
+.services-group__item {
+    margin-bottom: 20px;
+}
+
+.services-group__item[open] {
+    margin-bottom: 0;
+}
+
+.services-group__item[open] .services-group__summary ~ * {
+	animation: acc-media-open 0.3s ease-in-out;
+}
+
+@keyframes acc-media-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.services-group__item .services-group__summary::-webkit-details-marker {
+	display: none;
+}
+
+.services-group__item .services-group__summary {
+    display: flex;
+    align-items: center;
+
+	width: 100%;
+	height: 72px;
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+    outline: 0;
+	padding: 0 70px 0 30px;
+}
+
+.services-group__item .services-group__summary:after {
+	content: " ";
+	position: absolute;
+    right: 20px;
+    top: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: transform .2s linear;
+    transform: rotate(0deg);
+}
+
+.services-group__item[open] .services-group__summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform .5s linear;
+}
+
+.services-group__summary-inner {
+    display: flex;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.services-group__title-logo {
+	display: none;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+}
+
+.services-group__title {
+    font-weight: 600;
+	font-size: 24px;
+	line-height: 20px;
+    color: #333333;
+}
+
+
+@media (max-width: 1024px) {
+	.services-group__item .services-group__summary {
+		height: 50px;
+		padding: 0 70px 0 10px;
+	}
+	.services-group__item .services-group__summary:after {
+		right: 10px;
+		top: 10px;
+		width: 30px;
+		height: 30px;
+		background-size: 9px;
+	}
+	.services-group__item[open] .services-group__summary:after {
+		background-size: 8px;
+	}
+	.services-group__item[open] .services-group__title {
+		font-weight: bold;
+	}
+	.services-group__title-logo {
+		display: block;
+	}
+	.services-group__item[open] .services-group__title-logo {
+		display: none;
+	}
+	.services-group__title {
+		font-weight: normal;
+		font-size: 15px;
+	}
+}
+
+/* 2lvl inside  */
+
+/* Аккардион */
+.services-type__container {
+	max-width: 730px;
+}
+
+.services-type[open] .services-type__summary ~ * {
+	animation: acc-media-open 0.3s ease-in-out;
+}
+
+@keyframes acc-media-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.services-type .services-type__summary::-webkit-details-marker {
+	display: none;
+}
+
+.services-type .services-type__summary {
+    display: flex;
+    align-items: center;
+	width: 100%;
+	height: 53px;
+	position: relative;
+	cursor: pointer;
+	list-style: none;
+    outline: 0;
+    padding-left: 10px;
+	padding: 0 30px 0 10px;
+    border-bottom: 2px solid #F0F5F9;
+}
+
+.services-type:last-child .services-type__summary {
+    border-bottom: none;
+}
+
+.services-type:last-child[open] .services-type__summary {
+    border-bottom: 2px solid #F0F5F9;
+}
+
+.services-group__item:last-child .services-type:last-child .services-type__summary {
+	border-bottom: 2px solid #F0F5F9;
+}
+
+.services-type .services-type__summary:after {
+	content: " ";
+	position: absolute;
+    right: 30px;
+    top: 20px;
+	width: 13px;
+	height: 13px;
+	background: url("../img/system/icon/yellow-plus.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: transform .2s linear;
+    transform: rotate(0deg);
+}
+
+.services-type[open] .services-type__summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/grey-x.svg") no-repeat center;
+    transition: transform .5s linear;
+}
+
+.services-type__summary-inner {
+    display: flex;
+    align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.services-type__title {
+    font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.services-type[open] .services-type__title {
+    font-weight: 600;
+}
+
+.services-type__icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.border-bottom-group {
+    border-bottom: 2px solid #F0F5F9;
+}
+
+@media (max-width: 1024px) {
+	.services-type .services-type__summary {
+		height: auto;
+		padding: 6px 30px 6px 10px;
+	}
+	.services-type .services-type__summary:after {
+		right: 10px;
+		top: 15px;
+		background-size: 9px;
+	}
+	.services-type[open] .services-type__summary:after {
+		background-size: 9px;
+	}
+	.services-type__icon {
+		width: 30px;
+		height: 30px;
+	}
+	.services-type__title {
+		font-size: 15px;
+	}
+}
+
+/* Конкретная услуга */
+
+
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 2px solid #F0F5F9;
+}
+
+.services-item__cost {
+    font-weight: 600;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+
+.services-item__notice {
+    padding: 15px 0;
+    border-bottom: 2px solid #F0F5F9;
+}
+
+.services-item__notice--only-padding {
+    padding-top: 15px;
+}
+
+.services-item--company {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px 10px 0;
+    border-bottom: 2px solid #F0F5F9;
+}
+
+.services-item__logos {
+    width: 104px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.services-item__company-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.services-item__info {
+    margin-top: 15px;
+}
+
+.services-info-block {
+    padding: 20px 0;
+}
+.services-info-block p {
+    margin-bottom: 10px;
+}
+
+.services-item__sub-title {
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+	.services-item {
+		padding: 10px 0;
+		border-bottom: none;
+	}
+	.services-item:last-child {
+		border-bottom: 2px solid #F0F5F9;
+	}
+	.services-item__notice {
+		border-bottom: none;
+	}
+	.services-item--company {
+		border-bottom: none;
+		flex-direction: column;
+		align-items: baseline;
+		padding: 10px 0;
+	}
+	.services-item__logos {
+		margin-bottom: 10px;
+	}
+}
+
+/* Table */
+.tariff__table {
+	border-collapse: collapse;
+	width: 805px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.tariff__table thead {
+	background-color: #FFD500;
+}
+
+.tariff__table tbody {
+	border-bottom: 1px solid #999999;
+}
+
+.tariff__table thead th {
+	height: 40px;
+}
+
+.tariff__table tbody tr:nth-child(even) {
+	background-color: #F8F8F8;
+}
+
+.tariff__table tbody td {
+	min-height: 40px;
+	padding: 12px 5px;
+}
+
+.tariff__table th, .tariff__table td  {
+	border-right: 1px solid #999999;
+}
+
+.tariff__table th:last-child, .tariff__table td:last-child  {
+	border-right: none;
+}
+
+.tariff__table tbody tr {
+	transition: all .4s linear;
+}
+
+.tariff__table tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}
+
+
+/* Таблица 1 */
+#table--size1 thead th, #table--size1 tbody td {
+	width: 25%;
+}
+
+#table--size1 thead th, #table--size2 thead th {
+    padding: 10px 5px;
+}
+
+#table--size2 thead th:first-child, #table--size2 tbody td:first-child {
+	width: 310px;
+}
+
+#table--size5 {
+	margin-top: 0;
+}
+
+#table--size5 thead th, #table--size5 tbody td {
+	width: 33.33%;
+}
+
+#table--metal thead th, #table--metal thead th {
+    padding: 10px 5px;
+}
+
+#table--metal thead th:first-child {
+	width: 93px;
+}
+
+#table--metal thead th:nth-child(2) {
+	width: 182px;
+}
+
+#table--metal thead th:nth-child(3){
+	width: 93px;
+}
+
+#table--metal thead th:nth-child(4){
+	width: 144px;
+}
+
+#table--metal thead th:nth-child(5){
+	width: 137px;
+}
+
+#table--metal {
+	min-width: 805px;
+}
+
+.tariff__table--pack-bicycle thead th:first-child {
+	width: 30%;
+}
+
+.tariff__table--pack-bicycle th:nth-child(2) {
+	width: 50%;
+}
+
+.tariff__table--pack-bicycle thead th:nth-child(3){
+	width: 20%;
+}
+
+.tariff__table--pack-bicycle thead th {
+	padding: 20px 0;
+}
+
+.tariff__table--pack-bicycle tbody tr:nth-child(even) {
+	background-color: transparent;
+}
+
+.tariff--bg {
+	background-color: #F8F8F8 !important;
+}
+
+.tariff__table--pack-bicycle tbody td:hover {
+	background-color: #FFEF9E !important;
+}
+
+.tariff__table--pack-bicycle tbody tr:hover {
+	background-color: transparent;
+}
+
+.services-type .construct__title {
+	font-size: 18px;
+}
+
+.services-tires {
+	margin-top: 20px;
+}
+
+#tariff__table--moto {
+	width: 100%;
+	max-width: 400px;
+}
+
+@media (max-width: 530px) {
+	#tariff__table--moto {
+		max-width: 400px;
+		min-width: 300px;
+	}
+	#tariff__table--moto thead th {
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 840px) {
+	.scroll-wrap--metal {
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		margin-bottom: 20px;
+	}
+	.scroll-wrap--metal::-webkit-scrollbar { width: 3px; height: 3px;}
+    .scroll-wrap--metal::-webkit-scrollbar-button { height: 0; width: 100%;}
+	.scroll-wrap--metal::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+	.scroll-wrap--metal::-webkit-scrollbar-track-piece { background-color: transparent;
+	}
+	#table--metal {
+		margin-bottom: 0;
+	}
+}
+
+
+
+/* Таблица населених пунктів, в яких діє послуга:  */
+.tariff__city {
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+}
+
+.tariff__city tbody {
+    display: block;
+    height: 360px;
+    width: max-content;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.tariff__city tbody::-webkit-scrollbar { width: 3px; height: 3px;}
+.tariff__city tbody::-webkit-scrollbar-button { height: 0; }
+.tariff__city tbody::-webkit-scrollbar-thumb {height: 50px; background-color: #ffd500; border-radius: 50px;}
+.tariff__city tbody::-webkit-scrollbar-track-piece { background-color: #DADADA;}
+
+.tariff__city tr {
+    display: flex;
+    width: 805px;
+}
+.tariff__city tr:nth-child(odd) {
+    background-color: #F8F8F8;
+}
+
+.tariff__city td {
+    display: inline-flex;
+    align-items: center;
+    width: 33%;
+    height: 40px;
+    padding-left: 30px;
+}
+
+.tariff__city td:nth-child(2) {
+    border-right: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+.tariff__city tbody tr:hover {
+	background-color: #FFEF9E;
+	transition: all .4s linear;
+}
+
+.tariff-city__container[open] summary ~ * {
+	animation: address__item-open 0.3s ease-in-out;
+}
+
+@keyframes address__item-open {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+.tariff-city__container summary::-webkit-details-marker {
+	display: none;
+}
+
+.tariff-city__title {
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	padding-right: 40px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+    color: #333333;
+	outline: 0;
+	font-weight: bold;
+}
+
+.tariff-city__title:after {
+	content: " ";
+	position: absolute;
+	right: 0px;
+	width: 35px;
+	height: 35px;
+	background: url("../img/system/icon/arrow.svg") no-repeat center;
+	transform-origin: center;
+	transition: 200ms linear;
+}
+
+.tariff-city__container[open] .tariff-city__title {
+	color: #3072C4;
+}
+
+.tariff-city__container[open] .tariff-city__title:after {
+    transform: rotate(90deg);
+	background: url("../img/system/icon/arrow--blue.svg") no-repeat center;
+	transition: transform 0.4s linear;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #999;
+}
+
+.white-space-nowrap {
+	white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+	.tariff__table {
+		max-width: 805px;
+		width: 100%;
+	}
+	.tariff__city tr {
+		display: flex;
+		width: 500px;
+	}
+	.tariff-city__title {
+		font-weight: normal;
+	}
+}
+
+@media (max-width: 530px) {
+	.tariff__table {
+		min-width: 445px;
+		margin-bottom: 0;
+	}
+	.scroll-wrap {
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		margin-bottom: 20px;
+	}
+	.scroll-wrap::-webkit-scrollbar { width: 3px; height: 3px;}
+    .scroll-wrap::-webkit-scrollbar-button { height: 0; width: 100%;}
+    .scroll-wrap::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+    .scroll-wrap::-webkit-scrollbar-track-piece { background-color: transparent;
+	}
+	#table--size2 thead th:first-child, #table--size2 tbody td:first-child {
+		width: 165px;
+	}
+	#table--size2 {
+		min-width: 331px;
+	}
+	.table-4--wrap .tariff__table {
+		min-width: 620px;
+	}
+	.tariff__city {
+		margin: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.address__video {
+		max-width: 320px;
+		height: 210px;
+	}
+}

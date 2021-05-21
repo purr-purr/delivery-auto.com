@@ -2881,6 +2881,7 @@ details > summary {
 	.feedback {
 		width: 100%;
 		height: auto;
+		padding: 20px 0;
 	}
 	.feedback__input, .feedback__select  {
 		width: 387px;

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- ==============================
+    Project:        Delivery Group
+    Author:         Anton Shaposhnikov
+    Telegram:       https://t.me/purrpurr
+================================== -->
+<html lang="uk">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Квитанція про прийом вантажу</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8,IE=edge"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <!-- Fonts -->
+        <link href="fonts/SegoeUI/fonts.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- PAGE LEVEL PLUGIN STYLES -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- THEME STYLES -->
+        <link href="css/common.css" rel="stylesheet" type="text/css"/>
+        <link href="css/n-tracking-no-log.css" rel="stylesheet" type="text/css"/>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/system/icon/favicon.ico"/>
+    </head>
+
+    <body>
+
+        <!--========== HEADER ==========-->
+        <header id="included__main-navigation" class="main-navigation"></header>
+        <!--========== \END HEADER ==========-->
+
+
+        <main class="main">
+
+            <section class="main__container">
+                <article class="main-content">
+
+
+
+
+<!-- Начало тут.
+Трекинг незалогиненого пользователя -->
+                    <div class="tracking__container">
+                        <div class="tracking__header">
+                            <p class="tracking__block-title">
+                                <span>Квитанція про прийом вантажу</span> <span>0810594206</span>
+                            </p>
+                            <div class="tracking__block-logo">
+                                <img src="img/system/delivery-group__logos/delGroup_logo.png" alt="Delivery Group Logo">
+                            </div>
+                        </div>
+
+                        <div class="tracking__inner">
+                            <div class="short-ticket">
+                                <div class="ticket-header">
+                                    <h3 class="ticket-header__mobile-title">Квитанція про прийом вантажу</h3>
+                                    <div class="ticket-header__inner">
+                                        <p class="ticket-header__number">№ 
+                                            <span id="Ticket-Number-Item" onclick="СopyTicketNumber('#Ticket-Number-Item')">0810594206</span>
+                                        </p>
+                                        <div class="tiket-header__btn-group">
+                                            <div class="ticket-header__btn-icon">
+                                                <img onclick="СopyTicketNumber('#Ticket-Number-Item')" src="img/new-img-file/copy-icon.svg" alt="Скопировать">
+                                                <p class="ticket-header__tooltip btn-1">
+                                                    <span class="btn-1">Скопіювати номер квитанції</span>
+                                                    <span class="btn-2">Done</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="short-ticket__container">
+                                    <div class="ticket-status">
+                                        <div class="ticket-status__main-status">
+                                            <div class="main-status__icon">
+                                                <img src="img/new-img-file/ticket__status-FULL-4in4.svg" alt="icon status">
+                                                <img src="img/new-img-file/ticket__status-IN-ROAD-3in4.svg" alt="icon status" style="display: none;">
+                                            </div>
+                                            <div class="main-status__inner">
+                                                <div class="main-status__info">
+                                                    <p class="main-status__title" style="display: none;">Доставляється кур’єром</p>
+                                                    <p class="main-status__title">Видано</p>
+
+                                                    <div class="main-status__last-time">
+                                                        <time>23.03.2021</time> <span> | </span> <time>17:55</time>
+                                                    </div>
+                                                </div>
+
+                                                <div class="main-status__block-drop" style="display: none;">
+                                                    <p class="block-drop__title">Заборона видачі</p>
+                                                    <img class="block-drop__icon" src="img/new-img-file/ticket__block-drop.svg" alt="icon">
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <ul class="ticket-status__date-status">
+                                            <li class="date-status__item">
+                                                <time class="date-status__time">22.03.2021</time>
+                                                <p class="date-status__description">Дата відправлення</p>
+                                            </li>
+    
+                                            <li class="date-status__item">
+                                                <time class="date-status__time">22.03.2021</time>
+                                                <p class="date-status__description">Орієнтовна дата прибуття</p>
+                                            </li>
+
+                                            <!-- <li class="date-status__item" style="display: none;">
+                                                <time class="date-status__time">10:00–17:00</time>
+                                                <p class="date-status__description">Орієнтовний час доставки</p>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                    
+                                    <details class="ticket-route">
+                                        <summary>
+                                            <div class="ticket-route__inner">
+                                                <span class="ticket-route__progress-bar"></span>
+                                                <div class="ticket-route__route-header">
+                                                    <!-- Желтая иконка Поинта привязана к классу "route-header__item--point-icon" -->
+                                                    <!-- Она отображается когда посылка уже доставлена -->
+                                                    <div class="route-header__item route-header__item--send-from route-header__item--point-icon">
+                                                        <p class="route-header__office-name">м. Володимир-Волинський (відділення)</p>
+                                                        <p class="route-header__office-address">вул. Стрітенська, 21</p>
+                                                    </div>
+                                                    
+                                                    <!-- Иконка машины привязана к классу "route-header__item--car-icon" -->
+                                                    <!-- Она отображается когда посылка ещё в пути -->
+                                                    <div class="route-header__item route-header__item--road-to route-header__item--point-icon">
+                                                        <p class="route-header__office-name">с. Новоставці </p>
+                                                        <p class="route-header__office-address">вул. Нечуя-Левицького, 34</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </summary>
+
+                                        <div class="road-to">
+                                            <div class="road-to__map">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.363976225182!2d32.048863915883615!3d49.40202217022818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14bdc4f3dd65f%3A0x1fae826854a555f2!2z0YPQuy4g0J3QtdGH0YPRjy3Qm9C10LLQuNGG0LrQvtCz0L4sIDM0LCDQp9C10YDQutCw0YHRgdGLLCDQp9C10YDQutCw0YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMTgwMDA!5e0!3m2!1sru!2sua!4v1617815886374!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                            </div>
+                                            <ul class="road-to__office-info">
+                                                <li class="office-info__item">
+                                                    <p class="office-info__title">Адреса:</p>
+                                                    <p class="office-info__desc">
+                                                        <a target="_blank" href="https://goo.gl/maps/EcNsRt2pYX74Wi269">вул. Половка, 68</a>
+                                                    </p>
+                                                </li>
+
+                                                <li class="office-info__item">
+                                                    <p class="office-info__title">Телефон:</p>
+                                                    <p class="office-info__desc"><a href="tel:0676207476">+38 067 620-74-76;</a> <a href="tel:0676275837">+38 067 627-58-37</a></p>
+                                                </li>
+
+                                                <li class="office-info__item">
+                                                    <p class="office-info__title">Графік роботи:</p>
+                                                    <p class="office-info__desc">Пн-Пт 8:30–18:30, Сб 9:00–17:00</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+<!-- Конец тут -->
+
+                    <style>
+                        .btn-2 {
+                            display: none;
+                        }
+                        .hide-block {
+                            display: none;
+                        }
+                        .show-block {
+                            display: block; 
+                        }
+                    </style>
+
+                </article>
+            </section>
+
+        </main>
+
+
+        <!--========== THE END FOOTER LAYOUT ==========-->
+
+        <!-- Pop-up html included -->
+        <section id="included__pop-up"></section>
+        <!-- ADD JQUERY HERE -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- Pop up JS -->
+        <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+        <script src="js/components/popup.js" type="text/javascript"></script>
+        <!-- Slick Slider -->
+        <script src="js/components/slick.min.js" type="text/javascript"></script>
+        <script src="js/components/slick.main.js" type="text/javascript"></script>
+        <!-- Calendar -->
+        <script src="js/components/datepicker.min.js" type="text/javascript"></script>
+        <!-- Details tag Pofyliff for Edge -->
+        <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
+        <!-- Main.js -->
+        <script src="js/main.js" type="text/javascript"></script>
+
+
+        <!-- Копировать номер квитанции в Буффер Обмена -->
+        <script>
+            function СopyTicketNumber(el) {
+            var $tmp = $("<textarea>");
+            $("body").append($tmp);
+            $tmp.val($(el).text()).select();
+            document.execCommand("copy");
+            $tmp.remove();
+
+            console.log("done");
+            $('.btn-1').addClass('hide-block');
+            $('.btn-2').addClass('show-block');
+        }  
+
+
+                // Скрытие кнопки Scrollup
+        // $(window).scroll(function(){
+        //     if ($(this).scrollTop() > 600) {
+        //         $('.scrollup').fadeIn();
+        //             } else {
+        //                 $('.scrollup').fadeOut();
+        //             }
+        // });
+
+
+        // function СopyTicketNumber(el) {
+        //     var $tmp = $("<textarea>");
+        //     $("body").append($tmp);
+        //     $tmp.val($(el).text()).select();
+        //     document.execCommand("copy");
+        //     $tmp.remove();
+
+        //     if () {
+        //         alert(done);
+        //     }
+        // }
+        </script>
+    </body>
+</html>
