@@ -17,7 +17,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
         <link href="css/common.css" rel="stylesheet" type="text/css"/>
-        <link href="css/n-additional-services.css" rel="stylesheet" type="text/css"/>
+        <link href="css/n-light-calc.css" rel="stylesheet" type="text/css"/>
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/system/icon/favicon.ico"/>
     </head>
@@ -52,15 +52,227 @@
             <section class="main__container">
                 <article class="main-content">
                     <div class="calculate">
-
                         <div class="calculate-nav">
-                            <a class="calulate-nav__item  calulate-nav__item--active" href="n-light-calc.html">Light версія</a>
+                            <a class="calulate-nav__item calulate-nav__item--active" href="n-light-calc.html">Light версія</a>
                             <a class="calulate-nav__item" href="n-full-calc.html">Розширена версія</a>
-                            <a class="calulate-nav__item" href="n-additional-services.html">Тарифи на додаткові послуги</a>
+                            <a class="calulate-nav__item" href="n-additional-services.html">Тарифи на <span class="full-word"> додаткові послуги</span>
+                                <span class="short-word"> дод. послуги</span></a>
                         </div>
 
 
+                        <form class="calc-form">
+                            <h4 class="calc-form__group-title">Маршрут</h4>
 
+                            <div class="calc-form__line">
+                                <div class="calc-form__input-wrap calc-form__yellow-arrow time-line time-line--first-point">
+                                    <input class="time-line__input" type="text" placeholder="Звідки">
+                                </div>
+
+                                <div class="calc-form__input-wrap">
+                                    <input type="text" placeholder="Куди">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line time-line">
+                                <select class="time-line__input">
+                                    <option value="-1" style="display: none;">Тип доставки</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line">
+                                <div class="calc-form__colm time-line">
+                                    <label class="calc-form__label" for="t1">Дата відправлення</label>
+                                    <input class="time-line__input calc-form__input--short" id="t1" type="text">
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t2">Орієнтована дата прибуття</label>
+                                    <select class="calc-form__input--short" id="t2">
+                                        <option value="-1" style="display: none;"></option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line">
+                                <div class="calc-form__colm time-line">
+                                    <label class="calc-form__label" for="t3">Оголошена вартість</label>
+                                    <input class="time-line__input calc-form__input--short" id="t3" type="text">
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t4">Безпечна угода</label>
+                                    <input class="calc-form__input--short" id="t4" type="text">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line time-line">
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t5">Післяплата готівкова</label>
+                                    <input class="time-line__input calc-form__input--short" id="t5" type="text">
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t6">Післяплата безготівкова</label>
+                                    <input class="time-line__input calc-form__input--short" id="t6" type="text">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line after-pay-acc after-pay-acc__hide">
+                                <div class="calc-form__colm time-line">
+                                    <label class="calc-form__label" for="t7">Оберіть розрахунковий рахунок</label>
+                                    <select class="time-line__input calc-form__input--short" id="t7">
+                                        <option value="-1" style="display: none;"></option>
+                                        <option value="">UA45252255777</option>
+                                        <option value="">UA45252255888</option>
+                                    </select>
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <p class="after-pay-acc__notice">
+                                        Обрати розрахунковий рахунок можуть тільки авторизовані користувачі. Налаштувати розрахункові рахунки можна в <a target="_blank" href="#">особистому кабінеті</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line time-line">
+                                <label class="calc-switch-btn">
+                                    <p class="calc-form__label">Економ тариф</p>
+
+                                    <div class="calc-switch-btn__toggle">
+                                        <input class="time-line__input calc-switch-btn__toggle-state" type="checkbox" name="" value=""/>
+                                        <div class="calc-switch-btn__bg"></div>
+                                        <div class="calc-switch-btn__indicator"></div>
+                                    </div>
+                                    
+                                    <p class="calc-switch-btn__desc">Економ тариф - знижка 5% на вантаж (термін доставки збільшується на 24 години)</p>
+                                </label>
+                            </div>
+
+                            <h4 class="calc-form__group-title">Оберіть категорію вашого вантажу</h4>
+
+                            <!-- Выбор по типу -->
+
+                            <ul class="calc-type-cargo time-line time-line--type-cargo">
+                                <li class="calc-type-cargo__item calc-type-cargo__cargo calc-type-cargo__item--active">
+                                    <div class="calc-type-cargo__icon">
+                                        <img src="img/system/icon/calc/calc-form__type-cargo.svg" alt="icon">
+                                    </div>
+                                    Вантаж
+                                </li>
+                                <li class="calc-type-cargo__item calc-type-cargo__pallets">
+                                    <div class="calc-type-cargo__icon">
+                                        <img src="img/system/icon/calc/calc-form__type-palets.svg" alt="icon">
+                                    </div>
+                                    Палети
+                                </li>
+                                <li class="calc-type-cargo__item calc-type-cargo__documents">
+                                    <div class="calc-type-cargo__icon">
+                                        <img src="img/system/icon/calc/calc-form__type-documents.svg" alt="icon">
+                                    </div>
+                                    Посилки <br> і документи
+                                </li>
+                                <li class="calc-type-cargo__item calc-type-cargo__sectoral">
+                                    <div class="calc-type-cargo__icon">
+                                        <img src="img/system/icon/calc/calc-form__type-galuz.svg" alt="icon">
+                                    </div>
+                                    Галузеві <br> тарифи
+                                </li>
+                            </ul>
+
+
+
+                            <div class="type-cargo type-cargo-1 time-line type-cargo--active">
+                                <h4 class="calc-form__group-title">Вкажіть параметри вантажу 1</h4>
+
+                                <div class="cargo-parameters">
+                                    <div class="cargo-parameters__info">
+
+                                        <div class="calc-form__line">
+                                            <div class="calc-form__colm">
+                                                <label class="calc-form__label" for="t8">Кількість місць</label>
+                                                <input class="calc-form__input--short" id="t8" type="text" value="1">
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-form__line">
+                                            <div class="calc-form__colm">
+                                                <label class="calc-form__label" for="t9">Загальна вага, кг</label>
+                                                <input class="calc-form__input--short" id="t9" type="number" value="0">
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-form__line">
+                                            <div class="calc-form__colm">
+                                                <input class="calc-form__input--short" id="t10" type="text" value="0,00" disabled>
+                                                <label class="calc-form__label" for="t10">Довжина, см</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-form__line">
+                                            <div class="calc-form__colm">
+                                                <input class="calc-form__input--short" id="t11" type="text" value="0,00" disabled>
+                                                <label class="calc-form__label" for="t11">Ширина, см</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-form__line">
+                                            <div class="calc-form__colm">
+                                                <input class="calc-form__input--short" id="t12" type="text" value="0,00" disabled>
+                                                <label class="calc-form__label" for="t12">Висота, см</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-form__line">
+                                            <div class="calc-form__colm">
+                                                <label class="calc-form__label" for="t13">Загальний обсяг, м3</label>
+                                                <input class="calc-form__input--short" id="t13" type="text" value="0,00">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cargo-parameters__images">
+                                        <div class="cargo-parameters__cargo-box">
+                                            <img src="img/system/icon/calc/cargo-parameters__box.svg" alt="cargo">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <button class="main-btn">Розрахувати</button>
+                                </div>
+                            </div>
+
+                            <div class="type-cargo type-cargo-2 time-line">
+                                <h4 class="calc-form__group-title">Вкажіть параметри вантажу 2</h4> 
+                            </div>
+
+                            <div class="type-cargo type-cargo-3 time-line">
+                                <h4 class="calc-form__group-title">Доставка до почтомату 3</h4> 
+                            </div>
+
+                            <div class="type-cargo type-cargo-4 time-line">
+                                <h4 class="calc-form__group-title">Вкажіть параметри вантажу 4</h4> 
+                            </div>
+
+
+                        </form>
                     </div>
                 </article>
             </section>
@@ -90,5 +302,16 @@
         <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
         <!-- Main.js -->
         <script src="js/main.js" type="text/javascript"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.calc-switch-btn').click(function(){
+                    $('input[type="checkbox"]:checked').each(function(){
+                        $('.calc-switch-btn__desc').toggleClass('calc-switch-btn__desc--active');
+                    });
+                });
+            });
+
+        </script>
     </body>
 </html>

@@ -494,3 +494,56 @@ $('.sort-item--type-cargo').on('click', function(event){
     $('.sort-item--type-service').removeClass('sort-item--active');
     $('.services-group--type-service').removeClass('services-group--active');
 });
+
+
+
+// Обращение к родителю
+$(".time-line__input").change(function(){
+    $(this).parents(".time-line").toggleClass("time-line-active");
+})
+
+$(".calc-type-cargo, .type-cargo").click(function(){
+    $('.time-line--type-cargo').addClass("time-line-active");
+})
+
+$(".type-cargo").click(function(){
+    $(this).addClass("time-line-active");
+})
+
+
+// Сортировка по типу 
+$('.calc-type-cargo__cargo').on('click', function(event){
+    $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
+    $(this).addClass('calc-type-cargo__item--active');
+    $('.type-cargo').removeClass('type-cargo--active');
+    $('.type-cargo-1').addClass('type-cargo--active');
+});
+
+$('.calc-type-cargo__pallets').on('click', function(event){
+    $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
+    $(this).addClass('calc-type-cargo__item--active');
+    $('.type-cargo').removeClass('type-cargo--active');
+    $('.type-cargo-2').addClass('type-cargo--active');
+});
+
+$('.calc-type-cargo__documents').on('click', function(event){
+    $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
+    $(this).addClass('calc-type-cargo__item--active');
+    $('.type-cargo').removeClass('type-cargo--active');
+    $('.type-cargo-3').addClass('type-cargo--active');
+});
+
+$('.calc-type-cargo__sectoral').on('click', function(event){
+    $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
+    $(this).addClass('calc-type-cargo__item--active');
+    $('.type-cargo').removeClass('type-cargo--active');
+    $('.type-cargo-4').addClass('type-cargo--active');
+});
+
+
+
+
+// Появление инпута "Послеплаты"
+$('#t6').on('change', function() {
+    $('.after-pay-acc').toggleClass('after-pay-acc__hide', this.value);
+});

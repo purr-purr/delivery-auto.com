@@ -1,0 +1,18 @@
+.time-line {
+    position: relative;
+}
+
+.time-line:before {
+    content: " ";
+    position: absolute;
+    top: 15px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #333;
+}
+
+.time-line-active:before {
+    background-color: green !important;
+}
