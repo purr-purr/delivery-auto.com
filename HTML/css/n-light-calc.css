@@ -419,3 +419,39 @@
     order: -1;
 }
 
+
+
+
+
+
+
+
+.calc-footer {
+    display: flex;
+}
+
+
+.calc-footer__notice {
+    display: flex;
+    margin-left: 30px;
+}
+
+.calc-footer__notice-item {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.calc-footer__notice-item:last-child {
+    margin-right: 0;
+}
+
+.calc-footer__notice-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.calc-footer__notice-text {
+    max-width: 187px;
+}
