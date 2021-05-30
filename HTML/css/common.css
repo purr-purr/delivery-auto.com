@@ -146,9 +146,9 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 }
 
-/* input[type=number] {
+input[type=number] {
 	-moz-appearance: textfield;
-} */
+}
 
 input:disabled,
 select:disabled,
@@ -3793,7 +3793,8 @@ details > summary {
 #popup-express-time_background,
 #popup-express-add_background,
 #popup-courier-add-error_background,
-#popup-courier-approve_background {
+#popup-courier-approve_background,
+#popup-after-pay_background {
     opacity: .9 !important;
 }
 
@@ -3815,7 +3816,8 @@ details > summary {
 .popup-express-time_close span,
 .popup-express-add_close span,
 .popup-courier-add-error_close span,
-.popup-courier-approve_close span {
+.popup-courier-approve_close span,
+.popup-after-pay_close span {
     display: none;
 }
 
@@ -3837,7 +3839,8 @@ details > summary {
 .popup-express-time_close,
 .popup-express-add_close,
 .popup-courier-add-error_close,
-.popup-courier-approve_close {
+.popup-courier-approve_close,
+.popup-after-pay_close {
     position: absolute;
     top: 50px;
 	right: 60px;

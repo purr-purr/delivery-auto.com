@@ -134,3 +134,10 @@ $('#popup-courier-approve').popup({
     closebutton: true,
     escape: false
 });
+
+// pop up  Light Калькулятор, Безопасная сделка
+$('#popup-after-pay').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
