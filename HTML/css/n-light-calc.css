@@ -1275,20 +1275,28 @@
     cursor: pointer;
 }
 
+#popup-after-pay .popup-main {
+    padding: 50px;
+}
+
 /* POPUP Послеплата */
 .popup-after-pay__sub-title {
-    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 .popup-after-pay__block-haeding {
     margin-bottom: 10px;
     text-align: center;
+    padding: 8px 0;
+    background-color: rgba(255, 213, 0, 0.58);
 }
 
 .popup-after-pay__warehouse {
     display: flex;
-    border-top: 1px solid #DADADA;
-    padding-top: 15px;
     margin-bottom: 30px;
 }
 
@@ -1302,14 +1310,47 @@
     margin-right: 0;
 }
 
-.warehouse__colm  .warehouse__title {
-    margin-bottom: 10px;
+.warehouse__colm  .warehouse_title {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 24px;
 }
 
-.warehouse__colm  .warehouse__desc {
-    margin-bottom: 10px;
+.warehouse__colm  .warehouse_item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
 } 
 
 .warehouse__colm.ng-hide {
     display: none;
 }
+
+@media (max-width: 1024px) {
+    .popup-after-pay__sub-title {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 560px) {
+    .popup-after-pay__warehouse {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .warehouse__colm {
+        margin-bottom: 20px;
+    }
+    .warehouse__colm:last-child {
+        margin-bottom: 0;
+    }
+    .warehouse__colm  .warehouse_title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .warehouse__colm  .warehouse_item {
+        font-size: 15px;
+        line-height: 20px;
+    } 
+}
+

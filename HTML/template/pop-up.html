@@ -109,33 +109,30 @@
 
 			<div class="popup-after-pay__warehouse">
 				<div class="warehouse__colm ng-hide" ng-show="CODWarehouses.WarehouseSendList.length > 0">
-					<h6 class="warehouse__title">У місті відправлення</h6>
+					<h6 class="warehouse_title">У місті відправлення</h6>
 					<!-- ngRepeat: wr in CODWarehouses.WarehouseSendList -->
 				</div>
 
 				<div class="warehouse__colm" ng-show="CODWarehouses.WarehouseSendList.length == 0">
-					<h6 class="warehouse__title">У місті відправлення</h6>
-					<label class="warehouse__desc">Послуга ще не доступна в цьому місті, ми працюємо над цим.</label>
+					<h6 class="warehouse_title">У місті відправлення</h6>
+					<label class="warehouse_item">Послуга ще не доступна в цьому місті, ми працюємо над цим.</label>
 				</div>
 
 				<div class="warehouse__colm ng-hide" ng-show="CODWarehouses.WarehouseReceiveList.length > 0">
-					<h6 class="warehouse__title">У місті отримання</h6>
+					<h6 class="warehouse_title">У місті отримання</h6>
 					<!-- ngRepeat: wr in CODWarehouses.WarehouseReceiveList -->
 				</div>
 
 				<div class="warehouse__colm" ng-show="CODWarehouses.WarehouseReceiveList.length == 0">
-					<h6 class="warehouse__title">У місті отримання</h6>
-					<label class="warehouse__desc">Послуга ще не доступна в цьому місті, ми працюємо над цим.</label>
+					<h6 class="warehouse_title">У місті отримання</h6>
+					<label class="warehouse_item">Послуга ще не доступна в цьому місті, ми працюємо над цим.</label>
 				</div>
 			</div>
-
-			<div>
-				<a href="/uk-UA/GenericPages/DbIndex/2236" target="_blank">
-					Більше про послугу
-				</a>
-			</div>
-
-			<a class="main-btn" href="javascript:void()" onclick="CloseDialog('cod_warehouses_message')">OK</a>
+		
+			<a class="main-btn" href="cl-finance-services.html" target="_blank">
+				Дізнатися більше
+			</a>
+			
 		</div>
 
 	</form>
