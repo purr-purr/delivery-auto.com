@@ -1188,6 +1188,86 @@
 }
 
 
+@media (max-width: 1024px) {
+    /* Галузеві тарифи */
+    .sectoral-tariffs {
+        margin: 10px 0 20px;
+    }
+    .sectoral-tariffs summary {
+        padding-left: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto;
+    }
+    .sectoral-tariffs summary h3 {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 20px;
+    }
+    .sectoral-tariffs__desc {
+        font-size: 13px;
+        line-height: 15px;
+        padding-left: 15px;
+        max-width: 70%;
+        text-align: right;
+    }
+    .sectoral-tariffs__details>.sectoral-tariffs__summary::after {
+        right: 5px;
+        background-size: 9px;
+    }
+    .sectoral-tariffs__details[open]>.sectoral-tariffs__summary::after {
+        background-size: 10px;
+    }
+    .sectoral-tariffs__details--second-lvl .sectoral-tariffs__summary-inner {
+        padding-right: 30px;
+        padding-left: 5px;
+    }
+    .sectoral-tariffs__details--second-lvl .sectoral-tariffs__summary-inner h3 {
+        font-weight: normal;
+    }
+    .sectoral-tariffs__colm label {
+        margin-right: 10px;
+        font-size: 15px;
+    }
+    .sectoral-tariffs__line .checkbox--before {
+        margin-right: 15px;
+    }
+
+    /* Sectoral Tariffs in 2 line */
+    /* .sectoral-tariffs__line .checkbox--two-line input[type=checkbox] + label:before {
+        margin: 15px 15px 0 0;
+    }
+
+    .checkbox--two-line .checkbox__desc {
+        padding-left: 40px;
+        margin-top: -5px;
+    } */
+}
+
+
+@media (max-width: 650px) {
+    .sectoral-tariffs__line {
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #F0F5F9;
+        margin-bottom: 15px;
+    }
+    .sectoral-tariffs__line:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .sectoral-tariffs__colm label {
+        order: 1;
+        margin-left: 15px;
+    }
+    .sectoral-tariffs__colm {
+        margin-top: 15px;
+    }
+}
+
 /* popup icon */
 .calc-form__info-btn {
     width: 16px;
