@@ -480,6 +480,7 @@ $('.fast-search__more-filters-btn').on('click', function(event){
 
 
 
+// Для страницы ДУ
 // Фильтер для "Тарифи на додаткові послуги"
 $('.sort-item--type-service').on('click', function(event){
     $(this).addClass('sort-item--active');
@@ -496,6 +497,8 @@ $('.sort-item--type-cargo').on('click', function(event){
 });
 
 
+
+// Для Light и Расширеного
 // Time line индикаторы
 // Обращение к родителю
 $(".time-line__input").change(function(){
@@ -520,6 +523,8 @@ $(".type-cargo").click(function(){
 })
 
 
+
+// Только для Light Calc
 // Сортировка по типу 
 $('.calc-type-cargo__cargo').on('click', function(event){
     $('#DeliveryType').val('-1');
@@ -567,13 +572,14 @@ $('.calc-type-cargo__sectoral').on('click', function(event){
     $('.calc-form__group-title').removeClass('hide');
 });
 
-
+// Для Light и Расширеного
 // Появление инпута "Послеплаты"
 $('#t6').on('change', function() {
     $('.after-pay-acc').toggleClass('after-pay-acc__hide', this.value);
 });
 
 
+// Только для Light Calc
 // При "Тип доставки: Експресс доставка" - показывать блок с Експресс доставкой и остальные блоки связаные с Експресс доставкой
 $("#DeliveryType").change(function () {
     if( $("option#express:selected").length )

@@ -17,7 +17,9 @@
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
         <link href="css/common.css" rel="stylesheet" type="text/css"/>
-        <link href="css/n-additional-services.css" rel="stylesheet" type="text/css"/>
+        <link href="css/n-light-calc.css" rel="stylesheet" type="text/css"/>
+        <!-- Datepicker -->
+        <link href="css/components/datepicker.min.css" rel="stylesheet" type="text/css">
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/system/icon/favicon.ico"/>
     </head>
@@ -59,7 +61,332 @@
                         </div>
 
 
-                        <p> in work</p>
+                        <div class="mob-app-block">
+                            <div class="mob-app-block__info">
+                                <div class="mob-app-block__icon">
+                                    <img src="https://delivery-auto.com/Images/third_decade/system/mobile_app/123.jpg" alt="mob-app-icon">
+                                </div>
+                                <p class="mob-app-block__text">Завантажте додаток, для зручного замовлення з вашого мобільного пристрою.</p>
+                            </div>
+    
+                            <div class="mob-app-block__link-group">
+                                <a class="mob-app-block__link" href="in-dev.html">
+                                    <img src="img/system/mobile_app/icon__google-play.png" alt="google-play">
+                                </a>
+    
+                                <a class="mob-app-block__link" href="in-dev.html">
+                                    <img src="img/system/mobile_app/icon__app-store.png" alt="app-store">
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <form class="calc-form">
+                            <h4 class="calc-form__group-title">Маршрут</h4>
+
+                            <div class="calc-form__line">
+                                <div class="calc-form__input-wrap calc-form__yellow-arrow time-line time-line--first-point">
+                                    <input class="time-line__input" type="text" placeholder="Звідки">
+                                </div>
+
+                                <div class="calc-form__input-wrap">
+                                    <input type="text" placeholder="Куди">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <h4 class="calc-form__group-title">Склад</h4>
+
+                            <div class="calc-form__line">
+                                <div class="calc-form__warehouse-select calc-form__input-wrap calc-form__yellow-arrow time-line time-line--first-point">
+                                    <select class="time-line__input form-control dg-form-control ng-pristine ng-valid ng-touched" ng-options="t.id as t.name for t in data.input.WarehouseSendList" ng-model="data.output.WarehouseSendId" ng-change="WarehouseChange('bdff546c-cb16-e211-89ed-00155d053b5d')">
+                                        <option selected="selected" style="display: none;"></option>
+                                        <option value="string:bdff546c-cb16-e211-89ed-00155d053b5d" label="КИЇВ-01">КИЇВ-01</option>
+                                        <option value="string:df3dc7af-9017-e211-89ed-00155d053b5d" label="КИЇВ-02 Центр З/Д (Левый бер.)">КИЇВ-02 Центр З/Д (Левый бер.)</option>
+                                        <option value="string:668b8259-c82c-e211-9e9c-00155d053b5d" label="КИЇВ-03">КИЇВ-03</option>
+                                        <option value="string:63c5e13d-c92c-e211-9e9c-00155d053b5d" label="КИЇВ-04">КИЇВ-04</option>
+                                        <option value="string:0b2e8e62-c92c-e211-9e9c-00155d053b5d" label="КИЇВ-05">КИЇВ-05</option>
+                                        <option value="string:d21a698a-c92c-e211-9e9c-00155d053b5d" label="КИЇВ-06">КИЇВ-06</option>
+                                        <option value="string:12274b5a-ce2c-e211-9e9c-00155d053b5d" label="КИЇВ-07">КИЇВ-07</option>
+                                        <option value="string:844fa2e2-ce2c-e211-9e9c-00155d053b5d" label="КИЇВ-08">КИЇВ-08</option>
+                                        <option value="string:50ba4901-cf2c-e211-9e9c-00155d053b5d" label="КИЇВ-09">КИЇВ-09</option>
+                                        <option value="string:5239181e-cf2c-e211-9e9c-00155d053b5d" label="КИЇВ-10">КИЇВ-10</option>
+                                        <option value="string:0c51680d-e932-e211-a357-00155d053b5d" label="КИЇВ-11 Центр З/Д (Правый бер)">КИЇВ-11 Центр З/Д (Правый бер)</option>
+                                        <option value="string:420798d9-072c-e311-8b0d-00155d037960" label="КИЇВ-12">КИЇВ-12</option>
+                                        <option value="string:d2eb8576-9871-e411-a8ce-000d3a200160" label="КИЇВ-13">КИЇВ-13</option>
+                                        <option value="string:71322701-ca82-e511-8f9d-000d3a200160" label="КИЇВ-14 до 30 кг">КИЇВ-14 до 30 кг</option>
+                                        <option value="string:264d9100-ee1c-e611-80df-000d3a2187cd" label="КИЇВ-15">КИЇВ-15</option>
+                                        <option value="string:27141688-2337-e711-812b-000d3a204dc8" label="КИЇВ-16">КИЇВ-16</option>
+                                        <option value="string:def8dfc0-e1eb-e711-8150-000d3a20e396" label="КИЇВ-17">КИЇВ-17</option>
+                                        <option value="string:9c257460-462c-e811-8158-000d3a20e396" label="КИЇВ-18">КИЇВ-18</option>
+                                        <option value="string:d0561c2c-f546-e811-815e-000d3a20e396" label="КИЇВ-19">КИЇВ-19</option>
+                                        <option value="string:0f660f16-fb9e-e811-817a-000d3a20e396" label="КИЇВ-20">КИЇВ-20</option>
+                                        <option value="string:0905569a-fea6-e911-81a1-000d3a20e396" label="КИЇВ-21">КИЇВ-21</option>
+                                        <option value="string:07d085e1-c65e-ea11-81ba-000d3a20e396" label="КИЇВ-22">КИЇВ-22</option>
+                                        <option value="string:4e056283-0370-ea11-81bd-000d3a20e396" label="КИЇВ-23">КИЇВ-23</option>
+                                        <option value="string:0ff73283-826a-ea11-81bd-000d3a20e396" label="КИЇВ-24">КИЇВ-24</option>
+                                        <option value="string:7feb7587-2e91-ea11-81c3-000d3a20e396" label="КИЇВ-25">КИЇВ-25</option>
+                                        <option value="string:855a0b15-8f9e-ea11-81c9-000d3a20e396" label="КИЇВ-26">КИЇВ-26</option>
+                                        <option value="string:c4012c11-2d03-eb11-81de-000d3a20e396" label="КИЇВ-27">КИЇВ-27</option>
+                                    </select>
+
+                                    <a class="calc-form__warehouse-map" href="javascript:void(0)" ng-click="ShowMap(0);"></a>
+                                </div>
+
+                                <div class="calc-form__input-wrap calc-form__warehouse-select">
+                                    <select class="form-control dg-form-control ng-pristine ng-valid ng-touched" ng-options="t.id as t.name for t in data.input.WarehouseReceiveList" ng-model="data.output.WarehouseReceiveId" ng-change="WarehouseChange('bdff546c-cb16-e211-89ed-00155d053b5d')">
+                                        <option selected="selected" style="display: none;"></option>
+                                        <option value="string:bdff546c-cb16-e211-89ed-00155d053b5d" label="КИЇВ-01">КИЇВ-01</option>
+                                        <option value="string:df3dc7af-9017-e211-89ed-00155d053b5d" label="КИЇВ-02 Центр З/Д (Левый бер.)">КИЇВ-02 Центр З/Д (Левый бер.)</option>
+                                        <option value="string:668b8259-c82c-e211-9e9c-00155d053b5d" label="КИЇВ-03">КИЇВ-03</option>
+                                        <option value="string:63c5e13d-c92c-e211-9e9c-00155d053b5d" label="КИЇВ-04">КИЇВ-04</option>
+                                        <option value="string:0b2e8e62-c92c-e211-9e9c-00155d053b5d" label="КИЇВ-05">КИЇВ-05</option>
+                                        <option value="string:d21a698a-c92c-e211-9e9c-00155d053b5d" label="КИЇВ-06">КИЇВ-06</option>
+                                        <option value="string:12274b5a-ce2c-e211-9e9c-00155d053b5d" label="КИЇВ-07">КИЇВ-07</option>
+                                        <option value="string:844fa2e2-ce2c-e211-9e9c-00155d053b5d" label="КИЇВ-08">КИЇВ-08</option>
+                                        <option value="string:50ba4901-cf2c-e211-9e9c-00155d053b5d" label="КИЇВ-09">КИЇВ-09</option>
+                                        <option value="string:5239181e-cf2c-e211-9e9c-00155d053b5d" label="КИЇВ-10">КИЇВ-10</option>
+                                        <option value="string:0c51680d-e932-e211-a357-00155d053b5d" label="КИЇВ-11 Центр З/Д (Правый бер)">КИЇВ-11 Центр З/Д (Правый бер)</option>
+                                        <option value="string:420798d9-072c-e311-8b0d-00155d037960" label="КИЇВ-12">КИЇВ-12</option>
+                                        <option value="string:d2eb8576-9871-e411-a8ce-000d3a200160" label="КИЇВ-13">КИЇВ-13</option>
+                                        <option value="string:71322701-ca82-e511-8f9d-000d3a200160" label="КИЇВ-14 до 30 кг">КИЇВ-14 до 30 кг</option>
+                                        <option value="string:264d9100-ee1c-e611-80df-000d3a2187cd" label="КИЇВ-15">КИЇВ-15</option>
+                                        <option value="string:27141688-2337-e711-812b-000d3a204dc8" label="КИЇВ-16">КИЇВ-16</option>
+                                        <option value="string:def8dfc0-e1eb-e711-8150-000d3a20e396" label="КИЇВ-17">КИЇВ-17</option>
+                                        <option value="string:9c257460-462c-e811-8158-000d3a20e396" label="КИЇВ-18">КИЇВ-18</option>
+                                        <option value="string:d0561c2c-f546-e811-815e-000d3a20e396" label="КИЇВ-19">КИЇВ-19</option>
+                                        <option value="string:0f660f16-fb9e-e811-817a-000d3a20e396" label="КИЇВ-20">КИЇВ-20</option>
+                                        <option value="string:0905569a-fea6-e911-81a1-000d3a20e396" label="КИЇВ-21">КИЇВ-21</option>
+                                        <option value="string:07d085e1-c65e-ea11-81ba-000d3a20e396" label="КИЇВ-22">КИЇВ-22</option>
+                                        <option value="string:4e056283-0370-ea11-81bd-000d3a20e396" label="КИЇВ-23">КИЇВ-23</option>
+                                        <option value="string:0ff73283-826a-ea11-81bd-000d3a20e396" label="КИЇВ-24">КИЇВ-24</option>
+                                        <option value="string:7feb7587-2e91-ea11-81c3-000d3a20e396" label="КИЇВ-25">КИЇВ-25</option>
+                                        <option value="string:855a0b15-8f9e-ea11-81c9-000d3a20e396" label="КИЇВ-26">КИЇВ-26</option>
+                                        <option value="string:c4012c11-2d03-eb11-81de-000d3a20e396" label="КИЇВ-27">КИЇВ-27</option>
+                                    </select>
+
+                                    <a class="calc-form__warehouse-map" href="javascript:void(0)" ng-click="ShowMap(1);"></a>
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line time-line">
+                                <select class="calc-form__select time-line__input form-control dg-form-control ng-valid ng-touched ng-dirty ng-valid-parse" id="DeliveryType" ng-options="t.Value as t.Text for t in data.input.DeliverySchemeList" ng-model="data.output.DeliverySchemeId" ng-change="DeliverySchemeChange(); Calculate()">
+                                    <option value="-1" style="display: none;">Тип доставки</option>
+                                    <option value="string:1" label="Двері-Двері">Двері-Двері</option>
+                                    <option value="string:3" label="Двері-Склад">Двері-Склад</option>
+                                    <option value="string:4" label="Експрес доставка" id="express">Експрес доставка</option>
+                                </select>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line">
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t1">Дата відправлення</label>
+                                    <input data-position="bottom left" class="calc-form__input--short datepicker-here" id="t1" type="text" autocomplete="off">
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t2">Орієнтована дата прибуття</label>
+                                    <input class="calc-form__input--short" id="t2" type="text" autocomplete="off">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line">
+                                <div class="calc-form__colm time-line">
+                                    <label class="calc-form__label" for="t3">Оголошена вартість</label>
+                                    <input class="time-line__input calc-form__input--short" id="t3" type="text">
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t4">Безпечна угода 
+                                        <a href="cl-finance-services.html#guard-deal" target="_black">  
+                                            <img class="calc-form__info-btn" src="img/system/icon/question-circle__icon.svg" alt="icon" data-popup-ordinal="0" id="">
+                                        </a>
+                                    </label>
+                                    <input class="calc-form__input--short" id="t4" type="text">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line time-line">
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t5">Післяплата готівкова
+                                        <img class="calc-form__info-btn popup-after-pay_open" src="img/system/icon/question-circle__icon.svg" alt="icon" data-popup-ordinal="0" id="">
+                                    </label>
+                                    <input class="time-line__input calc-form__input--short" id="t5" type="text">
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <label class="calc-form__label" for="t6">Післяплата безготівкова
+                                        <img class="calc-form__info-btn popup-after-pay_open" src="img/system/icon/question-circle__icon.svg" alt="icon" data-popup-ordinal="0" id="">
+                                    </label>
+                                    <input class="time-line__input calc-form__input--short" id="t6" type="text">
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line after-pay-acc after-pay-acc__hide">
+                                <div class="calc-form__colm time-line">
+                                    <label class="calc-form__label" for="t7">Оберіть розрахунковий рахунок</label>
+                                    <select class="time-line__input calc-form__input--short" id="t7">
+                                        <option value="-1" style="display: none;"></option>
+                                        <option value="test">UA45252255777</option>
+                                        <option value="test2">UA45252255888</option>
+                                    </select>
+                                </div>
+
+                                <div class="calc-form__colm">
+                                    <p class="after-pay-acc__notice">
+                                        Обрати розрахунковий рахунок можуть тільки авторизовані користувачі. Налаштувати розрахункові рахунки можна в <a target="_blank" href="#">особистому кабінеті</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- next line -->
+
+                            <div class="calc-form__line time-line">
+                                <label class="calc-switch-btn">
+                                    <p class="calc-form__label">Економ тариф</p>
+
+                                    <div class="calc-switch-btn__toggle">
+                                        <input class="time-line__btn calc-switch-btn__toggle-state" type="checkbox" name="" value=""/>
+                                        <div class="calc-switch-btn__bg"></div>
+                                        <div class="calc-switch-btn__indicator"></div>
+                                    </div>
+                                    
+                                    <p class="calc-switch-btn__desc">Економ тариф - знижка 5% на вантаж (термін доставки збільшується на 24 години)</p>
+                                </label>
+                            </div>
+
+                            
+                            <!-- Выбор по типу -->
+                            
+                            <div class="tariff-category">
+                                <h4 class="calc-form__group-title">Категорія тарифу</h4>
+
+                                <select class="tariff-category__pick-category">
+                                    <option value="number:74" label="Вантаж" selected="selected">Вантаж</option>
+                                    <option value="number:75" label="Палети">Палети</option>
+                                    <option value="number:73" label="Посилки і документи">Посилки і документи</option>
+                                    <option value="number:76" label="Галузеві тарифи">Галузеві тарифи</option>
+                                </select>
+
+                                <ul class="select-option">
+                                    <li class="select-option__item">
+                                        <label for="">Загальна вага, кг</label>
+                                        <input type="text">
+                                    </li>
+
+                                    <li class="select-option__item">
+                                        <label for="">Довжина,см</label>
+                                        <input type="text">
+                                    </li>
+
+                                    <li class="select-option__item">
+                                        <label for="">Висота, см</label>
+                                        <input type="text">
+                                    </li>
+
+                                    <li class="select-option__item">
+                                        <label for="">Ширина, см</label>
+                                        <input type="text">
+                                    </li>
+
+                                    <li class="select-option__item">
+                                        <label for="">Загальний 
+                                            об’єм, м3</label>
+                                        <input type="text">
+                                    </li>
+
+                                    <li class="select-option__item">
+                                        <label for="">Кількість, шт</label>
+                                        <input type="text">
+                                    </li>
+
+                                    <li class="select-option__item">
+                                        <label for="">Сума</label>
+                                        <input type="text">
+                                    </li>
+                                </ul>
+
+                                <div class="additional-option">
+                                    <h4 class="calc-form__group-title">Додаткові послуги</h4>
+
+                                    <div class="additional-option__inner">
+                                        <select class="additional-option__pick-option">
+                                            <option value=""></option>
+                                        </select>
+
+                                        <ul class="additional-option__list">
+                                            <li class="additional-option__item">
+                                                <label for="">Кіл-ть, шт</label>
+                                                <input type="text">
+                                            </li>
+        
+                                            <li class="additional-option__item">
+                                                <label for="">Ціна за ОД</label>
+                                                <input type="text">
+                                            </li>
+        
+                                            <li class="additional-option__item">
+                                                <label for="">Сума</label>
+                                                <input type="text">
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="checkbox--before">
+                                        <input id="All-Additional-Services" name="All-Additional-Services" type="checkbox" ng-model="eg.IsAllAux" ng-change="checkboxAllAuxChange(eg)" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+                                        <label for="All-Additional-Services">Всі додаткові послуги?</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="javascript:void()" class="add-category-btn main-btn main-btn--white" ng-click="AddEg()" ng-show="data.input.IsHavePostomat==false">
+                                <span>+ </span>Додати категорію
+                            </a>
+
+                            <div class="additional-option">
+                                <h4 class="calc-form__group-title">Додаткові послуги квитанції</h4>
+
+                                <div class="additional-option__inner">
+                                    <select class="additional-option__pick-option">
+                                        <option value=""></option>
+                                    </select>
+
+                                    <ul class="additional-option__list">
+                                        <li class="additional-option__item">
+                                            <label for="">Кіл-ть, шт</label>
+                                            <input type="text">
+                                        </li>
+    
+                                        <li class="additional-option__item">
+                                            <label for="">Ціна за ОД</label>
+                                            <input type="text">
+                                        </li>
+    
+                                        <li class="additional-option__item">
+                                            <label for="">Сума</label>
+                                            <input type="text">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="full-calc__btn-group">
+                                <a href="javascript:void()" class="main-btn" ng-click="Calculate(true)">Розрахувати</a>
+                                <a href="https://delivery-auto.com/uk-UA/GenericPages/DbIndex/33?" target="_blank" class="main-btn main-btn--white">Замовити машину</a>
+                            </div>
+
+                        </form>
                     </div>
                 </article>
             </section>
@@ -89,5 +416,15 @@
         <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
         <!-- Main.js -->
         <script src="js/main.js" type="text/javascript"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('.calc-switch-btn').click(function(){
+                    $('input[type="checkbox"]:checked').each(function(){
+                        $('.calc-switch-btn__desc').toggleClass('calc-switch-btn__desc--active');
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
