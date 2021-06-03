@@ -496,9 +496,18 @@ $('.sort-item--type-cargo').on('click', function(event){
 });
 
 
-
+// Time line индикаторы
 // Обращение к родителю
 $(".time-line__input").change(function(){
+    if ($(this).val() != ''){
+        $(this).parents(".time-line").addClass("time-line-active");
+    }
+    else {
+        $(this).parents(".time-line").removeClass("time-line-active");
+    }
+})
+
+$(".time-line__btn").change(function(){
     $(this).parents(".time-line").toggleClass("time-line-active");
 })
 
@@ -513,17 +522,29 @@ $(".type-cargo").click(function(){
 
 // Сортировка по типу 
 $('.calc-type-cargo__cargo').on('click', function(event){
+    $('#DeliveryType').val('-1');
     $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
     $(this).addClass('calc-type-cargo__item--active');
     $('.type-cargo').removeClass('type-cargo--active');
     $('.type-cargo-1').addClass('type-cargo--active');
+    $('#calc-footer--express').removeClass('calc-footer--express-block');
+    $('#cargo-parameters--documents, .calc-footer__notice-item--documents').css('display','flex');
+    $('#cargo-parameters--express, .calc-footer__notice-item--express-only').hide();
+    $('.calc-form__group-title--express').removeClass('active');
+    $('.calc-form__group-title').removeClass('hide');
 });
 
 $('.calc-type-cargo__pallets').on('click', function(event){
+    $('#DeliveryType').val('-1');
     $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
     $(this).addClass('calc-type-cargo__item--active');
     $('.type-cargo').removeClass('type-cargo--active');
     $('.type-cargo-2').addClass('type-cargo--active');
+    $('#calc-footer--express').removeClass('calc-footer--express-block');
+    $('#cargo-parameters--documents, .calc-footer__notice-item--documents').css('display','flex');
+    $('#cargo-parameters--express, .calc-footer__notice-item--express-only').hide();
+    $('.calc-form__group-title--express').removeClass('active');
+    $('.calc-form__group-title').removeClass('hide');
 });
 
 $('.calc-type-cargo__documents').on('click', function(event){
@@ -534,16 +555,79 @@ $('.calc-type-cargo__documents').on('click', function(event){
 });
 
 $('.calc-type-cargo__sectoral').on('click', function(event){
+    $('#DeliveryType').val('-1');
     $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
     $(this).addClass('calc-type-cargo__item--active');
     $('.type-cargo').removeClass('type-cargo--active');
     $('.type-cargo-4').addClass('type-cargo--active');
+    $('#calc-footer--express').removeClass('calc-footer--express-block');
+    $('#cargo-parameters--documents, .calc-footer__notice-item--documents').css('display','flex');
+    $('#cargo-parameters--express, .calc-footer__notice-item--express-only').hide();
+    $('.calc-form__group-title--express').removeClass('active');
+    $('.calc-form__group-title').removeClass('hide');
 });
-
-
 
 
 // Появление инпута "Послеплаты"
 $('#t6').on('change', function() {
     $('.after-pay-acc').toggleClass('after-pay-acc__hide', this.value);
 });
+
+
+// При "Тип доставки: Експресс доставка" - показывать блок с Експресс доставкой и остальные блоки связаные с Експресс доставкой
+$("#DeliveryType").change(function () {
+    if( $("option#express:selected").length )
+    {
+        $('#calc-footer--express').addClass('calc-footer--express-block');
+        $('.type-cargo').removeClass('type-cargo--active');
+        $('.type-cargo-3').addClass('type-cargo--active');
+        $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
+        $('.calc-type-cargo__documents').addClass('calc-type-cargo__item--active');
+        $('#cargo-parameters--documents, .calc-footer__notice-item--documents').hide();
+        $('#cargo-parameters--express, .calc-footer__notice-item--express-only').css('display','flex');
+        $('.calc-form__group-title').addClass('hide');
+        $('.calc-form__group-title--express').addClass('active');
+    }
+    else{
+        $('#calc-footer--express').removeClass('calc-footer--express-block');
+        $('.type-cargo-1').addClass('type-cargo--active');
+        $('.calc-type-cargo__item').removeClass('calc-type-cargo__item--active');
+        $('.calc-type-cargo__cargo').addClass('calc-type-cargo__item--active');
+        $('.calc-type-cargo__documents').removeClass('calc-type-cargo__item--active');
+        $('#cargo-parameters--documents, .calc-footer__notice-item--documents').css('display','flex');
+        $('#cargo-parameters--express, .calc-footer__notice-item--express-only').hide();
+        $('.calc-form__group-title--express').removeClass('active');
+        $('.calc-form__group-title').removeClass('hide');
+    }
+});
+
+
+// $(".calc-footer__notice").each(function () {
+//     if( $(this).find('.column').length === 4) {
+//         // $('.calc-footer').css('flex-direction','column');
+//         console.log('yes')
+//     }
+// })
+
+
+
+
+// var com = document.getElementById('howMuch').children.length;
+//     if(com.lenght <= 1){
+//         alert("yes");
+//     } else {
+//         alert("no");
+//         return
+//     } 
+
+
+
+// console.log(document.getElementById('howMuch').children.length);
+
+
+
+
+// var b = document.getElementById("howMuch");
+// var w = b.clientWidth || b.offsetWidth;
+
+// console.log(w);

@@ -623,8 +623,17 @@
     order: -1;
 }
 
-.calc-form__group-title--for-mob {
+.calc-form__group-title--for-mob,
+.calc-form__group-title--to-postomat {
     display: none;
+}
+
+.calc-form__group-title.hide {
+    display: none;
+}
+
+.calc-form__group-title--express.active {
+    display: block;
 }
 
 @media (max-width: 1024px) {
@@ -655,9 +664,10 @@
     .type-cargo-3 .cargo-parameters__images--pallets {
         margin-bottom: 20px;
     }
-    .calc-form__group-title--for-desctop {
+    .calc-form__group-title--to-postomat {
         display: none;
     }
+    .calc-form__group-title--choose-param,
     .calc-form__group-title--for-mob {
         display: block;
         margin-bottom: 10px;
@@ -701,15 +711,30 @@
     align-items: center;
 }
 
+.calc-footer--express-block {
+    flex-direction: column;
+    align-items: baseline;
+}
+
 .calc-footer__notice {
     display: flex;
     margin-left: 30px;
+}
+
+.calc-footer--express-block .calc-footer__notice {
+    margin-bottom: 30px;
+    margin-left: 0;
+    order: -1;
 }
 
 .calc-footer__notice-item {
     display: flex;
     align-items: center;
     margin-right: 50px;
+}
+
+.calc-footer--express-block .calc-footer__notice-item {
+    margin-right: 30px;
 }
 
 .calc-footer__notice-item:last-child {
@@ -723,11 +748,11 @@
 }
 
 .calc-footer__notice-text {
-    max-width: 200px;
+    width: 200px;
 }
 
 .calc-footer__notice-text--long {
-    max-width: 100%;
+    width: 100%;
     font-size: 12px;
     line-height: 20px;
 }
@@ -786,6 +811,13 @@
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+    #cargo-parameters--express .calc-footer {
+        flex-direction: column;
+        
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1354,3 +1386,151 @@
     } 
 }
 
+.calc-form__group-title--express {
+    display: none;
+}
+
+
+/* Express block */
+.calc-express {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.calc-express__image {
+    width: 213px;
+    height: 191px;
+}
+.calc-express__image img {
+    width: 100%;
+}
+
+.calc-express__type {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.calc-express__type-item {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.calc-express__type-item input {
+    margin-right: 15px;
+}
+
+
+.calc-express__item input {
+    width: 90px;
+}
+
+.calc-express--delivery-hour select {
+    width: 90px;
+}
+
+.calc-express__line--time-pickup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calc-express__item-wrap {
+    display: flex;
+    margin-left: 3px;
+}
+
+#timeSend {
+    margin-left: 35px;
+}
+
+.calc-express__item--timeSendTo {
+    margin-left: 45px;
+}
+
+.calc-express__item--timeSendTo label {
+    margin-right: 10px;
+}
+
+.calc-express--delivery-hour label {
+    margin-right: 8px;
+}
+
+.calc-express__form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.calc-footer__notice-item--express-only {
+    display: none;
+}
+
+#cargo-parameters--express {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .calc-express  {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 15px;
+    }
+    .calc-express__image {
+        order: 1;
+    }
+    .calc-express__form {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .calc-express__type {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .calc-footer--express-block .calc-footer__notice {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 15px;
+    }
+    .calc-footer--express-block .calc-footer__notice-item {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 490px) {
+    .calc-express__line--time-pickup {
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 15px;
+    }
+    .calc-express__line--time-pickup .kill-coma {
+        display: none;
+    }
+    .calc-express__line--time-pickup  #timeSend {
+        margin-left: 15px;
+    }
+    .calc-express__line--time-pickup .calc-express__item-wrap {
+        margin-top: 15px;
+    }
+    .calc-express--delivery-hour select {
+        width: 135px;
+    }
+    .calc-express__item--timeSendTo {
+        margin-left: 35px;
+    }
+    .calc-express--delivery-hour label {
+        margin-right: 15px;
+    }
+}

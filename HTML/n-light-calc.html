@@ -102,16 +102,16 @@
                                     <option value="-1" style="display: none;">Тип доставки</option>
                                     <option value="string:1" label="Двері-Двері">Двері-Двері</option>
                                     <option value="string:3" label="Двері-Склад">Двері-Склад</option>
-                                    <option value="string:4" label="Експрес доставка">Експрес доставка</option>
+                                    <option value="string:4" label="Експрес доставка" id="express">Експрес доставка</option>
                                 </select>
                             </div>
 
                             <!-- next line -->
 
                             <div class="calc-form__line">
-                                <div class="calc-form__colm time-line">
+                                <div class="calc-form__colm">
                                     <label class="calc-form__label" for="t1">Дата відправлення</label>
-                                    <input data-position="bottom left" class="time-line__input calc-form__input--short datepicker-here" id="t1" type="text" autocomplete="off">
+                                    <input data-position="bottom left" class="calc-form__input--short datepicker-here" id="t1" type="text" autocomplete="off">
                                 </div>
 
                                 <div class="calc-form__colm">
@@ -163,8 +163,8 @@
                                     <label class="calc-form__label" for="t7">Оберіть розрахунковий рахунок</label>
                                     <select class="time-line__input calc-form__input--short" id="t7">
                                         <option value="-1" style="display: none;"></option>
-                                        <option value="">UA45252255777</option>
-                                        <option value="">UA45252255888</option>
+                                        <option value="test">UA45252255777</option>
+                                        <option value="test2">UA45252255888</option>
                                     </select>
                                 </div>
 
@@ -182,7 +182,7 @@
                                     <p class="calc-form__label">Економ тариф</p>
 
                                     <div class="calc-switch-btn__toggle">
-                                        <input class="time-line__input calc-switch-btn__toggle-state" type="checkbox" name="" value=""/>
+                                        <input class="time-line__btn calc-switch-btn__toggle-state" type="checkbox" name="" value=""/>
                                         <div class="calc-switch-btn__bg"></div>
                                         <div class="calc-switch-btn__indicator"></div>
                                     </div>
@@ -225,8 +225,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
 
                             <div class="type-cargo type-cargo-1 time-line type-cargo--active">
                                 <h4 class="calc-form__group-title">Вкажіть параметри вантажу</h4>
@@ -587,10 +585,11 @@
                             </div>
 
                             <div class="type-cargo type-cargo-3 time-line">
-                                <h4 class="calc-form__group-title calc-form__group-title--for-mob">Вкажіть параметри вантажу</h4> 
-                                <h4 class="calc-form__group-title calc-form__group-title--for-desctop">Доставка до почтомату</h4>
+                                <h4 class="calc-form__group-title calc-form__group-title--express">Тариф доставки</h4>
+                                <h4 class="calc-form__group-title calc-form__group-title--choose-param">Вкажіть параметри вантажу</h4> 
+                                <h4 class="calc-form__group-title calc-form__group-title--to-postomat">Доставка до почтомату</h4>
 
-                                <div class="cargo-parameters">
+                                <div class="cargo-parameters" id="cargo-parameters--documents">
                                     <div class="cargo-parameters__info">
                                         <h4 class="calc-form__group-title calc-form__group-title--for-mob">Доставка до почтомату</h4>
                                         <p class="cargo-parameters__postomat-info">Для доставки в почтомат оберіть розмір коробки</p>
@@ -610,8 +609,6 @@
                                         <div class="cargo-parameters__cargo-box">
                                             <img src="img/system/icon/calc/cargo-parameters__box.svg" alt="cargo">
                                         </div>
-
-
 
                                         <div class="calc-slider delivery_calc_vertical_slider" ng-show="data.output.Palet4Count == 0">
                                             <div class="calc-slider__inner" id="">
@@ -667,11 +664,53 @@
                                     </div>
                                 </div>
 
-                                <div class="calc-footer">
+                                <div class="calc-express" id="cargo-parameters--express">
+                                    <div class="calc-express__type">
+                                        <label class="calc-express__type-item">
+                                            <input type="radio" name="type-express-delivery">
+                                            Бізнес (на сьогодні)
+                                        </label>
+
+                                        <label class="calc-express__type-item">
+                                            <input type="radio" name="type-express-delivery">
+                                            Експрес (на завтра)
+                                        </label>
+                                    </div>
+
+                                    <div class="calc-express__image">
+                                        <img src="img/system/icon/calc/calc-express__image1.png" alt="icon">
+                                    </div>
+
+                                    <div class="calc-express__form">
+                                        <div class="calc-express__line calc-express__line--time-pickup">
+                                            <label>Час забору<span class="kill-coma">,</span></label>
+                                            <div class="calc-express__item-wrap">
+                                                <div class="calc-express__item">
+                                                    <label>з</label>
+                                                    <input ng-model="data.output.TimePickUp" id="timeSend" class="form-control dg-form-control tooltipped ui-timepicker-input ng-valid ng-valid-required ng-touched ng-dirty ng-valid-parse" name="appl_TimePickUp" ng-mouseover="ng_validate($event, appl_frm.appl_TimePickUp)" ng-disabled="data.application.DelCRM_CallCourierDeliveries.length>0" ng-change="TimePickUp_change(); Calculate()" data-original-title="" title="" autocomplete="off">
+                                                </div>
+    
+                                                <div class="calc-express__item calc-express__item--timeSendTo">
+                                                    <label>до</label>
+                                                    <input ng-model="data.output.TimePickUpTo" id="timeSendTo" class="form-control dg-form-control tooltipped ng-pristine ui-timepicker-input ng-valid ng-valid-required ng-touched" name="appl_TimePickUpTo" ng-mouseover="ng_validate($event, appl_frm.appl_TimePickUpTo)" ng-change="Calculate()" data-original-title="" title="" autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-express__line calc-express--delivery-hour">
+                                            <label>Час доставки, до</label>
+                                            <select class="form-control dg-form-control ng-pristine ng-valid ng-touched" ng-options="t.Id as t.Name for t in CounrierPriceTarifList" ng-model="data.output.CounrierPriceTarifId" ng-change="GetCourierResult()">
+                                                <option value="?" selected="selected"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="calc-footer" id="calc-footer--express">
                                     <button class="main-btn">Розрахувати</button>
 
                                     <ul class="calc-footer__notice">
-                                        <li class="calc-footer__notice-item">
+                                        <li class="calc-footer__notice-item calc-footer__notice-item--common">
                                             <div class="calc-footer__notice-icon">
                                                 <img src="img/system/icon/calc/carlc-footer__attention-icon.svg" alt="icon">
                                             </div>
@@ -679,12 +718,29 @@
                                             <p class="calc-footer__notice-text">Максимальна довжина одного боку: <strong>1м.</strong></p>
                                         </li>
 
-                                        <li class="calc-footer__notice-item">
+                                        <li class="calc-footer__notice-item calc-footer__notice-item--documents">
                                             <div class="calc-footer__notice-icon">
                                                 <img src="img/system/icon/calc/carlc-footer__attention-icon.svg" alt="icon">
                                             </div>
 
                                             <p class="calc-footer__notice-text">Максимальний обсяг одиниці вантажу: <strong>0,08 м3 </strong></p>
+                                        </li>
+
+                                        <li class="calc-footer__notice-item calc-footer__notice-item--express-only">
+                                            <div class="calc-footer__notice-icon">
+                                                <img src="img/system/icon/calc/carlc-footer__attention-icon.svg" alt="icon">
+                                            </div>
+
+                                            <p class="calc-footer__notice-text">Максимальний обсяг одиниці вантажу: <strong>0,021 м3 </strong></p>
+                                        </li>
+
+                                        <li class="calc-footer__notice-item calc-footer__notice-item--express-only">
+                                            <div class="calc-footer__notice-icon">
+                                                <img src="img/system/icon/calc/carlc-footer__attention-icon.svg" alt="icon">
+                                            </div>
+
+                                            <p class="calc-footer__notice-text">Максимальна 
+                                                вага: <strong>до 2кг</strong></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -3849,7 +3905,6 @@
                     });
                 });
             });
-
         </script>
     </body>
 </html>
