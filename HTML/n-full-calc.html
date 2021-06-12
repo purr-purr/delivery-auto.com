@@ -81,7 +81,7 @@
                         </div>
 
 
-                        <form class="calc-form">
+                        <form class="calc-form time-line--full-calc">
                             <h4 class="calc-form__group-title">Маршрут</h4>
 
                             <div class="calc-form__line">
@@ -265,101 +265,217 @@
                                     <p class="calc-switch-btn__desc">Економ тариф - знижка 5% на вантаж (термін доставки збільшується на 24 години)</p>
                                 </label>
                             </div>
-
                             
                             <!-- Выбор по типу -->
-                            
-                            <div class="tariff-category">
-                                <h4 class="calc-form__group-title">Категорія тарифу</h4>
+                            <div class="tariff-category__wrapper time-line time-line--category">
+                                <div class="tariff-category">
+                                    <h4 class="calc-form__group-title">Категорія тарифу</h4>
 
-                                <select class="tariff-category__pick-category">
-                                    <option value="number:74" label="Вантаж" selected="selected">Вантаж</option>
-                                    <option value="number:75" label="Палети">Палети</option>
-                                    <option value="number:73" label="Посилки і документи">Посилки і документи</option>
-                                    <option value="number:76" label="Галузеві тарифи">Галузеві тарифи</option>
-                                </select>
+                                    <select class="tariff-category__pick-category time-line__input">
+                                        <option value="number:74" label="Вантаж" selected="selected" id="tariff-category--cargo">Вантаж</option>
+                                        <option value="number:75" label="Палети" id="tariff-category--pallets">Палети</option>
+                                        <option value="number:73" label="Посилки і документи" id="tariff-category--documents">Посилки і документи</option>
+                                        <option value="number:76" label="Галузеві тарифи" id="tariff-category--industry">Галузеві тарифи</option>
+                                    </select>
 
-                                <ul class="select-option">
-                                    <li class="select-option__item">
-                                        <label for="">Загальна вага, кг</label>
-                                        <input type="text">
-                                    </li>
+                                    <ul class="select-option select-option--cargo active">
+                                        <li class="select-option__item">
+                                            <label for="">Загальна вага, кг</label>
+                                            <input class="time-line__input" type="number">
+                                        </li>
 
-                                    <li class="select-option__item">
-                                        <label for="">Довжина,см</label>
-                                        <input type="text">
-                                    </li>
+                                        <li class="select-option__item">
+                                            <label for="">Довжина,см</label>
+                                            <input type="text">
+                                        </li>
 
-                                    <li class="select-option__item">
-                                        <label for="">Висота, см</label>
-                                        <input type="text">
-                                    </li>
+                                        <li class="select-option__item">
+                                            <label for="">Висота, см</label>
+                                            <input type="text">
+                                        </li>
 
-                                    <li class="select-option__item">
-                                        <label for="">Ширина, см</label>
-                                        <input type="text">
-                                    </li>
+                                        <li class="select-option__item">
+                                            <label for="">Ширина, см</label>
+                                            <input type="text">
+                                        </li>
 
-                                    <li class="select-option__item">
-                                        <label for="">Загальний 
-                                            об’єм, м3</label>
-                                        <input type="text">
-                                    </li>
+                                        <li class="select-option__item">
+                                            <label for="">Загальний 
+                                                об’єм, м3</label>
+                                            <input type="text">
+                                        </li>
 
-                                    <li class="select-option__item">
-                                        <label for="">Кількість, шт</label>
-                                        <input type="text">
-                                    </li>
+                                        <li class="select-option__item">
+                                            <label for="">Кількість, шт</label>
+                                            <input type="text">
+                                        </li>
 
-                                    <li class="select-option__item">
-                                        <label for="">Сума</label>
-                                        <input type="text">
-                                    </li>
-                                </ul>
+                                        <li class="select-option__item">
+                                            <label for="">Сума</label>
+                                            <input type="text">
+                                        </li>
+                                    </ul>
 
-                                <div class="additional-option">
-                                    <h4 class="calc-form__group-title">Додаткові послуги</h4>
+                                    <ul class="select-option select-option--pallets">
+                                        <li class="select-option__item">
+                                            <label for="">Загальна вага, кг</label>
+                                            <input class="time-line__input" type="number">
+                                        </li>
 
-                                    <div class="additional-option__inner">
-                                        <select class="additional-option__pick-option">
-                                            <option value=""></option>
-                                        </select>
+                                        <li class="select-option__item">
+                                            <label for="">Довжина,см</label>
+                                            <input type="text">
+                                        </li>
 
-                                        <ul class="additional-option__list">
-                                            <li class="additional-option__item">
-                                                <label for="">Кіл-ть, шт</label>
-                                                <input type="text">
-                                            </li>
-        
-                                            <li class="additional-option__item">
-                                                <label for="">Ціна за ОД</label>
-                                                <input type="text">
-                                            </li>
-        
-                                            <li class="additional-option__item">
-                                                <label for="">Сума</label>
-                                                <input type="text">
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        <!-- <li class="select-option__item">
+                                            <label for="">Висота, см</label>
+                                            <input type="text">
+                                        </li>
 
-                                    <div class="checkbox--before">
-                                        <input id="All-Additional-Services" name="All-Additional-Services" type="checkbox" ng-model="eg.IsAllAux" ng-change="checkboxAllAuxChange(eg)" class="ng-valid ng-dirty ng-valid-parse ng-touched">
-                                        <label for="All-Additional-Services">Всі додаткові послуги?</label>
+                                        <li class="select-option__item">
+                                            <label for="">Ширина, см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Загальний 
+                                                об’єм, м3</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Кількість, шт</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Сума</label>
+                                            <input type="text">
+                                        </li> -->
+                                    </ul>
+
+                                    <ul class="select-option select-option--documents">
+                                        <li class="select-option__item">
+                                            <label for="">Загальна вага, кг</label>
+                                            <input class="time-line__input" type="number">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Довжина,см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Висота, см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <!-- <li class="select-option__item">
+                                            <label for="">Ширина, см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Загальний 
+                                                об’єм, м3</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Кількість, шт</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Сума</label>
+                                            <input type="text">
+                                        </li> -->
+                                    </ul>
+
+                                    <ul class="select-option select-option--industry-tariffs">
+                                        <li class="select-option__item">
+                                            <label for="">Загальна вага, кг</label>
+                                            <input class="time-line__input" type="number">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Довжина,см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Висота, см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Ширина, см</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <!-- <li class="select-option__item">
+                                            <label for="">Загальний 
+                                                об’єм, м3</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Кількість, шт</label>
+                                            <input type="text">
+                                        </li>
+
+                                        <li class="select-option__item">
+                                            <label for="">Сума</label>
+                                            <input type="text">
+                                        </li> -->
+                                    </ul>
+
+                                    <div class="additional-option">
+                                        <h4 class="calc-form__group-title">Додаткові послуги</h4>
+
+                                        <div class="additional-option__inner">
+                                            <select class="additional-option__pick-option">
+                                                <option value=""></option>
+                                            </select>
+
+                                            <ul class="additional-option__list">
+                                                <li class="additional-option__item">
+                                                    <label for="">Кіл-ть, шт</label>
+                                                    <input type="text">
+                                                </li>
+            
+                                                <li class="additional-option__item">
+                                                    <label for="">Ціна за ОД</label>
+                                                    <input type="text">
+                                                </li>
+            
+                                                <li class="additional-option__item">
+                                                    <label for="">Сума</label>
+                                                    <input type="text">
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="checkbox--before">
+                                            <input id="All-Additional-Services" name="All-Additional-Services" type="checkbox" ng-model="eg.IsAllAux" ng-change="checkboxAllAuxChange(eg)" class="ng-valid ng-dirty ng-valid-parse ng-touched">
+                                            <label for="All-Additional-Services">Всі додаткові послуги?</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <a href="javascript:void()" class="add-category-btn main-btn main-btn--white" ng-click="AddEg()" ng-show="data.input.IsHavePostomat==false">
+                            <div class="add-category-btn main-btn main-btn--white" ng-click="AddEg()" ng-show="data.input.IsHavePostomat==false">
                                 <span>+ </span>Додати категорію
-                            </a>
+                            </div>
 
-                            <div class="additional-option">
+                            <div class="additional-option time-line time-line--for-ticket">
                                 <h4 class="calc-form__group-title">Додаткові послуги квитанції</h4>
 
                                 <div class="additional-option__inner">
-                                    <select class="additional-option__pick-option">
-                                        <option value=""></option>
+                                    <select class="additional-option__pick-option time-line__input">
+                                        <option value="-1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="3">3</option>
                                     </select>
 
                                     <ul class="additional-option__list">

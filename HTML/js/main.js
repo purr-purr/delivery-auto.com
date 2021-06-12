@@ -147,13 +147,13 @@ function MakeArrayOfAllPrefixes(str){
     for (var i=1; i<=str.length; i++){
         prefixes.push(str.substr(0,i));
             }
-            console.log("MakeArrayOfAllPrefixes("+str+") -> returns [" + prefixes + "]");
+            // console.log("MakeArrayOfAllPrefixes("+str+") -> returns [" + prefixes + "]");
             return prefixes;
         }
     
     function SetOpenAttrForIdsAndPrefixes(ids, openAttrBool){
         $('details').attr('open',false); // close all others first
-        console.log("SetOpenAttrForIds([" +ids+"], "+openAttrBool+")");
+        // console.log("SetOpenAttrForIds([" +ids+"], "+openAttrBool+")");
         for (idindex in ids) {
             var id = ids[idindex];
                 if (id != ""){
@@ -161,7 +161,7 @@ function MakeArrayOfAllPrefixes(str){
                     for (prefixidx in prefixes) {
                     var prefix = prefixes[prefixidx];
                     if(openAttrBool==true) { operationstr="Opening"; } else { operationstr="Closing"};
-                    console.log(operationstr+" <details id='#"+prefix+"'> with $('#"+prefix+").attr('open',"+openAttrBool+");");
+                    // console.log(operationstr+" <details id='#"+prefix+"'> with $('#"+prefix+").attr('open',"+openAttrBool+");");
                     $('#'+prefix).attr('open',openAttrBool);
                     }
                 }
@@ -498,6 +498,9 @@ $('.sort-item--type-cargo').on('click', function(event){
 
 
 
+
+
+
 // Для Light и Расширеного
 // Time line индикаторы
 // Обращение к родителю
@@ -608,32 +611,98 @@ $("#DeliveryType").change(function () {
 });
 
 
-// $(".calc-footer__notice").each(function () {
-//     if( $(this).find('.column').length === 4) {
-//         // $('.calc-footer').css('flex-direction','column');
-//         console.log('yes')
+
+// Клонирование блока "Категорія тарифу" при клике на кнопку
+// document.querySelector(".add-category-btn").addEventListener("click", function() {
+//     document.querySelector(".tariff-category__wrapper").appendChild(document.querySelector(".tariff-category").cloneNode(true));
+// });
+
+// $('.tariff-category__pick-category').bind("change keyup",function net2() {
+//     console.log("yes11");
+// });
+
+$('.add-category-btn').on('click', function(event){
+    $(".tariff-category").clone().appendTo(".tariff-category__wrapper");
+});
+
+$('.tariff-category__pick-category').on('change', function(event){
+    if( $("option#tariff-category--cargo:selected").length )
+        {
+            $('.select-option').removeClass('active');
+            $('.select-option--cargo').addClass('active');
+        }
+        if( $("option#tariff-category--pallets:selected").length )
+        {
+            $('.select-option').removeClass('active');
+            $('.select-option--pallets').addClass('active');
+        }
+        if( $("option#tariff-category--documents:selected").length )
+        {
+            $('.select-option').removeClass('active');
+            $('.select-option--documents').addClass('active');
+        }
+        if( $("option#tariff-category--industry:selected").length )
+        {
+            $('.select-option').removeClass('active');
+            $('.select-option--industry-tariffs').addClass('active');
+        }
+    console.log("yes11");
+});
+
+
+// function net() {
+//     $(".tariff-category__pick-category").change(function() {
+//         if( $("option#tariff-category--cargo:selected").length )
+//         {
+//             $('.select-option').removeClass('active');
+//             $('#select-option--cargo').addClass('active');
+//         }
+//         if( $("option#tariff-category--pallets:selected").length )
+//         {
+//             $('.select-option').removeClass('active');
+//             $('#select-option--pallets').addClass('active');
+//         }
+//         if( $("option#tariff-category--documents:selected").length )
+//         {
+//             $('.select-option').removeClass('active');
+//             $('#select-option--documents').addClass('active');
+//         }
+//         if( $("option#tariff-category--industry:selected").length )
+//         {
+//             $('.select-option').removeClass('active');
+//             $('#select-option--industry-tariffs').addClass('active');
+//         }
+//         console.log("yes11");
+//     });
+// }
+
+// Выбор Категории Тарифа (Full Calc)
+
+// $(".tariff-category__pick-category").change(function() {
+//     if( $("option#tariff-category--cargo:selected").length )
+//     {
+//         $('.select-option').removeClass('active');
+//         $('#select-option--cargo').addClass('active');
 //     }
-// })
+//     if( $("option#tariff-category--pallets:selected").length )
+//     {
+//         $('.select-option').removeClass('active');
+//         $('#select-option--pallets').addClass('active');
+//     }
+//     if( $("option#tariff-category--documents:selected").length )
+//     {
+//         $('.select-option').removeClass('active');
+//         $('#select-option--documents').addClass('active');
+//     }
+//     if( $("option#tariff-category--industry:selected").length )
+//     {
+//         $('.select-option').removeClass('active');
+//         $('#select-option--industry-tariffs').addClass('active');
+//     }
+//     console.log("yes11");
+// });
 
 
 
+// ===================================================================================
 
-// var com = document.getElementById('howMuch').children.length;
-//     if(com.lenght <= 1){
-//         alert("yes");
-//     } else {
-//         alert("no");
-//         return
-//     } 
-
-
-
-// console.log(document.getElementById('howMuch').children.length);
-
-
-
-
-// var b = document.getElementById("howMuch");
-// var w = b.clientWidth || b.offsetWidth;
-
-// console.log(w);

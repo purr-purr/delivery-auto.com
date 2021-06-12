@@ -14,7 +14,16 @@
 
 
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance:  auto;
+	margin: auto;
+}
 
+input[type=number] {
+	-moz-appearance: auto;
+    -webkit-appearance: auto;
+}
 
 /* Хедер страницы */
 .page-header {
@@ -168,6 +177,10 @@
     background-color: #DADADA;
 }
 
+.time-line--category::before {
+    top: 35px;
+}
+
 .time-line-active:before {
     background-color: #00D315 !important;
     box-shadow: 0px 2px 10px rgba(8, 227, 30, 0.63);
@@ -186,6 +199,10 @@
 
 .time-line--first-point::before {
     top: -22px;
+}
+
+.time-line--for-ticket::before {
+    top: 8px;
 }
 
 @media (max-width: 1024px) {
@@ -210,11 +227,17 @@
     border-right: 2px dashed #DADADA;
 }
 
-.calc-form__group-title {
+.time-line--full-calc::before  {
+    max-height: calc(100% - 160px);
+}
+
+.calc-form__group-title,
+.calc-form__title {
     margin-bottom: 11px;
     font-size: 16px;
     line-height: 20px;
 }
+
 
 .calc-form__line {
     width: 100%;
@@ -1582,10 +1605,19 @@
 
 /* Ввод параметров груза */
 .select-option {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: flex-end;
 }
+
+.select-option.hide {
+    display: none;
+}
+
+.select-option.active {
+    display: flex;
+}
+
 
 .select-option__item {
     width: 94px;
