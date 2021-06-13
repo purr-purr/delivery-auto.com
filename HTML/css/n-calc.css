@@ -820,9 +820,22 @@ input[type=number] {
     margin-bottom: 15px;
 }
 
+.calc-result__item--additional {
+    padding-left: 135px;
+}
+
+.calc-result__item p:first-child {
+    flex-grow: 1;
+}
+
 .calc-result__item p:last-child {
-    padding-left: 15px;
+    width: 110px;
+    text-align: end;
     white-space: nowrap;
+}
+
+.calc-result__quantity {
+    font-weight: bold;
 }
 
 .calc-result__title {
@@ -1673,8 +1686,12 @@ input[type=number] {
 }
 
 
-/* Кнопка добавить категорию */
+/* ДУ квитанции */
+.additional-option--ticket .additional-option__inner{
+    margin-bottom: 30px;
+}
 
+/* Кнопка добавить категорию */
 .add-category-btn {
     margin-bottom: 50px;
 }
@@ -1686,15 +1703,207 @@ input[type=number] {
     font-size: 16px;
 }
 
-
-
-
-
-
 .full-calc__btn-group {
     display: flex;
 }
 
 .full-calc__btn-group a:first-child {
     margin-right: 30px;
+}
+
+/* Кнопка Печать */
+.calc-form__text-btn {
+    color: #808080;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.calc-form__text-btn img {
+    margin-right: 5px;
+    padding-top: 5px;
+    width: 16px;
+}
+
+.calc-form__text-btn:hover {
+    color: #ffd500;
+}
+
+/* Блок добавление дополнительной инфы, для залогиненых пользователей */
+.add-info {
+    margin-top: 30px;
+}
+
+.add-info__item[open] summary ~ * {
+	animation: acc-media-open 0.3s ease-in-out;
+}
+
+.add-info__item summary::-webkit-details-marker {
+	display: none;
+}
+
+.add-info__item summary {
+    display: flex;
+    align-items: center;
+    max-width: 730px;
+	width: 100%;
+	height: 72px;
+	position: relative;
+	margin-bottom: 20px;
+	cursor: pointer;
+	list-style: none;
+	background-color: #F0F5F9;
+	border-radius: 5px;
+    outline: 0;
+    padding-left: 30px;
+}
+
+.add-info__item summary:after {
+	content: " ";
+	position: absolute;
+    right: 20px;
+    top: 20px;
+	width: 35px;
+	height: 35px;
+	background: #ffd500 url("../img/system/icon/tabs-icon--close.svg") no-repeat center;
+	border-radius: 50px;
+	transform-origin: center;
+    transition: transform .2s linear;
+    transform: rotate(0deg);
+}
+
+.add-info__item[open] summary:after {
+    transform: rotate(90deg);
+	background: #fff url("../img/system/icon/tabs-icon--open.svg") no-repeat center;
+    transition: transform .5s linear;
+}
+
+
+
+
+
+
+
+.add-info__line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-info__sub-title {
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.add-info__label {
+    margin-right: 20px;
+}
+
+.add-info__label--long {
+    width: 187px;
+}
+
+.add-info__select--large {
+    width: 491px;
+}
+
+.add-info__select--middle {
+    width: 387px;
+    margin-left: auto;
+}
+
+.add-info__select--one-item {
+    margin-left: 103px;
+    width: 491px;
+}
+
+.add-info__comment {
+    width: 387px;
+    max-width: 387px;
+    min-width: 387px;
+    max-height: 150px;
+    min-height: 40px;
+}
+
+
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    max-width: 180px;
+    width: 100%;
+}
+
+.create-btn__item {
+    max-width: 74px;
+    min-width: 74px;
+    height: 40px;
+
+    color: #ffd500;
+    font-size: 29px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    margin-right: 15px;
+}
+
+.create-btn__text {
+    font-weight: bold;
+}
+
+.add-info__line-title {
+    width: 170px;
+    margin-right: 10px;
+}
+
+
+.radio-btn__group {
+    display: flex;
+}
+
+.radio-btn__group label {
+    display: flex;
+    align-items: center;
+    margin-right: 85px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.radio-btn__group label:last-child {
+    margin-right: 0;
+}
+
+.radio-btn__group input {
+    margin-right: 15px;
+    height: 20px;
+}
+
+
+
+.add-info__create-receipt {
+    max-width: 730px;
+}
+
+.document-type {
+    display: flex;
+    margin-left: auto;
+}
+
+.document-type--id-card,
+.select-yur-face {
+    display: none;
+}
+
+#DenyIssueSeria {
+    width: 40px;
+    margin-right: 10px;
+    padding: 0 5px;
+}
+
+#DenyIssuePhone,
+#DenyIssueNumber,
+#DenyIssueNumberIdCard,
+#DenyIssueNumberOkpo  {
+    width: 200px;
 }

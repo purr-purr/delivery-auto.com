@@ -17,7 +17,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <!-- THEME STYLES -->
         <link href="css/common.css" rel="stylesheet" type="text/css"/>
-        <link href="css/n-light-calc.css" rel="stylesheet" type="text/css"/>
+        <link href="css/n-calc.css" rel="stylesheet" type="text/css"/>
         <!-- Datepicker -->
         <link href="css/components/datepicker.min.css" rel="stylesheet" type="text/css">
         <!-- Favicon -->
@@ -434,8 +434,56 @@
                                         <h4 class="calc-form__group-title">Додаткові послуги</h4>
 
                                         <div class="additional-option__inner">
-                                            <select class="additional-option__pick-option">
-                                                <option value=""></option>
+                                            <select class="additional-option__pick-option form-control dg-form-control ng-pristine ng-valid ng-touched" ng-options="t.Id as t.Name group by t.CategoryName for t in eg.auxList" ng-model="du.Id" ng-change="EgDuChange(eg.auxList, eg, du); kostil();">
+                                                <option value="" selected="selected">Вибрати послугу</option>
+                                                <optgroup label="Зворотна тара">
+                                                    <option value="string:be4eb57e-6736-e311-8b0d-00155d037960" label="Возврат металлического контейнера 0,5 куб.м. (22,00 грн.)">Возврат металлического контейнера 0,5 куб.м. (22,00 грн.)</option>
+                                                    <option value="string:c8caa387-6736-e311-8b0d-00155d037960" label="Возврат металлического контейнера 1,0 куб.м. (30,00 грн.)">Возврат металлического контейнера 1,0 куб.м. (30,00 грн.)</option>
+                                                    <option value="string:f5f718c5-7c4a-e211-b373-00155d012d0d" label="Возврат паллет (80,00 грн.)">Возврат паллет (80,00 грн.)</option>
+                                                    <option value="string:8ab9f1e5-bfdb-e511-80ce-000d3a2187cd" label="Возврат паллет негабарит( более 1,2*1,2*2) (100,00 грн.)">Возврат паллет негабарит( более 1,2*1,2*2) (100,00 грн.)</option>
+                                                    <option value="string:e4d44708-4263-e411-b2e7-000d3a200936" label="Возврат паллет со склада (50,00 грн.)">Возврат паллет со склада (50,00 грн.)</option>
+                                                    <option value="string:c86133c0-0019-eb11-81e3-000d3a20e396" label="Возврат сендвич-панель клиента (1,00 грн.)">Возврат сендвич-панель клиента (1,00 грн.)</option>
+                                                </optgroup>
+
+                                                <optgroup label="Пакетна упаковка">
+                                                    <option value="string:ff231226-ec67-e811-8163-000d3a20e396" label="Вспененный полиэтилен 1 пог.м. (17,00 грн.)">Вспененный полиэтилен 1 пог.м. (17,00 грн.)</option>
+                                                    <option value="string:2b4247c9-be8c-e211-be60-00155d037919" label="Доупаковка MAXI-Прозрачная (стрейч 3м, скотч 4м, гофрокартон 1м) (22,00 грн.)">Доупаковка MAXI-Прозрачная (стрейч 3м, скотч 4м, гофрокартон 1м) (22,00 грн.)</option>
+                                                    <option value="string:ecc2a5a0-341f-e511-9ab9-000d3a200160" label="Доупаковка MAXI-Темная (стрейч 3м, скотч 4м, гофрокартон 1м) (23,00 грн.)">Доупаковка MAXI-Темная (стрейч 3м, скотч 4м, гофрокартон 1м) (23,00 грн.)</option>
+                                                    <option value="string:3e9cde5d-bf8c-e211-be60-00155d037919" label="Доупаковка MIDI-Прозрачная (стрейч 2м, скотч 2м, гофрокартон 0,5м) (18,00 грн.)">Доупаковка MIDI-Прозрачная (стрейч 2м, скотч 2м, гофрокартон 0,5м) (18,00 грн.)</option>
+                                                    <option value="string:8105e479-351f-e511-9ab9-000d3a200160" label="Доупаковка MIDI-Темная (стрейч 2м, скотч 2м, гофрокартон 0,5м) (20,00 грн.)">Доупаковка MIDI-Темная (стрейч 2м, скотч 2м, гофрокартон 0,5м) (20,00 грн.)</option>
+                                                    <option value="string:81b95b54-518d-e211-be60-00155d037919" label="Доупаковка MINI-Прозрачная (стрейч 2м, скотч 2м) (12,00 грн.)">Доупаковка MINI-Прозрачная (стрейч 2м, скотч 2м) (12,00 грн.)</option>
+                                                    <option value="string:4bb46f74-361f-e511-9ab9-000d3a200160" label="Доупаковка MINI-Темная (стрейч 2м, скотч 2м) (13,00 грн.)">Доупаковка MINI-Темная (стрейч 2м, скотч 2м) (13,00 грн.)</option>
+                                                </optgroup>
+
+                                                <optgroup label="Спеціальна тара">
+                                                    <option value="string:fce75978-eca6-e911-81a1-000d3a20e396" label="Мебельный контейнер 1,5м3 (Дубок) (100,00 грн.)">Мебельный контейнер 1,5м3 (Дубок) (100,00 грн.)</option>
+                                                </optgroup>
+
+                                                <optgroup label="Пакувальний матеріал">
+                                                    <option value="string:88b2e269-7a4a-e211-b373-00155d012d0d" label="Паллетирование прозрачной пленкой высотой до 1м (120,00 грн.)">Паллетирование прозрачной пленкой высотой до 1м (120,00 грн.)</option>
+                                                    <option value="string:9ab13b90-7a4a-e211-b373-00155d012d0d" label="Паллетирование прозрачной пленкой высотой до 2м (125,00 грн.)">Паллетирование прозрачной пленкой высотой до 2м (125,00 грн.)</option>
+                                                    <option value="string:081fa57c-7a4a-e211-b373-00155d012d0d" label="Паллетирование темной пленкой высотой до 1м (125,00 грн.)">Паллетирование темной пленкой высотой до 1м (125,00 грн.)</option>
+                                                    <option value="string:5ab60aa2-7a4a-e211-b373-00155d012d0d" label="Паллетирование темной пленкой высотой до 2м (135,00 грн.)">Паллетирование темной пленкой высотой до 2м (135,00 грн.)</option>
+                                                    <option value="string:6ef47ba4-1367-e311-888e-00155d015107" label="Пломба пластиковая 1шт (2,00 грн.)">Пломба пластиковая 1шт (2,00 грн.)</option>
+                                                    <option value="string:8e2e2818-2945-e711-8134-000d3a204dc8" label="Пломба-Лента индикаторная клейкая 27мм*76мм 1шт (мин. 4шт) (2,00 грн.)">Пломба-Лента индикаторная клейкая 27мм*76мм 1шт (мин. 4шт) (2,00 грн.)</option>
+                                                    <option value="string:3fe7177f-791e-e611-80e0-000d3a2187cd" label="Приобретение гофрокартона рулоного 1 пог. метр (20,00 грн.)">Приобретение гофрокартона рулоного 1 пог. метр (20,00 грн.)</option>
+                                                    <option value="string:a635ee22-7a1e-e611-80e0-000d3a2187cd" label="Приобретение прозрачного стрейча 20мкр 1 пог. метр (3,00 грн.)">Приобретение прозрачного стрейча 20мкр 1 пог. метр (3,00 грн.)</option>
+                                                    <option value="string:0e1c8efa-794a-e211-b373-00155d012d0d" label="Приобретение прозрачной стрейч-пленки 1рул. (250,00 грн.)">Приобретение прозрачной стрейч-пленки 1рул. (250,00 грн.)</option>
+                                                    <option value="string:3e28a910-b101-e411-bdc1-00155d015206" label="Приобретение пузырчатой пленки 1 пог. метр (17,00 грн.)">Приобретение пузырчатой пленки 1 пог. метр (17,00 грн.)</option>
+                                                    <option value="string:761e9bc1-791e-e611-80e0-000d3a2187cd" label="Приобретение скотча 1 пог. метр (1,00 грн.)">Приобретение скотча 1 пог. метр (1,00 грн.)</option>
+                                                    <option value="string:67181157-794a-e211-b373-00155d012d0d" label="Приобретение скотча 80м 1рул. (25,00 грн.)">Приобретение скотча 80м 1рул. (25,00 грн.)</option>
+                                                    <option value="string:81d24679-7ff3-e611-8123-000d3a204dc8" label="Приобретение темного стрейча 20мкр 1 пог. метр (3,00 грн.)">Приобретение темного стрейча 20мкр 1 пог. метр (3,00 грн.)</option>
+                                                    <option value="string:3aa15110-7a4a-e211-b373-00155d012d0d" label="Приобретение темной стрейч-пленки 1рул. (270,00 грн.)">Приобретение темной стрейч-пленки 1рул. (270,00 грн.)</option>
+                                                    <option value="string:f5ef8477-b131-e311-8b0d-00155d037960" label="Продажа паллеты (80,00 грн.)">Продажа паллеты (80,00 грн.)</option>
+                                                    <option value="string:65212b28-6736-e311-8b0d-00155d037960" label="Продажа стяжной ленты, пог.м. (2,00 грн.)">Продажа стяжной ленты, пог.м. (2,00 грн.)</option>
+                                                </optgroup>
+
+                                                <optgroup label="Мішки">
+                                                    <option value="string:50f7a3ae-7b4a-e211-b373-00155d012d0d" label="Полипропиленовый мешок на 50 кг (11,00 грн.)">Полипропиленовый мешок на 50 кг (11,00 грн.)</option>
+                                                    <option value="string:23b02abe-7b4a-e211-b373-00155d012d0d" label="Полипропиленовый мешок с пломбой (12,00 грн.)">Полипропиленовый мешок с пломбой (12,00 грн.)</option>
+                                                    <option value="string:70355009-7b4a-e211-b373-00155d012d0d" label="Упаковка в полиэтиленовый мешок 60л с пломбой (9,00 грн.)">Упаковка в полиэтиленовый мешок 60л с пломбой (9,00 грн.)</option>
+                                                    <option value="string:6515b5d2-7a4a-e211-b373-00155d012d0d" label="Упаковка в полиэтиленовый мешок объем до 60 литров (8,00 грн.)">Упаковка в полиэтиленовый мешок объем до 60 литров (8,00 грн.)</option>
+                                                </optgroup>
                                             </select>
 
                                             <ul class="additional-option__list">
@@ -468,14 +516,18 @@
                                 <span>+ </span>Додати категорію
                             </div>
 
-                            <div class="additional-option time-line time-line--for-ticket">
+                            <div class="additional-option additional-option--ticket time-line time-line--for-ticket">
                                 <h4 class="calc-form__group-title">Додаткові послуги квитанції</h4>
 
                                 <div class="additional-option__inner">
-                                    <select class="additional-option__pick-option time-line__input">
-                                        <option value="-1">1</option>
-                                        <option value="1">2</option>
-                                        <option value="3">3</option>
+                                    <select class="additional-option__pick-option time-line__input form-control dg-form-control ng-valid ng-dirty ng-valid-parse ng-touched" ng-options="t.Id as t.Name disable when t.isDisabled for t in data.mainAuxList" ng-model="du.Id" ng-change="DuChange(data.mainAuxList, du)">
+                                        <option value="" class="" selected="selected">Вибрати послугу</option>
+                                        <option value="string:708d609a-1c96-e211-aeae-00155d037919" label="Возврат документов (35,00 грн.)">Возврат документов (35,00 грн.)</option>
+                                        <option value="string:3bd5fd57-7f4a-e211-8b7c-00155d012d0d" label="Запрет выдачи груза (40,00 грн.)">Запрет выдачи груза (40,00 грн.)</option>
+                                        <option value="string:903f0222-7f4a-e211-8b7c-00155d012d0d" label="Информационное обслуживание (20,00 грн.)">Информационное обслуживание (20,00 грн.)</option>
+                                        <option value="string:cac87b63-8573-e711-813b-000d3a23e81c" label="Подъем на этаж">Подъем на этаж</option>
+                                        <option value="string:4e725051-8673-e711-813b-000d3a23e81c" label="Спуск с этажа">Спуск с этажа</option>
+                                        <option value="string:48ec702b-be3a-eb11-81ea-000d3a20e396" label="Услуга автовозврата">Услуга автовозврата</option>
                                     </select>
 
                                     <ul class="additional-option__list">
@@ -499,7 +551,335 @@
 
                             <div class="full-calc__btn-group">
                                 <a href="javascript:void()" class="main-btn" ng-click="Calculate(true)">Розрахувати</a>
+
                                 <a href="https://delivery-auto.com/uk-UA/GenericPages/DbIndex/33?" target="_blank" class="main-btn main-btn--white">Замовити машину</a>
+
+                                <a href="javascript:void()" class="calc-form__text-btn" ng-click="PrintForm()">
+                                    <img src="img/system/icon/print--grey.svg" alt="print icon">
+                                    Друкувати
+                                </a>
+
+                                <!-- Кнопка для залогиненых пользователей -->
+                                <a href="javascript:void()" class="calc-form__text-btn" ng-click="PrintForm()">
+                                    <img src="img/system/icon/calc/file-icon.svg" alt="print icon">
+                                    Зберегти як шаблон
+                                </a>
+                            </div>
+
+                            <div class="calc-result">
+                                <ul class="calc-result__inner">
+                                    <li class="calc-result__item calc-result__title">
+                                        <p>Розрахунок вартості доставки</p>
+                                        <p>Вартість:</p>
+                                    </li>
+
+                                    <li class="calc-result__item">
+                                        <p>Вартість перевезення склад-склад без знижки:</p>
+                                        <p>26,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item">
+                                        <p>Вартість страхування:</p>
+                                        <p>0,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item">
+                                        <p>Вартість оформлення:</p>
+                                        <p>3,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item">
+                                        <p>Вартість додаткових послуг:</p>
+                                        <p>0,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item calc-result__item--additional">
+                                        <p>Спуск з поверху до 2кг</p>
+                                        <p class="calc-result__quantity">2</p>
+                                        <p>140,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item calc-result__item--additional">
+                                        <p>Забір документів</p>
+                                        <p class="calc-result__quantity">1</p>
+                                        <p>40,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item calc-result__item--additional">
+                                        <p>Доставка від 0 до 300 кг Нова Вільшанка</p>
+                                        <p class="calc-result__quantity">1</p>
+                                        <p>20,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item calc-result__item--bold">
+                                        <p>Вартість без знижок</p>
+                                        <p>29,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item calc-result__item--bold">
+                                        <p>Разом знижка</p>
+                                        <p>0,00 грн.</p>
+                                    </li>
+
+                                    <li class="calc-result__item calc-result__total">
+                                        <p>Разом до оплати:</p>
+                                        <p>250,00 грн.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <a href="javascript:void()" class="main-btn" ng-click="CreateReceipt()">Продовжити <br> оформлення</a>
+
+
+                            <div class="add-info">
+                                <details class="add-info__item">
+                                    <summary>
+                                        <div class="add-info__heading">
+                                            <h3>Відправник - Одержувач</h3>
+                                        </div>
+                                    </summary>
+
+
+                                    <div>
+                                        <div class="add-info__line">
+                                            <label class="add-info__label">Відправник</label>
+                                            <select class="add-info__select--large form-control dg-form-control tooltipped ng-pristine ng-valid ng-touched" ng-options="t.Id as t.Name group by t.GroupName for t in createReceipt.input.senderList" ng-model="createReceipt.output.SenderId" ng-change="GetSenderAddress(); ChangeSender();" data-original-title="" title="" tooltip="1">
+                                                <option value="?" selected="selected"></option>
+                                            </select>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label">Одержувач</label>
+                                            <select class="add-info__select--large form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" ng-options="t.Id as t.Name group by t.GroupName for t in createReceipt.input.receiverList" ng-model="createReceipt.output.ReceiverId" ng-change="GetReceiverAddress(); ChangeReceiver();" name="ReceiverId" required="" ng-mouseover="ng_validate($event, create_frm.ReceiverId)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                                <option value="?" selected="selected"></option>
+                                            </select>
+
+                                            <div class="create-btn">
+                                                <a class="create-btn__item main-btn main-btn--white" href="javascript:void()" ng-click="ShowAddClientDialog()"> + </a>
+                                                <p class="create-btn__text">Створити <br> нового</p>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label">Можливий одержувач</label>
+                                            <select class="add-info__select--middle form-control dg-form-control ng-pristine ng-valid ng-touched" ng-options="t.Id as t.Name group by t.GroupName disable when t.IsBlocked for t in createReceipt.input.receiverList" ng-model="createReceipt.output.Receiver_2_Id" ng-change="ChangePossibleReceiver(1);">
+                                                <option value="?" selected="selected"></option>
+                                            </select>
+
+                                            <div class="create-btn">
+                                                <a class="create-btn__item main-btn main-btn--white" href="javascript:void()" ng-show="!crReceipt.possibleReceiver2Show &amp;&amp; !crReceipt.possibleReceiver3Show" ng-click="AddPossibleReceiver()"> + </a>
+                                                <p class="create-btn__text">Додати ще</p>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <p class="add-info__line-title">Платник квитанції</p>
+                                            <div class="radio-btn__group">
+                                                <label for="r1" name="alo">
+                                                    <input id="r1" type="radio" ng-model="createReceipt.output.PayerType" value="0" ng-change="GetPayers()" class="ng-untouched ng-valid ng-dirty" name="Insurance-payer">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Відправник
+                                                </label>
+
+                                                <label for="r2" name="alo">
+                                                    <input id="r2" type="radio" ng-model="createReceipt.output.PayerType" value="1" ng-change="GetPayers()" class="ng-untouched ng-valid ng-dirty" name="Insurance-payer">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Одержувач
+                                                </label>
+
+                                                <label for="r3" name="alo">
+                                                    <input id="r3" type="radio" ng-model="createReceipt.output.PayerType" value="2" ng-change="GetPayers()" class="ng-untouched ng-valid ng-dirty ng-valid-parse" name="Insurance-payer">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    3-тя особа
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <p class="add-info__line-title">Вид оплати</p>
+                                            <div class="radio-btn__group">
+                                                <label for="r4">
+                                                    <input id="r4" type="radio" ng-model="createReceipt.output.PaymentType" value="0" class="ng-untouched ng-valid ng-dirty" name="Insurance-type-payment">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Готівковий
+                                                </label>
+
+                                                <label for="r5">
+                                                    <input id="r5" type="radio" ng-model="createReceipt.output.InsurancePaymentType" value="1" class="ng-pristine ng-untouched ng-valid" name="Insurance-type-payment">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Безготівковий
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <select class="add-info__select--one-item form-control dg-form-control tooltipped ng-pristine ng-valid ng-valid-required ng-touched" ng-options="t.Id as t.Name for t in createReceipt.input.payerList" ng-model="createReceipt.output.PayerId" name="PayerId" required="" ng-mouseover="ng_validate($event, create_frm.PayerId)" ng-change="SetPayType()" data-original-title="" title="" tooltip="1">
+                                                <option value="?" selected="selected"></option>
+                                            </select>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <p class="add-info__line-title">Платник страхування</p>
+                                            <div class="radio-btn__group">
+                                                <label for="r6">
+                                                    <input id="r6" type="radio" ng-model="createReceipt.output.InsurancePayerType" value="0" ng-change="InsuranceGetPayers()" class="ng-pristine ng-untouched ng-valid" name="Insurance-payer">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Відправник
+                                                </label>
+
+                                                <label for="r7">
+                                                    <input id="r7" type="radio" ng-model="createReceipt.output.InsurancePayerType" value="1" ng-change="InsuranceGetPayers()" class="ng-pristine ng-untouched ng-valid" name="Insurance-payer">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Одержувач
+                                                </label>
+
+                                                <label for="r8">
+                                                    <input id="r8" type="radio" ng-model="createReceipt.output.InsurancePayerType" value="2" ng-change="InsuranceGetPayers()" class="ng-untouched ng-valid ng-dirty ng-valid-parse" name="Insurance-payer">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    3-тя особа
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <p class="add-info__line-title">Вид оплати</p>
+                                            <div class="radio-btn__group">
+                                                <label for="r9">
+                                                    <input id="r9" type="radio" ng-model="createReceipt.output.InsurancePaymentType" value="0" class="ng-pristine ng-untouched ng-valid" name="Insurance-type-payment">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Готівковий
+                                                </label>
+
+                                                <label for="r10">
+                                                    <input id="r10" type="radio" ng-model="createReceipt.output.InsurancePaymentType" value="1" class="ng-pristine ng-untouched ng-valid" name="Insurance-type-payment">
+                                                    <!-- был заменен аттрибут name="", что бы радио кнопки работили нормально  -->
+                                                    Безготівковий
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <select class="add-info__select--one-item form-control dg-form-control tooltipped ng-pristine ng-valid ng-valid-required ng-touched" ng-options="t.Id as t.Name for t in createReceipt.input.insurancePayerList" ng-model="createReceipt.output.InsurancePayerId" name="InsurancePayerId" required="" ng-mouseover="ng_validate($event, create_frm.InsurancePayerId)" ng-change="SetPayTypeInsurance()" data-original-title="" title="" tooltip="1">
+                                                <option value="?" selected="selected"></option>
+                                            </select>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label add-info__label--long">Категтрія вантажу</label>
+                                            <select class="form-control dg-form-control tooltipped ng-touched ng-dirty ng-valid-parse ng-valid ng-valid-required" ng-options="t.Value as t.Text for t in createReceipt.input.cargoCategoryList" ng-model="createReceipt.output.CargoTypeId" name="CargoTypeId" required="" ng-mouseover="ng_validate($event, create_frm.CargoTypeId)" data-original-title="" title="" tooltip="1">
+                                                <option value="-1" selected style="display: none;"></option>
+                                                <option value="string:0656bab4-e62c-e411-bd10-000d3a200936" label="Автоаксесуари">Автоаксесуари</option><option value="string:c29d5968-6098-e711-8142-000d3a23e81c" label="Автодеталі кузова">Автодеталі кузова</option><option value="string:f306d03b-9e36-e311-8b0d-00155d037960" label="Автозапчастини">Автозапчастини</option><option value="string:29048cd4-1812-eb11-81e1-000d3a20e396" label="Автозапчастини б/у">Автозапчастини б/у</option><option value="string:73f63122-e72c-e411-bd10-000d3a200936" label="Автомасла">Автомасла</option><option value="string:80a76f7c-7498-e711-8142-000d3a23e81c" label="Автомобільне скло">Автомобільне скло</option><option value="string:604d9e88-7498-e711-8142-000d3a23e81c" label="Автомобільні бампери (без упакування / в заводскій картонній упаковці)">Автомобільні бампери (без упакування / в заводскій картонній упаковці)</option><option value="string:eb949bce-7498-e711-8142-000d3a23e81c" label="Автомобільні фари">Автомобільні фари</option><option value="string:8ed4db62-7498-e711-8142-000d3a23e81c" label="Автопрокладки, номерні знаки">Автопрокладки, номерні знаки</option><option value="string:f4f7706f-7498-e711-8142-000d3a23e81c" label="Автофільтр">Автофільтр</option><option value="string:f506d03b-9e36-e311-8b0d-00155d037960" label="Автохімія">Автохімія</option><option value="string:a6b2d4bc-087c-e611-8104-000d3a204dc8" label="Акумулятори автомобильні">Акумулятори автомобильні</option><option value="string:79eeaca1-7598-e711-8142-000d3a23e81c" label="Азбест, параніт листовий, гипсові плити">Азбест, параніт листовий, гипсові плити</option><option value="string:df6ab5ad-7598-e711-8142-000d3a23e81c" label="Аерозолі">Аерозолі</option><option value="string:ba1c73ba-7598-e711-8142-000d3a23e81c" label="Балони">Балони</option><option value="string:fd06d03b-9e36-e311-8b0d-00155d037960" label="Біотовари рідкі">Біотовари рідкі</option><option value="string:4c901704-cfa1-e711-8145-000d3a23e81c" label="Біотовари сипучі">Біотовари сипучі</option><option value="string:b07e41c7-7598-e711-8142-000d3a23e81c" label="Побутова техніка дрібна та середня без заводського пакування (не нове)">Побутова техніка дрібна та середня без заводського пакування (не нове)</option><option value="string:a6d364d5-7598-e711-8142-000d3a23e81c" label="Побутова техніка дрібна та середня в заводському картонному пакуванні">Побутова техніка дрібна та середня в заводському картонному пакуванні</option><option value="string:0307d03b-9e36-e311-8b0d-00155d037960" label="Побутова хімія рідка">Побутова хімія рідка</option><option value="string:a516f400-7698-e711-8142-000d3a23e81c" label="Побутова хімія сипуча">Побутова хімія сипуча</option><option value="string:0c8b855d-7698-e711-8142-000d3a23e81c" label="Відра пластикові зі змістом">Відра пластикові зі змістом</option><option value="string:60a7c969-7698-e711-8142-000d3a23e81c" label="Відра пластикові зі змістом">Відра пластикові зі змістом</option><option value="string:fe4fd975-7698-e711-8142-000d3a23e81c" label="Відра пластикові зі змістом">Відра пластикові зі змістом</option><option value="string:a360f487-7698-e711-8142-000d3a23e81c" label="Вело-/мототехніка без пакування">Вело-/мототехніка без пакування</option><option value="string:d4cb4694-7698-e711-8142-000d3a23e81c" label="Велосипеди в заводському картонному пакуванні">Велосипеди в заводському картонному пакуванні</option><option value="string:d780e8ee-c22b-e411-b56e-000d3a200936" label="Речі, м'які текстильні вироби, одяг, взуття">Речі, м'які текстильні вироби, одяг, взуття</option><option value="string:24d3d0ce-087c-e611-8104-000d3a204dc8" label="Газобалонне обладнання">Газобалонне обладнання</option><option value="string:e51a1bfe-7698-e711-8142-000d3a23e81c" label="Генератори">Генератори</option><option value="string:9e8ed6c2-087c-e611-8104-000d3a204dc8" label="Глушники автомобільні">Глушники автомобільні</option><option value="string:12a423f9-4d8b-e811-8178-000d3a20e396" label="Гофротруба для електрики">Гофротруба для електрики</option><option value="string:16022bdf-b325-e711-8127-000d3a204dc8" label="Двері міжкімнатні">Двері міжкімнатні</option><option value="string:451577e5-b325-e711-8127-000d3a204dc8" label="Двері міжкімнатні зі склом">Двері міжкімнатні зі склом</option><option value="string:b332b2f1-b325-e711-8127-000d3a204dc8" label="Двері металеві (більше 50 кг)">Двері металеві (більше 50 кг)</option><option value="string:2a049b0a-7798-e711-8142-000d3a23e81c" label="Двигуни (електро-, авто-)">Двигуни (електро-, авто-)</option><option value="string:f2178ee8-1912-eb11-81e1-000d3a20e396" label="Двигун (електро-, авто-) б/у">Двигун (електро-, авто-) б/у</option><option value="string:31029c1c-7798-e711-8142-000d3a23e81c" label="Диски для вантажних авто">Диски для вантажних авто</option><option value="string:c38cff38-bb12-eb11-81e1-000d3a20e396" label="Диски для легкового авто">Диски для легкового авто</option><option value="string:0d07d03b-9e36-e311-8b0d-00155d037960" label="Диски для легкового авто">Диски для легкового авто</option><option value="string:de06d22e-7798-e711-8142-000d3a23e81c" label="Диски для с/г техніки">Диски для с/г техніки</option><option value="string:0f07d03b-9e36-e311-8b0d-00155d037960" label="Документи">Документи</option><option value="string:34601891-1012-eb11-81e1-000d3a20e396" label="Жалюзі">Жалюзі</option><option value="string:f9dad93a-7798-e711-8142-000d3a23e81c" label="Рідина в гофрокартонниїх пакетах (тетрапаках)">Рідина в гофрокартонниїх пакетах (тетрапаках)</option><option value="string:0e43e746-7798-e711-8142-000d3a23e81c" label="Рідина в пластиковій чи металевій тарі">Рідина в пластиковій чи металевій тарі</option><option value="string:85861d53-7798-e711-8142-000d3a23e81c" label="Рідина в пластиковій чи металевій тарі">Рідина в пластиковій чи металевій тарі</option><option value="string:a795a85f-7798-e711-8142-000d3a23e81c" label="Рідина в склі">Рідина в склі</option><option value="string:55784d78-7798-e711-8142-000d3a23e81c" label="Рідина в склі">Рідина в склі</option><option value="string:4a707128-cfa1-e711-8145-000d3a23e81c" label="Замки, залізні вироби, петлі дверні">Замки, залізні вироби, петлі дверні</option><option value="string:1307d03b-9e36-e311-8b0d-00155d037960" label="Запчастини">Запчастини</option><option value="string:14210fd4-4d8b-e811-8178-000d3a20e396" label="Звукоізоляційні матеріали: мінеральна вата, утеплювачі">Звукоізоляційні матеріали: мінеральна вата, утеплювачі</option><option value="string:1707d03b-9e36-e311-8b0d-00155d037960" label="Іграшки, дитячі товари, дитячі речі">Іграшки, дитячі товари, дитячі речі</option><option value="string:39165084-7798-e711-8142-000d3a23e81c" label="Вироби з граніта, каменю, штучного каменю">Вироби з граніта, каменю, штучного каменю</option><option value="string:a4907790-7798-e711-8142-000d3a23e81c" label="Вироби з дерева">Вироби з дерева</option><option value="string:4f07d03b-9e36-e311-8b0d-00155d037960" label="Вироби з пластику">Вироби з пластику</option><option value="string:1907d03b-9e36-e311-8b0d-00155d037960" label="Інструменти">Інструменти</option><option value="string:1b07d03b-9e36-e311-8b0d-00155d037960" label="Кабельно-дротова продукція: кабель, дріт">Кабельно-дротова продукція: кабель, дріт</option><option value="string:e62d86a8-7798-e711-8142-000d3a23e81c" label="Каністри та бочки порожні">Каністри та бочки порожні</option><option value="string:fa29939c-7798-e711-8142-000d3a23e81c" label="Каністри та бочки з вмістом">Каністри та бочки з вмістом</option><option value="string:40a71f75-baba-e611-8117-000d3a204dc8" label="Каністри та бочки з вмістом">Каністри та бочки з вмістом</option><option value="string:1d07d03b-9e36-e311-8b0d-00155d037960" label="Канцелярія">Канцелярія</option><option value="string:aa4579b4-7798-e711-8142-000d3a23e81c" label="Карнізи, короб пластиковий, металопрофіль">Карнізи, короб пластиковий, металопрофіль</option><option value="string:c17869c6-7798-e711-8142-000d3a23e81c" label="Картини, ікони">Картини, ікони</option><option value="string:1f07d03b-9e36-e311-8b0d-00155d037960" label="Керамічна плитка">Керамічна плитка</option><option value="string:bc3d26f2-242c-e411-b56e-000d3a200936" label="Ковані вироби">Ковані вироби</option><option value="string:9dbbbca4-bb12-eb11-81e1-000d3a20e396" label="Комбікорм для тварин">Комбікорм для тварин</option><option value="string:b5790f5f-0f12-eb11-81e1-000d3a20e396" label="Кондиціонер">Кондиціонер</option><option value="string:2507d03b-9e36-e311-8b0d-00155d037960" label="Косметика">Косметика</option><option value="string:2d561edd-7698-e711-8142-000d3a23e81c" label="Котли опалювальні більше 40 кг">Котли опалювальні більше 40 кг</option><option value="string:1f2635e9-7698-e711-8142-000d3a23e81c" label="Котли опалювальні до 40 кг">Котли опалювальні до 40 кг</option><option value="string:e0c8ceac-c92b-e411-b56e-000d3a200936" label="Кава">Кава</option><option value="string:2907d03b-9e36-e311-8b0d-00155d037960" label="Ламінат">Ламінат</option><option value="string:28e2cd90-4d8b-e811-8178-000d3a20e396" label="Драбина">Драбина</option><option value="string:aa91884c-cfa1-e711-8145-000d3a23e81c" label="Лінолеум, килимові покриття">Лінолеум, килимові покриття</option><option value="string:d973f4f7-b325-e711-8127-000d3a204dc8" label="Матраси каркасні">Матраси каркасні</option><option value="string:e273f4f7-b325-e711-8127-000d3a204dc8" label="Матраси каркасні">Матраси каркасні</option><option value="string:bbbb37d3-b325-e711-8127-000d3a204dc8" label="Меблі корпусні в зборі (без пакування/в заводській упаковці)">Меблі корпусні в зборі (без пакування/в заводській упаковці)</option><option value="string:c84f30d9-b325-e711-8127-000d3a204dc8" label="Меблі м'які">Меблі м'які</option><option value="string:fa97268d-f20a-e711-8126-000d3a204dc8" label="Меблеві деталі">Меблеві деталі</option><option value="string:20272d99-f20a-e711-8126-000d3a204dc8" label="Меблеві деталі зі склом">Меблеві деталі зі склом</option><option value="string:3507d03b-9e36-e311-8b0d-00155d037960" label="Медичні товари">Медичні товари</option><option value="string:5a787cf7-7798-e711-8142-000d3a23e81c" label="Медичне обладнання">Медичне обладнання</option><option value="string:a7799a03-7898-e711-8142-000d3a23e81c" label="Металеві деталі з різьбою">Металеві деталі з різьбою</option><option value="string:ac42fb0f-7898-e711-8142-000d3a23e81c" label="Металеві засувки та вентиля">Металеві засувки та вентиля</option><option value="string:75a4622c-8f9a-ea11-81c8-000d3a20e396" label="Металеві вироби">Металеві вироби</option><option value="string:3b07d03b-9e36-e311-8b0d-00155d037960" label="Металлопродукція без лакофарбового покриття">Металлопродукція без лакофарбового покриття</option><option value="string:5a65b070-cfa1-e711-8145-000d3a23e81c" label="Металлопродукція з лакофарбним покриттям">Металлопродукція з лакофарбним покриттям</option><option value="string:3d07d03b-9e36-e311-8b0d-00155d037960" label="Металовироби, болти, гайки, шайби">Металовироби, болти, гайки, шайби</option><option value="string:5bd26d2e-7898-e711-8142-000d3a23e81c" label="Мобільні телефони, планшети, ноутбуки (без упаковки/в заводській упаковці)">Мобільні телефони, планшети, ноутбуки (без упаковки/в заводській упаковці)</option><option value="string:3aee480c-44ad-e411-b119-000d3a200160" label="Нитки, гудзики, галантерея">Нитки, гудзики, галантерея</option><option value="string:e51c7b3a-7898-e711-8142-000d3a23e81c" label="Вогнегасники">Вогнегасники</option><option value="string:d5dcbc46-7898-e711-8142-000d3a23e81c" label="Вікна та двері зі склом, полускляні">Вікна та двері зі склом, полускляні</option><option value="string:4907d03b-9e36-e311-8b0d-00155d037960" label="Оргтехніка">Оргтехніка</option><option value="string:7832e15e-7898-e711-8142-000d3a23e81c" label="Відправлення з декоративним покриттям">Відправлення з декоративним покриттям</option><option value="string:6a8999bb-4d8b-e811-8178-000d3a20e396" label="Паркет">Паркет</option><option value="string:4d07d03b-9e36-e311-8b0d-00155d037960" label="Харчова продукція">Харчова продукція</option><option value="string:f3eeb1bb-cb2b-e411-b56e-000d3a200936" label="Харчові спеції">Харчові спеції</option><option value="string:81217aa3-4d8b-e811-8178-000d3a20e396" label="Плінтус">Плінтус</option><option value="string:36bf6ce6-4d8b-e811-8178-000d3a20e396" label="Підвісна або гіпсова стеля">Підвісна або гіпсова стеля</option><option value="string:c99806c8-4d8b-e811-8178-000d3a20e396" label="Підкладка для ламінату">Підкладка для ламінату</option><option value="string:5107d03b-9e36-e311-8b0d-00155d037960" label="Підшипники">Підшипники</option><option value="string:5507d03b-9e36-e311-8b0d-00155d037960" label="Поліграфія (книги, брошюри, рекламна продукція, папір)">Поліграфія (книги, брошюри, рекламна продукція, папір)</option><option value="string:8ec9e7f5-8322-e611-80e1-000d3a2187cd" label="Полікарбонат">Полікарбонат</option><option value="string:5707d03b-9e36-e311-8b0d-00155d037960" label="Посуд">Посуд</option><option value="string:5b07d03b-9e36-e311-8b0d-00155d037960" label="Промислове обладнання">Промислове обладнання</option><option value="string:ec9bdc96-4d8b-e811-8178-000d3a20e396" label="Профіль">Профіль</option><option value="string:5f07d03b-9e36-e311-8b0d-00155d037960" label="Гумо-технічні вироби">Гумо-технічні вироби</option><option value="string:6107d03b-9e36-e311-8b0d-00155d037960" label="Рекламна широкоформатна продукція">Рекламна широкоформатна продукція</option><option value="string:a1fe146b-7898-e711-8142-000d3a23e81c" label="Рулони з матерією, текстиль, тканина">Рулони з матерією, текстиль, тканина</option><option value="string:97ce2b77-7898-e711-8142-000d3a23e81c" label="Саджанці дерев">Саджанці дерев</option><option value="string:a9334083-7898-e711-8142-000d3a23e81c" label="Саджанці кущів">Саджанці кущів</option><option value="string:6507d03b-9e36-e311-8b0d-00155d037960" label="Сантехніка">Сантехніка</option><option value="string:6707d03b-9e36-e311-8b0d-00155d037960" label="Світильники, лампи">Світильники, лампи</option><option value="string:6b07d03b-9e36-e311-8b0d-00155d037960" label="Сейфи">Сейфи</option><option value="string:6d07d03b-9e36-e311-8b0d-00155d037960" label="Сільськогосподарче обладнання">Сільськогосподарче обладнання</option><option value="string:86fe948f-7898-e711-8142-000d3a23e81c" label="Сітка в рулоні">Сітка в рулоні</option><option value="string:350e999b-7898-e711-8142-000d3a23e81c" label="Сітка листова">Сітка листова</option><option value="string:6f07d03b-9e36-e311-8b0d-00155d037960" label="Спецодяг">Спецодяг</option><option value="string:7107d03b-9e36-e311-8b0d-00155d037960" label="Спортивні товари">Спортивні товари</option><option value="string:d7f068e3-c42b-e411-b56e-000d3a200936" label="Спортивні тренажери">Спортивні тренажери</option><option value="string:940a5ba9-7898-e711-8142-000d3a23e81c" label="Супутникове обладнання">Супутникове обладнання</option><option value="string:7307d03b-9e36-e311-8b0d-00155d037960" label="Засоби охорони та захисту">Засоби охорони та захисту</option><option value="string:7507d03b-9e36-e311-8b0d-00155d037960" label="Скло, вікна, двері, дзеркала в заводському пакуванні">Скло, вікна, двері, дзеркала в заводському пакуванні</option><option value="string:212158af-7898-e711-8142-000d3a23e81c" label="Скляні вироби">Скляні вироби</option><option value="string:a1a69eb5-4d8b-e811-8178-000d3a20e396" label="Стільниці">Стільниці</option><option value="string:7907d03b-9e36-e311-8b0d-00155d037960" label="Сувенірна продукція">Сувенірна продукція</option><option value="string:fc7262c1-7898-e711-8142-000d3a23e81c" label="Сипучі суміші в мішках, пакетах">Сипучі суміші в мішках, пакетах</option><option value="string:6c1091cd-7898-e711-8142-000d3a23e81c" label="Сипучі суміші в мішках, пакетах">Сипучі суміші в мішках, пакетах</option><option value="string:00829de6-7898-e711-8142-000d3a23e81c" label="Телевізор не в заводскій упаковці (б/в)">Телевізор не в заводскій упаковці (б/в)</option><option value="string:1ad07cda-7898-e711-8142-000d3a23e81c" label="Телевізор в заводскій упаковці">Телевізор в заводскій упаковці</option><option value="string:549204f4-7898-e711-8142-000d3a23e81c" label="Термінали самообслуговування">Термінали самообслуговування</option><option value="string:8507d03b-9e36-e311-8b0d-00155d037960" label="Торгове обладнання">Торгове обладнання</option><option value="string:c6544efa-7898-e711-8142-000d3a23e81c" label="Труби для свердловин">Труби для свердловин</option><option value="string:b11a9c7e-6b9c-e711-8143-000d3a23e81c" label="Труби та фітінгі">Труби та фітінгі</option><option value="string:8707d03b-9e36-e311-8b0d-00155d037960" label="Пакувальні материали">Пакувальні материали</option><option value="string:92856933-462c-e411-bd10-000d3a200936" label="Фурнітура">Фурнітура</option><option value="string:639092d2-d0a1-e711-8145-000d3a23e81c" label="Господарчі товари не крихкі">Господарчі товари не крихкі</option><option value="string:a6307f8d-131c-e511-9ab9-000d3a200160" label="Господарчі товари крихкі, з/з деталями з пластику, кераміки, скла">Господарчі товари крихкі, з/з деталями з пластику, кераміки, скла</option><option value="string:f93dd206-7998-e711-8142-000d3a23e81c" label="Крихкі вироби з пластику, кераміки, скла">Крихкі вироби з пластику, кераміки, скла</option><option value="string:d07b5d19-7998-e711-8142-000d3a23e81c" label="Крихкі вироби з пластику, кераміки, скла до 30 кг">Крихкі вироби з пластику, кераміки, скла до 30 кг</option><option value="string:48c68925-7998-e711-8142-000d3a23e81c" label="Крихкі вироби з пластику, кераміки, скла понад 30 кг">Крихкі вироби з пластику, кераміки, скла понад 30 кг</option><option value="string:7f0a313e-7998-e711-8142-000d3a23e81c" label="Валізи, сумки">Валізи, сумки</option><option value="string:aae27704-bc12-eb11-81e1-000d3a20e396" label="Шина з диском (зібране колесо) для легкового авто б / у">Шина з диском (зібране колесо) для легкового авто б / у</option><option value="string:9ce8f08e-baba-e611-8117-000d3a204dc8" label="Шини вантажні">Шини вантажні</option><option value="string:bec32b44-7998-e711-8142-000d3a23e81c" label="Шини для с/г техніки">Шини для с/г техніки</option><option value="string:9782b981-baba-e611-8117-000d3a204dc8" label="Шини легкові">Шини легкові</option><option value="string:9307d03b-9e36-e311-8b0d-00155d037960" label="Шини з дисками (укомплектовані колеса) для легкового авто">Шини з дисками (укомплектовані колеса) для легкового авто</option><option value="string:9507d03b-9e36-e311-8b0d-00155d037960" label="Електро-технічна продукція">Електро-технічна продукція</option>
+                                            </select>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label add-info__label--long">Номер купона на знижку</label>
+                                            <input type="text" class="form-control dg-form-control ng-pristine ng-valid ng-touched" ng-model="createReceipt.output.CouponNumber">
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label add-info__label--long">Номер Вашої накладної</label>
+                                            <input type="text" class="form-control dg-form-control ng-pristine ng-valid ng-touched" ng-model="createReceipt.output.PartnerNumber">
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label add-info__label--long">Примітка</label>
+                                            <textarea rows="1" class="add-info__comment form-control dg-form-control ng-pristine ng-valid ng-touched" ng-model="createReceipt.output.Comment"></textarea>
+                                        </div>
+
+                                    </div>
+                                </details>
+
+
+                                <details class="add-info__item">
+                                    <summary>
+                                        <div class="add-info__heading">
+                                            <h3>Забирання вантажу</h3>
+                                        </div>
+                                    </summary>
+
+
+                                    <!-- next line -->
+                                    <div class="add-info__line">
+                                        <label class="add-info__label add-info__label--long">Послуга заборона видачі:</label>
+                                        <input type="text" class="form-control dg-form-control ng-pristine ng-valid ng-touched" ng-model="createReceipt.output.CouponNumber">
+                                    </div>
+                                </details>
+
+
+                                <details class="add-info__item">
+                                    <summary>
+                                        <div class="add-info__heading">
+                                            <h3>Доставка вантажу</h3>
+                                        </div>
+                                    </summary>
+
+
+                                    123
+                                </details>
+
+                                <details class="add-info__item">
+                                    <summary>
+                                        <div class="add-info__heading">
+                                            <h3>Додаткові послуги</h3>
+                                        </div>
+                                    </summary>
+
+                                    <div class="add-info__create-receipt">
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <p class="add-info__sub-title">Послуга заборона видачі:</p>
+                                            <div class="radio-btn__group">
+                                                <label for="fiz-face" onclick="choiceFace();">
+                                                    <input id="fiz-face" type="radio" ng-model="phis_yur" value="1" class="ng-untouched ng-valid ng-dirty ng-valid-parse" name="phis_yur" checked>
+                                                    Фiз.лицо
+                                                </label>
+
+                                                <label for="yur-face" onclick="choiceFace();">
+                                                    <input id="yur-face" type="radio" ng-model="phis_yur" value="2" class="ng-untouched ng-valid ng-dirty ng-valid-parse" name="phis_yur">
+                                                    Юр. лицо
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line">
+                                            <label class="add-info__label">Неможливо вибрати послугу післяплати разом з послугою заборони видачі</label>
+                                            <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" id="DenyIssuePhone" placeholder="(***)***-**-**" ng-model="createReceipt.output.DenyIssuePhoneStr" name="DenyIssuePhoneStr" ng-mouseover="ng_validate($event, create_frm.DenyIssuePhoneStr)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                        </div>
+
+                                        <div class="add-info__line select-fiz-face">
+                                            <label class="calc-switch-btn">
+                                                <p class="calc-form__label">Серія та номер паспорта</p>
+            
+                                                <div class="calc-switch-btn__toggle">
+                                                    <input class="time-line__btn calc-switch-btn__toggle-state" type="checkbox" name="" value="" id="select-type-document">
+                                                    <div class="calc-switch-btn__bg"></div>
+                                                    <div class="calc-switch-btn__indicator"></div>
+                                                </div>
+                                                
+                                                <p class="calc-form__label">ID-картка</p>
+                                            </label>
+
+                                            <!-- Пасспорт -->
+                                            <div class="document-type document-type--passport" ng-show="!createReceipt.output.IDcard">
+                                                <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-touched" id="DenyIssueSeria" pattern="[А-Яа-я]{2}" ng-model="createReceipt.output.DenyIssueSeria" name="DenyIssueSeria" ng-mouseover="ng_validate($event, create_frm.DenyIssueSeria)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                                <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-touched" id="DenyIssueNumber" pattern="[0-9]{6}" ng-model="createReceipt.output.DenyIssueNumber" name="DenyIssueNumber" ng-mouseover="ng_validate($event, create_frm.DenyIssueNumber)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                            </div>
+
+                                            <!-- ID Card -->
+                                            <div class="document-type document-type--id-card" ng-show="createReceipt.output.IDcard">
+                                                <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-touched" id="DenyIssueNumberIdCard" pattern="[0-9]{9}" ng-model="createReceipt.output.DenyIssueNumberIdCard" name="DenyIssueNumberIdCard" ng-mouseover="ng_validate($event, create_frm.DenyIssueNumberIdCard)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                            </div>
+                                        </div>
+
+                                        <div class="add-info__line select-yur-face">
+                                            <label class="add-info__label">ЗКПО:</label>
+                                            <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-touched" id="DenyIssueNumberOkpo" pattern="[0-9]{8}([0-9]{2})?" ng-model="createReceipt.output.DenyIssueNumberOkpo" name="DenyIssueNumberOkpo" ng-mouseover="ng_validate($event, create_frm.DenyIssueNumberOkpo)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                        </div>
+                                    </div>
+                                    
+                                </details>
+
                             </div>
 
                         </form>
@@ -532,15 +912,7 @@
         <script src="js/components/details-element-polyfill.js" type="text/javascript"></script> 
         <!-- Main.js -->
         <script src="js/main.js" type="text/javascript"></script>
-
-        <script>
-            $(document).ready(function(){
-                $('.calc-switch-btn').click(function(){
-                    $('input[type="checkbox"]:checked').each(function(){
-                        $('.calc-switch-btn__desc').toggleClass('calc-switch-btn__desc--active');
-                    });
-                });
-            });
-        </script>
+        <!-- calc-script.js  Только для станиц Калькулятора и ДУ -->
+        <script src="js/calc-script.js" type="text/javascript"></script>
     </body>
 </html>
