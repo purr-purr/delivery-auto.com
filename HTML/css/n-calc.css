@@ -7,22 +7,27 @@
 
 /* Временый стиль, при переносе можно удалить */
 
-.main-btn {
+/* .main-btn {
     white-space: nowrap;
+} */
+
+
+
+
+
+
+
+
+/* Убрать если нужно подсвечивать красным инпуты с аттрибутом "requided" */
+input:required { 
+    border-color: #DADADA;
 }
 
 
-
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-	-webkit-appearance:  auto;
-	margin: auto;
-}
-
-input[type=number] {
-	-moz-appearance: auto;
-    -webkit-appearance: auto;
+/* Убирает стили фокуса на инпуте. С доступом "только чтение" */
+input[readonly="readonly"]:focus,
+input[readonly="readonly"]:active {
+    border-color: #DADADA;
 }
 
 /* Хедер страницы */
@@ -205,9 +210,6 @@ input[type=number] {
     top: 8px;
 }
 
-@media (max-width: 1024px) {
-
-}
 
 /* Calc common */
 .calc-form {
@@ -223,12 +225,20 @@ input[type=number] {
     left: 3px;
     width: 2px;
     height: 100%;
-    max-height: 535px;
+    max-height: calc(100% - 40px);
     border-right: 2px dashed #DADADA;
 }
 
-.time-line--full-calc::before  {
-    max-height: calc(100% - 160px);
+/* Точка для Time-line самая последняя */
+.calc-form::after {
+    content: " ";
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #DADADA;
 }
 
 .calc-form__group-title,
@@ -1604,16 +1614,34 @@ input[type=number] {
 }
 
 /* Выбор Категории */
+
 .tariff-category {
     padding: 30px 20px;
     background-color: #F8F8F8;
     border-radius: 5px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .tariff-category__pick-category {
     margin-bottom: 18px;
     font-weight: 600;
+}
+
+/* Кнопка удалить блок */
+.delete-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 11px;
+    height: 11px;
+    background: url('../img/system/icon/add-file__delete.svg') no-repeat center;
+    background-size: 11px;
+    cursor: pointer;
+}
+
+.tariff-category--example-clone .delete-btn {
+    display: none;
 }
 
 /* Ввод параметров груза */
@@ -1631,9 +1659,12 @@ input[type=number] {
     display: flex;
 }
 
+.select-option__select-item {
+    width: 190px;
+}
 
 .select-option__item {
-    width: 94px;
+    width: min-content;
     margin-right: 10px;
     margin-bottom: 20px;
 }
@@ -1643,13 +1674,41 @@ input[type=number] {
 }
 
 .select-option__item input {
-    width: 100%;
-    margin-top: 10px;
+    width: 94px;
+    padding: 0 10px;
+}
+
+.select-option__item select {
+    padding: 0 20px 0 10px;
+}
+
+.select-option--documents input {
+    width: 111px;
+}
+
+.select-option--documents .select-option__select-item {
+    width: 387px;
+}
+
+.select-option--industry-tariffs .select-option__select-item  {
+    width: 263px;
+}
+
+.select-option--industry-tariffs .select-option__select-item--small {
+    width: 142px;
+}
+
+.select-option--pallets .select-option__select-item--small {
+    width: 100px;
 }
 
 .select-option__item label {
+    display: block;
     line-height: 20px;
+    margin-bottom: 10px;
 }
+
+
 
 /* Доп. Услуги */
 .additional-option .calc-form__group-title {
@@ -1663,7 +1722,16 @@ input[type=number] {
 }
 
 .additional-option__pick-option {
+    display: none;
     margin-right: 15px;
+}
+
+.additional-option__pick-option--ticket {
+    margin-right: 15px;
+}
+
+.additional-option__pick-option.active {
+    display: block;
 }
 
 .additional-option__list {
@@ -1750,7 +1818,7 @@ input[type=number] {
 	width: 100%;
 	height: 72px;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	cursor: pointer;
 	list-style: none;
 	background-color: #F0F5F9;
@@ -1826,7 +1894,36 @@ input[type=number] {
     min-height: 40px;
 }
 
+.add-info__date-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
 
+.add-info__date-item input{
+    width: 178px;
+}
+
+.add-info__date-item:last-child {
+    margin-right: 0;
+}
+
+.add-info__contact-face {
+    width: 283px;
+    margin-right: 30px;
+}
+
+.add-info__contact-face:last-child {
+    margin-right: 0;
+}
+
+.add-info__line--contact-name label {
+    width: 300px;
+}
+
+.add-info__line--contact-name input {
+    width: 283px;
+}
 
 .create-btn {
     display: flex;
@@ -1907,3 +2004,179 @@ input[type=number] {
 #DenyIssueNumberOkpo  {
     width: 200px;
 }
+
+/* Последняя группа кнопок в Расширенном Калькуляторе */
+.last-btn-group {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+.calc-create-address__line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.calc-create-address__line label {
+    width: 80px;
+    margin-right: 5px;
+}
+
+.calc-create-address__input {
+    width: 179px;
+    margin-right: 13px;
+}
+
+.calc-create-address__input:last-child {
+    margin-right: 0;
+}
+
+.calc-create-address__input--large {
+    flex-grow: 1;
+}
+
+
+
+
+
+/* Поп-ап создание  нового получателя */
+
+#popup-calc-create-client .popup-main {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.calc-create-client__nav {
+    display: flex;
+}
+
+.calc-create-client__item {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.calc-create-client__item:last-child {
+    margin-right: 0;
+}
+
+.calc-create-client__item input {
+    height: fit-content;
+    margin-right: 15px;
+}
+
+.calc-create-client__line {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 545px;
+    width: 100%;
+}
+
+.calc-create-client__line label {
+    margin: auto 10px auto 0;
+    min-width: 180px;
+}
+
+.calc-create-client__line input,
+.calc-create-client__line select {
+    max-width: 365px;
+    width: 100%;
+}
+
+.calc-create-client__or-text {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calc-create-client__btn-group {
+    margin-top: 30px;
+}
+
+.calc-create-client__btn-group .main-btn:first-child {
+    margin-right: 30px;
+}
+
+
+.network_trading_list {
+    max-width: 535px;
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    margin-top: 15px;
+}
+
+.network_trading_list::-webkit-scrollbar { width: 3px; height: 3px;}
+.network_trading_list::-webkit-scrollbar-button { height: 0; width: 3px;}
+.network_trading_list::-webkit-scrollbar-thumb {background-color: #ffd500; border-radius: 50px;}
+.network_trading_list::-webkit-scrollbar-track-piece { background-color: #dadada;}
+
+.network_trading_list>div {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #F0F5F9;
+    cursor: pointer;
+}
+
+.network_trading_logo {
+    width: 105px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.network_trading_name {
+    font-weight: 600;
+}
+
+.search_input_tn {
+    width: 100%;
+    background: url('https://delivery-auto.com/Images/Calculation/ic_search.png') no-repeat;
+    background-position: 97% 50%;
+    background-size: 27px;
+    padding-right: 50px;
+}
+
+.search_input_tn::placeholder {
+    color: #999;
+}
+
+.calc-create-client__fiz-face,
+.calc-create-client__yur-face,
+.calc-create-client__company {
+    display: none;
+}
+
+
+.calc-create-client__fiz-face.active,
+.calc-create-client__yur-face.active,
+.calc-create-client__company.active {
+    display: block;
+}
+
+
+
+.show-in-express {
+    display: none;
+} 
+
+.radio-btn__group--type-order {
+    margin-left: 27px;
+}
+
+.radio-btn__group--type-order label {
+    width: auto;
+    min-width: 200px;
+    margin-right: 10px;
+}
+
+.calc-form__label--express-date {
+    margin: 0 10px 0 auto;
+}
+
+

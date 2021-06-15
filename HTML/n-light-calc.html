@@ -98,7 +98,7 @@
                             <!-- next line -->
 
                             <div class="calc-form__line time-line">
-                                <select class="calc-form__select time-line__input form-control dg-form-control ng-valid ng-touched ng-dirty ng-valid-parse" id="DeliveryType" ng-options="t.Value as t.Text for t in data.input.DeliverySchemeList" ng-model="data.output.DeliverySchemeId" ng-change="DeliverySchemeChange(); Calculate()">
+                                <select class="calc-form__delivery-type calc-form__select time-line__input form-control dg-form-control ng-valid ng-touched ng-dirty ng-valid-parse" id="DeliveryType" ng-options="t.Value as t.Text for t in data.input.DeliverySchemeList" ng-model="data.output.DeliverySchemeId" ng-change="DeliverySchemeChange(); Calculate()">
                                     <option value="-1" style="display: none;">Тип доставки</option>
                                     <option value="string:1" label="Двері-Двері">Двері-Двері</option>
                                     <option value="string:3" label="Двері-Склад">Двері-Склад</option>

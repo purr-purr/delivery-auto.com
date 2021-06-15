@@ -3794,7 +3794,10 @@ details > summary {
 #popup-express-add_background,
 #popup-courier-add-error_background,
 #popup-courier-approve_background,
-#popup-after-pay_background {
+#popup-after-pay_background,
+
+#popup-calc-create-address_background, 
+#popup-calc-create-client_background {
     opacity: .9 !important;
 }
 
@@ -3817,7 +3820,10 @@ details > summary {
 .popup-express-add_close span,
 .popup-courier-add-error_close span,
 .popup-courier-approve_close span,
-.popup-after-pay_close span {
+.popup-after-pay_close span,
+
+.popup-calc-create-address_close span,
+.popup-calc-create-client_close span {
     display: none;
 }
 
@@ -3840,7 +3846,10 @@ details > summary {
 .popup-express-add_close,
 .popup-courier-add-error_close,
 .popup-courier-approve_close,
-.popup-after-pay_close {
+.popup-after-pay_close,
+
+.popup-calc-create-address_close,
+.popup-calc-create-client_close {
     position: absolute;
     top: 50px;
 	right: 60px;

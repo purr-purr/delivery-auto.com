@@ -141,3 +141,17 @@ $('#popup-after-pay').popup({
     closebutton: true,
     escape: false
 });
+
+// pop up  Расширенный Калькулятор, Добавление нового Адресса
+$('#popup-calc-create-address').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
+
+// pop up  Расширенный Калькулятор, Создание нового получателя
+$('#popup-calc-create-client').popup({
+    pagecontainer: 'body',
+    closebutton: true,
+    escape: false
+});
