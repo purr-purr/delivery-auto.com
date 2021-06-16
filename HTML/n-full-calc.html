@@ -25,6 +25,7 @@
     </head>
 
     <body>
+
         <!--========== HEADER ==========-->
         <header id="included__main-navigation" class="main-navigation"></header>
         <!--========== \END HEADER ==========-->
@@ -303,12 +304,96 @@
                                 <div class="tariff-category tariff-category--example-clone">
                                     <h4 class="calc-form__group-title">Категорія тарифу</h4>
 
-                                    <select class="tariff-category__pick-category time-line__input">
-                                        <option value="number:74" label="Вантаж" selected="selected" id="tariff-category--cargo">Вантаж</option>
-                                        <option value="number:75" label="Палети" id="tariff-category--pallets">Палети</option>
-                                        <option value="number:73" label="Посилки і документи" id="tariff-category--documents">Посилки і документи</option>
-                                        <option value="number:76" label="Галузеві тарифи" id="tariff-category--industry">Галузеві тарифи</option>
-                                    </select>
+                                    <div class="pick-category__wrapper">
+                                        <select class="pick-category time-line__input">
+                                            <option value="number:74" label="Вантаж" selected="selected" id="tariff-category--cargo">Вантаж</option>
+                                            <option value="number:75" label="Палети" id="tariff-category--pallets">Палети</option>
+                                            <option value="number:73" label="Посилки і документи" id="tariff-category--documents">Посилки і документи</option>
+                                            <option value="number:76" label="Галузеві тарифи" id="tariff-category--industry">Галузеві тарифи</option>
+                                        </select>
+
+                                        <div class="calc-alert calc-alert--cargo">
+                                            <div class="calc-alert__btn">
+                                                <img src="img/system/icon/calc/calc-alert-icon.svg" alt="alert icon">
+                                            </div>
+
+                                            <div class="calc-alert__popup-item">
+                                                <table style="margin-bottom: 20px;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2">Висота палети до 1 м.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Розмір:</td>
+                                                            <td>до 300 кг </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td></td><td>до 400 кг </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2">Висота палети до 2 м.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Розмір:</td>
+                                                            <td>до 500 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 600 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 700 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 800 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 900 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 1000 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 1100 кг </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td></td><td>до 1250 кг </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="calc-alert calc-alert--documents">
+                                            <div class="calc-alert__btn">
+                                                <img src="img/system/icon/calc/calc-alert-icon.svg" alt="alert icon">
+                                            </div>
+
+                                            <div class="calc-alert__popup-item">
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th colspan="2">Метод розрахунку: за об’ємом.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td colspan="2" style="text-align: center;">Тарим за 1 м3 = 836 грн</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <ul class="select-option select-option--cargo active">
                                         <li class="select-option__item">
@@ -317,7 +402,7 @@
                                         </li>
 
                                         <li class="select-option__item">
-                                            <label for="">Довжина,см</label>
+                                            <label for="">Довжина, см</label>
                                             <input class="form-control dg-form-control delivery_calc_light_gray ng-pristine ng-valid ng-touched" type="number" ng-model="eg.Length" ng-blur="SizeChange(eg)">
                                         </li>
 
@@ -1124,7 +1209,7 @@
                                 <div class="last-btn-group hide-in-express">
                                     <a href="javascript:void()" class="main-btn" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null" ng-click="SaveAsTempReceipt()">Створити квитанцію</a>
 
-                                    <a href="javascript:void()" class="main-btn main-btn--white" style="margin-left: 30px;" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null &amp;&amp; (data.output.DeliverySchemeId == 0 || data.output.DeliverySchemeId == 2)" ng-click="SaveAsTempReceiptInMoment()">Оформити миттєво</a>
+                                    <a href="javascript:void()" class="main-btn main-btn--white" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null &amp;&amp; (data.output.DeliverySchemeId == 0 || data.output.DeliverySchemeId == 2)" ng-click="SaveAsTempReceiptInMoment()">Оформити миттєво</a>
                                 </div>
                             </div>
                         </form>

@@ -30,6 +30,10 @@ input[readonly="readonly"]:active {
     border-color: #DADADA;
 }
 
+.main-btn {
+    text-align: center;
+}
+
 /* Хедер страницы */
 .page-header {
 	background: #fff url("../img/system/page-header/page-header__calc.jpg") no-repeat;
@@ -46,7 +50,7 @@ input[readonly="readonly"]:active {
 }
 
 .mob-app-block__icon {
-    max-width: 140px;
+    max-width: 100px;
     min-width: 90px;
     width: 100%;
     margin-right: 5px;
@@ -61,6 +65,7 @@ input[readonly="readonly"]:active {
 .mob-app-block__text {
     font-weight: bold;
     max-width: 250px;
+    margin: auto 0;
 }
 
 .mob-app-block__link-group {
@@ -210,7 +215,6 @@ input[readonly="readonly"]:active {
     top: 8px;
 }
 
-
 /* Calc common */
 .calc-form {
     width: 870px;
@@ -247,7 +251,6 @@ input[readonly="readonly"]:active {
     font-size: 16px;
     line-height: 20px;
 }
-
 
 .calc-form__line {
     width: 100%;
@@ -295,7 +298,8 @@ input[readonly="readonly"]:active {
         width: 100%;
         padding-left: 0;
     }
-    .calc-form::before {
+    .calc-form::before,
+    .calc-form::after {
         display: none;
     }
     .calc-form__group-title {
@@ -491,7 +495,6 @@ input[readonly="readonly"]:active {
 .calc-type-cargo__item--active:hover {
     color: #333;
 }
-
 
 @media (max-width: 1024px) {
     .calc-type-cargo {
@@ -1276,7 +1279,6 @@ input[readonly="readonly"]:active {
     margin-top: -5px;
 }
 
-
 @media (max-width: 1024px) {
     /* Галузеві тарифи */
     .sectoral-tariffs {
@@ -1321,16 +1323,6 @@ input[readonly="readonly"]:active {
     .sectoral-tariffs__line .checkbox--before {
         margin-right: 15px;
     }
-
-    /* Sectoral Tariffs in 2 line */
-    /* .sectoral-tariffs__line .checkbox--two-line input[type=checkbox] + label:before {
-        margin: 15px 15px 0 0;
-    }
-
-    .checkbox--two-line .checkbox__desc {
-        padding-left: 40px;
-        margin-top: -5px;
-    } */
 }
 
 
@@ -1447,7 +1439,6 @@ input[readonly="readonly"]:active {
     display: none;
 }
 
-
 /* Express block */
 .calc-express {
     display: flex;
@@ -1482,7 +1473,6 @@ input[readonly="readonly"]:active {
 .calc-express__type-item input {
     margin-right: 15px;
 }
-
 
 .calc-express__item input {
     width: 90px;
@@ -1615,6 +1605,11 @@ input[readonly="readonly"]:active {
 
 /* Выбор Категории */
 
+.tariff-category__wrapper {
+    max-width: 805px;
+    width: 100%;
+}
+
 .tariff-category {
     padding: 30px 20px;
     background-color: #F8F8F8;
@@ -1623,9 +1618,72 @@ input[readonly="readonly"]:active {
     position: relative;
 }
 
-.tariff-category__pick-category {
+.pick-category__wrapper {
+    display: flex;
+}
+
+.pick-category {
     margin-bottom: 18px;
     font-weight: 600;
+    max-width: 387px;
+    width: 100%;
+}
+
+/* Алерт */
+.calc-alert {
+    position: relative;
+    margin-left: 50px;
+    display: none;
+}
+
+.calc-alert--cargo {
+    display: block;
+}
+
+.calc-alert__btn {
+    width: 30px;
+    height: 28px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.calc-alert__btn img {
+    width: 100%;
+}
+
+.calc-alert__popup-item {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: -252px;
+    width: 240px;
+    background-color: #FC6868;
+    border-radius: 5px;
+    padding: 20px 30px;
+}
+
+.calc-alert__popup-item::before {
+    content: " ";
+    position: absolute;
+    bottom: 18px;
+    left: -11px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 16px solid #FC6868;
+    border-bottom: 8px solid transparent;
+}
+
+.calc-alert__popup-item table {
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.calc-alert__popup-item th {
+    font-weight: normal;
 }
 
 /* Кнопка удалить блок */
@@ -1647,8 +1705,8 @@ input[readonly="readonly"]:active {
 /* Ввод параметров груза */
 .select-option {
     display: none;
-    justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .select-option.hide {
@@ -1665,7 +1723,7 @@ input[readonly="readonly"]:active {
 
 .select-option__item {
     width: min-content;
-    margin-right: 10px;
+    margin-right: 15px;
     margin-bottom: 20px;
 }
 
@@ -1708,7 +1766,17 @@ input[readonly="readonly"]:active {
     margin-bottom: 10px;
 }
 
-
+@media (max-width: 500px) {
+    /* .select-option__item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0;
+    } */
+    .select-option__item input {
+        width: 125px;
+    }
+}
 
 /* Доп. Услуги */
 .additional-option .calc-form__group-title {
@@ -1718,16 +1786,20 @@ input[readonly="readonly"]:active {
 .additional-option__inner {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .additional-option__pick-option {
     display: none;
-    margin-right: 15px;
+    margin: 10px 15px 20px 0;
+    max-width: 387px;
+    width: 100%;
 }
 
 .additional-option__pick-option--ticket {
-    margin-right: 15px;
+    margin: 10px 15px 20px 0;
+    max-width: 387px;
+    width: 100%;
 }
 
 .additional-option__pick-option.active {
@@ -1737,11 +1809,13 @@ input[readonly="readonly"]:active {
 .additional-option__list {
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .additional-option__item {
     width: 94px;
     margin-right: 15px;
+    margin-bottom: 20px;
 }
 
 .additional-option__item:last-child {
@@ -1753,10 +1827,9 @@ input[readonly="readonly"]:active {
     margin-top: 10px;
 }
 
-
 /* ДУ квитанции */
 .additional-option--ticket .additional-option__inner{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 /* Кнопка добавить категорию */
@@ -1773,9 +1846,14 @@ input[readonly="readonly"]:active {
 
 .full-calc__btn-group {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .full-calc__btn-group a:first-child {
+    margin-right: 30px;
+}
+
+.full-calc__btn-group .main-btn {
     margin-right: 30px;
 }
 
@@ -1785,7 +1863,8 @@ input[readonly="readonly"]:active {
     width: fit-content;
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    margin-right: 30px;
+    white-space: nowrap;
 }
 
 .calc-form__text-btn img {
@@ -1796,6 +1875,14 @@ input[readonly="readonly"]:active {
 
 .calc-form__text-btn:hover {
     color: #ffd500;
+}
+
+@media (max-width: 1024px) {
+    .full-calc__btn-group .main-btn,
+    .full-calc__btn-group .calc-form__text-btn {
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
 
 /* Блок добавление дополнительной инфы, для залогиненых пользователей */
@@ -1824,7 +1911,7 @@ input[readonly="readonly"]:active {
 	background-color: #F0F5F9;
 	border-radius: 5px;
     outline: 0;
-    padding-left: 30px;
+    padding: 0 70px 0 30px;
 }
 
 .add-info__item summary:after {
@@ -1847,11 +1934,10 @@ input[readonly="readonly"]:active {
     transition: transform .5s linear;
 }
 
-
-
-
-
-
+.add-info__heading h3 {
+    font-size: 20px;
+    line-height: 24px;
+}
 
 .add-info__line {
     display: flex;
@@ -1900,7 +1986,7 @@ input[readonly="readonly"]:active {
     margin-right: 30px;
 }
 
-.add-info__date-item input{
+.add-info__date-item input {
     width: 178px;
 }
 
@@ -1925,6 +2011,30 @@ input[readonly="readonly"]:active {
     width: 283px;
 }
 
+@media (max-width: 1024px) {
+    .add-info__item summary {
+        height: 50px;
+        margin-bottom: 15px;
+        padding: 0 60px 0 10px;
+    }
+    .add-info__item summary:after {
+        right: 10px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        background-size: 10px;
+    }
+    .add-info__item[open] summary:after {
+        background-size: 10px;
+    }
+    .add-info__heading h3 {
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+/* Кнопка "Создать" */
 .create-btn {
     display: flex;
     align-items: center;
@@ -1954,7 +2064,6 @@ input[readonly="readonly"]:active {
     margin-right: 10px;
 }
 
-
 .radio-btn__group {
     display: flex;
 }
@@ -1975,8 +2084,6 @@ input[readonly="readonly"]:active {
     margin-right: 15px;
     height: 20px;
 }
-
-
 
 .add-info__create-receipt {
     max-width: 730px;
@@ -2008,9 +2115,23 @@ input[readonly="readonly"]:active {
 /* Последняя группа кнопок в Расширенном Калькуляторе */
 .last-btn-group {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.last-btn-group a,
+.last-btn-group .main-btn {
     margin-bottom: 30px;
 }
 
+@media (max-width: 1024px) {
+    .last-btn-group .calc-form__text-btn {
+        order: -1;
+    }
+}
+
+.last-btn-group .main-btn:first-child {
+    margin-right: 30px;
+}
 
 .calc-create-address__line {
     display: flex;
@@ -2038,12 +2159,7 @@ input[readonly="readonly"]:active {
     flex-grow: 1;
 }
 
-
-
-
-
 /* Поп-ап создание  нового получателя */
-
 #popup-calc-create-client .popup-main {
     padding-left: 40px;
     padding-right: 40px;
@@ -2102,7 +2218,6 @@ input[readonly="readonly"]:active {
     margin-right: 30px;
 }
 
-
 .network_trading_list {
     max-width: 535px;
     width: 100%;
@@ -2134,6 +2249,10 @@ input[readonly="readonly"]:active {
     font-weight: 600;
 }
 
+.network_trading_name label {
+    cursor: pointer;
+}
+
 .search_input_tn {
     width: 100%;
     background: url('https://delivery-auto.com/Images/Calculation/ic_search.png') no-repeat;
@@ -2152,14 +2271,11 @@ input[readonly="readonly"]:active {
     display: none;
 }
 
-
 .calc-create-client__fiz-face.active,
 .calc-create-client__yur-face.active,
 .calc-create-client__company.active {
     display: block;
 }
-
-
 
 .show-in-express {
     display: none;
@@ -2178,5 +2294,14 @@ input[readonly="readonly"]:active {
 .calc-form__label--express-date {
     margin: 0 10px 0 auto;
 }
+
+
+
+
+
+
+
+
+
 
 

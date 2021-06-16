@@ -135,12 +135,6 @@ $(".calc-form__delivery-type").change(function () {
 
 
 
-// Клонирование блока "Категорія тарифу" при клике на кнопку
-// document.querySelector(".add-category-btn").addEventListener("click", function() {
-//     document.querySelector(".tariff-category__wrapper").appendChild(document.querySelector(".tariff-category").cloneNode(true));
-// });
-
-
 // Блок "Категорія тарифу"
 var cloneCount = 1;
 var cloneBlock = $(".tariff-category--example-clone")
@@ -170,37 +164,43 @@ $('.add-category-btn').on('click', function(event){
 
 
 
-
-
 // Поменять if по value
-$('body').on('change', '.tariff-category__pick-category', function() {
+$('body').on('change', '.pick-category', function() {
     var hideBlocks = $(this).siblings('.select-option, .additional-option__pick-option').removeClass('active')
+    var hideAlerts = $('.calc-alert--documents, .calc-alert--cargo').css('display', 'none');
 
-    if( $("option#tariff-category--cargo:selected").length ) 
-    {
+    if( $("option#tariff-category--cargo:selected").length ) {
         hideBlocks;
+        hideAlerts;
         $(this).siblings('.select-option--cargo, .additional-option__pick-option--cargo').addClass('active');
+        $('.calc-alert--cargo').css('display', 'block');
     }
-    if( $("option#tariff-category--pallets:selected").length )
-    {
+
+    if( $("option#tariff-category--pallets:selected").length ) {
         hideBlocks;
+        hideAlerts;
         $(this).siblings('.select-option--pallets, .additional-option__pick-option--pallets').addClass('active');
     }
-    if( $("option#tariff-category--documents:selected").length )
-    {
+
+    if( $("option#tariff-category--documents:selected").length ) {
         hideBlocks;
+        hideAlerts;
         $(this).siblings('.select-option--documents, .additional-option__pick-option--documents').addClass('active');
+        $('.calc-alert--documents').css('display', 'block');
     }
-    if( $("option#tariff-category--industry:selected").length )
-    {
+
+    if( $("option#tariff-category--industry:selected").length ) {
         hideBlocks;
+        hideAlerts;
         $(this).siblings('.select-option--industry-tariffs, .additional-option__pick-option--industry').addClass('active');
     }
 });
 
 
 
+// Только Расширенный калькулятор. Додаткові послуги. Послуга заборона видачі
 
+// id карта или паспорт
 $("#select-type-document").change(function() {
     if ($(this).prop("checked")) {
         $('.document-type--id-card').css("display", "flex");
@@ -210,7 +210,6 @@ $("#select-type-document").change(function() {
         $('.document-type--passport').css("display", "flex"); 
     }
 });
-
 
 function choiceFace() {
     if ($("#yur-face").prop("checked")) {
@@ -222,8 +221,6 @@ function choiceFace() {
         $('.select-fiz-face').css("display", "flex");
     }
 }
-
-
 
 
 
@@ -250,12 +247,7 @@ $("#choice-btn-company").change(function() {
 });
 
 
-
-
-
-
-
-
+// Только Расширенный калькулятор. Калькулятор Експресс доставки
 $("#DeliveryType").change(function () {
     if( $("option#full-calc-express:selected").length )
     {
@@ -263,7 +255,15 @@ $("#DeliveryType").change(function () {
         $('.show-in-express').css('display', 'flex');
     }
     else {
-        $('.hide-in-express').css('display', 'flex');;
+        $('.hide-in-express').css('display', 'flex');
         $('.show-in-express').css('display', 'none');
     }
+});
+
+
+// Анимация появления Алерта в Расширенном калькуляторе
+$(document).ready(function(){
+    $(".calc-alert").click(function(){ 
+        $(this).children('.calc-alert__popup-item').fadeIn(1000).delay(5000).fadeOut(1000);
+    });
 });
