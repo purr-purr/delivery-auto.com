@@ -2231,6 +2231,11 @@ input[type="radio"] {
     margin-bottom: 30px;
 }
 
+.last-btn-group--no-margin a,
+.last-btn-group--no-margin .main-btn {
+    margin-bottom: 0;
+}
+
 @media (max-width: 1024px) {
     .last-btn-group .calc-form__text-btn {
         order: -1;
@@ -2242,6 +2247,10 @@ input[type="radio"] {
     .document-type {
         margin-left: 0;
         margin-top: 20px;
+    }
+    .last-btn-group--no-margin a,
+    .last-btn-group--no-margin .main-btn {
+        margin-bottom: 30px;
     }
 }
 

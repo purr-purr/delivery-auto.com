@@ -1206,10 +1206,10 @@
                                     </a>
                                 </div>
 
-                                <div class="last-btn-group hide-in-express">
-                                    <a href="javascript:void()" class="main-btn" style="margin-bottom: 0;" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null" ng-click="SaveAsTempReceipt()">Створити квитанцію</a>
+                                <div class="last-btn-group last-btn-group--no-margin hide-in-express">
+                                    <a href="javascript:void()" class="main-btn" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null" ng-click="SaveAsTempReceipt()">Створити квитанцію</a>
 
-                                    <a href="javascript:void()" class="main-btn main-btn--white" style="margin-bottom: 0;" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null &amp;&amp; (data.output.DeliverySchemeId == 0 || data.output.DeliverySchemeId == 2)" ng-click="SaveAsTempReceiptInMoment()">Оформити миттєво</a>
+                                    <a href="javascript:void()" class="main-btn main-btn--white" ng-show="tempreceipt.TempReceiptId==null &amp;&amp; tempreceipt.TempPickUpId == null &amp;&amp; (data.output.DeliverySchemeId == 0 || data.output.DeliverySchemeId == 2)" ng-click="SaveAsTempReceiptInMoment()">Оформити миттєво</a>
                                 </div>
                             </div>
                         </form>
