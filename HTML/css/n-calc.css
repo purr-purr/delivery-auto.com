@@ -1967,6 +1967,13 @@ input[readonly="readonly"]:active {
     transition: transform .5s linear;
 }
 
+.add-info__heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .add-info__heading h3 {
     font-size: 20px;
     line-height: 24px;
