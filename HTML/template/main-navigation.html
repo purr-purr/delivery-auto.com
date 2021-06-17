@@ -1,6 +1,6 @@
 <div class="main-navigation" id="scrollup">
 	<div class="container--nav">
-		<nav id="only-desctop" class="nav" role="navigation">
+		<nav class="nav" role="navigation">
 			<ul class="nav__ul">
 				<li class="nav__li">
 					<p class="nav__title">Компанія</p>
@@ -95,11 +95,10 @@
 
 		<!-- Only mobile Nav (after 800px) -->
 
-		<div class="nav-mobile__wrapper">
+		<!-- <div class="nav-mobile__wrapper">
 			<div id="nav-mobile">
 				<div id="menu-wrapper">
 					<div id="hamburger-menu"><span></span><span></span><span></span></div>
-					<!-- hamburger-menu -->
 				</div>
 				<ul class="menu-list accordion">
 					<li id="nav1" class="toggle accordion-toggle"> 
@@ -224,45 +223,6 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
-
-
-<script>
-	// Открытие мобильного Гамбургер меню
-	$(function() {
-		function slideMenu() {
-			var activeState = $("#nav-mobile .menu-list").hasClass("active");
-			$("#nav-mobile .menu-list").animate({left: activeState ? "0%" : "-100%"}, 400);
-		}
-		$("#menu-wrapper").click(function(event) {
-			event.stopPropagation();
-			$("#hamburger-menu").toggleClass("open");
-			$("#nav-mobile .menu-list").toggleClass("active");
-			slideMenu();
-
-			$("body").toggleClass("overflow-hidden");
-		});
-
-		$(".menu-list").find(".accordion-toggle").click(function() {
-			$(this).next().toggleClass("open").slideToggle("fast");
-			$(this).toggleClass("active-tab").find(".menu-link").toggleClass("active");
-
-			$(".menu-list .accordion-content").not($(this).next()).slideUp("fast").removeClass("open");
-			$(".menu-list .accordion-toggle").not(jQuery(this)).removeClass("active-tab").find(".menu-link").removeClass("active");
-		});
-	});
-	
-	// При открытии Моб.Меню -- закрывать меню ЛК
-	$("#menu-wrapper").on('click', function(e){
-		$(".sub-nav__user-panel").removeAttr("open");
-	})
-
-	// При открытии меню ЛК -- закрывать Моб.меню
-	$(".sub-nav__user-panel").on('click', function(e){
-		$("#hamburger-menu").removeClass("open");
-		$(".menu-list").removeClass("active");
-		$(".menu-list").css('left', '-100%');
-	})
-</script>

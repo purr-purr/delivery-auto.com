@@ -805,8 +805,14 @@ details > summary {
 }
 
 /* Mobile Nav */
+
+.mega-menu {
+	height: 50px;
+	background-color: #333;
+}
+
 #menu-wrapper {
-	display: none;
+	/* display: none; */
     overflow: hidden;
     max-width: 100%;
     cursor: pointer;
@@ -980,7 +986,8 @@ details > summary {
 }
 
 .nav-mobile__wrapper {
-	display: none;
+	display: flex;
+	align-items: center;
 }
 
 .sub-nav {
@@ -1148,6 +1155,7 @@ details > summary {
 		display: block;
 	}
 	.main-navigation {
+		display: none;
 		height: 50px;
 		background-color: #333;
 	}
