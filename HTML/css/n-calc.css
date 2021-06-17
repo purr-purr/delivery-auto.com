@@ -155,7 +155,6 @@ input[type="radio"] {
 	.calulate-nav__item {
 		font-size: 13px;
 		flex-direction: column;
-        padding: 0 10px;
 	}
 }
 
