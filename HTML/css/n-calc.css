@@ -2315,7 +2315,7 @@ input[readonly="readonly"]:active {
 }
 
 .calc-create-client__item input {
-    height: fit-content;
+    height: 14px;
     margin-right: 15px;
 }
 
