@@ -7,6 +7,9 @@ $(document).ready(function(){
     });
 });
 
+
+
+
 // Для страницы ДУ
 // Фильтер для "Тарифи на додаткові послуги"
 $('.sort-item--type-service').on('click', function(event){
@@ -22,6 +25,7 @@ $('.sort-item--type-cargo').on('click', function(event){
     $('.sort-item--type-service').removeClass('sort-item--active');
     $('.services-group--type-service').removeClass('services-group--active');
 });
+
 
 
 // Для Light и Расширеного
@@ -98,11 +102,16 @@ $('.calc-type-cargo__sectoral').on('click', function(event){
     $('.calc-form__group-title').removeClass('hide');
 });
 
+
+
+
 // Для Light и Расширеного
 // Появление инпута "Послеплаты"
 $('#t6').on('change', function() {
     $('.after-pay-acc').toggleClass('after-pay-acc__hide', this.value);
 });
+
+
 
 
 // Только для Light Calc
@@ -151,11 +160,15 @@ $('body').on('click', '.delete-btn', function() {
     }
 });
 
+
+
+
 // Клонирование блока "Категорія тарифу"
 $('.add-category-btn').on('click', function(event){
     if(tariffCategoryCount < 5) {
         cloneBlock.clone().removeClass("tariff-category--example-clone").attr('id', 'tariff-category--clone-'+ cloneCount++).appendTo(".tariff-category__wrapper");
         tariffCategoryCount++;
+        $('.calc-alert__popup-item').fadeOut(1);
     }
     if(tariffCategoryCount == 5) {
         $('.add-category-btn').css("display", "none");
@@ -166,40 +179,50 @@ $('.add-category-btn').on('click', function(event){
 
 // Поменять if по value
 $('body').on('change', '.pick-category', function() {
-    var hideBlocks = $(this).siblings('.select-option, .additional-option__pick-option').removeClass('active')
+    var hideBlocks = $(this).parents('.tariff-category').children('.select-option, .additional-option__pick-option').removeClass('active')
     var hideAlerts = $('.calc-alert--documents, .calc-alert--cargo').css('display', 'none');
 
     if( $("option#tariff-category--cargo:selected").length ) {
         hideBlocks;
         hideAlerts;
-        $(this).siblings('.select-option--cargo, .additional-option__pick-option--cargo').addClass('active');
+        $(this).parents('.tariff-category').children('.select-option--cargo, .additional-option__pick-option--cargo').addClass('active');
         $('.calc-alert--cargo').css('display', 'block');
     }
 
     if( $("option#tariff-category--pallets:selected").length ) {
         hideBlocks;
         hideAlerts;
-        $(this).siblings('.select-option--pallets, .additional-option__pick-option--pallets').addClass('active');
+        $(this).parents('.tariff-category').children('.select-option--pallets, .additional-option__pick-option--pallets').addClass('active');
     }
 
     if( $("option#tariff-category--documents:selected").length ) {
         hideBlocks;
         hideAlerts;
-        $(this).siblings('.select-option--documents, .additional-option__pick-option--documents').addClass('active');
+        $(this).parents('.tariff-category').children('.select-option--documents, .additional-option__pick-option--documents').addClass('active');
         $('.calc-alert--documents').css('display', 'block');
     }
 
     if( $("option#tariff-category--industry:selected").length ) {
         hideBlocks;
         hideAlerts;
-        $(this).siblings('.select-option--industry-tariffs, .additional-option__pick-option--industry').addClass('active');
+        $(this).parents('.tariff-category').children('.select-option--industry-tariffs, .additional-option__pick-option--industry').addClass('active');
     }
 });
 
 
 
-// Только Расширенный калькулятор. Додаткові послуги. Послуга заборона видачі
 
+// Анимация появления Алерта в Расширенном калькуляторе
+$(document).ready(function(){
+    $(".calc-alert").click(function(){ 
+        $(this).children('.calc-alert__popup-item').fadeIn(1000).delay(5000).fadeOut(1000);
+    });
+});
+
+
+
+
+// Только Расширенный калькулятор. Додаткові послуги. Послуга заборона видачі
 // id карта или паспорт
 $("#select-type-document").change(function() {
     if ($(this).prop("checked")) {
@@ -221,6 +244,7 @@ function choiceFace() {
         $('.select-fiz-face').css("display", "flex");
     }
 }
+
 
 
 
@@ -247,6 +271,8 @@ $("#choice-btn-company").change(function() {
 });
 
 
+
+
 // Только Расширенный калькулятор. Калькулятор Експресс доставки
 $("#DeliveryType").change(function () {
     if( $("option#full-calc-express:selected").length )
@@ -261,9 +287,3 @@ $("#DeliveryType").change(function () {
 });
 
 
-// Анимация появления Алерта в Расширенном калькуляторе
-$(document).ready(function(){
-    $(".calc-alert").click(function(){ 
-        $(this).children('.calc-alert__popup-item').fadeIn(1000).delay(5000).fadeOut(1000);
-    });
-});

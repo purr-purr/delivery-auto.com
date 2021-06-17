@@ -1,28 +1,12 @@
 /* ======================================================
-//   Стили для страницы Light Калькулятор
+//   Стили для страницы Калькулятор
 ========================================================= */
-
-
-
-
-/* Временый стиль, при переносе можно удалить */
-
-/* .main-btn {
-    white-space: nowrap;
-} */
-
-
-
-
-
-
 
 
 /* Убрать если нужно подсвечивать красным инпуты с аттрибутом "requided" */
 input:required { 
     border-color: #DADADA;
 }
-
 
 /* Убирает стили фокуса на инпуте. С доступом "только чтение" */
 input[readonly="readonly"]:focus,
@@ -88,7 +72,6 @@ input[readonly="readonly"]:active {
     max-width: 100%;
     height: auto;
 }
-
 
 @media (max-width: 600px) {
     .mob-app-block {
@@ -842,13 +825,15 @@ input[readonly="readonly"]:active {
 }
 
 .calc-result__item p:last-child {
-    width: 110px;
+    max-width: 110px;
+    width: 100%;
     text-align: end;
     white-space: nowrap;
 }
 
 .calc-result__quantity {
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .calc-result__title {
@@ -951,6 +936,9 @@ input[readonly="readonly"]:active {
     .calc-result .calc-footer__notice-item {
         align-items: flex-start;
         margin-bottom: 0;
+    }
+    .calc-result__item p:last-child {
+        max-width: 90px;
     }
 }
 
@@ -1325,7 +1313,6 @@ input[readonly="readonly"]:active {
     }
 }
 
-
 @media (max-width: 650px) {
     .sectoral-tariffs__line {
         flex-direction: column;
@@ -1584,7 +1571,6 @@ input[readonly="readonly"]:active {
 }
 
 /* Full Calc start here */
-
 .calc-form__warehouse-select {
     display: flex;
     align-items: center;
@@ -1598,9 +1584,17 @@ input[readonly="readonly"]:active {
     display: block;
     width: 30px;
     height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     background: url('../img/system/icon/calc/map_icon.png') no-repeat center;
     background-size: 100%;
     margin-left: 5px;
+}
+
+@media (max-width: 370px) {
+    .calc-form__warehouse-select select {
+        width: 100%;
+    }
 }
 
 /* Выбор Категории */
@@ -1702,6 +1696,25 @@ input[readonly="readonly"]:active {
     display: none;
 }
 
+@media (max-width: 800px) {
+    .calc-alert__popup-item {
+        bottom: 0;
+        left: -252px;
+    }
+    .calc-alert__popup-item::before {
+        bottom: 25px;
+        right: -11px;
+        left: auto;
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .calc-alert {
+        margin-left: 30px;
+    }
+}
+
 /* Ввод параметров груза */
 .select-option {
     display: none;
@@ -1767,14 +1780,21 @@ input[readonly="readonly"]:active {
 }
 
 @media (max-width: 500px) {
-    /* .select-option__item {
-        display: flex;
-        justify-content: space-between;
+    .select-option__item {
         width: 100%;
         margin-right: 0;
-    } */
+    }
     .select-option__item input {
-        width: 125px;
+        width: 150px;
+    }
+    .select-option__select-item,
+    .select-option--industry-tariffs .select-option__select-item,
+    .select-option--documents .select-option__select-item {
+        width: 100%;
+        max-width: 387px;
+    }
+    .select-option--pallets .select-option__select-item--small {
+        width: 150px;
     }
 }
 
@@ -1882,6 +1902,19 @@ input[readonly="readonly"]:active {
     .full-calc__btn-group .calc-form__text-btn {
         margin-bottom: 20px;
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .additional-option__list {
+        flex-direction: column;
+    }
+    .additional-option__item {
+        width: 150px;
+        margin-right: 0;
+    }
+    .additional-option__pick-option {
+        margin: 10px 0 20px;
     }
 }
 
@@ -2012,6 +2045,11 @@ input[readonly="readonly"]:active {
 }
 
 @media (max-width: 1024px) {
+    .add-info__line select,
+    .add-info__line input:not(input[type="radio"]) {
+        max-width: 387px;
+        width: 100%;
+    }
     .add-info__item summary {
         height: 50px;
         margin-bottom: 15px;
@@ -2031,6 +2069,65 @@ input[readonly="readonly"]:active {
         font-weight: normal;
         font-size: 15px;
         line-height: 20px;
+    }
+    .add-info__select--middle {
+        margin-left: 0;
+        width: 100%;
+        max-width: 387px;
+    }
+    .add-info__select--large,
+    .add-info__select--one-item {
+        max-width: 387px;
+        width: 100%;
+    }
+    .add-info__select--one-item {
+        margin-left: 0;
+    }
+    .add-info__line {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .add-info__label {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .add-info__line-title {
+        width: 170px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .add-info__date-item,
+    .add-info__contact-face {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .add-info__date-item:last-child,
+    .add-info__contact-face:last-child {
+        margin-bottom: 0;
+    }
+    .add-info__date-item input {
+        width: 200px;
+    }
+    .add-info__sub-title {
+        margin-bottom: 10px;
+    }
+    .add-info__comment {
+        width: 100%;
+        min-width: auto;
+    }
+    .add-info__line--contact-name input {
+        max-width: 283px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .add-info__date-item {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .add-info__line .calc-switch-btn__toggle {
+        margin-top: 10px;
     }
 }
 
@@ -2126,6 +2223,35 @@ input[readonly="readonly"]:active {
 @media (max-width: 1024px) {
     .last-btn-group .calc-form__text-btn {
         order: -1;
+    }
+    .create-btn {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .document-type {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .radio-btn__group {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .radio-btn__group label {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .select-fiz-face .calc-switch-btn {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .select-fiz-face .calc-switch-btn__toggle {
+        margin: 20px 0;
+        transform: rotate(90deg);
     }
 }
 
@@ -2295,13 +2421,54 @@ input[readonly="readonly"]:active {
     margin: 0 10px 0 auto;
 }
 
+@media (max-width: 800px) {
+    .calc-create-address__line {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .calc-create-address__line label {
+        margin-bottom: 10px;
+    }
+    #popup-calc-create-address .popup-main,
+    #popup-calc-create-client .popup-main {
+        padding: 60px 20px;
+    }
+    .popup-calc-create-address_close, .popup-calc-create-client_close {
+        top: 30px;
+        right: 30px;
+    }
+    .calc-create-client__nav {
+        flex-direction: column;
+    }
+}
 
-
-
-
-
-
-
-
-
-
+@media (max-width: 470px) {
+    #popup-calc-create-address .calc-create-address__input--large {
+        width: 230px;
+    }
+    #popup-calc-create-address .calc-create-address__input {
+        margin-bottom: 10px;
+        width: 230px;
+    }
+    .calc-create-client__line {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .calc-create-client__line label {
+        margin: 0 0 10px;
+        min-width: 180px;
+    }
+    .calc-create-client__btn-group {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .calc-create-client__btn-group .main-btn:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .network_trading_logo {
+        width: 85px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
