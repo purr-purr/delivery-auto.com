@@ -14,6 +14,10 @@ input[readonly="readonly"]:active {
     border-color: #DADADA;
 }
 
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+
 .main-btn {
     text-align: center;
 }
