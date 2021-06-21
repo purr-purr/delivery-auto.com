@@ -1,278 +1,570 @@
-<div class="nav-mobile__wrapper">
-	<div id="nav-mobile">
-		<div id="menu-wrapper">
-			<div id="hamburger-menu"><span></span><span></span><span></span></div>
-		</div>
-		<ul class="menu-list accordion">
-			<li id="nav1" class="toggle accordion-toggle"> 
-				<a class="menu-link" href="#">Компанія</a>
-			</li>
-			<ul class="menu-submenu accordion-content">
-				<li><a href="ko-about-group.html">Про групу компаній</a></li>
-				<li><a href="ko-advantages.html">Наші переваги</a></li>
-				<li><a href="ko-kpi.html">Індекси</a></li>
-				<li><a href="ko-partners.html">Партнери</a></li>
-				<li><a href="ko-news.html">Новини</a></li>
-				<li><a href="ko-mass-media.html">Прес-центр</a></li>
-				<li><a href="ko-franchising.html">Франчайзинг</a></li>
-				<li><a href="ko-сommercial-offers.html">Комерційні пропозиції</a></li>
-				<li><a href="ko-сounterparties.html">Контрагентам</a></li>
-				<li><a href="ko-tender.html">Тендер</a></li>
-				<li><a href="ko-job.html">Робота і кар’єра</a></li>
-				<li><a href="ko-service-center.html">Центр обслуговування клієнтів</a></li>
-			</ul>
-
-			<li id="nav2" class="toggle accordion-toggle"> 
-				<a class="menu-link" href="#">Клієнтам</a>
-			</li>
-			<ul class="menu-submenu accordion-content">
-				<li><a href="n-calc.html">Розрахувати вартість</a></li>
-				<li><a href="cl-services.html">Послуги</a></li>
-				<li><a href="cl-сourier-form.html">Забір / доставка вантажу</a></li>
-				<li><a href="cl-express-delivery.html">Експрес-доставка</a></li>
-				<li><a href="cl-hot-flights.html">Горячі рейси</a></li>
-				<li><a href="cl-action.html">Акції</a></li>
-				<li><a href="cl-delivery-time.html">Терміни доставки</a></li>
-				<li><a href="cl-packing-rules.html">Правила упаковки</a></li>
-				<li><a href="cl-finance-services.html">Фінансові послуги</a></li>
-				<li><a href="cl-program-loyalty.html">Програма лояльності</a></li>
-				<li><a href="cl-mob-app.html">Мобільний додаток</a></li>
-			</ul>
-
-			<li id="nav3" class="toggle accordion-toggle"> 
-				<a class="menu-link" href="#">Вартість</a>
-			</li>
-			<ul class="menu-submenu accordion-content">
-				<li><a href="co-tariff.html">Тарифи</a></li>
-				<li><a href="co-discount.html">Система знижок</a></li>
-				<li><a href="index.html">Додаткові послуги</a></li>
-			</ul>
-
-			<li id="nav4" class="toggle accordion-toggle"> 
-				<a class="menu-link" href="#">Документи</a>
-			</li>
-			<ul class="menu-submenu accordion-content">
-				<li><a href="co-documents.html">Шаблони і бланки</a></li>
-				<li><a href="co-documents-offerta.html">Договір публічної оферти</a></li>
-			</ul>
-
-			<li class="toggle accordion-toggle" id="no-arrow"> 
-				<a href="index.html">Відділення</a>
-			</li>
-
-			<li class="toggle accordion-toggle" id="no-arrow"> 
-				<a href="co-faq.html">Зв’язок та підтримка</a>
-			</li>
-
-			<li class="nav-mob-numbers" id="no-arrow"> 
-				<a class="nav-mob-numbers__item" href="tel:0800509509">
-					<div class="nav-mob-numbers__title">
-						<div class="nav-mob-numbers__icon">
-							<img src="../HTML/img/system/icon/phone.svg" alt="icon">
-						</div>
-						<p>Гаряча лінія</p>
-					</div>
-					<p class="nav-mob-numbers__tel" >0 800 509 509</p>
-				</a>
-
-				<a class="nav-mob-numbers__item" href="tel:0800509609">
-					<div class="nav-mob-numbers__title">
-						<div class="nav-mob-numbers__icon">
-							<img src="../HTML/img/system/icon/car.svg" alt="icon">
-						</div>
-						<p>Замовити забір/доставку</p>
-					</div>
-					<p class="nav-mob-numbers__tel">0 800 509 609</p>
-				</a>
-			</li>
-		</ul>
-	</div>
-	
-	<div class="sub-nav">
-		<a class="nav-mobile__logo" href="index.html">
-			<img src="img/system/delivery-group__logos/delGroup_logo.svg" alt="delivery group icon">
-		</a>
-
-		<!-- Быстрый старт -->
-		<div class="fast-start">
-			<div class="fast-start__open-btn">
-				<p>Швидкий старт</p>
+<!-- После переноса тэг header -- нужно раскоментить, он нужен -->
+<!-- <header class="mega-menu__wrapper"> -->
+	<nav class="mega-menu">
+		<div id="mega-menu__main-block">
+			<div id="humburger__wrapper">
+				<div id="humburger"><span></span><span></span><span></span></div>
 			</div>
-			
-			<ul class="fast-start__drop">
-				<li class="fast-start__drop-item"><a href="#">Викликати кур’єра</a></li>
-				<li class="fast-start__drop-item"><a href="#">Розрахувати вартість</a></li>
-				<li class="fast-start__drop-item"><a href="#">Знайти представництво</a></li>
+			<div class="menu-list">
+				<div class="m-main-nav">
+					<div class="m-main-nav__inner">
+						<div class="m-main-nav__colm">
+							<details class="m-main-nav__item" open>
+								<summary class="m-main-nav__summary">
+									<h3 class="m-main-nav__title">Компанія</h3>
+								</summary>
+								
+								<ul class="m-main-nav__drop">
+									<li class="m-main-nav__drop-item">
+										<a href="#">Про групу компаній</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
 
-				<hr class="user-panel__line">
+									<li class="m-main-nav__drop-item">
+										<a href="#">Прес-центр</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
 
-				<li class="fast-start__drop-item"><a href="#">Документообіг</a></li>
-				<li class="fast-start__drop-item"><a href="#">Службові розслідування</a></li>
-				<li class="fast-start__drop-item"><a href="#">Моя аналітика</a></li>
-			</ul>
-		</div>
+									<li class="m-main-nav__drop-item">
+										<a href="#">Франчайзинг</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
 
-		<!-- Меню ЛК -->
-		<div class="sub-nav__item">
-			<div class="sub-nav__user-panel">
-				<div class="sub-nav__icon">
-					<p>
-						Мій кабінет
-					</p>
-					<svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M12.6667 4.66733C12.6667 7.244 10.5773 9.334 8 9.334C5.42267 9.334 3.33333 7.244 3.33333 4.66733C3.33333 2.08933 5.42267 0 8 0C10.5773 0 12.6667 2.08933 12.6667 4.66733ZM11.6013 9.454C10.5973 10.212 9.352 10.6673 8 10.6673C6.64667 10.6673 5.40067 10.2107 4.39533 9.45267C1.68067 10.648 0 14.37 0 16H16C16 14.3847 14.2667 10.6627 11.6013 9.454Z" fill="white"/>
-					</svg>
+									<li class="m-main-nav__drop-item">
+										<a href="#">Робота і кар'єра</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Розробникам</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Контрагентам</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Тендер</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Наші переваги</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Індекси</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Партнери</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+									
+									<li class="m-main-nav__drop-item">
+										<a href="#">Комерційні пропозиції</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+									
+									<li class="m-main-nav__drop-item">
+										<a href="#">Центр обслуговування клієнтів</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+								</ul>
+							</details>
+
+							<a href="#" class="m-main-nav__item m-main-nav__title">Новини</a>
+
+							<a href="#" class="m-main-nav__item m-main-nav__title">Акції</a>
+						</div>
+
+						<div class="m-main-nav__colm">
+							<a href="#" class="m-main-nav__item m-main-nav__title">Відділення</a>
+
+							<a href="#" class="m-main-nav__item m-main-nav__title">Всі послуги</a>
+
+							<details class="m-main-nav__item" open>
+								<summary class="m-main-nav__summary">
+									<h3 class="m-main-nav__title">Клієнтам</h3>
+								</summary>
+								
+								<ul class="m-main-nav__drop">
+									<li class="m-main-nav__drop-item">
+										<a href="#">Розрахувати вартість</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Правила упаковки</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Забір/доставка</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Експрес доставка</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Пiсляплата</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Безпечна угода</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Гарячі рейси</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Терміни доставки</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Фінансові послуги</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Програма лояльності</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+									
+									<li class="m-main-nav__drop-item">
+										<a href="#">Мобільний додаток</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+								</ul>
+							</details>
+						</div>
+
+						<div class="m-main-nav__colm">
+							<details class="m-main-nav__item" open>
+								<summary class="m-main-nav__summary">
+									<h3 class="m-main-nav__title">Вартість</h3>
+								</summary>
+								
+								<ul class="m-main-nav__drop">
+									<li class="m-main-nav__drop-item">
+										<a href="#">Тарифи</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Система знижок</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Додаткові послуги</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+								</ul>
+							</details>
+
+							<details class="m-main-nav__item" open>
+								<summary class="m-main-nav__summary">
+									<h3 class="m-main-nav__title">Документи</h3>
+								</summary>
+								
+								<ul class="m-main-nav__drop">
+									<li class="m-main-nav__drop-item">
+										<a href="#">Шаблони і бланки </a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Договір публічної оферти</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+								</ul>
+							</details>
+
+							<details class="m-main-nav__item" open>
+								<summary class="m-main-nav__summary">
+									<h3 class="m-main-nav__title">Перевізникам</h3>
+								</summary>
+								
+								<ul class="m-main-nav__drop">
+									<li class="m-main-nav__drop-item">
+										<a href="#">Договiр Делiверi</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Договiр Делiверi-Авто</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Мої рейси</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Мій рейтинг</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Запропонувати авто</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+
+									<li class="m-main-nav__drop-item">
+										<a href="#">Вiльнi авто</a>
+										<span onclick="ToggleSelected(this, 77)" class="dg_star active"></span>
+									</li>
+								</ul>
+							</details>
+
+							<a href="#" class="m-main-nav__item m-main-nav__title">Зв'язок та підтримка</a>
+						</div>
+					</div>
+
+					<ul class="m-contacts">
+						<li class="m-contacts__item">
+							<p>Гаряча лiнiя</p>
+							<a class="m-contacts__number" href="tel:0800509509">0 800 509 509</a>
+							<p>Безкоштовний дзвінок по Україні.</p>
+							<p>З 8:00 до 20:00 по буднях,</p>
+							<p>з 9:00 до 17:00 - в суботу.</p>
+						</li>
+
+						<li class="m-contacts__item">
+							<p>Доставка та забирання вантажу</p>
+							<a class="m-contacts__number" href="tel:0800509609">0 800 509 609</a>
+							<p>Безкоштовний дзвінок по Україні.</p>
+							<p>З 9:00 до 19:00 по буднях, </p>
+							<p>з 9:00 до 15:00 - в суботу.</p>
+						</li>
+					</ul>
 				</div>
 				
-				<ul class="user-panel__drop">
-					<li class="user-panel__drop-item"><a href="#">Повідомлення</a></li>
-					<li class="user-panel__drop-item"><a href="#">Особистий кабiнет</a></li>
-					<li class="user-panel__drop-item"><a href="#">Профіль користувача</a></li>
-					<li class="user-panel__drop-item"><a href="#">Налаштування</a></li>
-					<li class="user-panel__drop-item"><a href="#">Бали лояльності</a></li>
-
-					<hr class="user-panel__line">
-
-					<li class="user-panel__drop-item"><a href="#">Мої документи</a></li>
-					<li class="user-panel__drop-item"><a href="#">Служба безпеки</a></li>
-					<li class="user-panel__drop-item"><a href="#">Моя аналітика</a></li>
-					<li class="user-panel__drop-item"><a href="#">Мої замовлення авто</a></li>
-
-					<hr class="user-panel__line">
-
-					<li class="user-panel__drop-item"><a href="#">Вийти</a></li>
-				</ul>
-			</div>
-
-			<div class="switch-lang">
-				<div class="switch-lang__btn dropdown-arrow">
-					<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-ukraine.svg" alt="ukraine">
-				</div>
-
-				<ul class="switch-lang__drop-list">
-					<li class="switch-lang__drop-item">
-						<a href="#">
-							<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-ukraine.svg" alt="ukraine">
+				<ul class="m-about-group">
+					<h3 class="m-about-group__block-title">Сайти групи компаній</h3>
+					<li class="m-about-group__item">
+						<a href="https://delivery-auto.com/" target="_blank" class="m-about-group__logo">
+							<img src="/HTML/img/system/delivery-group__logos/delauto-logo--small.jpg" alt="delivery">
 						</a>
+
+						<h4 class="m-about-group__title">Делівері</h4>
+						<p>Доставка вантажів по Україні. 
+							Від коробки до палети.</p>
 					</li>
 
-					<li class="switch-lang__drop-item">
-						<a href="#">
-							<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-russia.svg" alt="russia">
+					<li class="m-about-group__item">
+						<a href="https://deltruck.com/uk-ua" target="_blank" class="m-about-group__logo">
+							<img src="/HTML/img/system/delivery-group__logos/deltruck-logo--small.jpg" alt="DelTruck">
 						</a>
+
+						<h4 class="m-about-group__title">Делтрак</h4>
+						<p>Перевезення вантажів
+							повнофрахтованими єврофурами</p>
 					</li>
 
-					<li class="switch-lang__drop-item">
-						<a href="#">
-							<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-united-kingdom.svg" alt="united-kingdom">
+					<li class="m-about-group__item">
+						<a href="https://www.delivery-international.com/" target="_blank" class="m-about-group__logo">
+							<img src="/HTML/img/system/delivery-group__logos/delinter-logo--small.jpg" alt="Delivery International">
 						</a>
+
+						<h4 class="m-about-group__title">Делівері Інтернешнл</h4>
+						<p>Міжнародне перевезення вантажів.
+							Інтернет покупки Delivery-Shop</p>
+					</li>
+
+					<li class="m-about-group__item">
+						<a href="https://www.kvorum.com.ua/uk-ua" target="_blank" class="m-about-group__logo">
+							<img src="/HTML/img/system/delivery-group__logos/kvorum-logo--small.jpg" alt="Kvorum">
+						</a>
+
+						<h4 class="m-about-group__title">Кворум</h4>
+						<p>Страхування вашого життя,
+							а також вашого вантажу.</p>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</div>
-</div>
+		
+		<div class="sub-nav">
+			<a class="sub-nav__logo" href="index.html">
+				<img src="img/system/delivery-group__logos/delGroup_logo.svg" alt="delivery group icon">
+			</a>
+	
+			<!-- Быстрый старт -->
+			<div class="fast-start">
+				<div class="fast-start__open-btn dropdown-arrow">
+					<p>Швидкий старт</p>
+				</div>
+				
+				<ul class="fast-start__drop">
+					<li class="fast-start__drop-item call-courier"><a href="#">Викликати кур’єра</a></li>
+					<li class="fast-start__drop-item calculate"><a href="#">Розрахувати вартість</a></li>
+					<li class="fast-start__drop-item find-office"><a href="#">Знайти представництво</a></li>
+	
+					<hr class="user-panel__line">
+	
+					<li class="fast-start__drop-item">
+						<a href="#">Документообіг</a>
+						<span onclick="ToggleSelected(this,77)" class="dg_star active"></span>
+					</li>
+					<li class="fast-start__drop-item">
+						<a href="#">Службові розслідування</a>
+						<span onclick="ToggleSelected(this,77)" class="dg_star active"></span>
+					</li>
+					<li class="fast-start__drop-item">
+						<a href="#">Моя аналітика</a>
+						<span onclick="ToggleSelected(this,77)" class="dg_star active"></span>
+					</li>
+				</ul>
+			</div>
+	
+			<!-- Поиск -->
+			<div class="main-search">
+				<!-- Для Адаптива, Кнопка открытия поиска -->
+				<div class="main-search__icon main-search__icon--mobile-btn" onclick="openMobSearch();"></div>
 
+				<div class="main-search__inner">
+					<input type="text" class="main-search__input" placeholder="Введіть номер квитанції або текст">
+					<div class="main-search__icon" onclick="javascript: Search_new()"></div>
+				</div>
+			</div>
+	
+			<!-- Меню ЛК и Вход/Регистрация -->
+			<div class="sub-nav__inner">
+				<!-- Для незалогиненых -->
+				<div class="login-block">
+					<label class="login-block__login-btn" onclick="Login(this, false)">Увійти</label>
+					<label class="login-block__autorization-btn" onclick="Autorization(this, false)">Зареєструватися</label>
+				</div>
+	
+				<!-- Для залогиненых. Меню ЛК -->
+				<div style="display: none;" class="sub-nav__user-panel">
+					<div class="sub-nav__icon dropdown-arrow">
+						<p>
+							Мій кабінет
+						</p>
+	
+						<!-- если есть уведомления для ЛК, то сюда добавлять класс .user-panel__alert--active или вызывать функцию userPanelAddAlert().
+						что бы удалить иконку вызывать userPanelNoAlert() -->
+	
+						<!-- Стандартная иконка ЛК -->
+						<div style="display: none;" class="user-panel__alert">
+							<svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.6667 4.66733C12.6667 7.244 10.5773 9.334 8 9.334C5.42267 9.334 3.33333 7.244 3.33333 4.66733C3.33333 2.08933 5.42267 0 8 0C10.5773 0 12.6667 2.08933 12.6667 4.66733ZM11.6013 9.454C10.5973 10.212 9.352 10.6673 8 10.6673C6.64667 10.6673 5.40067 10.2107 4.39533 9.45267C1.68067 10.648 0 14.37 0 16H16C16 14.3847 14.2667 10.6627 11.6013 9.454Z" fill="white"/>
+							</svg>
+						</div>
+	
+						<!-- Кастомная иконка аватарки ЛК -->
+						<div class="user-panel__alert">
+							<img class="user-panel__avatar" src="/HTML/img/system/icon/mega-menu/avatar-example.jpg" alt="avatar">
+						</div>			
+					</div>
+					
+					<ul class="user-panel__drop">
+						<li class="user-panel__drop-item">
+							<a href="#">
+								Повідомлення
+								<div id="cnt_message_id" class="num_panel_stl">79</div>
+							</a>
+						</li>
+						<li class="user-panel__drop-item"><a href="#">Особистий кабiнет</a></li>
+						<li class="user-panel__drop-item"><a href="#">Профіль користувача</a></li>
+						<li class="user-panel__drop-item"><a href="#">Налаштування</a></li>
+						<li class="user-panel__drop-item">
+							<a href="#">
+								Бали лояльності
+								<div class="num_panel_stl">100</div>
+							</a>
+						</li>
+	
+						<hr class="user-panel__line">
+	
+						<li class="user-panel__drop-item"><a href="#">Мої документи</a></li>
+						<li class="user-panel__drop-item"><a href="#">Служба безпеки</a></li>
+						<li class="user-panel__drop-item"><a href="#">Моя аналітика</a></li>
+						<li class="user-panel__drop-item"><a href="#">Мої замовлення авто</a></li>
+	
+						<hr class="user-panel__line">
+	
+						<li class="user-panel__drop-item"><a href="#">Вийти</a></li>
+					</ul>
+				</div>
+	
+				<div class="switch-lang">
+					<div class="switch-lang__btn dropdown-arrow">
+						<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-ukraine.svg" alt="ukraine">
+					</div>
+	
+					<ul class="switch-lang__drop-list">
+						<li class="switch-lang__drop-item">
+							<a href="#">
+								<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-ukraine.svg" alt="ukraine">
+							</a>
+						</li>
+	
+						<li class="switch-lang__drop-item">
+							<a href="#">
+								<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-russia.svg" alt="russia">
+							</a>
+						</li>
+	
+						<li class="switch-lang__drop-item">
+							<a href="#">
+								<img src="/HTML/img/system/icon/mega-menu/mega-menu__flag-united-kingdom.svg" alt="united-kingdom">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-<script>
-	// МегаМеню
-	$(function() {
-		var mainMenu = $('#nav-mobile .menu-list');
-		var userPanel = $('.user-panel__drop');
-		var fastStartPanel = $('.fast-start__drop');
-		var switchLangPanel = $('.switch-lang__drop-list');
+	<script>
+		// МегаМеню
+		$(function() {
+			var mainMenu = $('#mega-menu__main-block .menu-list');
+			var userPanel = $('.user-panel__drop');
+			var fastStartPanel = $('.fast-start__drop');
+			var switchLangPanel = $('.switch-lang__drop-list');
 
-		var humburgerIcon = $('#hamburger-menu');
+			var humburgerIcon = $('#humburger');
 
-		// Открытие мобильного Гамбургер меню
-		function openMainMenu() {
-			var activeMainMenu = mainMenu.hasClass('active');
-			mainMenu.animate({left: activeMainMenu ? '0%' : '-200%'}, 400);
+			// Открытие мобильного Гамбургер меню
+			function openMainMenu() {
+				var activeMainMenu = mainMenu.hasClass('active');
+				mainMenu.animate({left: activeMainMenu ? '0%' : '-200%'}, 400);
+			}
+
+			function checkAttrMainMenu() {
+				if($(window).width() < 1024) {
+					$(".m-main-nav__item").removeAttr('open');
+				}
+			}
+
+			$('#humburger__wrapper').click(function(event) {
+				event.stopPropagation();
+				humburgerIcon.toggleClass('open');
+				mainMenu.toggleClass('active');
+				openMainMenu();
+				checkAttrMainMenu();
+			});
+
+			// Выпадающие пункты в главном МегаМеню
+			$('.menu-list').find('.accordion-toggle').click(function() {
+				$(this).next().toggleClass('open').slideToggle('fast');
+				$(this).toggleClass('active-tab').find('.menu-link').toggleClass('active');
+				$('.menu-list .accordion-content').not($(this).next()).slideUp('fast').removeClass('open');
+				$('.menu-list .accordion-toggle').not(jQuery(this)).removeClass('active-tab').find('.menu-link').removeClass('active');
+			});
+
+			// Открытие Меню ЛК
+			function openUserPanel() {
+				var activeUserPanel = userPanel.hasClass('active');
+				userPanel.animate({right: activeUserPanel ? '70px' : '-200%'}, 400);
+			}
+
+			$('.sub-nav__icon').click(function(event) {
+				event.stopPropagation();
+				userPanel.toggleClass('active');
+				openUserPanel();
+			});
+
+			// Открытие меню Быстрый старт
+			function openFastStart() {
+				var activeFastStart = fastStartPanel.hasClass('active');
+				fastStartPanel.animate({left: activeFastStart ? '175px' : '-200%'}, 400);
+			}
+
+			$('.fast-start__open-btn').click(function(event) {
+				event.stopPropagation();
+				fastStartPanel.toggleClass('active');
+				openFastStart();
+			});
+
+			// Открытие меню Смены языка
+			function openSwitchLang() {
+				var activeSwitchLang = switchLangPanel.hasClass('active');
+				switchLangPanel.animate({right: activeSwitchLang ? '5px' : '-200%'}, 400);
+			}
+
+			$('.switch-lang__btn').click(function(event) {
+				event.stopPropagation();
+				switchLangPanel.toggleClass('active');
+				openSwitchLang();
+			});
+
+			// ------------------------------------------------------------------
+
+			// Закрытие меню
+			// При открытии Моб.Меню -- закрывать все остальные меню
+			$('#humburger__wrapper, .in-dev, .main').on('click', function(e){
+				userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
+				fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				switchLangPanel.animate({right: switchLangPanel ? '-200%' : '5px'}, 400).removeClass('active');
+				closeMobSearch();
+			});
+
+			// При открытии меню ЛК -- закрывать все остальные меню
+			$('.sub-nav__icon, .in-dev, .main').on('click', function(e){
+				humburgerIcon.removeClass('open');
+				mainMenu.animate({left: userPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				switchLangPanel.animate({right: switchLangPanel ? '-200%' : '5px'}, 400).removeClass('active');
+				closeMobSearch();
+			});
+
+			// При открытии меню Быстрый Старт -- закрывать все остальные меню
+			$('.fast-start__open-btn, .in-dev, .main').on('click', function(e){
+				humburgerIcon.removeClass('open');
+				mainMenu.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
+				switchLangPanel.animate({right: switchLangPanel ? '-200%' : '5px'}, 400).removeClass('active');
+				closeMobSearch();
+			});
+
+			// При открытии меню Смены языка -- закрывать все остальные меню
+			$('.switch-lang__btn, .in-dev, .main').on('click', function(e){
+				humburgerIcon.removeClass('open');
+				mainMenu.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
+				fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				closeMobSearch();
+			});
+
+			// При открытии Поиска -- закрывать все остальные меню
+			$('.main-search__icon--mobile-btn, .in-dev, .main').on('click', function(e){
+				humburgerIcon.removeClass('open');
+				mainMenu.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
+				fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
+				switchLangPanel.animate({right: switchLangPanel ? '-200%' : '5px'}, 400).removeClass('active');
+			});
+		});
+
+		// Открытие Мобильного Поиска
+		function openMobSearch() {
+			$('.main-search__inner').toggleClass('show-search');
 		}
 
-		$('#menu-wrapper').click(function(event) {
-			event.stopPropagation();
-			humburgerIcon.toggleClass('open');
-			mainMenu.toggleClass('active');
-			openMainMenu();
-		});
+		// Закрытие Мобильного Поиска
+		function closeMobSearch() {
+			$('.main-search__inner').removeClass('show-search');
+		} 
 
-		// Выпадающие пункты в главном МегаМеню
-		$('.menu-list').find('.accordion-toggle').click(function() {
-			$(this).next().toggleClass('open').slideToggle('fast');
-			$(this).toggleClass('active-tab').find('.menu-link').toggleClass('active');
-			$('.menu-list .accordion-content').not($(this).next()).slideUp('fast').removeClass('open');
-			$('.menu-list .accordion-toggle').not(jQuery(this)).removeClass('active-tab').find('.menu-link').removeClass('active');
-		});
-
-		// Открытие Меню ЛК
-		function openUserPanel() {
-			var activeUserPanel = userPanel.hasClass('active');
-			userPanel.animate({right: activeUserPanel ? '70px' : '-200%'}, 400);
-		}
-
-		$('.sub-nav__icon').click(function(event) {
-			event.stopPropagation();
-			userPanel.toggleClass('active');
-			openUserPanel();
-		});
-
-		// Открытие меню Быстрый старт
-		function openFastStart() {
-			var activeFastStart = fastStartPanel.hasClass('active');
-			fastStartPanel.animate({left: activeFastStart ? '175px' : '-200%'}, 400);
-		}
-
-		$('.fast-start__open-btn').click(function(event) {
-			event.stopPropagation();
-			fastStartPanel.toggleClass('active');
-			openFastStart();
-		});
-
-		// Открытие меню Смены языка
-		function openSwitchLang() {
-			var activeSwitchLang = switchLangPanel.hasClass('active');
-			switchLangPanel.animate({right: activeSwitchLang ? '0' : '-900%'}, 400);
-		}
-
-		$('.switch-lang__btn').click(function(event) {
-			event.stopPropagation();
-			switchLangPanel.toggleClass('active');
-			openSwitchLang();
-		});
-
-		// ------------------------------------------------------------------
-
-		// Закрытие меню
-		// При открытии Моб.Меню -- закрывать все остальные меню
-		$('#menu-wrapper, .in-dev, .main').on('click', function(e){
-			userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
-			fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
-			switchLangPanel.animate({right: switchLangPanel ? '-900%' : '0%'}, 400).removeClass('active');
-		});
-
-		// При открытии меню ЛК -- закрывать все остальные меню
-		$('.sub-nav__icon, .in-dev, .main').on('click', function(e){
-			humburgerIcon.removeClass('open');
-			mainMenu.animate({left: userPanel ? '-200%' : '0%'}, 400).removeClass('active');
-			fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
-			switchLangPanel.animate({right: switchLangPanel ? '-900%' : '0%'}, 400).removeClass('active');
-		})
-
-		// При открытии меню Быстрый Старт -- закрывать все остальные меню
-		$('.fast-start__open-btn, .in-dev, .main').on('click', function(e){
-			humburgerIcon.removeClass('open');
-			mainMenu.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
-			userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
-			switchLangPanel.animate({right: switchLangPanel ? '-900%' : '0%'}, 400).removeClass('active');
-		})
-
-		// При открытии меню Смены языка -- закрывать все остальные меню
-		$('.switch-lang__btn, .in-dev, .main').on('click', function(e){
-			humburgerIcon.removeClass('open');
-			mainMenu.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
-			userPanel.animate({right: mainMenu ? '-200%' : '0%'}, 400).removeClass('active');
-			fastStartPanel.animate({left: fastStartPanel ? '-200%' : '0%'}, 400).removeClass('active');
-		})
-	});
-</script>
+	// ------------------------------------------------------------------
+	</script>
+<!-- </header> -->
