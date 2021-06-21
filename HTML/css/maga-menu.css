@@ -197,6 +197,7 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
 .fast-start__open-btn.dropdown-arrow::after {
 	right: -10px;
 }
@@ -438,7 +439,7 @@ body {
 	right: -20px;
 	width: 13px;
 	height: 10px;
-	background: url('/HTML/img/system/icon/mega-menu/drop-down-arrow.svg') no-repeat center center;
+	background: url('../img/system/icon/mega-menu/drop-down-arrow.svg') no-repeat center center;
 	background-size: 100%;
 }
 
