@@ -1035,11 +1035,16 @@
                                             </div>
                                         </div>
                                         <!-- next line -->
-                                        <div class="add-info__line">
-                                            <label class="add-info__label add-info__label--long">Контактна особа</label>
-                                            <input class="add-info__contact-face form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" ng-model="PickUp.output.ContactFace" name="ContactFace" required="" ng-mouseover="ng_validate($event, create_frm.ContactFace)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
-
-                                            <input class="add-info__contact-face form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" id="PickUpContactPhone" placeholder="(***)***-**-**" ng-model="PickUp.output.ContactPhoneStr" name="ContactPhoneStr" required="" ng-mouseover="ng_validate($event, create_frm.ContactPhoneStr)" data-original-title="Поле обов’язкове для заповнення" title="" tooltip="1">
+                                        <div class="add-info__line add-info__line--contact-name">
+                                            <label class="add-info__label">Контактний телефон замовника</label>
+                                            <!-- Новый инпут, нужно настроить -->
+                                            <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" placeholder="(***)***-**-**" >
+                                        </div>
+                                        <!-- next line -->
+                                        <div class="add-info__line add-info__line--contact-name">
+                                            <label class="add-info__label">Контактний телефон на відвантаження</label>
+                                            <!-- Новый инпут, нужно настроить -->
+                                            <input class="form-control dg-form-control tooltipped ng-pristine ng-invalid ng-invalid-required ng-touched" placeholder="(***)***-**-**" >
                                         </div>
                                         <!-- next line -->
                                         <div class="add-info__line">

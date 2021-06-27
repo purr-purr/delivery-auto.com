@@ -2143,6 +2143,13 @@ input[type="radio"] {
     }
 }
 
+@media (max-width: 350px) {
+    .add-info__line--contact-name label {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
 /* Кнопка "Создать" */
 .create-btn {
     display: flex;
