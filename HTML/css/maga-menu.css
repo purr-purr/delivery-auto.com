@@ -13,7 +13,7 @@ body {
 
 .mega-menu__wrapper {
 	width: 100%;
-	background-color: #333;
+	background-color: #555;
 }
 
 .mega-menu {
@@ -27,7 +27,7 @@ body {
 	font-style: normal;
 	color: #303030;
 	height: 50px;
-	background-color: #333;
+	background-color: #555;
 }
 
 .mega-menu * {
@@ -257,7 +257,7 @@ body {
 	min-width: 220px;
 	right: -200%;
 	z-index: 99999;
-	background-color: #333;
+	background-color: #555;
 	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
 	color: #fff;
 	padding-bottom: 10px;
@@ -283,7 +283,7 @@ body {
 
 .user-panel__drop-item:hover,
 .fast-start__drop-item:hover {
-	background-color: #575757;
+	background-color: #333;
 	transition: all .3s linear;
 }
 
@@ -415,11 +415,11 @@ body {
 
 .switch-lang__drop-item {
 	padding: 5px 21px;
-	background-color: #333;
+	background-color: #555;
 }
 
 .switch-lang__drop-item:hover {
-	background-color: #575757;
+	background-color: #333;
 	transition: all .3s linear;
 }
 
@@ -485,7 +485,7 @@ body {
 	height: 100px;
 	padding: 20px;
 	margin: 0 auto;
-	background-color: #333;
+	background-color: #555;
 	box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -605,13 +605,14 @@ body {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: background .6s ease;
+	transition: border-color .6s ease;
 	margin-left: 10px;
 }
 
 .login-block__autorization-btn:hover {
-	transition: background .6s ease;
-	background: #575757;
+	transition: border-color .6s ease;
+	border-color: #ffd500;
+	background-color: #333;
 	color: #fff;
 }
 
